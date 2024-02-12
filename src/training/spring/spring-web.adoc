@@ -1,0 +1,831 @@
+:doctitle: Spring in practice : REST service
+:description: How write REST services in Spring Web and expose resource to your apps
+:keywords: Java, Spring
+:author: Guillaume EHRET - Dev-Mind
+:revdate: 2023-11-02
+:category: Java
+:teaser:  How write REST services in Spring Web and expose resource to your apps
+:imgteaser: ../../img/training/spring-boot.png
+:toc:
+:icons: font
+
+== Introduction
+
+Spring purpose 2 web frameworks to build an application : the Servlet-based https://docs.spring.io/spring-framework/docs/current/reference/html/web.html#spring-web[Spring MVC] web framework and, in parallel, the https://docs.spring.io/spring-framework/docs/current/reference/html/web-reactive.html#spring-webflux[Spring WebFlux] reactive web framework.
+
+In this course we will focus on https://docs.spring.io/spring-framework/docs/current/reference/html/web.html#spring-web[Spring MVC] because this framework is the most used.
+
+https://docs.spring.io/spring-framework/docs/current/reference/html/web.html#spring-web[Spring MVC] helps you write web applications and takes care of a lot of boilerplate code, so you just have to focus on your application features.
+
+image::../../img/training/spring-boot.png[width=800, align="center"]
+
+With Spring Web (Spring MVC) you can write screens with a template solution which are used to generate HTML. But we don't use this solution in this course. We will see how to write REST services. However if you are interested you can read https://docs.spring.io/spring-framework/docs/current/reference/html/web.html#mvc-view[official documentation].
+
+image::../../img/training/spring-intro/spring-mvc.png[width=800, align="center"]
+
+With Spring Web you can expose REST services to another app (web api, JS app, android app...).This is the purpose of this lesson.You will learn how to develop endpoints on a backend application.These REST endpoints will be used later by a JS app or an Android app.
+
+image::../../img/training/spring-intro/mvc-rest.png[width=800, align="center"]
+
+
+== Data Transfert Object
+
+=== Serialization
+
+A DTO is an object that carries data between processes. Data need to be serializable to go across the HTTP connection
+
+image::../../img/training/spring-intro/dto.png[width=800, align="center"]
+
+Serialization is the process of translating data structures or object into a format that can be transmitted
+
+A DTO is often just a POJO (Plain Old Java Object), a bunch of fields and the getters and setters for them. Since Java 16 you can also use Record objects.
+
+A record is a class that has specific characteristics:
+
+* this is a final class which cannot be enriched by inheritance from another record or from another class
+* each element of the description is encapsulated in a private and final field to guarantee immutability
+* a public getter is proposed for each element
+* a default `equals()` and `hashCode()` methods are provided, but you can override them.
+
+
+[.small]
+[source,java, subs="specialchars"]
+----
+public record Sensor(Long id, String name, Double value, SensorType sensorType) {
+}
+----
+
+DTO will be used to transfer and to receive data in our REST controllers (entry point in our Java webapp).
+
+=== Mapper
+
+You can define a Record mapper to create a record from an entity
+
+[source,java, subs="specialchars"]
+----
+public class SensorMapper {
+  public static Sensor of(SensorEntity sensor) {
+    return new Sensor(
+        sensor.getId(),
+        sensor.getName(),
+        sensor.getValue(),
+        sensor.getSensorType()
+    );
+  }
+}
+----
+
+image::../../img/training/spring-intro/java-objects.png[width=800, align="center"]
+
+=== icon:flask[] : Create your DTO and their mapper
+
+Create a record object for your respective entities : `SensorEntity`, `WindowEntity`, `RoomEntity`, ...
+
+To prevent cycle in your record you should not map the bidirectional relation between a room and its windows. For example your record for the window can only mapped the room id.
+
+[source,java, subs="specialchars"]
+----
+public record Window(Long id, String name, Sensor windowStatus, Long roomId) {
+}
+----
+
+Create mappers to create a record from an entity
+
+Write a test for each mapper. As I am nice I give you the test of the most complicated mapper
+
+[source,java, subs="specialchars"]
+----
+class RoomMapperTest {
+
+    @Test
+    void shouldMapRoom() {
+        // Arrange
+        SensorEntity currentTemperature = new SensorEntity(SensorType.TEMPERATURE, "Room temperature");
+        currentTemperature.setId(1L);
+        currentTemperature.setValue(24.2);
+
+        RoomEntity roomEntity = new RoomEntity("Room", currentTemperature, 1);
+        roomEntity.setId(1L);
+        roomEntity.setTargetTemperature(22.0);
+
+        SensorEntity windowStatus = new SensorEntity(SensorType.STATUS, "Window status");
+        windowStatus.setId(2L);
+        windowStatus.setValue(0.0);
+
+        WindowEntity windowEntity = new WindowEntity("Window 1", windowStatus, roomEntity);
+        windowEntity.setId(2L);
+        roomEntity.setWindows(Set.of(windowEntity));
+
+        // Act
+        Room room = RoomMapper.of(roomEntity);
+
+        // Assert
+        Room expectedRoom = new Room(
+                1L,
+                "Room",
+                1,
+                new Sensor(1L, "Room temperature", 24.2, SensorType.TEMPERATURE),
+                22.0,
+                List.of(new Window(
+                        2L,
+                        "Window 1",
+                        new Sensor(2L, "Window status", 0.0, SensorType.STATUS),
+                        1L
+                ))
+        );
+        Assertions.assertThat(room).usingRecursiveAssertion().isEqualTo(expectedRoom);
+    }
+}
+----
+
+== HTTP
+
+The Hypertext Transfer Protocol (HTTP) is an application protocol used for data communication on the World Wide Web.
+
+HTTP defines methods (sometimes referred to as verbs) to indicate the desired action to be performed on the identified *resource*
+
+A resource can be an image, a video, an HTML page, a JSON document.
+
+To receive a response you have to send a request with a verb in a client an application as Curl, Wget.... or with a website
+
+image::../../img/training/spring-intro/http-verbs.png[width=800, align="center"]
+
+
+Each HTTP response has a status identified by a code. This code is sent by the server, by your app
+
+* 1XX : Wait… request in progress
+* 2XX : Here ! I send you a resource
+* 3XX : Go away !
+* 4XX : You made a mistake
+* 5XX : I made a mistake
+
+== REST
+HTTP requests are handled by the methods of a REST service. In Spring’s approach a REST service is a controller. It is able to respond to HTTP requests
+
+* GET: read resource
+* POST: creates new record or executing a query
+* PUT: edit a resource (sometimes we use only a post request)
+* DELETE: delete a record
+
+=== Write a controller
+
+Controllers are the link between the web http clients (browsers, mobiles) and your application. They should be lightweight and call other components in your application to perform actual work (DAO for example).
+
+These components are easily identified by the `@RestController` annotation.
+
+Example of addressable resources
+
+* Retrieve a sensor list : GET `/api/sensors`
+* Retrieve a particular sensor : GET `/api/sensors/{sensor_id}`
+* Create a sensor : POST `/api/sensors`
+* Update a sensor : PUT `/api/sensors/{sensor_id}`
+* Delete a sensor : DELETE `/api/sensors/{sensor_id}`
+
+This SensorController handles GET requests for `/api/sensors` by returning a list of Window.
+
+A complete example to manage sensors
+
+[source,java, subs="specialchars"]
+----
+@CrossOrigin
+@RestController // (1)
+@RequestMapping("/api/sensors") // (2)
+@Transactional // (3)
+public class SensorController {
+    private final SensorDao sensorDao;
+
+    public SensorController(SensorDao sensorDao) {
+        this.sensorDao = sensorDao;
+    }
+
+    @GetMapping // (5)
+    public List<Sensor> findAll() {
+        return sensorDao.findAll()
+                .stream()
+                .map(SensorMapper::of)
+                .sorted(Comparator.comparing(Sensor::name))
+                .collect(Collectors.toList());  // (6)
+    }
+
+    @GetMapping(path = "/{id}")
+    public Sensor findById(@PathVariable Long id) {
+        return sensorDao.findById(id).map(SensorMapper::of).orElse(null); // (7)
+    }
+
+    @PostMapping // (8)
+    public ResponseEntity<Sensor> create(@RequestBody SensorCommand sensor) { // (9)
+        SensorEntity entity = new SensorEntity(sensor.sensorType(), sensor.name());
+        entity.setValue(sensor.value());
+        SensorEntity saved = sensorDao.save(entity);
+        return ResponseEntity.ok(SensorMapper.of(saved));
+    }
+
+    @PutMapping(path = "/{id}") // (10)
+    public ResponseEntity<Sensor> update(@PathVariable Long id, @RequestBody SensorCommand sensor) {
+        SensorEntity entity = sensorDao.findById(id).orElse(null);
+        if (entity == null) {
+            return ResponseEntity.badRequest().build();
+        }
+        entity.setValue(sensor.value());
+        entity.setName(sensor.name());
+        entity.setSensorType(sensor.sensorType());
+        // (11)
+        return ResponseEntity.ok(SensorMapper.of(entity));
+    }
+
+    @DeleteMapping(path = "/{id}")
+    public void delete(@PathVariable Long id) {
+        sensorDao.deleteById(id);
+    }
+}
+----
+
+* (1) *RestController* is a Spring stereotype to mark a class as a rest service
+* (2) *@RequestMapping* is used to define a global URL prefix used to manage a resource (in our example all requests that start with `/api/sensors` will be handle by this controller)
+* (3) *@Transactional* is used to delegate a transaction opening to Spring. Spring will initiate a transaction for each entry point of this controller. This is important because with Hibernate you cannot execute a query outside of a transaction.
+* (4) DAO used by this controller is injected via constructor
+* (5) *@GetMapping* indicates that the following method will respond to a GET request. This method will return a sensor list. We transform our entities `SensorEntity` in DTO `Sensor`
+* (6) (7) We use https://www.oracle.com/technical-resources/articles/java/ma14-java-se-8-streams.html[Java Stream API] to manipulate our data
+* (8) *@PostMapping* indicates that the following method will respond to a POST request (for creation).
+* (9) To return HTTP errors the method return a `ResponseEntity`. This object contains different builders to manipulate the HTTP response
+* (10) *@PutMapping* indicates that the following method will respond to a PUT request (for creation).
+* (11) For an update you don't need to call the DAO save method. The `findById` attach the entity to the persistence context and each update will be updated when the transaction will be commited.
+
+Note, that we don't use the same object for an update or a creation. We often use simples command object where all relationships are flatten. Here the command object is this one
+
+[source,java, subs="specialchars"]
+----
+public record SensorCommand(String name, Double value, SensorType sensorType) {
+}
+----
+
+If it's object had a relationship with another (for example a Room). The object for reading will return a complete Room object. The command object would only contain the data necessary to create/update ie a roomId. Sometimes we can use an object specific to creation, another to update.
+
+=== Test a controller
+
+To test whether Spring MVC controllers are working as expected, use the `@WebMvcTest` annotation. `@WebMvcTest` auto-configures the Spring MVC infrastructure and the Mock MVC component.
+
+- Mock MVC offers a powerful way to quickly test MVC controllers without needing to start a full HTTP server.
+- Annotation `@MockBean` provides mock implementations for required collaborators in place of the real implementations.
+
+With Mock MVC you can perform requests for each HTTP methods
+
+[source,java, subs="specialchars"]
+----
+// static import of MockMvcRequestBuilders.*
+
+// a post example
+mockMvc.perform(post("/hotels/{id}", 42).accept(MediaType.APPLICATION_JSON));
+
+// you can specify query parameters in URI template style
+mockMvc.perform(get("/hotels").param("thing", "somewhere"));
+----
+
+You can define expectations by appending one or more andExpect(..) calls after performing a request, as the following example shows. As soon as one expectation fails, no other expectations will be asserted.
+
+[source,java, subs="specialchars"]
+----
+// static import of MockMvcRequestBuilders.* and MockMvcResultMatchers.*
+
+mockMvc.perform(get("/accounts/1")).andExpect(status().isOk());
+----
+
+You can use https://goessner.net/articles/JsonPath/index.html#e2[Json path expression] to check your JSON result. And if you want to test your syntax this https://jsonpath.com/[website] will help you.
+
+You can find several example in the `SensorController` test
+
+[source,java, subs="specialchars"]
+----
+package com.emse.spring.automacorp.web;
+
+import com.emse.spring.automacorp.dao.SensorDao;
+import com.emse.spring.automacorp.model.SensorEntity;
+import com.emse.spring.automacorp.model.SensorType;
+import com.emse.spring.automacorp.record.Sensor;
+import com.emse.spring.automacorp.record.SensorMapper;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.hamcrest.Matchers;
+import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.http.MediaType;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
+import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
+
+import java.util.List;
+import java.util.Optional;
+
+
+@WebMvcTest(SensorController.class)
+class SensorControllerTest {
+    // Spring object to mock call to our app
+    @Autowired
+    private MockMvc mockMvc;
+
+    // The serializer used by Spring to send and receive data to/from the REST controller
+    @Autowired
+    private ObjectMapper objectMapper;
+
+    // We choose to mock the DAO used in the REST controller to limit the scope of our test
+    @MockBean
+    private SensorDao sensorDao;
+
+    SensorEntity createSensorEntity(Long id, String name) {
+        // Sensor is recreated before each test
+        SensorEntity sensorEntity = new SensorEntity(SensorType.TEMPERATURE, name);
+        sensorEntity.setId(id);
+        sensorEntity.setValue(24.2);
+        return sensorEntity;
+    }
+
+    @Test
+    void shouldFindAll() throws Exception {
+        Mockito.when(sensorDao.findAll()).thenReturn(List.of(
+                createSensorEntity(1L, "Temperature room 1"),
+                createSensorEntity(2L, "Temperature room 2")
+        ));
+
+        mockMvc.perform(MockMvcRequestBuilders.get("/api/sensors").accept(MediaType.APPLICATION_JSON))
+                // check the HTTP response
+                .andExpect(MockMvcResultMatchers.status().isOk())
+                // the content can be tested with Json path
+                .andExpect(
+                        MockMvcResultMatchers
+                                .jsonPath("[*].name")
+                                .value(Matchers.containsInAnyOrder("Temperature room 1", "Temperature room 2"))
+                );
+    }
+
+    @Test
+    void shouldReturnNullWhenFindByUnknownId() throws Exception {
+        Mockito.when(sensorDao.findById(999L)).thenReturn(Optional.empty());
+
+        mockMvc.perform(MockMvcRequestBuilders.get("/api/sensors/999").accept(MediaType.APPLICATION_JSON))
+                // check the HTTP response
+                .andExpect(MockMvcResultMatchers.status().isOk())
+                // the content can be tested with Json path
+                .andExpect(MockMvcResultMatchers.content().string(""));
+    }
+
+    @Test
+    void shouldFindById() throws Exception {
+        SensorEntity sensorEntity = createSensorEntity(1L, "Temperature room 1");
+        Mockito.when(sensorDao.findById(999L)).thenReturn(Optional.of(sensorEntity));
+
+        mockMvc.perform(MockMvcRequestBuilders.get("/api/sensors/999").accept(MediaType.APPLICATION_JSON))
+                // check the HTTP response
+                .andExpect(MockMvcResultMatchers.status().isOk())
+                // the content can be tested with Json path
+                .andExpect(MockMvcResultMatchers.jsonPath("$.name").value("Temperature room 1"));
+    }
+
+    @Test
+    void shouldNotUpdateUnknownEntity() throws Exception {
+        SensorEntity sensorEntity = createSensorEntity(1L, "Temperature room 1");
+        SensorCommand expectedSensor = new SensorCommand(sensorEntity.getName(), sensorEntity.getValue(), sensorEntity.getSensorType());
+        String json = objectMapper.writeValueAsString(expectedSensor);
+
+        Mockito.when(sensorDao.findById(1L)).thenReturn(Optional.empty());
+
+        mockMvc.perform(
+                        MockMvcRequestBuilders
+                                .put("/api/sensors/1")
+                                .content(json)
+                                .contentType(MediaType.APPLICATION_JSON_VALUE)
+                )
+                // check the HTTP response
+                .andExpect(MockMvcResultMatchers.status().isBadRequest());
+    }
+
+    @Test
+    void shouldUpdate() throws Exception {
+        SensorEntity sensorEntity = createSensorEntity(1L, "Temperature room 1");
+        SensorCommand expectedSensor = new SensorCommand(sensorEntity.getName(), sensorEntity.getValue(), sensorEntity.getSensorType());
+        String json = objectMapper.writeValueAsString(expectedSensor);
+
+        Mockito.when(sensorDao.findById(1L)).thenReturn(Optional.of(sensorEntity));
+
+        mockMvc.perform(
+                        MockMvcRequestBuilders
+                                .put("/api/sensors/1")
+                                .content(json)
+                                .contentType(MediaType.APPLICATION_JSON_VALUE)
+                )
+                // check the HTTP response
+                .andExpect(MockMvcResultMatchers.status().isOk())
+                .andExpect(MockMvcResultMatchers.jsonPath("$.name").value("Temperature room 1"))
+                .andExpect(MockMvcResultMatchers.jsonPath("$.id").value("1"));
+    }
+
+    @Test
+    void shouldCreate() throws Exception {
+        SensorEntity sensorEntity = createSensorEntity(1L, "Temperature room 1");
+        SensorCommand expectedSensor = new SensorCommand(sensorEntity.getName(), sensorEntity.getValue(), sensorEntity.getSensorType());
+        String json = objectMapper.writeValueAsString(expectedSensor);
+
+        Mockito.when(sensorDao.existsById(1L)).thenReturn(false);
+        Mockito.when(sensorDao.save(Mockito.any(SensorEntity.class))).thenReturn(sensorEntity);
+
+        mockMvc.perform(
+                        MockMvcRequestBuilders
+                                .post("/api/sensors")
+                                .content(json)
+                                .contentType(MediaType.APPLICATION_JSON_VALUE)
+                )
+                // check the HTTP response
+                .andExpect(MockMvcResultMatchers.status().isOk())
+                .andExpect(MockMvcResultMatchers.jsonPath("$.name").value("Temperature room 1"))
+                .andExpect(MockMvcResultMatchers.jsonPath("$.id").value("1"));
+    }
+
+    @Test
+    void shouldDelete() throws Exception {
+        mockMvc.perform(MockMvcRequestBuilders.delete("/api/sensors/999"))
+                .andExpect(MockMvcResultMatchers.status().isOk());
+    }
+
+}
+----
+
+== icon:flask[] : Create your rest services
+
+
+=== A basic example
+
+This is the time to create your first REST controller with Spring.
+
+Create a new class `HelloController` in package `com.emse.spring.automacorp.api`.
+
+[.small]
+[source,java, subs="specialchars"]
+----
+@RestController
+@RequestMapping("/api/hello")
+@Transactional
+public class HelloController {
+    @GetMapping("/{name}")
+    public Message welcome(@PathVariable String name) {
+        return new Message("Hello " + name);
+    }
+
+    public record Message(String message) {
+    }
+}
+----
+
+=== Test your service in your browser
+
+If your REST service expose an handler for a GET HTTP request, this handler can be tested in a browser.
+
+Launch your app and open the URL http://localhost:8080/api/hello/Guillaume in your browser
+
+When you type an URL in the adress bar, your browser send a GET HTTP request. You should see a response as this one
+
+[source,javascript]
+----
+{"message":"Hello Guillaume}
+----
+
+=== Test your service with SpringDoc, OpenApi and Swagger UI
+
+With a browser you are limited to GET requests. If you want to test PUT, POST or DELETE HTTP requests, you need another tool. We will usehttps://springdoc.org/[springdoc].
+
+The advantage of swagger is that it is very well integrated into the Spring world. Update your `build.gradle.kts` file and add these dependencies
+
+[source,kotlin, subs="specialchars"]
+----
+implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0")
+----
+
+You also need to add this property in your `application.properties` file
+----
+spring.mvc.pathmatch.matching-strategy=ant_path_matcher
+----
+
+And now you can relaunch your app and open swagger interface http://localhost:8080/swagger-ui/index.html
+
+All your endpoints are available. You can click on one of them to test it
+
+video::f6FUpLs0H_4[youtube, width=600, height=330]
+
+=== Add SensorController
+
+Read the previous examples and create
+
+* the REST service `SensorController`
+* a rest service which is able to
+** Retrieve a sensor list via a GET
+** Retrieve a particular sensor via a GET
+** Create a sensor via a POST
+** Update a sensor via a PUT
+** Delete a window via a DELETE
+
+Use swagger to test your API
+
+* create a new sensor
+* list all the sensor
+* find the sensor with id `-8`
+* update a sensor
+* deletes this sensor
+
+=== More Rest service
+
+You can now write `WindowController` and `RoomController`. These routes must be implemented
+
+You can now create BuildingDto, RoomDtoo, HeaterDto and write services which follow this service
+
+[source,shell, subs="specialchars"]
+----
+/api/windows (GET) send windows list
+/api/windows (POST) add a window
+/api/windows/{id} (PUT) update a window
+/api/windows/{id} (GET) read a window
+/api/windows/{id} (DELETE) delete a window
+----
+
+[source,shell, subs="specialchars"]
+----
+/api/rooms (GET) send room list
+/api/rooms (POST) add or update a room
+/api/rooms/{room_id} (GET) read a room
+/api/rooms/{room_id} (DELETE) delete a room and all its windows and its heaters
+/api/rooms/{room_id}/openWindows switch the room windows to OPEN (status != 0)
+/api/rooms/{room_id}/closeWindows switch the room windows to CLOSED (status = 0)
+----
+
+<<<
+== RestTemplate
+
+If you need to call remote REST services from your application, you can use the Spring Framework’s RestTemplate class.
+
+image::../../img/training/spring-intro/resttemplate.png[width=600, align="center"]
+
+A Java method for each HTTP method
+
+- *DELETE* : delete(...)
+- *GET* :	getForObject(...)
+- *HEAD* :	headForHeaders(...)
+- *OPTIONS* :	optionsForAllow(...)
+- *POST* : postForObject(...)
+- *PUT* : put(...)
+- *any method* : exchange(...) or execute(...)
+
+=== How use RestTemplate ?
+
+1. You need to create DTOs to serialize inputs and deserialize outputs
+2. Use `RestTemplate` to call the service with the good HTTP method
+
+[source,java, subs="specialchars"]
+----
+ String result = restTemplate.getForObject(
+         "http://example.com/hotels/{hotel}/bookings/{booking}",
+         String.class,
+         "42",
+         "21");
+----
+
+will perform a GET on `http://example.com/hotels/42/bookings/21.`
+
+The map variant expands the template based on variable name, and is therefore more useful when using many variables, or when a single variable is used multiple times. For example:
+
+[source,java, subs="specialchars"]
+----
+ Map<String, String> vars = Collections.singletonMap("hotel", "42");
+ String result = restTemplate.getForObject(
+         "http://example.com/hotels/{hotel}/rooms/{hotel}",
+         String.class,
+         vars
+);
+----
+will perform a GET on `http://example.com/hotels/42/rooms/42.`
+
+Since RestTemplate instances often need to be customized before being used, Spring Boot does not provide any single auto-configured RestTemplate bean but a builder to help the creation.
+
+[source,java, subs="specialchars"]
+----
+@Service
+public class SearchService {
+
+    private final RestTemplate restTemplate;
+
+    public AdressSearchService(RestTemplateBuilder restTemplateBuilder) {
+        this.restTemplate = restTemplateBuilder.rootUri("https://example.com").build();
+    }
+
+    public ResponseDto findUsers() {
+        String uri = UriComponentsBuilder.fromUriString("/users/search")
+                                         .queryParam("name", "Guillaume")
+                                         .build()
+                                         .toUriString();
+        return restTemplate.getForObject(uri, ResponseDto.class);
+    }
+}
+----
+will perform a GET on `http://example.com/users/search?name=Guillaume`
+
+<<<
+
+===  icon:flask[] Call a remote REST API
+
+Now we can see how call a remote REST API in a Spring application.
+
+We will test https://adresse.data.gouv.fr/api-doc/adresse
+
+image::../../img/training/spring-intro/ap--gouv.png[width=700, align="center"]
+
+You can test a request in your terminal with the curl tool or in a browser as it's a GET request.
+
+----
+curl "https://api-adresse.data.gouv.fr/search/?q=cours+fauriel+&limit=15"
+----
+
+You have a JSON as result
+
+----
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [4.402982, 45.426444]
+      },
+      "properties": {
+        "label": "Cours Fauriel 42100 Saint-\u00c9tienne",
+        "score": 0.8910727272727272,
+        "id": "42218_3390",
+        "name": "Cours Fauriel",
+        "postcode": "42100,
+        "city": "Saint-\u00c9tienne",
+        "context": "42, Loire, Auvergne-Rh\u00f4ne-Alpes",
+        "type": "street"
+      }
+    }
+  ],
+  "query": "cours fauriel "
+}
+----
+
+Now you have to implement a service to call the API.
+
+==== Create the DTOs
+
+To help your job you can use these DTOs used to deserialize the returned JSON in Java objects.
+
+* ApiGouvResponseDto describes the API response. Inside you will have a list of...
+* ...ApiGouvFeatureDto. Each feature will have different properties ...
+* ...ApiGouvAdressDto
+
+[source,java, subs="specialchars"]
+----
+public record ApiGouvResponse(
+    String version,
+    String query,
+    Integer limit,
+    List<ApiGouvFeature> features
+) {
+
+}
+----
+
+[source,java, subs="specialchars"]
+----
+public record ApiGouvFeature(
+    String type,
+    ApiGouvAdress properties
+) {
+----
+
+[source,java, subs="specialchars"]
+----
+public record ApiGouvAdress(
+    String id,
+    String label,
+    String housenumber,
+    Double score,
+    String postcode,
+    String citycode,
+    String city,
+    String context,
+    String type,
+    Double x,
+    Double y
+) {
+
+}
+----
+
+==== Create the service
+
+Now you are able to write
+
+1. a service called `AdressSearchService`
+2. with a constructor in which you will create the `restTemplate`
+3. add a method to return the `List<ApiGouvAdressDto>`
+4. this method can have a list of String to define the parameters to send to the API
+5. You can build the URI with this code
+
+[source,java]
+----
+String params = String.join("+", keys);
+UriComponentsBuilder.fromUriString("/search").queryParam("q", params).queryParam("limit", 15).build().toUriString()`
+----
+
+==== Test your service with Swagger
+
+You can expose a new REST endpoint in a controller to use Swagger to test this API
+
+image::../../img/training/spring-intro/adress-api.png[width=800, align="center"]
+
+==== Test your service with a unit test
+
+You can use the @RestClientTest annotation to test REST clients. By default, it auto-configures Jackson, configures a RestTemplateBuilder, and adds support for MockRestServiceServer.
+
+This test should work
+
+[source,java]
+----
+package com.emse.spring.automacorp.adress;
+
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.client.RestClientTest;
+import org.springframework.http.MediaType;
+import org.springframework.test.web.client.MockRestServiceServer;
+import org.springframework.test.web.client.match.MockRestRequestMatchers;
+import org.springframework.test.web.client.response.MockRestResponseCreators;
+import org.springframework.web.util.UriComponentsBuilder;
+
+import java.util.List;
+
+@RestClientTest(AdressSearchService.class) // (1)
+class AdressSearchServiceTest {
+    @Autowired
+    private AdressSearchService service;
+
+    @Autowired
+    private ObjectMapper objectMapper;
+
+    @Autowired
+    private MockRestServiceServer server; // (2)
+
+    @Test
+    void shouldFindAdresses() throws JsonProcessingException {
+        // Arrange
+        ApiGouvResponse expectedResponse = simulateApiResponse();
+
+        String expectedUrl = UriComponentsBuilder
+                .fromUriString("/search")
+                .queryParam("q", "cours+fauriel")
+                .queryParam("limit", 15)
+                .build()
+                .toUriString();
+
+        this.server
+                .expect(MockRestRequestMatchers.requestTo(expectedUrl))
+                .andRespond(
+                        MockRestResponseCreators.withSuccess(
+                                objectMapper.writeValueAsString(expectedResponse),
+                                MediaType.APPLICATION_JSON
+                        )
+                );
+
+        // Act
+        List<ApiGouvAdress> adresses = this.service.searchAdress(List.of("cours", "fauriel"));
+
+        // Assert
+        Assertions
+                .assertThat(adresses)
+                .hasSize(1)
+                .extracting(ApiGouvAdress::city)
+                .contains("Saint Etienne");
+    }
+
+    private ApiGouvResponse simulateApiResponse() {
+        ApiGouvAdress adress = new ApiGouvAdress(
+                "ad1",
+                "Cours Fauriel 42100 Saint-Étienne",
+                "2",
+                0.98,
+                "42100",
+                "42218",
+                "Saint Etienne",
+                "context",
+                "type",
+                0.0,
+                0.0
+                );
+
+        ApiGouvFeature feature = new ApiGouvFeature("type", adress);
+        return new ApiGouvResponse("v1", "cours+fauriel", 15, List.of(feature));
+    }
+}
+----
+

@@ -27,7 +27,14 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/.htaccess",
+              "src/BingSiteAuth.xml",
+              "src/humans.txt",
+              "src/ic_logo.xml",
+              "src/keybase.txt",
+              "src/lorem.txt",
+              "src/assets",
+              "src/img"
             ],
             "styles": [
               "src/styles.scss"
