@@ -1,8 +1,6 @@
-@import "common";
-@import "devmind";
-@import "experience";
-@import "home.component";
-@import "footer.component";
+@import "./common";
+@import "./devmind";
+@import "./footer.component";
 
 footer {
   background-color: $color_dark;

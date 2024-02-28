@@ -1,1 +1,94 @@
-<p>home works!</p>
+<div class="dm-block--intro">
+  <div class="devmind-section">
+    <h1>D&eacute;veloppement & Formation</h1>
+    <p class="dm_lead">
+      Je me nomme <a href="https://bsky.app/profile/devmind.bsky.social" rel="noopener" target="_blank">Guillaume EHRET</a> et je
+      propose mes services
+      pour aider les entreprises qui souhaitent cr&eacute;er de nouveaux logiciels ou s'organiser pour r&eacute;ussir
+      leurs d&eacute;fis. Je peux intervenir en
+      tant que d&eacute;veloppeur exp&eacute;riment&eacute; pour du conseil, de la programmation et de la formation.
+    </p>
+    <p>
+      <a href="https://bsky.app/profile/devmind.bsky.social" target="_blank" rel="noopener">
+        <img src="img/contact/bsky.svg" alt="Twitter" class="dm-social">
+      </a>
+      <a href="https://twitter.com/guillaumeehret" target="_blank" rel="noopener">
+        <img src="img/contact/twitter.svg" alt="Twitter" class="dm-social">
+      </a>
+      <a href="https://github.com/javamind" target="_blank" rel="noopener">
+        <img src="img/contact/github.svg" alt="Github" class="dm-social">
+      </a>
+      <a href="https://www.linkedin.com/pub/guillaume-ehret/7/668/999" target="_blank" rel="noopener">
+        <img src="img/contact/linkedin.svg" alt="Linkedin" class="dm-social">
+      </a>
+      <a href="http://fr.viadeo.com/fr/profile/guillaume.ehret1" target="_blank" rel="noopener">
+        <img src="img/contact/viadeo.svg" alt="Viadeo" class="dm-social">
+      </a>
+    </p>
+
+    <p class="center btn-group">
+      <a href="formations.html" class="btn" alt="Formations" onclick="app.changeMenu('#formation')">
+        Voir les formations</a>
+    </p>
+
+  </div>
+</div>
+<div class="dm-block--blog">
+  <div class="devmind-section">
+    <h2>Derniers articles de blog</h2>
+    <div class="dm-blog--container-article">
+      <article [routerLink]="['/', post.filename+'.html']" *ngFor="let post of blogEntries">
+        <div class="dm-blog--article">
+          <div class="dm-blog--imgteaser">
+            <img [ngSrc]="post.image" [alt]="post.description" width="1500" height="764" sizes="(max-width: 100%)"/>
+          </div>
+          <h3><a [routerLink]="['/', post.filename+ '.html']" [title]="post.title">{{ post.title }}</a></h3>
+          <p class="dm-blog--teaser">{{ post.description }}</p>
+        </div>
+      </article>
+    </div>
+    <p class="center btn-group">
+      <a href="blog.html" class="btn btn-inverse" alt="Blog" onclick="app.changeMenu('#blog')">
+        Voir le blog</a>
+    </p>
+  </div>
+</div>
+<div class="dm-block--news">
+  <div class="devmind-section">
+    <h2>Actualit&eacute;s</h2>
+
+    <p class="dm_lead">Vous pouvez visualiser ma page <a href="experience.html" alt="Experience"
+                                                         onclick="app.changeMenu('#experience')">exp&eacute;riences</a>
+      pour voir mes
+      clients ou employeurs depuis 20 ans. J'interviens en tant que speaker dans des conf&eacute;rences et
+      je fais aussi partie de
+      l'&eacute;quipe des organisateurs de la conf&eacute;rence <a
+        href="https://mixitconf.org/" rel="noopener">MiXiT</a> qui a lieu tous
+      les ans à Lyon qui regroupe 1000 personnes pendant 2 jours autour de conf&eacute;rences, d'ateliers avec des
+      speakers venant du monde entier.</p>
+    <p class="dm_lead">Je participe &eacute;galement à des projets Open Source. Vous pouvez consulter mon <a
+      href="https://github.com/javamind" rel="noopener">Github</a> pour plus d'informations.
+      J'interviens &eacute;galement r&eacute;gulièrement dans des conf&eacute;rences et voici mon <a
+        href="https://speakerdeck.com/javamind" rel="noopener">Speaker Deck</a>
+    </p>
+  </div>
+</div>
+<div class="dm-block--blog">
+  <div class="devmind-section">
+    <h2>Contact</h2>
+    <p class="dm_lead">
+      N'h&eacute;sitez pas à me contacter si vous souhaitez plus d'informations<br>
+    </p>
+
+    <p class="dm_lead">
+      <b>Guillaume EHRET</b><br>
+      <a>guillaume (&#64;) dev-mind.fr</a>
+    </p>
+    <address class="dm_lead">
+      <b>Dev-Mind</b><br>
+      14 rue des roches<br>
+      42290 Sorbiers<br>
+      France
+    </address>
+  </div>
+</div>

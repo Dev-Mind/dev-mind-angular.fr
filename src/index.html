@@ -6,7 +6,6 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-
   <style>
     body {
       min-height: 100vh;
@@ -108,7 +107,7 @@
       background-color: #9e9e9e;
     }
 
-    nav .is-active {
+    nav .active {
       background-color: rgba(0, 0, 0, 0.14);
     }
 
@@ -126,21 +125,21 @@
       box-sizing: border-box; /* pour maîtriser width et flex-basis */
     }
 
-    devmind-section {
+    .devmind-section {
       display: block;
       margin: 0 auto;
       max-width: 1600px;
-      padding: 80px 40px;
+      padding: 60px 40px;
     }
 
     @media (max-width: 700px) {
-      devmind-section {
+      .devmind-section {
         padding: 25px 10px;
       }
     }
 
     @media (min-width: 701px) and (max-width: 900px) {
-      devmind-section {
+      .devmind-section {
         padding: 40px 25px;
       }
     }

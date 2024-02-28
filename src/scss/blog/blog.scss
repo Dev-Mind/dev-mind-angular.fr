@@ -18,19 +18,6 @@ devmind-article {
   }
 }
 
-.dm-blog--info-date {
-  @media (max-width: $max_width_mobile) {
-    margin-right: 1em;
-    margin-left: 1em;
-    margin-top: 1em;
-  }
-}
-
-.blog-keywords {
-  @media (max-width: $max_width_mobile) {
-    margin: 0em 1em;
-  }
-}
 
 .imageblock, .videoblock{
   text-align: center;

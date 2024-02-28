@@ -1,0 +1,10 @@
+<div class="dm-block--blog">
+  <div class="devmind-section">
+    <h1>{{ title }}</h1>
+    <div class="blog-keywords">
+      <div class="dm-blog--info-date">{{ publicationDate }}</div>
+      <div class="dm-blog--keyword-detail" *ngFor="let keyword of keywords">{{keyword}}</div>&nbsp;
+    </div>
+    <div class="preview" [innerHTML]="content">
+  </div>
+</div>

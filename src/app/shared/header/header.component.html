@@ -1,21 +1,21 @@
 <header>
   <div class="header-img">
-    <a routerLink="/" alt="Accueil" onclick="app.changeMenu('#home')">
+    <a routerLink="/" aria-label="Accueil">
       <img src="img/logo/logo_long.svg" alt="Dev-Mind" title="Dev-Mind">
     </a>
   </div>
   <nav>
-    <a routerLink="/" class="nav-home" alt="Accueil" id="#home" onclick="app.changeMenu('#home')">
+    <a routerLink="/" class="nav-home" aria-label="Accueil" [class.active]="current === 'home'">
       <img src="/img/ic_home_white_24px.svg" rel="start" alt="Accueil"></a>
-    <a routerLink="/formation.html" alt="Formations" id="#formation" onclick="app.changeMenu('#formation')">
+    <a routerLink="/formation.html" aria-label="Formations" [class.active]="current === 'training'">
       Formations</a>
-    <a routerLink="/blog.html" alt="Blog" id="#blog" onclick="app.changeMenu('#blog')">Blog</a>
-    <a routerLink="/experience.html" alt="Experience" id="#experience" onclick="app.changeMenu('#experience')">
+    <a routerLink="/blog.html" aria-label="Blog" [class.active]="current === 'blog'">Blog</a>
+    <a routerLink="/experience.html" aria-label="Experience" [class.active]="current === 'experience'">
       Exp&eacute;rience</a>
-    <a href="/profile.html" class="nav-home" alt="Profil" id="#profile" onclick="app.changeMenu('#profile')">
-      <img src="/img/ic_person_24px.svg" rel="start" alt="Profil"></a>
   </nav>
   <hr>
 </header>
 <div class="header-space"></div>
+
+
 

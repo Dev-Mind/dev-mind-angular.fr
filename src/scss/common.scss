@@ -12,12 +12,12 @@ $h1_mobile_fontsize: 28px;
 $h2_mobile_fontsize: 22px;
 $h3_mobile_fontsize: 18px;
 
-$h1_screen_fontsize: 45px;
-$h2_screen_fontsize: 35px;
-$h3_screen_fontsize: 25px;
+$h1_screen_fontsize: 35px;
+$h2_screen_fontsize: 25px;
+$h3_screen_fontsize: 18px;
 
 $text_head_mobile: 16px;
-$text_head_screen: 20px;
+$text_head_screen: 18px;
 
 $header__heigth: 64px;
 
@@ -73,21 +73,17 @@ $header__heigth: 64px;
 }
 
 @mixin dm-btn($bgcolor, $txtcolor, $bordercolor) {
-  @include dm-btn--sized($bgcolor, $txtcolor, $bordercolor, 200px);
-}
-
-@mixin dm-btn--sized($bgcolor, $txtcolor, $bordercolor, $size) {
   background-color: $bgcolor;
   border: 2px solid $bordercolor;
-  border-radius: 4px;
+  border-radius: 24px;
   color: $txtcolor !important;
-  padding: 1em;
+  padding: 0.5em 1em;
   margin: auto;
   font-weight: 700;
   font-size: $text_head_mobile;
   display: block;
   cursor: pointer;
-  width: $size;
+  width: auto;
   text-align: center;
   @include dm_box__shadow();
 }
@@ -96,5 +92,5 @@ $header__heigth: 64px;
   background-color: $bgcolor;
   border: 2px solid $bordercolor;
   color: $txtcolor !important;
-  padding: 1em;
+  padding: 0.5em 1em;
 }

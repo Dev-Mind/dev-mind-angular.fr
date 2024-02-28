@@ -1,0 +1,143 @@
+@import "../../scss/common";
+
+h1 {
+  margin-top: 0.5em;
+}
+
+.dm-blog--info-date {
+  font-size: smaller;
+  color: $color_dark;
+  border: 1px solid #aaa;
+  border-radius: 24px;
+  padding: 0.5em 1em;
+  margin-right: 0.5em;
+  display: inline;
+}
+
+.blog-keywords {
+  display: flex;
+  margin-bottom: 1em;
+
+  .dm-blog--keyword-detail {
+    background-color: #ccc;
+    color: $color_dark;
+    padding: 0.5em 1em;
+    margin-right: 0.5em;
+    border-radius: 24px;
+    font-size: smaller;
+  }
+}
+
+.toc {
+  #toctitle {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+  background-color: #ccc;
+  margin-top: 1em;
+  border: 1px solid #ccc;
+  padding: 1em;
+  border-radius: 8px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.imageblock > .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.highlight {
+  display: block;
+  overflow-x: auto;
+  background: #f3f3f3;
+  color: #444;
+  padding: 1.5em;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+
+code.hljs {
+  padding: 3px 5px
+}
+
+
+.hljs-comment {
+  color: #697070
+}
+
+.hljs-punctuation, .hljs-tag {
+  color: #444a
+}
+
+.hljs-tag .hljs-attr, .hljs-tag .hljs-name {
+  color: #444
+}
+
+.hljs-attribute, .hljs-doctag, .hljs-keyword, .hljs-meta .hljs-keyword, .hljs-name, .hljs-selector-tag {
+  font-weight: 700
+}
+
+.hljs-deletion, .hljs-number, .hljs-quote, .hljs-selector-class, .hljs-selector-id, .hljs-string, .hljs-template-tag, .hljs-type {
+  color: #800
+}
+
+.hljs-section, .hljs-title {
+  color: #800;
+  font-weight: 700
+}
+
+.hljs-link, .hljs-operator, .hljs-regexp, .hljs-selector-attr, .hljs-selector-pseudo, .hljs-symbol, .hljs-template-variable, .hljs-variable {
+  color: #ab5656
+}
+
+.hljs-literal {
+  color: #695
+}
+
+.hljs-addition, .hljs-built_in, .hljs-bullet, .hljs-code {
+  color: #397300
+}
+
+.hljs-meta {
+  color: #1f7199
+}
+
+.hljs-meta .hljs-string {
+  color: #38a
+}
+
+.hljs-emphasis {
+  font-style: italic
+}
+
+.hljs-strong {
+  font-weight: 700
+}
+
+@mixin language($lang) {
+  .language-#{$lang} {
+    &:before {
+      display: block;
+      float: right;
+      content: $lang;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+}
+@include language('kotlin');
+@include language('typescript');
+@include language('java');
+@include language('javascript');
+@include language('shell');
+@include language('yaml');
+@include language('json');
+@include language('xml');
+@include language('html');
+@include language('css');
+@include language('scss');

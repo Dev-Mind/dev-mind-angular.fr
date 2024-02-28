@@ -34,7 +34,12 @@
               "src/keybase.txt",
               "src/lorem.txt",
               "src/assets",
-              "src/img"
+              "src/img",
+              {
+                "glob": "**/*.xml",
+                "input": "src/app/generated/rss",
+                "output": "/rss"
+              }
             ],
             "styles": [
               "src/styles.scss"

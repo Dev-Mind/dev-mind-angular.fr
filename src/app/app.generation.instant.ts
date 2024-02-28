@@ -1,0 +1,1 @@
+export const generationInstant = '25/02/2024';
