@@ -1,0 +1,352 @@
+<!DOCTYPE html><html lang="en" data-critters-container><head>
+  <meta charset="utf-8">
+  <title>Blog</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    body {
+      min-height: 100vh;
+      max-height: 100vh;
+      font-family: "Helvetica", "Arial", "sans-serif";
+      padding: 0;
+      margin: 0;
+    }
+
+    header {
+      height: 90px;
+      max-height: 90px;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+      background-color: white;
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      z-index: 99;
+      transition-duration: 0.2s;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: max-height, box-shadow;
+      position: fixed;
+      width: 100%;
+      text-align: center;
+    }
+    header hr {
+      width:100%;
+      background-color: #424242;
+      border-color: #424242;
+      display: block;
+      border: 0;
+      height: 0.5em;
+      margin: 0;
+    }
+    .header-img {
+      margin: auto;
+      width: 50%;
+      padding-top: 0.5em;
+      height: 30px;
+    }
+    .header-img img {
+      max-height: 30px !important;
+    }
+    .header-space {
+      min-height: 90px;
+    }
+
+
+    @media screen and (min-width: 901px) {
+      header {
+        height: 120px;
+        max-height: 120px;
+      }
+      .header-img {
+        height: 60px;
+      }
+      .header-img img {
+        max-height: 60px !important;
+      }
+      .header-space {
+        min-height: 120px;
+      }
+      nav a {
+        padding: 6px 24px;
+      }
+      .nav-home{
+        display: block !important;
+      }
+    }
+
+
+    nav {
+      display: -webkit-flex;
+      display: flex;
+      margin: auto;
+    }
+
+    nav a {
+      padding: 0 12px;
+      line-height: 28px;
+      height: 28px;
+      color: #424242;
+      margin: auto;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 13px;
+      border-radius: 4px;
+    }
+    .nav-home{
+      display: none;
+    }
+    nav a > img {
+    // height: 20px;
+    }
+
+    nav a:hover {
+      background-color: #9e9e9e;
+    }
+
+    nav .active {
+      background-color: rgba(0, 0, 0, 0.14);
+    }
+
+    main {
+      overflow-x: hidden;
+    }
+
+    img, picture {
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+    }
+
+    * {
+      box-sizing: border-box; /* pour maîtriser width et flex-basis */
+    }
+
+    .devmind-section {
+      display: block;
+      margin: 0 auto;
+      max-width: 1600px;
+      padding: 60px 40px;
+    }
+
+    @media (max-width: 700px) {
+      .devmind-section {
+        padding: 25px 10px;
+      }
+    }
+
+    @media (min-width: 701px) and (max-width: 900px) {
+      .devmind-section {
+        padding: 40px 25px;
+      }
+    }
+
+    .dm-social {
+      min-width: 2em;
+      max-width: 2em;
+      width: 2em;
+      height: 2em;
+    }
+  </style>
+  <!-- Matomo -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(["setCookieDomain", "*.dev-mind.fr"]);
+    _paq.push(["disableCampaignParameters"]);
+    _paq.push(["setDoNotTrack", true]);
+    _paq.push(["disableCookies"]);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="https://devmind.matomo.cloud/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '1']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src='https://cdn.matomo.cloud/devmind.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+<style>.dm-block--blog{width:100%;background-color:#eceff1;color:#424242;padding:0;margin:0}.dm-block--blog a,.dm-block--blog a:hover,.dm-block--blog a:visited{font-weight:700;color:#424242;text-decoration:none}footer{background-color:#424242}.is-small-screen{display:none}.is-large-screen{display:inherit}@media screen and (max-width: 900px){.is-small-screen{display:inherit}.is-large-screen{display:none}}h1,h2{color:#424242;font-weight:100}h1{font-weight:bolder;font-size:35px;line-height:38px}h2{font-size:25px;line-height:28px}@media (max-width: 700px){h1{font-size:28px;line-height:30px}h2{font-size:22px;line-height:24px}}
+</style><link rel="stylesheet" href="styles-WO7TV6DC.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-WO7TV6DC.css"></noscript><style ng-app-id="ng">.dm_footer[_ngcontent-ng-c2660501952]{color:#eee;display:flex;justify-content:space-between;font-size:14px}.dm_footer[_ngcontent-ng-c2660501952]   .dm_society[_ngcontent-ng-c2660501952]{color:#fff}.dm_footer[_ngcontent-ng-c2660501952]   div[_ngcontent-ng-c2660501952]{margin-right:1em;width:100%}.dm_footer[_ngcontent-ng-c2660501952]   .dm_footer__middle[_ngcontent-ng-c2660501952]{flex-grow:1}.dm_footer[_ngcontent-ng-c2660501952]   .dm_footer__right[_ngcontent-ng-c2660501952]{text-align:right}.dm_footer[_ngcontent-ng-c2660501952]   .is-large-screen[_ngcontent-ng-c2660501952]{padding:.7em;margin:.7em 1em}.dm_footer[_ngcontent-ng-c2660501952]   .is-small-screen[_ngcontent-ng-c2660501952]{padding:0;margin:0 1em;font-size:12px}</style><style ng-app-id="ng">h1{margin-top:.5em}.dm-blog--info-date{font-size:smaller;color:#424242;border:1px solid #aaa;border-radius:24px;padding:.5em 1em;margin-right:.5em;display:inline}.blog-keywords{display:flex;margin-bottom:1em}.blog-keywords .dm-blog--keyword-detail{background-color:#ccc;color:#424242;padding:.5em 1em;margin-right:.5em;border-radius:24px;font-size:smaller}.toc{background-color:#ccc;margin-top:1em;border:1px solid #ccc;padding:1em;border-radius:8px}.toc #toctitle{font-weight:700;margin-bottom:.5em}img{max-width:100%;height:auto}.imageblock>.content{display:flex;justify-content:center;align-items:center}.highlight{display:block;overflow-x:auto;background:#f3f3f3;color:#444;padding:1.5em;box-shadow:0 8px 16px #00000026;border-radius:8px}code.hljs{padding:3px 5px}.hljs-comment{color:#697070}.hljs-punctuation,.hljs-tag{color:#444a}.hljs-tag .hljs-attr,.hljs-tag .hljs-name{color:#444}.hljs-attribute,.hljs-doctag,.hljs-keyword,.hljs-meta .hljs-keyword,.hljs-name,.hljs-selector-tag{font-weight:700}.hljs-deletion,.hljs-number,.hljs-quote,.hljs-selector-class,.hljs-selector-id,.hljs-string,.hljs-template-tag,.hljs-type{color:#800}.hljs-section,.hljs-title{color:#800;font-weight:700}.hljs-link,.hljs-operator,.hljs-regexp,.hljs-selector-attr,.hljs-selector-pseudo,.hljs-symbol,.hljs-template-variable,.hljs-variable{color:#ab5656}.hljs-literal{color:#695}.hljs-addition,.hljs-built_in,.hljs-bullet,.hljs-code{color:#397300}.hljs-meta{color:#1f7199}.hljs-meta .hljs-string{color:#38a}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}.language-kotlin:before{display:block;float:right;content:"kotlin";font-weight:700;text-transform:uppercase}.language-typescript:before{display:block;float:right;content:"typescript";font-weight:700;text-transform:uppercase}.language-java:before{display:block;float:right;content:"java";font-weight:700;text-transform:uppercase}.language-javascript:before{display:block;float:right;content:"javascript";font-weight:700;text-transform:uppercase}.language-shell:before{display:block;float:right;content:"shell";font-weight:700;text-transform:uppercase}.language-yaml:before{display:block;float:right;content:"yaml";font-weight:700;text-transform:uppercase}.language-json:before{display:block;float:right;content:"json";font-weight:700;text-transform:uppercase}.language-xml:before{display:block;float:right;content:"xml";font-weight:700;text-transform:uppercase}.language-html:before{display:block;float:right;content:"html";font-weight:700;text-transform:uppercase}.language-css:before{display:block;float:right;content:"css";font-weight:700;text-transform:uppercase}.language-scss:before{display:block;float:right;content:"scss";font-weight:700;text-transform:uppercase}
+</style></head>
+<body><!--nghm-->
+  <app-root _nghost-ng-c582792440 ng-version="17.2.1" ngh="2" ng-server-context="ssg"><app-header _ngcontent-ng-c582792440 _nghost-ng-c2882497807 ngh="0"><header _ngcontent-ng-c2882497807><div _ngcontent-ng-c2882497807 class="header-img"><a _ngcontent-ng-c2882497807 routerlink="/" aria-label="Accueil" href="/"><img _ngcontent-ng-c2882497807 src="img/logo/logo_long.svg" alt="Dev-Mind" title="Dev-Mind"></a></div><nav _ngcontent-ng-c2882497807><a _ngcontent-ng-c2882497807 routerlink="/" aria-label="Accueil" class="nav-home" href="/"><img _ngcontent-ng-c2882497807 src="/img/ic_home_white_24px.svg" rel="start" alt="Accueil"></a><a _ngcontent-ng-c2882497807 routerlink="/formations.html" aria-label="Formations" class href="/formations.html"> Formations</a><a _ngcontent-ng-c2882497807 routerlink="/blog.html" aria-label="Blog" class="active" href="/blog.html">Blog</a><a _ngcontent-ng-c2882497807 routerlink="/experience.html" aria-label="Experience" class href="/experience.html"> Expérience</a></nav><hr _ngcontent-ng-c2882497807></header><div _ngcontent-ng-c2882497807 class="header-space"></div></app-header><router-outlet _ngcontent-ng-c582792440></router-outlet><app-asciidoc-viewer ngh="1"><div class="dm-block--blog"><div class="devmind-section"><h1><!--ngetn--></h1><div class="blog-keywords"><div class="dm-blog--info-date">29/05/2017</div><div class="dm-blog--keyword-detail">JavaScripy</div><div class="dm-blog--keyword-detail">Graph</div><div class="dm-blog--keyword-detail">Highcharts</div><!---->&nbsp; </div><div class="preview"><div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Il existe plusieurs librairies pour faire des graphiques sur un site web. En ce moment j’utilise <a href="https://www.highcharts.com/">highcharts</a>. Cette librairie a l’avantage de proposer un site avec beaucoup d’exemples et une bonne description de l’API.</p>
+</div>
+<div class="paragraph">
+<p>Mais les options de paramétrages sont très nombreuses et il n’est pas toujours simple de faire un graphique qui colle à notre use case. Je vais prendre un exemple que j’ai rencontré récemment. Je devais créer un graphique composé de zones empilées (staked area) représentant des valeurs négatives et positives. Forcément si j’écris cet article, c’est que tout n’a pas été tout rose.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_créer_un_grapique_de_type_stacked_area">Créer un grapique de type <em>stacked area</em></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Prenons un exemple (les sources présentées ici sont disponibles sous <a href="https://github.com/javamind/stackedarea">Github</a>) dans lequel nous essayons d’afficher des mesures temporelles</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-javascript">{
+   <span class="hljs-attr">source</span>: <span class="hljs-string">"Captor 1"</span>,
+   <span class="hljs-attr">measures</span>: [
+     {
+        <span class="hljs-attr">instant</span>: <span class="hljs-number">1495587600000</span>,
+        <span class="hljs-attr">value</span>: <span class="hljs-number">7390</span>
+     },
+     {
+        <span class="hljs-attr">instant</span>: <span class="hljs-number">1495591200000</span>,
+        <span class="hljs-attr">value</span>: -<span class="hljs-number">5670</span>
+     },
+     <span class="hljs-comment">//...</span>
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Si je regarde l’exemple de <a href="https://www.highcharts.com/demo/area-stacked" class="bare">https://www.highcharts.com/demo/area-stacked</a> je peux écrire</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-javascript">  <span class="hljs-keyword">function</span> <span class="hljs-title function_">_createSeries</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-variable constant_">MEASURES</span>.<span class="hljs-title function_">map</span>(<span class="hljs-function">(<span class="hljs-params">serie</span>) =&gt;</span> {
+      <span class="hljs-keyword">return</span> {
+        <span class="hljs-attr">type</span>: <span class="hljs-string">'area'</span>,
+        <span class="hljs-attr">name</span>: serie.<span class="hljs-property">source</span>,
+        <span class="hljs-attr">data</span>: serie.<span class="hljs-property">measures</span>.<span class="hljs-title function_">map</span>(<span class="hljs-function">(<span class="hljs-params">measure</span>) =&gt;</span> {
+          <span class="hljs-keyword">return</span> {<span class="hljs-attr">x</span>: measure.<span class="hljs-property">instant</span>, <span class="hljs-attr">y</span>: measure.<span class="hljs-property">value</span>}
+        })
+      }
+    });
+  }
+
+  <span class="hljs-title class_">Highcharts</span>.<span class="hljs-title function_">setOptions</span>({
+    <span class="hljs-attr">title</span>: {<span class="hljs-attr">text</span>: <span class="hljs-string">'Stack area in Highchart'</span>},
+    <span class="hljs-attr">xAxis</span>: {
+      <span class="hljs-attr">type</span>: <span class="hljs-string">'datetime'</span>,
+    },
+    <span class="hljs-attr">plotOptions</span>: {
+      <span class="hljs-attr">area</span>: {
+        <span class="hljs-attr">stacking</span>: <span class="hljs-string">'normal'</span>,
+      }
+    }
+  });
+
+  <span class="hljs-keyword">new</span> <span class="hljs-title class_">Highcharts</span>.<span class="hljs-title class_">Chart</span>({<span class="hljs-attr">chart</span>: {<span class="hljs-attr">renderTo</span>: <span class="hljs-string">'myChart'</span>}, <span class="hljs-attr">series</span>: <span class="hljs-title function_">_createSeries</span>()})</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Si les valeurs sont toutes positives ou toutes négatives vous n’avez aucun problème. Par contre si vous avez un mix, <a href="https://www.highcharts.com/">Highcharts</a> n’est pas capable d’afficher correctement les données comme nous pouvons le voir ci dessous.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2017/highcharts_stackedarea_01.png" alt="Exemple ne marchant pas">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_dissocier_les_valeurs_positives_et_négatives">Dissocier les valeurs positives et négatives</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Pour contourner le problème nous allons n’afficher que des courbes qui contiennent que des valeurs positives ou que des valeurs positives. Pour chaque jeu de données, chaque série du graphe nous allons en créer deux</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>une avec des valeurs positives et des 0 à la place des valeurs négatives</p>
+</li>
+<li>
+<p>une avec des valeurs négatives et des 0 à la place des valeurs positives</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-javascript">  <span class="hljs-keyword">function</span> <span class="hljs-title function_">evaluator</span>(<span class="hljs-params">measure</span>) {
+    <span class="hljs-keyword">if</span> (measure.<span class="hljs-property">value</span> &gt; <span class="hljs-number">0</span>) {
+      <span class="hljs-keyword">return</span> positive ? measure.<span class="hljs-property">value</span> : <span class="hljs-number">0</span>;
+    }
+    <span class="hljs-keyword">return</span> positive ? <span class="hljs-number">0</span> : measure.<span class="hljs-property">value</span>;
+  }
+
+  <span class="hljs-keyword">function</span> <span class="hljs-title function_">_createSeries</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-variable constant_">MEASURES</span>.<span class="hljs-title function_">map</span>(<span class="hljs-function"><span class="hljs-params">serie</span> =&gt;</span> [
+      <span class="hljs-title function_">_createSerie</span>(serie, color, <span class="hljs-literal">true</span>),
+      <span class="hljs-title function_">_createSerie</span>(serie, color, <span class="hljs-literal">false</span>)
+    ])
+    .<span class="hljs-title function_">reduce</span>(<span class="hljs-function">(<span class="hljs-params">acc, val</span>) =&gt;</span> acc.<span class="hljs-title function_">concat</span>(val));
+  }
+
+  <span class="hljs-keyword">function</span> <span class="hljs-title function_">_createSerie</span>(<span class="hljs-params">serie, positive</span>) {
+    <span class="hljs-keyword">return</span> {
+      <span class="hljs-attr">type</span>: <span class="hljs-string">'area'</span>,
+      <span class="hljs-attr">stack</span>: positive ? <span class="hljs-number">1</span> : <span class="hljs-number">0</span>,
+      <span class="hljs-attr">showInLegend</span>: positive,
+      <span class="hljs-attr">name</span>: serie.<span class="hljs-property">source</span>,
+      <span class="hljs-attr">data</span>: serie.<span class="hljs-property">measures</span>.<span class="hljs-title function_">map</span>(<span class="hljs-function">(<span class="hljs-params">measure</span>) =&gt;</span> {
+        <span class="hljs-keyword">return</span> {<span class="hljs-attr">x</span>: measure.<span class="hljs-property">instant</span>, <span class="hljs-attr">y</span>: positive !== <span class="hljs-literal">null</span> ? evaluator(measure) : measure.<span class="hljs-property">value</span>}
+      })
+    }
+  }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Pour éviter d’avoir une double légende nous utilisons la propriété <code><em>showInLegend: positive</em></code>. Plus important pour avoir un graphique valable, nous devons indiquer à <a href="https://www.highcharts.com/">Highcharts</a> que nous avons 2 manières d’empiler les données (une pour les valeurs positives et une pour les négatives). Nous l’indiquons avec la propriété <code><em>stack: positive ? 1 : 0</em></code>. Les valeurs sont peut importantes elles doivent juste être distinctes dans les 2 cas.</p>
+</div>
+<div class="paragraph">
+<p>Nous optenons</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2017/highcharts_stackedarea_02.png" alt="Exemple ne marchant pas beaucoup plus">
+</div>
+</div>
+<div class="paragraph">
+<p>Est ce mieux ? Les valeurs positives et négatives sont maintenant justes en cumulées. Mais si nous zoomon et regardons par exemple le troisième pas de temps et notamment les enchaînnements entre les points :</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2017/highcharts_stackedarea_03.png" alt="OK en cumulé">
+</div>
+</div>
+<div class="paragraph">
+<p>Le dessin du graphe est faux quand nous passons d’une valeur positive à négative. Si nous n’affichons qu’une série nous pouvons voir le problème</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2017/highcharts_stackedarea_04.png" alt="référence à 0">
+</div>
+</div>
+<div class="paragraph">
+<p>Comme nous faisons une référence à 0 le tracé est faux.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_quelle_solution_choisir">Quelle solution choisir ?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Il n’y a pas de solution idéale. Si vous voulez des zones empilées le tracé de courbe sera faux. Visuellement les défauts sont atténués si vous n’avez pas de grandes variations des valeurs et si ces valeurs sont nombreuses.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2017/highcharts_stackedarea_05.png" alt="plus de valeurs">
+</div>
+</div>
+<div class="paragraph">
+<p>L’autre solution est de ne pas utiliser ce type de graphique si vous voulez cumuler des valeurs positives et négatives. Vous pouvez par exemple utiliser le type <code><em>column</em></code></p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2017/highcharts_stackedarea_06.png" alt="type column">
+</div>
+</div>
+</div>
+</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 14/05/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
+
+<script src="polyfills-RX4V3J3S.js" type="module"></script><script src="main-27LCYEA2.js" type="module"></script>
+
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t6"},"c":{"7":[{"i":"t6","r":1,"x":3}]}},{"c":{"1":[{"i":"c933498719","r":1}]}}]}</script></body></html>
