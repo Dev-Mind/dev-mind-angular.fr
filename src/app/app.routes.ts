@@ -14,7 +14,7 @@ import {Title} from "@angular/platform-browser";
 
 export const routes: Routes = [
   {
-    path: 'home',
+    path: 'home.html',
     component: HomeComponent,
     resolve: {
       current: () => inject(HeaderService).navigateTo('home'),
@@ -30,7 +30,7 @@ export const routes: Routes = [
     }
   },
   {
-    path: 'formation.html',
+    path: 'formations.html',
     component: TrainingComponent,
     resolve: {
       current: () => inject(HeaderService).navigateTo('training'),
@@ -89,8 +89,15 @@ export const routes: Routes = [
     return it;
   }),
   {
+    path: '404.html',
+    component: NotFoundComponent,
+    resolve: {
+      current: () => inject(HeaderService).navigateTo('home')
+    }
+  },
+  {
     path: '',
-    redirectTo: '/home',
+    redirectTo: '/home.html',
     pathMatch: 'full'
   },
   {

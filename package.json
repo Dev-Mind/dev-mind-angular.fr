@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "node asciidoc.js && ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "preview": "node dist/devmind-angular/server/server.mjs",

@@ -64,7 +64,7 @@ async function convertAsciiDocFiles(section) {
           standalone: false,
           catalog_assets: true,
           to_dir: `./${OUTPUT}/${section}`,
-          to_file:  true,
+          to_file: true,
         })
           .replaceAll(`$`, '@dollar@')
           .replaceAll('`', '@backtick@')
@@ -89,7 +89,7 @@ async function convertAsciiDocFiles(section) {
           const fileContents = elem.html();
 
           const highlightedContents = hljs.highlight(fileContents, {language: language || 'javascript'}).value;
-          if(language) {
+          if (language) {
             elem.replaceWith(`<code class="language-${language}">${highlightedContents}</code>`);
           } else {
             elem.replaceWith(`${highlightedContents}`);
@@ -136,7 +136,7 @@ async function convertAsciiDocFiles(section) {
  * @param content
  */
 function writeFile(path, content) {
-  fs.mkdirSync(path.substring(0, path.lastIndexOf('/')), { recursive: true });
+  fs.mkdirSync(path.substring(0, path.lastIndexOf('/')), {recursive: true});
   fs.writeFile(path, content, err => {
     if (err) {
       console.error(err);
@@ -189,13 +189,13 @@ export const ${section}Routes: Routes = ${
 `);
 }
 
-function generateTemplateLoaderFile(metadata, section){
+function generateTemplateLoaderFile(metadata, section) {
   const imports = metadata
     .filter(it => it.filename)
     .map(it => (`import { ${it.filename} } from './${it.folder}/${it.filename}';`))
     .join('\n');
 
-  const exports = metadata .filter(it => it.title)
+  const exports = metadata.filter(it => it.title)
     .map(it => (`${section}GeneratedTemplates.set('${it.filename.replace('_', '')}', ${it.filename});`))
     .join('\n');
 
@@ -247,6 +247,60 @@ function generateRssFeed(metadata, section) {
   writeFile(`./${OUTPUT}/rss/${section}.xml`, fileContent);
 }
 
+function generateSiteMap(metadata, section) {
+  const items = metadata
+    .filter(it => it.title)
+    .map(it => `
+    <url>
+        <loc>https://dev-mind.fr/${section}/${it.filename.replace('_', '') + '.html'}</loc>
+        <lastmod>>${new Date(it.publicationDate).toUTCString()}</lastmod>
+        <priority>0.6</priority>
+    </url>
+    `)
+    .join('\n');
+
+  const fileContent = `<?xml version="1.0" encoding="UTF-8" ?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <url>
+      <loc>https://dev-mind.fr/</loc>
+      <lastmod>${new Date().toUTCString()}</lastmod>
+      <priority>1.00</priority>
+    </url>
+    <url>
+      <loc>https://dev-mind.fr/blog.html</loc>
+      <lastmod>${new Date().toUTCString()}</lastmod>
+      <priority>0.90</priority>
+    </url>
+    <url>
+      <loc>https://dev-mind.fr/blog_archive.html</loc>
+      <lastmod>${new Date().toUTCString()}</lastmod>
+      <priority>0.90</priority>
+    </url>
+    <url>
+      <loc>https://dev-mind.fr/formations.html</loc>
+      <lastmod>${new Date().toUTCString()}</lastmod>
+      <priority>0.90</priority>
+    </url>
+    <url>
+      <loc>https://dev-mind.fr/training/trainings.html</loc>
+      <lastmod>${new Date().toUTCString()}</lastmod>
+      <priority>0.90</priority>
+    </url>
+    <url>
+      <loc>https://dev-mind.fr/experience.html</loc>
+      <lastmod>${new Date().toUTCString()}</lastmod>
+      <priority>0.70</priority>
+    </url>
+    ${items}
+</urlset>
+  `;
+  writeFile(`./src/sitemap.xml`, fileContent);
+}
+
 /**
  * Comparator to sort blog entries by publication date
  * @param a
@@ -260,6 +314,7 @@ convertAsciiDocFiles('blog').then(metadata => {
   generateRoutingFile(metadata.sort(comparator), 'blog');
   generateTemplateLoaderFile(metadata, 'blog');
   generateRssFeed(metadata.sort(comparator), 'blog');
+  generateSiteMap(metadata.sort(comparator), 'blog');
 });
 
 convertAsciiDocFiles('training').then(metadata => {

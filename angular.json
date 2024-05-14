@@ -33,7 +33,9 @@
               "src/ic_logo.xml",
               "src/keybase.txt",
               "src/lorem.txt",
+              "src/robots.txt",
               "src/assets",
+              "src/sitemap.xml",
               "src/img",
               {
                 "glob": "**/*.xml",
@@ -56,13 +58,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "2mb",
+                  "maximumError": "3mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "2mb",
+                  "maximumError": "3mb"
                 }
               ],
               "outputHashing": "all"

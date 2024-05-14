@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <url>
+      <loc>https://dev-mind.fr/</loc>
+      <lastmod>Tue, 14 May 2024 20:41:03 GMT</lastmod>
+      <priority>1.00</priority>
+    </url>
+    <url>
+      <loc>https://dev-mind.fr/blog.html</loc>
+      <lastmod>Tue, 14 May 2024 20:41:03 GMT</lastmod>
+      <priority>0.90</priority>
+    </url>
+    <url>
+      <loc>https://dev-mind.fr/blog_archive.html</loc>
+      <lastmod>Tue, 14 May 2024 20:41:03 GMT</lastmod>
+      <priority>0.90</priority>
+    </url>
+    <url>
+      <loc>https://dev-mind.fr/formations.html</loc>
+      <lastmod>Tue, 14 May 2024 20:41:03 GMT</lastmod>
+      <priority>0.90</priority>
+    </url>
+    <url>
+      <loc>https://dev-mind.fr/training/trainings.html</loc>
+      <lastmod>Tue, 14 May 2024 20:41:03 GMT</lastmod>
+      <priority>0.90</priority>
+    </url>
+    <url>
+      <loc>https://dev-mind.fr/experience.html</loc>
+      <lastmod>Tue, 14 May 2024 20:41:03 GMT</lastmod>
+      <priority>0.70</priority>
+    </url>
+    
+    <url>
+        <loc>https://dev-mind.fr/blog/spring_boot_starter_database_schema_initialization.html</loc>
+        <lastmod>>Thu, 13 Oct 2022 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/assertj_extracting_koltin.html</loc>
+        <lastmod>>Fri, 17 Sep 2021 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/java_memoire.html</loc>
+        <lastmod>>Sat, 20 Feb 2021 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/application_web_typescript.html</loc>
+        <lastmod>>Tue, 08 Oct 2019 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/start_typescript_project_and_test_with_jest.html</loc>
+        <lastmod>>Mon, 19 Aug 2019 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/comprendre_programation_android.html</loc>
+        <lastmod>>Wed, 12 Jun 2019 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/kotlin_et_android.html</loc>
+        <lastmod>>Fri, 07 Jun 2019 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/application_android_score.html</loc>
+        <lastmod>>Tue, 01 Jan 2019 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/objectif_clever_cloud_js.html</loc>
+        <lastmod>>Fri, 02 Nov 2018 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/installer_xps_ubuntu.html</loc>
+        <lastmod>>Sun, 16 Sep 2018 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/slide_avec_revealjs_asciidoctor.html</loc>
+        <lastmod>>Sun, 17 Jun 2018 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/premiere_conference_au_togo.html</loc>
+        <lastmod>>Mon, 11 Jun 2018 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/secret_de_la_motivation.html</loc>
+        <lastmod>>Thu, 05 Apr 2018 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/mongo_full_text_index.html</loc>
+        <lastmod>>Fri, 23 Feb 2018 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/publish_maven_central.html</loc>
+        <lastmod>>Mon, 22 Jan 2018 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/mockserver.html</loc>
+        <lastmod>>Mon, 15 Jan 2018 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/junit5_and_springboot.html</loc>
+        <lastmod>>Mon, 08 Jan 2018 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/utiliser_api_envoi_email.html</loc>
+        <lastmod>>Thu, 04 Jan 2018 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/do_your_blog_yourself.html</loc>
+        <lastmod>>Tue, 02 Jan 2018 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/dotcss.html</loc>
+        <lastmod>>Fri, 01 Dec 2017 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/http.html</loc>
+        <lastmod>>Mon, 27 Nov 2017 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/web.html</loc>
+        <lastmod>>Sat, 25 Nov 2017 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/internet.html</loc>
+        <lastmod>>Mon, 20 Nov 2017 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/site_wassadou.html</loc>
+        <lastmod>>Sat, 05 Aug 2017 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/workboxjs.html</loc>
+        <lastmod>>Sun, 02 Jul 2017 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/creer_service_worker.html</loc>
+        <lastmod>>Wed, 28 Jun 2017 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/service_worker.html</loc>
+        <lastmod>>Tue, 20 Jun 2017 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/highcharts_stackedarea.html</loc>
+        <lastmod>>Mon, 29 May 2017 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/nouveau_site_asciidoctor.html</loc>
+        <lastmod>>Tue, 09 May 2017 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/test_services_rest_springboot.html</loc>
+        <lastmod>>Wed, 15 Mar 2017 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/ecrire_ses_scripts_gradle_en_kotlin.html</loc>
+        <lastmod>>Thu, 12 Jan 2017 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/ngeurope_angular2_unittest.html</loc>
+        <lastmod>>Mon, 24 Oct 2016 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/ngeurope_angular_cli.html</loc>
+        <lastmod>>Mon, 24 Oct 2016 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/ngeurope_keynote_misko_hevery.html</loc>
+        <lastmod>>Mon, 24 Oct 2016 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/ngeurope_mobile_first_is_not_mobile_only.html</loc>
+        <lastmod>>Mon, 24 Oct 2016 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/ngeurope_rendering_et_angular.html</loc>
+        <lastmod>>Mon, 24 Oct 2016 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/ngeurope_rxjs_angular2.html</loc>
+        <lastmod>>Mon, 24 Oct 2016 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/ngeurope_typescript_et_angular.html</loc>
+        <lastmod>>Mon, 24 Oct 2016 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/springboot_kotlin.html</loc>
+        <lastmod>>Fri, 23 Sep 2016 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/springboot_http2.html</loc>
+        <lastmod>>Sun, 10 Jul 2016 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/springboot_devtools.html</loc>
+        <lastmod>>Wed, 29 Jun 2016 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/headlesss_testing.html</loc>
+        <lastmod>>Fri, 03 Jun 2016 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/flexbox_layouts_faciles.html</loc>
+        <lastmod>>Wed, 18 May 2016 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/communication_et_neuroscience.html</loc>
+        <lastmod>>Fri, 04 Mar 2016 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/sorganiser_pour_la_complexite.html</loc>
+        <lastmod>>Mon, 22 Feb 2016 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/pousser_message_slack_en_java.html</loc>
+        <lastmod>>Fri, 29 Jan 2016 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/12_patterns_transition_agile.html</loc>
+        <lastmod>>Tue, 03 Nov 2015 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/formes_leadership.html</loc>
+        <lastmod>>Tue, 15 Sep 2015 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+
+    <url>
+        <loc>https://dev-mind.fr/blog/java8_et_les_lambda_stream.html</loc>
+        <lastmod>>Fri, 02 Jan 2015 00:00:00 GMT</lastmod>
+        <priority>0.6</priority>
+    </url>
+    
+</urlset>
+  
