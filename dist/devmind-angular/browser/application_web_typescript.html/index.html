@@ -1,0 +1,751 @@
+<!DOCTYPE html><html lang="en" data-critters-container><head>
+  <meta charset="utf-8">
+  <title>Blog</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    body {
+      min-height: 100vh;
+      max-height: 100vh;
+      font-family: "Helvetica", "Arial", "sans-serif";
+      padding: 0;
+      margin: 0;
+    }
+
+    header {
+      height: 90px;
+      max-height: 90px;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+      background-color: white;
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      z-index: 99;
+      transition-duration: 0.2s;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: max-height, box-shadow;
+      position: fixed;
+      width: 100%;
+      text-align: center;
+    }
+    header hr {
+      width:100%;
+      background-color: #424242;
+      border-color: #424242;
+      display: block;
+      border: 0;
+      height: 0.5em;
+      margin: 0;
+    }
+    .header-img {
+      margin: auto;
+      width: 50%;
+      padding-top: 0.5em;
+      height: 30px;
+    }
+    .header-img img {
+      max-height: 30px !important;
+    }
+    .header-space {
+      min-height: 90px;
+    }
+
+
+    @media screen and (min-width: 901px) {
+      header {
+        height: 120px;
+        max-height: 120px;
+      }
+      .header-img {
+        height: 60px;
+      }
+      .header-img img {
+        max-height: 60px !important;
+      }
+      .header-space {
+        min-height: 120px;
+      }
+      nav a {
+        padding: 6px 24px;
+      }
+      .nav-home{
+        display: block !important;
+      }
+    }
+
+
+    nav {
+      display: -webkit-flex;
+      display: flex;
+      margin: auto;
+    }
+
+    nav a {
+      padding: 0 12px;
+      line-height: 28px;
+      height: 28px;
+      color: #424242;
+      margin: auto;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 13px;
+      border-radius: 4px;
+    }
+    .nav-home{
+      display: none;
+    }
+    nav a > img {
+    // height: 20px;
+    }
+
+    nav a:hover {
+      background-color: #9e9e9e;
+    }
+
+    nav .active {
+      background-color: rgba(0, 0, 0, 0.14);
+    }
+
+    main {
+      overflow-x: hidden;
+    }
+
+    img, picture {
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+    }
+
+    * {
+      box-sizing: border-box; /* pour maîtriser width et flex-basis */
+    }
+
+    .devmind-section {
+      display: block;
+      margin: 0 auto;
+      max-width: 1600px;
+      padding: 60px 40px;
+    }
+
+    @media (max-width: 700px) {
+      .devmind-section {
+        padding: 25px 10px;
+      }
+    }
+
+    @media (min-width: 701px) and (max-width: 900px) {
+      .devmind-section {
+        padding: 40px 25px;
+      }
+    }
+
+    .dm-social {
+      min-width: 2em;
+      max-width: 2em;
+      width: 2em;
+      height: 2em;
+    }
+  </style>
+  <!-- Matomo -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(["setCookieDomain", "*.dev-mind.fr"]);
+    _paq.push(["disableCampaignParameters"]);
+    _paq.push(["setDoNotTrack", true]);
+    _paq.push(["disableCookies"]);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="https://devmind.matomo.cloud/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '1']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src='https://cdn.matomo.cloud/devmind.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+<style>.dm-block--blog{width:100%;background-color:#eceff1;color:#424242;padding:0;margin:0}.dm-block--blog a,.dm-block--blog a:hover,.dm-block--blog a:visited{font-weight:700;color:#424242;text-decoration:none}footer{background-color:#424242}.is-small-screen{display:none}.is-large-screen{display:inherit}@media screen and (max-width: 900px){.is-small-screen{display:inherit}.is-large-screen{display:none}}h1,h2{color:#424242;font-weight:100}h1{font-weight:bolder;font-size:35px;line-height:38px}h2{font-size:25px;line-height:28px}@media (max-width: 700px){h1{font-size:28px;line-height:30px}h2{font-size:22px;line-height:24px}}
+</style><link rel="stylesheet" href="styles-WO7TV6DC.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-WO7TV6DC.css"></noscript><style ng-app-id="ng">.dm_footer[_ngcontent-ng-c2660501952]{color:#eee;display:flex;justify-content:space-between;font-size:14px}.dm_footer[_ngcontent-ng-c2660501952]   .dm_society[_ngcontent-ng-c2660501952]{color:#fff}.dm_footer[_ngcontent-ng-c2660501952]   div[_ngcontent-ng-c2660501952]{margin-right:1em;width:100%}.dm_footer[_ngcontent-ng-c2660501952]   .dm_footer__middle[_ngcontent-ng-c2660501952]{flex-grow:1}.dm_footer[_ngcontent-ng-c2660501952]   .dm_footer__right[_ngcontent-ng-c2660501952]{text-align:right}.dm_footer[_ngcontent-ng-c2660501952]   .is-large-screen[_ngcontent-ng-c2660501952]{padding:.7em;margin:.7em 1em}.dm_footer[_ngcontent-ng-c2660501952]   .is-small-screen[_ngcontent-ng-c2660501952]{padding:0;margin:0 1em;font-size:12px}</style><style ng-app-id="ng">h1{margin-top:.5em}.dm-blog--info-date{font-size:smaller;color:#424242;border:1px solid #aaa;border-radius:24px;padding:.5em 1em;margin-right:.5em;display:inline}.blog-keywords{display:flex;margin-bottom:1em}.blog-keywords .dm-blog--keyword-detail{background-color:#ccc;color:#424242;padding:.5em 1em;margin-right:.5em;border-radius:24px;font-size:smaller}.toc{background-color:#ccc;margin-top:1em;border:1px solid #ccc;padding:1em;border-radius:8px}.toc #toctitle{font-weight:700;margin-bottom:.5em}img{max-width:100%;height:auto}.imageblock>.content{display:flex;justify-content:center;align-items:center}.highlight{display:block;overflow-x:auto;background:#f3f3f3;color:#444;padding:1.5em;box-shadow:0 8px 16px #00000026;border-radius:8px}code.hljs{padding:3px 5px}.hljs-comment{color:#697070}.hljs-punctuation,.hljs-tag{color:#444a}.hljs-tag .hljs-attr,.hljs-tag .hljs-name{color:#444}.hljs-attribute,.hljs-doctag,.hljs-keyword,.hljs-meta .hljs-keyword,.hljs-name,.hljs-selector-tag{font-weight:700}.hljs-deletion,.hljs-number,.hljs-quote,.hljs-selector-class,.hljs-selector-id,.hljs-string,.hljs-template-tag,.hljs-type{color:#800}.hljs-section,.hljs-title{color:#800;font-weight:700}.hljs-link,.hljs-operator,.hljs-regexp,.hljs-selector-attr,.hljs-selector-pseudo,.hljs-symbol,.hljs-template-variable,.hljs-variable{color:#ab5656}.hljs-literal{color:#695}.hljs-addition,.hljs-built_in,.hljs-bullet,.hljs-code{color:#397300}.hljs-meta{color:#1f7199}.hljs-meta .hljs-string{color:#38a}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}.language-kotlin:before{display:block;float:right;content:"kotlin";font-weight:700;text-transform:uppercase}.language-typescript:before{display:block;float:right;content:"typescript";font-weight:700;text-transform:uppercase}.language-java:before{display:block;float:right;content:"java";font-weight:700;text-transform:uppercase}.language-javascript:before{display:block;float:right;content:"javascript";font-weight:700;text-transform:uppercase}.language-shell:before{display:block;float:right;content:"shell";font-weight:700;text-transform:uppercase}.language-yaml:before{display:block;float:right;content:"yaml";font-weight:700;text-transform:uppercase}.language-json:before{display:block;float:right;content:"json";font-weight:700;text-transform:uppercase}.language-xml:before{display:block;float:right;content:"xml";font-weight:700;text-transform:uppercase}.language-html:before{display:block;float:right;content:"html";font-weight:700;text-transform:uppercase}.language-css:before{display:block;float:right;content:"css";font-weight:700;text-transform:uppercase}.language-scss:before{display:block;float:right;content:"scss";font-weight:700;text-transform:uppercase}
+</style></head>
+<body><!--nghm-->
+  <app-root _nghost-ng-c582792440 ng-version="18.0.0" ngh="2" ng-server-context="ssg"><app-header _ngcontent-ng-c582792440 _nghost-ng-c2882497807 ngh="0"><header _ngcontent-ng-c2882497807><div _ngcontent-ng-c2882497807 class="header-img"><a _ngcontent-ng-c2882497807 routerlink="/" aria-label="Accueil" href="/"><img _ngcontent-ng-c2882497807 src="img/logo/logo_long.svg" alt="Dev-Mind" title="Dev-Mind"></a></div><nav _ngcontent-ng-c2882497807><a _ngcontent-ng-c2882497807 routerlink="/" aria-label="Accueil" class="nav-home" href="/"><img _ngcontent-ng-c2882497807 src="/img/ic_home_white_24px.svg" rel="start" alt="Accueil"></a><a _ngcontent-ng-c2882497807 routerlink="/formations.html" aria-label="Formations" class href="/formations.html"> Formations</a><a _ngcontent-ng-c2882497807 routerlink="/blog.html" aria-label="Blog" class="active" href="/blog.html">Blog</a><a _ngcontent-ng-c2882497807 routerlink="/experience.html" aria-label="Experience" class href="/experience.html"> Expérience</a></nav><hr _ngcontent-ng-c2882497807></header><div _ngcontent-ng-c2882497807 class="header-space"></div></app-header><router-outlet _ngcontent-ng-c582792440></router-outlet><app-asciidoc-viewer ngh="1"><div class="dm-block--blog"><div class="devmind-section"><h1><!--ngetn--></h1><div class="blog-keywords"><div class="dm-blog--info-date">08/10/2019</div><div class="dm-blog--keyword-detail">Web</div><div class="dm-blog--keyword-detail">Typescript</div><!---->&nbsp; </div><div class="preview"><div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="application_web_typescript.html#_etape_1_mettre_en_place_un_serveur_web">Etape 1 : Mettre en place un serveur web</a></li>
+<li><a href="application_web_typescript.html#_etape_2_servir_des_ressources_statiques">Etape 2 : Servir des ressources statiques</a></li>
+<li><a href="application_web_typescript.html#_etape_3_une_classe_pour_gérer_nos_données">Etape 3 : Une classe pour gérer nos données</a></li>
+<li><a href="application_web_typescript.html#_etape_4_mettre_en_place_des_règles_de_routage_et_un_système_de_templating">Etape 4 : Mettre en place des règles de routage et un système de templating</a>
+<ul class="sectlevel2">
+<li><a href="application_web_typescript.html#_template_de_pages">Template de pages</a></li>
+<li><a href="application_web_typescript.html#_routes">Routes</a></li>
+<li><a href="application_web_typescript.html#_mise_à_jour_de_la_configuration">Mise à jour de la configuration</a></li>
+<li><a href="application_web_typescript.html#_créer_todoroute">Créer TodoRoute</a></li>
+<li><a href="application_web_typescript.html#_les_templates_handlebars">Les templates handlebars</a></li>
+</ul>
+</li>
+<li><a href="application_web_typescript.html#_conclusion">Conclusion</a></li>
+</ul>
+</div>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Nous avons vu dans l’<a href="https://dev-mind.fr/blog/2019/start_typescript_project_and_test_with_jest.html">article précédent</a>, comment démarrer un nouveau projet en TypeScript et le tester avec Jest. Essayons d’aller plus loin et de mettre en place une application web.</p>
+</div>
+<div class="paragraph">
+<p>Pour illustrer cet article, nous allons mettre en place une application permettant de gérer une liste de tâches à faire (todo list). Le code illustrant cet article est disponible sous <a href="https://gitlab.com/javamind/typescript-web">Gitlab</a>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2019/web_typescript0.png" alt="Webapp en TypeScript">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_etape_1_mettre_en_place_un_serveur_web">Etape 1 : Mettre en place un serveur web</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Ma solution se base sur <a href="https://expressjs.com/fr/">ExpressJS</a>. Pour plus d’informations, vous pouvez lire <a href="https://dev-mind.fr/blog/2018/objectif_clever_cloud_js.html">mon article</a>, dans lequel j’explique comment démarrer avec <a href="https://expressjs.com/fr/">ExpressJS</a>, comment le configurer pour la production et comment déployer votre application sur <a href="https://www.clever-cloud.com/en/">Clever Cloud</a>. Aujourd’hui le but est de reprendre la même chose mais en TypeScript.</p>
+</div>
+<div class="paragraph">
+<p>Commençons par le début : créons un serveur ExpressJs et créons un handler de requête qui affichera un message <code>Hello World</code>.</p>
+</div>
+<div class="paragraph">
+<p>On initie le projet en créant l’arborescence, et en lançant le client <code>npm</code> pour configurer notre nouveau projet <a href="https://nodejs.org/en/">NodeJS</a></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell">mkdir -p myproject/src/main/typescript
+mkdir -p myproject/src/test/typescript
+cd myproject
+npm init</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Nous pouvons maintenant installer les dépendances avec <code>npm</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell">npm install typescript
+npm install express @types/express serve-static
+npm install errorhandler @types/errorhandler express-handlebars @types/express-handlebars</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Pour information nous chargeons aussi les fichiers descriptor TypeScript (<code>@types/…​</code>) qui permettent d’utiliser des sources JavaScript dans votre projet. Ces fichiers décrivent les types, les classes et les méthodes utilisées dans un fichier JavaScript. Ainsi le compilateur peut trouver les différents types définis dans les librairies JS, les IDEs peuvent proposer de la complétion…​</p>
+</div>
+<div class="paragraph">
+<p>Configurons maintenant TypeScript. Lançons la commande <code>./node_modules/.bin/tsc --init</code> pour initialiser un fichier <code>tsconfig.json</code>. Le contenu du fichier peut être recopié de l’<a href="https://dev-mind.fr/blog/2019/start_typescript_project_and_test_with_jest.html">article précédent</a>.</p>
+</div>
+<div class="paragraph">
+<p>Nous allons créer une classe qui représentera notre application Express dans le fichier <code>express.ts</code> et le répertoire <code>src/main/typescript</code>. Nous créons aussi une interface qui décrit les paramètres attendus par notre classe</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> express <span class="hljs-keyword">from</span> <span class="hljs-string">'express'</span>;
+<span class="hljs-keyword">import</span> errorHandler = <span class="hljs-built_in">require</span>(<span class="hljs-string">"errorhandler"</span>);
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">ServerOptions</span> {
+    <span class="hljs-comment">// Path contenant toutes les ressources statiques (css, js...)</span>
+    <span class="hljs-attr">static</span>: <span class="hljs-built_in">string</span>;
+    <span class="hljs-comment">// Port de votre serveur</span>
+    <span class="hljs-attr">port</span>: <span class="hljs-built_in">number</span>;
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Express</span> {
+
+    <span class="hljs-keyword">public</span> <span class="hljs-attr">app</span>: express.<span class="hljs-property">Application</span>;
+
+    <span class="hljs-title function_">constructor</span>(<span class="hljs-params"><span class="hljs-keyword">public</span> options: ServerOptions</span>) {
+        <span class="hljs-comment">//create expressjs application</span>
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">app</span> = <span class="hljs-title function_">express</span>();
+        <span class="hljs-comment">//configure application</span>
+        <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">config</span>();
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">app</span>.<span class="hljs-title function_">set</span>(<span class="hljs-string">'port'</span>, <span class="hljs-variable language_">this</span>.<span class="hljs-property">options</span>.<span class="hljs-property">port</span>);
+    }
+
+    <span class="hljs-comment">/**
+     * Configure application
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-title function_">config</span>(<span class="hljs-params"></span>) {
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">app</span>
+            .<span class="hljs-title function_">get</span>(<span class="hljs-string">'/'</span>, <span class="hljs-function">(<span class="hljs-params">req, res</span>) =&gt;</span> res.<span class="hljs-title function_">send</span>(<span class="hljs-string">'Hello World!'</span>))
+            .<span class="hljs-title function_">use</span>(<span class="hljs-title function_">errorHandler</span>());
+    }
+
+    <span class="hljs-comment">/**
+     * Bootstrap the application.
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-title function_">bootstrap</span>(<span class="hljs-attr">options</span>: <span class="hljs-title class_">ServerOptions</span>): <span class="hljs-title class_">Express</span> {
+        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"Try to start server"</span>);
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Express</span>(options);
+    }
+
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Pour le moment le contenu de cette classe est simplifiée et le but est d’enrichir la méthode <code>config()</code> au fur et à mesure de l’avancée de cet article. Dans ce premier exemple, nous avons défini un handler http associé à l’URL <code>/</code> et retournant <code>Hello World</code>.</p>
+</div>
+<div class="paragraph">
+<p>Nous pouvons maintenant créer un fichier <code>app.ts</code> qui sera utilisé pour démarrer notre serveur (le mettre au même niveau)</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-typescript"><span class="hljs-keyword">import</span> {<span class="hljs-title class_">Express</span>, <span class="hljs-title class_">ServerOptions</span>} <span class="hljs-keyword">from</span> <span class="hljs-string">'./express'</span>;
+<span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> http <span class="hljs-keyword">from</span> <span class="hljs-string">'http'</span>;
+
+<span class="hljs-keyword">const</span> options = {
+    <span class="hljs-attr">static</span>: `src/main/<span class="hljs-keyword">static</span>`,
+    <span class="hljs-attr">port</span>: <span class="hljs-number">8081</span>
+} <span class="hljs-keyword">as</span> <span class="hljs-title class_">ServerOptions</span>;
+
+<span class="hljs-keyword">const</span> server = <span class="hljs-title class_">Express</span>.<span class="hljs-title function_">bootstrap</span>(options).<span class="hljs-property">app</span>;
+
+http.<span class="hljs-title function_">createServer</span>(server)
+    .<span class="hljs-title function_">listen</span>(options.<span class="hljs-property">port</span>)
+    .<span class="hljs-title function_">on</span>(<span class="hljs-string">"listening"</span>, <span class="hljs-function">() =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">debug</span>(<span class="hljs-string">'Listening on '</span> + options.<span class="hljs-property">port</span>));</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Pour simplifier le lancement de l’application, la propriété <code>script</code> du fichier <code>package.json</code> peut contenir une entrée <code>start</code> qui lancera la compilation TypeScript via <code>tsc</code> et exécutera le fichier JS compilé</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json"><span class="hljs-punctuation">{</span>
+  <span class="hljs-attr">"name"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"devmind-typescript"</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">"scripts"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+    <span class="hljs-attr">"start"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"tsc; node ./build/app.js"</span>
+  <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">"dependencies"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+    <span class="hljs-comment">// ...</span>
+  <span class="hljs-punctuation">}</span>
+<span class="hljs-punctuation">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Gràce à ce nouveau paramétrage, l’application peut être lancée via la commande <code>npm run start</code>. Vous pouvez tester : un message <code>Listening on 8081</code> doit s’afficher dans la concole et l’URL <code><a href="http://localhost:8081/" class="bare">http://localhost:8081/</a></code> retourne un message <code>Hello world</code>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_etape_2_servir_des_ressources_statiques">Etape 2 : Servir des ressources statiques</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Un site web a souvent besoin de servir des ressources statiques : des fichiers HTML, JavaScript, CSS…​ Nous allons modifier la configuration de notre serveur pour que les ressources du répertoire <code>src/main/static</code> soient exposées. Notez que nous avons défini plus haut ce chemin dans l’interface de configuration <code>ServerOptions</code>.</p>
+</div>
+<div class="paragraph">
+<p>Modifions la méthode <code>config()</code> de notre classe Express</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-typescript"><span class="hljs-variable language_">this</span>.<span class="hljs-property">app</span>
+  .<span class="hljs-title function_">use</span>(express.<span class="hljs-title function_">static</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">options</span>.<span class="hljs-property">static</span>))
+  .<span class="hljs-title function_">get</span>(<span class="hljs-string">'/'</span>, <span class="hljs-function">(<span class="hljs-params">req, res</span>) =&gt;</span> res.<span class="hljs-title function_">send</span>(<span class="hljs-string">'Hello World!'</span>))
+  .<span class="hljs-title function_">use</span>(<span class="hljs-title function_">errorHandler</span>());</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Pour améliorer la mise en forme des pages de l’application, nous téléchargeons <a href="https://getbootstrap.com/docs/4.3/getting-started/download/">Bootstrap</a> dans <code>src/main/static</code>. Ces ressources CSS peuvent être utilisées dans une page <code>hello.html</code></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-html">&lt;html&gt;
+&lt;head&gt;
+    &lt;link rel="stylesheet" href="css/bootstrap.min.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello TypeScript&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_etape_3_une_classe_pour_gérer_nos_données">Etape 3 : Une classe pour gérer nos données</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Dans un futur article je vous expliquerai comment utiliser une base de données. Pour le moment nous allons gérer les données d’une manière triviale et proposer un DAO qui gérera une liste de données en mémoire</p>
+</div>
+<div class="paragraph">
+<p>Créons un fichier <code>todo.dao.ts</code> qui contiendra le type <code>Todo</code> (tâche à faire), objet de base de notre application. Les données seront stockées pour notre exemple en mémoire dans un tableau <code>TODO_DATA</code></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-typescript"><span class="hljs-keyword">export</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">Todo</span> {
+    <span class="hljs-attr">id</span>: <span class="hljs-built_in">number</span>;
+    <span class="hljs-attr">label</span>: <span class="hljs-built_in">string</span>;
+    <span class="hljs-attr">checked</span>: <span class="hljs-built_in">boolean</span>;
+}
+
+<span class="hljs-keyword">let</span> sequence = <span class="hljs-number">1</span>;
+<span class="hljs-keyword">const</span> <span class="hljs-attr">TODO_DATA</span>: <span class="hljs-title class_">Todo</span>[] = [
+    {<span class="hljs-attr">id</span>: sequence++, <span class="hljs-attr">label</span>: <span class="hljs-string">'Ecrire un article'</span>, <span class="hljs-attr">checked</span>: <span class="hljs-literal">true</span>},
+    {<span class="hljs-attr">id</span>: sequence++, <span class="hljs-attr">label</span>: <span class="hljs-string">'Veille techno sur TypeScript'</span>, <span class="hljs-attr">checked</span>: <span class="hljs-literal">false</span>},
+    {<span class="hljs-attr">id</span>: sequence++, <span class="hljs-attr">label</span>: <span class="hljs-string">'Voir la dernière release de ExpressJS'</span>, <span class="hljs-attr">checked</span>: <span class="hljs-literal">false</span>}
+];</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>La classe permettant de manipuler les données peut avoir cette forme</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-typescript"><span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">TodoDao</span> {
+
+    <span class="hljs-title function_">findAll</span>(): <span class="hljs-title class_">Todo</span>[] {
+        <span class="hljs-keyword">return</span> <span class="hljs-variable constant_">TODO_DATA</span>;
+    }
+
+    <span class="hljs-title function_">findById</span>(<span class="hljs-attr">id</span>: <span class="hljs-built_in">number</span>): <span class="hljs-title class_">Todo</span> {
+        <span class="hljs-keyword">const</span> todos = <span class="hljs-variable constant_">TODO_DATA</span>.<span class="hljs-title function_">filter</span>(<span class="hljs-function"><span class="hljs-params">elt</span> =&gt;</span> elt.<span class="hljs-property">id</span> === id);
+        <span class="hljs-keyword">return</span> todos.<span class="hljs-property">length</span> &gt; <span class="hljs-number">0</span> ? todos[<span class="hljs-number">0</span>] : <span class="hljs-literal">undefined</span>;
+    }
+
+    <span class="hljs-title function_">save</span>(<span class="hljs-attr">todo</span>: <span class="hljs-title class_">Todo</span>): <span class="hljs-title class_">Todo</span> {
+        <span class="hljs-keyword">const</span> <span class="hljs-attr">updated</span>: <span class="hljs-title class_">Todo</span> = <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">findById</span>(todo.<span class="hljs-property">id</span>) || {<span class="hljs-attr">id</span>: ++sequence} <span class="hljs-keyword">as</span> <span class="hljs-title class_">Todo</span>;
+        updated.<span class="hljs-property">label</span> = todo.<span class="hljs-property">label</span>;
+        updated.<span class="hljs-property">checked</span> = todo.<span class="hljs-property">checked</span> !== <span class="hljs-literal">undefined</span>;
+        <span class="hljs-keyword">if</span> (!<span class="hljs-variable constant_">TODO_DATA</span>.<span class="hljs-title function_">find</span>(<span class="hljs-function"><span class="hljs-params">elt</span> =&gt;</span> elt.<span class="hljs-property">id</span> === todo.<span class="hljs-property">id</span>)){
+            <span class="hljs-variable constant_">TODO_DATA</span>.<span class="hljs-title function_">push</span>(updated);
+        }
+        <span class="hljs-keyword">return</span> updated;
+    }
+
+    <span class="hljs-title function_">deleteById</span>(<span class="hljs-params">id: <span class="hljs-built_in">number</span></span>) {
+        <span class="hljs-keyword">const</span> index = <span class="hljs-variable constant_">TODO_DATA</span>.<span class="hljs-title function_">map</span>(<span class="hljs-function"><span class="hljs-params">elt</span> =&gt;</span> elt.<span class="hljs-property">id</span>).<span class="hljs-title function_">indexOf</span>(id);
+        <span class="hljs-keyword">if</span> (index &gt;= <span class="hljs-number">0</span>) {
+            <span class="hljs-variable constant_">TODO_DATA</span>.<span class="hljs-title function_">splice</span>(index, <span class="hljs-number">1</span>);
+        }
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_etape_4_mettre_en_place_des_règles_de_routage_et_un_système_de_templating">Etape 4 : Mettre en place des règles de routage et un système de templating</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Il est temps d’aller plus loin et de paramétrer des routes et des templates de page.</p>
+</div>
+<div class="sect2">
+<h3 id="_template_de_pages">Template de pages</h3>
+<div class="paragraph">
+<p>Quand nous créons une application nous ne voulons pas dupliquer la structuration des pages HTML (headers, footer, mise en forme générale…​.). Nous voulons aussi par exemple passer des valeurs dynamiques : par exemple envoyer une liste d’éléments à une page pour afficher le détail.</p>
+</div>
+<div class="paragraph">
+<p>La solution est d’utiliser un sytème de template. Dans cet exemple nous utiliserons <a href="https://handlebarsjs.com/">handlebars</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_routes">Routes</h3>
+<div class="paragraph">
+<p>Nous allons aussi mettre en place un sytème de routage "intelligent" permettant de naviguer dans l’application. Le système de routage est aussi capable d’aller récupérer des arguments dans les URL. Pour chaque route vous pouvez donner la méthode HTTP (GET, POST…​) qui l’active.</p>
+</div>
+<div class="paragraph">
+<p>Dans notre exemple, nous allons mettre en place ce sytème de routes.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>GET <code>/todos</code> renverra la liste des todos</p>
+</li>
+<li>
+<p>GET <code>/todos/:id</code> affichera le détail du todo ayant l’identifiant <code>id</code></p>
+</li>
+<li>
+<p>POST <code>/todos/:id/delete</code> supprimera le todo ayant l’identifiant <code>id</code></p>
+</li>
+<li>
+<p>GET <code>/todos/create</code> affichera</p>
+</li>
+<li>
+<p>POST <code>/todos</code> permettra de créer un nouveau todo</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Nous n’utilisons que les méthodes GET et POST car nous n’allons faire que des formulaires HTML et en HTML, ce sont les seules méthodes acceptées par la balise <code>&lt;form&gt;</code>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_mise_à_jour_de_la_configuration">Mise à jour de la configuration</h3>
+<div class="paragraph">
+<p>Modifions notre configuration Express (la classe TodoRoute sera créée plus tard)</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> express <span class="hljs-keyword">from</span> <span class="hljs-string">'express'</span>;
+<span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> handlebars <span class="hljs-keyword">from</span> <span class="hljs-string">'express-handlebars'</span>;
+<span class="hljs-keyword">import</span> errorHandler = <span class="hljs-built_in">require</span>(<span class="hljs-string">"errorhandler"</span>);
+<span class="hljs-keyword">import</span> {<span class="hljs-title class_">TodoRoute</span>} <span class="hljs-keyword">from</span> <span class="hljs-string">"./todo.route"</span>;
+<span class="hljs-keyword">import</span> bodyParser = <span class="hljs-built_in">require</span>(<span class="hljs-string">"body-parser"</span>);
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Express</span> {
+
+  <span class="hljs-comment">// ...</span>
+  <span class="hljs-keyword">public</span> <span class="hljs-title function_">config</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">const</span> router = express.<span class="hljs-title class_">Router</span>();
+
+    <span class="hljs-title class_">TodoRoute</span>.<span class="hljs-title function_">create</span>(router);
+
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">app</span>
+        .<span class="hljs-title function_">engine</span>(<span class="hljs-string">'handlebars'</span>, <span class="hljs-title function_">handlebars</span>())
+        .<span class="hljs-title function_">set</span>(<span class="hljs-string">'view engine'</span>, <span class="hljs-string">'handlebars'</span>)
+        .<span class="hljs-title function_">enable</span>(<span class="hljs-string">'view cache'</span>)
+        .<span class="hljs-title function_">enable</span>(<span class="hljs-string">'trust proxy'</span>)
+        .<span class="hljs-title function_">set</span>(<span class="hljs-string">'views'</span>, `${__dirname}/../src/main/views/`)
+        .<span class="hljs-title function_">use</span>(<span class="hljs-title function_">bodyParser</span>())
+        .<span class="hljs-title function_">use</span>(router)
+        .<span class="hljs-title function_">use</span>(express.<span class="hljs-title function_">static</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">options</span>.<span class="hljs-property">static</span>))
+        .<span class="hljs-title function_">get</span>(<span class="hljs-string">'/'</span>, <span class="hljs-function">(<span class="hljs-params">req, res</span>) =&gt;</span> res.<span class="hljs-title function_">send</span>(<span class="hljs-string">'Hello World!'</span>))
+        .<span class="hljs-title function_">use</span>(<span class="hljs-title function_">errorHandler</span>());
+  }
+}</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>handlebars</code> est configurer pour aller chercher les templates de pages dans le répertoire <code>src/main/views</code>.</p>
+</li>
+<li>
+<p>bodyParser() permet à Express de parser les requêtes HTTP pour lire les paramètres envoyés dans le corps de la requête</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_créer_todoroute">Créer TodoRoute</h3>
+<div class="paragraph">
+<p>Nous devons maintenant créer nos premières routes. Elle seront définies dans le fichier <code>todo.route.ts</code> dans le répertoire <code>src/main/typescript</code></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-typescript"><span class="hljs-keyword">import</span> {<span class="hljs-title class_">Request</span>, <span class="hljs-title class_">Response</span>, <span class="hljs-title class_">Router</span>} <span class="hljs-keyword">from</span> <span class="hljs-string">"express"</span>;
+<span class="hljs-keyword">import</span> {<span class="hljs-title class_">Todo</span>, <span class="hljs-title class_">TodoDao</span>} <span class="hljs-keyword">from</span> <span class="hljs-string">"./todo.dao"</span>;
+
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">TodoRoute</span>{
+
+    <span class="hljs-attr">dao</span>:<span class="hljs-title class_">TodoDao</span>;
+
+    <span class="hljs-title function_">constructor</span>(<span class="hljs-params">dao: TodoDao</span>) {
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">dao</span> = dao;
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-title function_">create</span>(<span class="hljs-params">router: Router</span>) {
+        <span class="hljs-keyword">const</span> route = <span class="hljs-keyword">new</span> <span class="hljs-title class_">TodoRoute</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">TodoDao</span>());
+        router.<span class="hljs-title function_">get</span>(<span class="hljs-string">"/todos"</span>, <span class="hljs-function">(<span class="hljs-params">req: Request, res: Response</span>) =&gt;</span> route.<span class="hljs-title function_">findAll</span>(req, res));
+        router.<span class="hljs-title function_">get</span>(<span class="hljs-string">"/todos/:id"</span>, <span class="hljs-function">(<span class="hljs-params">req: Request, res: Response</span>) =&gt;</span> route.<span class="hljs-title function_">findById</span>(req, res, (req.<span class="hljs-property">params</span> <span class="hljs-keyword">as</span> <span class="hljs-built_in">any</span>).<span class="hljs-property">id</span>));
+        router.<span class="hljs-title function_">post</span>(<span class="hljs-string">"/todos/:id/delete"</span>, <span class="hljs-function">(<span class="hljs-params">req: Request, res: Response</span>) =&gt;</span> route.<span class="hljs-title function_">deleteById</span>(req, res, (req.<span class="hljs-property">params</span> <span class="hljs-keyword">as</span> <span class="hljs-built_in">any</span>).<span class="hljs-property">id</span>));
+        router.<span class="hljs-title function_">get</span>(<span class="hljs-string">"/todos/create"</span>, <span class="hljs-function">(<span class="hljs-params">req: Request, res: Response</span>) =&gt;</span> route.<span class="hljs-title function_">findById</span>(req, res, <span class="hljs-literal">undefined</span>));
+        router.<span class="hljs-title function_">post</span>(<span class="hljs-string">"/todos"</span>, <span class="hljs-function">(<span class="hljs-params">req: Request, res: Response</span>) =&gt;</span> route.<span class="hljs-title function_">save</span>(req, res, req.<span class="hljs-property">body</span>));
+    }
+
+    <span class="hljs-keyword">private</span> <span class="hljs-title function_">viewOne</span>(<span class="hljs-params">req: Request, res: Response, todo:Todo</span>){
+        res.<span class="hljs-property">locals</span>[<span class="hljs-string">'title'</span>] = todo.<span class="hljs-property">id</span> ? <span class="hljs-string">'Modification Todo'</span> : <span class="hljs-string">'Ajout Todo'</span>;
+        res.<span class="hljs-property">locals</span>[<span class="hljs-string">'todo'</span>] = <span class="hljs-variable language_">this</span>.<span class="hljs-property">dao</span>.<span class="hljs-title function_">findById</span>(todo.<span class="hljs-property">id</span>) || {} <span class="hljs-keyword">as</span> <span class="hljs-title class_">Todo</span>;
+        res.<span class="hljs-title function_">render</span>(<span class="hljs-string">'todo_view'</span>);
+    }
+
+    <span class="hljs-keyword">private</span> <span class="hljs-title function_">viewAll</span>(<span class="hljs-params">req: Request, res: Response, todos:Todo[]</span>){
+        res.<span class="hljs-property">locals</span>[<span class="hljs-string">'title'</span>] = <span class="hljs-string">'Liste des todos'</span>;
+        res.<span class="hljs-property">locals</span>[<span class="hljs-string">'todos'</span>] = todos;
+        res.<span class="hljs-title function_">render</span>(<span class="hljs-string">'todo_list_view'</span>);
+    }
+
+    <span class="hljs-keyword">private</span> <span class="hljs-title function_">findAll</span>(<span class="hljs-params">req: Request, res: Response</span>) {
+        <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">viewAll</span>(req, res, <span class="hljs-variable language_">this</span>.<span class="hljs-property">dao</span>.<span class="hljs-title function_">findAll</span>());
+    }
+
+    <span class="hljs-keyword">private</span> <span class="hljs-title function_">findById</span>(<span class="hljs-params">req: Request, res: Response, id: <span class="hljs-built_in">number</span></span>) {
+        <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">viewOne</span>(req, res, <span class="hljs-variable language_">this</span>.<span class="hljs-property">dao</span>.<span class="hljs-title function_">findById</span>(id) || {} <span class="hljs-keyword">as</span> <span class="hljs-title class_">Todo</span>);
+    }
+
+    <span class="hljs-keyword">private</span> <span class="hljs-title function_">deleteById</span>(<span class="hljs-params">req: Request, res: Response, id: <span class="hljs-built_in">number</span></span>) {
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">dao</span>.<span class="hljs-title function_">deleteById</span>(id);
+        <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">findAll</span>(req, res);
+    }
+
+    <span class="hljs-keyword">private</span> <span class="hljs-title function_">save</span>(<span class="hljs-params">req: Request, res: Response, todo: Todo</span>) {
+        <span class="hljs-keyword">if</span>(!todo.<span class="hljs-property">label</span>){
+            res.<span class="hljs-property">locals</span>[<span class="hljs-string">'errors'</span>] = {
+                <span class="hljs-attr">has</span>: <span class="hljs-literal">true</span>,
+                <span class="hljs-attr">label</span>: <span class="hljs-string">'Le libellé est obligatoire'</span>
+            };
+            <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">viewOne</span>(req, res, todo);
+        }
+        <span class="hljs-keyword">else</span>{
+            <span class="hljs-variable language_">this</span>.<span class="hljs-property">dao</span>.<span class="hljs-title function_">save</span>(todo);
+            <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">findAll</span>(req, res);
+        }
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Dans la première partie, nous créons les associations entre les méthodes HTTP, les chemins et les méthodes qui vont gérér l’affichage.</p>
+</div>
+<div class="paragraph">
+<p>Les méthodes <code>view…​</code> permettent d’afficher un template <code>handlebar</code> via la méthode render. Pour envoyer des paramètres à ce template nous ajoutons des valeurs dans le tableau <code>res.locals</code> de l’objet <code>response</code> (correspond à la réponse HTTP qui sera retournée par le serveur).</p>
+</div>
+<div class="paragraph">
+<p>Les autres méthodes font simplement appel à notre DAO défini plus haut.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_les_templates_handlebars">Les templates handlebars</h3>
+<div class="paragraph">
+<p>Dans la classe définie dans le paragraphe précédent, deux templates sont appelés : <code>todo_view</code> et <code>todo_list_view</code>. Les extensions des fichiers (<code>.handlebars</code>) n’ont pas besoin d’être précisées dans la classe <code>TodoRoute</code>.</p>
+</div>
+<div class="paragraph">
+<p>Pour configurer <code>handlebars</code> un premier template <code>main.handlebars</code> définissant la structure générale de la page doit être créé dans le répertoire <code>src/main/views/layouts</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;{{ title }}&lt;/title&gt;
+  &lt;link rel="stylesheet" href="/css/bootstrap.min.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class="container"&gt;
+    &lt;h1&gt;{{ title }}&lt;/h1&gt;
+    &lt;hr&gt;
+    {{{body}}}
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><code>handlebars</code> utilise des moustaches <code>{{ …​ }}</code> pour afficher le contenu de variables quand le template est compilé en HTML. <code>{{ title }}</code> est passé dans le code du routeur plus haut et <code>{{ body }}</code> fait référence au template à afficher. Par exemple quand on veut gérer la liste des todos, nous allons créer un fichier <code>todo_list_view.handlebars</code> dans le répertoire <code>src/main/views</code>.</p>
+</div>
+<div class="paragraph">
+<p>Ce template peut avoir cette forme</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>un lien pour créer un nouveau todo</p>
+</li>
+<li>
+<p>une itération sur la liste des todos passée en paramètre <code>{{#todos}}…​{{/todos}}</code></p>
+</li>
+<li>
+<p>vérifier si une valeur est valorisée <code>{{#checked}}…​{{/checked}}</code> ou non valorisée <code>{{^checked}}…​{{/checked}}</code></p>
+</li>
+<li>
+<p>des liens pour modifier ou supprimer des todos existants</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-html">&lt;a href="/todos/create" class="btn btn-dark"&gt;Créer Todo&lt;/a&gt;
+&lt;br&gt;
+&lt;table class="table"&gt;
+
+    &lt;thead&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Libellé&lt;/th&gt;
+        &lt;th width="25%"&gt;Actions&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+    {{#todos}}
+        &lt;tr&gt;
+            &lt;td&gt;
+                {{#checked}}&lt;s&gt;{{label}}&lt;/s&gt;AAA{{/checked}}
+                {{^checked}}{{label}}{{/checked}}
+            &lt;/td&gt;
+            &lt;td&gt;
+                &lt;form action="/todos/{{id}}/delete" method="post" onsubmit="return confirm('Voulez vous vraiment supprimer ce todo ? ')"&gt;
+                    &lt;a href="/todos/{{id}}" class="btn btn-dark"&gt;
+                        Modifier
+                    &lt;/a&gt;
+                    &lt;button class="btn btn-dark"&gt;
+                        Supprimer
+                    &lt;/button&gt;
+                &lt;/form&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    {{/todos}}
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Et le template pour modifier ou créer un nouveau Todo aura cette forme</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-html">&lt;form action="/todos" method="post"&gt;
+{{#errors.has}}
+&lt;div class="alert alert-danger"&gt;Vous avez une erreur dans votre formulaire&lt;/div&gt;{{/errors.has}}
+
+    &lt;input type="hidden" name="id" value="{{todo.id}}"&gt;
+
+    &lt;div class="form-group row"&gt;
+        &lt;label for="label" class="col-sm-3 col-form-label"&gt;Libellé&lt;/label&gt;
+        &lt;div class="col-sm-9"&gt;
+            &lt;input type="text" placeholder="Libellé du todo" name="label" id="label" value="{{todo.label}}"
+                   class="form-control {{#errors.label}}is-invalid{{/errors.label}}"&gt;
+            &lt;small class="invalid-feedback"&gt;{{errors.label}}&lt;/small&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group row"&gt;
+        &lt;label for="checked" class="col-sm-3 col-form-label"&gt;Tâche effectuée&lt;/label&gt;
+        &lt;div class="col-sm-9"&gt;
+            &lt;div class="form-check"&gt;
+                &lt;input class="form-check-input" type="checkbox"  id="checked" name="checked"
+                       {{#todo.checked}}checked{{/todo.checked}}&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div style="display: inline-flex"&gt;
+        &lt;button class="btn btn-dark"&gt;Save&lt;/button&gt;<span class="hljs-symbol">&amp;amp;</span>nbsp;<span class="hljs-symbol">&amp;amp;</span>nbsp;
+        &lt;a class="btn btn-outline-secondary" href="/todos"&gt;Cancel&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Vous pouvez relancer votre serveur pour tester l’application.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2019/web_typescript1.png" alt="Ecran liste des todos">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2019/web_typescript2.png" alt="Modifier un todo">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_conclusion">Conclusion</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Cet article était un peu long mais j’ai essayé de vous montrer beaucoup de code. Comme je le disais plus haut, le code est disponible sous <a href="https://gitlab.com/javamind/typescript-web">Gitlab</a>.</p>
+</div>
+<div class="paragraph">
+<p>J’espère vous avoir donné les bases pour démarrer une application web rapidement en TypeScript. Personnellement j’ai utilisé cette techno pour gérer ce site web. Le code est d’ailleurs libre si vous voulez vous en inspirer <a href="https://github.com/Dev-Mind/dev-mind.fr" class="bare">https://github.com/Dev-Mind/dev-mind.fr</a></p>
+</div>
+</div>
+</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 28/05/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
+
+<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-WDZISLW7.js" type="module"></script>
+
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t6"},"c":{"7":[{"i":"t6","r":1,"x":2}]}},{"c":{"1":[{"i":"c933498719","r":1}]}}]}</script></body></html>

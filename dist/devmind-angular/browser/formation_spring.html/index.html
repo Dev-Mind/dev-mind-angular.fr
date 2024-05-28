@@ -1,0 +1,178 @@
+<!DOCTYPE html><html lang="en" data-critters-container><head>
+  <meta charset="utf-8">
+  <title>Formation</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    body {
+      min-height: 100vh;
+      max-height: 100vh;
+      font-family: "Helvetica", "Arial", "sans-serif";
+      padding: 0;
+      margin: 0;
+    }
+
+    header {
+      height: 90px;
+      max-height: 90px;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+      background-color: white;
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      z-index: 99;
+      transition-duration: 0.2s;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: max-height, box-shadow;
+      position: fixed;
+      width: 100%;
+      text-align: center;
+    }
+    header hr {
+      width:100%;
+      background-color: #424242;
+      border-color: #424242;
+      display: block;
+      border: 0;
+      height: 0.5em;
+      margin: 0;
+    }
+    .header-img {
+      margin: auto;
+      width: 50%;
+      padding-top: 0.5em;
+      height: 30px;
+    }
+    .header-img img {
+      max-height: 30px !important;
+    }
+    .header-space {
+      min-height: 90px;
+    }
+
+
+    @media screen and (min-width: 901px) {
+      header {
+        height: 120px;
+        max-height: 120px;
+      }
+      .header-img {
+        height: 60px;
+      }
+      .header-img img {
+        max-height: 60px !important;
+      }
+      .header-space {
+        min-height: 120px;
+      }
+      nav a {
+        padding: 6px 24px;
+      }
+      .nav-home{
+        display: block !important;
+      }
+    }
+
+
+    nav {
+      display: -webkit-flex;
+      display: flex;
+      margin: auto;
+    }
+
+    nav a {
+      padding: 0 12px;
+      line-height: 28px;
+      height: 28px;
+      color: #424242;
+      margin: auto;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 13px;
+      border-radius: 4px;
+    }
+    .nav-home{
+      display: none;
+    }
+    nav a > img {
+    // height: 20px;
+    }
+
+    nav a:hover {
+      background-color: #9e9e9e;
+    }
+
+    nav .active {
+      background-color: rgba(0, 0, 0, 0.14);
+    }
+
+    main {
+      overflow-x: hidden;
+    }
+
+    img, picture {
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+    }
+
+    * {
+      box-sizing: border-box; /* pour maîtriser width et flex-basis */
+    }
+
+    .devmind-section {
+      display: block;
+      margin: 0 auto;
+      max-width: 1600px;
+      padding: 60px 40px;
+    }
+
+    @media (max-width: 700px) {
+      .devmind-section {
+        padding: 25px 10px;
+      }
+    }
+
+    @media (min-width: 701px) and (max-width: 900px) {
+      .devmind-section {
+        padding: 40px 25px;
+      }
+    }
+
+    .dm-social {
+      min-width: 2em;
+      max-width: 2em;
+      width: 2em;
+      height: 2em;
+    }
+  </style>
+  <!-- Matomo -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(["setCookieDomain", "*.dev-mind.fr"]);
+    _paq.push(["disableCampaignParameters"]);
+    _paq.push(["setDoNotTrack", true]);
+    _paq.push(["disableCookies"]);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="https://devmind.matomo.cloud/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '1']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src='https://cdn.matomo.cloud/devmind.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+<style>.dm-block--intro{width:100%;background-color:#424242;color:#eceff1;padding:0;margin:0}.dm-block--intro h1{color:#eceff1}.dm-block--blog{width:100%;background-color:#eceff1;color:#424242;padding:0;margin:0}.dm-block--news{width:100%;background-color:#fff;color:#424242;padding:0;margin:0}.dm--picture--inverse{margin:auto}@media (max-width: 700px){.dm--picture--inverse{width:50%!important}}.dm-formation--detail{display:flex;flex-direction:column;list-style:none;padding:0}.dm-formation--detail li{display:block;padding:0}footer{background-color:#424242}.is-small-screen{display:none}.is-large-screen{display:inherit}@media screen and (max-width: 900px){.is-small-screen{display:inherit}.is-large-screen{display:none}}h1,h2{color:#424242;font-weight:100}h1{font-weight:bolder;font-size:35px;line-height:38px}h2{font-size:25px;line-height:28px}.dm_lead{font-weight:300;font-size:18px}@media (max-width: 700px){h1{font-size:28px;line-height:30px}h2{font-size:22px;line-height:24px}.dm_lead{font-size:16px;line-height:18px}}.dm-grid--flexible{display:flex}@media (max-width: 700px){.dm-grid--flexible{flex-direction:column}}.dm-grid--flexible .dm-grid--element{flex:1;margin:1em}.center{text-align:center}
+</style><link rel="stylesheet" href="styles-WO7TV6DC.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-WO7TV6DC.css"></noscript><style ng-app-id="ng">.dm_footer[_ngcontent-ng-c2660501952]{color:#eee;display:flex;justify-content:space-between;font-size:14px}.dm_footer[_ngcontent-ng-c2660501952]   .dm_society[_ngcontent-ng-c2660501952]{color:#fff}.dm_footer[_ngcontent-ng-c2660501952]   div[_ngcontent-ng-c2660501952]{margin-right:1em;width:100%}.dm_footer[_ngcontent-ng-c2660501952]   .dm_footer__middle[_ngcontent-ng-c2660501952]{flex-grow:1}.dm_footer[_ngcontent-ng-c2660501952]   .dm_footer__right[_ngcontent-ng-c2660501952]{text-align:right}.dm_footer[_ngcontent-ng-c2660501952]   .is-large-screen[_ngcontent-ng-c2660501952]{padding:.7em;margin:.7em 1em}.dm_footer[_ngcontent-ng-c2660501952]   .is-small-screen[_ngcontent-ng-c2660501952]{padding:0;margin:0 1em;font-size:12px}</style></head>
+<body><!--nghm-->
+  <app-root _nghost-ng-c582792440 ng-version="18.0.0" ngh="1" ng-server-context="ssg"><app-header _ngcontent-ng-c582792440 _nghost-ng-c2882497807 ngh="0"><header _ngcontent-ng-c2882497807><div _ngcontent-ng-c2882497807 class="header-img"><a _ngcontent-ng-c2882497807 routerlink="/" aria-label="Accueil" href="/"><img _ngcontent-ng-c2882497807 src="img/logo/logo_long.svg" alt="Dev-Mind" title="Dev-Mind"></a></div><nav _ngcontent-ng-c2882497807><a _ngcontent-ng-c2882497807 routerlink="/" aria-label="Accueil" class="nav-home" href="/"><img _ngcontent-ng-c2882497807 src="/img/ic_home_white_24px.svg" rel="start" alt="Accueil"></a><a _ngcontent-ng-c2882497807 routerlink="/formations.html" aria-label="Formations" class="active" href="/formations.html"> Formations</a><a _ngcontent-ng-c2882497807 routerlink="/blog.html" aria-label="Blog" class href="/blog.html">Blog</a><a _ngcontent-ng-c2882497807 routerlink="/experience.html" aria-label="Experience" class href="/experience.html"> Expérience</a></nav><hr _ngcontent-ng-c2882497807></header><div _ngcontent-ng-c2882497807 class="header-space"></div></app-header><router-outlet _ngcontent-ng-c582792440></router-outlet><app-spring ngh="0"><div class="dm-block--intro"><div class="devmind-section"><h1>Formation Spring</h1><div class="dm-grid--flexible"><div class="dm-grid--element"><div class="center"><img src="img/formation/spring.svg" alt="Spring"></div></div><div class="dm-grid--element" style="flex: 3 0 0;"><p class="dm_lead"> Spring est le framework Java le plus utilisé et il est Open Source. Connaissez vous toute la magie de Spring, comment il fonctionne, comment l'utiliser tout en respectant les bonnes pratiques de développement ? </p><p><i>J'utilise Spring depuis 15 ans et la version 1. Nous verrons ensemble comment le framework a évolué, quels sont les problématiques qui ont été résolues. Ensemble nous pouvons construire une formation à la carte</i></p></div></div></div></div><div class="dm-block--news"><div class="devmind-section"><p class="dm_lead">Je vous propose différents modules en fonction des différents projets et sous projets de Spring.</p><div class="dm-grid--flexible"><div class="dm-grid--element center"><img src="img/formation/spring-fwk.svg" alt="Spring Framework" class="dm--picture--inverse" style="width: 75%;"><h2>CORE</h2><div class="dm_lead"><ul class="dm-formation--detail"><li>Injection</li><li>AOP</li><li>Web MVC</li><li>Web Rest</li></ul><i>Temps idéal : 3 jours</i></div></div><div class="dm-grid--element center"><img src="img/formation/spring-boot.svg" alt="Spring Boot" class="dm--picture--inverse" style="width: 90%;"><h2>BOOT</h2><div class="dm_lead"><ul class="dm-formation--detail"><li>Starter</li><li>Auto config</li><li>Logs</li><li>Métriques</li></ul></div><i>Temps idéal : 1 jour</i></div><div class="dm-grid--element center"><img src="img/formation/spring-data.svg" alt="Spring Data" class="dm--picture--inverse" style="width: 90%;"><h2>DATA</h2><div class="dm_lead"><ul class="dm-formation--detail"><li>JDBC</li><li>JPA (Hibernate)</li><li>Transaction</li><li>Validation</li></ul><i>Temps idéal : 2 jours</i></div></div><div class="dm-grid--element center"><img src="img/formation/spring-security.svg" alt="Spring Security" class="dm--picture--inverse" style="width: 85%;"><h2>SECURITY</h2><div class="dm_lead"><ul class="dm-formation--detail"><li>Authorisation</li><li>Authentification</li><li>Cors</li><li>CSRF</li></ul><i>Temps idéal : 1 jour</i></div></div></div><h2>Tarification</h2><p class="dm_lead"> Il existe deux modes de tarification en fonction du mode choisi </p><ul class="dm_lead"><li>mode INTRA : la formation vous est réservée et vous pouvez proposer jusqu'à 6 stagiaires</li><li>mode INTER : formation d'un seul stagiaire</li></ul><p>Contactez moi sur guillaume (@) dev-mind.fr pour plus d'informations </p></div></div><div class="dm-block--blog"><div class="devmind-section"><p class="dm_lead"> La formation est principalement axée sur de la pratique. Si vous faites tous les modules vous construisez de A à Z une application qui permet de lire des données en temps réel et de les afficher sous forme de graphique </p><div class="dm-grid--flexible"><div class="dm-grid--element center"><picture alt="Ecran principal"><source srcset="img/formation/spring-ex1.webp" type="image/webp"><source srcset="img/formation/spring-ex1.png"><img src="img/formation/spring-ex1.png" alt="Ecran principal"></picture></div><div class="dm-grid--element center"><picture alt="Liste des sites"><source srcset="img/formation/spring-ex2.webp" type="image/webp"><source srcset="img/formation/spring-ex2.png"><img src="img/formation/spring-ex2.png" alt="Liste des sites"></picture></div><div class="dm-grid--element center"><picture alt="Mesures temps réel"><source srcset="img/formation/spring-ex4.webp" type="image/webp"><source srcset="img/formation/spring-ex4.png"><img src="img/formation/spring-ex4.png" alt="Mesures temps réel"></picture></div></div></div></div></app-spring><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 28/05/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
+
+<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-WDZISLW7.js" type="module"></script>
+
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"c":{"1":[{"i":"c2715959473","r":1}]}}]}</script></body></html>

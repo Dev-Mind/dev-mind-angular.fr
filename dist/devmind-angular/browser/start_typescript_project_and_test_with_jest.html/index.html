@@ -1,0 +1,600 @@
+<!DOCTYPE html><html lang="en" data-critters-container><head>
+  <meta charset="utf-8">
+  <title>Blog</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    body {
+      min-height: 100vh;
+      max-height: 100vh;
+      font-family: "Helvetica", "Arial", "sans-serif";
+      padding: 0;
+      margin: 0;
+    }
+
+    header {
+      height: 90px;
+      max-height: 90px;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+      background-color: white;
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      z-index: 99;
+      transition-duration: 0.2s;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: max-height, box-shadow;
+      position: fixed;
+      width: 100%;
+      text-align: center;
+    }
+    header hr {
+      width:100%;
+      background-color: #424242;
+      border-color: #424242;
+      display: block;
+      border: 0;
+      height: 0.5em;
+      margin: 0;
+    }
+    .header-img {
+      margin: auto;
+      width: 50%;
+      padding-top: 0.5em;
+      height: 30px;
+    }
+    .header-img img {
+      max-height: 30px !important;
+    }
+    .header-space {
+      min-height: 90px;
+    }
+
+
+    @media screen and (min-width: 901px) {
+      header {
+        height: 120px;
+        max-height: 120px;
+      }
+      .header-img {
+        height: 60px;
+      }
+      .header-img img {
+        max-height: 60px !important;
+      }
+      .header-space {
+        min-height: 120px;
+      }
+      nav a {
+        padding: 6px 24px;
+      }
+      .nav-home{
+        display: block !important;
+      }
+    }
+
+
+    nav {
+      display: -webkit-flex;
+      display: flex;
+      margin: auto;
+    }
+
+    nav a {
+      padding: 0 12px;
+      line-height: 28px;
+      height: 28px;
+      color: #424242;
+      margin: auto;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 13px;
+      border-radius: 4px;
+    }
+    .nav-home{
+      display: none;
+    }
+    nav a > img {
+    // height: 20px;
+    }
+
+    nav a:hover {
+      background-color: #9e9e9e;
+    }
+
+    nav .active {
+      background-color: rgba(0, 0, 0, 0.14);
+    }
+
+    main {
+      overflow-x: hidden;
+    }
+
+    img, picture {
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+    }
+
+    * {
+      box-sizing: border-box; /* pour maîtriser width et flex-basis */
+    }
+
+    .devmind-section {
+      display: block;
+      margin: 0 auto;
+      max-width: 1600px;
+      padding: 60px 40px;
+    }
+
+    @media (max-width: 700px) {
+      .devmind-section {
+        padding: 25px 10px;
+      }
+    }
+
+    @media (min-width: 701px) and (max-width: 900px) {
+      .devmind-section {
+        padding: 40px 25px;
+      }
+    }
+
+    .dm-social {
+      min-width: 2em;
+      max-width: 2em;
+      width: 2em;
+      height: 2em;
+    }
+  </style>
+  <!-- Matomo -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(["setCookieDomain", "*.dev-mind.fr"]);
+    _paq.push(["disableCampaignParameters"]);
+    _paq.push(["setDoNotTrack", true]);
+    _paq.push(["disableCookies"]);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="https://devmind.matomo.cloud/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '1']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src='https://cdn.matomo.cloud/devmind.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+<style>.dm-block--blog{width:100%;background-color:#eceff1;color:#424242;padding:0;margin:0}.dm-block--blog a,.dm-block--blog a:hover,.dm-block--blog a:visited{font-weight:700;color:#424242;text-decoration:none}footer{background-color:#424242}.is-small-screen{display:none}.is-large-screen{display:inherit}@media screen and (max-width: 900px){.is-small-screen{display:inherit}.is-large-screen{display:none}}h1,h2{color:#424242;font-weight:100}h1{font-weight:bolder;font-size:35px;line-height:38px}h2{font-size:25px;line-height:28px}@media (max-width: 700px){h1{font-size:28px;line-height:30px}h2{font-size:22px;line-height:24px}}
+</style><link rel="stylesheet" href="styles-WO7TV6DC.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-WO7TV6DC.css"></noscript><style ng-app-id="ng">.dm_footer[_ngcontent-ng-c2660501952]{color:#eee;display:flex;justify-content:space-between;font-size:14px}.dm_footer[_ngcontent-ng-c2660501952]   .dm_society[_ngcontent-ng-c2660501952]{color:#fff}.dm_footer[_ngcontent-ng-c2660501952]   div[_ngcontent-ng-c2660501952]{margin-right:1em;width:100%}.dm_footer[_ngcontent-ng-c2660501952]   .dm_footer__middle[_ngcontent-ng-c2660501952]{flex-grow:1}.dm_footer[_ngcontent-ng-c2660501952]   .dm_footer__right[_ngcontent-ng-c2660501952]{text-align:right}.dm_footer[_ngcontent-ng-c2660501952]   .is-large-screen[_ngcontent-ng-c2660501952]{padding:.7em;margin:.7em 1em}.dm_footer[_ngcontent-ng-c2660501952]   .is-small-screen[_ngcontent-ng-c2660501952]{padding:0;margin:0 1em;font-size:12px}</style><style ng-app-id="ng">h1{margin-top:.5em}.dm-blog--info-date{font-size:smaller;color:#424242;border:1px solid #aaa;border-radius:24px;padding:.5em 1em;margin-right:.5em;display:inline}.blog-keywords{display:flex;margin-bottom:1em}.blog-keywords .dm-blog--keyword-detail{background-color:#ccc;color:#424242;padding:.5em 1em;margin-right:.5em;border-radius:24px;font-size:smaller}.toc{background-color:#ccc;margin-top:1em;border:1px solid #ccc;padding:1em;border-radius:8px}.toc #toctitle{font-weight:700;margin-bottom:.5em}img{max-width:100%;height:auto}.imageblock>.content{display:flex;justify-content:center;align-items:center}.highlight{display:block;overflow-x:auto;background:#f3f3f3;color:#444;padding:1.5em;box-shadow:0 8px 16px #00000026;border-radius:8px}code.hljs{padding:3px 5px}.hljs-comment{color:#697070}.hljs-punctuation,.hljs-tag{color:#444a}.hljs-tag .hljs-attr,.hljs-tag .hljs-name{color:#444}.hljs-attribute,.hljs-doctag,.hljs-keyword,.hljs-meta .hljs-keyword,.hljs-name,.hljs-selector-tag{font-weight:700}.hljs-deletion,.hljs-number,.hljs-quote,.hljs-selector-class,.hljs-selector-id,.hljs-string,.hljs-template-tag,.hljs-type{color:#800}.hljs-section,.hljs-title{color:#800;font-weight:700}.hljs-link,.hljs-operator,.hljs-regexp,.hljs-selector-attr,.hljs-selector-pseudo,.hljs-symbol,.hljs-template-variable,.hljs-variable{color:#ab5656}.hljs-literal{color:#695}.hljs-addition,.hljs-built_in,.hljs-bullet,.hljs-code{color:#397300}.hljs-meta{color:#1f7199}.hljs-meta .hljs-string{color:#38a}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}.language-kotlin:before{display:block;float:right;content:"kotlin";font-weight:700;text-transform:uppercase}.language-typescript:before{display:block;float:right;content:"typescript";font-weight:700;text-transform:uppercase}.language-java:before{display:block;float:right;content:"java";font-weight:700;text-transform:uppercase}.language-javascript:before{display:block;float:right;content:"javascript";font-weight:700;text-transform:uppercase}.language-shell:before{display:block;float:right;content:"shell";font-weight:700;text-transform:uppercase}.language-yaml:before{display:block;float:right;content:"yaml";font-weight:700;text-transform:uppercase}.language-json:before{display:block;float:right;content:"json";font-weight:700;text-transform:uppercase}.language-xml:before{display:block;float:right;content:"xml";font-weight:700;text-transform:uppercase}.language-html:before{display:block;float:right;content:"html";font-weight:700;text-transform:uppercase}.language-css:before{display:block;float:right;content:"css";font-weight:700;text-transform:uppercase}.language-scss:before{display:block;float:right;content:"scss";font-weight:700;text-transform:uppercase}
+</style></head>
+<body><!--nghm-->
+  <app-root _nghost-ng-c582792440 ng-version="18.0.0" ngh="2" ng-server-context="ssg"><app-header _ngcontent-ng-c582792440 _nghost-ng-c2882497807 ngh="0"><header _ngcontent-ng-c2882497807><div _ngcontent-ng-c2882497807 class="header-img"><a _ngcontent-ng-c2882497807 routerlink="/" aria-label="Accueil" href="/"><img _ngcontent-ng-c2882497807 src="img/logo/logo_long.svg" alt="Dev-Mind" title="Dev-Mind"></a></div><nav _ngcontent-ng-c2882497807><a _ngcontent-ng-c2882497807 routerlink="/" aria-label="Accueil" class="nav-home" href="/"><img _ngcontent-ng-c2882497807 src="/img/ic_home_white_24px.svg" rel="start" alt="Accueil"></a><a _ngcontent-ng-c2882497807 routerlink="/formations.html" aria-label="Formations" class href="/formations.html"> Formations</a><a _ngcontent-ng-c2882497807 routerlink="/blog.html" aria-label="Blog" class="active" href="/blog.html">Blog</a><a _ngcontent-ng-c2882497807 routerlink="/experience.html" aria-label="Experience" class href="/experience.html"> Expérience</a></nav><hr _ngcontent-ng-c2882497807></header><div _ngcontent-ng-c2882497807 class="header-space"></div></app-header><router-outlet _ngcontent-ng-c582792440></router-outlet><app-asciidoc-viewer ngh="1"><div class="dm-block--blog"><div class="devmind-section"><h1><!--ngetn--></h1><div class="blog-keywords"><div class="dm-blog--info-date">19/08/2019</div><div class="dm-blog--keyword-detail">Web</div><div class="dm-blog--keyword-detail">Typescript</div><div class="dm-blog--keyword-detail">Jest</div><!---->&nbsp; </div><div class="preview"><div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="start_typescript_project_and_test_with_jest.html#_etape_1_nodejs">Etape 1 : NodeJS</a></li>
+<li><a href="start_typescript_project_and_test_with_jest.html#_etape_2_créer_un_projet">Etape 2 : Créer un projet</a></li>
+<li><a href="start_typescript_project_and_test_with_jest.html#_etape_2_installer_typescript">Etape 2 : Installer typescript</a></li>
+<li><a href="start_typescript_project_and_test_with_jest.html#_etape_3_ecrire_du_code_en_typescript">Etape 3 : Ecrire du code en TypeScript</a></li>
+<li><a href="start_typescript_project_and_test_with_jest.html#_etape_4_tester_notre_code_avec_jest">Etape 4 : Tester notre code avec Jest</a></li>
+<li><a href="start_typescript_project_and_test_with_jest.html#_conclusion">Conclusion</a></li>
+</ul>
+</div>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Si vous êtes un développeur web, vous avez forcément entendu parler de <a href="https://www.typescriptlang.org">TypeScript</a>. Ce langage se définit comme un sur-ensemble de <a href="https://www.javascript.com/">JavaScript</a>. Votre code est compilé en JavaScript standard pour pouvoir être exécuté sur un moteur JavaScript (node, navigateur).</p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.typescriptlang.org">TypeScript</a> comble beaucoup de manque du langage <a href="https://www.javascript.com/">JavaScript</a>, en introduisant les types et bien d’autres fonctionnalités. Avec <a href="https://www.typescriptlang.org">TypeScript</a> vous bénéficiez d’une meilleure expérience de développement avec une meilleure complétion, une remontée des erreurs plus rapide…​ De nombreux frameworks l’ont adopté (<a href="https://angular.io/">Angular</a>, <a href="https://aurelia.io/">Aurelia</a>, <a href="https://www.nativescript.org/">NativeScript</a>…​) car comme pour les langages C# ou Java le langage a un réel avantage en entreprise.</p>
+</div>
+<div class="paragraph">
+<p>Dans cet article, nous allons voir comment lancer un projet <a href="https://www.typescriptlang.org">TypeScript</a>, le compiler, éxécuter des tests via <a href="https://jestjs.io/">Jest</a>. Il existe pas mal de ressources sur le web sur ce sujet mais très souvent les choses sont complexifiées.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2019/laissez_tomber_javascript1.png" alt="laissez_tomber_javascript">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_etape_1_nodejs">Etape 1 : NodeJS</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://www.javascript.com/">JavaScript</a> est un langage qui est exécuté sur un moteur JavaScript. Les navigateurs Internet intègrent tous aujourd’hui des moteurs JavaScript. Quand vous voulez créer une application en dehors d’un navigateur, vous allez utiliser NodeJs qui fournit un moteur JavaScript autonome.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://nodejs.org/">NodeJS</a> est disponible pour toutes les plateformes <a href="https://nodejs.org/en/download/" class="bare">https://nodejs.org/en/download/</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://nodejs.org/">NodeJS</a> fourni un gestionnaire de paquet <code>npm</code> qui permet de télécharger et mettre à jour les dépendances d’un projet.</p>
+</div>
+<div class="paragraph">
+<p>Une fois que vous avez installé NodeJs vous lancer dans un terminal <code>npm</code></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell">$ npm
+
+Usage: npm &lt;command&gt;
+
+where &lt;command&gt; is one of:
+    access, adduser, audit, bin, bugs, c, cache, ci, cit,
+    clean-install, clean-install-test, completion, config,
+    create, ddp, dedupe, deprecate, dist-tag, docs, doctor,
+    edit, explore, get, help, help-search, hook, i, init,
+    install, install-ci-test, install-test, it, link, list, ln,
+    login, logout, ls, org, outdated, owner, pack, ping, prefix,
+    profile, prune, publish, rb, rebuild, repo, restart, root,
+    run, run-script, s, se, search, set, shrinkwrap, star,
+    stars, start, stop, t, team, test, token, tst, un,
+    uninstall, unpublish, unstar, up, update, v, version, view,
+    whoami
+
+npm &lt;command&gt; -h  quick help on &lt;command&gt;
+npm -l            display full usage info
+npm help &lt;term&gt;   search for help on &lt;term&gt;
+npm help npm      involved overview&lt;/term&gt;&lt;/term&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Vous pouvez lancer la commande <code>node</code> qui permet de lancer une console node</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell">$ node
+<span class="hljs-meta prompt_">&gt; </span><span class="language-bash">const name = <span class="hljs-string">'Guillaume'</span></span>
+undefined
+<span class="hljs-meta prompt_">&gt; </span><span class="language-bash">console.log(name)</span>
+Guillaume
+<span class="hljs-meta prompt_">&gt;</span><span class="language-bash">
+(To <span class="hljs-built_in">exit</span>, press ^C again or <span class="hljs-built_in">type</span> .<span class="hljs-built_in">exit</span>)</span>
+<span class="hljs-meta prompt_">&gt;</span></code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_etape_2_créer_un_projet">Etape 2 : Créer un projet</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Nous allons commencer par créer l’arborescence de notre projet <code>myproject</code></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell">mkdir -p myproject/src/main/typescript
+mkdir -p myproject/src/test/typescript</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Nous allons utiliser NodeJS dans notre projet pour bénéficier du gestionnaire de paquet <code>npm</code> mais aussi exécuter notre code. Pour initialiser notre projet nous allons utiliser le client fournit avec <code>npm</code>. Le client va générer un fichier <code>package.json</code> à la racine de votre projet en fonction des réponses que vous aurez donné</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell">$ cd myproject
+$ npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help json` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install &lt;pkg&gt;` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (myproject)
+version: (1.0.0)
+description: My first example in TypeScript
+entry point: (index.js)
+test command:
+git repository:
+keywords:
+author: Guillaume EHRET
+license: (ISC) MIT
+About to write to /home/devmind/Workspace/web/myproject/package.json:
+
+{
+  "name": "myproject",
+  "version": "1.0.0",
+  "description": "My first example in TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo "Error: no test specified" &amp;&amp; exit 1"
+  },
+  "author": "Guillaume EHRET",
+  "license": "MIT"
+}&lt;/pkg&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><code>npm</code> permet d’installer des packages et des librairies. Par exemple pour installer typescript vous lancerez</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell">npm install typescript</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Cettte commande va ajouter un bloc <code>dependencies</code> dans le fichier <code>package.json</code>. Comme vous n’avez pas spécifier de version <code>npm</code> prend la dernière disponible. <code>npm</code> utilise les numéros de version sémantique. Dans l’exemple ci dessous le <code>^</code> (caret) indique que <code>npm</code> téléchargera au moins une version &gt;= 3.5.3 et &lt; 4.0.0</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json"><span class="hljs-attr">"dependencies"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+  <span class="hljs-attr">"typescript"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"^3.5.3"</span>
+<span class="hljs-punctuation">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Si vous utilisez un <code>~</code> à la place de <code>^</code>, <code>npm</code> ne pourra télécharger que les versions &gt;= 3.5.3 et &lt; 3.6.0
+Si vous n’utilisez aucune marque <code>npm</code> chargera la version spécifiée.</p>
+</div>
+<div class="paragraph">
+<p>Il existe plusieurs autres possibilités et vous trouverez plus d’informations sur <a href="https://semver.org/" class="bare">https://semver.org/</a></p>
+</div>
+<div class="paragraph">
+<p><code>npm</code> télécharge les librairies dans le répertoire <code>node_modules</code> de votre projet. Ce répertoire <code>node_modules</code> ne doit jamais être commité dans git car il peut être très volumineux et on préférera le réinstaller lors d’un clone d’un projet via</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell">npm install</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_etape_2_installer_typescript">Etape 2 : Installer typescript</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Nous avons utilisé <code>npm</code> dans l’étape précédente pour installer TypeScript.</p>
+</div>
+<div class="paragraph">
+<p>Nous pouvons personnaliser la configuration TypeScript en ajoutant un fichier <code>tsconfig.json</code>. Pour celà vous pouvez exécuter <code>./node_modules/.bin/tsc --init</code>. Les différentes valeurs possibles sont définies sur cette <a href="https://www.typescriptlang.org/docs/handbook/tsconfig-json.html">page</a>.</p>
+</div>
+<div class="paragraph">
+<p>Par exemple dans notre cas nous allons préciser plusieurs options de compilation</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json"><span class="hljs-punctuation">{</span>
+  <span class="hljs-attr">"compilerOptions"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+    <span class="hljs-comment">/* Specify ECMAScript target version: 'ES3' (default). Here ES5 to be compatible with all web browsers */</span>
+    <span class="hljs-attr">"target"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"ES5"</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-comment">/* Specify module code generation: 'commonjs', 'amd', 'system', 'umd' or 'es2015'. */</span>
+    <span class="hljs-attr">"module"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"commonjs"</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-comment">/* Specify library files to be included in the compilation:  */</span>
+    <span class="hljs-attr">"lib"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
+      <span class="hljs-string">"esnext"</span><span class="hljs-punctuation">,</span>
+      <span class="hljs-string">"dom"</span>
+    <span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
+    <span class="hljs-comment">/* We want to generate a sourcemap  */</span>
+    <span class="hljs-attr">"sourceMap"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span>
+    <span class="hljs-comment">/* All files will be compiled in build directory  */</span>
+    <span class="hljs-attr">"outDir"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"./build"</span>
+  <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">"include"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
+      <span class="hljs-string">"src/**/*"</span>
+  <span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
+  <span class="hljs-attr">"exclude"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
+    <span class="hljs-string">"node_modules"</span>
+  <span class="hljs-punctuation">]</span>
+<span class="hljs-punctuation">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>En gros avec cette configuration, nous indiquons au compilateur de prendre les fichiers TypeScript dans le répertoire <code>src</code> et les compiler en EcmaScript 5 dans le répertoire <code>build  en utilisant `commonjs</code> comme gestionnaire de modules.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_etape_3_ecrire_du_code_en_typescript">Etape 3 : Ecrire du code en TypeScript</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Le système de types est la caractéristique essentielle du langage. Si vous avez une fonction</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-typescript"><span class="hljs-title function_">great</span>(<span class="hljs-params">name: <span class="hljs-built_in">string</span></span>){
+    <span class="hljs-keyword">return</span> `Hi, ${name}`;
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>En Javascript vous pourriez écrire</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-javascript"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title function_">great</span>(<span class="hljs-number">123</span>));</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Mais en TypeScript le compilateur va retourner l’erreur "Argument type 123 is not assignable to type string". Dans les IDE vous allez avoir l’erreur au moment ou vous écrivez votre code (ceci évite bon nombre de bugs). TypeScript fait aussi de l’inférence de type. Dans le code ci dessous le langage déduit que le type de la variable <code>age</code> est un numérique et donc il va vous empêcher de lui attribuer une autre valeur. Vous aurez également une erreur de type sur la deuxième ligne</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-typescript"><span class="hljs-keyword">let</span> age = <span class="hljs-number">42</span>;
+age = <span class="hljs-string">"inconnu"</span>;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Nous allons créer deux fichiers dans <code>src/main/typescript</code>. Le premier <code>person.ts</code> contiendra la définition d’une interface <code>Person</code> (qui est exportée pour pouvoir l’utiliser dans d’autres fichiers). En TypeScript vous pouvez définir des <a href="https://www.typescriptlang.org/docs/handbook/interfaces.html">interfaces</a> et des types customs. Ceci est très pratique pour étendre le système de types. Nous définissons aussi une <a href="https://www.typescriptlang.org/docs/handbook/classes.html">classe</a>  <code>Greater</code> exposant une méthode pour saluer une personne</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-typescript"><span class="hljs-keyword">export</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">Person</span> {
+    <span class="hljs-attr">firstName</span>: <span class="hljs-built_in">string</span>;
+    <span class="hljs-attr">lastName</span>: <span class="hljs-built_in">string</span>;
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">GreaterService</span> {
+    <span class="hljs-title function_">great</span>(<span class="hljs-params">person: Person</span>){
+        <span class="hljs-keyword">return</span> `Hi, ${person.<span class="hljs-property">firstName</span>} ${person.<span class="hljs-property">lastName</span>}`;
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Vous pouvez maintenant créer un second fichier <code>index.ts</code> dans lequel nous allons importer ce que nous venons de créer et l’appeler</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-typescript"><span class="hljs-keyword">import</span> {<span class="hljs-title class_">GreaterService</span>, <span class="hljs-title class_">Person</span>} <span class="hljs-keyword">from</span> <span class="hljs-string">"./person"</span>;
+
+<span class="hljs-keyword">const</span> <span class="hljs-attr">person</span>:<span class="hljs-title class_">Person</span> = {
+    <span class="hljs-attr">firstName</span>: <span class="hljs-string">'Guillaume'</span>,
+    <span class="hljs-attr">lastName</span>: <span class="hljs-string">'EHRET'</span>
+}
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">GreaterService</span>().<span class="hljs-title function_">great</span>(person));</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Il ne nous reste plus qu’à compiler (via <code>tsc</code>) notre projet et lancer <code>index.js</code> qui résulte de cette compilation (dans notre fichier de configuration TypeScript nous avon préciser que le répertoire de compilation était <code>build</code>).</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell">$ tsc
+$ node build/index.js</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Cet exemple est simpliste mais permet de voir rapidement comment le langage fonctionne. Pour démarrer sur TypeScript je vous conseille la <a href="https://www.typescriptlang.org/docs/home.html">documentation officielle</a> qui n’est pas trop mal faite à mon sens.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_etape_4_tester_notre_code_avec_jest">Etape 4 : Tester notre code avec Jest</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Il existe de nombreuses librairies pour écrire des tests de votre code JavaScript ou TypeScript. <a href="https://jestjs.io/">Jest</a> a été créé par Facebook pour ses projets <a href="https://reactjs.org/">React</a> et le but est d’être le plus simple possible tout en étant le plus performant. Au final vous pouvez utiliser Jest dans d’autres projets que des projets React et c’est ce que nous allons faire.</p>
+</div>
+<div class="paragraph">
+<p>Nous allons écrire des tests unitaires pour vérifier le comportement de chaque partie de notre code. Quand une portion de code a des dépendances vers d’autres parties nous allons utiliser des mocks pour simuler le fonctionnement de ces dépendances.</p>
+</div>
+<div class="paragraph">
+<p><strong>Comment installer Jest</strong></p>
+</div>
+<div class="paragraph">
+<p>Nous devons installer le package principal et celui dédié à TypeScript</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell">npm install jest @types/jest ts-jest -D</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Pour paramétrer Jest nous allons utiliser le client</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell">jest --init
+
+✔ Would you like to use Jest when running "test" script in "package.json"? … yes
+✔ Choose the test environment that will be used for testing › node
+✔ Do you want Jest to add coverage reports? … yes
+✔ Automatically clear mock calls and instances between every test? … yes
+
+
+✏️  Modified /home/devmind/Workspace/web/dev-mind.fr/package.json
+📝  Configuration file created at /home/devmind/Workspace/web/dev-mind.fr/jest.config.js</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Jest a été conçu pour exécuter par défaut du JavaScript. Pour paramétrer vos tests en TypeScript vous allez devoir modifier le fichier de configuration <code>jest.config.js</code></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json"><span class="hljs-punctuation">[</span>source<span class="hljs-punctuation">,</span> shell<span class="hljs-punctuation">,</span> subs=<span class="hljs-string">"none"</span><span class="hljs-punctuation">]</span>
+transform<span class="hljs-punctuation">:</span>  <span class="hljs-punctuation">{</span>
+<span class="hljs-attr">"\.(ts)$"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"ts-jest"</span>
+<span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Si vous voulez lancer les tests via <code>yarn test</code> ou <code>npm run test</code> vous pouvez modifier votre fichier <code>package.json</code></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json"><span class="hljs-attr">"scripts"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+  <span class="hljs-attr">"test"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"jest"</span>
+<span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Utiliser Jest</strong></p>
+</div>
+<div class="paragraph">
+<p>Nous allons tester le code typescript que nous avons écrit plus haut. Pour celà créons <code>person.spec.ts</code> dans le répertoire <code>src/test/typescript</code>. La syntaxe jasmine est disponible si vous souhaitez par exemple migrer votre suite de tests existantes. Mais les <a href="https://jestjs.io/docs/en/using-matchers">assertions</a> sont légéèrement différentes</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-typescript"><span class="hljs-keyword">import</span> {<span class="hljs-title class_">GreaterService</span>, <span class="hljs-title class_">Person</span>} <span class="hljs-keyword">from</span> <span class="hljs-string">"../../main/typescript/person"</span>;
+
+<span class="hljs-title function_">describe</span>(<span class="hljs-string">'Test person.ts'</span>, <span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-keyword">let</span> <span class="hljs-attr">service</span>: <span class="hljs-title class_">GreaterService</span>;
+
+    <span class="hljs-title function_">beforeEach</span>(<span class="hljs-function">() =&gt;</span> service = <span class="hljs-keyword">new</span> <span class="hljs-title class_">GreaterService</span>());
+
+    <span class="hljs-title function_">test</span>(<span class="hljs-string">'should say'</span>, <span class="hljs-function">() =&gt;</span> {
+        <span class="hljs-keyword">const</span> <span class="hljs-attr">person</span>: <span class="hljs-title class_">Person</span> = {
+            <span class="hljs-attr">firstName</span>: <span class="hljs-string">'Guillaume'</span>,
+            <span class="hljs-attr">lastName</span>: <span class="hljs-string">'EHRET'</span>
+        };
+        <span class="hljs-title function_">expect</span>(service.<span class="hljs-title function_">great</span>(person)).<span class="hljs-title function_">toBe</span>(<span class="hljs-string">'Hi, Guillaume EHRET'</span>);
+    })
+});</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Vous pouvez maintenant la lancer la commande <code>jest</code> pour exécuter vos tests. Jest permet aussi de <a href="https://jestjs.io/docs/en/mock-functions.html">mocker</a> les dépendances d’une classe. Vous pouvez également appeler du code <a href="https://jestjs.io/docs/en/asynchronous">asynchrone</a> dans vos tests.</p>
+</div>
+<div class="paragraph">
+<p><strong>Couverture du code par les tests</strong></p>
+</div>
+<div class="paragraph">
+<p>Jest comprend tout ce qu’il faut pour vérifier que votre code est bien tester. Vous pouvez ajouter l’option <code>--coverage</code> ppour générer un rapport</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell">devmind@devmind:~/Workspace/web/myproject$ jest --coverage
+PASS  src/test/typescript/person.spec.ts
+Test person.ts
+✓ should say (4ms)
+
+-----------|----------|----------|----------|----------|-------------------|
+File       |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
+-----------|----------|----------|----------|----------|-------------------|
+All files  |      100 |      100 |      100 |      100 |                   |
+person.ts  |      100 |      100 |      100 |      100 |                   |
+-----------|----------|----------|----------|----------|-------------------|
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        1.358s, estimated 2s
+Ran all test suites.</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_conclusion">Conclusion</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Vous pouvez donc maintenant commencer à coder en <a href="https://www.typescriptlang.org/docs/home.html">TypeScript</a> et tester votre code avec Jest. Je vous ai laissé les différents points d’entrée si vous voulez aller plus loin.</p>
+</div>
+<div class="paragraph">
+<p>Au niveau des tests unitaires <a href="https://jestjs.io/">Jest</a> est beaucoup plus rapide que Karma car les tests ne sont pas lancés dans un navigateur headless ou non</p>
+</div>
+<div class="paragraph">
+<p>Si vous voulez plus d’infos vous pouvez consulter ce repo <a href="https://gitlab.com/javamind/typescript-starter">Gitlab</a></p>
+</div>
+</div>
+</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 28/05/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
+
+<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-WDZISLW7.js" type="module"></script>
+
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t0"},"c":{"7":[{"i":"t0","r":1,"x":3}]}},{"c":{"1":[{"i":"c933498719","r":1}]}}]}</script></body></html>

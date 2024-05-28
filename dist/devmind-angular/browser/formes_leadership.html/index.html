@@ -1,0 +1,327 @@
+<!DOCTYPE html><html lang="en" data-critters-container><head>
+  <meta charset="utf-8">
+  <title>Blog</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    body {
+      min-height: 100vh;
+      max-height: 100vh;
+      font-family: "Helvetica", "Arial", "sans-serif";
+      padding: 0;
+      margin: 0;
+    }
+
+    header {
+      height: 90px;
+      max-height: 90px;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+      background-color: white;
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      z-index: 99;
+      transition-duration: 0.2s;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: max-height, box-shadow;
+      position: fixed;
+      width: 100%;
+      text-align: center;
+    }
+    header hr {
+      width:100%;
+      background-color: #424242;
+      border-color: #424242;
+      display: block;
+      border: 0;
+      height: 0.5em;
+      margin: 0;
+    }
+    .header-img {
+      margin: auto;
+      width: 50%;
+      padding-top: 0.5em;
+      height: 30px;
+    }
+    .header-img img {
+      max-height: 30px !important;
+    }
+    .header-space {
+      min-height: 90px;
+    }
+
+
+    @media screen and (min-width: 901px) {
+      header {
+        height: 120px;
+        max-height: 120px;
+      }
+      .header-img {
+        height: 60px;
+      }
+      .header-img img {
+        max-height: 60px !important;
+      }
+      .header-space {
+        min-height: 120px;
+      }
+      nav a {
+        padding: 6px 24px;
+      }
+      .nav-home{
+        display: block !important;
+      }
+    }
+
+
+    nav {
+      display: -webkit-flex;
+      display: flex;
+      margin: auto;
+    }
+
+    nav a {
+      padding: 0 12px;
+      line-height: 28px;
+      height: 28px;
+      color: #424242;
+      margin: auto;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 13px;
+      border-radius: 4px;
+    }
+    .nav-home{
+      display: none;
+    }
+    nav a > img {
+    // height: 20px;
+    }
+
+    nav a:hover {
+      background-color: #9e9e9e;
+    }
+
+    nav .active {
+      background-color: rgba(0, 0, 0, 0.14);
+    }
+
+    main {
+      overflow-x: hidden;
+    }
+
+    img, picture {
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+    }
+
+    * {
+      box-sizing: border-box; /* pour maîtriser width et flex-basis */
+    }
+
+    .devmind-section {
+      display: block;
+      margin: 0 auto;
+      max-width: 1600px;
+      padding: 60px 40px;
+    }
+
+    @media (max-width: 700px) {
+      .devmind-section {
+        padding: 25px 10px;
+      }
+    }
+
+    @media (min-width: 701px) and (max-width: 900px) {
+      .devmind-section {
+        padding: 40px 25px;
+      }
+    }
+
+    .dm-social {
+      min-width: 2em;
+      max-width: 2em;
+      width: 2em;
+      height: 2em;
+    }
+  </style>
+  <!-- Matomo -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(["setCookieDomain", "*.dev-mind.fr"]);
+    _paq.push(["disableCampaignParameters"]);
+    _paq.push(["setDoNotTrack", true]);
+    _paq.push(["disableCookies"]);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="https://devmind.matomo.cloud/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '1']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src='https://cdn.matomo.cloud/devmind.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+<style>.dm-block--blog{width:100%;background-color:#eceff1;color:#424242;padding:0;margin:0}footer{background-color:#424242}.is-small-screen{display:none}.is-large-screen{display:inherit}@media screen and (max-width: 900px){.is-small-screen{display:inherit}.is-large-screen{display:none}}h1,h2{color:#424242;font-weight:100}h1{font-weight:bolder;font-size:35px;line-height:38px}h2{font-size:25px;line-height:28px}@media (max-width: 700px){h1{font-size:28px;line-height:30px}h2{font-size:22px;line-height:24px}}
+</style><link rel="stylesheet" href="styles-WO7TV6DC.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-WO7TV6DC.css"></noscript><style ng-app-id="ng">.dm_footer[_ngcontent-ng-c2660501952]{color:#eee;display:flex;justify-content:space-between;font-size:14px}.dm_footer[_ngcontent-ng-c2660501952]   .dm_society[_ngcontent-ng-c2660501952]{color:#fff}.dm_footer[_ngcontent-ng-c2660501952]   div[_ngcontent-ng-c2660501952]{margin-right:1em;width:100%}.dm_footer[_ngcontent-ng-c2660501952]   .dm_footer__middle[_ngcontent-ng-c2660501952]{flex-grow:1}.dm_footer[_ngcontent-ng-c2660501952]   .dm_footer__right[_ngcontent-ng-c2660501952]{text-align:right}.dm_footer[_ngcontent-ng-c2660501952]   .is-large-screen[_ngcontent-ng-c2660501952]{padding:.7em;margin:.7em 1em}.dm_footer[_ngcontent-ng-c2660501952]   .is-small-screen[_ngcontent-ng-c2660501952]{padding:0;margin:0 1em;font-size:12px}</style><style ng-app-id="ng">h1{margin-top:.5em}.dm-blog--info-date{font-size:smaller;color:#424242;border:1px solid #aaa;border-radius:24px;padding:.5em 1em;margin-right:.5em;display:inline}.blog-keywords{display:flex;margin-bottom:1em}.blog-keywords .dm-blog--keyword-detail{background-color:#ccc;color:#424242;padding:.5em 1em;margin-right:.5em;border-radius:24px;font-size:smaller}.toc{background-color:#ccc;margin-top:1em;border:1px solid #ccc;padding:1em;border-radius:8px}.toc #toctitle{font-weight:700;margin-bottom:.5em}img{max-width:100%;height:auto}.imageblock>.content{display:flex;justify-content:center;align-items:center}.highlight{display:block;overflow-x:auto;background:#f3f3f3;color:#444;padding:1.5em;box-shadow:0 8px 16px #00000026;border-radius:8px}code.hljs{padding:3px 5px}.hljs-comment{color:#697070}.hljs-punctuation,.hljs-tag{color:#444a}.hljs-tag .hljs-attr,.hljs-tag .hljs-name{color:#444}.hljs-attribute,.hljs-doctag,.hljs-keyword,.hljs-meta .hljs-keyword,.hljs-name,.hljs-selector-tag{font-weight:700}.hljs-deletion,.hljs-number,.hljs-quote,.hljs-selector-class,.hljs-selector-id,.hljs-string,.hljs-template-tag,.hljs-type{color:#800}.hljs-section,.hljs-title{color:#800;font-weight:700}.hljs-link,.hljs-operator,.hljs-regexp,.hljs-selector-attr,.hljs-selector-pseudo,.hljs-symbol,.hljs-template-variable,.hljs-variable{color:#ab5656}.hljs-literal{color:#695}.hljs-addition,.hljs-built_in,.hljs-bullet,.hljs-code{color:#397300}.hljs-meta{color:#1f7199}.hljs-meta .hljs-string{color:#38a}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}.language-kotlin:before{display:block;float:right;content:"kotlin";font-weight:700;text-transform:uppercase}.language-typescript:before{display:block;float:right;content:"typescript";font-weight:700;text-transform:uppercase}.language-java:before{display:block;float:right;content:"java";font-weight:700;text-transform:uppercase}.language-javascript:before{display:block;float:right;content:"javascript";font-weight:700;text-transform:uppercase}.language-shell:before{display:block;float:right;content:"shell";font-weight:700;text-transform:uppercase}.language-yaml:before{display:block;float:right;content:"yaml";font-weight:700;text-transform:uppercase}.language-json:before{display:block;float:right;content:"json";font-weight:700;text-transform:uppercase}.language-xml:before{display:block;float:right;content:"xml";font-weight:700;text-transform:uppercase}.language-html:before{display:block;float:right;content:"html";font-weight:700;text-transform:uppercase}.language-css:before{display:block;float:right;content:"css";font-weight:700;text-transform:uppercase}.language-scss:before{display:block;float:right;content:"scss";font-weight:700;text-transform:uppercase}
+</style></head>
+<body><!--nghm-->
+  <app-root _nghost-ng-c582792440 ng-version="18.0.0" ngh="2" ng-server-context="ssg"><app-header _ngcontent-ng-c582792440 _nghost-ng-c2882497807 ngh="0"><header _ngcontent-ng-c2882497807><div _ngcontent-ng-c2882497807 class="header-img"><a _ngcontent-ng-c2882497807 routerlink="/" aria-label="Accueil" href="/"><img _ngcontent-ng-c2882497807 src="img/logo/logo_long.svg" alt="Dev-Mind" title="Dev-Mind"></a></div><nav _ngcontent-ng-c2882497807><a _ngcontent-ng-c2882497807 routerlink="/" aria-label="Accueil" class="nav-home" href="/"><img _ngcontent-ng-c2882497807 src="/img/ic_home_white_24px.svg" rel="start" alt="Accueil"></a><a _ngcontent-ng-c2882497807 routerlink="/formations.html" aria-label="Formations" class href="/formations.html"> Formations</a><a _ngcontent-ng-c2882497807 routerlink="/blog.html" aria-label="Blog" class="active" href="/blog.html">Blog</a><a _ngcontent-ng-c2882497807 routerlink="/experience.html" aria-label="Experience" class href="/experience.html"> Expérience</a></nav><hr _ngcontent-ng-c2882497807></header><div _ngcontent-ng-c2882497807 class="header-space"></div></app-header><router-outlet _ngcontent-ng-c582792440></router-outlet><app-asciidoc-viewer ngh="1"><div class="dm-block--blog"><div class="devmind-section"><h1><!--ngetn--></h1><div class="blog-keywords"><div class="dm-blog--info-date">15/09/2015</div><div class="dm-blog--keyword-detail">Agilité</div><div class="dm-blog--keyword-detail">Leadership</div><div class="dm-blog--keyword-detail">Management</div><!---->&nbsp; </div><div class="preview"><div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Yves Enrègle est un enseignant chercheur spécialisé sur les questions de management et de la responsabilité sociétale. Dans un de ces écrits il compare les 5 types de pouvoirs possibles dans une organisation avec 5 des personnages principaux des albums d’Asterix le Gaulois. Je vous propose ici une transposition de cette vision sur un projet informatique.</p>
+</div>
+<div class="paragraph">
+<p>Quels types de personne faut il trouver pour constituer une bonne équipe projet ? Une réponse est peut être de se rapprocher de l’organisation du village gaulois où 5 leaders incarnent chacun une forme de pouvoir.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2015/formes_leadership_01.jpg" alt="formes de leadership">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_le_pouvoir_de_la_compétence_le_réalisateur">Le pouvoir de la compétence (le réalisateur)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Sur un projet informatique nous avons besoin d’un  ou plusieurs bons techniciens, compétents et qui se caractérisent par leur dynamisme et leur savoir faire.  Dans le célèbre village gaulois, la personne qui n’hésite pas à mettre la main à la pâte pour tailler des menhirs ou repousser les romains, est Obelix. On parlera du Réalisateur ®.  On ne veut pas forcément lui ressembler physiquement mais nous aimerions bien de temps en temps, prendre de la potion magique pour avoir les mêmes facilités.</p>
+</div>
+<div class="paragraph">
+<p>Lorsqu’il se lance dans l’action, les autres gaulois veulent le suivre et faire même mieux que lui.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2015/formes_leadership_02.jpg" alt="Obelix le pouvoir de la compétence">
+</div>
+</div>
+<div class="paragraph">
+<p>Par contre Obelix n’aime pas forcément qu’on lui prenne sa part de romains à assommer…​. Les réalisateurs ont une telle envie de faire qu’il peuvent parfois être réfractaire aux changements. Ces aspects peuvent être les mauvais côtés des réalisateurs (délégation et inertie au changement)</p>
+</div>
+<div class="paragraph">
+<p>Les réalisateurs savent  tout faire, mais il ne savent pas toujours ce qu’il faut faire ni quand il faut s’arrêter pour changer…​.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_le_pouvoir_de_lexpertise_le_guide">Le pouvoir de l’expertise (le guide)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Le guide (G) lui ne sait rien faire de particulier mais il sait ce qu’il faut faire. C’est l’opposé du réalisateur. Il est capable d’analyser le contexte et définir des objectifs à atteindre en fonction des menaces ou des opportunités. Asterix possède ce pouvoir d’expertise. La réalisation n’est pas forcément son fort car il a besoin de prendre de la potion magique pour y arriver.</p>
+</div>
+<div class="paragraph">
+<p>En contre partie les guides peuvent faire preuve d’une envie trop fréquente de changement.</p>
+</div>
+<div class="paragraph">
+<p>Comme pour Asterix et Obelix,  la compétence et l’expertise sont indissociables et sont le fruit du succès. L’équipe d’Yves Enrègle a d’ailleurs observé que plus de 80% des échecs dans les équipes venaient d’une mauvaise coordination entre les forces de type R et de type G. La différence d’inertie et la séparation entre celui qui fait et celui qui dit comment faire peut entraîner des tensions.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2015/formes_leadership_03.jpg" alt="Asterix le pouvoir de l’expertise">
+</div>
+</div>
+<div class="paragraph">
+<p>Comme dans la célèbre BD, les guides et les réalisateurs sont au même niveau hiérarchique et quand les deux parties divergent, il faut une autorité extérieure pour trancher.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_le_pouvoir_de_ladministratif_lorganisateur">Le pouvoir de l’administratif (l’organisateur)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Le pouvoir administratif est là pour réguler et coordonner  les relations entre les réalisateurs et les guides. Abraracourcix, le chef du village incarne ce pouvoir et c’est lui qui doit trancher quand plusieurs options sont possibles. Le chef se doit également de fournir les moyens  nécessaires pour que les guides et les réalisateurs puissent accomplir leurs tâches convenablement.</p>
+</div>
+<div class="paragraph">
+<p>Le rôle de l’organisateur (O) est instable car il n’a de sens que si les guides et les réalisateurs reconnaissent son autorité. Les organisateurs peuvent parfois se défendre négativement de cette vulnérabilité. Ils peuvent se réfugier dans leur statut et perdre le contact avec la réalité. Mais plus ils seront haut perchés plus la redescente sur terre sera douloureuse (comme dans la BD quand Abraracourcix ne passe plus sous la porte et s’étale sur le sol).</p>
+</div>
+<div class="paragraph">
+<p>Par contre en cas de grosse difficulté il peut arriver que le niveau hiérarchique ne soit pas suffisant. Abraracourcix tombe souvent de son bouclier quand les situations s’enveniment.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2015/formes_leadership_03.jpg" alt="Abraracourcix le pouvoir de l’administratif">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_le_pouvoir_charismatique_le_mobilisateur">Le pouvoir charismatique (le mobilisateur)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Panoramix a une position à part dans le village. Sa sagesse, sa posture, ses actes font qu’il n’a rien à prouver. Il est respecté de tous. Le mobilisateur (M) a le pouvoir de rassembler les gens par un phénomène de séduction ou via une expertise remarquable (la potion magique).</p>
+</div>
+<div class="paragraph">
+<p>Le mobilisateur peut aider l’organisateur a reprendre la main (coaching, présence) ou peut débloquer une situation entre les guides et les réalisateurs (expertise métier ou technique). Son rôle est essentiel mais ne doit être fait que de façon ponctuelle. Si l’intervention s’étale son aura peut en pâtir. Il ne doit pas profiter de la situation pour s’approprier le pouvoir.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2015/formes_leadership_04.jpg" alt="Panoramix le pouvoir charismatique">
+</div>
+</div>
+<div class="paragraph">
+<p>Les mobilisateurs doivent être capable de prendre de la hauteur par rapport à un problème. Par contre il arrive que Panoramix ait des ratés. Que faire si le leader charismatique n’est pas là. En cas de conflits dans notre village gaulois les villageois se scindent en deux. Ils peuvent en découdre à coups de poissons pourris…​.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_le_pouvoir_de_lintégrateur_négatif_le_mobilisateur_négatif">Le pouvoir de l’intégrateur négatif (le mobilisateur négatif)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Au contraire de Panoramix qui est respecté de tous, le barde Assurancetourix fait l’unanimité contre lui. Il arrive à déclencher une unité du groupe car tous les villageois s’associent pour qu’il n’exprime pas ses talents musicaux…​ Il ne risque pas de confisquer le pouvoir car dès qu’il veut s’exprimer on le fait taire.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2015/formes_leadership_05.jpg" alt="Assurancetourix le pouvoir de l’intégrateur négatif">
+</div>
+</div>
+<div class="paragraph">
+<p>C’est une forme de pouvoir qui doit intervenir quand toutes les autres formes de pouvoir ont échoué. Certaines personnes, du  «fou du roi» à l'«idiot du village» (les boucs émissaires), ont de tout temps contribué à structurer les groupes humains.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_le_leadership">Le leadership</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Le leadership se déploie donc sous 4 dimensions :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>la compétence sur le métier ou dans son domaine</p>
+</li>
+<li>
+<p>la compétence stratégique, qui sait ce qu’il faut faire</p>
+</li>
+<li>
+<p>le pouvoir statutaire, qui a le pouvoir et l’utilise a bon escient</p>
+</li>
+<li>
+<p>le pouvoir charismatique et une capacité d’influence dont la source est inconnue</p>
+</li>
+<li>
+<p>Le leader ne doit en aucun cas jouer le rôle de l’intégrateur négatif. Dans le cas des conflits avec la base c’est souvent le jeu des syndicats de monter tout le monde contre le leader. Mais dans la réalité peu de personnes vont avoir ces 4 qualités à la fois.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Chaque leader sera plus à l’aise sur l’une ou l’autre des dimensions. Un bon leader sera celui qui saura constituer une équipe complémentaire. Si vous avez des équipes auto gérées vous devrez essayer de la même façon de constituer au mieux vos équipes afin de mettre toutes les chances de votre côté.</p>
+</div>
+<div class="paragraph">
+<p>Pour plus d’information vous pouvez lire « Pourquoi Astérix n’est-il pas chef ? Du conflit à la motivation », Éditions d’organisation, 1985.</p>
+</div>
+<div class="paragraph">
+<p><em>Merci à Alfred Almendra pour sa relecture de cet article </em></p>
+</div>
+</div>
+</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 28/05/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
+
+<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-WDZISLW7.js" type="module"></script>
+
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t0"},"c":{"7":[{"i":"t0","r":1,"x":3}]}},{"c":{"1":[{"i":"c933498719","r":1}]}}]}</script></body></html>

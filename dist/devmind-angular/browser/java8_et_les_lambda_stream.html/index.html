@@ -1,0 +1,607 @@
+<!DOCTYPE html><html lang="en" data-critters-container><head>
+  <meta charset="utf-8">
+  <title>Blog</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    body {
+      min-height: 100vh;
+      max-height: 100vh;
+      font-family: "Helvetica", "Arial", "sans-serif";
+      padding: 0;
+      margin: 0;
+    }
+
+    header {
+      height: 90px;
+      max-height: 90px;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+      background-color: white;
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      z-index: 99;
+      transition-duration: 0.2s;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: max-height, box-shadow;
+      position: fixed;
+      width: 100%;
+      text-align: center;
+    }
+    header hr {
+      width:100%;
+      background-color: #424242;
+      border-color: #424242;
+      display: block;
+      border: 0;
+      height: 0.5em;
+      margin: 0;
+    }
+    .header-img {
+      margin: auto;
+      width: 50%;
+      padding-top: 0.5em;
+      height: 30px;
+    }
+    .header-img img {
+      max-height: 30px !important;
+    }
+    .header-space {
+      min-height: 90px;
+    }
+
+
+    @media screen and (min-width: 901px) {
+      header {
+        height: 120px;
+        max-height: 120px;
+      }
+      .header-img {
+        height: 60px;
+      }
+      .header-img img {
+        max-height: 60px !important;
+      }
+      .header-space {
+        min-height: 120px;
+      }
+      nav a {
+        padding: 6px 24px;
+      }
+      .nav-home{
+        display: block !important;
+      }
+    }
+
+
+    nav {
+      display: -webkit-flex;
+      display: flex;
+      margin: auto;
+    }
+
+    nav a {
+      padding: 0 12px;
+      line-height: 28px;
+      height: 28px;
+      color: #424242;
+      margin: auto;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 13px;
+      border-radius: 4px;
+    }
+    .nav-home{
+      display: none;
+    }
+    nav a > img {
+    // height: 20px;
+    }
+
+    nav a:hover {
+      background-color: #9e9e9e;
+    }
+
+    nav .active {
+      background-color: rgba(0, 0, 0, 0.14);
+    }
+
+    main {
+      overflow-x: hidden;
+    }
+
+    img, picture {
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+    }
+
+    * {
+      box-sizing: border-box; /* pour maîtriser width et flex-basis */
+    }
+
+    .devmind-section {
+      display: block;
+      margin: 0 auto;
+      max-width: 1600px;
+      padding: 60px 40px;
+    }
+
+    @media (max-width: 700px) {
+      .devmind-section {
+        padding: 25px 10px;
+      }
+    }
+
+    @media (min-width: 701px) and (max-width: 900px) {
+      .devmind-section {
+        padding: 40px 25px;
+      }
+    }
+
+    .dm-social {
+      min-width: 2em;
+      max-width: 2em;
+      width: 2em;
+      height: 2em;
+    }
+  </style>
+  <!-- Matomo -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(["setCookieDomain", "*.dev-mind.fr"]);
+    _paq.push(["disableCampaignParameters"]);
+    _paq.push(["setDoNotTrack", true]);
+    _paq.push(["disableCookies"]);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="https://devmind.matomo.cloud/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '1']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src='https://cdn.matomo.cloud/devmind.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+<style>.dm-block--blog{width:100%;background-color:#eceff1;color:#424242;padding:0;margin:0}.dm-block--blog a,.dm-block--blog a:hover,.dm-block--blog a:visited{font-weight:700;color:#424242;text-decoration:none}footer{background-color:#424242}.is-small-screen{display:none}.is-large-screen{display:inherit}@media screen and (max-width: 900px){.is-small-screen{display:inherit}.is-large-screen{display:none}}h1,h2{color:#424242;font-weight:100}h1{font-weight:bolder;font-size:35px;line-height:38px}h2{font-size:25px;line-height:28px}@media (max-width: 700px){h1{font-size:28px;line-height:30px}h2{font-size:22px;line-height:24px}}
+</style><link rel="stylesheet" href="styles-WO7TV6DC.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-WO7TV6DC.css"></noscript><style ng-app-id="ng">.dm_footer[_ngcontent-ng-c2660501952]{color:#eee;display:flex;justify-content:space-between;font-size:14px}.dm_footer[_ngcontent-ng-c2660501952]   .dm_society[_ngcontent-ng-c2660501952]{color:#fff}.dm_footer[_ngcontent-ng-c2660501952]   div[_ngcontent-ng-c2660501952]{margin-right:1em;width:100%}.dm_footer[_ngcontent-ng-c2660501952]   .dm_footer__middle[_ngcontent-ng-c2660501952]{flex-grow:1}.dm_footer[_ngcontent-ng-c2660501952]   .dm_footer__right[_ngcontent-ng-c2660501952]{text-align:right}.dm_footer[_ngcontent-ng-c2660501952]   .is-large-screen[_ngcontent-ng-c2660501952]{padding:.7em;margin:.7em 1em}.dm_footer[_ngcontent-ng-c2660501952]   .is-small-screen[_ngcontent-ng-c2660501952]{padding:0;margin:0 1em;font-size:12px}</style><style ng-app-id="ng">h1{margin-top:.5em}.dm-blog--info-date{font-size:smaller;color:#424242;border:1px solid #aaa;border-radius:24px;padding:.5em 1em;margin-right:.5em;display:inline}.blog-keywords{display:flex;margin-bottom:1em}.blog-keywords .dm-blog--keyword-detail{background-color:#ccc;color:#424242;padding:.5em 1em;margin-right:.5em;border-radius:24px;font-size:smaller}.toc{background-color:#ccc;margin-top:1em;border:1px solid #ccc;padding:1em;border-radius:8px}.toc #toctitle{font-weight:700;margin-bottom:.5em}img{max-width:100%;height:auto}.imageblock>.content{display:flex;justify-content:center;align-items:center}.highlight{display:block;overflow-x:auto;background:#f3f3f3;color:#444;padding:1.5em;box-shadow:0 8px 16px #00000026;border-radius:8px}code.hljs{padding:3px 5px}.hljs-comment{color:#697070}.hljs-punctuation,.hljs-tag{color:#444a}.hljs-tag .hljs-attr,.hljs-tag .hljs-name{color:#444}.hljs-attribute,.hljs-doctag,.hljs-keyword,.hljs-meta .hljs-keyword,.hljs-name,.hljs-selector-tag{font-weight:700}.hljs-deletion,.hljs-number,.hljs-quote,.hljs-selector-class,.hljs-selector-id,.hljs-string,.hljs-template-tag,.hljs-type{color:#800}.hljs-section,.hljs-title{color:#800;font-weight:700}.hljs-link,.hljs-operator,.hljs-regexp,.hljs-selector-attr,.hljs-selector-pseudo,.hljs-symbol,.hljs-template-variable,.hljs-variable{color:#ab5656}.hljs-literal{color:#695}.hljs-addition,.hljs-built_in,.hljs-bullet,.hljs-code{color:#397300}.hljs-meta{color:#1f7199}.hljs-meta .hljs-string{color:#38a}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}.language-kotlin:before{display:block;float:right;content:"kotlin";font-weight:700;text-transform:uppercase}.language-typescript:before{display:block;float:right;content:"typescript";font-weight:700;text-transform:uppercase}.language-java:before{display:block;float:right;content:"java";font-weight:700;text-transform:uppercase}.language-javascript:before{display:block;float:right;content:"javascript";font-weight:700;text-transform:uppercase}.language-shell:before{display:block;float:right;content:"shell";font-weight:700;text-transform:uppercase}.language-yaml:before{display:block;float:right;content:"yaml";font-weight:700;text-transform:uppercase}.language-json:before{display:block;float:right;content:"json";font-weight:700;text-transform:uppercase}.language-xml:before{display:block;float:right;content:"xml";font-weight:700;text-transform:uppercase}.language-html:before{display:block;float:right;content:"html";font-weight:700;text-transform:uppercase}.language-css:before{display:block;float:right;content:"css";font-weight:700;text-transform:uppercase}.language-scss:before{display:block;float:right;content:"scss";font-weight:700;text-transform:uppercase}
+</style></head>
+<body><!--nghm-->
+  <app-root _nghost-ng-c582792440 ng-version="18.0.0" ngh="2" ng-server-context="ssg"><app-header _ngcontent-ng-c582792440 _nghost-ng-c2882497807 ngh="0"><header _ngcontent-ng-c2882497807><div _ngcontent-ng-c2882497807 class="header-img"><a _ngcontent-ng-c2882497807 routerlink="/" aria-label="Accueil" href="/"><img _ngcontent-ng-c2882497807 src="img/logo/logo_long.svg" alt="Dev-Mind" title="Dev-Mind"></a></div><nav _ngcontent-ng-c2882497807><a _ngcontent-ng-c2882497807 routerlink="/" aria-label="Accueil" class="nav-home" href="/"><img _ngcontent-ng-c2882497807 src="/img/ic_home_white_24px.svg" rel="start" alt="Accueil"></a><a _ngcontent-ng-c2882497807 routerlink="/formations.html" aria-label="Formations" class href="/formations.html"> Formations</a><a _ngcontent-ng-c2882497807 routerlink="/blog.html" aria-label="Blog" class="active" href="/blog.html">Blog</a><a _ngcontent-ng-c2882497807 routerlink="/experience.html" aria-label="Experience" class href="/experience.html"> Expérience</a></nav><hr _ngcontent-ng-c2882497807></header><div _ngcontent-ng-c2882497807 class="header-space"></div></app-header><router-outlet _ngcontent-ng-c582792440></router-outlet><app-asciidoc-viewer ngh="1"><div class="dm-block--blog"><div class="devmind-section"><h1><!--ngetn--></h1><div class="blog-keywords"><div class="dm-blog--info-date">02/01/2015</div><div class="dm-blog--keyword-detail">Java</div><div class="dm-blog--keyword-detail">Java</div><div class="dm-blog--keyword-detail">8</div><div class="dm-blog--keyword-detail">Stream</div><div class="dm-blog--keyword-detail">Lambda</div><!---->&nbsp; </div><div class="preview"><div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Je vais revenir sur l’intervention de Jose Paumard au Lyon Jug pour nous parler de la grosse nouveauté de Java 8, les lambdas et l’API stream. José est maître de conférence à l’université Paris 13, où il enseigne tout ce qui tourne autour de la sphère Java depuis 1998. Il a également une activité en tant qu’indépendant qui lui permet d’apporter son expertise aux entreprises. Au delà de ces aspects José fait aussi parti des co-organisateurs de la conférence Devoxx France. L’article est assez long mais j’ai préféré ne pas le découper.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_pourquoi_les_lambdas">Pourquoi les lambdas ?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>On peut se demander pourquoi les lambdas ont été introduites dans Java 8 ? Le mieux est de prendre un exemple. Considérons une classe Person</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Person</span> {
+    <span class="hljs-keyword">public</span> <span class="hljs-type">int</span> age;
+    <span class="hljs-keyword">public</span> String name;
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Le but est ici d’agir sur un ensemble de personnes (une Collection) et de calculer la moyenne d’âge de toutes les personnes de plus de 20 ans. En Java on fait généralement de la programmation impérative où l’on décrit les différentes instructions qui seront exécutées par la machine pour modifier des états. Par exemple</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java"><span class="hljs-type">int</span> <span class="hljs-variable">sum</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>;
+<span class="hljs-type">int</span> <span class="hljs-variable">average</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>;
+<span class="hljs-type">int</span> <span class="hljs-variable">nb</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>;
+<span class="hljs-keyword">for</span> (Person p : persons) {
+    <span class="hljs-keyword">if</span> (p.getAge() &gt;= <span class="hljs-number">20</span>) {
+        sum += p.getAge();
+        nb++;
+    }
+}
+<span class="hljs-keyword">if</span> (!persons.isEmpty()) {
+    average = sum / nb;
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Si on essaye de décomposer les opérations pour obtenir le résultat nous avons plusieurs phases</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>map : on recupère la donnée qui nous intéresse, la liste des âges des personnes</p>
+</li>
+<li>
+<p>filter : on filtre les âges  des personnes de plus de 20 ans</p>
+</li>
+<li>
+<p>reduce :  on calcule la somme des âges qui nous permettra ensuite de sortir une moyenne</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>On aimerait faire du  fonctionnel et repenser notre code mais en Java 7 ceci est difficile. La base serait de définir des interfaces du style</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">Mapper</span>&amp;lt;O, P&amp;gt; {
+    P <span class="hljs-title function_">map</span><span class="hljs-params">(O o)</span>;
+}
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">Predicate</span>&amp;lt;O&amp;gt; {
+    <span class="hljs-type">boolean</span> <span class="hljs-title function_">filter</span><span class="hljs-params">(O t)</span>;
+}
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">Reducer</span>&amp;lt;R&amp;gt; {
+    R <span class="hljs-title function_">reduce</span><span class="hljs-params">(R r1, R r2)</span>;
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>et des implémentations…​</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java">Mapper&amp;lt;Person, Integer&amp;gt; mapper = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Mapper</span>&amp;lt;Person, Integer&amp;gt;() {
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">public</span> Integer <span class="hljs-title function_">map</span><span class="hljs-params">(Person o)</span> {
+        <span class="hljs-keyword">return</span> o.getAge();
+    }
+};
+Predicate&amp;lt;Integer&amp;gt; filter = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Predicate</span>&amp;lt;Integer&amp;gt;() {
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-type">boolean</span> <span class="hljs-title function_">filter</span><span class="hljs-params">(Integer t)</span> {
+        <span class="hljs-keyword">return</span> t&amp;gt;=<span class="hljs-number">20</span>;
+    }
+};
+Reducer&amp;lt;Integer&amp;gt; reducer = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Reducer</span>&amp;lt;Integer&amp;gt;() {
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">public</span> Integer <span class="hljs-title function_">reduce</span><span class="hljs-params">(Integer r1, Integer r2)</span> {
+        <span class="hljs-keyword">return</span> r1+r2;
+    }
+};</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>On pourrait aussi utiliser la programmation fonctionnelle à la sauce  Guava  mais cette librairie ne permet pas de faire la dernière opération de reduce. On devrait écrire</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java">List&amp;lt;Integer&amp;gt; agesPersons = FluentIterable
+        .from(persons)
+        .filter(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Predicate</span>&amp;lt;Person&amp;gt;() {
+            <span class="hljs-meta">@Override</span>
+            <span class="hljs-keyword">public</span> <span class="hljs-type">boolean</span> <span class="hljs-title function_">apply</span><span class="hljs-params">(Person person)</span> {
+                <span class="hljs-keyword">return</span> person.getAge()&amp;gt;=<span class="hljs-number">20</span>;
+            }
+        })
+        .transform(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Function</span>&amp;lt;Person, Integer&amp;gt;() {
+            <span class="hljs-meta">@Override</span>
+            <span class="hljs-keyword">public</span> Integer <span class="hljs-title function_">apply</span><span class="hljs-params">(Person person)</span> {
+                <span class="hljs-keyword">return</span> person.getAge();
+            }
+        })
+        .toList();
+<span class="hljs-keyword">if</span>(!agesPersons.isEmpty()) {
+    <span class="hljs-type">double</span> <span class="hljs-variable">sum</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span> (Integer age : agesPersons) {
+        sum += age;
+    }
+    <span class="hljs-type">double</span> <span class="hljs-variable">moyenne</span> <span class="hljs-operator">=</span> sum / agesPersons.size();
+    System.out.println(moyenne);
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>On peut voir que le code est assez verbeux et que notre boucle for initiale est beaucoup simple. Passons maintenant à  Java8 et utilisons les lambdas expressions pour simplifier l’écriture des implémentations de nos interfaces.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java">Mapper&amp;lt;Person, Integer&amp;gt; mapper = (Person person) -&amp;gt; person.getAge();
+<span class="hljs-comment">//ou</span>
+mapper = Person::getAge;
+
+Predicate&amp;lt;Integer&amp;gt; filter = i -&amp;gt; i&amp;gt;=<span class="hljs-number">20</span>;
+
+Reducer&amp;lt;Integer&amp;gt; reducer = (r1, r2) -&amp;gt; r1+r2;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_comment_le_compilateur_gère_les_lambdas">Comment le compilateur gère les lambdas ?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>On peut se placer à la place du compilateur. Comment savoir quelle lambda expression utiliser ? Il le sait par rapport au type que vous avez déclaré d’où certaines contraintes</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>il ne faut qu’une seule méthode dans le contrat d’interface</p>
+</li>
+<li>
+<p>il faut une cohérence entre les paramètres d’entrée et de sortie et au niveau des exceptions (cette condition est remplie de fait dans une interface)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Comme vous pouvez le voir j’ai utilisé plusieurs écritures possibles pour les lambdas expressions
+* <code><em>(Person person) → person.getAge()</em></code> : ici je précise le type de la donnée en entrée mais je peux m’en passer car le navigateur peut le deviner (inférence de type). C’est la première fois depuis le début de Java que l’on n’est pas obligé de préciser le type
+* <code><em>Person::getAge</em></code> est possible si la méthode getAge n’accepte pas de paramètre</p>
+</div>
+<div class="paragraph">
+<p>Une lambda apparaît comme une autre façon d’écrire une classe anonyme. Une lambda est une instance d’une interface fonctionnelle qui peut être définie à l’aide de l’annotation @FunctionalInterface. Par défaut toute interface ne définissant qu’une seule méthode est fonctionnelle. Ceci permet de vous fournir la fonctionnalité même si vous utilisez des librairies écrites avant Java8. Par contre l’annotation est utile car elle permet de verrouiller votre interface. L’ajout d’une nouvelle méthode provoquera une erreur.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_est_ce_quune_lambda_expression_est_un_objet">Est ce qu’une lambda expression est un objet ?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Comme vous pouvez le voir dans l’exemple que j’ai donné plus haut une lambda peut être stockée dans une variable. Cette manière de faire est naturelle pour des personnes habituée au javascript, mais en Java c’est nouveau.</p>
+</div>
+<div class="paragraph">
+<p>Mais alors est ce qu’une lambda expression est une classe ? Eh bien non car comme vous pouvez le voir nous n’utilisons pas le mot clé new. Nous n’avons pas besoin de demander à la JVM la création d’un objet qui sera ensuite nettoyé par le garbage. Une lambda expression est un nouveau type d’objet, une sorte de classe sans état. Les lambdas permettent donc à la JVM de faire des gains de performance. Comme ce n’est pas un objet, si vous utilisez le this vous faites référence au conteneur et non à la lambda elle même.</p>
+</div>
+<div class="paragraph">
+<p>Java 8 arrive avec 43 nouvelles interfaces fonctionnelles mises à disposition dans le package <a href="http://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html">java.util.function</a>. On peut découper en 4 catégories</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>suppliers : fournit un objet</p>
+</li>
+<li>
+<p>functions : prend un objet et renvoie un autre objet</p>
+</li>
+<li>
+<p>consumers : consomme un objet sans rien renvoyer</p>
+</li>
+<li>
+<p>predicate : prend un objet et renvoie un booléan</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_utiliser_des_lambdas_sur_des_collections">Utiliser des lambdas sur des collections ?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Revenons à notre exemple. Pour le moment les lambdas n’ont pas permis de répondre à notre besoin intial. Pour cela il faudrait que l’API Collection fournissent des classes utilitaires permettant d’effectuer ces fonctions de base pour manipuler ces listes. Ça donnerait par exemple</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java">List&amp;lt;Integer&amp;gt; ages = Lists.map(persons, person -&amp;gt; person.getAge());
+List&amp;lt;Integer&amp;gt; ages20 = Lists.filter(ages, age -&amp;gt; age&amp;gt;=<span class="hljs-number">20</span>);
+<span class="hljs-type">int</span> <span class="hljs-variable">sum</span> <span class="hljs-operator">=</span> Lists.reduce(ages20, (r1, r2) -&amp;gt; r1+r2);</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Mais si on regarde de plus près nous pourrions avoir des problèmes de performance si la liste initiale des personnes est très grande. En effet nous manipulons plusieurs fois  une liste complète. Mais alors que faire ? C’est là que l’API Stream rentre en jeu.</p>
+</div>
+<div class="paragraph">
+<p>Une <a href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/package-summary.html">java.util.Stream</a> représente une séquence d’éléments sur lesquels une ou plusieurs opérations peuvent être effectuées. On trouve plusieurs types d’opérations, des opérations intermédiaires (map, filter…​) qui retournent le stream et des opérations terminales comme reduce, count…​ qui retourne un résultat. Toutes les opérations intermédiaires ne déclenchent pas de calcul, elles placent différents indicateurs pour indiquer si la collection est triée, absence de doublon, taille…​ pour faciliter le travail ultérieur.</p>
+</div>
+<div class="paragraph">
+<p>Une Stream peut être définie de plusieurs manières</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>à partir d’une Collection <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html#stream--">voir api</a></p>
+</li>
+<li>
+<p>à partir d’un tableau <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Arrays.html#stream-long:A-">voir api</a></p>
+</li>
+<li>
+<p>de la factory Stream (exemple Stream.of("a","b","c")</p>
+</li>
+<li>
+<p>d’une String <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html#chars--">voir api</a></p>
+</li>
+<li>
+<p>d’un BufferedReader <a href="http://docs.oracle.com/javase/8/docs/api/java/io/BufferedReader.html#lines--">voir api</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Si on revient à notre besoin initial de vouloir calculer la moyenne d’âge des personnes de plus de 20 ans on peut écrire le code suivante</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java"><span class="hljs-type">double</span> <span class="hljs-variable">moyenne</span> <span class="hljs-operator">=</span> persons.stream()
+                        .filter(person -&amp;gt; person.getAge() &amp;gt;= <span class="hljs-number">20</span>)
+                        .mapToInt(person -&amp;gt; person.getAge())
+                        .average()
+                        .getAsDouble();</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_paralléliser_les_traitements_pas_aussi_simple">Paralléliser les traitements pas aussi simple ?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Sur l’API Collection vous pouvez utiliser soit la méthode stream() soit parallelStream() pour lancer des traitements en parallèle.</p>
+</div>
+<div class="paragraph">
+<p>Il faut faire attention à ce que les opérations de réductions soient bien associatives . Aie…​ des souvenirs de math…​ Pour faire simple une opération <strong>õ</strong> est associative si
+`<em>(x õ y) õ z = x õ (y  õ z)`</em>. Par exemple l’addition est associative mais le carré d’un nombre ne l’est pas.</p>
+</div>
+<div class="paragraph">
+<p>Comme nous n’avons aucune erreur de compilation et que le résultat est aléatoire nous pouvons avoir des surprises. Au niveau de la parallélisation il faut également faire attention aux états.</p>
+</div>
+<div class="paragraph">
+<p>En fonction des traitements que vous effectuez, les paralléliser peut entraîner une dégradation des performances plutôt qu’une amélioration.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_les_méthodes_par_défaut_dans_les_interfaces">Les méthodes par défaut dans les interfaces</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Un peu plus haut j’ai indiqué que nous trouvions une nouvelle méthode dans l’API Collection au niveau de l’interface principale. Mais si on ajoute une méthode toutes les implémentations doivent implémenter cette méthode…​ En faisant cela, on viole une règle de base de Java assurant une rétrocompatibilité.</p>
+</div>
+<div class="paragraph">
+<p>Il a fallu inventer un nouveau concept, les default methods. Elles permettent de déclarer une méthode dans une interface et proposer une implémentation par défaut qui sera exécutée si elle n’est pas surcharger. Prenons par exemple l’interface Collection on trouve une nouvelle méthode</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java"><span class="hljs-keyword">default</span> Stream&amp;lt;E&amp;gt; stream() {
+    <span class="hljs-keyword">return</span> StreamSupport.stream(spliterator(), <span class="hljs-literal">false</span>);
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Si on réfléchit, par ce principe on est train d’introduire l’héritage multiple dans le langage…​ Prenons l’exemple de deux interfaces et une implémentation</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">A</span> {
+    <span class="hljs-keyword">public</span> String <span class="hljs-title function_">a</span><span class="hljs-params">()</span>;
+}
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">A</span> {
+    <span class="hljs-keyword">public</span> String <span class="hljs-title function_">a</span><span class="hljs-params">()</span>;
+}
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">C</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">A</span>,B {
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">public</span> String <span class="hljs-title function_">a</span><span class="hljs-params">()</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Dans ce cas nous n’avons pas de problème mais si on transforme la méthode en default method que ce passe t’il pour la classe C si la méthode n’est pas surchargée ?</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">A</span> {
+    <span class="hljs-keyword">default</span> <span class="hljs-keyword">public</span> String <span class="hljs-title function_">a</span><span class="hljs-params">()</span> { <span class="hljs-keyword">return</span> <span class="hljs-string">"a"</span>;}
+}
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">B</span> {
+    <span class="hljs-keyword">default</span> <span class="hljs-keyword">public</span> String <span class="hljs-title function_">a</span><span class="hljs-params">()</span> { <span class="hljs-keyword">return</span> <span class="hljs-string">"b"</span>;}
+}
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">C</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">A</span>,B {
+
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Dans ce cas nous aurons une erreur de la part du compilateur afin de lever toute ambiguïté. Vous devrez soit surcharger la méthode dans la classe C et appeler celle que vous voulez, soit faire hériter A de B.</p>
+</div>
+<div class="paragraph">
+<p>Nous avions déjà de l’héritage multiple au niveau des types. Cette nouvelle fonctionnalité l’amène au niveau des implémentations. Mais Java n’ira pas au delà et il n’y aura pas d’héritage multiple au niveau des états.</p>
+</div>
+<div class="paragraph">
+<p>Les default method ont un réel intérêt quand vous définissez une API. Prenons les exemples des Listeners ou bien souvent nous sommes obligés de définir des implémentations de base pour éviter de surcharger le code. Tout ces artifices pourront être contournés</p>
+</div>
+<div class="paragraph">
+<p>Vous pouvez aussi à partir de Java 8 définir des méthodes static dans les interfaces. Ceci facilitera la mise à disposition de classe Helper dans une API. Par exemple si je prends l’interface Stream</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span>&amp;lt;T&amp;gt; Stream&amp;lt;T&amp;gt; empty() {
+    <span class="hljs-keyword">return</span> StreamSupport.stream(Spliterators.&amp;lt;T&amp;gt;emptySpliterator(), <span class="hljs-literal">false</span>);
+}
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span>&amp;lt;T&amp;gt; Stream&amp;lt;T&amp;gt; of(T t) {
+    <span class="hljs-keyword">return</span> StreamSupport.stream(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Streams</span>.StreamBuilderImpl&amp;lt;&amp;gt;(t), <span class="hljs-literal">false</span>);
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_optional">Optional</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Les optionals sont un nouveau concept pour éviter les NullPointerException. Optional est un simple conteneur qui contiendra soit une valeur, soit null.</p>
+</div>
+<div class="paragraph">
+<p>Par exemple quand vous faites une réduction d’un ensemble</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java">Optional&amp;lt;Integer&amp;gt; sum =  persons.stream()
+                                .map(person -&amp;gt; person.getAge())
+                                .filter(age -&amp;gt; age&amp;gt;=<span class="hljs-number">20</span>)
+                                .reduce((age1, age2) -&amp;gt; age1+age2);</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_variables_ou_paramètres_préfixées_par_final">Variables ou paramètres préfixées par final</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Avec Java 8 vous n’avez plus besoin de déclarer vos variables ou paramètres en final si vous les utiliser dans une classe interne. Ceci vous évitera de vous poser la question de savoir s’il faut mettre un final ou non.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_collectors">Collectors</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Pour terminer ce voyage dans les arcanes de Java 8 il est important de parler des Collectors. Les Collectors offrent tout un tas d’utilitaire pour effectuer des réductions d’ensemble un peu plus avancées. Prenons plusieurs exemples</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java"><span class="hljs-comment">//Age moyen des personnes de plus de 20 ans</span>
+<span class="hljs-type">double</span> <span class="hljs-variable">moyenne</span> <span class="hljs-operator">=</span> persons.stream()
+        .filter(person -&amp;gt; person.getAge() &amp;gt;= <span class="hljs-number">20</span>)
+        .collect(Collectors.averagingInt(Person::getAge));</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>donnera 42.5</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java"><span class="hljs-comment">//map repartissant les personnes par age</span>
+Map&amp;lt;Integer, List&amp;lt;Person&amp;gt;&amp;gt; repartition =  persons.stream()
+        .filter(person -&amp;gt; person.getAge() &amp;gt;= <span class="hljs-number">20</span>)
+        .collect(Collectors.groupingBy(Person::getAge));</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>donnera {50=[com.javamind.domain.Person@122bbb7, com.javamind.domain.Person@1a4555e], 70=[com.javamind.domain.Person@30f1c0], 60=[com.javamind.domain.Person@1ed3c8d]}</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java"><span class="hljs-comment">//map repartissant les personnes par age selon leur nom</span>
+        Map&amp;lt;Integer, List&amp;lt;String&amp;gt;&amp;gt; repartition2 =  persons.stream()
+                .filter(person -&amp;gt; person.getAge() &amp;gt;= <span class="hljs-number">20</span>)
+                .collect(Collectors.groupingBy(Person::getAge,
+                    Collectors.mapping(
+                       person-&amp;gt;person.getName(), Collectors.toList())));</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>donnera {50=[Elysabeth, François], 20=[Sophie], 70=[Paul], 25=[Céline], 60=[Robert], 30=[Emilie]}</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_conclusion">Conclusion</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>L’objectif principal de Java 8 est le gain de performance. Cette nouvelle version va vraiment révolutionner la manière de programmer et l’apport sera aussi grand que ce que les generics ont pu apporter en Java5. De nombreuses équipes ont migré vers Java 6 ou Java 7, sans vraiment changer ni leur code existant, ni leurs habitudes de programmation. Là, le travail ne va pas être simple pour les développeurs expérimentés car il va falloir “désapprendre” ce que l’on sait, et à apprendre de nouvelles manières de faire les choses.</p>
+</div>
+<div class="paragraph">
+<p>Si vous voulez suivre José en video plusieurs supports sont disponibles sur le site de Youtube. Vous pouvez aussi lire son interview réalisée par les <a href="http://www.duchess-france.org/le-lambda-tour-de-jose-paumard/">DuchessFrance</a>. José met également à disposition différents exemples sur son compte <a href="https://github.com/JosePaumard/jdk8-lambda-tour">github</a>.</p>
+</div>
+</div>
+</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 28/05/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
+
+<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-WDZISLW7.js" type="module"></script>
+
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t6"},"c":{"7":[{"i":"t6","r":1,"x":5}]}},{"c":{"1":[{"i":"c933498719","r":1}]}}]}</script></body></html>
