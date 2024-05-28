@@ -17,4 +17,8 @@ import {RouterModule} from "@angular/router";
 })
 export class HomeComponent {
   blogEntries: Array<BlogEntry> = blogRoutes.map(it => it.data as BlogEntry).slice(0, 2);
+
+  postPath(blogEntry: BlogEntry): Array<string> {
+    return ['/',...blogEntry.folder.split('/'),  blogEntry.filename+'.html'];
+  }
 }

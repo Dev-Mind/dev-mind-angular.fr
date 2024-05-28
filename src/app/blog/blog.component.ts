@@ -36,4 +36,7 @@ export class BlogComponent implements OnInit {
     this.displayedArticles = this.archive ? 4000 : 4;
   }
 
+  postPath(post: BlogEntry) {
+    return ['/', ...post.folder.split('/'), post.filename + '.html'];
+  }
 }

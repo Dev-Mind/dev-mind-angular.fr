@@ -17,4 +17,8 @@ import {trainingRoutes} from "../../app.generated.training.routes";
 })
 export class AllTrainingComponent {
   blogEntries: Array<BlogEntry> = trainingRoutes.map(it => it.data as BlogEntry);
+
+  postPath(post: BlogEntry) {
+    return ['/', ...post.folder.split('/'), post.filename + '.html'];
+  }
 }

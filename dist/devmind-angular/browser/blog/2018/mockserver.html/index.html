@@ -1,0 +1,460 @@
+<!DOCTYPE html><html lang="en" data-critters-container><head>
+  <meta charset="utf-8">
+  <title>Blog</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    body {
+      min-height: 100vh;
+      max-height: 100vh;
+      font-family: "Helvetica", "Arial", "sans-serif";
+      padding: 0;
+      margin: 0;
+    }
+
+    header {
+      height: 90px;
+      max-height: 90px;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+      background-color: white;
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      z-index: 99;
+      transition-duration: 0.2s;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: max-height, box-shadow;
+      position: fixed;
+      width: 100%;
+      text-align: center;
+    }
+    header hr {
+      width:100%;
+      background-color: #424242;
+      border-color: #424242;
+      display: block;
+      border: 0;
+      height: 0.5em;
+      margin: 0;
+    }
+    .header-img {
+      margin: auto;
+      width: 50%;
+      padding-top: 0.5em;
+      height: 30px;
+    }
+    .header-img img {
+      max-height: 30px !important;
+    }
+    .header-space {
+      min-height: 90px;
+    }
+
+
+    @media screen and (min-width: 901px) {
+      header {
+        height: 120px;
+        max-height: 120px;
+      }
+      .header-img {
+        height: 60px;
+      }
+      .header-img img {
+        max-height: 60px !important;
+      }
+      .header-space {
+        min-height: 120px;
+      }
+      nav a {
+        padding: 6px 24px;
+      }
+      .nav-home{
+        display: block !important;
+      }
+    }
+
+
+    nav {
+      display: -webkit-flex;
+      display: flex;
+      margin: auto;
+    }
+
+    nav a {
+      padding: 0 12px;
+      line-height: 28px;
+      height: 28px;
+      color: #424242;
+      margin: auto;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 13px;
+      border-radius: 4px;
+    }
+    .nav-home{
+      display: none;
+    }
+    nav a > img {
+    // height: 20px;
+    }
+
+    nav a:hover {
+      background-color: #9e9e9e;
+    }
+
+    nav .active {
+      background-color: rgba(0, 0, 0, 0.14);
+    }
+
+    main {
+      overflow-x: hidden;
+    }
+
+    img, picture {
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+    }
+
+    * {
+      box-sizing: border-box; /* pour maîtriser width et flex-basis */
+    }
+
+    .devmind-section {
+      display: block;
+      margin: 0 auto;
+      max-width: 1600px;
+      padding: 60px 40px;
+    }
+
+    @media (max-width: 700px) {
+      .devmind-section {
+        padding: 25px 10px;
+      }
+    }
+
+    @media (min-width: 701px) and (max-width: 900px) {
+      .devmind-section {
+        padding: 40px 25px;
+      }
+    }
+
+    .dm-social {
+      min-width: 2em;
+      max-width: 2em;
+      width: 2em;
+      height: 2em;
+    }
+  </style>
+  <!-- Matomo -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(["setCookieDomain", "*.dev-mind.fr"]);
+    _paq.push(["disableCampaignParameters"]);
+    _paq.push(["setDoNotTrack", true]);
+    _paq.push(["disableCookies"]);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="https://devmind.matomo.cloud/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '1']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src='https://cdn.matomo.cloud/devmind.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+<style>.dm-block--blog{width:100%;background-color:#eceff1;color:#424242;padding:0;margin:0}.dm-block--blog a,.dm-block--blog a:hover,.dm-block--blog a:visited{font-weight:700;color:#424242;text-decoration:none}footer{background-color:#424242}.is-small-screen{display:none}.is-large-screen{display:inherit}@media screen and (max-width: 900px){.is-small-screen{display:inherit}.is-large-screen{display:none}}h1,h2{color:#424242;font-weight:100}h1{font-weight:bolder;font-size:35px;line-height:38px}h2{font-size:25px;line-height:28px}@media (max-width: 700px){h1{font-size:28px;line-height:30px}h2{font-size:22px;line-height:24px}}
+</style><link rel="stylesheet" href="styles-WO7TV6DC.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-WO7TV6DC.css"></noscript><style ng-app-id="ng">.dm_footer[_ngcontent-ng-c2660501952]{color:#eee;display:flex;justify-content:space-between;font-size:14px}.dm_footer[_ngcontent-ng-c2660501952]   .dm_society[_ngcontent-ng-c2660501952]{color:#fff}.dm_footer[_ngcontent-ng-c2660501952]   div[_ngcontent-ng-c2660501952]{margin-right:1em;width:100%}.dm_footer[_ngcontent-ng-c2660501952]   .dm_footer__middle[_ngcontent-ng-c2660501952]{flex-grow:1}.dm_footer[_ngcontent-ng-c2660501952]   .dm_footer__right[_ngcontent-ng-c2660501952]{text-align:right}.dm_footer[_ngcontent-ng-c2660501952]   .is-large-screen[_ngcontent-ng-c2660501952]{padding:.7em;margin:.7em 1em}.dm_footer[_ngcontent-ng-c2660501952]   .is-small-screen[_ngcontent-ng-c2660501952]{padding:0;margin:0 1em;font-size:12px}</style><style ng-app-id="ng">h1{margin-top:.5em}.dm-blog--info-date{font-size:smaller;color:#424242;border:1px solid #aaa;border-radius:24px;padding:.5em 1em;margin-right:.5em;display:inline}.blog-keywords{display:flex;margin-bottom:1em}.blog-keywords .dm-blog--keyword-detail{background-color:#ccc;color:#424242;padding:.5em 1em;margin-right:.5em;border-radius:24px;font-size:smaller}.toc{background-color:#ccc;margin-top:1em;border:1px solid #ccc;padding:1em;border-radius:8px}.toc #toctitle{font-weight:700;margin-bottom:.5em}img{max-width:100%;height:auto}.imageblock>.content{display:flex;justify-content:center;align-items:center}.highlight{display:block;overflow-x:auto;background:#f3f3f3;color:#444;padding:1.5em;box-shadow:0 8px 16px #00000026;border-radius:8px}code.hljs{padding:3px 5px}.hljs-comment{color:#697070}.hljs-punctuation,.hljs-tag{color:#444a}.hljs-tag .hljs-attr,.hljs-tag .hljs-name{color:#444}.hljs-attribute,.hljs-doctag,.hljs-keyword,.hljs-meta .hljs-keyword,.hljs-name,.hljs-selector-tag{font-weight:700}.hljs-deletion,.hljs-number,.hljs-quote,.hljs-selector-class,.hljs-selector-id,.hljs-string,.hljs-template-tag,.hljs-type{color:#800}.hljs-section,.hljs-title{color:#800;font-weight:700}.hljs-link,.hljs-operator,.hljs-regexp,.hljs-selector-attr,.hljs-selector-pseudo,.hljs-symbol,.hljs-template-variable,.hljs-variable{color:#ab5656}.hljs-literal{color:#695}.hljs-addition,.hljs-built_in,.hljs-bullet,.hljs-code{color:#397300}.hljs-meta{color:#1f7199}.hljs-meta .hljs-string{color:#38a}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}.language-kotlin:before{display:block;float:right;content:"kotlin";font-weight:700;text-transform:uppercase}.language-typescript:before{display:block;float:right;content:"typescript";font-weight:700;text-transform:uppercase}.language-java:before{display:block;float:right;content:"java";font-weight:700;text-transform:uppercase}.language-javascript:before{display:block;float:right;content:"javascript";font-weight:700;text-transform:uppercase}.language-shell:before{display:block;float:right;content:"shell";font-weight:700;text-transform:uppercase}.language-yaml:before{display:block;float:right;content:"yaml";font-weight:700;text-transform:uppercase}.language-json:before{display:block;float:right;content:"json";font-weight:700;text-transform:uppercase}.language-xml:before{display:block;float:right;content:"xml";font-weight:700;text-transform:uppercase}.language-html:before{display:block;float:right;content:"html";font-weight:700;text-transform:uppercase}.language-css:before{display:block;float:right;content:"css";font-weight:700;text-transform:uppercase}.language-scss:before{display:block;float:right;content:"scss";font-weight:700;text-transform:uppercase}
+</style></head>
+<body><!--nghm-->
+  <app-root _nghost-ng-c582792440 ng-version="18.0.0" ngh="2" ng-server-context="ssg"><app-header _ngcontent-ng-c582792440 _nghost-ng-c2882497807 ngh="0"><header _ngcontent-ng-c2882497807><div _ngcontent-ng-c2882497807 class="header-img"><a _ngcontent-ng-c2882497807 routerlink="/" aria-label="Accueil" href="/"><img _ngcontent-ng-c2882497807 src="img/logo/logo_long.svg" alt="Dev-Mind" title="Dev-Mind"></a></div><nav _ngcontent-ng-c2882497807><a _ngcontent-ng-c2882497807 routerlink="/" aria-label="Accueil" class="nav-home" href="/"><img _ngcontent-ng-c2882497807 src="/img/ic_home_white_24px.svg" rel="start" alt="Accueil"></a><a _ngcontent-ng-c2882497807 routerlink="/formations.html" aria-label="Formations" class href="/formations.html"> Formations</a><a _ngcontent-ng-c2882497807 routerlink="/blog.html" aria-label="Blog" class="active" href="/blog.html">Blog</a><a _ngcontent-ng-c2882497807 routerlink="/experience.html" aria-label="Experience" class href="/experience.html"> Expérience</a></nav><hr _ngcontent-ng-c2882497807></header><div _ngcontent-ng-c2882497807 class="header-space"></div></app-header><router-outlet _ngcontent-ng-c582792440></router-outlet><app-asciidoc-viewer ngh="1"><div class="dm-block--blog"><div class="devmind-section"><h1><!--ngetn--></h1><div class="blog-keywords"><div class="dm-blog--info-date">15/01/2018</div><div class="dm-blog--keyword-detail">Java</div><div class="dm-blog--keyword-detail">Junit</div><div class="dm-blog--keyword-detail">Spring</div><div class="dm-blog--keyword-detail">Boot</div><div class="dm-blog--keyword-detail">WebClient</div><!---->&nbsp; </div><div class="preview"><div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>En jouant avec le dernier framework <a href="https://docs.spring.io/spring/docs/current/spring-framework-reference/web-reactive.html">WebFlux</a> de Spring et notamment <a href="https://docs.spring.io/spring-framework/docs/5.0.0.M3/javadoc-api/org/springframework/web/client/reactive/WebClient.html">Web Client</a>, j’ai découvert la librairie <a href="https://square.github.io/okhttp/">okhttp</a> écrite par la société <a href="http://square.github.io/">Square</a>. <a href="https://squareup.com/">Square</a> est spécialisé dans le paiement électronique et ils mettent à disposition des commerçants des mini lecteur de carte de crédits. Ils développement beaucoup pour toutes les plateformes mobiles et notamment pour Android et donc indirectement Java.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2018/mockwebserver_00.png" alt="MockServer et WebClient">
+</div>
+</div>
+<div class="paragraph">
+<p><a href="https://square.github.io/okhttp/">Okhttp</a> est un mini client HTTP et vous trouvez aussi dans ce projet un mini serveur "mockable" que vous pouvez utiliser dans vos tests.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_tester_web_client_en_junit4">Tester <a href="https://docs.spring.io/spring-framework/docs/5.0.0.M3/javadoc-api/org/springframework/web/client/reactive/WebClient.html">Web Client</a> en Junit4</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Prenons un exemple Spring WebFlux utilisant <a href="https://docs.spring.io/spring-framework/docs/5.0.0.M3/javadoc-api/org/springframework/web/client/reactive/WebClient.html">Web Client</a></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java"><span class="hljs-meta">@Component</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ElasticMailSender</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">EmailSender</span> {
+
+    <span class="hljs-keyword">private</span> WebClient webClient;
+
+    <span class="hljs-keyword">public</span> <span class="hljs-title function_">ElasticMailSender</span><span class="hljs-params">()</span> {
+        webClient = WebClient.create(<span class="hljs-string">"https://api.elasticemail.com"</span>);
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-title function_">ElasticMailSender</span><span class="hljs-params">(WebClient webClient)</span> {
+        <span class="hljs-built_in">this</span>.webClient = webClient;
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">send</span><span class="hljs-params">(EmailMessage email)</span> {
+        <span class="hljs-type">ElasticEmailResponseDTO</span> <span class="hljs-variable">response</span> <span class="hljs-operator">=</span> webClient.post()
+            .uri(String.format(<span class="hljs-string">"/%s/email/send"</span>, <span class="hljs-string">"v2"</span>))
+            .body(BodyInserters
+                 .fromFormData(<span class="hljs-string">"apikey"</span>, <span class="hljs-string">"MYAPISECRET"</span>)
+                 .with(<span class="hljs-string">"from"</span>, <span class="hljs-string">"guillaume@dev-mind.fr"</span>)
+                 .with(<span class="hljs-string">"fromName"</span>, <span class="hljs-string">"Dev-Mind"</span>)
+                 .with(<span class="hljs-string">"to"</span>, email.getTo())
+                 .with(<span class="hljs-string">"subject"</span>, email.getSubject())
+                 .with(<span class="hljs-string">"isTransactional"</span>, <span class="hljs-string">"true"</span>)
+                 .with(<span class="hljs-string">"body"</span>, email.getContent())
+            )
+            .accept(MediaType.APPLICATION_JSON)
+            .retrieve()
+            .bodyToMono(ElasticEmailResponseDTO.class)
+            .block();
+
+        <span class="hljs-keyword">if</span> (response.getSuccess() == <span class="hljs-literal">false</span>) {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">RuntimeException</span>(response.getError());
+        }
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Si nous voulons tester cette classe nous devons simuler le comportement de WebClient. Nous pouvons utiliser un framework de mock mais dans ce cas là nous ne testons pas le flux HTTP. Utilisons donc un simulacre de serveur web…​ C’est là que rentre en compte  <a href="https://github.com/square/okhttp/tree/master/mockwebserver">MockWebServer</a></p>
+</div>
+<div class="paragraph">
+<p>Pour l’utiliser rien de plus simple. Commencez par insérer cette dépendance dans votre build Gradle</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java">testCompile(<span class="hljs-string">"com.squareup.okhttp3:mockwebserver:3.9.1"</span>)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>MockWebserver est en fait une <a href="http://javamind-fr.blogspot.fr/2014/05/junit-et-les-rules-comment-mutualiser.html#!">Rule Junit 4</a> et étend la classe <a href="http://junit.org/junit4/javadoc/4.12/org/junit/rules/ExternalResource.html">ExternalResource</a>. Votre test peut s’écrire de cette manière</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ElasticMailSenderTest</span> {
+    <span class="hljs-meta">@Rule</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-type">MockWebServer</span> <span class="hljs-variable">server</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">MockWebServer</span>();
+    <span class="hljs-keyword">private</span> WebClient webClient;
+    <span class="hljs-keyword">private</span> ElasticMailSender elasticMailSender;
+
+    <span class="hljs-meta">@Before</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">setUp</span><span class="hljs-params">()</span>{
+        <span class="hljs-built_in">this</span>.webClient = Mockito.spy(WebClient.create(<span class="hljs-built_in">this</span>.server.url(<span class="hljs-string">"/"</span>).toString()));
+        elasticMailSender = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ElasticMailSender</span>(webClient);
+    }
+
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">send</span><span class="hljs-params">()</span> {
+        prepareResponse(response -&amp;gt; response
+                .setHeader(<span class="hljs-string">"Content-Type"</span>, <span class="hljs-string">"application/json"</span>)
+                .setBody(<span class="hljs-string">"{ "success" : true }"</span>));
+
+        elasticMailSender.send(<span class="hljs-keyword">new</span> <span class="hljs-title class_">EmailMessage</span>(
+                <span class="hljs-string">"guillaume@test.fr"</span>,
+                <span class="hljs-string">"Email test"</span>,
+                <span class="hljs-string">"&amp;lt;h1&amp;gt;Hi Guillaume&amp;lt;/h1&amp;gt;&amp;lt;p&amp;gt;Waow... you are able to send an email&amp;lt;/p&amp;gt;"</span>)
+        );
+
+        verify(webClient, atLeastOnce()).post();
+    }
+
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">sendWithError</span><span class="hljs-params">()</span> {
+        prepareResponse(response -&amp;gt; response
+                .setHeader(<span class="hljs-string">"Content-Type"</span>, <span class="hljs-string">"application/json"</span>)
+                .setBody(<span class="hljs-string">"{ "success" : false, "error" : "error expected" }"</span>));
+
+        assertThatThrownBy(() -&amp;gt; elasticMailSender.send(<span class="hljs-keyword">new</span> <span class="hljs-title class_">EmailMessage</span>(
+                <span class="hljs-string">"guillaume@test.fr"</span>,
+                <span class="hljs-string">"Email test"</span>,
+                <span class="hljs-string">"&amp;lt;h1&amp;gt;Hi Guillaume&amp;lt;/h1&amp;gt;&amp;lt;p&amp;gt;Waow... you are able to send an email&amp;lt;/p&amp;gt;"</span>)))
+                .isExactlyInstanceOf(RuntimeException.class)
+                .hasMessage(<span class="hljs-string">"error expected"</span>);
+    }
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">prepareResponse</span><span class="hljs-params">(Consumer&amp;lt;MockResponse&amp;gt; consumer)</span> {
+        <span class="hljs-type">MockResponse</span> <span class="hljs-variable">response</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">MockResponse</span>();
+        consumer.accept(response);
+        <span class="hljs-built_in">this</span>.server.enqueue(response);
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Une fois que la <code><em>Rule</em></code> est créée on initialise un <code><em>WebClient</em></code> avec une URL qui sera servie par <code><em>MockWebServer</em></code></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java">WebClient.create(<span class="hljs-built_in">this</span>.server.url(<span class="hljs-string">"/"</span>).toString())</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Ensuite la méthode <code><em>prepareResponse()</em></code> permet de constuire une réponse qui sera renvoyée quand WebClient appelera cette URL.</p>
+</div>
+<div class="paragraph">
+<p>Jusque là tout va bien mais que ce passe t’il si nous voulons passer à Junit 5 ?</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_tester_web_client_en_junit5">Tester <a href="https://docs.spring.io/spring-framework/docs/5.0.0.M3/javadoc-api/org/springframework/web/client/reactive/WebClient.html">Web Client</a> en Junit5</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Si vous souhaitez utiliser Junit 5 dans votre application vous pouvez commencer par lire <a href="https://www.dev-mind.fr/blog/2018/junit5_and_springboot.html">mon article</a> sur le sujet :-).  Pour ne plus avoir de dépendance vers des anciennes versions de Junit, vous pouvez ajouter à votre projet Gradle cette configuration</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java">configurations {
+	all {
+		exclude <span class="hljs-keyword">module</span>: <span class="hljs-string">"junit"</span>
+	}
+}
+testCompile(<span class="hljs-string">"org.junit.jupiter:junit-jupiter-api"</span>)
+testRuntime(<span class="hljs-string">"org.junit.jupiter:junit-jupiter-engine"</span>)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Mais dans ce cas là vous ne pourrez plus utiliser la librairie précédente car elle a besoin de Junit 4 pour compiler. Il faut savoir que les versions 5 et 4 ne sont pas rétrocompatibles et les Rule Junit4 ont été remplacées par des extensions dans Junit 5.</p>
+</div>
+<div class="paragraph">
+<p>Junit 5 a été réécrit pour profiter pleinement de Java 8. Le <a href="https://developer.android.com/studio/write/java8-support.html">support Java 8</a> est encore à ses débuts dans Android, et Square ne va pas faire évoluer tout de suite sa librairie pour être compatible Junit 5. Pour palier à ce problème vous pouvez utiliser le fork mis en place par <a href="https://github.com/Dev-Mind/mockwebserver">Dev-Mind</a>. Ce projet utilise le projet <a href="https://square.github.io/okhttp/">okhttp</a> mais ne dépend pas de Junit 4, et propose deux extensions pour vos tests.</p>
+</div>
+<div class="paragraph">
+<p>Vous pouvez charger cette librairie sur <a href="http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22fr.dev-mind%22">Maven Central</a>. Pour l’utiliser dans un projet Gradle vous pouvez déclarer cette dépendance</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java">testCompile(<span class="hljs-string">"com.devmind:mockwebserver:0.1.0"</span>)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>La première extension <code><em>MockWebServerExtension</em></code> se charge d’instancier un serveur web, de le démarrer et de l’arrêter avant et après chaque test.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java"><span class="hljs-meta">@ExtendWith(MockWebServerExtension.class)</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">MySpringWebfluxServiceTest</span> {
+
+    <span class="hljs-keyword">private</span> MockWebServer server;
+    <span class="hljs-keyword">private</span> WebClient webClient;
+    <span class="hljs-keyword">private</span> MySpringWebfluxService service;
+
+    <span class="hljs-meta">@BeforeEach</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">setup</span><span class="hljs-params">(MockWebServer server)</span> {
+        <span class="hljs-built_in">this</span>.webClient = WebClient.create(server.url(<span class="hljs-string">"/"</span>).toString());
+        <span class="hljs-built_in">this</span>.service = <span class="hljs-keyword">new</span> <span class="hljs-title class_">MySpringWebfluxService</span>(webClient);
+        <span class="hljs-built_in">this</span>.server = server;
+    }
+
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">mytest</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception {
+        prepareResponse(response -&amp;gt; response
+                .setHeader(<span class="hljs-string">"Content-Type"</span>, <span class="hljs-string">"application/json"</span>)
+                .setBody( <span class="hljs-string">"{
+"</span> +
+                          <span class="hljs-string">"  "error_message" : "The provided API key is invalid.",
+"</span> +
+                          <span class="hljs-string">"  "predictions" : [],
+"</span> +
+                          <span class="hljs-string">"  "status" : "REQUEST_DENIED"
+"</span> +
+                          <span class="hljs-string">"}"</span>));
+
+        StepVerifier.create(service.myMethod())
+                .expectComplete()
+                .verify(Duration.ofSeconds(<span class="hljs-number">3</span>));
+    }
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">prepareResponse</span><span class="hljs-params">(Consumer consumer)</span> {
+        <span class="hljs-type">MockResponse</span> <span class="hljs-variable">response</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">MockResponse</span>();
+        consumer.accept(response);
+        <span class="hljs-built_in">this</span>.server.enqueue(response);
+    }
+
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Avec la deuxième extension <code><em>MockSimpleWebServerExtension</em></code> plus basique, vous gérez vous même l’arrêt relance du serveur. Ceci permet par exemple de lancer le serveur avant le lancement de tous les tests et de l’arrêter à la fin de l’exécution</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java"><span class="hljs-meta">@ExtendWith(MockSimpleWebServerExtension.class)</span>
+<span class="hljs-meta">@TestInstance(TestInstance.Lifecycle.PER_CLASS)</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">MySpringWebfluxServiceTest</span> {
+
+    <span class="hljs-keyword">private</span> MockWebServer server;
+    <span class="hljs-keyword">private</span> WebClient webClient;
+    <span class="hljs-keyword">private</span> MySpringWebfluxService service;
+
+    <span class="hljs-meta">@BeforeAll</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">init</span><span class="hljs-params">(MockWebServer server)</span> <span class="hljs-keyword">throws</span> IOException {
+        server.start();
+        <span class="hljs-built_in">this</span>.server = server;
+    }
+
+    <span class="hljs-meta">@AfterAll</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">tearDown</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> IOException {
+        server.shutdown();
+    }
+
+    <span class="hljs-meta">@BeforeEach</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">setup</span><span class="hljs-params">(MockWebServer server)</span> {
+        <span class="hljs-built_in">this</span>.webClient = WebClient.create(server.url(<span class="hljs-string">"/"</span>).toString());
+        <span class="hljs-built_in">this</span>.service = <span class="hljs-keyword">new</span> <span class="hljs-title class_">MySpringWebfluxService</span>(webClient);
+    }
+
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">mytest</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception {
+        prepareResponse(response -&amp;gt; response
+                .setHeader(<span class="hljs-string">"Content-Type"</span>, <span class="hljs-string">"application/json"</span>)
+                .setBody( <span class="hljs-string">"{
+"</span> +
+                          <span class="hljs-string">"  "error_message" : "The provided API key is invalid.",
+"</span> +
+                          <span class="hljs-string">"  "predictions" : [],
+"</span> +
+                          <span class="hljs-string">"  "status" : "REQUEST_DENIED"
+"</span> +
+                          <span class="hljs-string">"}"</span>));
+
+        StepVerifier.create(service.myMethod())
+                .expectComplete()
+                .verify(Duration.ofSeconds(<span class="hljs-number">3</span>));
+    }
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">prepareResponse</span><span class="hljs-params">(Consumer&amp;lt;MockResponse&amp;gt; consumer)</span> {
+        <span class="hljs-type">MockResponse</span> <span class="hljs-variable">response</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">MockResponse</span>();
+        consumer.accept(response);
+        <span class="hljs-built_in">this</span>.server.enqueue(response);
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Voila vous n’avez plus d’excuse pour ne pas tester vos services Spring utilisant WebClient en Junit 5. Le fork proposé par Dev-Mind peut être utilisé en attendant que Square mette à jour sa librairie.</p>
+</div>
+</div>
+</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 28/05/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
+
+<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-KJW7O4OZ.js" type="module"></script>
+
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t0"},"c":{"7":[{"i":"t0","r":1,"x":5}]}},{"c":{"1":[{"i":"c933498719","r":1}]}}]}</script></body></html>

@@ -1,0 +1,565 @@
+<!DOCTYPE html><html lang="en" data-critters-container><head>
+  <meta charset="utf-8">
+  <title>Blog</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    body {
+      min-height: 100vh;
+      max-height: 100vh;
+      font-family: "Helvetica", "Arial", "sans-serif";
+      padding: 0;
+      margin: 0;
+    }
+
+    header {
+      height: 90px;
+      max-height: 90px;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+      background-color: white;
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      z-index: 99;
+      transition-duration: 0.2s;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: max-height, box-shadow;
+      position: fixed;
+      width: 100%;
+      text-align: center;
+    }
+    header hr {
+      width:100%;
+      background-color: #424242;
+      border-color: #424242;
+      display: block;
+      border: 0;
+      height: 0.5em;
+      margin: 0;
+    }
+    .header-img {
+      margin: auto;
+      width: 50%;
+      padding-top: 0.5em;
+      height: 30px;
+    }
+    .header-img img {
+      max-height: 30px !important;
+    }
+    .header-space {
+      min-height: 90px;
+    }
+
+
+    @media screen and (min-width: 901px) {
+      header {
+        height: 120px;
+        max-height: 120px;
+      }
+      .header-img {
+        height: 60px;
+      }
+      .header-img img {
+        max-height: 60px !important;
+      }
+      .header-space {
+        min-height: 120px;
+      }
+      nav a {
+        padding: 6px 24px;
+      }
+      .nav-home{
+        display: block !important;
+      }
+    }
+
+
+    nav {
+      display: -webkit-flex;
+      display: flex;
+      margin: auto;
+    }
+
+    nav a {
+      padding: 0 12px;
+      line-height: 28px;
+      height: 28px;
+      color: #424242;
+      margin: auto;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 13px;
+      border-radius: 4px;
+    }
+    .nav-home{
+      display: none;
+    }
+    nav a > img {
+    // height: 20px;
+    }
+
+    nav a:hover {
+      background-color: #9e9e9e;
+    }
+
+    nav .active {
+      background-color: rgba(0, 0, 0, 0.14);
+    }
+
+    main {
+      overflow-x: hidden;
+    }
+
+    img, picture {
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+    }
+
+    * {
+      box-sizing: border-box; /* pour maîtriser width et flex-basis */
+    }
+
+    .devmind-section {
+      display: block;
+      margin: 0 auto;
+      max-width: 1600px;
+      padding: 60px 40px;
+    }
+
+    @media (max-width: 700px) {
+      .devmind-section {
+        padding: 25px 10px;
+      }
+    }
+
+    @media (min-width: 701px) and (max-width: 900px) {
+      .devmind-section {
+        padding: 40px 25px;
+      }
+    }
+
+    .dm-social {
+      min-width: 2em;
+      max-width: 2em;
+      width: 2em;
+      height: 2em;
+    }
+  </style>
+  <!-- Matomo -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(["setCookieDomain", "*.dev-mind.fr"]);
+    _paq.push(["disableCampaignParameters"]);
+    _paq.push(["setDoNotTrack", true]);
+    _paq.push(["disableCookies"]);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="https://devmind.matomo.cloud/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '1']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src='https://cdn.matomo.cloud/devmind.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+<style>.dm-block--blog{width:100%;background-color:#eceff1;color:#424242;padding:0;margin:0}.dm-block--blog a,.dm-block--blog a:hover,.dm-block--blog a:visited{font-weight:700;color:#424242;text-decoration:none}footer{background-color:#424242}.is-small-screen{display:none}.is-large-screen{display:inherit}@media screen and (max-width: 900px){.is-small-screen{display:inherit}.is-large-screen{display:none}}h1,h2{color:#424242;font-weight:100}h1{font-weight:bolder;font-size:35px;line-height:38px}h2{font-size:25px;line-height:28px}@media (max-width: 700px){h1{font-size:28px;line-height:30px}h2{font-size:22px;line-height:24px}}
+</style><link rel="stylesheet" href="styles-WO7TV6DC.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-WO7TV6DC.css"></noscript><style ng-app-id="ng">.dm_footer[_ngcontent-ng-c2660501952]{color:#eee;display:flex;justify-content:space-between;font-size:14px}.dm_footer[_ngcontent-ng-c2660501952]   .dm_society[_ngcontent-ng-c2660501952]{color:#fff}.dm_footer[_ngcontent-ng-c2660501952]   div[_ngcontent-ng-c2660501952]{margin-right:1em;width:100%}.dm_footer[_ngcontent-ng-c2660501952]   .dm_footer__middle[_ngcontent-ng-c2660501952]{flex-grow:1}.dm_footer[_ngcontent-ng-c2660501952]   .dm_footer__right[_ngcontent-ng-c2660501952]{text-align:right}.dm_footer[_ngcontent-ng-c2660501952]   .is-large-screen[_ngcontent-ng-c2660501952]{padding:.7em;margin:.7em 1em}.dm_footer[_ngcontent-ng-c2660501952]   .is-small-screen[_ngcontent-ng-c2660501952]{padding:0;margin:0 1em;font-size:12px}</style><style ng-app-id="ng">h1{margin-top:.5em}.dm-blog--info-date{font-size:smaller;color:#424242;border:1px solid #aaa;border-radius:24px;padding:.5em 1em;margin-right:.5em;display:inline}.blog-keywords{display:flex;margin-bottom:1em}.blog-keywords .dm-blog--keyword-detail{background-color:#ccc;color:#424242;padding:.5em 1em;margin-right:.5em;border-radius:24px;font-size:smaller}.toc{background-color:#ccc;margin-top:1em;border:1px solid #ccc;padding:1em;border-radius:8px}.toc #toctitle{font-weight:700;margin-bottom:.5em}img{max-width:100%;height:auto}.imageblock>.content{display:flex;justify-content:center;align-items:center}.highlight{display:block;overflow-x:auto;background:#f3f3f3;color:#444;padding:1.5em;box-shadow:0 8px 16px #00000026;border-radius:8px}code.hljs{padding:3px 5px}.hljs-comment{color:#697070}.hljs-punctuation,.hljs-tag{color:#444a}.hljs-tag .hljs-attr,.hljs-tag .hljs-name{color:#444}.hljs-attribute,.hljs-doctag,.hljs-keyword,.hljs-meta .hljs-keyword,.hljs-name,.hljs-selector-tag{font-weight:700}.hljs-deletion,.hljs-number,.hljs-quote,.hljs-selector-class,.hljs-selector-id,.hljs-string,.hljs-template-tag,.hljs-type{color:#800}.hljs-section,.hljs-title{color:#800;font-weight:700}.hljs-link,.hljs-operator,.hljs-regexp,.hljs-selector-attr,.hljs-selector-pseudo,.hljs-symbol,.hljs-template-variable,.hljs-variable{color:#ab5656}.hljs-literal{color:#695}.hljs-addition,.hljs-built_in,.hljs-bullet,.hljs-code{color:#397300}.hljs-meta{color:#1f7199}.hljs-meta .hljs-string{color:#38a}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}.language-kotlin:before{display:block;float:right;content:"kotlin";font-weight:700;text-transform:uppercase}.language-typescript:before{display:block;float:right;content:"typescript";font-weight:700;text-transform:uppercase}.language-java:before{display:block;float:right;content:"java";font-weight:700;text-transform:uppercase}.language-javascript:before{display:block;float:right;content:"javascript";font-weight:700;text-transform:uppercase}.language-shell:before{display:block;float:right;content:"shell";font-weight:700;text-transform:uppercase}.language-yaml:before{display:block;float:right;content:"yaml";font-weight:700;text-transform:uppercase}.language-json:before{display:block;float:right;content:"json";font-weight:700;text-transform:uppercase}.language-xml:before{display:block;float:right;content:"xml";font-weight:700;text-transform:uppercase}.language-html:before{display:block;float:right;content:"html";font-weight:700;text-transform:uppercase}.language-css:before{display:block;float:right;content:"css";font-weight:700;text-transform:uppercase}.language-scss:before{display:block;float:right;content:"scss";font-weight:700;text-transform:uppercase}
+</style></head>
+<body><!--nghm-->
+  <app-root _nghost-ng-c582792440 ng-version="18.0.0" ngh="2" ng-server-context="ssg"><app-header _ngcontent-ng-c582792440 _nghost-ng-c2882497807 ngh="0"><header _ngcontent-ng-c2882497807><div _ngcontent-ng-c2882497807 class="header-img"><a _ngcontent-ng-c2882497807 routerlink="/" aria-label="Accueil" href="/"><img _ngcontent-ng-c2882497807 src="img/logo/logo_long.svg" alt="Dev-Mind" title="Dev-Mind"></a></div><nav _ngcontent-ng-c2882497807><a _ngcontent-ng-c2882497807 routerlink="/" aria-label="Accueil" class="nav-home" href="/"><img _ngcontent-ng-c2882497807 src="/img/ic_home_white_24px.svg" rel="start" alt="Accueil"></a><a _ngcontent-ng-c2882497807 routerlink="/formations.html" aria-label="Formations" class href="/formations.html"> Formations</a><a _ngcontent-ng-c2882497807 routerlink="/blog.html" aria-label="Blog" class="active" href="/blog.html">Blog</a><a _ngcontent-ng-c2882497807 routerlink="/experience.html" aria-label="Experience" class href="/experience.html"> Expérience</a></nav><hr _ngcontent-ng-c2882497807></header><div _ngcontent-ng-c2882497807 class="header-space"></div></app-header><router-outlet _ngcontent-ng-c582792440></router-outlet><app-asciidoc-viewer ngh="1"><div class="dm-block--blog"><div class="devmind-section"><h1><!--ngetn--></h1><div class="blog-keywords"><div class="dm-blog--info-date">22/01/2018</div><div class="dm-blog--keyword-detail">Java</div><div class="dm-blog--keyword-detail">Gradle</div><div class="dm-blog--keyword-detail">OSS</div><!---->&nbsp; </div><div class="preview"><div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Je n’avais encore jamais publié une librairie sous <a href="http://search.maven.org/">Maven Central</a>, afin de la rendre accessible à tous. Il existe plusieurs manières de faire. J’ai choisi le mode classique, préconisé par <a href="https://www.sonatype.com/">SonaType</a>, la société qui gère <a href="http://search.maven.org/">Maven Central</a> et les produits <a href="https://www.sonatype.com/nexus-lifecycle">Nexus</a>.</p>
+</div>
+<div class="paragraph">
+<p>Tout mes exemples sont définis avec <a href="https://gradle.org/">Gradle</a> et le code source présenté dans cet article est disponible sous <a href="https://github.com/Dev-Mind/mockwebserver">Github</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_utiliser_la_méthode_sonatype">Utiliser la méthode Sonatype</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Les différentes versions des librairies open source Java sont déployées sous  OSSRH (OSS Repository Hosting). OSSRH utilise Nexus Repository Manager pour gérer les librairies. La plateforme gère tout le cycle de vie des versions d’une librairie</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>les versions de développements (snapshots) peuvent être déployées</p>
+</li>
+<li>
+<p>les versions tagguées sont poussées dans un dépôt staging (recette)</p>
+</li>
+<li>
+<p>vous pouvez ensuite indiquer qu’une version de recette est releasée. La plateforme lance à ce moment plusieurs contrôles de qualité et pousse les binaires sur le dépôt central (<a href="http://search.maven.org/">Maven Central</a>).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>La documentation officielle est assez complète et vous la trouverez <a href="http://central.sonatype.org/pages/ossrh-guide.html">ici</a>. Mais comme toute documentation il y a souvent un décalage entre le moment où elle a été décrite et le moment où vous l’appliquez. Sur une version récente de Linux et en utilisant les dernières versions de Gradle vous avez plusieurs points à savoir.</p>
+</div>
+<div class="paragraph">
+<p>Commençons par le début. La documentation vous demande</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>de créer un compte sur le <a href="https://issues.sonatype.org/secure/Signup!default.jspa">Jira</a> de SonaType. Les identifiants de ce compte seront les mêmes que vous utiliserez pour pousser vos artefacts</p>
+</li>
+<li>
+<p>d’ouvrir une issue dans laquelle vous demandez la création d’un nouveau projet. Les équipes Nexus vont faire un check manuel de votre demande. Ils sont assez réactifs</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2018/mavencentral_01.png" alt="Ticket pour la création d’un projet">
+</div>
+</div>
+<div class="paragraph">
+<p>Même si nous allons utiliser Gradle, nous allons construire un descripteur de projet Maven (<code><em>pom.xml</em></code>), car Maven Central contenait à la base que des ressources pour les projes Maven.</p>
+</div>
+<div class="paragraph">
+<p>Une fois que les équipes SonaType ont validé votre projet, vous pouvez envoyer votre librairie sur leurs serveurs. Mais différents checks seront faits afin d’assurer une qualité minimale des librairies</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>vous devez définir les metadata du projet dans un descripteur <code><em>pom.xml</em></code> avec les identifiants (<code><em>artifactId</em></code>, <code><em>version</em></code>, <code><em>groupId</em></code>), le type de packaging, les dépendances transitives et optionelles</p>
+</li>
+<li>
+<p>en plus de votre artefact vous devez envoyer les sources et la javadoc</p>
+</li>
+<li>
+<p>tous les artefacts doivent être signés avec GPG/PGP</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_paramétrer_gradle">Paramétrer Gradle</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Regardons comment faire celà avec Gradle. Vous devez importer les plugins suivants pour votre projet Java</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java">apply plugin: <span class="hljs-string">'java'</span>
+apply plugin: <span class="hljs-string">'signing'</span>
+apply plugin: <span class="hljs-string">'maven'</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Le plugin <code><em>signing</em></code> va être utilisé pour signer les artefacts.</p>
+</div>
+<div class="paragraph">
+<p>Le plugin maven permet de générer un descripteur de projet Maven (<code><em>pom.xml</em></code>) et de publier vos artefacts sur Maven Central</p>
+</div>
+<div class="paragraph">
+<p>Vous pouvez définir les metadata de votre projet…​</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java">group = <span class="hljs-string">'fr.dev-mind'</span>
+archivesBaseName = <span class="hljs-string">"mockwebserver"</span>
+version = rootProject.<span class="hljs-type">version</span>
+<span class="hljs-variable">sourceCompatibility</span> <span class="hljs-operator">=</span> <span class="hljs-number">1.8</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>puis les tâches pour générer les différents artefacts :  jar, sources et javadocs. Les artefacts peuvent contenir un fichier Manifest avec les infos essentielles de votre projet</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java">ext.sharedManifest = manifest {
+    attributes(
+            <span class="hljs-string">"Implementation-Title"</span>: project.name,
+            <span class="hljs-string">"Implementation-Version"</span>: version,
+            <span class="hljs-string">"Implementation-Vendor"</span>: project.group,
+            <span class="hljs-string">"Bundle-Vendor"</span>: project.group
+    )
+}
+
+task <span class="hljs-title function_">sourcesJar</span><span class="hljs-params">(type: Jar)</span> {
+    from sourceSets.main.allJava
+    manifest {
+        from sharedManifest
+    }
+}
+
+task <span class="hljs-title function_">javadocJar</span><span class="hljs-params">(type: Jar, dependsOn: javadoc)</span> {
+    classifier = <span class="hljs-string">'javadoc'</span>
+    from javadoc
+    manifest {
+        from sharedManifest
+    }
+}
+
+javadoc {
+    source = sourceSets.main.<span class="hljs-type">allJava</span>
+    <span class="hljs-variable">classpath</span> <span class="hljs-operator">=</span> configurations.compile
+    options.linkSource <span class="hljs-literal">true</span>
+    options.addBooleanOption(<span class="hljs-string">'Xdoclint:all,-missing'</span>, <span class="hljs-literal">true</span>)
+}
+
+jar {
+    manifest {
+        from sharedManifest
+    }
+}
+
+artifacts {
+    archives javadocJar, sourcesJar
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Vous devez ensuite paramétrer la signature des artefacts. Dans l’exemple ci dessous, ceci n’est fait que lorsque la tâche <code><em>uploadArchives</em></code> est lancée (tâche permettant de publier vos librairies).</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java">signing {
+    required { gradle.taskGraph.hasTask(<span class="hljs-string">"uploadArchives"</span>) }
+    sign configurations.archives
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Il ne reste plus qu’à paramétrer cette tâche <code><em>uploadArchives</em></code> avec les informations que l’on veut voir dans le <code><em>pom.xml</em></code> et les dépôts que vous allez utiliser</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java">uploadArchives {
+    repositories {
+        mavenDeployer {
+            beforeDeployment { MavenDeployment deployment -&amp;gt; signing.signPom(deployment) }
+
+            repository(url: <span class="hljs-string">"https://oss.sonatype.org/service/local/staging/deploy/maven2/"</span>) {
+                authentication(userName: ossrhUsername, password: ossrhPassword)
+            }
+
+            snapshotRepository(url: <span class="hljs-string">"https://oss.sonatype.org/content/repositories/snapshots/"</span>) {
+                authentication(userName: ossrhUsername, password: ossrhPassword)
+            }
+
+            pom.project {
+                name project.name
+                packaging <span class="hljs-string">'jar'</span>
+                description <span class="hljs-string">"A scriptable web server for testing HTTP clients"</span>
+                url <span class="hljs-string">'https://github.com/Dev-Mind/mockwebserver'</span>
+
+                scm {
+                    connection <span class="hljs-string">'scm:git:git://github.com/Dev-Mind/mockwebserver'</span>
+                    developerConnection <span class="hljs-string">'scm:git:git://github.com/Dev-Mind/mockwebserver'</span>
+                    url <span class="hljs-string">'https://github.com/Dev-Mind/mockwebserver'</span>
+                }
+
+                licenses {
+                    license {
+                        name <span class="hljs-string">'The Apache License, Version 2.0'</span>
+                        url <span class="hljs-string">'http://www.apache.org/licenses/LICENSE-2.0.txt'</span>
+                    }
+                }
+
+                developers {
+                    developer {
+                        id <span class="hljs-string">'javamind'</span>
+                        name <span class="hljs-string">'Guillaume EHRET'</span>
+                        email <span class="hljs-string">'guillaume@dev-mind.fr'</span>
+                    }
+                }
+            }
+        }
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_erreur_avec_gpg2">Erreur avec gpg2</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>J’ai suivi la <a href="http://central.sonatype.org/pages/working-with-pgp-signatures.html">documentation</a> pour tout d’abord générer une clé via</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java">$ gpg2 --key-gen</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Lorsque vous générez votre clé vous devez spécifier une <code>passphrase</code>. Personnellement j’ai du saisir des <code>passphrase</code> sans espace pour ne pas avoir de problème par la suite quand j’avais à resaisir ces informations.</p>
+</div>
+<div class="paragraph">
+<p>J’utilise une version récente de Linux qui utilise une version 2.1.15</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java">$ gpg2 --version</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Plusieurs choses ont été améliorées dans les versions &gt; 2.1 de gpg. Si vous affichez les clés créées, la taille de ces clés a été augmentée et la nouvelle taille n’est pas encore supportée par le plugin Gradle. Le plugin se base sur les librairies Java <code><em>org.bouncycastle</em></code> et il faut qu’ils migrent vers les dernières versions de cette librairie</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java">$ gpg2 --list-secret-keys
+
+/home/devmind/.gnupg/pubring.kbx
+------------------------------
+pub   rsa2048 <span class="hljs-number">2018</span>-<span class="hljs-number">01</span>-<span class="hljs-number">13</span> [SC]
+      6933FACC1931DD8A89CED163582D3134
+uid         [ultimate] Guillaume EHRET &amp;lt;guillaume<span class="hljs-meta">@dev</span>-mind.fr&amp;gt;
+sub   rsa2048 <span class="hljs-number">2018</span>-<span class="hljs-number">01</span>-<span class="hljs-number">13</span> [E]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Pour retrouver un format de clé court utilisez la commande suivante</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java">$ gpg2 --list-secret-keys --keyid-format <span class="hljs-type">short</span>
+
+/home/devmind/.gnupg/pubring.kbx
+--------------------------------
+pub   rsa2048/C6EED57A <span class="hljs-number">2018</span>-<span class="hljs-number">01</span>-<span class="hljs-number">13</span> [SC]
+uid         [ultimate] Guillaume EHRET &amp;lt;guillaume<span class="hljs-meta">@dev</span>-mind.fr&amp;gt;
+sub   rsa2048/7DY5B54F <span class="hljs-number">2018</span>-<span class="hljs-number">01</span>-<span class="hljs-number">13</span> [E]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Vous pouvez maintenant publier votre clé publique sur un serveur de clé</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java">$ gpg2 --keyserver hkp:<span class="hljs-comment">//pool.sks-keyservers.net --send-keys C6EED57A</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Vous pouvez reporter ces informations dans le fichier <code><em>gradle.properties</em></code> global (elles ne doivent pas être envoyées dans votre dépôt de sources public). Ce fichier devra également contenir les identifiants que vous avez utiliser sur Sonatype</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java">signing.keyId=C6EED57A
+signing.password=CeciEstMonpassword
+signing.secretKeyRingFile=/home/devmind/.gnupg/secring.gpg
+
+ossrhUsername=devmind
+ossrhPassword=CeciEstMonpassword</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Après avoir fait cette action mon build Gradle ne fonctionnait toujours pas et retournait l’erreur suivante</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java">* What went wrong:
+Execution failed <span class="hljs-keyword">for</span> task <span class="hljs-string">':signArchives'</span>.
+&amp;gt; Unable to read secret key from file: /home/devmind/.gnupg/secring.gpg (it may not be a PGP secret key ring)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Le stockage des clés à changé. Il ne se fait plus dans un fichier <code><em>secring.gpg</em></code> mais sous forme de sous-répertoires dans le répertoire <code><em>.gnupg</em></code>. Heureusement il est encore possible de générer ce fichier pour assurer la rétrocompatibilité.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java">$ gpg2 --export-secret-keys &amp;gt; ~/.gnupg/secring.gpg</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Un <a href="https://github.com/gradle/gradle/issues/888">ticket</a> a été ouvert pour modifier le plugin signin de Gradle et une solution a été apportée à partir de Gradle 4.5.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_a_partir_de_gradle_4_5">A partir de Gradle 4.5</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Une autre solution a été mise en place dans la dernière version de Gradle, la <a href="https://docs.gradle.org/4.5/release-notes.html#signing-artifacts-with-gpg-agent">version 4.5</a>. Le plugin <code><em>signing</em></code> utilise une implémentation Java pour gérer les signatures va GPG. Cette implémentation ne peut pas utiliser <code><em>gpg-agent</em></code> pour gérer les clés privées. Avec Gradle 4.5 vous pouvez maintenant utiliser cet agent en utilisant <code><em>useGpgCmd()</em></code> (GnuPG doit bien évidemment être installé).</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java">signing {
+    required { gradle.taskGraph.hasTask(<span class="hljs-string">"uploadArchives"</span>) }
+    useGpgCmd()
+    sign configurations.archives
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Vous devez toujours générer votre clé et l’enregistrer sur le serveur de clé. Vous n’avez plus besoin par contre de générer un fichier pour assurer la rétrocompatibilité. Sans autre configuration, le plugin <em>`signing`</em> trouvera <em>`gpg2`</em> dans le path et vous demandera de saisir la passphrase via une boite de dialogue</p>
+</div>
+<div class="paragraph">
+<p>Pour automatiser le tout vous pouvez ajouter la configuration suivante dans votre build.gradle global</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>signing.gnupg.executable=gpg
+signing.gnupg.useLegacyGpg=false
+signing.gnupg.keyName=C6EED57A
+signing.gnupg.passphrase=CeciEstMonpassword
+
+ossrhUsername=devmind
+ossrhPassword=CeciEstMonpassword</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Pour plus d’informations vous pouvez lire la <a href="https://docs.gradle.org/4.5/userguide/signing_plugin.html#sec:using_gpg_agent">documentation</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_publier_sous_sonatype">Publier sous Sonatype</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Une fois que les problèmes vus au paragraphe précédent ont été réglés, vous pouvez publier vos artefacts chez Sonatype.</p>
+</div>
+<div class="paragraph">
+<p>Les versions suffixées par <code><em>-SNAPSHOT</em></code> sont envoyées vers  <a href="https://oss.sonatype.org/content/repositories/snapshots/" class="bare">https://oss.sonatype.org/content/repositories/snapshots/</a></p>
+</div>
+<div class="paragraph">
+<p>Les versions tagguées (sans <code><em>-SNAPSHOT</em></code>) sont envoyées vers  <a href="https://oss.sonatype.org/service/local/staging/deploy/maven2/" class="bare">https://oss.sonatype.org/service/local/staging/deploy/maven2/</a></p>
+</div>
+<div class="paragraph">
+<p>Par contre les versions tagguées ne sont pas encore disponible de tous à cette étape. Comme nous l’avons vu au début de l’article les librairies publiées passe d’abord par une phase de recette (staging).</p>
+</div>
+<div class="paragraph">
+<p>Vous devez lancer le Nexus de Sonatype : <a href="https://oss.sonatype.org/#stagingRepositories" class="bare">https://oss.sonatype.org/#stagingRepositories</a> et sélectionner votre librairie dans le bas de la liste</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2018/mavencentral_02.png" alt="Sonatype staging repository">
+</div>
+</div>
+<div class="paragraph">
+<p>Dans la barre de bouton le bouton <code><em>Drop</em></code> permet de supprimer votre librairie et le bouton <code><em>Close</em></code> de passer à la phase suivante…​ Je vous l’accorde ce n’est pas très parlant ce nommage de bouton.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2018/mavencentral_03.png" alt="Sonatype staging repository boutons">
+</div>
+</div>
+<div class="paragraph">
+<p>Une fois que vous avez confirmé le passage à l’étape suivante, les contrôles de validité du projet sont lancés.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2018/mavencentral_04.png" alt="Sonatype staging checks">
+</div>
+</div>
+<div class="paragraph">
+<p>Vous pouvez cliquer sur le bouton <code><em>Refresh</em></code> pour mettre à jour l’état de votre librairie. Si tout s’est bien passé le bouton <code><em>Release</em></code> dans la barre de bouton s’est activé. En cliquant dessus votre librairie sera publiée et dupliquée sur les différents serveurs Sonatype pour être accessible dans un délai maximal de 2h.</p>
+</div>
+</div>
+</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 28/05/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
+
+<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-KJW7O4OZ.js" type="module"></script>
+
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t6"},"c":{"7":[{"i":"t6","r":1,"x":3}]}},{"c":{"1":[{"i":"c933498719","r":1}]}}]}</script></body></html>

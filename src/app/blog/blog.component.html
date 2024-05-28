@@ -5,12 +5,12 @@
       <h1 *ngIf="archive">Les archives du blog</h1>
       <p *ngIf="!archive" class="dm_lead">Retrouvez les derniers articles de blog de Dev-Mind.</p>
       <div class="dm-blog--container-article">
-        <article [routerLink]="['/', post.filename+'.html']" *ngFor="let post of blogEntries | slice:0:displayedArticles">
+        <article [routerLink]="postPath(post)" *ngFor="let post of blogEntries | slice:0:displayedArticles">
           <div class="dm-blog--article">
             <div class="dm-blog--imgteaser">
               <img [ngSrc]="post.image" [alt]="post.description" width="1500" height="764" sizes="(max-width: 100%)"/>
             </div>
-            <h3><a [routerLink]="['/', post.filename+'.html']" [title]="post.title">{{ post.title }}</a></h3>
+            <h3><a [routerLink]="postPath(post)" [title]="post.title">{{ post.title }}</a></h3>
             <p class="dm-blog--teaser">{{ post.description }}</p>
           </div>
         </article>

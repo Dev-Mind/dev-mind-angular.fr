@@ -1,0 +1,353 @@
+<!DOCTYPE html><html lang="en" data-critters-container><head>
+  <meta charset="utf-8">
+  <title>Blog</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    body {
+      min-height: 100vh;
+      max-height: 100vh;
+      font-family: "Helvetica", "Arial", "sans-serif";
+      padding: 0;
+      margin: 0;
+    }
+
+    header {
+      height: 90px;
+      max-height: 90px;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+      background-color: white;
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      z-index: 99;
+      transition-duration: 0.2s;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: max-height, box-shadow;
+      position: fixed;
+      width: 100%;
+      text-align: center;
+    }
+    header hr {
+      width:100%;
+      background-color: #424242;
+      border-color: #424242;
+      display: block;
+      border: 0;
+      height: 0.5em;
+      margin: 0;
+    }
+    .header-img {
+      margin: auto;
+      width: 50%;
+      padding-top: 0.5em;
+      height: 30px;
+    }
+    .header-img img {
+      max-height: 30px !important;
+    }
+    .header-space {
+      min-height: 90px;
+    }
+
+
+    @media screen and (min-width: 901px) {
+      header {
+        height: 120px;
+        max-height: 120px;
+      }
+      .header-img {
+        height: 60px;
+      }
+      .header-img img {
+        max-height: 60px !important;
+      }
+      .header-space {
+        min-height: 120px;
+      }
+      nav a {
+        padding: 6px 24px;
+      }
+      .nav-home{
+        display: block !important;
+      }
+    }
+
+
+    nav {
+      display: -webkit-flex;
+      display: flex;
+      margin: auto;
+    }
+
+    nav a {
+      padding: 0 12px;
+      line-height: 28px;
+      height: 28px;
+      color: #424242;
+      margin: auto;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 13px;
+      border-radius: 4px;
+    }
+    .nav-home{
+      display: none;
+    }
+    nav a > img {
+    // height: 20px;
+    }
+
+    nav a:hover {
+      background-color: #9e9e9e;
+    }
+
+    nav .active {
+      background-color: rgba(0, 0, 0, 0.14);
+    }
+
+    main {
+      overflow-x: hidden;
+    }
+
+    img, picture {
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+    }
+
+    * {
+      box-sizing: border-box; /* pour maîtriser width et flex-basis */
+    }
+
+    .devmind-section {
+      display: block;
+      margin: 0 auto;
+      max-width: 1600px;
+      padding: 60px 40px;
+    }
+
+    @media (max-width: 700px) {
+      .devmind-section {
+        padding: 25px 10px;
+      }
+    }
+
+    @media (min-width: 701px) and (max-width: 900px) {
+      .devmind-section {
+        padding: 40px 25px;
+      }
+    }
+
+    .dm-social {
+      min-width: 2em;
+      max-width: 2em;
+      width: 2em;
+      height: 2em;
+    }
+  </style>
+  <!-- Matomo -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(["setCookieDomain", "*.dev-mind.fr"]);
+    _paq.push(["disableCampaignParameters"]);
+    _paq.push(["setDoNotTrack", true]);
+    _paq.push(["disableCookies"]);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="https://devmind.matomo.cloud/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '1']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src='https://cdn.matomo.cloud/devmind.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+<style>.dm-block--blog{width:100%;background-color:#eceff1;color:#424242;padding:0;margin:0}.dm-block--blog a,.dm-block--blog a:hover,.dm-block--blog a:visited{font-weight:700;color:#424242;text-decoration:none}footer{background-color:#424242}.is-small-screen{display:none}.is-large-screen{display:inherit}@media screen and (max-width: 900px){.is-small-screen{display:inherit}.is-large-screen{display:none}}h1,h2{color:#424242;font-weight:100}h1{font-weight:bolder;font-size:35px;line-height:38px}h2{font-size:25px;line-height:28px}@media (max-width: 700px){h1{font-size:28px;line-height:30px}h2{font-size:22px;line-height:24px}}
+</style><link rel="stylesheet" href="styles-WO7TV6DC.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-WO7TV6DC.css"></noscript><style ng-app-id="ng">.dm_footer[_ngcontent-ng-c2660501952]{color:#eee;display:flex;justify-content:space-between;font-size:14px}.dm_footer[_ngcontent-ng-c2660501952]   .dm_society[_ngcontent-ng-c2660501952]{color:#fff}.dm_footer[_ngcontent-ng-c2660501952]   div[_ngcontent-ng-c2660501952]{margin-right:1em;width:100%}.dm_footer[_ngcontent-ng-c2660501952]   .dm_footer__middle[_ngcontent-ng-c2660501952]{flex-grow:1}.dm_footer[_ngcontent-ng-c2660501952]   .dm_footer__right[_ngcontent-ng-c2660501952]{text-align:right}.dm_footer[_ngcontent-ng-c2660501952]   .is-large-screen[_ngcontent-ng-c2660501952]{padding:.7em;margin:.7em 1em}.dm_footer[_ngcontent-ng-c2660501952]   .is-small-screen[_ngcontent-ng-c2660501952]{padding:0;margin:0 1em;font-size:12px}</style><style ng-app-id="ng">h1{margin-top:.5em}.dm-blog--info-date{font-size:smaller;color:#424242;border:1px solid #aaa;border-radius:24px;padding:.5em 1em;margin-right:.5em;display:inline}.blog-keywords{display:flex;margin-bottom:1em}.blog-keywords .dm-blog--keyword-detail{background-color:#ccc;color:#424242;padding:.5em 1em;margin-right:.5em;border-radius:24px;font-size:smaller}.toc{background-color:#ccc;margin-top:1em;border:1px solid #ccc;padding:1em;border-radius:8px}.toc #toctitle{font-weight:700;margin-bottom:.5em}img{max-width:100%;height:auto}.imageblock>.content{display:flex;justify-content:center;align-items:center}.highlight{display:block;overflow-x:auto;background:#f3f3f3;color:#444;padding:1.5em;box-shadow:0 8px 16px #00000026;border-radius:8px}code.hljs{padding:3px 5px}.hljs-comment{color:#697070}.hljs-punctuation,.hljs-tag{color:#444a}.hljs-tag .hljs-attr,.hljs-tag .hljs-name{color:#444}.hljs-attribute,.hljs-doctag,.hljs-keyword,.hljs-meta .hljs-keyword,.hljs-name,.hljs-selector-tag{font-weight:700}.hljs-deletion,.hljs-number,.hljs-quote,.hljs-selector-class,.hljs-selector-id,.hljs-string,.hljs-template-tag,.hljs-type{color:#800}.hljs-section,.hljs-title{color:#800;font-weight:700}.hljs-link,.hljs-operator,.hljs-regexp,.hljs-selector-attr,.hljs-selector-pseudo,.hljs-symbol,.hljs-template-variable,.hljs-variable{color:#ab5656}.hljs-literal{color:#695}.hljs-addition,.hljs-built_in,.hljs-bullet,.hljs-code{color:#397300}.hljs-meta{color:#1f7199}.hljs-meta .hljs-string{color:#38a}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}.language-kotlin:before{display:block;float:right;content:"kotlin";font-weight:700;text-transform:uppercase}.language-typescript:before{display:block;float:right;content:"typescript";font-weight:700;text-transform:uppercase}.language-java:before{display:block;float:right;content:"java";font-weight:700;text-transform:uppercase}.language-javascript:before{display:block;float:right;content:"javascript";font-weight:700;text-transform:uppercase}.language-shell:before{display:block;float:right;content:"shell";font-weight:700;text-transform:uppercase}.language-yaml:before{display:block;float:right;content:"yaml";font-weight:700;text-transform:uppercase}.language-json:before{display:block;float:right;content:"json";font-weight:700;text-transform:uppercase}.language-xml:before{display:block;float:right;content:"xml";font-weight:700;text-transform:uppercase}.language-html:before{display:block;float:right;content:"html";font-weight:700;text-transform:uppercase}.language-css:before{display:block;float:right;content:"css";font-weight:700;text-transform:uppercase}.language-scss:before{display:block;float:right;content:"scss";font-weight:700;text-transform:uppercase}
+</style></head>
+<body><!--nghm-->
+  <app-root _nghost-ng-c582792440 ng-version="18.0.0" ngh="2" ng-server-context="ssg"><app-header _ngcontent-ng-c582792440 _nghost-ng-c2882497807 ngh="0"><header _ngcontent-ng-c2882497807><div _ngcontent-ng-c2882497807 class="header-img"><a _ngcontent-ng-c2882497807 routerlink="/" aria-label="Accueil" href="/"><img _ngcontent-ng-c2882497807 src="img/logo/logo_long.svg" alt="Dev-Mind" title="Dev-Mind"></a></div><nav _ngcontent-ng-c2882497807><a _ngcontent-ng-c2882497807 routerlink="/" aria-label="Accueil" class="nav-home" href="/"><img _ngcontent-ng-c2882497807 src="/img/ic_home_white_24px.svg" rel="start" alt="Accueil"></a><a _ngcontent-ng-c2882497807 routerlink="/formations.html" aria-label="Formations" class href="/formations.html"> Formations</a><a _ngcontent-ng-c2882497807 routerlink="/blog.html" aria-label="Blog" class="active" href="/blog.html">Blog</a><a _ngcontent-ng-c2882497807 routerlink="/experience.html" aria-label="Experience" class href="/experience.html"> Expérience</a></nav><hr _ngcontent-ng-c2882497807></header><div _ngcontent-ng-c2882497807 class="header-space"></div></app-header><router-outlet _ngcontent-ng-c582792440></router-outlet><app-asciidoc-viewer ngh="1"><div class="dm-block--blog"><div class="devmind-section"><h1><!--ngetn--></h1><div class="blog-keywords"><div class="dm-blog--info-date">03/06/2016</div><div class="dm-blog--keyword-detail">Java</div><div class="dm-blog--keyword-detail">SpringBoot</div><div class="dm-blog--keyword-detail">Kotlin</div><!---->&nbsp; </div><div class="preview"><div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Quel moteur JavaScript utilisez-vous pour exécuter vos tests unitaires et vos tests end-to-end écrits en JavaScript ? Vous avez le choix…​ Pour les tests unitaires vous pouvez soit utiliser un navigateur classique (Chrome, Firefox…​) soit un navigateur headless (sans interface graphique) comme <a href="http://phantomjs.org/">PhantomJS</a>.</p>
+</div>
+<div class="paragraph">
+<p><a href="http://phantomjs.org/">PhantomJS</a> utilise le moteur Javascript <a href="https://webkit.org/">WebKit</a> et c’est l’idéal pour exécuter des tests sur un serveur où aucun écran n’est branché (plateforme d’intégration continue par exemple). Par contre vous ne pouvez pas utiliser ce type de navigateur pour vos tests end-to-end car vous avez besoin d’interagir avec l’interface.</p>
+</div>
+<div class="paragraph">
+<p>Quand vous faites des tests <a href="http://www.seleniumhq.org/">Selenium</a> (ou <a href="http://www.protractortest.org/#/">Protractor</a>) vous avez la possibilité d’utiliser les services <a href="https://saucelabs.com/">SauceLabs</a> pour déporter l’exécution des tests sur leurs serveurs. Mais le coût n’est pas anodin. L’autre solution est d’essayer d’utiliser une solution de virtualisation de serveur X sur votre plate-forme qui exécute les tests et vous pourrez ainsi utiliser n’importe quel navigateur.</p>
+</div>
+<div class="paragraph">
+<p>Nous allons donc voir comment installer <a href="https://www.x.org/archive/X11R7.6/doc/man/man1/Xvfb.1.xhtml">Xvfb</a> sur un serveur Linux.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2016/testheadless_00.png" alt="Test headless">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_un_projet_exemple">Un projet exemple</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Vous pouvez consulter l’exemple de projet sous <a href="https://github.com/Dev-Mind/devmind-xvfb">mon Github</a>. Ce projet est une petite application AngularJS comportant des tests unitaires lancés via Karma et des tests end-to-end exécutés via Protractor. Dans les deux cas j’utilise Firefox.</p>
+</div>
+<div class="paragraph">
+<p>Vous pouvez bien évidemment utiliser d’autres versions de navigateur, utiliser une autre stack technique. Ce qui est dit dans cet article restera vrai. Si vous voulez vérifier l’exécution le projet contient également un DockerFile permettant de lancer un conteneur sous CentOS 6.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_xvfb">Xvfb</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://www.x.org/archive/X11R7.6/doc/man/man1/Xvfb.1.xhtml">Xvfb</a> (X virtual framebuffer) est un serveur X virtuel. Xvfb implémente le protocole de serveur d’affichage X11. Les requêtes, les événements, les erreurs sont les mêmes mais rien n’est affiché, tout se passe en mémoire.</p>
+</div>
+<div class="paragraph">
+<p>Nous pouvons utiliser cette solution sur un serveur qui n’a aucun écran. La seule chose qui est utilisé c’est la couche réseau.</p>
+</div>
+<div class="paragraph">
+<p>Sur CentOS vous devrez installer les packages suivants</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java">yum install -y Xvfb libXfont Xorg firefox</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Si vous lancez firefox vous avez le message d’erreur suivant</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java">Error: no display specified</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Utilisons maintenant Xvfb. Pour pouvoir lancer une commande dans un serveur X virtualisé Xvfb vous pouvez utiliser le wrapper <a href="http://manpages.ubuntu.com/manpages/xenial/man1/xvfb-run.1.html">xvfb-run</a> qui simplifie la configuration du serveur X et de votre processus</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java">xvfb-run -a firefox</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Permet de lancer votre navigateur cette fois sans erreur. Si vous utilisez le conteneur Docker que je vous ai fourni vous pouvez lancer l’exécution des tests unitaires via Gulp</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java">gulp unit
+⇒ error
+
+xvfb-run -a gulp unit
+⇒ OK</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Il en est de même pour les tests end-to-end</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java">gulp e2e
+⇒ error
+
+xvfb-run -a gulp e2e
+⇒ OK</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>La configuration des tests est tout à fait classique et je vous laisserai consulter les sources du projet exemple si vous voulez plus d’informations. Ce qui est intéressant de noter c’est que sans changer la moindre configuration dans votre projet vous êtes maintenant capable d’exécuter des tests sur n’importe quel serveur qu’il dispose d’un écran ou non.</p>
+</div>
+<div class="paragraph">
+<p>Vous avez peut être remarqué l’option <code><em>-a</em></code> que j’ai ajouté à la commande <code><em>xvfb-run</em></code>. Quand vous lancez une commande Xvfb vous pouvez spécifier plusieurs options</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Un numéro de serveur : c’est utile quand vous lancez plusieurs commandes en parallèles. Sur un serveur d’intégration continue on lance souvent plusieurs jobs concurrents</p>
+</li>
+<li>
+<p>Un écran : vous pouvez choisir quel écran est lancé et quelle résolution il a</p>
+</li>
+<li>
+<p>…​</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Par exemple</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java">Xvfb :<span class="hljs-number">1</span> -screen <span class="hljs-number">0</span> 1600x1200x32</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Le serveur écoutera les connexions sur le serveur numéro 1, l’écran numéro 0 ayant une résolution de 1600x1200 et une profondeur de 32</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java">Xvfb :<span class="hljs-number">45</span> -screen <span class="hljs-number">1</span> 1600x1200x16</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Le serveur écoutera les connexions sur le serveur numéro 45, l’écran numéro 1 ayant une résolution de 1600x1200 et une profondeur de 16</p>
+</div>
+<div class="paragraph">
+<p>L’option <code><em>-a</em></code> de la commande <code><em>xvfb-run</em></code> permet d’allouer un numéro de serveur non utilisé. Xvfb utilise par défaut l’écran 0 et ce dernier a une résolution de 640x480x8. Si vous voulez une autre taille d’écran dans les tests end-to-end vous pouvez par exemple utiliser la commande</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java">xvfb-run -a --server-args=<span class="hljs-string">"-screen 0 1024x768x24"</span> gulp e2e</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_configuration_jenkins">Configuration Jenkins</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Comment faciliter l’exécution de vos jobs Jenkins ? C’est un peu dur de passer par la commande <code><em>xvf-run</em></code>…​ Rassurez vous comme je l’ai dit plus haut,  xvf-run n’est qu’un wrapper qui vous simplifie l’interaction avec Xvfb.</p>
+</div>
+<div class="paragraph">
+<p>Dans Jenkins vous pouvez utiliser le <a href="https://wiki.jenkins-ci.org/display/JENKINS/Xvfb+Plugin">plugin</a> dédié qui lancera un serveur avant l’exécution de votre job et le fermera à la fin.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2016/testheadless_01.png" alt="Jenkins Test headless">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_les_ressources">Les ressources</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Cet article m’a été inspiré par la lecture du <a href="https://gist.github.com/addyosmani/5336747">Gist</a> partagé par <a href="https://twitter.com/addyosmani">Addy Osmani</a> et lorsque je voulais savoir comment <a href="https://docs.travis-ci.com/user/gui-and-headless-browsers/">Travis CI</a> se débrouillait sur leurs serveurs.</p>
+</div>
+<div class="paragraph">
+<p>Vous trouverez ici un <a href="https://gist.github.com/nwinkler/f0928740e7ae0e7477dd">article</a> expliquant comment piloter Xvfb via Grunt</p>
+</div>
+<div class="paragraph">
+<p>Pour finir la page du <a href="https://wiki.jenkins-ci.org/display/JENKINS/Xvfb+Plugin">plugin Jenkins</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_conclusion">Conclusion</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Vous avez maintenant toutes les ressources pour utiliser les navigateurs que vous voulez sur vos serveurs d’intégration continue tournant sous Linux. Personnellement j’ai de plus en plus d’erreur d’installations avec PhantomJS, des difficultés pour savoir quelle est la bonne version à utiliser…​ et au final je préfère être au plus près de l’utilisateur final et  tester les applications sur les navigateurs cibles.</p>
+</div>
+</div>
+</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 28/05/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
+
+<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-KJW7O4OZ.js" type="module"></script>
+
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t6"},"c":{"7":[{"i":"t6","r":1,"x":3}]}},{"c":{"1":[{"i":"c933498719","r":1}]}}]}</script></body></html>

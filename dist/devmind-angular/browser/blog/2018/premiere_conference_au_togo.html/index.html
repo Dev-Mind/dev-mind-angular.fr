@@ -1,0 +1,386 @@
+<!DOCTYPE html><html lang="en" data-critters-container><head>
+  <meta charset="utf-8">
+  <title>Blog</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    body {
+      min-height: 100vh;
+      max-height: 100vh;
+      font-family: "Helvetica", "Arial", "sans-serif";
+      padding: 0;
+      margin: 0;
+    }
+
+    header {
+      height: 90px;
+      max-height: 90px;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+      background-color: white;
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      z-index: 99;
+      transition-duration: 0.2s;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: max-height, box-shadow;
+      position: fixed;
+      width: 100%;
+      text-align: center;
+    }
+    header hr {
+      width:100%;
+      background-color: #424242;
+      border-color: #424242;
+      display: block;
+      border: 0;
+      height: 0.5em;
+      margin: 0;
+    }
+    .header-img {
+      margin: auto;
+      width: 50%;
+      padding-top: 0.5em;
+      height: 30px;
+    }
+    .header-img img {
+      max-height: 30px !important;
+    }
+    .header-space {
+      min-height: 90px;
+    }
+
+
+    @media screen and (min-width: 901px) {
+      header {
+        height: 120px;
+        max-height: 120px;
+      }
+      .header-img {
+        height: 60px;
+      }
+      .header-img img {
+        max-height: 60px !important;
+      }
+      .header-space {
+        min-height: 120px;
+      }
+      nav a {
+        padding: 6px 24px;
+      }
+      .nav-home{
+        display: block !important;
+      }
+    }
+
+
+    nav {
+      display: -webkit-flex;
+      display: flex;
+      margin: auto;
+    }
+
+    nav a {
+      padding: 0 12px;
+      line-height: 28px;
+      height: 28px;
+      color: #424242;
+      margin: auto;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 13px;
+      border-radius: 4px;
+    }
+    .nav-home{
+      display: none;
+    }
+    nav a > img {
+    // height: 20px;
+    }
+
+    nav a:hover {
+      background-color: #9e9e9e;
+    }
+
+    nav .active {
+      background-color: rgba(0, 0, 0, 0.14);
+    }
+
+    main {
+      overflow-x: hidden;
+    }
+
+    img, picture {
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+    }
+
+    * {
+      box-sizing: border-box; /* pour maîtriser width et flex-basis */
+    }
+
+    .devmind-section {
+      display: block;
+      margin: 0 auto;
+      max-width: 1600px;
+      padding: 60px 40px;
+    }
+
+    @media (max-width: 700px) {
+      .devmind-section {
+        padding: 25px 10px;
+      }
+    }
+
+    @media (min-width: 701px) and (max-width: 900px) {
+      .devmind-section {
+        padding: 40px 25px;
+      }
+    }
+
+    .dm-social {
+      min-width: 2em;
+      max-width: 2em;
+      width: 2em;
+      height: 2em;
+    }
+  </style>
+  <!-- Matomo -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(["setCookieDomain", "*.dev-mind.fr"]);
+    _paq.push(["disableCampaignParameters"]);
+    _paq.push(["setDoNotTrack", true]);
+    _paq.push(["disableCookies"]);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="https://devmind.matomo.cloud/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '1']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src='https://cdn.matomo.cloud/devmind.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+<style>.dm-block--blog{width:100%;background-color:#eceff1;color:#424242;padding:0;margin:0}.dm-block--blog a,.dm-block--blog a:hover,.dm-block--blog a:visited{font-weight:700;color:#424242;text-decoration:none}footer{background-color:#424242}.is-small-screen{display:none}.is-large-screen{display:inherit}@media screen and (max-width: 900px){.is-small-screen{display:inherit}.is-large-screen{display:none}}h1,h2{color:#424242;font-weight:100}h1{font-weight:bolder;font-size:35px;line-height:38px}h2{font-size:25px;line-height:28px}@media (max-width: 700px){h1{font-size:28px;line-height:30px}h2{font-size:22px;line-height:24px}}
+</style><link rel="stylesheet" href="styles-WO7TV6DC.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-WO7TV6DC.css"></noscript><style ng-app-id="ng">.dm_footer[_ngcontent-ng-c2660501952]{color:#eee;display:flex;justify-content:space-between;font-size:14px}.dm_footer[_ngcontent-ng-c2660501952]   .dm_society[_ngcontent-ng-c2660501952]{color:#fff}.dm_footer[_ngcontent-ng-c2660501952]   div[_ngcontent-ng-c2660501952]{margin-right:1em;width:100%}.dm_footer[_ngcontent-ng-c2660501952]   .dm_footer__middle[_ngcontent-ng-c2660501952]{flex-grow:1}.dm_footer[_ngcontent-ng-c2660501952]   .dm_footer__right[_ngcontent-ng-c2660501952]{text-align:right}.dm_footer[_ngcontent-ng-c2660501952]   .is-large-screen[_ngcontent-ng-c2660501952]{padding:.7em;margin:.7em 1em}.dm_footer[_ngcontent-ng-c2660501952]   .is-small-screen[_ngcontent-ng-c2660501952]{padding:0;margin:0 1em;font-size:12px}</style><style ng-app-id="ng">h1{margin-top:.5em}.dm-blog--info-date{font-size:smaller;color:#424242;border:1px solid #aaa;border-radius:24px;padding:.5em 1em;margin-right:.5em;display:inline}.blog-keywords{display:flex;margin-bottom:1em}.blog-keywords .dm-blog--keyword-detail{background-color:#ccc;color:#424242;padding:.5em 1em;margin-right:.5em;border-radius:24px;font-size:smaller}.toc{background-color:#ccc;margin-top:1em;border:1px solid #ccc;padding:1em;border-radius:8px}.toc #toctitle{font-weight:700;margin-bottom:.5em}img{max-width:100%;height:auto}.imageblock>.content{display:flex;justify-content:center;align-items:center}.highlight{display:block;overflow-x:auto;background:#f3f3f3;color:#444;padding:1.5em;box-shadow:0 8px 16px #00000026;border-radius:8px}code.hljs{padding:3px 5px}.hljs-comment{color:#697070}.hljs-punctuation,.hljs-tag{color:#444a}.hljs-tag .hljs-attr,.hljs-tag .hljs-name{color:#444}.hljs-attribute,.hljs-doctag,.hljs-keyword,.hljs-meta .hljs-keyword,.hljs-name,.hljs-selector-tag{font-weight:700}.hljs-deletion,.hljs-number,.hljs-quote,.hljs-selector-class,.hljs-selector-id,.hljs-string,.hljs-template-tag,.hljs-type{color:#800}.hljs-section,.hljs-title{color:#800;font-weight:700}.hljs-link,.hljs-operator,.hljs-regexp,.hljs-selector-attr,.hljs-selector-pseudo,.hljs-symbol,.hljs-template-variable,.hljs-variable{color:#ab5656}.hljs-literal{color:#695}.hljs-addition,.hljs-built_in,.hljs-bullet,.hljs-code{color:#397300}.hljs-meta{color:#1f7199}.hljs-meta .hljs-string{color:#38a}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}.language-kotlin:before{display:block;float:right;content:"kotlin";font-weight:700;text-transform:uppercase}.language-typescript:before{display:block;float:right;content:"typescript";font-weight:700;text-transform:uppercase}.language-java:before{display:block;float:right;content:"java";font-weight:700;text-transform:uppercase}.language-javascript:before{display:block;float:right;content:"javascript";font-weight:700;text-transform:uppercase}.language-shell:before{display:block;float:right;content:"shell";font-weight:700;text-transform:uppercase}.language-yaml:before{display:block;float:right;content:"yaml";font-weight:700;text-transform:uppercase}.language-json:before{display:block;float:right;content:"json";font-weight:700;text-transform:uppercase}.language-xml:before{display:block;float:right;content:"xml";font-weight:700;text-transform:uppercase}.language-html:before{display:block;float:right;content:"html";font-weight:700;text-transform:uppercase}.language-css:before{display:block;float:right;content:"css";font-weight:700;text-transform:uppercase}.language-scss:before{display:block;float:right;content:"scss";font-weight:700;text-transform:uppercase}
+</style></head>
+<body><!--nghm-->
+  <app-root _nghost-ng-c582792440 ng-version="18.0.0" ngh="2" ng-server-context="ssg"><app-header _ngcontent-ng-c582792440 _nghost-ng-c2882497807 ngh="0"><header _ngcontent-ng-c2882497807><div _ngcontent-ng-c2882497807 class="header-img"><a _ngcontent-ng-c2882497807 routerlink="/" aria-label="Accueil" href="/"><img _ngcontent-ng-c2882497807 src="img/logo/logo_long.svg" alt="Dev-Mind" title="Dev-Mind"></a></div><nav _ngcontent-ng-c2882497807><a _ngcontent-ng-c2882497807 routerlink="/" aria-label="Accueil" class="nav-home" href="/"><img _ngcontent-ng-c2882497807 src="/img/ic_home_white_24px.svg" rel="start" alt="Accueil"></a><a _ngcontent-ng-c2882497807 routerlink="/formations.html" aria-label="Formations" class href="/formations.html"> Formations</a><a _ngcontent-ng-c2882497807 routerlink="/blog.html" aria-label="Blog" class="active" href="/blog.html">Blog</a><a _ngcontent-ng-c2882497807 routerlink="/experience.html" aria-label="Experience" class href="/experience.html"> Expérience</a></nav><hr _ngcontent-ng-c2882497807></header><div _ngcontent-ng-c2882497807 class="header-space"></div></app-header><router-outlet _ngcontent-ng-c582792440></router-outlet><app-asciidoc-viewer ngh="1"><div class="dm-block--blog"><div class="devmind-section"><h1><!--ngetn--></h1><div class="blog-keywords"><div class="dm-blog--info-date">11/06/2018</div><div class="dm-blog--keyword-detail">Web</div><div class="dm-blog--keyword-detail">Conference</div><div class="dm-blog--keyword-detail">Android</div><!---->&nbsp; </div><div class="preview"><div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>La première édition de <a href="http://itogo.cleverapps.io">ITogo.conf</a> s’est déroulée le 9 juin 2017 à Lomé au Togo. Je ne connaissais pas ce petit pays de la corne de l’Afrique avant de connaître Horacio, un des organisateurs de la conférence. Je vais donc vous parler de cette conférence et un peu de ce petit pays.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2018/itogo_00.png" alt="Conférence">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_la_petite_histoire_de_la_conférence">La petite histoire de la conférence</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>La conférence est née d’un rêve fait par trois potes informaticiens de Lomé il y a plusieurs années. Même s’ils se sont croisés au début de leur parcours professionnel et associatif, leur avenir professionnel les a éloigné</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.twitter.com/deovince">Déwo Atsu</a> travaille chez le deuxième opérateur de téléphonie du Togo, <a href="https://www.moov.tg/">Moov</a>. Il a quitté par la force des choses le développement mais il est toujours passionné par le code.</p>
+</li>
+<li>
+<p><a href="https://www.twitter.com/horalass">Horacio Lassey</a> a pour passion de triturer de la donnée. Il est aujourd’hui spécialisé à Paris dans le décisionnel et le big data.</p>
+</li>
+<li>
+<p><a href="https://www.twitter.com/samgolchi">Sam Mawusee Komla Foli-Awli</a> est un développeur qui a fondé sa propre strucure au Togo,  <a href="http://www.macedilleplus.com">macedilleplus</a>. Ses passions tournent autour du développement Web et de la transmission de son savoir</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2018/itogo_organisateurs.jpg" alt="Les organisateurs de la conférence">
+</div>
+</div>
+<div class="paragraph">
+<p>Ces trois comparses se sont beaucoup cotôyés lors des meetups qu’ils essayaient d’organiser à Lomé. Alors comment passe t-on d’un rêve à une conférence ? Le plus gros problème dans cette région d’Afrique est d’attirer des speakers reconnus. C’est pour eux le seul moyen de trouver des sponsors qui financent ce genre d’événement. Il faut donc avoir un réseau qui permet de les toucher.</p>
+</div>
+<div class="paragraph">
+<p>Tout à basculer le jour ou Horacio a eu un contact sur Twitter avec <a href="https://twitter.com/agnes_crepet">Agnès Crepet</a>. Elle donnait à cette période des formations en Côte d’Ivoire, avec son conjoint <a href="https://twitter.com/clacote">Cyril Lacote</a>. Agnes et Cyril sont venus à Lomé animer une session au JUG (géré à l’époque par Horacio).</p>
+</div>
+<div class="paragraph">
+<p>Il se trouve que nous faisons partie Agnès, Cyril et moi même, de l’organisation de la conférence <a href="https://mixitconf.org/">MiXiT</a>. En 2014 Agnès a eu la très bonne idée d’inviter Horacio pour venir parler de la vie des informaticiens en Afrique de l’ouest. Cette conférence est accessible sur le <a href="https://www.infoq.com/fr/presentations/communautes-monde-it-sous-autres-cieux?utm_source=presentations_about_mix-it2014&amp;utm_medium=link&amp;utm_campaign=mix-it2014">site d’infoQ</a>.</p>
+</div>
+<div class="paragraph">
+<p>Horacio a profité de <a href="https://mixitconf.org">MiXiT</a> et de <a href="https://www.devoxx.fr/">Devoxx</a>, pour nouer des contacts avec des speakers. Lors de notre rencontre, j’ai été frappé par le fait qu’il connaissait déjà beaucoup de personnes. Il les suivait tous sur Twitter ou lisait leurs blogs. Je pense que c’est la seule personne que j’ai rencontrée qui connaissait autant mes articles de blogs.</p>
+</div>
+<div class="paragraph">
+<p>Horacio, après avoir travaillé au Togo et au Bénin, est venu faire des études en France pour compléter ses compétences. Il a ensuite été embauché par une ESN sur Paris. C’est lors d’une discussion que nous avons eu début 2017, qu’il m’a parlé de son rêve de conférence. J’ai décidé de lui donner un coup de main pour trouver des speakers. Malheureusement je n’ai pas été très bon…​ A la fin je n’étais plus que le seul européen sur la liste. Mais la petite graine avait germé et les trois amis se sont coordonnés à distance pour monter la conférence ITogo.conf.</p>
+</div>
+<div class="paragraph">
+<p>Cette première édition était à mes yeux un succès. Même si le public n’était pas très nombreux, elle a permis de faire avancer les choses. Des speakers sont venus du Bénin, du Burkina Faso, du Togo pour prendre la parole. L’antenne locale de l’Internet Society a sponsorisé la conférence. Clever Cloud en France a apporté sa petite part en hébergeant le site web.</p>
+</div>
+<div class="paragraph">
+<p>Si vous êtes speakers, l’Afrique a besoin de vous. Les événements sur ce continent sont trop rares et les personnes sont avides d’apprendre. C’est la première conférence où j’ai eu autant d’échange avec les participants et les autres speakers. Je ne regrette à aucun moment d’être venu ici et j’en garderai un très bon souvenir. A tel point que je redonnerai certainement un coup de main  à cette conférence à l’avenir.</p>
+</div>
+<div class="paragraph">
+<p>Par contre, si vous voulez venir parler, la conférence ne pourra certainement pas prendre en charge vos frais de transports. Ce n’est pas une question de volonté mais de moyens. Il faut d’abord, qu’ils arrivent à trouver des sponsors avant de pouvoir le faire. Personnellement je suis passé freelance pour avoir plus de temps à donner à la communauté en France ou ailleurs et ce projet de conférence en Afrique correspondait pleinement à ma philosophie.</p>
+</div>
+<div class="paragraph">
+<p>Vous pouvez consulter le site web à l’adresse suivante <a href="http://itogo.cleverapps.io" class="bare">http://itogo.cleverapps.io</a> pour avoir le résumé des différentes sessions que nous avons eu.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2018/itogo_conf1.jpg" alt="Speakers">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2018/itogo_conf2.jpg" alt="Speakers">
+</div>
+</div>
+<div class="paragraph">
+<p>Par rapport aux deux conférences que j’ai animées, vous trouverez les ressources aux adresses suivantes</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Créer une application Android en 50 minutes : <a href="https://speakerdeck.com/javamind/mettre-en-place-une-application-android-en-50-minutes">slides</a>, <a href="https://github.com/Dev-Mind/kotlinInAction">kotlinInAction</a>, <a href="https://github.com/Dev-Mind/androidInAction">androidInAction</a></p>
+</li>
+<li>
+<p>Améliorer les performances de votre webapp : <a href="https://speakerdeck.com/javamind/itogo-conf-optimiser-les-performances-d-une-webapp">slides</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_mixteen">Mixteen</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>C’est pour moi, le moment le plus marquant de mon séjour ici.  Celui qui m’a laissé le plus d’ondes positives. Le jeudi 7 mai, nous avons organisé avec Horacio, le premier Mixteen délocalisé dans un collège de la banlieue de Lomé, à Agbodrafo. Malheureusement <a href="https://twitter.com/titimoby">Thierry Chantier</a> (autre membre de la team Mixteen), n’a pu se joindre à cette aventure cette fois ci, mais il était tout de même présent par la pensée.</p>
+</div>
+<div class="paragraph">
+<p>Horacio a été contacté, il y a plus d’un an par son ancien proviseur de collège monsieur Daroux. Ce proviseur essaie depuis une trentaine d’années, de pousser son collège et les enfants vers le haut, en essayant de renouveler les enseignements. Le constat est le suivant. En Afrique comme ailleurs dans le monde la révolution du numérique et de l’Internet est en marche. Tout le monde veut aussi accéder à la toile.</p>
+</div>
+<div class="paragraph">
+<p>Sauf qu’il est compliqué pour les étudiants de faire des métiers du numérique.  Ils ne touchent des ordinateurs qu’à partir du lycée ou plus tard. L’utilisation du numérique en Afrique se fait essentiellement par le biais du mobile. Le réseau filaire n’est pas bon et le mobile est parfois la seule porte d’entrée sur la toile.</p>
+</div>
+<div class="paragraph">
+<p>Monsieur Daroux pousse pour essayer de combler ce manque. Les anciens élèves ont financé une salle informatique et il restait à l’inaugurer et voir comment transmettre des éléments aux enseignants. Le but n’était pas de faire un seul événement mais d’essayer de rendre autonome les enseignants. Notre souhait le plus profond est de simplement offrir une chance aux enfants de comprendre le monde autour d’eux et d’être acteur de leur avenir.</p>
+</div>
+<div class="paragraph">
+<p>Nous avons monté un atelier en deux parties et le matériel et les supports a été laissé à léquipe enseignante.</p>
+</div>
+<div class="sect2">
+<h3 id="_comment_marche_un_ordinateur">Comment marche un ordinateur</h3>
+<div class="paragraph">
+<p>La première partie consistait à expliquer aux enfants comment fonctionnait un ordinateur, un téléphone, un écran, un clavier…​ Nous leur avons fait assembler un ordinateur via des <a href="http://www.raspberrypi-france.fr/">Raspberry Pi</a>. Au départ nous pensions avoir une quinzaine d’enfants, mais nous avons essayé de donner une chance à plus d’enfants en doublant les participants.</p>
+</div>
+<div class="paragraph">
+<p>Malheureusement nous n’avons touché que la moitié des 4èmes. Les enfants ont été sélectionnés au mérite en fonction de leurs notes et de leurs capacités en mathémtiques et physiques. Une chose qui est devenue inconcevable en France, mais qui est ici en Afrique tout à fait naturel.</p>
+</div>
+<div class="paragraph">
+<p>La rencontre a été brève mais j’ai beaucoup aimé la discussion sur l’enseignement  en Afrique avec le proviseur.</p>
+</div>
+<div class="paragraph">
+<p>Vous pouvez trouver le support de la présentation <a href="https://speakerdeck.com/javamind/comment-marche-un-ordinateur">ici</a> et n’hésitez pas à me contacter ou à contacter l’association MixTeen pour plus d’informations.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2018/itogo_mixteen1.jpg" alt="Créer son ordinateur à base de RasberryPi">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_utiliser_un_ordinateur">Utiliser un ordinateur</h3>
+<div class="paragraph">
+<p>Dans la deuxième partie les élèves se sont répartis par binomes ou trinomes et nous leur avons présenté <a href="https://scratch.mit.edu/">Scratch</a>. Scratch permet de faire de la programmation par blocs et permet de programmer des actions déclenchées par des événements : événement sur le clavier, sur un des personnages importés dans l’outil…​.</p>
+</div>
+<div class="paragraph">
+<p>Une chose qui était assez marquante c’est que la plupart des élèves n’avaient jamais touché un ordinateur de leur vie. La découverte de la souris est toujours particulier mais c’est assez dingue, de voir à quelle vitesse ils ont capté le truc. Beaucoup sont partis avec la peur de l’échec.</p>
+</div>
+<div class="paragraph">
+<p>A part la période de mise en route pour comprendre comment utiliser la souris, et où était disposé les choses, les enfants ont mis la même ferveur à dévorer les exercices que l’on retrouve dans les ateliers que nous organisons dans la région lyonnaise.</p>
+</div>
+<div class="paragraph">
+<p>Il existe des milliers d’exercices ou exemples disponibles sur le site de Scratch. Pour cet atelier nous avons choisi d’utiliser ce <a href="http://scratchfr.free.fr/Scratchfr_v2014/Scratch_Cards_v2.0frA4_January27th.pdf">jeu de cartes</a>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2018/itogo_mixteen2.jpg" alt="Scratch en action">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_et_après">Et après ?</h3>
+<div class="paragraph">
+<p>Faire ce genre d’atelier est super pour les enfants que nous avons sensibilisés. Mais il faut que cette démarche perdure dans le temps. Nous avons essayé d’expliquer ce que nous avons fait aux professeurs mais comme les enfants certains d’entre eux n’ont jamais manipulé aucun ordinateur.</p>
+</div>
+<div class="paragraph">
+<p>Le directeur de l’école en a pris conscience et va essayer de les former. En attendant Horacio et peut être d’autres anciens élèves du collège vont essayer d’apporter leur soutien pour entretenir cette flemme, et faire en sorte, que chaque enfant qui sorte du collège puisse avoir manipuler un ordinateur auparavant.</p>
+</div>
+<div class="paragraph">
+<p>D’autres associations sur place essaient de faire la même chose et montent aussi des ateliers avec Scratch. Croisons les doigts pour que ces mouvements se généralisent et s’étendent bien plus loin que la capitale Lomé.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2018/itogo_mixteen3.jpg" alt="Transfert aux professeurs">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_le_togo">Le Togo</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Je ne peux pas, ne pas parler du Togo dans cet article. Certes je ne peux pas le décrire précisément, car je ne suis resté qu’une semaine et j’ai beaucoup navigué dans le sud du Pays. Mais voici ce que j’en ai retenu.</p>
+</div>
+<div class="paragraph">
+<p>La côte maritime ne fait que 50km et le Togo est l’équivalent en surface à la région Rhône Alpes (sans l’Auvergne). Le Togo n’est pas un pays sec et la végétation est vraiment riche. La richesse historique du Togo est le phosphate mais cette denrée ne rapporte plus autant qu’avant, les structures ont tendance a se dégrader. Le gros problème du Togo comme de l’Afrique est qu’ils vendent des matières premières, mais qu’ils sont obligés d’acheter et d’importer les produits finis. La balance commerciale leur est donc défavorable.</p>
+</div>
+<div class="paragraph">
+<p>L’autre richesse du Togo est son port en eaux profondes. C’est le seul sur cette partie de l’Afrique. Malheureusement ce dernier est géré par une entreprise française, Bolloré et d’ailleurs les conditions d’attribution de ce marché <a href="https://togotribune.com/news/togo-la-mafia-bollore-fait-perdre-plusieurs-milliards-au-budget-de-letat/">sont plutôt douteuses</a>.</p>
+</div>
+<div class="paragraph">
+<p>Les personnes ici sont très sympatiques et ce qui m’a marqué c’est que les Togolais ne sont pas une seule nation mais un ensemble de peuples, de cultures, de langues, de traditions et de religions différentes. Tout le monde se côtoie de manière cordiale et le français est la langue qui lie les personnes. Malheureursement ce ne sont que les personnes qui ont pu aller à l’école qui savent parler français. Une bonne partie de la population ne parle que les dialectes locaux.</p>
+</div>
+<div class="paragraph">
+<p>Au niveau des visites je vous partage quelques photos : de la plage, du marché de Lomé, de la maison des esclaves à Agbodrafo (lieu où était enfermé les esclaves avant leur envoi vers les antilles ou l’amérique)</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2018/itogo_ocean.jpg" alt="Océan atlantique au Togo">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2018/itogo_marche.jpg" alt="Marché de Lomé">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2018/itogo_maison_esclave.jpg" alt="Maison des esclaves">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_conclusion">Conclusion</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Voila je souhaite bon vent à cette nouvelle conférence <a href="http://itogo.cleverapps.io">ITogo.conf</a> et j’espère que d’autres éditions auront lieu. Merci encore aux organisateurs pour avoir créer ce moment. Au delà de l’informatique le Togo est un pays qui vaut le détour notamment pour rencontrer les togolais qui sont très accueillants.</p>
+</div>
+</div>
+</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 28/05/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
+
+<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-KJW7O4OZ.js" type="module"></script>
+
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t2"},"c":{"7":[{"i":"t2","r":1,"x":3}]}},{"c":{"1":[{"i":"c933498719","r":1}]}}]}</script></body></html>

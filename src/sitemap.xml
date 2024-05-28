@@ -6,32 +6,32 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
       <loc>https://dev-mind.fr/</loc>
-      <lastmod>Tue, 28 May 2024 20:36:39 GMT</lastmod>
+      <lastmod>Tue, 28 May 2024 21:22:45 GMT</lastmod>
       <priority>1.00</priority>
     </url>
     <url>
       <loc>https://dev-mind.fr/blog.html</loc>
-      <lastmod>Tue, 28 May 2024 20:36:39 GMT</lastmod>
+      <lastmod>Tue, 28 May 2024 21:22:45 GMT</lastmod>
       <priority>0.90</priority>
     </url>
     <url>
       <loc>https://dev-mind.fr/blog_archive.html</loc>
-      <lastmod>Tue, 28 May 2024 20:36:39 GMT</lastmod>
+      <lastmod>Tue, 28 May 2024 21:22:45 GMT</lastmod>
       <priority>0.90</priority>
     </url>
     <url>
       <loc>https://dev-mind.fr/formations.html</loc>
-      <lastmod>Tue, 28 May 2024 20:36:39 GMT</lastmod>
+      <lastmod>Tue, 28 May 2024 21:22:45 GMT</lastmod>
       <priority>0.90</priority>
     </url>
     <url>
       <loc>https://dev-mind.fr/training/trainings.html</loc>
-      <lastmod>Tue, 28 May 2024 20:36:39 GMT</lastmod>
+      <lastmod>Tue, 28 May 2024 21:22:45 GMT</lastmod>
       <priority>0.90</priority>
     </url>
     <url>
       <loc>https://dev-mind.fr/experience.html</loc>
-      <lastmod>Tue, 28 May 2024 20:36:39 GMT</lastmod>
+      <lastmod>Tue, 28 May 2024 21:22:45 GMT</lastmod>
       <priority>0.70</priority>
     </url>
     

@@ -154,7 +154,7 @@ function generateRoutingFile(metadata, section) {
   const routes = metadata
     .filter(it => it.title)
     .map(it => ({
-        path: it.filename.replace('_', '') + '.html',
+        path: it.folder + '/' + it.filename.replace('_', '') + '.html',
         component: 'blog',
         data: {
           title: it.title,
