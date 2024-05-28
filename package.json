@@ -1,6 +1,6 @@
 {
   "name": "devmind-angular",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "scripts": {
     "ng": "ng",
     "start": "node dist/devmind-angular/server/server.mjs",
@@ -9,6 +9,9 @@
     "test": "ng test",
     "preview": "node dist/devmind-angular/server/server.mjs",
     "serve:ssr:devmind-angular": "node dist/devmind-angular/server/server.mjs"
+  },
+  "engines" : {
+    "node" : "^20"
   },
   "private": true,
   "dependencies": {
