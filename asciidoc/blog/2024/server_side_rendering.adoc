@@ -1,0 +1,129 @@
+:doctitle: Server Side Rendering
+:description: Qu'est ce que le Server Side Rendering (SSR) et comment l'utiliser dans une application Angular
+:keywords: Angular
+:author: Guillaume EHRET - Dev-Mind
+:revdate: 2024-05-31
+:category: Web
+:teaser: Qu'est ce que le Server Side Rendering (SSR) et comment l'utiliser dans une application Angular
+:imgteaser: :../../img/blog/2024/ssr_intro.png
+:toc:
+
+Le Server Side Rendering (SSR ou rendu côté serveur) consiste à générer le code HTML d'une page web sur le serveur, avant de l'envoyer au navigateur de l'utilisateur.
+
+Cette technique n'est pas récente. Plusieurs langages de programmation (PHP...) ou librairies de templating (JSP, Thymeleaf, Mustache,...) peuvent être utilisées depuis très longtemps. Cependant le terme SSR, est utilisé depuis l'avènement des frameworks Javascript tels que React, Angular et NodeJS.
+
+Je vais vous expliquer comment fonctionne le SSR, ses avantages et inconvénients, et dans quels cas il est recommandé de l'utiliser. Nous verrons enfin comment l'utiliser dans une application Angular.
+
+image::../../img/blog/2024/ssr_intro.png[SSR ou CSR?, width=800]
+
+== Pourquoi le SSR ?
+
+React ou Angular ont popularisé le concept de Single Page Application (SPA) où le code HTML est généré côté client. On parle de Client Side Rendering (CSR ou rendu côté client). Ceci permet de créer des applications web plus réactives et dynamiques, mais cela peut poser des problèmes de référencement et de performance.
+
+Prenons l'exemple d'une application Angular, vous avez un fichier index.html qui va charger les styles et les fichiers Javascript qui vont ensuite être capables de générer les pages de votre application. Mais plus votre application est conséquente, plus la taille, et donc le temps de chargement seront importants.
+
+Le deuxième problème est le référencement. Quand vous voulez faire un site public, c'est certainement le principal problème car vous serez transparents sur le web. Les moteurs de recherche comme Google utilisent des robots d'indexation pour parcourir les pages web et les ajouter à leur index. Ces robots ne sont pas toujours  capables d'exécuter le Javascript. Pour eux votre site se résume à un fichier HTML pratiquement vide.
+
+Le SSR benéficie aussi aux robots d'exploration des réseaux sociaux (crawlers) qui n'exécutent pas le Javascript. Un crawler, explore automatiquement le web pour extraire des informations à partir des pages visitées. Sur les réseaux sociaux ils sont utilisés quand vous partagez un lien pour générer un aperçu de la page.
+
+
+=== Comment fonctionne le SSR ?
+
+Le mieux est d'utiliser un schéma pour expliquer le fonctionnement du SSR.
+
+image::../../img/blog/2024/SSR.png[Comment fonctionne le SSR ?, width=800]
+
+- *(1)* L'utilisateur clique sur un lien ou saisit une URL dans son navigateur.
+- *(2)* Le navigateur envoie une requête HTTP au serveur.
+- *(3)* Le serveur reçoit la requête et utilise un langage de templating ou un moteur de rendu pour générer le code HTML de la page demandée. Le HTML peut inclure des données dynamiques provenant de bases de données ou d'autres sources.
+- *(4)* Le serveur envoie la réponse HTTP au navigateur, qui contient le code HTML complet de la page.
+- *(5)* Le navigateur reçoit la réponse HTTP et affiche la page web à l'utilisateur.
+
+Grâce au SSR, le navigateur reçoit le code HTML complet de la page dès la première réponse HTTP, ce qui permet d'afficher la page plus rapidement car il peut le faire avant le chargement du Javascript. Un contenu pur HTML est beaucoup plus facile à parser pour un robot d'indexation.
+
+=== Inconvénients du SSR
+
+Le rendu côté serveur peut générer plus de charge sur le serveur, car il doit générer chaque page web à chaque requête.
+
+Les pages web rendues côté serveur peuvent aussi être moins réactives que les pages rendues côté client, car les interactions de l'utilisateur nécessitent généralement des requêtes HTTP supplémentaires vers le serveur.
+
+Le SSR peut également poser des problèmes de performances si la page web utilise beaucoup de JavaScript, car le JavaScript doit être chargé et exécuté par le navigateur avant que la page ne soit interactive.
+
+Il peut parfois être compliqué de mettre en place le SSR dans une application web existante, en particulier si elle a été conçue pour le rendu côté client.
+
+== Mettre en place le SSR dans une application Angular
+
+Angular Universal est un outil qui permet de mettre en place le SSR dans une application Angular. Il utilise Node.js pour générer le code HTML des pages web côté serveur.
+
+Ce site web a d'ailleurs été migré dernièrement pour utiliser Angular Universal. Ceci m'a permi de supprimer ma stack technique que j'étais le seul à maitriser pour une stack Angular que tout le monde connait.
+
+=== Comment procéder ?
+
+Pour générer un nouveau projet Angular avec SSR, vous pouvez générer un nouveau projet avec Angular CLI en utilisant la commande suivante :
+
+[source,shell, subs="specialchars"]
+----
+ng new my-ssr-app
+----
+
+Angular CLI vous pose plusieurs questions pour la configuration de votre projet. Vous pouvez choisir d'ajouter Angular Universal en répondant "yes" à la question suivante :
+
+[source,shell, subs="specialchars"]
+----
+$ ng new my-ssr-app
+? Which stylesheet format would you like to use? Sass (SCSS)     [
+https://sass-lang.com/documentation/syntax#scss                ]
+? Do you want to enable Server-Side Rendering (SSR) and Static Site Generation (SSG/Prerendering)?
+(y/N)
+----
+
+Pour ajouter Angular Universal à un projet Angular existant, vous pouvez utiliser la commande suivante :
+
+[source,shell, subs="specialchars"]
+----
+ng add @nguniversal/express-engine
+----
+
+Une fois installer plusieurs scripts seront ajoutés à votre `package.json`.
+
+[source,json, subs="specialchars"]
+----
+{
+  "name": "my-ssr-app",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "serve:ssr:example": "node dist/example/server/server.mjs"
+  },
+  ...
+}
+----
+
+Vous pouvez lancer la compilation incrémentale de votre application avec la commande suivante dans un terminal:
+
+[source,shell, subs="specialchars"]
+----
+npm run watch
+----
+
+Et en parallèle dans un navigateur, lancez votre application en mode serveur avec la commande suivante :
+
+[source,shell, subs="specialchars"]
+----
+npm run  serve:ssr:example
+----
+
+Vous pouvez maintenant accéder à votre application Angular avec SSR en ouvrant un navigateur et en saisissant l'URL suivante : `http://localhost:4000`.
+
+
+== Conclusion
+
+Lors de mes premiers tests il y a quelques années j'avais rencontré plusieurs erreurs et j'avais abandonné. Aujourd'hui, la mise en place est beaucoup plus simple et je vous encourage à tester Angular Universal pour vos applications Angular.
+
+Mais le SSR n'est pas la solution à tous les problèmes. Il peut être utile dans certains cas, mais il peut aussi poser des problèmes de performances et de réactivité. Il est important de peser le pour et le contre avant de décider d'utiliser le SSR dans une application web.
+
+Le SSR est une bonne option pour les sites web statiques qui ne changent pas souvent de contenu. Mon site web est un excellent exemple. Il est composé de pages statiques générées en Asciisdoc et le travail se fait à la compilation.

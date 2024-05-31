@@ -1,4 +1,5 @@
 
+import { _server_side_rendering } from './blog/2024/_server_side_rendering';
 import { _spring_boot_starter_database_schema_initialization } from './blog/2022/_spring_boot_starter_database_schema_initialization';
 import { _assertj_extracting_koltin } from './blog/2021/_assertj_extracting_koltin';
 import { _java_memoire } from './blog/2021/_java_memoire';
@@ -49,6 +50,7 @@ import { _12_patterns_transition_agile } from './blog/2015/_12_patterns_transiti
 import { _formes_leadership } from './blog/2015/_formes_leadership';
 import { _java8_et_les_lambda_stream } from './blog/2015/_java8_et_les_lambda_stream';
 export const blogGeneratedTemplates = new Map<string, string>();
+blogGeneratedTemplates.set('server_side_rendering', _server_side_rendering);
 blogGeneratedTemplates.set('spring_boot_starter_database_schema_initialization', _spring_boot_starter_database_schema_initialization);
 blogGeneratedTemplates.set('assertj_extracting_koltin', _assertj_extracting_koltin);
 blogGeneratedTemplates.set('java_memoire', _java_memoire);

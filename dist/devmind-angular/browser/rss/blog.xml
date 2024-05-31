@@ -13,6 +13,16 @@
     </image>
     
     <item>
+      <title>Server Side Rendering</title>
+      <link>https://dev-mind.fr/blog/server_side_rendering.html</link>
+      <description>Qu'est ce que le Server Side Rendering (SSR) et comment l'utiliser dans une application Angular</description>
+      <pubDate>Fri, 31 May 2024 00:00:00 GMT</pubDate>
+      <author>Guillaume EHRET - Dev-Mind</author>
+      <category>Web</category>
+    </item>
+    
+
+    <item>
       <title>Comprendre l'auto-configuration Spring Boot</title>
       <link>https://dev-mind.fr/blog/spring_boot_starter_database_schema_initialization.html</link>
       <description>Comment initialiser le schema et user d'un microservice via un starter Spring juste avant l'initialisation de la datasource gérée par Spring, Liquibase ou Flyway. Pour celà il faut comprendre l'auto-configuration Spring Boot</description>
