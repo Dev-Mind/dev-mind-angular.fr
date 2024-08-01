@@ -1,20 +1,20 @@
 export const _install_development_environment:string = `<div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="@link@#_java_installation">Java installation</a>
+<a class="link" fragment="#_java_installation">Java installation</a>
 <ul class="sectlevel2">
-<li><a href="@link@#_history">History</a></li>
-<li><a href="@link@#_which_version">Which version ?</a></li>
-<li><a href="@link@#_jdk_17_installation">JDK 17 Installation</a></li>
+<li><a class="link" fragment="#_history">History</a></li>
+<li><a class="link" fragment="#_which_version">Which version ?</a></li>
+<li><a class="link" fragment="#_jdk_21_installation">JDK 21 Installation</a></li>
 </ul>
-</li>
-<li><a href="@link@#_ide_installation">IDE installation</a></li>
-<li><a href="@link@#_android_studio">Android studio</a>
+
+<a class="link" fragment="#_ide_installation">IDE installation</a>
+<a class="link" fragment="#_android_studio">Android studio</a>
 <ul class="sectlevel2">
-<li><a href="@link@#_installation">Installation</a></li>
-<li><a href="@link@#_update">Update</a></li>
+<li><a class="link" fragment="#_installation">Installation</a></li>
+<li><a class="link" fragment="#_update">Update</a></li>
 </ul>
-</li>
+
 </ul>
 </div>
 <div id="preamble">
@@ -33,7 +33,7 @@ export const _install_development_environment:string = `<div id="toc" class="toc
 <h2 id="_java_installation">Java installation</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>When you are a lambda user you can install a Java Runtime Environment (JRE).</p>
+<p>When you are a simple user, you can install a Java Runtime Environment (JRE). With this package you can run a Java application.</p>
 </div>
 <div class="paragraph">
 <p>But to develop app, we need more tools to compile source code, monitor app execution&#8230;&#8203; In this case we will use a <strong>Java Development Kit</strong> (JDK)</p>
@@ -53,14 +53,14 @@ export const _install_development_environment:string = `<div id="toc" class="toc
 <p>Java is released every 6 months, but only a few versions are defined as <a href="https://en.wikipedia.org/wiki/Long-term_support">LTS (long term support)</a>.</p>
 </div>
 <div class="paragraph">
-<p>As of September 2023, Java 19 is the last version, but we will use a Long Term Support (LTS) version. For the moment this version is Java 17. The next LTS version is Java 21 and the release is scheduled on September 19, 2023.</p>
+<p>As of September 2024, Java 23 is the last version, but we will use a Long Term Support (LTS) version. For the moment this version is Java 21.</p>
 </div>
 <div class="paragraph">
-<p>As Java 21 will be too young, we can use libraries that are not yet compatible. So please use the <strong>Java 17 (LTS) version</strong>.</p>
+<p>Please use the <strong>Java 21 (LTS) version</strong>.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_jdk_17_installation">JDK 17 Installation</h3>
+<h3 id="_jdk_21_installation">JDK 21 Installation</h3>
 <div class="paragraph">
 <p>Different companies provide a JDK version (Oracle, OpenJDK, Amazon, Microsoft&#8230;&#8203;).</p>
 </div>
@@ -74,8 +74,8 @@ export const _install_development_environment:string = `<div id="toc" class="toc
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">~@dollar@ curl -s &quot;https://get.sdkman.io&quot; | bash
-~@dollar@ source &quot;@dollar@HOME/.sdkman/bin/sdkman-init.sh&quot;</code></pre>
+<pre class="highlight"><code class="language-shell" id="1722519596108.5674">~@dollar@ curl -s &quot;https://get.sdkman.io&quot; | bash
+~@dollar@ source &quot;@dollar@HOME/.sdkman/bin/sdkman-init.sh&quot;</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596108.5674')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -83,11 +83,11 @@ export const _install_development_environment:string = `<div id="toc" class="toc
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">~@dollar@ sdk version
+<pre class="highlight"><code class="language-shell" id="1722519596108.1213">~@dollar@ sdk version
 
 SDKMAN!
 script: 5.18.2
-native: 0.4.2</code></pre>
+native: 0.4.2</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596108.1213')">Copy</button></pre>
 </div>
 </div>
 <div class="quoteblock">
@@ -121,7 +121,7 @@ native: 0.4.2</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">~@dollar@ sdk java list</code></pre>
+<pre class="highlight"><code class="language-shell" id="1722519596108.4666">~@dollar@ sdk list java</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596108.4666')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -129,7 +129,7 @@ native: 0.4.2</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">~@dollar@ sdk install java 17.0.8-oracle</code></pre>
+<pre class="highlight"><code class="language-shell" id="1722519596108.5552">~@dollar@ sdk install java 21.0.4-oracle</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596108.5552')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -137,7 +137,7 @@ native: 0.4.2</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">~@dollar@ sdk default java 17.0.8-oracle</code></pre>
+<pre class="highlight"><code class="language-shell" id="1722519596108.3357">~@dollar@ sdk default java 21.0.4-oracle</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596108.3357')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -148,10 +148,10 @@ native: 0.4.2</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">~@dollar@  java -version
-java version &quot;17.0.7&quot; 2023-04-18 LTS
-Java(TM) SE Runtime Environment Oracle GraalVM 17.0.7+8.1 (build 17.0.7+8-LTS-jvmci-23.0-b12)
-Java HotSpot(TM) 64-Bit Server VM Oracle GraalVM 17.0.7+8.1 (build 17.0.7+8-LTS-jvmci-23.0-b12, mixed mode, sharing)</code></pre>
+<pre class="highlight"><code class="language-shell" id="1722519596109.7156">~@dollar@  java -version
+java version &quot;21.0.4&quot; 2024-07-16 LTS
+Java(TM) SE Runtime Environment (build 21.0.4+8-LTS-274)
+Java HotSpot(TM) 64-Bit Server VM (build 21.0.4+8-LTS-274, mixed mode, sharing)</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596109.7156')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -178,8 +178,8 @@ IntelliJ Idea is for me the best one to develop in Java, but the Premium version
 But <strong>you can use the community version freely.</strong></p>
 </div>
 <div class="paragraph">
-<p><strong>To simplify mutual aid we will all use the same IDE, IntelliJ Idea Community version. <a href="https://www.jetbrains.com/idea/download">Download</a> the last version.</strong>
-You can also try to obtain a free licence on this <a href="https://www.jetbrains.com/community/education/#students">link</a> for the premium version.</p>
+<p><strong>To simplify mutual aid we will all use the same IDE, IntelliJ Idea Community version. <a href="https://jetbrains.com/idea/download">Download</a> the last version.</strong>
+You can also try to obtain a free licence on this <a href="https://jetbrains.com/community/education/#students">link</a> for the premium version.</p>
 </div>
 <div class="paragraph">
 <p>Launch your IDE to check that everything works</p>
@@ -213,8 +213,8 @@ You can also try to obtain a free licence on this <a href="https://www.jetbrains
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">cd ~/appli/android-studio/bin
-sh ./studio.sh</code></pre>
+<pre class="highlight"><code class="language-shell" id="1722519596109.5674">cd ~/appli/android-studio/bin
+sh ./studio.sh</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596109.5674')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -225,7 +225,7 @@ sh ./studio.sh</code></pre>
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../../img/training/android/android-studio.png" alt="Follow wizard" width="800">
+<img src="../../img/training/android/firstapp/android-studio.png" alt="Follow wizard" width="800">
 </div>
 </div>
 </div>
@@ -237,7 +237,7 @@ For that go on menu <strong>Tools &gt; SDK manager</strong></p>
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../../img/training/android/android-studio-update1.png" alt="Menu SDK manager" width="800">
+<img src="../../img/training/android/firstapp/android-studio-update1.png" alt="Menu SDK manager" width="800">
 </div>
 </div>
 <div class="paragraph">
@@ -245,12 +245,14 @@ For that go on menu <strong>Tools &gt; SDK manager</strong></p>
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../../img/training/android/android-studio-update2.png" alt="Choose SDK versions" width="800">
+<img src="../../img/training/android/firstapp/android-studio-update2.png" alt="Choose SDK versions" width="800">
 </div>
 </div>
 <div class="paragraph">
-<p>When you develop in Android you should always do it on the last SDK version.
-Google requires you to always target this latest version when you publish apps to the official store.</p>
+<p>When you develop in Android you should always do it on the last SDK version.</p>
+</div>
+<div class="paragraph">
+<p>Google requires you to always target this latest version when you publish apps to the official store.</p>
 </div>
 </div>
 </div>

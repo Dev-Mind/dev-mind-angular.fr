@@ -5,6 +5,6 @@
       <div class="dm-blog--info-date">{{ publicationDate }}</div>
       <div class="dm-blog--keyword-detail" *ngFor="let keyword of keywords">{{keyword}}</div>&nbsp;
     </div>
-    <div class="preview" [innerHTML]="content">
+    <div class="preview" [innerHTML]="content" (click)="routerlinkClicked($event)" >
   </div>
 </div>

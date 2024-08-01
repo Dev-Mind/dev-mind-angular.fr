@@ -3,6 +3,7 @@ import {DomSanitizer, SafeHtml} from "@angular/platform-browser";
 import {blogGeneratedTemplates} from "../generated/generated.blog.templates";
 import {trainingGeneratedTemplates} from "../generated/generated.training.templates";
 import {NgForOf} from "@angular/common";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-asciidoc-viewer',
@@ -38,7 +39,7 @@ export class AsciiDocViewerComponent implements OnInit {
 
   content: SafeHtml | null = null;
 
-  constructor(private domSanitizer:DomSanitizer) {
+  constructor(private domSanitizer: DomSanitizer, private router: Router) {
   }
 
   ngOnInit(): void {
@@ -61,4 +62,12 @@ export class AsciiDocViewerComponent implements OnInit {
     this.content = this.domSanitizer.bypassSecurityTrustHtml(contentWithoutSpecialChars);
   }
 
+  routerlinkClicked($event: Event) {
+    const target: HTMLElement = $event.target as HTMLElement;
+    const attributes: NamedNodeMap = target.attributes;
+    const redirectUrl = attributes.getNamedItem('fragment')?.value;
+    if (redirectUrl) {
+      document.querySelector(redirectUrl)?.scrollIntoView({block: "center"});
+    }
+  }
 }

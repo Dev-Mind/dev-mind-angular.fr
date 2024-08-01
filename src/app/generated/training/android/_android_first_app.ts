@@ -1,30 +1,30 @@
 export const _android_first_app:string = `<div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="@link@#_android_studio">Android studio</a>
+<a class="link" fragment="#_android_studio">Android studio</a>
 <ul class="sectlevel2">
-<li><a href="@link@#_installation">Installation</a></li>
-<li><a href="@link@#_update">Update</a></li>
+<li><a class="link" fragment="#_installation">Installation</a></li>
+<li><a class="link" fragment="#_update">Update</a></li>
 </ul>
-</li>
-<li><a href="@link@#_fundamental_concepts">Fundamental concepts</a></li>
-<li><a href="@link@#_flask_a_first_example"><span class="icon">[flask&#93;</span> : A first example</a></li>
-<li><a href="@link@#_most_important_files">Most important files</a>
+
+<a class="link" fragment="#_fundamental_concepts">Fundamental concepts</a>
+<a class="link" fragment="#_flask_a_first_example"><span class="icon">[flask&#93;</span> : A first example</a>
+<a class="link" fragment="#_most_important_files">Most important files</a>
 <ul class="sectlevel2">
-<li><a href="@link@#_manifest_file">Manifest file</a></li>
-<li><a href="@link@#_activity">Activity</a></li>
-<li><a href="@link@#_resource_files">Resource files</a></li>
-<li><a href="@link@#_gradle_file">Gradle file</a></li>
+<li><a class="link" fragment="#_manifest_file">Manifest file</a></li>
+<li><a class="link" fragment="#_activity">Activity</a></li>
+<li><a class="link" fragment="#_resource_files">Resource files</a></li>
+<li><a class="link" fragment="#_gradle_file">Gradle file</a></li>
 </ul>
-</li>
-<li><a href="@link@#_flask_launch_your_application"><span class="icon">[flask&#93;</span> : Launch your application</a>
+
+<a class="link" fragment="#_flask_launch_your_application"><span class="icon">[flask&#93;</span> : Launch your application</a>
 <ul class="sectlevel2">
-<li><a href="@link@#_configure_a_real_android_device">Configure a real Android device</a></li>
-<li><a href="@link@#_configure_a_virtual_device">Configure a virtual device</a></li>
-<li><a href="@link@#_run_your_app">Run your app</a></li>
+<li><a class="link" fragment="#_configure_a_real_android_device">Configure a real Android device</a></li>
+<li><a class="link" fragment="#_configure_a_virtual_device">Configure a virtual device</a></li>
+<li><a class="link" fragment="#_run_your_app">Run your app</a></li>
 </ul>
-</li>
-<li><a href="@link@#_resources">Resources</a></li>
+
+<a class="link" fragment="#_resources">Resources</a>
 </ul>
 </div>
 <div id="preamble">
@@ -63,8 +63,8 @@ You need to install it on your computer (installation requires 900MB) on <a href
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">cd ~/appli/android-studio/bin
-sh ./studio.sh</code></pre>
+<pre class="highlight"><code class="language-shell" id="1722519595813.0173">cd ~/appli/android-studio/bin
+sh ./studio.sh</code><button class="btn-copy-code" onclick="copyToClipboard('1722519595813.0173')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -292,12 +292,12 @@ This Android view let see you the main files of your Android project</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml"> <span class="hljs-tag">&lt;<span class="hljs-name">activity</span> <span class="hljs-attr">android:name</span>=<span class="hljs-string">&quot;.MainActivity&quot;</span> <span class="hljs-attr">android:exported</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>
+<pre class="highlight"><code class="language-xml" id="1722519595814.067"> <span class="hljs-tag">&lt;<span class="hljs-name">activity</span> <span class="hljs-attr">android:name</span>=<span class="hljs-string">&quot;.MainActivity&quot;</span> <span class="hljs-attr">android:exported</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">intent-filter</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">action</span> <span class="hljs-attr">android:name</span>=<span class="hljs-string">&quot;android.intent.action.MAIN&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">action</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">category</span> <span class="hljs-attr">android:name</span>=<span class="hljs-string">&quot;android.intent.category.LAUNCHER&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">category</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">intent-filter</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">activity</span>&gt;</span></code></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">activity</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722519595814.067')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -350,12 +350,12 @@ This Android view let see you the main files of your Android project</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin"><span class="hljs-keyword">class</span> <span class="hljs-title class_">MainActivity</span> : <span class="hljs-type">AppCompatActivity</span>() {
+<pre class="highlight"><code class="language-kotlin" id="1722519595815.6387"><span class="hljs-keyword">class</span> <span class="hljs-title class_">MainActivity</span> : <span class="hljs-type">AppCompatActivity</span>() {
      <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(savedInstanceState: <span class="hljs-type">Bundle</span>?)</span></span> {
           <span class="hljs-keyword">super</span>.onCreate(savedInstanceState)
           setContentView(R.layout.activity_main)
      }
-}</code></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722519595815.6387')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -395,12 +395,12 @@ This Android view let see you the main files of your Android project</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml"><span class="hljs-meta">&lt;?xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;utf-8&quot;</span>?&gt;</span>
+<pre class="highlight"><code class="language-xml" id="1722519595817.8813"><span class="hljs-meta">&lt;?xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;utf-8&quot;</span>?&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">androidx.constraintlayout.widget.ConstraintLayout</span> <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">&quot;http://schemas.android.com/apk/res/android&quot;</span> <span class="hljs-attr">xmlns:app</span>=<span class="hljs-string">&quot;http://schemas.android.com/apk/res-auto&quot;</span> <span class="hljs-attr">xmlns:tools</span>=<span class="hljs-string">&quot;http://schemas.android.com/tools&quot;</span> <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span> <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;match_parent&quot;</span> <span class="hljs-attr">tools:context</span>=<span class="hljs-string">&quot;.MainActivity&quot;</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">TextView</span> <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span> <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span> <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;Hello World!&quot;</span> <span class="hljs-attr">app:layout_constraintbottom_tobottomof</span>=<span class="hljs-string">&quot;parent&quot;</span> <span class="hljs-attr">app:layout_constraintleft_toleftof</span>=<span class="hljs-string">&quot;parent&quot;</span> <span class="hljs-attr">app:layout_constraintright_torightof</span>=<span class="hljs-string">&quot;parent&quot;</span> <span class="hljs-attr">app:layout_constrainttop_totopof</span>=<span class="hljs-string">&quot;parent&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">TextView</span>&gt;</span>
 
-<span class="hljs-tag">&lt;/<span class="hljs-name">androidx.constraintlayout.widget.ConstraintLayout</span>&gt;</span></code></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">androidx.constraintlayout.widget.ConstraintLayout</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722519595817.8813')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -449,7 +449,7 @@ This Android view let see you the main files of your Android project</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin">android {
+<pre class="highlight"><code class="language-kotlin" id="1722519595818.3105">android {
    namespace = <span class="hljs-string">&quot;com.automacorp&quot;</span>
     compileSdk = <span class="hljs-number">34</span>
 
@@ -480,7 +480,7 @@ This Android view let see you the main files of your Android project</p>
     kotlinOptions {
         jvmTarget = <span class="hljs-string">&#x27;1.8&#x27;</span>
     }
-}</code></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722519595818.3105')">Copy</button></pre>
 </div>
 </div>
 </div>

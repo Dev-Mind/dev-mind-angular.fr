@@ -1,60 +1,60 @@
 export const _java_memoire:string = `<div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="@link@#_le_garbage_collector">Le garbage collector</a></li>
-<li><a href="@link@#_fonctionnement">Fonctionnement</a>
+<a class="link" fragment="#_le_garbage_collector">Le garbage collector</a>
+<a class="link" fragment="#_fonctionnement">Fonctionnement</a>
 <ul class="sectlevel2">
-<li><a href="@link@#_collecte_genérationnelle">Collecte genérationnelle</a></li>
-<li><a href="@link@#_logguer_ce_que_fait_le_garbage_collector">Logguer ce que fait le garbage collector</a></li>
+<li><a class="link" fragment="#_collecte_genérationnelle">Collecte genérationnelle</a></li>
+<li><a class="link" fragment="#_logguer_ce_que_fait_le_garbage_collector">Logguer ce que fait le garbage collector</a></li>
 </ul>
-</li>
-<li><a href="@link@#_métriques">Métriques</a>
+
+<a class="link" fragment="#_métriques">Métriques</a>
 <ul class="sectlevel2">
-<li><a href="@link@#_maximum_pause_time">Maximum Pause-Time</a></li>
-<li><a href="@link@#_débit_de_lapplication_throughput">Débit de l&#8217;application (throughput)</a></li>
+<li><a class="link" fragment="#_maximum_pause_time">Maximum Pause-Time</a></li>
+<li><a class="link" fragment="#_débit_de_lapplication_throughput">Débit de l&#8217;application (throughput)</a></li>
 </ul>
-</li>
-<li><a href="@link@#_performances">Performances</a>
+
+<a class="link" fragment="#_performances">Performances</a>
 <ul class="sectlevel2">
-<li><a href="@link@#_taille_de_la_heap_espace_mémoire_global">Taille de la heap (espace mémoire global)</a></li>
-<li><a href="@link@#_taille_de_la_jeune_génération">Taille de la jeune génération</a></li>
+<li><a class="link" fragment="#_taille_de_la_heap_espace_mémoire_global">Taille de la heap (espace mémoire global)</a></li>
+<li><a class="link" fragment="#_taille_de_la_jeune_génération">Taille de la jeune génération</a></li>
 </ul>
-</li>
-<li><a href="@link@#_serial_collector">Serial Collector</a></li>
-<li><a href="@link@#_parallel_collector">Parallel Collector</a></li>
-<li><a href="@link@#_garbage_first_g1">Garbage-First (G1)</a>
+
+<a class="link" fragment="#_serial_collector">Serial Collector</a>
+<a class="link" fragment="#_parallel_collector">Parallel Collector</a>
+<a class="link" fragment="#_garbage_first_g1">Garbage-First (G1)</a>
 <ul class="sectlevel2">
-<li><a href="@link@#_fonctionnement_2">Fonctionnement</a></li>
-<li><a href="@link@#_principales_options">Principales options</a></li>
-<li><a href="@link@#_améliorer_les_performances_du_g1">Améliorer les performances du G1</a>
+<li><a class="link" fragment="#_fonctionnement_2">Fonctionnement</a></li>
+<li><a class="link" fragment="#_principales_options">Principales options</a></li>
+<li><a class="link" fragment="#_améliorer_les_performances_du_g1">Améliorer les performances du G1</a>
 <ul class="sectlevel3">
-<li><a href="@link@#_full_gc">Full GC</a></li>
-<li><a href="@link@#_utilisation_temps_système_incohérent">Utilisation temps système incohérent</a></li>
-<li><a href="@link@#_problème_sur_les_collectes_mineures">Problème sur les collectes mineures</a></li>
-<li><a href="@link@#_problème_sur_les_collectes_mixtes">Problème sur les collectes mixtes</a></li>
-<li><a href="@link@#_référence_interrégionale">Référence interrégionale</a></li>
+<li><a class="link" fragment="#_full_gc">Full GC</a></li>
+<li><a class="link" fragment="#_utilisation_temps_système_incohérent">Utilisation temps système incohérent</a></li>
+<li><a class="link" fragment="#_problème_sur_les_collectes_mineures">Problème sur les collectes mineures</a></li>
+<li><a class="link" fragment="#_problème_sur_les_collectes_mixtes">Problème sur les collectes mixtes</a></li>
+<li><a class="link" fragment="#_référence_interrégionale">Référence interrégionale</a></li>
 </ul>
 </li>
 </ul>
-</li>
-<li><a href="@link@#_z_garbage_collector">Z Garbage Collector</a>
+
+<a class="link" fragment="#_z_garbage_collector">Z Garbage Collector</a>
 <ul class="sectlevel2">
-<li><a href="@link@#_découpage_de_la_mémoire">Découpage de la mémoire</a></li>
-<li><a href="@link@#_coloration_de_référence_colored_pointer">Coloration de référence (colored pointer)</a></li>
-<li><a href="@link@#_barrières_gc_gc_barrier">Barrières GC (GC barrier)</a></li>
-<li><a href="@link@#_cycle_de_vie">Cycle de vie</a></li>
-<li><a href="@link@#_principales_options_2">Principales options</a></li>
+<li><a class="link" fragment="#_découpage_de_la_mémoire">Découpage de la mémoire</a></li>
+<li><a class="link" fragment="#_coloration_de_référence_colored_pointer">Coloration de référence (colored pointer)</a></li>
+<li><a class="link" fragment="#_barrières_gc_gc_barrier">Barrières GC (GC barrier)</a></li>
+<li><a class="link" fragment="#_cycle_de_vie">Cycle de vie</a></li>
+<li><a class="link" fragment="#_principales_options_2">Principales options</a></li>
 </ul>
-</li>
-<li><a href="@link@#_epsilon_garbage_collector">Epsilon Garbage Collector</a></li>
-<li><a href="@link@#_shenandoah_garbage_collector">Shenandoah Garbage Collector</a>
+
+<a class="link" fragment="#_epsilon_garbage_collector">Epsilon Garbage Collector</a>
+<a class="link" fragment="#_shenandoah_garbage_collector">Shenandoah Garbage Collector</a>
 <ul class="sectlevel2">
-<li><a href="@link@#_fonctionnement_3">Fonctionnement</a></li>
-<li><a href="@link@#_principales_options_3">Principales options</a></li>
+<li><a class="link" fragment="#_fonctionnement_3">Fonctionnement</a></li>
+<li><a class="link" fragment="#_principales_options_3">Principales options</a></li>
 </ul>
-</li>
-<li><a href="@link@#_conclusion">Conclusion</a></li>
-<li><a href="@link@#_références">Références</a></li>
+
+<a class="link" fragment="#_conclusion">Conclusion</a>
+<a class="link" fragment="#_références">Références</a>
 </ul>
 </div>
 <div id="preamble">

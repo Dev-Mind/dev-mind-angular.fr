@@ -77,9 +77,9 @@ export const _publish_maven_central:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java">apply plugin: <span class="hljs-string">&#x27;java&#x27;</span>
+<pre class="highlight"><code class="language-java" id="1722519597045.4548">apply plugin: <span class="hljs-string">&#x27;java&#x27;</span>
 apply plugin: <span class="hljs-string">&#x27;signing&#x27;</span>
-apply plugin: <span class="hljs-string">&#x27;maven&#x27;</span></code></pre>
+apply plugin: <span class="hljs-string">&#x27;maven&#x27;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722519597045.4548')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -93,10 +93,10 @@ apply plugin: <span class="hljs-string">&#x27;maven&#x27;</span></code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java">group = <span class="hljs-string">&#x27;fr.dev-mind&#x27;</span>
+<pre class="highlight"><code class="language-java" id="1722519597045.7861">group = <span class="hljs-string">&#x27;fr.dev-mind&#x27;</span>
 archivesBaseName = <span class="hljs-string">&quot;mockwebserver&quot;</span>
 version = rootProject.<span class="hljs-type">version</span>
-<span class="hljs-variable">sourceCompatibility</span> <span class="hljs-operator">=</span> <span class="hljs-number">1.8</span></code></pre>
+<span class="hljs-variable">sourceCompatibility</span> <span class="hljs-operator">=</span> <span class="hljs-number">1.8</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722519597045.7861')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -104,7 +104,7 @@ version = rootProject.<span class="hljs-type">version</span>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java">ext.sharedManifest = manifest {
+<pre class="highlight"><code class="language-java" id="1722519597046.9792">ext.sharedManifest = manifest {
     attributes(
             <span class="hljs-string">&quot;Implementation-Title&quot;</span>: project.name,
             <span class="hljs-string">&quot;Implementation-Version&quot;</span>: version,
@@ -143,7 +143,7 @@ jar {
 
 artifacts {
     archives javadocJar, sourcesJar
-}</code></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722519597046.9792')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -151,10 +151,10 @@ artifacts {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java">signing {
+<pre class="highlight"><code class="language-java" id="1722519597046.6262">signing {
     required { gradle.taskGraph.hasTask(<span class="hljs-string">&quot;uploadArchives&quot;</span>) }
     sign configurations.archives
-}</code></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722519597046.6262')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -162,7 +162,7 @@ artifacts {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java">uploadArchives {
+<pre class="highlight"><code class="language-java" id="1722519597047.7805">uploadArchives {
     repositories {
         mavenDeployer {
             beforeDeployment { MavenDeployment deployment -&amp;gt; signing.signPom(deployment) }
@@ -204,7 +204,7 @@ artifacts {
             }
         }
     }
-}</code></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722519597047.7805')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -217,7 +217,7 @@ artifacts {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java"><span class="hljs-meta">@dollar</span>@ gpg2 --key-gen</code></pre>
+<pre class="highlight"><code class="language-java" id="1722519597047.4646"><span class="hljs-meta">@dollar</span>@ gpg2 --key-gen</code><button class="btn-copy-code" onclick="copyToClipboard('1722519597047.4646')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -228,7 +228,7 @@ artifacts {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java"><span class="hljs-meta">@dollar</span>@ gpg2 --version</code></pre>
+<pre class="highlight"><code class="language-java" id="1722519597047.3618"><span class="hljs-meta">@dollar</span>@ gpg2 --version</code><button class="btn-copy-code" onclick="copyToClipboard('1722519597047.3618')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -236,14 +236,14 @@ artifacts {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java"><span class="hljs-meta">@dollar</span>@ gpg2 --list-secret-keys
+<pre class="highlight"><code class="language-java" id="1722519597048.6826"><span class="hljs-meta">@dollar</span>@ gpg2 --list-secret-keys
 
 /home/devmind/.gnupg/pubring.kbx
 ------------------------------
 pub   rsa2048 <span class="hljs-number">2018</span>-<span class="hljs-number">01</span>-<span class="hljs-number">13</span> [SC]
       6933FACC1931DD8A89CED163582D3134
 uid         [ultimate] Guillaume EHRET &amp;lt;guillaume<span class="hljs-meta">@dev</span>-mind.fr&amp;gt;
-sub   rsa2048 <span class="hljs-number">2018</span>-<span class="hljs-number">01</span>-<span class="hljs-number">13</span> [E]</code></pre>
+sub   rsa2048 <span class="hljs-number">2018</span>-<span class="hljs-number">01</span>-<span class="hljs-number">13</span> [E]</code><button class="btn-copy-code" onclick="copyToClipboard('1722519597048.6826')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -251,13 +251,13 @@ sub   rsa2048 <span class="hljs-number">2018</span>-<span class="hljs-number">01
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java"><span class="hljs-meta">@dollar</span>@ gpg2 --list-secret-keys --keyid-format <span class="hljs-type">short</span>
+<pre class="highlight"><code class="language-java" id="1722519597049.5254"><span class="hljs-meta">@dollar</span>@ gpg2 --list-secret-keys --keyid-format <span class="hljs-type">short</span>
 
 /home/devmind/.gnupg/pubring.kbx
 --------------------------------
 pub   rsa2048/C6EED57A <span class="hljs-number">2018</span>-<span class="hljs-number">01</span>-<span class="hljs-number">13</span> [SC]
 uid         [ultimate] Guillaume EHRET &amp;lt;guillaume<span class="hljs-meta">@dev</span>-mind.fr&amp;gt;
-sub   rsa2048/7DY5B54F <span class="hljs-number">2018</span>-<span class="hljs-number">01</span>-<span class="hljs-number">13</span> [E]</code></pre>
+sub   rsa2048/7DY5B54F <span class="hljs-number">2018</span>-<span class="hljs-number">01</span>-<span class="hljs-number">13</span> [E]</code><button class="btn-copy-code" onclick="copyToClipboard('1722519597049.5254')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -265,7 +265,7 @@ sub   rsa2048/7DY5B54F <span class="hljs-number">2018</span>-<span class="hljs-n
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java"><span class="hljs-meta">@dollar</span>@ gpg2 --keyserver hkp:<span class="hljs-comment">//pool.sks-keyservers.net --send-keys C6EED57A</span></code></pre>
+<pre class="highlight"><code class="language-java" id="1722519597049.5083"><span class="hljs-meta">@dollar</span>@ gpg2 --keyserver hkp:<span class="hljs-comment">//pool.sks-keyservers.net --send-keys C6EED57A</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722519597049.5083')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -273,12 +273,12 @@ sub   rsa2048/7DY5B54F <span class="hljs-number">2018</span>-<span class="hljs-n
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java">signing.keyId=C6EED57A
+<pre class="highlight"><code class="language-java" id="1722519597049.9084">signing.keyId=C6EED57A
 signing.password=CeciEstMonpassword
 signing.secretKeyRingFile=/home/devmind/.gnupg/secring.gpg
 
 ossrhUsername=devmind
-ossrhPassword=CeciEstMonpassword</code></pre>
+ossrhPassword=CeciEstMonpassword</code><button class="btn-copy-code" onclick="copyToClipboard('1722519597049.9084')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -286,9 +286,9 @@ ossrhPassword=CeciEstMonpassword</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java">* What went wrong:
+<pre class="highlight"><code class="language-java" id="1722519597049.28">* What went wrong:
 Execution failed <span class="hljs-keyword">for</span> task <span class="hljs-string">&#x27;:signArchives&#x27;</span>.
-&amp;gt; Unable to read secret key from file: /home/devmind/.gnupg/secring.gpg (it may not be a PGP secret key ring)</code></pre>
+&amp;gt; Unable to read secret key from file: /home/devmind/.gnupg/secring.gpg (it may not be a PGP secret key ring)</code><button class="btn-copy-code" onclick="copyToClipboard('1722519597049.28')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -296,7 +296,7 @@ Execution failed <span class="hljs-keyword">for</span> task <span class="hljs-st
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java"><span class="hljs-meta">@dollar</span>@ gpg2 --export-secret-keys &amp;gt; ~/.gnupg/secring.gpg</code></pre>
+<pre class="highlight"><code class="language-java" id="1722519597049.9814"><span class="hljs-meta">@dollar</span>@ gpg2 --export-secret-keys &amp;gt; ~/.gnupg/secring.gpg</code><button class="btn-copy-code" onclick="copyToClipboard('1722519597049.9814')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -312,11 +312,11 @@ Execution failed <span class="hljs-keyword">for</span> task <span class="hljs-st
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java">signing {
+<pre class="highlight"><code class="language-java" id="1722519597050.7026">signing {
     required { gradle.taskGraph.hasTask(<span class="hljs-string">&quot;uploadArchives&quot;</span>) }
     useGpgCmd()
     sign configurations.archives
-}</code></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722519597050.7026')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">

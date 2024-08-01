@@ -1,40 +1,40 @@
 export const _git:string = `<div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="@link@#_for_who_why">For who, why ?</a></li>
-<li><a href="@link@#_what_did_we_do_before">What did we do before ?</a></li>
-<li><a href="@link@#_whats_a_repository">What&#8217;s a repository ?</a></li>
-<li><a href="@link@#_install_git">Install Git</a></li>
-<li><a href="@link@#_first_commands">First commands</a>
+<a class="link" fragment="#_for_who_why">For who, why ?</a>
+<a class="link" fragment="#_what_did_we_do_before">What did we do before ?</a>
+<a class="link" fragment="#_whats_a_repository">What&#8217;s a repository ?</a>
+<a class="link" fragment="#_install_git">Install Git</a>
+<a class="link" fragment="#_first_commands">First commands</a>
 <ul class="sectlevel2">
-<li><a href="@link@#_configure_git">Configure Git</a></li>
-<li><a href="@link@#_clone_a_git_project">Clone a Git project</a></li>
-<li><a href="@link@#_initialize_a_git_repository">Initialize a Git repository</a></li>
-<li><a href="@link@#_linking_files_to_git">Linking files to Git</a></li>
-<li><a href="@link@#_saving_modifications">Saving modifications</a></li>
-<li><a href="@link@#_know_the_current_state">Know the current state</a></li>
-<li><a href="@link@#_see_history">See history</a></li>
-<li><a href="@link@#_see_current_changes">See current changes</a></li>
-<li><a href="@link@#_go_back_in_the_history">Go back in the history</a></li>
+<li><a class="link" fragment="#_configure_git">Configure Git</a></li>
+<li><a class="link" fragment="#_clone_a_git_project">Clone a Git project</a></li>
+<li><a class="link" fragment="#_initialize_a_git_repository">Initialize a Git repository</a></li>
+<li><a class="link" fragment="#_linking_files_to_git">Linking files to Git</a></li>
+<li><a class="link" fragment="#_saving_modifications">Saving modifications</a></li>
+<li><a class="link" fragment="#_know_the_current_state">Know the current state</a></li>
+<li><a class="link" fragment="#_see_history">See history</a></li>
+<li><a class="link" fragment="#_see_current_changes">See current changes</a></li>
+<li><a class="link" fragment="#_go_back_in_the_history">Go back in the history</a></li>
 </ul>
-</li>
-<li><a href="@link@#_working_with_branches">Working with branches</a>
+
+<a class="link" fragment="#_working_with_branches">Working with branches</a>
 <ul class="sectlevel2">
-<li><a href="@link@#_see_the_current_branch">See the current branch</a></li>
-<li><a href="@link@#_create_a_branch">Create a branch</a></li>
-<li><a href="@link@#_change_the_current_branch">Change the current branch</a></li>
-<li><a href="@link@#_compare_2_branches">Compare 2 branches</a></li>
-<li><a href="@link@#_merge_2_branches">Merge 2 branches</a></li>
-<li><a href="@link@#_delete_a_branch">Delete a branch</a></li>
+<li><a class="link" fragment="#_see_the_current_branch">See the current branch</a></li>
+<li><a class="link" fragment="#_create_a_branch">Create a branch</a></li>
+<li><a class="link" fragment="#_change_the_current_branch">Change the current branch</a></li>
+<li><a class="link" fragment="#_compare_2_branches">Compare 2 branches</a></li>
+<li><a class="link" fragment="#_merge_2_branches">Merge 2 branches</a></li>
+<li><a class="link" fragment="#_delete_a_branch">Delete a branch</a></li>
 </ul>
-</li>
-<li><a href="@link@#_github">Github</a>
+
+<a class="link" fragment="#_github">Github</a>
 <ul class="sectlevel2">
-<li><a href="@link@#_link_your_local_repository_to_a_remote_repository">Link your local repository to a remote repository</a></li>
-<li><a href="@link@#_git_project_workflow">Git Project Workflow</a></li>
+<li><a class="link" fragment="#_link_your_local_repository_to_a_remote_repository">Link your local repository to a remote repository</a></li>
+<li><a class="link" fragment="#_git_project_workflow">Git Project Workflow</a></li>
 </ul>
-</li>
-<li><a href="@link@#_conclusion">Conclusion</a></li>
+
+<a class="link" fragment="#_conclusion">Conclusion</a>
 </ul>
 </div>
 <div id="preamble">
@@ -69,7 +69,7 @@ export const _git:string = `<div id="toc" class="toc">
 <p>A version control system (VCS: version control system) helps to <strong>manage the history</strong> of the changes made by people, teams, or only one person who collaborate on a project.</p>
 </div>
 <div class="paragraph">
-<p>When the project evolves, people can at any time find an old version of the code.</p>
+<p>When the project evolves, people can at any time, find an old version of the code.</p>
 </div>
 <div class="paragraph">
 <p>Git answers these questions quickly</p>
@@ -185,7 +185,7 @@ The sources are stored both on the computer of each contributor of the project, 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">sudo yum install git</code></pre>
+<pre class="highlight"><code class="language-shell" id="1722519596085.7825">sudo yum install git</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596085.7825')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -193,7 +193,7 @@ The sources are stored both on the computer of each contributor of the project, 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">sudo apt-get install git</code></pre>
+<pre class="highlight"><code class="language-shell" id="1722519596085.1401">sudo apt-get install git</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596085.1401')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -201,9 +201,9 @@ The sources are stored both on the computer of each contributor of the project, 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">~@dollar@ git --version
+<pre class="highlight"><code class="language-shell" id="1722519596085.9114">~@dollar@ git --version
 
-git version 2.34.1</code></pre>
+git version 2.34.1</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596085.9114')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -218,8 +218,8 @@ git version 2.34.1</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">~@dollar@ git config --global user.name &quot;Guillaume EHRET Dev-Mind&quot;
-~@dollar@ git config --global user.email &quot;guillaume@dev-mind.fr&quot;</code></pre>
+<pre class="highlight"><code class="language-shell" id="1722519596086.929">~@dollar@ git config --global user.name &quot;Guillaume EHRET Dev-Mind&quot;
+~@dollar@ git config --global user.email &quot;guillaume@dev-mind.fr&quot;</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596086.929')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -227,7 +227,7 @@ git version 2.34.1</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">~@dollar@  git config --global init.defaultBranch main</code></pre>
+<pre class="highlight"><code class="language-shell" id="1722519596086.9214">~@dollar@  git config --global init.defaultBranch main</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596086.9214')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -238,7 +238,7 @@ git version 2.34.1</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">~@dollar@ git clone https://github.com/Dev-Mind/git-demo.git</code></pre>
+<pre class="highlight"><code class="language-shell" id="1722519596086.0547">~@dollar@ git clone https://github.com/Dev-Mind/git-demo.git</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596086.0547')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -249,8 +249,8 @@ git version 2.34.1</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">~@dollar@ cd git-demo
-~@dollar@ git log</code></pre>
+<pre class="highlight"><code class="language-shell" id="1722519596086.0874">~@dollar@ cd git-demo
+~@dollar@ git log</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596086.0874')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -261,10 +261,10 @@ git version 2.34.1</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">~@dollar@ cd ..
+<pre class="highlight"><code class="language-shell" id="1722519596086.9792">~@dollar@ cd ..
 ~@dollar@ rm -rf git-demo
 ~@dollar@ mkdir git-demo
-~@dollar@ cd git-demo</code></pre>
+~@dollar@ cd git-demo</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596086.9792')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -272,9 +272,9 @@ git version 2.34.1</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">~@dollar@ git init
+<pre class="highlight"><code class="language-shell" id="1722519596086.3108">~@dollar@ git init
 
-Initialized empty Git repository in /home/devmind/Workspace/java/git-demo/.git/</code></pre>
+Initialized empty Git repository in /home/devmind/Workspace/java/git-demo/.git/</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596086.3108')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -282,13 +282,13 @@ Initialized empty Git repository in /home/devmind/Workspace/java/git-demo/.git/<
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">---
+<pre class="highlight"><code class="language-shell" id="1722519596086.4104">---
 ~@dollar@ ls -la
 total 28
 drwxr-xr-x  3 devmind devmind  4096 sept. 26 22:46 .
 drwxr-xr-x 10 devmind devmind  4096 sept. 26 22:46 ..
 drwxr-xr-x  8 devmind devmind  4096 sept. 26 22:46 .git
-----</code></pre>
+----</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596086.4104')">Copy</button></pre>
 </div>
 </div>
 <div class="admonitionblock note">
@@ -311,11 +311,11 @@ Git will display a warning if you name the default branch master (default config
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">~@dollar@ echo &quot;Hello world&quot; &amp;gt; hello.txt
+<pre class="highlight"><code class="language-shell" id="1722519596086.771">~@dollar@ echo &quot;Hello world&quot; &amp;gt; hello.txt
 ~@dollar@ echo &quot;&amp;lt;html&amp;gt;&amp;lt;body&amp;gt;&amp;lt;h1&amp;gt;Hello World&amp;lt;/h1&amp;gt;&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;&quot; &amp;gt; hello.html
 ~@dollar@ echo &quot;Hello world&quot; &amp;gt; hello.md
 ~@dollar@ ls
-hello.html  hello.txt  hello.md</code></pre>
+hello.html  hello.txt  hello.md</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596086.771')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -323,7 +323,7 @@ hello.html  hello.txt  hello.md</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">~@dollar@ git status
+<pre class="highlight"><code class="language-shell" id="1722519596086.4707">~@dollar@ git status
 
 On branch main
 
@@ -335,7 +335,7 @@ Untracked files:
 	hello.md
 	hello.txt
 
-nothing added to commit but untracked files present (use &quot;git add&quot; to track)</code></pre>
+nothing added to commit but untracked files present (use &quot;git add&quot; to track)</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596086.4707')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -343,8 +343,8 @@ nothing added to commit but untracked files present (use &quot;git add&quot; to 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">~@dollar@ git add hello.txt (1)
-~@dollar@ git add .         (2)</code></pre>
+<pre class="highlight"><code class="language-shell" id="1722519596086.4126">~@dollar@ git add hello.txt (1)
+~@dollar@ git add .         (2)</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596086.4126')">Copy</button></pre>
 </div>
 </div>
 <div class="olist arabic">
@@ -362,7 +362,7 @@ nothing added to commit but untracked files present (use &quot;git add&quot; to 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">~@dollar@ git status
+<pre class="highlight"><code class="language-shell" id="1722519596086.087">~@dollar@ git status
 
 On branch main
 
@@ -372,7 +372,7 @@ Changes to be committed:
   (use &quot;git rm --cached &amp;lt;file&amp;gt;...&quot; to unstage)
 	new file:   hello.html
 	new file:   hello.md
-	new file:   hello.txt</code></pre>
+	new file:   hello.txt</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596086.087')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -383,13 +383,13 @@ Changes to be committed:
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">~@dollar@ git commit -m &quot;First commit&quot;     (1)
+<pre class="highlight"><code class="language-shell" id="1722519596086.562">~@dollar@ git commit -m &quot;First commit&quot;     (1)
 
 [main a7d5b84] First commit       (2)
  3 files changed, 3 insertions(+)
  create mode 100644 hello.html
  create mode 100644 hello.md
- create mode 100644 hello.txt</code></pre>
+ create mode 100644 hello.txt</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596086.562')">Copy</button></pre>
 </div>
 </div>
 <div class="olist arabic">
@@ -426,9 +426,9 @@ For example</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">~@dollar@ rm hello.md
+<pre class="highlight"><code class="language-shell" id="1722519596087.1614">~@dollar@ rm hello.md
 ~@dollar@ echo &quot;My first Git example&quot; &gt; hello.md
-~@dollar@ echo &quot;Hello World&quot; &gt; hello.adoc</code></pre>
+~@dollar@ echo &quot;Hello World&quot; &gt; hello.adoc</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596087.1614')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -436,7 +436,7 @@ For example</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">~@dollar@ git status</code></pre>
+<pre class="highlight"><code class="language-shell" id="1722519596087.3984">~@dollar@ git status</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596087.3984')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -444,21 +444,21 @@ For example</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">~@dollar@ git add .
+<pre class="highlight"><code class="language-shell" id="1722519596087.8276">~@dollar@ git add .
 ~@dollar@ git commit -m &quot;Second commit&quot;
 
 [main 7b7d8e6] Second commit
  3 files changed, 2 insertions(+), 2 deletions(-)
  create mode 100644 hello.adoc
- delete mode 100644 hello.txt</code></pre>
+ delete mode 100644 hello.txt</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596087.8276')">Copy</button></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">~@dollar@ git status
+<pre class="highlight"><code class="language-shell" id="1722519596087.9148">~@dollar@ git status
 
 On branch main
-nothing to commit, working tree clean</code></pre>
+nothing to commit, working tree clean</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596087.9148')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -472,7 +472,7 @@ nothing to commit, working tree clean</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">~@dollar@ git log
+<pre class="highlight"><code class="language-shell" id="1722519596087.6008">~@dollar@ git log
 
 commit 7b7d8e69a06af284c9da7aa4a8c28835d23318fe (HEAD -&amp;gt; main)
 Author: Guillaume EHRET Dev-Mind &amp;lt;guillaume@dev-mind.fr&amp;gt;
@@ -484,7 +484,7 @@ commit a7d5b843ebc65ac6e94c37872d6a936e1c03a6b5
 Author: Guillaume EHRET Dev-Mind &amp;lt;guillaume@dev-mind.fr&amp;gt;
 Date:   Wed Sep 26 23:08:00 2018 +0200
 
-    First commit</code></pre>
+    First commit</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596087.6008')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -498,8 +498,8 @@ Date:   Wed Sep 26 23:08:00 2018 +0200
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">~@dollar@ echo &quot;Fichier Asciidoc&quot; &amp;gt; hello.adoc
-~@dollar@ git diff</code></pre>
+<pre class="highlight"><code class="language-shell" id="1722519596087.8933">~@dollar@ echo &quot;Fichier Asciidoc&quot; &amp;gt; hello.adoc
+~@dollar@ git diff</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596087.8933')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -524,7 +524,7 @@ Date:   Wed Sep 26 23:08:00 2018 +0200
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">~@dollar@ echo &quot;Hello World&quot; &amp;gt; hello.adoc
+<pre class="highlight"><code class="language-shell" id="1722519596087.8052">~@dollar@ echo &quot;Hello World&quot; &amp;gt; hello.adoc
 ~@dollar@ git status
 On branch main
 Changes not staged for commit:
@@ -537,7 +537,7 @@ no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&q
 ~@dollar@ git reset --hard
 ~@dollar@ git status
 On branch main
-nothing to commit, working tree clean</code></pre>
+nothing to commit, working tree clean</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596087.8052')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -565,9 +565,9 @@ nothing to commit, working tree clean</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">~@dollar@ git branch
+<pre class="highlight"><code class="language-shell" id="1722519596087.898">~@dollar@ git branch
 feat/hairs
-* main</code></pre>
+* main</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596087.898')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -581,10 +581,10 @@ feat/hairs
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">~@dollar@ git branch test
+<pre class="highlight"><code class="language-shell" id="1722519596087.2786">~@dollar@ git branch test
 ~@dollar@ git branch
 * main
-test</code></pre>
+test</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596087.2786')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -611,11 +611,11 @@ test</code></pre>
 <h3 id="_change_the_current_branch">Change the current branch</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">~@dollar@ git checkout test
+<pre class="highlight"><code class="language-shell" id="1722519596087.939">~@dollar@ git checkout test
 ~@dollar@ git branch
 main
 main
-* test</code></pre>
+* test</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596087.939')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -626,9 +626,9 @@ main
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">~@dollar@ echo &quot;Fichier Asciidoc updated&quot; &amp;gt; hello.adoc
+<pre class="highlight"><code class="language-shell" id="1722519596087.0176">~@dollar@ echo &quot;Fichier Asciidoc updated&quot; &amp;gt; hello.adoc
 ~@dollar@ git add .
-~@dollar@ git commit -m &quot;Third commit&quot;</code></pre>
+~@dollar@ git commit -m &quot;Third commit&quot;</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596087.0176')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -636,9 +636,9 @@ main
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">~@dollar@ git log
+<pre class="highlight"><code class="language-shell" id="1722519596087.6655">~@dollar@ git log
 ~@dollar@ git checkout main
-~@dollar@ git log</code></pre>
+~@dollar@ git log</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596087.6655')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -652,7 +652,7 @@ main
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">~@dollar@ git diff test...main</code></pre>
+<pre class="highlight"><code class="language-shell" id="1722519596087.1338">~@dollar@ git diff test...main</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596087.1338')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -660,7 +660,7 @@ main
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">~@dollar@ git diff main...test</code></pre>
+<pre class="highlight"><code class="language-shell" id="1722519596088.752">~@dollar@ git diff main...test</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596088.752')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -668,7 +668,7 @@ main
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">~@dollar@ git log
+<pre class="highlight"><code class="language-shell" id="1722519596088.083">~@dollar@ git log
 
 commit 4529128a723e0a16cf405b218f37f2da58c5a9fd (HEAD -&amp;gt; test)  (1)
 Author: Guillaume EHRET Dev-Mind &amp;lt;guillaume@dev-mind.fr&amp;gt;
@@ -681,7 +681,7 @@ Author: Guillaume EHRET Dev-Mind &amp;lt;guillaume@dev-mind.fr&amp;gt;
 Date:   Wed Sep 26 23:51:10 2018 +0200
 
     Second  commit
-...</code></pre>
+...</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596088.083')">Copy</button></pre>
 </div>
 </div>
 <div class="olist arabic">
@@ -699,12 +699,12 @@ Date:   Wed Sep 26 23:51:10 2018 +0200
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">~@dollar@ git checkout main
+<pre class="highlight"><code class="language-shell" id="1722519596088.5608">~@dollar@ git checkout main
 ~@dollar@ git branch test2
 ~@dollar@ git checkout test2
 ~@dollar@ echo &quot;Fichier toto&quot; &gt; toto.adoc
 ~@dollar@ git add .
-~@dollar@ git commit -m &quot;Fourth commit&quot;</code></pre>
+~@dollar@ git commit -m &quot;Fourth commit&quot;</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596088.5608')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -715,8 +715,8 @@ Date:   Wed Sep 26 23:51:10 2018 +0200
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">~@dollar@ git checkout main
-~@dollar@ git merge test</code></pre>
+<pre class="highlight"><code class="language-shell" id="1722519596088.0432">~@dollar@ git checkout main
+~@dollar@ git merge test</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596088.0432')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -727,13 +727,13 @@ Date:   Wed Sep 26 23:51:10 2018 +0200
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">~@dollar@ git checkout test
+<pre class="highlight"><code class="language-shell" id="1722519596088.2559">~@dollar@ git checkout test
 ~@dollar@ git branch -d test
 error: Cannot delete branch &#x27;test&#x27; checked out at &#x27;/home/devmind/Workspace/java/git-demo&#x27;
 
 ~@dollar@ git checkout main
 ~@dollar@ git branch -d test
-Deleted branch test (was 9fd87d1).</code></pre>
+Deleted branch test (was 9fd87d1).</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596088.2559')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -777,9 +777,9 @@ Deleted branch test (was 9fd87d1).</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">~@dollar@ git checkout main
+<pre class="highlight"><code class="language-shell" id="1722519596088.9602">~@dollar@ git checkout main
 ~@dollar@ git remote add origin https://github.com/Dev-Mind/git-demo.git  (1)
-~@dollar@ git push -u origin main                                       (2)</code></pre>
+~@dollar@ git push -u origin main                                       (2)</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596088.9602')">Copy</button></pre>
 </div>
 </div>
 <div class="olist arabic">
@@ -806,8 +806,8 @@ You can push any branch.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">~@dollar@ git checkout feat/new_hair
-~@dollar@ git push -u origin feat/new_hair</code></pre>
+<pre class="highlight"><code class="language-shell" id="1722519596088.96">~@dollar@ git checkout feat/new_hair
+~@dollar@ git push -u origin feat/new_hair</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596088.96')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -828,7 +828,7 @@ You can push any branch.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">~@dollar@ git pull</code></pre>
+<pre class="highlight"><code class="language-shell" id="1722519596088.87">~@dollar@ git pull</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596088.87')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">

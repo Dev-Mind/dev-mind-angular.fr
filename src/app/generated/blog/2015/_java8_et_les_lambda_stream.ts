@@ -13,10 +13,10 @@ export const _java8_et_les_lambda_stream:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Person</span> {
+<pre class="highlight"><code class="language-java" id="1722519596594.2053"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Person</span> {
     <span class="hljs-keyword">public</span> <span class="hljs-type">int</span> age;
     <span class="hljs-keyword">public</span> String name;
-}</code></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596594.2053')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -24,7 +24,7 @@ export const _java8_et_les_lambda_stream:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java"><span class="hljs-type">int</span> <span class="hljs-variable">sum</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>;
+<pre class="highlight"><code class="language-java" id="1722519596595.151"><span class="hljs-type">int</span> <span class="hljs-variable">sum</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>;
 <span class="hljs-type">int</span> <span class="hljs-variable">average</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>;
 <span class="hljs-type">int</span> <span class="hljs-variable">nb</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>;
 <span class="hljs-keyword">for</span> (Person p : persons) {
@@ -35,7 +35,7 @@ export const _java8_et_les_lambda_stream:string = `<div id="preamble">
 }
 <span class="hljs-keyword">if</span> (!persons.isEmpty()) {
     average = sum / nb;
-}</code></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596595.151')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -59,7 +59,7 @@ export const _java8_et_les_lambda_stream:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">Mapper</span>&amp;lt;O, P&amp;gt; {
+<pre class="highlight"><code class="language-java" id="1722519596595.2068"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">Mapper</span>&amp;lt;O, P&amp;gt; {
     P <span class="hljs-title function_">map</span><span class="hljs-params">(O o)</span>;
 }
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">Predicate</span>&amp;lt;O&amp;gt; {
@@ -67,7 +67,7 @@ export const _java8_et_les_lambda_stream:string = `<div id="preamble">
 }
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">Reducer</span>&amp;lt;R&amp;gt; {
     R <span class="hljs-title function_">reduce</span><span class="hljs-params">(R r1, R r2)</span>;
-}</code></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596595.2068')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -75,7 +75,7 @@ export const _java8_et_les_lambda_stream:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java">Mapper&amp;lt;Person, Integer&amp;gt; mapper = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Mapper</span>&amp;lt;Person, Integer&amp;gt;() {
+<pre class="highlight"><code class="language-java" id="1722519596596.2063">Mapper&amp;lt;Person, Integer&amp;gt; mapper = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Mapper</span>&amp;lt;Person, Integer&amp;gt;() {
     <span class="hljs-meta">@Override</span>
     <span class="hljs-keyword">public</span> Integer <span class="hljs-title function_">map</span><span class="hljs-params">(Person o)</span> {
         <span class="hljs-keyword">return</span> o.getAge();
@@ -92,7 +92,7 @@ Reducer&amp;lt;Integer&amp;gt; reducer = <span class="hljs-keyword">new</span> <
     <span class="hljs-keyword">public</span> Integer <span class="hljs-title function_">reduce</span><span class="hljs-params">(Integer r1, Integer r2)</span> {
         <span class="hljs-keyword">return</span> r1+r2;
     }
-};</code></pre>
+};</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596596.2063')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -100,7 +100,7 @@ Reducer&amp;lt;Integer&amp;gt; reducer = <span class="hljs-keyword">new</span> <
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java">List&amp;lt;Integer&amp;gt; agesPersons = FluentIterable
+<pre class="highlight"><code class="language-java" id="1722519596597.7085">List&amp;lt;Integer&amp;gt; agesPersons = FluentIterable
         .from(persons)
         .filter(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Predicate</span>&amp;lt;Person&amp;gt;() {
             <span class="hljs-meta">@Override</span>
@@ -122,7 +122,7 @@ Reducer&amp;lt;Integer&amp;gt; reducer = <span class="hljs-keyword">new</span> <
     }
     <span class="hljs-type">double</span> <span class="hljs-variable">moyenne</span> <span class="hljs-operator">=</span> sum / agesPersons.size();
     System.out.println(moyenne);
-}</code></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596597.7085')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -130,13 +130,13 @@ Reducer&amp;lt;Integer&amp;gt; reducer = <span class="hljs-keyword">new</span> <
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java">Mapper&amp;lt;Person, Integer&amp;gt; mapper = (Person person) -&amp;gt; person.getAge();
+<pre class="highlight"><code class="language-java" id="1722519596597.945">Mapper&amp;lt;Person, Integer&amp;gt; mapper = (Person person) -&amp;gt; person.getAge();
 <span class="hljs-comment">//ou</span>
 mapper = Person::getAge;
 
 Predicate&amp;lt;Integer&amp;gt; filter = i -&amp;gt; i&amp;gt;=<span class="hljs-number">20</span>;
 
-Reducer&amp;lt;Integer&amp;gt; reducer = (r1, r2) -&amp;gt; r1+r2;</code></pre>
+Reducer&amp;lt;Integer&amp;gt; reducer = (r1, r2) -&amp;gt; r1+r2;</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596597.945')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -205,9 +205,9 @@ Reducer&amp;lt;Integer&amp;gt; reducer = (r1, r2) -&amp;gt; r1+r2;</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java">List&amp;lt;Integer&amp;gt; ages = Lists.map(persons, person -&amp;gt; person.getAge());
+<pre class="highlight"><code class="language-java" id="1722519596598.7502">List&amp;lt;Integer&amp;gt; ages = Lists.map(persons, person -&amp;gt; person.getAge());
 List&amp;lt;Integer&amp;gt; ages20 = Lists.filter(ages, age -&amp;gt; age&amp;gt;=<span class="hljs-number">20</span>);
-<span class="hljs-type">int</span> <span class="hljs-variable">sum</span> <span class="hljs-operator">=</span> Lists.reduce(ages20, (r1, r2) -&amp;gt; r1+r2);</code></pre>
+<span class="hljs-type">int</span> <span class="hljs-variable">sum</span> <span class="hljs-operator">=</span> Lists.reduce(ages20, (r1, r2) -&amp;gt; r1+r2);</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596598.7502')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -243,11 +243,11 @@ List&amp;lt;Integer&amp;gt; ages20 = Lists.filter(ages, age -&amp;gt; age&amp;gt
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java"><span class="hljs-type">double</span> <span class="hljs-variable">moyenne</span> <span class="hljs-operator">=</span> persons.stream()
+<pre class="highlight"><code class="language-java" id="1722519596598.5288"><span class="hljs-type">double</span> <span class="hljs-variable">moyenne</span> <span class="hljs-operator">=</span> persons.stream()
                         .filter(person -&amp;gt; person.getAge() &amp;gt;= <span class="hljs-number">20</span>)
                         .mapToInt(person -&amp;gt; person.getAge())
                         .average()
-                        .getAsDouble();</code></pre>
+                        .getAsDouble();</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596598.5288')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -281,9 +281,9 @@ List&amp;lt;Integer&amp;gt; ages20 = Lists.filter(ages, age -&amp;gt; age&amp;gt
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java"><span class="hljs-keyword">default</span> Stream&amp;lt;E&amp;gt; stream() {
+<pre class="highlight"><code class="language-java" id="1722519596598.33"><span class="hljs-keyword">default</span> Stream&amp;lt;E&amp;gt; stream() {
     <span class="hljs-keyword">return</span> StreamSupport.stream(spliterator(), <span class="hljs-literal">false</span>);
-}</code></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596598.33')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -291,7 +291,7 @@ List&amp;lt;Integer&amp;gt; ages20 = Lists.filter(ages, age -&amp;gt; age&amp;gt
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">A</span> {
+<pre class="highlight"><code class="language-java" id="1722519596599.618"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">A</span> {
     <span class="hljs-keyword">public</span> String <span class="hljs-title function_">a</span><span class="hljs-params">()</span>;
 }
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">A</span> {
@@ -302,7 +302,7 @@ List&amp;lt;Integer&amp;gt; ages20 = Lists.filter(ages, age -&amp;gt; age&amp;gt
     <span class="hljs-keyword">public</span> String <span class="hljs-title function_">a</span><span class="hljs-params">()</span> {
         <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
     }
-}</code></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596599.618')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -310,7 +310,7 @@ List&amp;lt;Integer&amp;gt; ages20 = Lists.filter(ages, age -&amp;gt; age&amp;gt
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">A</span> {
+<pre class="highlight"><code class="language-java" id="1722519596599.06"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">A</span> {
     <span class="hljs-keyword">default</span> <span class="hljs-keyword">public</span> String <span class="hljs-title function_">a</span><span class="hljs-params">()</span> { <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;a&quot;</span>;}
 }
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">B</span> {
@@ -319,7 +319,7 @@ List&amp;lt;Integer&amp;gt; ages20 = Lists.filter(ages, age -&amp;gt; age&amp;gt
 
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">C</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">A</span>,B {
 
-}</code></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596599.06')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -336,12 +336,12 @@ List&amp;lt;Integer&amp;gt; ages20 = Lists.filter(ages, age -&amp;gt; age&amp;gt
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span>&amp;lt;T&amp;gt; Stream&amp;lt;T&amp;gt; empty() {
+<pre class="highlight"><code class="language-java" id="1722519596600.3909"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span>&amp;lt;T&amp;gt; Stream&amp;lt;T&amp;gt; empty() {
     <span class="hljs-keyword">return</span> StreamSupport.stream(Spliterators.&amp;lt;T&amp;gt;emptySpliterator(), <span class="hljs-literal">false</span>);
 }
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span>&amp;lt;T&amp;gt; Stream&amp;lt;T&amp;gt; of(T t) {
     <span class="hljs-keyword">return</span> StreamSupport.stream(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Streams</span>.StreamBuilderImpl&amp;lt;&amp;gt;(t), <span class="hljs-literal">false</span>);
-}</code></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596600.3909')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -357,10 +357,10 @@ List&amp;lt;Integer&amp;gt; ages20 = Lists.filter(ages, age -&amp;gt; age&amp;gt
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java">Optional&amp;lt;Integer&amp;gt; sum =  persons.stream()
+<pre class="highlight"><code class="language-java" id="1722519596600.3962">Optional&amp;lt;Integer&amp;gt; sum =  persons.stream()
                                 .map(person -&amp;gt; person.getAge())
                                 .filter(age -&amp;gt; age&amp;gt;=<span class="hljs-number">20</span>)
-                                .reduce((age1, age2) -&amp;gt; age1+age2);</code></pre>
+                                .reduce((age1, age2) -&amp;gt; age1+age2);</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596600.3962')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -381,10 +381,10 @@ List&amp;lt;Integer&amp;gt; ages20 = Lists.filter(ages, age -&amp;gt; age&amp;gt
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java"><span class="hljs-comment">//Age moyen des personnes de plus de 20 ans</span>
+<pre class="highlight"><code class="language-java" id="1722519596600.8235"><span class="hljs-comment">//Age moyen des personnes de plus de 20 ans</span>
 <span class="hljs-type">double</span> <span class="hljs-variable">moyenne</span> <span class="hljs-operator">=</span> persons.stream()
         .filter(person -&amp;gt; person.getAge() &amp;gt;= <span class="hljs-number">20</span>)
-        .collect(Collectors.averagingInt(Person::getAge));</code></pre>
+        .collect(Collectors.averagingInt(Person::getAge));</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596600.8235')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -392,10 +392,10 @@ List&amp;lt;Integer&amp;gt; ages20 = Lists.filter(ages, age -&amp;gt; age&amp;gt
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java"><span class="hljs-comment">//map repartissant les personnes par age</span>
+<pre class="highlight"><code class="language-java" id="1722519596600.2173"><span class="hljs-comment">//map repartissant les personnes par age</span>
 Map&amp;lt;Integer, List&amp;lt;Person&amp;gt;&amp;gt; repartition =  persons.stream()
         .filter(person -&amp;gt; person.getAge() &amp;gt;= <span class="hljs-number">20</span>)
-        .collect(Collectors.groupingBy(Person::getAge));</code></pre>
+        .collect(Collectors.groupingBy(Person::getAge));</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596600.2173')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -403,12 +403,12 @@ Map&amp;lt;Integer, List&amp;lt;Person&amp;gt;&amp;gt; repartition =  persons.st
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java"><span class="hljs-comment">//map repartissant les personnes par age selon leur nom</span>
+<pre class="highlight"><code class="language-java" id="1722519596600.0325"><span class="hljs-comment">//map repartissant les personnes par age selon leur nom</span>
         Map&amp;lt;Integer, List&amp;lt;String&amp;gt;&amp;gt; repartition2 =  persons.stream()
                 .filter(person -&amp;gt; person.getAge() &amp;gt;= <span class="hljs-number">20</span>)
                 .collect(Collectors.groupingBy(Person::getAge,
                     Collectors.mapping(
-                       person-&amp;gt;person.getName(), Collectors.toList())));</code></pre>
+                       person-&amp;gt;person.getName(), Collectors.toList())));</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596600.0325')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">

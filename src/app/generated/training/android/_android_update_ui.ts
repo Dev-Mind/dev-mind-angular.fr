@@ -1,12 +1,12 @@
 export const _android_update_ui:string = `<div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="@link@#_user_interface">User interface</a></li>
-<li><a href="@link@#_android_studio_layout_editor">Android Studio Layout Editor</a></li>
-<li><a href="@link@#_flask_update_home_page"><span class="icon">[flask&#93;</span> : Update home page</a></li>
-<li><a href="@link@#_flask_layout_errors_and_strings"><span class="icon">[flask&#93;</span> : Layout errors and strings</a></li>
-<li><a href="@link@#_flask_launch_action_on_button_click"><span class="icon">[flask&#93;</span> : Launch action on button click</a></li>
-<li><a href="@link@#_flask_update_app_color_scheme"><span class="icon">[flask&#93;</span> : Update app color scheme</a></li>
+<a class="link" fragment="#_user_interface">User interface</a>
+<a class="link" fragment="#_android_studio_layout_editor">Android Studio Layout Editor</a>
+<a class="link" fragment="#_flask_update_home_page"><span class="icon">[flask&#93;</span> : Update home page</a>
+<a class="link" fragment="#_flask_layout_errors_and_strings"><span class="icon">[flask&#93;</span> : Layout errors and strings</a>
+<a class="link" fragment="#_flask_launch_action_on_button_click"><span class="icon">[flask&#93;</span> : Launch action on button click</a>
+<a class="link" fragment="#_flask_update_app_color_scheme"><span class="icon">[flask&#93;</span> : Update app color scheme</a>
 </ul>
 </div>
 <div id="preamble">
@@ -227,9 +227,9 @@ This is a string resources file, where you can specify all of your UI strings. I
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">resources</span>&gt;</span>
+<pre class="highlight"><code class="language-xml" id="1722519595879.5127"><span class="hljs-tag">&lt;<span class="hljs-name">resources</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">string</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;app_name&quot;</span>&gt;</span>Automacorp<span class="hljs-tag">&lt;/<span class="hljs-name">string</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">resources</span>&gt;</span></code></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">resources</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722519595879.5127')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -237,14 +237,14 @@ This is a string resources file, where you can specify all of your UI strings. I
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">resources</span>&gt;</span>
+<pre class="highlight"><code class="language-xml" id="1722519595881.6199"><span class="hljs-tag">&lt;<span class="hljs-name">resources</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">string</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;app_name&quot;</span>&gt;</span>automacorp<span class="hljs-tag">&lt;/<span class="hljs-name">string</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">string</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;app_logo_description&quot;</span>&gt;</span>automacorp logo<span class="hljs-tag">&lt;/<span class="hljs-name">string</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">string</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;act_main_windowname_hint&quot;</span>&gt;</span>Window name<span class="hljs-tag">&lt;/<span class="hljs-name">string</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">string</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;act_main_welcome&quot;</span>&gt;</span>Welcome on automacorp,\n the app to manage building windows<span class="hljs-tag">&lt;/<span class="hljs-name">string</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">string</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;act_main_open_window&quot;</span>&gt;</span>Open window<span class="hljs-tag">&lt;/<span class="hljs-name">string</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">resources</span>&gt;</span></code></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">resources</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722519595881.6199')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -269,7 +269,7 @@ This is a string resources file, where you can specify all of your UI strings. I
 <p>In the file <strong>app &gt; java &gt; com.automacorp &gt; MainActivity</strong>, add the following openWindow() method stub:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin"><span class="hljs-keyword">class</span> <span class="hljs-title class_">MainActivity</span> : <span class="hljs-type">AppCompatActivity</span>() {
+<pre class="highlight"><code class="language-kotlin" id="1722519595882.1016"><span class="hljs-keyword">class</span> <span class="hljs-title class_">MainActivity</span> : <span class="hljs-type">AppCompatActivity</span>() {
     <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(savedInstanceState: <span class="hljs-type">Bundle</span>?)</span></span> {
         <span class="hljs-keyword">super</span>.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -282,7 +282,7 @@ This is a string resources file, where you can specify all of your UI strings. I
         <span class="hljs-comment">// Display a message</span>
         Toast.makeText(<span class="hljs-keyword">this</span>, <span class="hljs-string">&quot;You choose @dollar@windowName&quot;</span>, Toast.LENGTH_LONG).show()
     }
-}</code></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722519595882.1016')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -323,8 +323,8 @@ This is a string resources file, where you can specify all of your UI strings. I
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">application</span> <span class="hljs-attr">android:allowbackup</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">android:dataextractionrules</span>=<span class="hljs-string">&quot;@xml/data_extraction_rules&quot;</span> <span class="hljs-attr">android:fullbackupcontent</span>=<span class="hljs-string">&quot;@xml/backup_rules&quot;</span> <span class="hljs-attr">android:icon</span>=<span class="hljs-string">&quot;@mipmap/ic_launcher&quot;</span> <span class="hljs-attr">android:label</span>=<span class="hljs-string">&quot;@string/app_name&quot;</span> <span class="hljs-attr">android:roundicon</span>=<span class="hljs-string">&quot;@mipmap/ic_launcher_round&quot;</span> <span class="hljs-attr">android:supportsrtl</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">android:theme</span>=<span class="hljs-string">&quot;@style/Theme.automacorp&quot;</span> <span class="hljs-attr">tools:targetapi</span>=<span class="hljs-string">&quot;31&quot;</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">application</span>&gt;</span></code></pre>
+<pre class="highlight"><code class="language-xml" id="1722519595883.1812"><span class="hljs-tag">&lt;<span class="hljs-name">application</span> <span class="hljs-attr">android:allowbackup</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">android:dataextractionrules</span>=<span class="hljs-string">&quot;@xml/data_extraction_rules&quot;</span> <span class="hljs-attr">android:fullbackupcontent</span>=<span class="hljs-string">&quot;@xml/backup_rules&quot;</span> <span class="hljs-attr">android:icon</span>=<span class="hljs-string">&quot;@mipmap/ic_launcher&quot;</span> <span class="hljs-attr">android:label</span>=<span class="hljs-string">&quot;@string/app_name&quot;</span> <span class="hljs-attr">android:roundicon</span>=<span class="hljs-string">&quot;@mipmap/ic_launcher_round&quot;</span> <span class="hljs-attr">android:supportsrtl</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">android:theme</span>=<span class="hljs-string">&quot;@style/Theme.automacorp&quot;</span> <span class="hljs-attr">tools:targetapi</span>=<span class="hljs-string">&quot;31&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">application</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722519595883.1812')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -341,7 +341,7 @@ This is a string resources file, where you can specify all of your UI strings. I
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml"><span class="hljs-symbol">&amp;lt;</span>resources xmlns:tools=&quot;http://schemas.android.com/tools&quot;<span class="hljs-symbol">&amp;gt;</span>
+<pre class="highlight"><code class="language-xml" id="1722519595884.8398"><span class="hljs-symbol">&amp;lt;</span>resources xmlns:tools=&quot;http://schemas.android.com/tools&quot;<span class="hljs-symbol">&amp;gt;</span>
     <span class="hljs-symbol">&amp;lt;</span>!-- Base application theme. --<span class="hljs-symbol">&amp;gt;</span>
     <span class="hljs-symbol">&amp;lt;</span>style name=&quot;Base.Theme.Automacorp&quot; parent=&quot;Theme.Material3.DayNight.NoActionBar&quot;<span class="hljs-symbol">&amp;gt;</span>
         <span class="hljs-symbol">&amp;lt;</span>!-- Customize your light theme here. --<span class="hljs-symbol">&amp;gt;</span>
@@ -349,7 +349,7 @@ This is a string resources file, where you can specify all of your UI strings. I
     <span class="hljs-symbol">&amp;lt;</span>/style<span class="hljs-symbol">&amp;gt;</span>
 
     <span class="hljs-symbol">&amp;lt;</span>style name=&quot;Theme.Automacorp&quot; parent=&quot;Base.Theme.Automacorp&quot; /<span class="hljs-symbol">&amp;gt;</span>
-<span class="hljs-symbol">&amp;lt;</span>/resources<span class="hljs-symbol">&amp;gt;</span></code></pre>
+<span class="hljs-symbol">&amp;lt;</span>/resources<span class="hljs-symbol">&amp;gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722519595884.8398')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -360,11 +360,11 @@ This is a string resources file, where you can specify all of your UI strings. I
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml"><span class="hljs-symbol">&amp;lt;</span>?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?<span class="hljs-symbol">&amp;gt;</span>
+<pre class="highlight"><code class="language-xml" id="1722519595885.3445"><span class="hljs-symbol">&amp;lt;</span>?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?<span class="hljs-symbol">&amp;gt;</span>
 <span class="hljs-symbol">&amp;lt;</span>resources<span class="hljs-symbol">&amp;gt;</span>
   <span class="hljs-symbol">&amp;lt;</span>color name=&quot;black&quot;<span class="hljs-symbol">&amp;gt;</span>#FF000000<span class="hljs-symbol">&amp;lt;</span>/color<span class="hljs-symbol">&amp;gt;</span>
   <span class="hljs-symbol">&amp;lt;</span>color name=&quot;white&quot;<span class="hljs-symbol">&amp;gt;</span>#FFFFFFFF<span class="hljs-symbol">&amp;lt;</span>/color<span class="hljs-symbol">&amp;gt;</span>
-<span class="hljs-symbol">&amp;lt;</span>/resources<span class="hljs-symbol">&amp;gt;</span></code></pre>
+<span class="hljs-symbol">&amp;lt;</span>/resources<span class="hljs-symbol">&amp;gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722519595885.3445')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -383,12 +383,12 @@ This is a string resources file, where you can specify all of your UI strings. I
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml"><span class="hljs-symbol">&amp;lt;</span>?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?<span class="hljs-symbol">&amp;gt;</span>
+<pre class="highlight"><code class="language-xml" id="1722519595885.3232"><span class="hljs-symbol">&amp;lt;</span>?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?<span class="hljs-symbol">&amp;gt;</span>
 <span class="hljs-symbol">&amp;lt;</span>resources<span class="hljs-symbol">&amp;gt;</span>
   <span class="hljs-symbol">&amp;lt;</span>color name=&quot;black&quot;<span class="hljs-symbol">&amp;gt;</span>#FF000000<span class="hljs-symbol">&amp;lt;</span>/color<span class="hljs-symbol">&amp;gt;</span>
   <span class="hljs-symbol">&amp;lt;</span>color name=&quot;white&quot;<span class="hljs-symbol">&amp;gt;</span>#FFFFFFFF<span class="hljs-symbol">&amp;lt;</span>/color<span class="hljs-symbol">&amp;gt;</span>
   <span class="hljs-symbol">&amp;lt;</span>color name=&quot;primary&quot;<span class="hljs-symbol">&amp;gt;</span>#2979ff<span class="hljs-symbol">&amp;lt;</span>/color<span class="hljs-symbol">&amp;gt;</span>
-<span class="hljs-symbol">&amp;lt;</span>/resources<span class="hljs-symbol">&amp;gt;</span></code></pre>
+<span class="hljs-symbol">&amp;lt;</span>/resources<span class="hljs-symbol">&amp;gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722519595885.3232')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -396,14 +396,14 @@ This is a string resources file, where you can specify all of your UI strings. I
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml"><span class="hljs-symbol">&amp;lt;</span>resources xmlns:tools=&quot;http://schemas.android.com/tools&quot;<span class="hljs-symbol">&amp;gt;</span>
+<pre class="highlight"><code class="language-xml" id="1722519595886.1685"><span class="hljs-symbol">&amp;lt;</span>resources xmlns:tools=&quot;http://schemas.android.com/tools&quot;<span class="hljs-symbol">&amp;gt;</span>
     <span class="hljs-symbol">&amp;lt;</span>!-- Base application theme. --<span class="hljs-symbol">&amp;gt;</span>
     <span class="hljs-symbol">&amp;lt;</span>style name=&quot;Base.Theme.Automacorp&quot; parent=&quot;Theme.Material3.DayNight.NoActionBar&quot;<span class="hljs-symbol">&amp;gt;</span>
         <span class="hljs-symbol">&amp;lt;</span><span class="hljs-symbol">&amp;lt;</span>item name=&quot;colorPrimary&quot;<span class="hljs-symbol">&amp;gt;</span>@color/primary<span class="hljs-symbol">&amp;lt;</span>/item<span class="hljs-symbol">&amp;gt;</span>
     <span class="hljs-symbol">&amp;lt;</span>/style<span class="hljs-symbol">&amp;gt;</span>
 
     <span class="hljs-symbol">&amp;lt;</span>style name=&quot;Theme.Automacorp&quot; parent=&quot;Base.Theme.Automacorp&quot; /<span class="hljs-symbol">&amp;gt;</span>
-<span class="hljs-symbol">&amp;lt;</span>/resources<span class="hljs-symbol">&amp;gt;</span></code></pre>
+<span class="hljs-symbol">&amp;lt;</span>/resources<span class="hljs-symbol">&amp;gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722519595886.1685')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">

@@ -1,12 +1,12 @@
 export const _android_add_activity:string = `<div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="@link@#_flask_create_a_new_activity"><span class="icon">[flask&#93;</span> : Create a new activity</a></li>
-<li><a href="@link@#_intent_how_communicate_with_other_component">Intent : how communicate with other component ?</a></li>
-<li><a href="@link@#_flask_build_an_intent_to_open_an_activity"><span class="icon">[flask&#93;</span> : Build an intent to open an activity</a></li>
-<li><a href="@link@#_flask_create_model_to_manage_room_and_windows"><span class="icon">[flask&#93;</span> : Create model to manage room and windows</a></li>
-<li><a href="@link@#_flask_create_a_new_activity_to_display_the_room_detail"><span class="icon">[flask&#93;</span> : Create a new activity to display the room detail</a></li>
-<li><a href="@link@#_flask_create_a_new_activity_to_list_rooms"><span class="icon">[flask&#93;</span> : Create a new activity to list rooms</a></li>
+<a class="link" fragment="#_flask_create_a_new_activity"><span class="icon">[flask&#93;</span> : Create a new activity</a>
+<a class="link" fragment="#_intent_how_communicate_with_other_component">Intent : how communicate with other component ?</a>
+<a class="link" fragment="#_flask_build_an_intent_to_open_an_activity"><span class="icon">[flask&#93;</span> : Build an intent to open an activity</a>
+<a class="link" fragment="#_flask_create_model_to_manage_room_and_windows"><span class="icon">[flask&#93;</span> : Create model to manage room and windows</a>
+<a class="link" fragment="#_flask_create_a_new_activity_to_display_the_room_detail"><span class="icon">[flask&#93;</span> : Create a new activity to display the room detail</a>
+<a class="link" fragment="#_flask_create_a_new_activity_to_list_rooms"><span class="icon">[flask&#93;</span> : Create a new activity to list rooms</a>
 </ul>
 </div>
 <div id="preamble">
@@ -149,7 +149,7 @@ export const _android_add_activity:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin"><span class="hljs-keyword">class</span> <span class="hljs-title class_">MainActivity</span> : <span class="hljs-type">AppCompatActivity</span>() {
+<pre class="highlight"><code class="language-kotlin" id="1722519595555.3152"><span class="hljs-keyword">class</span> <span class="hljs-title class_">MainActivity</span> : <span class="hljs-type">AppCompatActivity</span>() {
 
     <span class="hljs-keyword">companion</span> <span class="hljs-keyword">object</span> {
         <span class="hljs-keyword">const</span> <span class="hljs-keyword">val</span> WINDOW_NAME_PARAM = <span class="hljs-string">&quot;com.automacorp.windowname.attribute&quot;</span>
@@ -169,7 +169,7 @@ export const _android_add_activity:string = `<div id="toc" class="toc">
         }
         startActivity(intent)
     }
-}</code></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722519595555.3152')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -190,7 +190,7 @@ export const _android_add_activity:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin"><span class="hljs-keyword">class</span> <span class="hljs-title class_">WindowActivity</span> : <span class="hljs-type">AppCompatActivity</span>() {
+<pre class="highlight"><code class="language-kotlin" id="1722519595556.1304"><span class="hljs-keyword">class</span> <span class="hljs-title class_">WindowActivity</span> : <span class="hljs-type">AppCompatActivity</span>() {
     <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(savedInstanceState: <span class="hljs-type">Bundle</span>?)</span></span> {
         <span class="hljs-keyword">super</span>.onCreate(savedInstanceState)
         setContentView(R.layout.activity_window)
@@ -199,7 +199,7 @@ export const _android_add_activity:string = `<div id="toc" class="toc">
         <span class="hljs-keyword">val</span> windowName = findViewById&amp;lt;TextView&amp;gt;(R.id.txt_window_name)
         windowName.text = param
     }
-}</code></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722519595556.1304')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -266,13 +266,13 @@ export const _android_add_activity:string = `<div id="toc" class="toc">
 <p>Fill a name. For example <strong>RoomDto</strong> (dto = data transfer object) and create window properties. You can copy this code</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin"><span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomDto</span>(
+<pre class="highlight"><code class="language-kotlin" id="1722519595557.2188"><span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomDto</span>(
     <span class="hljs-keyword">val</span> id: <span class="hljs-built_in">Long</span>,
     <span class="hljs-keyword">val</span> name: String,
     <span class="hljs-keyword">val</span> currentTemperature: <span class="hljs-built_in">Double</span>?,
     <span class="hljs-keyword">val</span> targetTemperature: <span class="hljs-built_in">Double</span>?,
     <span class="hljs-keyword">val</span> windows: List&amp;lt;WindowDto&amp;gt;
-)</code></pre>
+)</code><button class="btn-copy-code" onclick="copyToClipboard('1722519595557.2188')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -283,7 +283,7 @@ export const _android_add_activity:string = `<div id="toc" class="toc">
 <p>Redo same steps to create <strong>WindowDto</strong></p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin"><span class="hljs-keyword">enum</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">WindowStatus</span> { OPENED, CLOSED}
+<pre class="highlight"><code class="language-kotlin" id="1722519595558.9668"><span class="hljs-keyword">enum</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">WindowStatus</span> { OPENED, CLOSED}
 
 <span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">WindowDto</span>(
     <span class="hljs-keyword">val</span> id: <span class="hljs-built_in">Long</span>,
@@ -291,7 +291,7 @@ export const _android_add_activity:string = `<div id="toc" class="toc">
     <span class="hljs-keyword">val</span> roomName: String,
     <span class="hljs-keyword">val</span> roomId: <span class="hljs-built_in">Long</span>,
     <span class="hljs-keyword">val</span> windowStatus: WindowStatus
-)</code></pre>
+)</code><button class="btn-copy-code" onclick="copyToClipboard('1722519595558.9668')">Copy</button></pre>
 </div>
 </div>
 </li>
@@ -299,7 +299,7 @@ export const _android_add_activity:string = `<div id="toc" class="toc">
 <p>We will now create a service class to manage these windows. We will write 2 methods : one to find all building windows and a second to load only one window by its id. For the moment we will use fake data. In a next lesson we will learn how call a remote service to load real data. This class can be created in the package <code>com.automacorp.service</code></p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin"><span class="hljs-keyword">object</span> RoomService {
+<pre class="highlight"><code class="language-kotlin" id="1722519595560.3875"><span class="hljs-keyword">object</span> RoomService {
     <span class="hljs-keyword">val</span> ROOMS_NAME = listOf(<span class="hljs-string">&quot;Room EF 6.10&quot;</span>, <span class="hljs-string">&quot;Hall&quot;</span>, <span class="hljs-string">&quot;Room EF 7.10&quot;</span>)
 
     <span class="hljs-comment">// Fake windows</span>
@@ -346,7 +346,7 @@ export const _android_add_activity:string = `<div id="toc" class="toc">
         RoomDto(<span class="hljs-number">2</span>, <span class="hljs-string">&quot;Hall&quot;</span>, <span class="hljs-number">18.2</span>, <span class="hljs-number">18.0</span>, WINDOWS.filter { it.roomId == <span class="hljs-number">2L</span> }),
         RoomDto(<span class="hljs-number">3</span>, <span class="hljs-string">&quot;Room EF 7.10&quot;</span>, <span class="hljs-number">21.2</span>, <span class="hljs-number">20.0</span>, WINDOWS.filter { it.roomId == <span class="hljs-number">3L</span> })
     )
-}</code></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722519595560.3875')">Copy</button></pre>
 </div>
 </div>
 </li>
@@ -371,12 +371,12 @@ export const _android_add_activity:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">openRoom</span><span class="hljs-params">(view: <span class="hljs-type">View</span>)</span></span> {
+<pre class="highlight"><code class="language-kotlin" id="1722519595563.0042"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">openRoom</span><span class="hljs-params">(view: <span class="hljs-type">View</span>)</span></span> {
    <span class="hljs-keyword">val</span> intent = Intent(<span class="hljs-keyword">this</span>, RoomActivity::<span class="hljs-keyword">class</span>.java).apply {
        putExtra(ROOM_ID_PARAM, <span class="hljs-number">1L</span>)
    }
    startActivity(intent)
-}</code></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722519595563.0042')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -384,7 +384,7 @@ export const _android_add_activity:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomActivity</span> : <span class="hljs-type">AppCompatActivity</span>() {
+<pre class="highlight"><code class="language-kotlin" id="1722519595564.3953"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomActivity</span> : <span class="hljs-type">AppCompatActivity</span>() {
 
     <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(savedInstanceState: <span class="hljs-type">Bundle</span>?)</span></span> {
         <span class="hljs-keyword">super</span>.onCreate(savedInstanceState)
@@ -402,7 +402,7 @@ export const _android_add_activity:string = `<div id="toc" class="toc">
         <span class="hljs-keyword">val</span> roomTargetTemperature = findViewById&amp;lt;TextView&amp;gt;(R.id.txt_room_target_temperature)
         roomTargetTemperature.text = room?.targetTemperature?.toString() ?: <span class="hljs-string">&quot;&quot;</span>
     }
-}</code></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722519595564.3953')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -410,7 +410,7 @@ export const _android_add_activity:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin"><span class="hljs-keyword">if</span> (room !=<span class="hljs-literal">null</span> &amp;amp;&amp;amp; room.targetTemperature != <span class="hljs-literal">null</span>) room.targetTemperature.toString() <span class="hljs-keyword">else</span> <span class="hljs-string">&quot;&quot;</span></code></pre>
+<pre class="highlight"><code class="language-kotlin" id="1722519595564.366"><span class="hljs-keyword">if</span> (room !=<span class="hljs-literal">null</span> &amp;amp;&amp;amp; room.targetTemperature != <span class="hljs-literal">null</span>) room.targetTemperature.toString() <span class="hljs-keyword">else</span> <span class="hljs-string">&quot;&quot;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722519595564.366')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">

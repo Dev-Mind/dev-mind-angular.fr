@@ -30,6 +30,10 @@ $header__heigth: 64px;
     font-weight: bold;
     color: $linkcolor;
     text-decoration: none;
+    cursor: pointer;
+  }
+  .link {
+    display: block;
   }
 }
 

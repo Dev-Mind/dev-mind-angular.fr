@@ -21,7 +21,7 @@ For more information about Git you can find
 
 A version control system (VCS: version control system) helps to *manage the history* of the changes made by people, teams, or only one person who collaborate on a project.
 
-When the project evolves, people can at any time find an old version of the code.
+When the project evolves, people can at any time, find an old version of the code.
 
 Git answers these questions quickly
 

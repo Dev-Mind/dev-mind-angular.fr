@@ -73,7 +73,7 @@ HTTP 2 n’impose pas de sécuriser les échanges en cryptant les informations v
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java">telnet www.google.fr <span class="hljs-number">80</span></code></pre>
+<pre class="highlight"><code class="language-java" id="1722519596527.3726">telnet www.google.fr <span class="hljs-number">80</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722519596527.3726')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -88,9 +88,9 @@ HTTP 2 n’impose pas de sécuriser les échanges en cryptant les informations v
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java">GET / HTTP/<span class="hljs-number">1.1</span>
+<pre class="highlight"><code class="language-java" id="1722519596527.8188">GET / HTTP/<span class="hljs-number">1.1</span>
 Host: www.google.fr
-Accept-Language: fr</code></pre>
+Accept-Language: fr</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596527.8188')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -98,7 +98,7 @@ Accept-Language: fr</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java">HTTP/<span class="hljs-number">1.1</span> <span class="hljs-number">200</span> OK
+<pre class="highlight"><code class="language-java" id="1722519596529.8223">HTTP/<span class="hljs-number">1.1</span> <span class="hljs-number">200</span> OK
 Date: Tue, <span class="hljs-number">12</span> Jul <span class="hljs-number">2016</span> <span class="hljs-number">07</span>:<span class="hljs-number">10</span>:<span class="hljs-number">23</span> GMT
 Expires: -<span class="hljs-number">1</span>
 Cache-Control: <span class="hljs-keyword">private</span>, max-age=<span class="hljs-number">0</span>
@@ -114,7 +114,7 @@ Transfer-Encoding: chunked
 
 &amp;lt;!doctype html&amp;gt;&amp;lt;html itemscope=<span class="hljs-string">&quot;&quot;</span> itemtype=<span class="hljs-string">&quot;http://schema.org/WebPage&quot;</span> lang=<span class="hljs-string">&quot;fr&quot;</span>&amp;gt;&amp;lt;head&amp;gt;&amp;lt;meta content=<span class="hljs-string">&quot;text/html; charset=UTF-8&quot;</span> http-equiv=<span class="hljs-string">&quot;Content-Type&quot;</span>&amp;gt;&amp;lt;meta content=<span class="hljs-string">&quot;/images/branding/googleg/1x/googleg_standard_color_128dp.png&quot;</span> itemprop=<span class="hljs-string">&quot;image&quot;</span>&amp;gt;
 <span class="hljs-comment">//………..</span>
-&amp;lt;/html&amp;gt;</code></pre>
+&amp;lt;/html&amp;gt;</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596529.8223')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">

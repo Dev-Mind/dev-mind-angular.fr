@@ -82,6 +82,11 @@ async function convertAsciiDocFiles(section) {
           recognizeSelfClosing: true
         });
 
+        html('div.toc li').each((index, code) => {
+          const elem = html(code);
+          elem.replaceWith(elem.html().replaceAll('href="@link@', 'class="link" fragment="'));
+        })
+
         html('pre.highlight code').each((index, code) => {
           const elem = html(code);
           const language = elem.prop('data-lang');
@@ -90,7 +95,8 @@ async function convertAsciiDocFiles(section) {
 
           const highlightedContents = hljs.highlight(fileContents, {language: language || 'javascript'}).value;
           if (language) {
-            elem.replaceWith(`<code class="language-${language}">${highlightedContents}</code>`);
+            const id = new Date().getTime() + Math.random() * 1000 / 1000;
+            elem.replaceWith(`<code class="language-${language}" id="${id}">${highlightedContents}</code><button class="btn-copy-code" onclick="copyToClipboard('${id}')">Copy</button>`);
           } else {
             elem.replaceWith(`${highlightedContents}`);
           }

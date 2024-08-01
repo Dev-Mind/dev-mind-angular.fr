@@ -22,12 +22,12 @@ export const _pousser_message_slack_en_java:string = `<div class="paragraph">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript">payload={
+<pre class="highlight"><code class="language-javascript" id="1722519596741.7979">payload={
     <span class="hljs-string">&quot;channel&quot;</span>: <span class="hljs-string">&quot;#general&quot;</span>,
     <span class="hljs-string">&quot;username&quot;</span>: <span class="hljs-string">&quot;Dev-Mind&quot;</span>, <span class="hljs-string">&quot;text&quot;</span>:
     <span class="hljs-string">&quot;This is my post to #general.&quot;</span>,
     <span class="hljs-string">&quot;icon_emoji&quot;</span>: <span class="hljs-string">&quot;:ghost:&quot;</span>
-}</code></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596741.7979')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -35,7 +35,7 @@ export const _pousser_message_slack_en_java:string = `<div class="paragraph">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell">curl -X POST --data-urlencode &#x27;payload={&quot;channel&quot;: &quot;#general&quot;, &quot;username&quot;: &quot;webhookbot&quot;, &quot;text&quot;: &quot;This is posted to #general and comes from a bot named webhookbot.&quot;, &quot;icon_emoji&quot;: &quot;:ghost:&quot;}&#x27; https://hooks.slack.com/services/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</code></pre>
+<pre class="highlight"><code class="language-shell" id="1722519596742.6887">curl -X POST --data-urlencode &#x27;payload={&quot;channel&quot;: &quot;#general&quot;, &quot;username&quot;: &quot;webhookbot&quot;, &quot;text&quot;: &quot;This is posted to #general and comes from a bot named webhookbot.&quot;, &quot;icon_emoji&quot;: &quot;:ghost:&quot;}&#x27; https://hooks.slack.com/services/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</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596742.6887')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -52,7 +52,7 @@ export const _pousser_message_slack_en_java:string = `<div class="paragraph">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SlackMessage</span> {
+<pre class="highlight"><code class="language-java" id="1722519596744.2432"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SlackMessage</span> {
 
     <span class="hljs-keyword">private</span> String channel;
     <span class="hljs-keyword">private</span> String text;
@@ -104,7 +104,7 @@ export const _pousser_message_slack_en_java:string = `<div class="paragraph">
         <span class="hljs-built_in">this</span>.icon_url = icon_url;
         <span class="hljs-keyword">return</span> <span class="hljs-built_in">this</span>;
     }
-}</code></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596744.2432')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -115,7 +115,7 @@ export const _pousser_message_slack_en_java:string = `<div class="paragraph">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java"><span class="hljs-meta">@RestController</span>
+<pre class="highlight"><code class="language-java" id="1722519596745.0566"><span class="hljs-meta">@RestController</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SlackMessageSender</span> {
 
     <span class="hljs-meta">@Value(&quot;@dollar@{slack.services.incoming}&quot;)</span>
@@ -148,7 +148,7 @@ export const _pousser_message_slack_en_java:string = `<div class="paragraph">
         }
         <span class="hljs-keyword">return</span> ResponseEntity.ok().body(<span class="hljs-string">&quot;Message sent&quot;</span>);
     }
-}</code></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596745.0566')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">

@@ -1,28 +1,28 @@
 export const _comprendre_programation_android:string = `<div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="@link@#_ecosystème_android">Ecosystème Android</a>
+<a class="link" fragment="#_ecosystème_android">Ecosystème Android</a>
 <ul class="sectlevel2">
-<li><a href="@link@#_android_los_le_plus_utilisé">Android l&#8217;OS le plus utilisé</a></li>
-<li><a href="@link@#_principe_de_la_programmation_mobile">Principe de la programmation mobile</a></li>
+<li><a class="link" fragment="#_android_los_le_plus_utilisé">Android l&#8217;OS le plus utilisé</a></li>
+<li><a class="link" fragment="#_principe_de_la_programmation_mobile">Principe de la programmation mobile</a></li>
 </ul>
-</li>
-<li><a href="@link@#_plateforme_android">Plateforme Android</a>
+
+<a class="link" fragment="#_plateforme_android">Plateforme Android</a>
 <ul class="sectlevel2">
-<li><a href="@link@#_noyau_linux">Noyau Linux</a></li>
-<li><a href="@link@#_couche_dabstraction_hardware">Couche d&#8217;abstraction hardware</a></li>
-<li><a href="@link@#_langages_de_programmation">Langages de programmation</a></li>
-<li><a href="@link@#_sécurité">Sécurité</a></li>
+<li><a class="link" fragment="#_noyau_linux">Noyau Linux</a></li>
+<li><a class="link" fragment="#_couche_dabstraction_hardware">Couche d&#8217;abstraction hardware</a></li>
+<li><a class="link" fragment="#_langages_de_programmation">Langages de programmation</a></li>
+<li><a class="link" fragment="#_sécurité">Sécurité</a></li>
 </ul>
-</li>
-<li><a href="@link@#_la_fragmentation">La fragmentation</a>
+
+<a class="link" fragment="#_la_fragmentation">La fragmentation</a>
 <ul class="sectlevel2">
-<li><a href="@link@#_fragmentation_au_niveau_des_versions">Fragmentation au niveau des versions</a></li>
-<li><a href="@link@#_fragmentation_au_niveau_des_écrans">Fragmentation au niveau des écrans</a></li>
-<li><a href="@link@#_fragmentation_au_niveau_matériel">Fragmentation au niveau matériel</a></li>
+<li><a class="link" fragment="#_fragmentation_au_niveau_des_versions">Fragmentation au niveau des versions</a></li>
+<li><a class="link" fragment="#_fragmentation_au_niveau_des_écrans">Fragmentation au niveau des écrans</a></li>
+<li><a class="link" fragment="#_fragmentation_au_niveau_matériel">Fragmentation au niveau matériel</a></li>
 </ul>
-</li>
-<li><a href="@link@#_conclusion">Conclusion</a></li>
+
+<a class="link" fragment="#_conclusion">Conclusion</a>
 </ul>
 </div>
 <div id="preamble">
