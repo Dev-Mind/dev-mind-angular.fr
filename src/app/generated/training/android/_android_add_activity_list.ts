@@ -1,23 +1,23 @@
 export const _android_add_activity_list:string = `<div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<a class="link" fragment="#_recyclerview">RecyclerView</a>
-<a class="link" fragment="#_flask_display_the_room_list"><span class="icon">[flask&#93;</span> : Display the room list</a>
+<li><a class="link" fragment="#_recyclerview">RecyclerView</a></li>
+<li><a class="link" fragment="#_flask_display_the_room_list"><span class="icon">[flask&#93;</span> : Display the room list</a>
 <ul class="sectlevel2">
 <li><a class="link" fragment="#_update_room_list_activity">Update room list activity</a></li>
 <li><a class="link" fragment="#_create_a_layout_for_a_list_item">Create a layout for a list item</a></li>
 <li><a class="link" fragment="#_create_an_adapter_class">Create an adapter class</a></li>
 <li><a class="link" fragment="#_update_roomsactivity_class">Update RoomsActivity class</a></li>
 </ul>
-
-<a class="link" fragment="#_flask_open_a_list_item"><span class="icon">[flask&#93;</span> : Open a list item</a>
+</li>
+<li><a class="link" fragment="#_flask_open_a_list_item"><span class="icon">[flask&#93;</span> : Open a list item</a>
 <ul class="sectlevel2">
 <li><a class="link" fragment="#_declare_an_interface_to_define_a_contract">Declare an interface to define a contract</a></li>
 <li><a class="link" fragment="#_update_roomsactivity">Update RoomsActivity</a></li>
 <li><a class="link" fragment="#_update_the_let_adapter">Update the let adapter</a></li>
 </ul>
-
-<a class="link" fragment="#_more">More&#8230;&#8203;</a>
+</li>
+<li><a class="link" fragment="#_more">More&#8230;&#8203;</a></li>
 </ul>
 </div>
 <div id="preamble">
@@ -54,16 +54,16 @@ export const _android_add_activity_list:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722519595503.455"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomsAdapter</span> : <span class="hljs-type">RecyclerView.Adapter&amp;lt;RoomsAdapter.RoomsViewHolder&amp;gt;</span>() { <span class="hljs-comment">// (1)</span>
+<pre class="highlight"><code class="language-kotlin" id="1722604315834.622"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomsAdapter</span> : <span class="hljs-type">RecyclerView.Adapter@LTRoomsAdapter.RoomsViewHolder@GT</span>() { <span class="hljs-comment">// (1)</span>
 
     <span class="hljs-keyword">inner</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomsViewHolder</span>(view: View) : RecyclerView.ViewHolder(view) { <span class="hljs-comment">// (2)</span>
         <span class="hljs-keyword">val</span> name: TextView = view.findViewById(R.id.txt_room_name)
         <span class="hljs-keyword">val</span> currentTemperature: TextView = view.findViewById(R.id.txt_current_temperature)
     }
 
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> items = mutableListOf&amp;lt;RoomDto&amp;gt;() <span class="hljs-comment">// (3)</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> items = <span class="hljs-symbol">mutableListOf@</span><span class="hljs-symbol">LTRoomDto@</span>GT() <span class="hljs-comment">// (3)</span>
 
-    <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">setItems</span><span class="hljs-params">(rooms: <span class="hljs-type">List</span>&amp;<span class="hljs-type">lt</span>;<span class="hljs-type">RoomDto</span>&amp;<span class="hljs-type">gt</span>;)</span></span> {  <span class="hljs-comment">// (4)</span>
+    <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">setItems</span><span class="hljs-params">(rooms: <span class="hljs-type">List</span>@<span class="hljs-type">LTRoomDto</span>@<span class="hljs-type">GT</span>)</span></span> {  <span class="hljs-comment">// (4)</span>
         items.clear()
         items.addAll(rooms)
         notifyDataSetChanged()
@@ -84,7 +84,7 @@ export const _android_add_activity_list:string = `<div id="toc" class="toc">
             currentTemperature.text = roomDto.currentTemperature?.toString() ?: <span class="hljs-string">&quot;?&quot;</span>
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722519595503.455')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315834.622')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -135,7 +135,7 @@ export const _android_add_activity_list:string = `<div id="toc" class="toc">
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Open <strong>res &gt; layout &gt; activity_rooms.xml</strong> and delete the TextView</p>
+<p>Open <strong>res @GT layout @GT activity_rooms.xml</strong> and delete the TextView</p>
 </li>
 <li>
 <p>In <strong>Containers palette</strong> select a <strong>RecyclerView</strong> widget and drag into your layout below your welcome message.</p>
@@ -170,7 +170,7 @@ export const _android_add_activity_list:string = `<div id="toc" class="toc">
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Select <strong>res &gt; layout</strong> right click and choose <strong>New &gt; Layout resource file</strong></p>
+<p>Select <strong>res @GT layout</strong> right click and choose <strong>New @GT Layout resource file</strong></p>
 </li>
 <li>
 <p>Name your future layout <strong>activity_rooms_item.xml</strong></p>
@@ -316,14 +316,14 @@ export const _android_add_activity_list:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722519595505.0437"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomsActivity</span> : <span class="hljs-type">BasicActivity</span>() {
+<pre class="highlight"><code class="language-kotlin" id="1722604315835.0073"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomsActivity</span> : <span class="hljs-type">BasicActivity</span>() {
     <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(savedInstanceState: <span class="hljs-type">Bundle</span>?)</span></span> {
         <span class="hljs-keyword">super</span>.onCreate(savedInstanceState)
         setContentView(R.layout.activity_rooms)
 
         <span class="hljs-keyword">val</span> roomsAdapter = RoomAdapdter()
 
-        findViewById&amp;lt;RecyclerView&amp;gt;(R.id.list_rooms).also { recyclerView -&amp;gt; <span class="hljs-comment">// (1)</span>
+        <span class="hljs-symbol">findViewById@</span><span class="hljs-symbol">LTRecyclerView@</span>GT(R.id.list_rooms).also { recyclerView <span class="hljs-meta">@LAMBDA</span> <span class="hljs-comment">// (1)</span>
             recyclerView.layoutManager = LinearLayoutManager(<span class="hljs-keyword">this</span>) <span class="hljs-comment">// (2)</span>
             recyclerView.addItemDecoration(DividerItemDecoration(<span class="hljs-keyword">this</span>, DividerItemDecoration.VERTICAL)) <span class="hljs-comment">// (3)</span>
             recyclerView.setHasFixedSize(<span class="hljs-literal">true</span>) <span class="hljs-comment">// (4)</span>
@@ -332,7 +332,7 @@ export const _android_add_activity_list:string = `<div id="toc" class="toc">
 
         roomsAdapter.setItems(RoomService.ROOMS)  <span class="hljs-comment">// (6)</span>
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722519595505.0437')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315835.0073')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -381,9 +381,9 @@ export const _android_add_activity_list:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722519595505.059"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">OnRoomClickListener</span> {
+<pre class="highlight"><code class="language-kotlin" id="1722604315835.824"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">OnRoomClickListener</span> {
     <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">selectRoom</span><span class="hljs-params">(id: <span class="hljs-type">Long</span>)</span></span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722519595505.059')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315835.824')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -401,7 +401,7 @@ export const _android_add_activity_list:string = `<div id="toc" class="toc">
 <h3 id="_update_roomsactivity">Update RoomsActivity</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722519595506.781">We will implement the contract and create an Intent to <span class="hljs-keyword">open</span> a <span class="hljs-meta">@backtick</span><span class="hljs-meta">@RoomActivity</span><span class="hljs-meta">@backtick</span>@</code><button class="btn-copy-code" onclick="copyToClipboard('1722519595506.781')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1722604315836.1123">We will implement the contract and create an Intent to <span class="hljs-keyword">open</span> a <span class="hljs-meta">@backtick</span><span class="hljs-meta">@RoomActivity</span><span class="hljs-meta">@backtick</span>@</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315836.1123')">Copy</button></pre>
 </div>
 </div>
 <div class="listingblock">
@@ -424,7 +424,7 @@ export const _android_add_activity_list:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722519595507.0837"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomsAdapter</span>(<span class="hljs-keyword">val</span> listener: OnRoomClickListener): RecyclerView.Adapter&amp;lt;RoomsAdapter.RoomsViewHolder&amp;gt;() {
+<pre class="highlight"><code class="language-kotlin" id="1722604315836.0596"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomsAdapter</span>(<span class="hljs-keyword">val</span> listener: OnRoomClickListener): RecyclerView.<span class="hljs-symbol">Adapter@</span>LTRoomsAdapter.<span class="hljs-symbol">RoomsViewHolder@</span>GT() {
     <span class="hljs-comment">// ...</span>
     <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onBindViewHolder</span><span class="hljs-params">(holder: <span class="hljs-type">RoomsViewHolder</span>, position: <span class="hljs-type">Int</span>)</span></span> {
         <span class="hljs-keyword">val</span> roomDto = items[position]
@@ -442,7 +442,7 @@ export const _android_add_activity_list:string = `<div id="toc" class="toc">
         }
 
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722519595507.0837')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315836.0596')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">

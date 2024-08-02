@@ -151,7 +151,19 @@
   </style>
   <script>
     function copyToClipboard(id) {
-      const text = document.getElementById(id).innerText;
+      const text = document.getElementById(id).innerText
+        .replaceAll('~$', '')
+        .replaceAll('(1)', '')
+        .replaceAll('(2)', '')
+        .replaceAll('(3)', '')
+        .replaceAll('(4)', '')
+        .replaceAll('(5)', '')
+        .replaceAll('(6)', '')
+        .replaceAll('(7)', '')
+        .replaceAll('(8)', '')
+        .replaceAll('(9)', '')
+        .replaceAll('(10)', '')
+      ;
       navigator.clipboard.writeText(text.substring(0, text.length));
     }
   </script>
@@ -162,28 +174,28 @@
   <app-root _nghost-ng-c582792440 ng-version="18.0.0" ngh="2" ng-server-context="ssg"><app-header _ngcontent-ng-c582792440 _nghost-ng-c2882497807 ngh="0"><header _ngcontent-ng-c2882497807><div _ngcontent-ng-c2882497807 class="header-img"><a _ngcontent-ng-c2882497807 routerlink="/" aria-label="Accueil" href="/"><img _ngcontent-ng-c2882497807 src="img/logo/logo_long.svg" alt="Dev-Mind" title="Dev-Mind"></a></div><nav _ngcontent-ng-c2882497807><a _ngcontent-ng-c2882497807 routerlink="/" aria-label="Accueil" class="nav-home" href="/"><img _ngcontent-ng-c2882497807 src="/img/ic_home_white_24px.svg" rel="start" alt="Accueil"></a><a _ngcontent-ng-c2882497807 routerlink="/formations.html" aria-label="Formations" class="active" href="/formations.html"> Formations</a><a _ngcontent-ng-c2882497807 routerlink="/blog.html" aria-label="Blog" class href="/blog.html">Blog</a><a _ngcontent-ng-c2882497807 routerlink="/experience.html" aria-label="Experience" class href="/experience.html"> Expérience</a></nav><hr _ngcontent-ng-c2882497807></header><div _ngcontent-ng-c2882497807 class="header-space"></div></app-header><router-outlet _ngcontent-ng-c582792440></router-outlet><app-asciidoc-viewer ngh="1"><div class="dm-block--blog"><div class="devmind-section"><h1><!--ngetn--></h1><div class="blog-keywords"><div class="dm-blog--info-date">08/10/2023</div><div class="dm-blog--keyword-detail">Android</div><div class="dm-blog--keyword-detail">database</div><div class="dm-blog--keyword-detail">room</div><!---->&nbsp; </div><div class="preview"><div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<a class="link" fragment="#_jetpack_room">Jetpack Room</a>
+<li><a class="link" fragment="#_jetpack_room">Jetpack Room</a>
 <ul class="sectlevel2">
 <li><a class="link" fragment="#_entity">Entity</a></li>
 <li><a class="link" fragment="#_data_object_access_dao">Data Object Access DAO</a></li>
 <li><a class="link" fragment="#_create_a_database">Create a database</a></li>
 </ul>
-
-<a class="link" fragment="#_use_singleton_in_an_android_app">Use Singleton in an Android app</a>
-<a class="link" fragment="#_use_viewmodel_object">Use ViewModel object</a>
+</li>
+<li><a class="link" fragment="#_use_singleton_in_an_android_app">Use Singleton in an Android app</a></li>
+<li><a class="link" fragment="#_use_viewmodel_object">Use ViewModel object</a>
 <ul class="sectlevel2">
 <li><a class="link" fragment="#_why_use_a_viewmodel">Why use a ViewModel ?</a></li>
 <li><a class="link" fragment="#_create_a_viewmodel">Create a ViewModel</a></li>
 <li><a class="link" fragment="#_use_the_view_model_in_an_activity">Use the view model in an activity</a></li>
 </ul>
-
-<a class="link" fragment="#_flask_use_a_database_in_your_project"><img src="/img/ic_flask.svg" style="width: 1em"> : Use a database in your project</a>
+</li>
+<li><a class="link" fragment="#_flask_use_a_database_in_your_project"><img src="/img/ic_flask.svg" style="width: 1em"> : Use a database in your project</a>
 <ul class="sectlevel2">
 <li><a class="link" fragment="#_configuration">Configuration</a></li>
 <li><a class="link" fragment="#_create_your_first_entity">Create your first entity</a></li>
 <li><a class="link" fragment="#_synchronize_our_database">Synchronize our database</a></li>
 </ul>
-
+</li>
 </ul>
 </div>
 <div id="preamble">
@@ -275,19 +287,19 @@ Room library is an ORM (Object Relational Mapping) library (like Hibernate for t
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722522443033.5356"><span class="hljs-meta">@Entity(tableName = <span class="hljs-string">"rwindow"</span>)</span>
+<pre class="highlight"><code class="language-kotlin" id="1722604315998.9006"><span class="hljs-meta">@Entity(tableName = <span class="hljs-string">"rwindow"</span>)</span>
 <span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Window</span>(
     <span class="hljs-meta">@PrimaryKey(autoGenerate = true)</span> <span class="hljs-keyword">val</span> id: <span class="hljs-built_in">Long</span>,
     <span class="hljs-meta">@ColumnInfo</span> <span class="hljs-keyword">val</span> name: String,
     <span class="hljs-meta">@ColumnInfo(name = <span class="hljs-string">"room_id"</span>)</span> <span class="hljs-keyword">val</span> roomId: <span class="hljs-built_in">Long</span>,
     <span class="hljs-meta">@ColumnInfo(name = <span class="hljs-string">"room_name"</span>)</span> <span class="hljs-keyword">val</span> roomName: String,
     <span class="hljs-meta">@ColumnInfo(name = <span class="hljs-string">"window_status"</span>)</span> <span class="hljs-keyword">val</span> windowStatus: WindowStatus,
-    <span class="hljs-meta">@Ignore</span> <span class="hljs-keyword">val</span> windows: MutableList&amp;lt;Window&amp;gt; = mutableListOf()
+    <span class="hljs-meta">@Ignore</span> <span class="hljs-keyword">val</span> windows: <span class="hljs-symbol">MutableList@</span><span class="hljs-symbol">LTWindow@</span>GT = mutableListOf()
 ) {
     <span class="hljs-comment">// When you need to transform your entity in a DTO (Data Transfer Object) you can use this method</span>
     <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">toDto</span><span class="hljs-params">()</span></span>: WindowDto =
         WindowDto(id.toLong(), name, RoomDto(roomId.toLong(), roomName, <span class="hljs-literal">null</span>, <span class="hljs-literal">null</span>), windowStatus)
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443033.5356')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315998.9006')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -295,7 +307,7 @@ Room library is an ORM (Object Relational Mapping) library (like Hibernate for t
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722522443034.2397"><span class="hljs-keyword">class</span> <span class="hljs-title class_">EnumConverters</span> {
+<pre class="highlight"><code class="language-kotlin" id="1722604315999.1667"><span class="hljs-keyword">class</span> <span class="hljs-title class_">EnumConverters</span> {
 
     <span class="hljs-comment">// A first method to convert enum in string when the data will be stored in the database</span>
     <span class="hljs-meta">@TypeConverter</span>
@@ -309,7 +321,7 @@ Room library is an ORM (Object Relational Mapping) library (like Hibernate for t
         <span class="hljs-keyword">return</span> value?.let { WindowStatus.valueOf(it) }
     }
 
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443034.2397')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315999.1667')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -333,9 +345,9 @@ Each function call will perform a SQL command on the database.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722522443034.0747"><span class="hljs-meta">@Dao</span>
+<pre class="highlight"><code class="language-kotlin" id="1722604315999.0168"><span class="hljs-meta">@Dao</span>
 <span class="hljs-keyword">interface</span> <span class="hljs-title class_">WindowDao</span> {
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443034.0747')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315999.0168')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -349,10 +361,10 @@ Each function call will perform a SQL command on the database.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722522443035.1272"><span class="hljs-meta">@Dao</span>
+<pre class="highlight"><code class="language-kotlin" id="1722604316000.155"><span class="hljs-meta">@Dao</span>
 <span class="hljs-keyword">interface</span> <span class="hljs-title class_">WindowDao</span> {
     <span class="hljs-meta">@Query(<span class="hljs-string">"select * from rwindow order by name"</span>)</span>
-    <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">findAll</span><span class="hljs-params">()</span></span>: List&amp;lt;Window&amp;gt;
+    <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">findAll</span><span class="hljs-params">()</span></span>: <span class="hljs-symbol">List@</span><span class="hljs-symbol">LTWindow@</span>GT
 
     <span class="hljs-meta">@Query(<span class="hljs-string">"select * from rwindow where id = :windowId"</span>)</span>
     <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">findById</span><span class="hljs-params">(windowId: <span class="hljs-type">Long</span>)</span></span>: Window
@@ -368,7 +380,7 @@ Each function call will perform a SQL command on the database.</p>
 
     <span class="hljs-meta">@Query(<span class="hljs-string">"delete from rwindow"</span>)</span>
     <span class="hljs-keyword">suspend</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">clearAll</span><span class="hljs-params">()</span></span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443035.1272')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316000.155')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -395,11 +407,11 @@ Each function call will perform a SQL command on the database.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722522443035.5762"><span class="hljs-meta">@Database(entities = [Window::class], version = 1)</span>
+<pre class="highlight"><code class="language-kotlin" id="1722604316001.3374"><span class="hljs-meta">@Database(entities = [Window::class], version = 1)</span>
 <span class="hljs-meta">@TypeConverters(EnumConverters::class)</span>
 <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">AutomacorpDatabase</span> : <span class="hljs-type">RoomDatabase</span>() {
     <span class="hljs-keyword">abstract</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">windowDao</span><span class="hljs-params">()</span></span>: WindowDao
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443035.5762')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316001.3374')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -425,7 +437,7 @@ Each function call will perform a SQL command on the database.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722522443035.5535"><span class="hljs-keyword">class</span> <span class="hljs-title class_">AutomacorpApplication</span> : <span class="hljs-type">Application</span>() {}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443035.5535')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1722604316001.94"><span class="hljs-keyword">class</span> <span class="hljs-title class_">AutomacorpApplication</span> : <span class="hljs-type">Application</span>() {}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316001.94')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -433,11 +445,11 @@ Each function call will perform a SQL command on the database.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" id="1722522443035.8328">&lt;manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<pre class="highlight"><code class="language-xml" id="1722604316001.9773">&lt;manifest xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:tools="http://schemas.android.com/tools"&gt;
     &lt;application
         android:name=".AutomacorpApplication"
-     ...</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443035.8328')">Copy</button></pre>
+     ...</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316001.9773')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -445,7 +457,7 @@ xmlns:tools="http://schemas.android.com/tools"&gt;
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722522443036.3188"><span class="hljs-keyword">class</span> <span class="hljs-title class_">AutomacorpApplication</span> : <span class="hljs-type">Application</span>() {
+<pre class="highlight"><code class="language-kotlin" id="1722604316001.119"><span class="hljs-keyword">class</span> <span class="hljs-title class_">AutomacorpApplication</span> : <span class="hljs-type">Application</span>() {
 
     <span class="hljs-keyword">val</span> database: AutomacorpDatabase <span class="hljs-keyword">by</span> lazy {
         Room.databaseBuilder(<span class="hljs-keyword">this</span>, AutomacorpDatabase::<span class="hljs-keyword">class</span>.java, <span class="hljs-string">"automacorpdb"</span>)
@@ -453,7 +465,7 @@ xmlns:tools="http://schemas.android.com/tools"&gt;
     }
 
 
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443036.3188')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316001.119')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -461,7 +473,7 @@ xmlns:tools="http://schemas.android.com/tools"&gt;
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722522443036.0942"><span class="hljs-keyword">val</span> windowDao = AutomacorpApplication.database.windowDao()</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443036.0942')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1722604316001.0728"><span class="hljs-keyword">val</span> windowDao = AutomacorpApplication.database.windowDao()</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316001.0728')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -503,14 +515,14 @@ xmlns:tools="http://schemas.android.com/tools"&gt;
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722522443036.9373"><span class="hljs-keyword">class</span> <span class="hljs-title class_">WindowViewModel</span>(<span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> windowDao: WindowDao) : ViewModel() { <span class="hljs-comment">// (1)</span>
+<pre class="highlight"><code class="language-kotlin" id="1722604316002.6548"><span class="hljs-keyword">class</span> <span class="hljs-title class_">WindowViewModel</span>(<span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> windowDao: WindowDao) : ViewModel() { <span class="hljs-comment">// (1)</span>
 
-    <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">findById</span><span class="hljs-params">(windowId: <span class="hljs-type">Long</span>)</span></span>: LiveData&amp;lt;WindowDto&amp;gt; = <span class="hljs-comment">// (2)</span>
+    <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">findById</span><span class="hljs-params">(windowId: <span class="hljs-type">Long</span>)</span></span>: <span class="hljs-symbol">LiveData@</span><span class="hljs-symbol">LTWindowDto@</span>GT = <span class="hljs-comment">// (2)</span>
         liveData(Dispatchers.IO) { <span class="hljs-comment">// (3)</span>
             emit(windowDao.findById(windowId).toDto()) <span class="hljs-comment">// (4)</span>
         }
 
-    <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">save</span><span class="hljs-params">(windowId: <span class="hljs-type">Long</span>, command: <span class="hljs-type">WindowCommandDto</span>)</span></span>: LiveData&amp;lt;WindowDto&amp;gt; = <span class="hljs-comment">// (2)</span>
+    <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">save</span><span class="hljs-params">(windowId: <span class="hljs-type">Long</span>, command: <span class="hljs-type">WindowCommandDto</span>)</span></span>: <span class="hljs-symbol">LiveData@</span><span class="hljs-symbol">LTWindowDto@</span>GT = <span class="hljs-comment">// (2)</span>
         liveData(Dispatchers.IO) { <span class="hljs-comment">// (3)</span>
           <span class="hljs-keyword">val</span> window = Window(
               id = windowId,
@@ -523,7 +535,7 @@ xmlns:tools="http://schemas.android.com/tools"&gt;
           }
           emit(window.toDto()) <span class="hljs-comment">// (4)</span>
       }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443036.9373')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316002.6548')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -547,13 +559,13 @@ xmlns:tools="http://schemas.android.com/tools"&gt;
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722522443037.6697"><span class="hljs-keyword">class</span> <span class="hljs-title class_">WindowViewModel</span>(<span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> windowDao: WindowDao) : ViewModel() {
+<pre class="highlight"><code class="language-kotlin" id="1722604316003.8975"><span class="hljs-keyword">class</span> <span class="hljs-title class_">WindowViewModel</span>(<span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> windowDao: WindowDao) : ViewModel() {
 
     <span class="hljs-keyword">companion</span> <span class="hljs-keyword">object</span> {
         <span class="hljs-keyword">val</span> factory: ViewModelProvider.Factory =
             <span class="hljs-keyword">object</span> : ViewModelProvider.Factory {
-                <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> &amp;lt;T : ViewModel&amp;gt; <span class="hljs-title">create</span><span class="hljs-params">(
-                    modelClass: <span class="hljs-type">Class</span>&amp;<span class="hljs-type">lt</span>;<span class="hljs-type">T</span>&amp;<span class="hljs-type">gt</span>;,
+                <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> &lt;T : ViewModel&gt; <span class="hljs-title">create</span><span class="hljs-params">(
+                    modelClass: <span class="hljs-type">Class</span>@<span class="hljs-type">LTT</span>@<span class="hljs-type">GT</span>,
                     extras: <span class="hljs-type">CreationExtras</span>
                 )</span></span>: T {
                     <span class="hljs-comment">// Load the Dao from the Application object</span>
@@ -566,7 +578,7 @@ xmlns:tools="http://schemas.android.com/tools"&gt;
     }
 
     <span class="hljs-comment">// ...</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443037.6697')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316003.8975')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -580,9 +592,9 @@ xmlns:tools="http://schemas.android.com/tools"&gt;
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722522443037.7573"><span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> viewModel: WindowViewModel <span class="hljs-keyword">by</span> viewModels {
+<pre class="highlight"><code class="language-kotlin" id="1722604316003.844"><span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> viewModel: WindowViewModel <span class="hljs-keyword">by</span> viewModels {
     WindowViewModel.factory
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443037.7573')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316003.844')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -590,9 +602,9 @@ xmlns:tools="http://schemas.android.com/tools"&gt;
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722522443037.9194">viewModel.findAll().observe(<span class="hljs-keyword">this</span>) { windows -&amp;gt;
+<pre class="highlight"><code class="language-kotlin" id="1722604316003.7358">viewModel.findAll().observe(<span class="hljs-keyword">this</span>) { windows <span class="hljs-meta">-&gt;</span>
     adapter.update(windows)
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443037.9194')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316003.7358')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -612,11 +624,11 @@ xmlns:tools="http://schemas.android.com/tools"&gt;
 <p>As Room uses annotations we need to configure Gradle to launch the kotlin annotation processor. For that you just have to add a new plugin id <code>kotlin-kapt</code></p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-groovy" id="1722522443037.292">plugins {
+<pre class="highlight"><code class="language-groovy" id="1722604316003.7837">plugins {
     id(<span class="hljs-string">"com.android.application"</span>)
     id(<span class="hljs-string">"org.jetbrains.kotlin.android"</span>)
     id(<span class="hljs-string">"kotlin-kapt"</span>)
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443037.292')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316003.7837')">Copy</button></pre>
 </div>
 </div>
 </li>
@@ -624,13 +636,13 @@ xmlns:tools="http://schemas.android.com/tools"&gt;
 <p>In the dependencies block, declare new libraries</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-groovy" id="1722522443038.2285">implementation <span class="hljs-string">"androidx.room:room-runtime:2.4.3"</span>
+<pre class="highlight"><code class="language-groovy" id="1722604316003.7625">implementation <span class="hljs-string">"androidx.room:room-runtime:2.4.3"</span>
 implementation <span class="hljs-string">"androidx.room:room-ktx:2.4.3"</span>
 kapt <span class="hljs-string">"androidx.room:room-compiler:2.4.3"</span>
 
 implementation <span class="hljs-string">"androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1"</span>
 implementation <span class="hljs-string">"androidx.lifecycle:lifecycle-livedata-ktx:2.5.1"</span>
-implementation <span class="hljs-string">"androidx.activity:activity-ktx:1.6.0"</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722522443038.2285')">Copy</button></pre>
+implementation <span class="hljs-string">"androidx.activity:activity-ktx:1.6.0"</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722604316003.7625')">Copy</button></pre>
 </div>
 </div>
 </li>
@@ -677,9 +689,9 @@ Click on <strong>Sync now</strong></p>
 <p>Add a new global property to define your view model</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722522443038.9539"><span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> viewModel: RoomViewModel <span class="hljs-keyword">by</span> viewModels {
+<pre class="highlight"><code class="language-kotlin" id="1722604316004.3982"><span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> viewModel: RoomViewModel <span class="hljs-keyword">by</span> viewModels {
     RoomViewModel.factory
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443038.9539')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316004.3982')">Copy</button></pre>
 </div>
 </div>
 </li>
@@ -691,9 +703,9 @@ Click on <strong>Sync now</strong></p>
 made to manage asynchronous calls and you don’t need anymore to switch between coroutines in your Activity or Fragment</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722522443038.0708">viewModel.findAll().observe(<span class="hljs-keyword">this</span>) { rooms -&amp;gt;
+<pre class="highlight"><code class="language-kotlin" id="1722604316004.6033">viewModel.findAll().observe(<span class="hljs-keyword">this</span>) { rooms <span class="hljs-meta">-&gt;</span>
     roomsAdapter.setItems(rooms) }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443038.0708')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316004.6033')">Copy</button></pre>
 </div>
 </div>
 </li>
@@ -732,17 +744,17 @@ made to manage asynchronous calls and you don’t need anymore to switch between
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722522443039.058"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">findAll</span><span class="hljs-params">()</span></span>: LiveData&amp;lt;List&amp;lt;RoomDto&amp;gt;&amp;gt; =
+<pre class="highlight"><code class="language-kotlin" id="1722604316005.249"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">findAll</span><span class="hljs-params">()</span></span>: <span class="hljs-symbol">LiveData@</span><span class="hljs-symbol">LTList@</span><span class="hljs-symbol">LTRoomDto@</span><span class="hljs-symbol">GT@</span>GT =
     liveData(Dispatchers.IO) {
         runCatching {
             ApiServices.roomsApiService.findAll().execute()
         }.onSuccess {
             <span class="hljs-comment">// If remote API is available we synchronize data locally</span>
             it.body()
-                ?.also { rooms -&amp;gt;
+                ?.also { rooms <span class="hljs-meta">-&gt;</span>
                     roomDao.clearAll()
                     windowDao.clearAll()
-                    rooms.onEach { room -&amp;gt;
+                    rooms.onEach { room <span class="hljs-meta">-&gt;</span>
                         roomDao.create(
                             Room(
                                 id = room.id,
@@ -772,7 +784,7 @@ made to manage asynchronous calls and you don’t need anymore to switch between
         }
     }
 
-<span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">findById</span><span class="hljs-params">(roomId: <span class="hljs-type">Long</span>)</span></span>: LiveData&amp;lt;RoomDto&amp;gt; =
+<span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">findById</span><span class="hljs-params">(roomId: <span class="hljs-type">Long</span>)</span></span>: <span class="hljs-symbol">LiveData@</span><span class="hljs-symbol">LTRoomDto@</span>GT =
     liveData(Dispatchers.IO) { <span class="hljs-comment">// (2)</span>
         runCatching {
             <span class="hljs-comment">// We call the remote API</span>
@@ -787,7 +799,7 @@ made to manage asynchronous calls and you don’t need anymore to switch between
         }
     }
 
-<span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">save</span><span class="hljs-params">(roomId: <span class="hljs-type">Long</span>, room: <span class="hljs-type">RoomCommandDto</span>)</span></span>: LiveData&amp;lt;RoomDto?&amp;gt; =
+<span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">save</span><span class="hljs-params">(roomId: <span class="hljs-type">Long</span>, room: <span class="hljs-type">RoomCommandDto</span>)</span></span>: <span class="hljs-symbol">LiveData@</span>LTRoomDto?<span class="hljs-meta">&gt;</span> =
     liveData(Dispatchers.IO) {
         runCatching {
             <span class="hljs-keyword">if</span> (roomId == <span class="hljs-number">0L</span>) {
@@ -800,7 +812,7 @@ made to manage asynchronous calls and you don’t need anymore to switch between
         }.onFailure {
             emit(<span class="hljs-literal">null</span>)
         }
-    }</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443039.058')">Copy</button></pre>
+    }</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316005.249')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -812,7 +824,7 @@ made to manage asynchronous calls and you don’t need anymore to switch between
 <p>Create a new enum called <code>State</code> in <code>WindowViewModel</code></p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722522443039.5732"><span class="hljs-keyword">enum</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">State</span> { ONLINE, OFFLINE }</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443039.5732')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1722604316005.0886"><span class="hljs-keyword">enum</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">State</span> { ONLINE, OFFLINE }</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316005.0886')">Copy</button></pre>
 </div>
 </div>
 </li>
@@ -820,9 +832,9 @@ made to manage asynchronous calls and you don’t need anymore to switch between
 <p>Create a property in <code>RoomViewModel</code> to expose this state. By default the state is ONLINE</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722522443039.1548"><span class="hljs-keyword">val</span> networkState: MutableLiveData&amp;lt;State&amp;gt; <span class="hljs-keyword">by</span> lazy {
-    MutableLiveData&amp;lt;State&amp;gt;().also { it.postValue(State.ONLINE) }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443039.1548')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1722604316005.6587"><span class="hljs-keyword">val</span> networkState: <span class="hljs-symbol">MutableLiveData@</span><span class="hljs-symbol">LTState@</span>GT <span class="hljs-keyword">by</span> lazy {
+    <span class="hljs-symbol">MutableLiveData@</span><span class="hljs-symbol">LTState@</span>GT().also { it.postValue(State.ONLINE) }
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316005.6587')">Copy</button></pre>
 </div>
 </div>
 </li>
@@ -830,12 +842,12 @@ made to manage asynchronous calls and you don’t need anymore to switch between
 <p>You can add a new Observable in your activity <code>RoomsActivity</code> and <code>RoomActivity</code> to display a message when the data will be loaded from the local database</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722522443039.611">viewModel.networkState.observe(<span class="hljs-keyword">this</span>) { state -&amp;gt;
+<pre class="highlight"><code class="language-kotlin" id="1722604316005.2786">viewModel.networkState.observe(<span class="hljs-keyword">this</span>) { state <span class="hljs-meta">-&gt;</span>
     <span class="hljs-keyword">if</span>(state == State.OFFLINE) {
         Toast.makeText(<span class="hljs-keyword">this</span>,<span class="hljs-string">"Offline mode, the last known values are displayed"</span>, Toast.LENGTH_LONG)
             .show()
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443039.611')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316005.2786')">Copy</button></pre>
 </div>
 </div>
 </li>
@@ -843,7 +855,7 @@ made to manage asynchronous calls and you don’t need anymore to switch between
 <p>Update the state in the methods <code>findAll</code>, <code>findById</code>, 'save` in <code>RoomViewModel</code> when you use the API or the database. Be careful you need to do this update on the main thread and you have to use this coroutine scope (<code>Dispatcher.Main</code>).</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722522443040.5813"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">findById</span><span class="hljs-params">(roomId: <span class="hljs-type">Long</span>)</span></span>: LiveData&amp;lt;RoomDto&amp;gt; =
+<pre class="highlight"><code class="language-kotlin" id="1722604316006.602"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">findById</span><span class="hljs-params">(roomId: <span class="hljs-type">Long</span>)</span></span>: <span class="hljs-symbol">LiveData@</span><span class="hljs-symbol">LTRoomDto@</span>GT =
     liveData(Dispatchers.IO) { <span class="hljs-comment">// (2)</span>
         runCatching {
             <span class="hljs-comment">// We call the remote API</span>
@@ -858,7 +870,7 @@ made to manage asynchronous calls and you don’t need anymore to switch between
             }.toDto()
             emit(room)
         }
-    }</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443040.5813')">Copy</button></pre>
+    }</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316006.602')">Copy</button></pre>
 </div>
 </div>
 </li>
@@ -866,8 +878,8 @@ made to manage asynchronous calls and you don’t need anymore to switch between
 </div>
 </div>
 </div>
-</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 01/08/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
+</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 02/08/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
 
-<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-KZZ4TXLO.js" type="module"></script>
+<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-EXB64UBH.js" type="module"></script>
 
 <script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t0"},"c":{"7":[{"i":"t0","r":1,"x":3}]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>

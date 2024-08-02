@@ -151,7 +151,19 @@
   </style>
   <script>
     function copyToClipboard(id) {
-      const text = document.getElementById(id).innerText;
+      const text = document.getElementById(id).innerText
+        .replaceAll('~$', '')
+        .replaceAll('(1)', '')
+        .replaceAll('(2)', '')
+        .replaceAll('(3)', '')
+        .replaceAll('(4)', '')
+        .replaceAll('(5)', '')
+        .replaceAll('(6)', '')
+        .replaceAll('(7)', '')
+        .replaceAll('(8)', '')
+        .replaceAll('(9)', '')
+        .replaceAll('(10)', '')
+      ;
       navigator.clipboard.writeText(text.substring(0, text.length));
     }
   </script>
@@ -183,12 +195,12 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1722522442112.2085">payload={
+<pre class="highlight"><code class="language-javascript" id="1722604314706.37">payload={
     <span class="hljs-string">"channel"</span>: <span class="hljs-string">"#general"</span>,
     <span class="hljs-string">"username"</span>: <span class="hljs-string">"Dev-Mind"</span>, <span class="hljs-string">"text"</span>:
     <span class="hljs-string">"This is my post to #general."</span>,
     <span class="hljs-string">"icon_emoji"</span>: <span class="hljs-string">":ghost:"</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522442112.2085')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604314706.37')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -196,7 +208,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722522442112.8926">curl -X POST --data-urlencode 'payload={"channel": "#general", "username": "webhookbot", "text": "This is posted to #general and comes from a bot named webhookbot.", "icon_emoji": ":ghost:"}' https://hooks.slack.com/services/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</code><button class="btn-copy-code" onclick="copyToClipboard('1722522442112.8926')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1722604314707.0396">curl -X POST --data-urlencode 'payload={"channel": "#general", "username": "webhookbot", "text": "This is posted to #general and comes from a bot named webhookbot.", "icon_emoji": ":ghost:"}' https://hooks.slack.com/services/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</code><button class="btn-copy-code" onclick="copyToClipboard('1722604314707.0396')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -213,7 +225,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522442114.788"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SlackMessage</span> {
+<pre class="highlight"><code class="language-java" id="1722604314709.7014"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SlackMessage</span> {
 
     <span class="hljs-keyword">private</span> String channel;
     <span class="hljs-keyword">private</span> String text;
@@ -265,7 +277,7 @@
         <span class="hljs-built_in">this</span>.icon_url = icon_url;
         <span class="hljs-keyword">return</span> <span class="hljs-built_in">this</span>;
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522442114.788')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604314709.7014')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -276,7 +288,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522442116.9795"><span class="hljs-meta">@RestController</span>
+<pre class="highlight"><code class="language-java" id="1722604314711.1272"><span class="hljs-meta">@RestController</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SlackMessageSender</span> {
 
     <span class="hljs-meta">@Value("${slack.services.incoming}")</span>
@@ -287,7 +299,7 @@
 
 
     <span class="hljs-meta">@RequestMapping(value = "/slack/{message}")</span>
-    <span class="hljs-keyword">public</span> ResponseEntity&amp;lt;String&amp;gt; hello(<span class="hljs-meta">@PathVariable(value = "message")</span> String message)
+    <span class="hljs-keyword">public</span> ResponseEntity<span class="hljs-meta">&lt;String</span><span class="hljs-meta">&gt;</span> hello(<span class="hljs-meta">@PathVariable(value = "message")</span> String message)
                 <span class="hljs-keyword">throws</span> JsonProcessingException {
 
         <span class="hljs-type">RestTemplate</span> <span class="hljs-variable">restTemplate</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">RestTemplate</span>();
@@ -301,7 +313,7 @@
         <span class="hljs-keyword">try</span>{
             <span class="hljs-type">HttpHeaders</span> <span class="hljs-variable">headers</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">HttpHeaders</span>();
             headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
-            HttpEntity&amp;lt;String&amp;gt; request = <span class="hljs-keyword">new</span> <span class="hljs-title class_">HttpEntity</span>&amp;lt;&amp;gt;(objectMapper.writeValueAsString(slackMessage), headers);
+            HttpEntity<span class="hljs-meta">&lt;String</span><span class="hljs-meta">&gt;</span> request = <span class="hljs-keyword">new</span> <span class="hljs-title class_">HttpEntity</span><span class="hljs-meta">&lt;</span><span class="hljs-meta">&gt;(objectMapper.writeValueAsString(slackMessage), headers)</span>;
             restTemplate.exchange(slackServiceIncomingUrl, HttpMethod.POST, request, String.class);
         }
         <span class="hljs-keyword">catch</span> (RuntimeException e){
@@ -309,13 +321,13 @@
         }
         <span class="hljs-keyword">return</span> ResponseEntity.ok().body(<span class="hljs-string">"Message sent"</span>);
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522442116.9795')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604314711.1272')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
 <p>Voila vous pouvez dès à présent envoyer encore plus d’infos vers vos channels favoris</p>
-</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 01/08/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
+</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 02/08/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
 
-<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-KZZ4TXLO.js" type="module"></script>
+<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-EXB64UBH.js" type="module"></script>
 
 <script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t7"},"c":{"7":[{"i":"t7","r":1}]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>

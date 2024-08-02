@@ -1,20 +1,20 @@
 export const _install_development_environment:string = `<div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<a class="link" fragment="#_java_installation">Java installation</a>
+<li><a class="link" fragment="#_java_installation">Java installation</a>
 <ul class="sectlevel2">
 <li><a class="link" fragment="#_history">History</a></li>
 <li><a class="link" fragment="#_which_version">Which version ?</a></li>
 <li><a class="link" fragment="#_jdk_21_installation">JDK 21 Installation</a></li>
 </ul>
-
-<a class="link" fragment="#_ide_installation">IDE installation</a>
-<a class="link" fragment="#_android_studio">Android studio</a>
+</li>
+<li><a class="link" fragment="#_ide_installation">IDE installation</a></li>
+<li><a class="link" fragment="#_android_studio">Android studio</a>
 <ul class="sectlevel2">
 <li><a class="link" fragment="#_installation">Installation</a></li>
 <li><a class="link" fragment="#_update">Update</a></li>
 </ul>
-
+</li>
 </ul>
 </div>
 <div id="preamble">
@@ -74,8 +74,8 @@ export const _install_development_environment:string = `<div id="toc" class="toc
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722519596108.5674">~@dollar@ curl -s &quot;https://get.sdkman.io&quot; | bash
-~@dollar@ source &quot;@dollar@HOME/.sdkman/bin/sdkman-init.sh&quot;</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596108.5674')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1722604316280.1868">~@dollar@ curl -s &quot;https://get.sdkman.io&quot; | bash
+~@dollar@ source &quot;@dollar@HOME/.sdkman/bin/sdkman-init.sh&quot;</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316280.1868')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -83,11 +83,11 @@ export const _install_development_environment:string = `<div id="toc" class="toc
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722519596108.1213">~@dollar@ sdk version
+<pre class="highlight"><code class="language-shell" id="1722604316280.849">~@dollar@ sdk version
 
 SDKMAN!
 script: 5.18.2
-native: 0.4.2</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596108.1213')">Copy</button></pre>
+native: 0.4.2</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316280.849')">Copy</button></pre>
 </div>
 </div>
 <div class="quoteblock">
@@ -121,7 +121,7 @@ native: 0.4.2</code><button class="btn-copy-code" onclick="copyToClipboard('1722
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722519596108.4666">~@dollar@ sdk list java</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596108.4666')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1722604316280.6963">~@dollar@ sdk list java</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316280.6963')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -129,7 +129,7 @@ native: 0.4.2</code><button class="btn-copy-code" onclick="copyToClipboard('1722
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722519596108.5552">~@dollar@ sdk install java 21.0.4-oracle</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596108.5552')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1722604316280.6497">~@dollar@ sdk install java 21.0.4-oracle</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316280.6497')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -137,7 +137,7 @@ native: 0.4.2</code><button class="btn-copy-code" onclick="copyToClipboard('1722
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722519596108.3357">~@dollar@ sdk default java 21.0.4-oracle</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596108.3357')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1722604316280.0818">~@dollar@ sdk default java 21.0.4-oracle</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316280.0818')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -148,10 +148,10 @@ native: 0.4.2</code><button class="btn-copy-code" onclick="copyToClipboard('1722
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722519596109.7156">~@dollar@  java -version
+<pre class="highlight"><code class="language-shell" id="1722604316280.21">~@dollar@  java -version
 java version &quot;21.0.4&quot; 2024-07-16 LTS
 Java(TM) SE Runtime Environment (build 21.0.4+8-LTS-274)
-Java HotSpot(TM) 64-Bit Server VM (build 21.0.4+8-LTS-274, mixed mode, sharing)</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596109.7156')">Copy</button></pre>
+Java HotSpot(TM) 64-Bit Server VM (build 21.0.4+8-LTS-274, mixed mode, sharing)</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316280.21')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -213,8 +213,8 @@ You can also try to obtain a free licence on this <a href="https://jetbrains.com
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722519596109.5674">cd ~/appli/android-studio/bin
-sh ./studio.sh</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596109.5674')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1722604316281.955">cd ~/appli/android-studio/bin
+sh ./studio.sh</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316281.955')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -233,7 +233,7 @@ sh ./studio.sh</code><button class="btn-copy-code" onclick="copyToClipboard('172
 <h3 id="_update">Update</h3>
 <div class="paragraph">
 <p>If you have an existing version of Android Studio on your laptop you should update Android Sdk.
-For that go on menu <strong>Tools &gt; SDK manager</strong></p>
+For that go on menu <strong>Tools @GT SDK manager</strong></p>
 </div>
 <div class="imageblock text-center">
 <div class="content">

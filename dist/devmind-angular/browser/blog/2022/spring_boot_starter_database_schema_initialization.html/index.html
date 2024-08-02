@@ -151,7 +151,19 @@
   </style>
   <script>
     function copyToClipboard(id) {
-      const text = document.getElementById(id).innerText;
+      const text = document.getElementById(id).innerText
+        .replaceAll('~$', '')
+        .replaceAll('(1)', '')
+        .replaceAll('(2)', '')
+        .replaceAll('(3)', '')
+        .replaceAll('(4)', '')
+        .replaceAll('(5)', '')
+        .replaceAll('(6)', '')
+        .replaceAll('(7)', '')
+        .replaceAll('(8)', '')
+        .replaceAll('(9)', '')
+        .replaceAll('(10)', '')
+      ;
       navigator.clipboard.writeText(text.substring(0, text.length));
     }
   </script>
@@ -162,12 +174,12 @@
   <app-root _nghost-ng-c582792440 ng-version="18.0.0" ngh="2" ng-server-context="ssg"><app-header _ngcontent-ng-c582792440 _nghost-ng-c2882497807 ngh="0"><header _ngcontent-ng-c2882497807><div _ngcontent-ng-c2882497807 class="header-img"><a _ngcontent-ng-c2882497807 routerlink="/" aria-label="Accueil" href="/"><img _ngcontent-ng-c2882497807 src="img/logo/logo_long.svg" alt="Dev-Mind" title="Dev-Mind"></a></div><nav _ngcontent-ng-c2882497807><a _ngcontent-ng-c2882497807 routerlink="/" aria-label="Accueil" class="nav-home" href="/"><img _ngcontent-ng-c2882497807 src="/img/ic_home_white_24px.svg" rel="start" alt="Accueil"></a><a _ngcontent-ng-c2882497807 routerlink="/formations.html" aria-label="Formations" class href="/formations.html"> Formations</a><a _ngcontent-ng-c2882497807 routerlink="/blog.html" aria-label="Blog" class="active" href="/blog.html">Blog</a><a _ngcontent-ng-c2882497807 routerlink="/experience.html" aria-label="Experience" class href="/experience.html"> Expérience</a></nav><hr _ngcontent-ng-c2882497807></header><div _ngcontent-ng-c2882497807 class="header-space"></div></app-header><router-outlet _ngcontent-ng-c582792440></router-outlet><app-asciidoc-viewer ngh="1"><div class="dm-block--blog"><div class="devmind-section"><h1><!--ngetn--></h1><div class="blog-keywords"><div class="dm-blog--info-date">13/10/2022</div><div class="dm-blog--keyword-detail">Kotlin</div><div class="dm-blog--keyword-detail">Spring</div><div class="dm-blog--keyword-detail">Liquibase</div><div class="dm-blog--keyword-detail">Flyway</div><!---->&nbsp; </div><div class="preview"><div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<a class="link" fragment="#_un_use_case_réel">Un use case réel</a>
-<a class="link" fragment="#_quest_ce_quune_auto_configuration_spring_boot">Qu’est ce qu’une auto configuration Spring Boot ?</a>
-<a class="link" fragment="#_ce_que_jaimerai_faire">Ce que j’aimerai faire</a>
-<a class="link" fragment="#_les_conditions_sur_les_beans_de_configuration">Les conditions sur les beans de configuration</a>
-<a class="link" fragment="#_utiliser_votre_code">Utiliser votre code</a>
-<a class="link" fragment="#_conclusion">Conclusion</a>
+<li><a class="link" fragment="#_un_use_case_réel">Un use case réel</a></li>
+<li><a class="link" fragment="#_quest_ce_quune_auto_configuration_spring_boot">Qu’est ce qu’une auto configuration Spring Boot ?</a></li>
+<li><a class="link" fragment="#_ce_que_jaimerai_faire">Ce que j’aimerai faire</a></li>
+<li><a class="link" fragment="#_les_conditions_sur_les_beans_de_configuration">Les conditions sur les beans de configuration</a></li>
+<li><a class="link" fragment="#_utiliser_votre_code">Utiliser votre code</a></li>
+<li><a class="link" fragment="#_conclusion">Conclusion</a></li>
 </ul>
 </div>
 <div id="preamble">
@@ -267,9 +279,9 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722522442837.3333"><span class="hljs-meta">@Configuration(proxyBeanMethods = false)</span>
+<pre class="highlight"><code class="language-kotlin" id="1722604315365.221"><span class="hljs-meta">@Configuration(proxyBeanMethods = false)</span>
 <span class="hljs-meta">@AutoConfigureBefore(DataSourceAutoConfiguration::class, LiquibaseAutoConfiguration::class)</span>
-<span class="hljs-keyword">class</span> <span class="hljs-title class_">DatabaseSchemaInitializerAutoConfiguration</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722522442837.3333')">Copy</button></pre>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">DatabaseSchemaInitializerAutoConfiguration</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722604315365.221')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -322,7 +334,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722522442838.4688"><span class="hljs-meta">@Configuration(proxyBeanMethods = false)</span>
+<pre class="highlight"><code class="language-kotlin" id="1722604315366.1365"><span class="hljs-meta">@Configuration(proxyBeanMethods = false)</span>
 <span class="hljs-meta">@ConditionalOnProperty(prefix = PROPERTIES_PREFIX, name = [<span class="hljs-string">"enabled"</span>], matchIfMissing = true)</span>
 <span class="hljs-meta">@AutoConfigureBefore(DataSourceAutoConfiguration::class, LiquibaseAutoConfiguration::class)</span>
 <span class="hljs-keyword">class</span> <span class="hljs-title class_">DatabaseSchemaInitializerAutoConfiguration</span> {
@@ -339,7 +351,7 @@
          <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">databaseSchemaInitializer</span><span class="hljs-params">()</span></span> =
              DatabaseSchemaInitializer()
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522442838.4688')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315366.1365')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -353,7 +365,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722522442839.5945"><span class="hljs-meta">@Configuration(proxyBeanMethods = false)</span>
+<pre class="highlight"><code class="language-kotlin" id="1722604315370.3677"><span class="hljs-meta">@Configuration(proxyBeanMethods = false)</span>
 <span class="hljs-meta">@ConditionalOnProperty(prefix = PROPERTIES_PREFIX, name = [<span class="hljs-string">"enabled"</span>], matchIfMissing = true)</span>
 <span class="hljs-meta">@AutoConfigureBefore(DataSourceAutoConfiguration::class, LiquibaseAutoConfiguration::class)</span>
 <span class="hljs-keyword">class</span> <span class="hljs-title class_">DatabaseSchemaInitializerAutoConfiguration</span> {
@@ -375,7 +387,7 @@
          <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">databaseSchemaInitializer</span><span class="hljs-params">()</span></span> =
              DatabaseSchemaInitializer()
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522442839.5945')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315370.3677')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -399,12 +411,12 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722522442840.464">    <span class="hljs-comment">// ...</span>
+<pre class="highlight"><code class="language-kotlin" id="1722604315371.107">    <span class="hljs-comment">// ...</span>
     dependencies {
         implementation(project(<span class="hljs-string">":database-initializer"</span>))
         <span class="hljs-comment">// ...</span>
     }
-    <span class="hljs-comment">// ...</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722522442840.464')">Copy</button></pre>
+    <span class="hljs-comment">// ...</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722604315371.107')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -415,11 +427,11 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722522442840.3901"><span class="hljs-meta">@Retention(AnnotationRetention.RUNTIME)</span>
+<pre class="highlight"><code class="language-kotlin" id="1722604315372.111"><span class="hljs-meta">@Retention(AnnotationRetention.RUNTIME)</span>
 <span class="hljs-meta">@Target(AnnotationTarget.CLASS, AnnotationTarget.TYPE)</span>
 <span class="hljs-meta">@MustBeDocumented</span>
 <span class="hljs-meta">@Import(DatabaseSchemaInitializerAutoConfiguration::class)</span>
-<span class="hljs-keyword">annotation</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">EnableDatabaseSchemaInitializer</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722522442840.3901')">Copy</button></pre>
+<span class="hljs-keyword">annotation</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">EnableDatabaseSchemaInitializer</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722604315372.111')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -437,8 +449,8 @@
 <p>N’hésitez pas à me contacter sur Twitter si vous avez des questions ou des remarques sur cet article.</p>
 </div>
 </div>
-</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 01/08/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
+</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 02/08/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
 
-<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-KZZ4TXLO.js" type="module"></script>
+<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-EXB64UBH.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t1"},"c":{"7":[{"i":"t1","r":1,"x":4}]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t7"},"c":{"7":[{"i":"t7","r":1,"x":4}]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>

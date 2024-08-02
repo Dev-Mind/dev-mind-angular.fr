@@ -21,7 +21,7 @@ export const _mockserver:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722519596942.1917"><span class="hljs-meta">@Component</span>
+<pre class="highlight"><code class="language-java" id="1722604315474.8362"><span class="hljs-meta">@Component</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ElasticMailSender</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">EmailSender</span> {
 
     <span class="hljs-keyword">private</span> WebClient webClient;
@@ -56,7 +56,7 @@ export const _mockserver:string = `<div id="preamble">
             <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">RuntimeException</span>(response.getError());
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596942.1917')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315474.8362')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -67,7 +67,7 @@ export const _mockserver:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722519596942.6243">testCompile(<span class="hljs-string">&quot;com.squareup.okhttp3:mockwebserver:3.9.1&quot;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596942.6243')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1722604315475.1455">testCompile(<span class="hljs-string">&quot;com.squareup.okhttp3:mockwebserver:3.9.1&quot;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315475.1455')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -75,7 +75,7 @@ export const _mockserver:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722519596944.214"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ElasticMailSenderTest</span> {
+<pre class="highlight"><code class="language-java" id="1722604315479.0098"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ElasticMailSenderTest</span> {
     <span class="hljs-meta">@Rule</span>
     <span class="hljs-keyword">public</span> <span class="hljs-type">MockWebServer</span> <span class="hljs-variable">server</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">MockWebServer</span>();
     <span class="hljs-keyword">private</span> WebClient webClient;
@@ -89,14 +89,14 @@ export const _mockserver:string = `<div id="preamble">
 
     <span class="hljs-meta">@Test</span>
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">send</span><span class="hljs-params">()</span> {
-        prepareResponse(response -&amp;gt; response
+        prepareResponse(response <span class="hljs-meta">@LAMBDA</span> response
                 .setHeader(<span class="hljs-string">&quot;Content-Type&quot;</span>, <span class="hljs-string">&quot;application/json&quot;</span>)
                 .setBody(<span class="hljs-string">&quot;{ \&quot;success\&quot; : true }&quot;</span>));
 
         elasticMailSender.send(<span class="hljs-keyword">new</span> <span class="hljs-title class_">EmailMessage</span>(
                 <span class="hljs-string">&quot;guillaume@test.fr&quot;</span>,
                 <span class="hljs-string">&quot;Email test&quot;</span>,
-                <span class="hljs-string">&quot;&amp;lt;h1&amp;gt;Hi Guillaume&amp;lt;/h1&amp;gt;&amp;lt;p&amp;gt;Waow... you are able to send an email&amp;lt;/p&amp;gt;&quot;</span>)
+                <span class="hljs-string">&quot;@LTh1@GTHi Guillaume@LT/h1@GT@LTp@GTWaow... you are able to send an email@LT/p@GT&quot;</span>)
         );
 
         verify(webClient, atLeastOnce()).post();
@@ -104,24 +104,24 @@ export const _mockserver:string = `<div id="preamble">
 
     <span class="hljs-meta">@Test</span>
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">sendWithError</span><span class="hljs-params">()</span> {
-        prepareResponse(response -&amp;gt; response
+        prepareResponse(response <span class="hljs-meta">@LAMBDA</span> response
                 .setHeader(<span class="hljs-string">&quot;Content-Type&quot;</span>, <span class="hljs-string">&quot;application/json&quot;</span>)
                 .setBody(<span class="hljs-string">&quot;{ \&quot;success\&quot; : false, \&quot;error\&quot; : \&quot;error expected\&quot; }&quot;</span>));
 
-        assertThatThrownBy(() -&amp;gt; elasticMailSender.send(<span class="hljs-keyword">new</span> <span class="hljs-title class_">EmailMessage</span>(
+        assertThatThrownBy(() <span class="hljs-meta">@LAMBDA</span> elasticMailSender.send(<span class="hljs-keyword">new</span> <span class="hljs-title class_">EmailMessage</span>(
                 <span class="hljs-string">&quot;guillaume@test.fr&quot;</span>,
                 <span class="hljs-string">&quot;Email test&quot;</span>,
-                <span class="hljs-string">&quot;&amp;lt;h1&amp;gt;Hi Guillaume&amp;lt;/h1&amp;gt;&amp;lt;p&amp;gt;Waow... you are able to send an email&amp;lt;/p&amp;gt;&quot;</span>)))
+                <span class="hljs-string">&quot;@LTh1@GTHi Guillaume@LT/h1@GT@LTp@GTWaow... you are able to send an email@LT/p@GT&quot;</span>)))
                 .isExactlyInstanceOf(RuntimeException.class)
                 .hasMessage(<span class="hljs-string">&quot;error expected&quot;</span>);
     }
 
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">prepareResponse</span><span class="hljs-params">(Consumer&amp;lt;MockResponse&amp;gt; consumer)</span> {
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">prepareResponse</span><span class="hljs-params">(Consumer<span class="hljs-meta">@LTMockResponse</span><span class="hljs-meta">@GT</span> consumer)</span> {
         <span class="hljs-type">MockResponse</span> <span class="hljs-variable">response</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">MockResponse</span>();
         consumer.accept(response);
         <span class="hljs-built_in">this</span>.server.enqueue(response);
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596944.214')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315479.0098')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -129,7 +129,7 @@ export const _mockserver:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722519596944.07">WebClient.create(<span class="hljs-built_in">this</span>.server.url(<span class="hljs-string">&quot;/&quot;</span>).toString())</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596944.07')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1722604315479.0344">WebClient.create(<span class="hljs-built_in">this</span>.server.url(<span class="hljs-string">&quot;/&quot;</span>).toString())</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315479.0344')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -148,13 +148,13 @@ export const _mockserver:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722519596944.9521">configurations {
+<pre class="highlight"><code class="language-java" id="1722604315480.1128">configurations {
 	all {
 		exclude <span class="hljs-keyword">module</span>: <span class="hljs-string">&quot;junit&quot;</span>
 	}
 }
 testCompile(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-api&quot;</span>)
-testRuntime(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engine&quot;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596944.9521')">Copy</button></pre>
+testRuntime(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engine&quot;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315480.1128')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -168,7 +168,7 @@ testRuntime(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engi
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722519596944.5083">testCompile(<span class="hljs-string">&quot;com.devmind:mockwebserver:0.1.0&quot;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596944.5083')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1722604315480.8035">testCompile(<span class="hljs-string">&quot;com.devmind:mockwebserver:0.1.0&quot;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315480.8035')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -176,7 +176,7 @@ testRuntime(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engi
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722519596946.4778"><span class="hljs-meta">@ExtendWith(MockWebServerExtension.class)</span>
+<pre class="highlight"><code class="language-java" id="1722604315481.7256"><span class="hljs-meta">@ExtendWith(MockWebServerExtension.class)</span>
 <span class="hljs-keyword">class</span> <span class="hljs-title class_">MySpringWebfluxServiceTest</span> {
 
     <span class="hljs-keyword">private</span> MockWebServer server;
@@ -192,7 +192,7 @@ testRuntime(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engi
 
     <span class="hljs-meta">@Test</span>
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">mytest</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception {
-        prepareResponse(response -&amp;gt; response
+        prepareResponse(response <span class="hljs-meta">@LAMBDA</span> response
                 .setHeader(<span class="hljs-string">&quot;Content-Type&quot;</span>, <span class="hljs-string">&quot;application/json&quot;</span>)
                 .setBody( <span class="hljs-string">&quot;{\n&quot;</span> +
                           <span class="hljs-string">&quot;  \&quot;error_message\&quot; : \&quot;The provided API key is invalid.\&quot;,\n&quot;</span> +
@@ -211,7 +211,7 @@ testRuntime(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engi
         <span class="hljs-built_in">this</span>.server.enqueue(response);
     }
 
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596946.4778')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315481.7256')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -219,7 +219,7 @@ testRuntime(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engi
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722519596947.1506"><span class="hljs-meta">@ExtendWith(MockSimpleWebServerExtension.class)</span>
+<pre class="highlight"><code class="language-java" id="1722604315483.5508"><span class="hljs-meta">@ExtendWith(MockSimpleWebServerExtension.class)</span>
 <span class="hljs-meta">@TestInstance(TestInstance.Lifecycle.PER_CLASS)</span>
 <span class="hljs-keyword">class</span> <span class="hljs-title class_">MySpringWebfluxServiceTest</span> {
 
@@ -246,7 +246,7 @@ testRuntime(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engi
 
     <span class="hljs-meta">@Test</span>
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">mytest</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception {
-        prepareResponse(response -&amp;gt; response
+        prepareResponse(response <span class="hljs-meta">@LAMBDA</span> response
                 .setHeader(<span class="hljs-string">&quot;Content-Type&quot;</span>, <span class="hljs-string">&quot;application/json&quot;</span>)
                 .setBody( <span class="hljs-string">&quot;{\n&quot;</span> +
                           <span class="hljs-string">&quot;  \&quot;error_message\&quot; : \&quot;The provided API key is invalid.\&quot;,\n&quot;</span> +
@@ -259,12 +259,12 @@ testRuntime(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engi
                 .verify(Duration.ofSeconds(<span class="hljs-number">3</span>));
     }
 
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">prepareResponse</span><span class="hljs-params">(Consumer&amp;lt;MockResponse&amp;gt; consumer)</span> {
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">prepareResponse</span><span class="hljs-params">(Consumer<span class="hljs-meta">@LTMockResponse</span><span class="hljs-meta">@GT</span> consumer)</span> {
         <span class="hljs-type">MockResponse</span> <span class="hljs-variable">response</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">MockResponse</span>();
         consumer.accept(response);
         <span class="hljs-built_in">this</span>.server.enqueue(response);
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596947.1506')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315483.5508')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">

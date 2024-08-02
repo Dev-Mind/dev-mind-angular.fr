@@ -151,7 +151,19 @@
   </style>
   <script>
     function copyToClipboard(id) {
-      const text = document.getElementById(id).innerText;
+      const text = document.getElementById(id).innerText
+        .replaceAll('~$', '')
+        .replaceAll('(1)', '')
+        .replaceAll('(2)', '')
+        .replaceAll('(3)', '')
+        .replaceAll('(4)', '')
+        .replaceAll('(5)', '')
+        .replaceAll('(6)', '')
+        .replaceAll('(7)', '')
+        .replaceAll('(8)', '')
+        .replaceAll('(9)', '')
+        .replaceAll('(10)', '')
+      ;
       navigator.clipboard.writeText(text.substring(0, text.length));
     }
   </script>
@@ -162,9 +174,9 @@
   <app-root _nghost-ng-c582792440 ng-version="18.0.0" ngh="2" ng-server-context="ssg"><app-header _ngcontent-ng-c582792440 _nghost-ng-c2882497807 ngh="0"><header _ngcontent-ng-c2882497807><div _ngcontent-ng-c2882497807 class="header-img"><a _ngcontent-ng-c2882497807 routerlink="/" aria-label="Accueil" href="/"><img _ngcontent-ng-c2882497807 src="img/logo/logo_long.svg" alt="Dev-Mind" title="Dev-Mind"></a></div><nav _ngcontent-ng-c2882497807><a _ngcontent-ng-c2882497807 routerlink="/" aria-label="Accueil" class="nav-home" href="/"><img _ngcontent-ng-c2882497807 src="/img/ic_home_white_24px.svg" rel="start" alt="Accueil"></a><a _ngcontent-ng-c2882497807 routerlink="/formations.html" aria-label="Formations" class href="/formations.html"> Formations</a><a _ngcontent-ng-c2882497807 routerlink="/blog.html" aria-label="Blog" class="active" href="/blog.html">Blog</a><a _ngcontent-ng-c2882497807 routerlink="/experience.html" aria-label="Experience" class href="/experience.html"> Expérience</a></nav><hr _ngcontent-ng-c2882497807></header><div _ngcontent-ng-c2882497807 class="header-space"></div></app-header><router-outlet _ngcontent-ng-c582792440></router-outlet><app-asciidoc-viewer ngh="1"><div class="dm-block--blog"><div class="devmind-section"><h1><!--ngetn--></h1><div class="blog-keywords"><div class="dm-blog--info-date">17/09/2021</div><!---->&nbsp; </div><div class="preview"><div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<a class="link" fragment="#_méthode_extracting_en_java">Méthode <code>extracting</code> en Java</a>
-<a class="link" fragment="#_méthode_extracting_en_kotlin">Méthode <code>extracting</code> en Kotlin</a>
-<a class="link" fragment="#_le_langage_kotlin_à_la_rescousse">Le langage Kotlin à la rescousse</a>
+<li><a class="link" fragment="#_méthode_extracting_en_java">Méthode <code>extracting</code> en Java</a></li>
+<li><a class="link" fragment="#_méthode_extracting_en_kotlin">Méthode <code>extracting</code> en Kotlin</a></li>
+<li><a class="link" fragment="#_le_langage_kotlin_à_la_rescousse">Le langage Kotlin à la rescousse</a></li>
 </ul>
 </div>
 <div id="preamble">
@@ -183,7 +195,7 @@ En Kotlin cet objet se définit de cette manière</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722522442740.2734"><span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Talk</span>(<span class="hljs-keyword">val</span> id: <span class="hljs-built_in">Long</span>, <span class="hljs-keyword">val</span> name: String, <span class="hljs-keyword">val</span> speakerIds: List&amp;lt;<span class="hljs-built_in">Long</span>&amp;gt;)</code><button class="btn-copy-code" onclick="copyToClipboard('1722522442740.2734')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1722604315731.1096"><span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Talk</span>(<span class="hljs-keyword">val</span> id: <span class="hljs-built_in">Long</span>, <span class="hljs-keyword">val</span> name: String, <span class="hljs-keyword">val</span> speakerIds: <span class="hljs-symbol">List@</span><span class="hljs-symbol">LTLong@</span>GT)</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315731.1096')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -199,13 +211,13 @@ En Kotlin cet objet se définit de cette manière</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722522442740.2422"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-kotlin" id="1722604315732.8909"><span class="hljs-meta">@Test</span>
 void extractPropertyOnObject() {
     Talk talk = new Talk(<span class="hljs-number">1L</span>, <span class="hljs-string">"Fabulous talk"</span>, asList(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>));
     assertThat(talk)
         .extracting(Talk::getId, Talk::getName, Talk::getSpeakerIds)
         .containsExactly(<span class="hljs-number">1L</span>, <span class="hljs-string">"Fabulous talk"</span>, asList(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>));
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522442740.2422')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315732.8909')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -213,9 +225,9 @@ void extractPropertyOnObject() {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722522442741.2495"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-kotlin" id="1722604315733.911"><span class="hljs-meta">@Test</span>
 void extractPropertyOnList() {
-    List&amp;lt;Talk&amp;gt; talks = asList(
+    <span class="hljs-symbol">List@</span><span class="hljs-symbol">LTTalk@</span>GT talks = asList(
         new Talk(<span class="hljs-number">1L</span>, <span class="hljs-string">"Fabulous talk"</span>, asList(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>)),
         new Talk(<span class="hljs-number">2L</span>, <span class="hljs-string">"Other talk"</span>, asList(<span class="hljs-number">14L</span>))
     );
@@ -224,7 +236,7 @@ void extractPropertyOnList() {
             Tuple.tuple(<span class="hljs-number">1L</span>, <span class="hljs-string">"Fabulous talk"</span>, asList(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>)),
             Tuple.tuple(<span class="hljs-number">2L</span>, <span class="hljs-string">"Other talk"</span>, asList(<span class="hljs-number">14L</span>))
         );
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522442741.2495')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315733.911')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -245,12 +257,12 @@ Mais cette solution n’est pas très viable car si une propriété change de no
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722522442741.0486"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-kotlin" id="1722604315733.642"><span class="hljs-meta">@Test</span>
     <span class="hljs-function"><span class="hljs-keyword">fun</span> `should extract property on <span class="hljs-keyword">object</span>`<span class="hljs-params">()</span></span> {
         <span class="hljs-keyword">val</span> talk = Talk(<span class="hljs-number">1L</span>, <span class="hljs-string">"Fabulous talk"</span>, listOf(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>))
         assertThat(talk).extracting(<span class="hljs-string">"id"</span>, <span class="hljs-string">"name"</span>, <span class="hljs-string">"speakerIds"</span>)
             .containsExactly(<span class="hljs-number">1L</span>, <span class="hljs-string">"Fabulous talk"</span>, listOf(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>))
-    }</code><button class="btn-copy-code" onclick="copyToClipboard('1722522442741.0486')">Copy</button></pre>
+    }</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315733.642')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -258,7 +270,7 @@ Mais cette solution n’est pas très viable car si une propriété change de no
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722522442742.2747"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-kotlin" id="1722604315736.8848"><span class="hljs-meta">@Test</span>
 <span class="hljs-function"><span class="hljs-keyword">fun</span> `should extract property on list`<span class="hljs-params">()</span></span> {
     <span class="hljs-keyword">val</span> talks = listOf(
         Talk(<span class="hljs-number">1L</span>, <span class="hljs-string">"Fabulous talk"</span>, listOf(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>)),
@@ -270,7 +282,7 @@ Mais cette solution n’est pas très viable car si une propriété change de no
             tuple(<span class="hljs-number">1L</span>, <span class="hljs-string">"Fabulous talk"</span>, listOf(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>)),
             tuple(<span class="hljs-number">2L</span>, <span class="hljs-string">"Other talk"</span>, listOf(<span class="hljs-number">14L</span>))
         )
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522442742.2747')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315736.8848')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -282,13 +294,13 @@ Contrairement à ce qui avait été dit l’API a évolué à partir de la versi
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722522442743.1562"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-kotlin" id="1722604315737.0698"><span class="hljs-meta">@Test</span>
 <span class="hljs-function"><span class="hljs-keyword">fun</span> `should extract property on <span class="hljs-keyword">object</span>`<span class="hljs-params">()</span></span> {
     <span class="hljs-keyword">val</span> talk = Talk(<span class="hljs-number">1L</span>, <span class="hljs-string">"Fabulous talk"</span>, listOf(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>))
     assertThat(talk)
         .extracting(Talk::id, Talk::name, Talk::speakerIds)
         .containsExactly(<span class="hljs-number">1L</span>, <span class="hljs-string">"Fabulous talk"</span>, listOf(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>))
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522442743.1562')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315737.0698')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -296,9 +308,9 @@ Contrairement à ce qui avait été dit l’API a évolué à partir de la versi
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722522442743.2334"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-kotlin" id="1722604315738.4468"><span class="hljs-meta">@Test</span>
 <span class="hljs-function"><span class="hljs-keyword">fun</span> `should extract property on list`<span class="hljs-params">()</span></span> {
-    <span class="hljs-keyword">val</span> talks: List&amp;lt;Talk&amp;gt; = listOf(
+    <span class="hljs-keyword">val</span> talks: <span class="hljs-symbol">List@</span><span class="hljs-symbol">LTTalk@</span>GT = listOf(
         Talk(<span class="hljs-number">1L</span>, <span class="hljs-string">"Fabulous talk"</span>, listOf(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>)),
         Talk(<span class="hljs-number">2L</span>, <span class="hljs-string">"Other talk"</span>, listOf(<span class="hljs-number">14L</span>))
     )
@@ -307,7 +319,7 @@ Contrairement à ce qui avait été dit l’API a évolué à partir de la versi
             Tuple.tuple(<span class="hljs-number">1L</span>, <span class="hljs-string">"Fabulous talk"</span>, listOf(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>)),
             Tuple.tuple(<span class="hljs-number">2L</span>, <span class="hljs-string">"Other talk"</span>, listOf(<span class="hljs-number">14L</span>))
         )
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522442743.2334')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315738.4468')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -325,12 +337,12 @@ Au lieu d’utiliser la méthode <code>extracting</code>, vous pouvez par exempl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722522442744.49"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-kotlin" id="1722604315739.6284"><span class="hljs-meta">@Test</span>
 <span class="hljs-function"><span class="hljs-keyword">fun</span> `should extract property on <span class="hljs-keyword">object</span>`<span class="hljs-params">()</span></span> {
     <span class="hljs-keyword">val</span> talk = Talk(<span class="hljs-number">1L</span>, <span class="hljs-string">"Fabulous talk"</span>, listOf(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>))
     assertThat(talk.let { tuple(it.id, it.name, it.speakerIds) })
         .isEqualTo(tuple(<span class="hljs-number">1L</span>, <span class="hljs-string">"Fabulous talk"</span>, listOf(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>)))
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522442744.49')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315739.6284')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -338,7 +350,7 @@ Au lieu d’utiliser la méthode <code>extracting</code>, vous pouvez par exempl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722522442744.2947"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-kotlin" id="1722604315739.2712"><span class="hljs-meta">@Test</span>
 <span class="hljs-function"><span class="hljs-keyword">fun</span> `should extract property on list`<span class="hljs-params">()</span></span> {
     <span class="hljs-keyword">val</span> talks = listOf(
         Talk(<span class="hljs-number">1L</span>, <span class="hljs-string">"Fabulous talk"</span>, listOf(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>)),
@@ -350,15 +362,15 @@ Au lieu d’utiliser la méthode <code>extracting</code>, vous pouvez par exempl
             tuple(<span class="hljs-number">2L</span>, <span class="hljs-string">"Other talk"</span>, listOf(<span class="hljs-number">14L</span>))
 
         )
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522442744.2947')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315739.2712')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
 <p>Voici la fin de cet article que je voulais partagé après avoir perdu pas mal de temps avec des anciennes versions de AssertJ pour migrer du code de test Java en Kotlin.</p>
 </div>
 </div>
-</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 01/08/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
+</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 02/08/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
 
-<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-KZZ4TXLO.js" type="module"></script>
+<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-EXB64UBH.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t6"},"c":{"7":[]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t1"},"c":{"7":[]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>

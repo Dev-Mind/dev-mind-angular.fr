@@ -151,7 +151,19 @@
   </style>
   <script>
     function copyToClipboard(id) {
-      const text = document.getElementById(id).innerText;
+      const text = document.getElementById(id).innerText
+        .replaceAll('~$', '')
+        .replaceAll('(1)', '')
+        .replaceAll('(2)', '')
+        .replaceAll('(3)', '')
+        .replaceAll('(4)', '')
+        .replaceAll('(5)', '')
+        .replaceAll('(6)', '')
+        .replaceAll('(7)', '')
+        .replaceAll('(8)', '')
+        .replaceAll('(9)', '')
+        .replaceAll('(10)', '')
+      ;
       navigator.clipboard.writeText(text.substring(0, text.length));
     }
   </script>
@@ -162,22 +174,22 @@
   <app-root _nghost-ng-c582792440 ng-version="18.0.0" ngh="2" ng-server-context="ssg"><app-header _ngcontent-ng-c582792440 _nghost-ng-c2882497807 ngh="0"><header _ngcontent-ng-c2882497807><div _ngcontent-ng-c2882497807 class="header-img"><a _ngcontent-ng-c2882497807 routerlink="/" aria-label="Accueil" href="/"><img _ngcontent-ng-c2882497807 src="img/logo/logo_long.svg" alt="Dev-Mind" title="Dev-Mind"></a></div><nav _ngcontent-ng-c2882497807><a _ngcontent-ng-c2882497807 routerlink="/" aria-label="Accueil" class="nav-home" href="/"><img _ngcontent-ng-c2882497807 src="/img/ic_home_white_24px.svg" rel="start" alt="Accueil"></a><a _ngcontent-ng-c2882497807 routerlink="/formations.html" aria-label="Formations" class="active" href="/formations.html"> Formations</a><a _ngcontent-ng-c2882497807 routerlink="/blog.html" aria-label="Blog" class href="/blog.html">Blog</a><a _ngcontent-ng-c2882497807 routerlink="/experience.html" aria-label="Experience" class href="/experience.html"> Expérience</a></nav><hr _ngcontent-ng-c2882497807></header><div _ngcontent-ng-c2882497807 class="header-space"></div></app-header><router-outlet _ngcontent-ng-c582792440></router-outlet><app-asciidoc-viewer ngh="1"><div class="dm-block--blog"><div class="devmind-section"><h1><!--ngetn--></h1><div class="blog-keywords"><div class="dm-blog--info-date">10/11/2023</div><div class="dm-blog--keyword-detail">Gradle</div><!---->&nbsp; </div><div class="preview"><div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<a class="link" fragment="#_introduction">Introduction</a>
-<a class="link" fragment="#_why_a_build_tool">Why a build tool?</a>
-<a class="link" fragment="#_usage">Usage</a>
-<a class="link" fragment="#_principle">Principle</a>
-<a class="link" fragment="#_starting_with_gradle">Starting with Gradle</a>
-<a class="link" fragment="#_gradle_wrapper">Gradle wrapper</a>
-<a class="link" fragment="#_flask_first_example"><img src="/img/ic_flask.svg" style="width: 1em"> First example</a>
-<a class="link" fragment="#_how_gradle_works">How Gradle works ?</a>
-<a class="link" fragment="#_tasks">Tasks</a>
-<a class="link" fragment="#_incremental_build">Incremental build</a>
-<a class="link" fragment="#_flask_create_your_own_tasks"><img src="/img/ic_flask.svg" style="width: 1em"> Create your own tasks</a>
-<a class="link" fragment="#_gradle_life_cycle">Gradle Life cycle</a>
-<a class="link" fragment="#_plugins">Plugins</a>
-<a class="link" fragment="#_flask_custom_tasks_and_their_configurations"><img src="/img/ic_flask.svg" style="width: 1em"> Custom tasks and their configurations</a>
-<a class="link" fragment="#_dependency_management">Dependency management</a>
-<a class="link" fragment="#_reference">Reference</a>
+<li><a class="link" fragment="#_introduction">Introduction</a></li>
+<li><a class="link" fragment="#_why_a_build_tool">Why a build tool?</a></li>
+<li><a class="link" fragment="#_usage">Usage</a></li>
+<li><a class="link" fragment="#_principle">Principle</a></li>
+<li><a class="link" fragment="#_starting_with_gradle">Starting with Gradle</a></li>
+<li><a class="link" fragment="#_gradle_wrapper">Gradle wrapper</a></li>
+<li><a class="link" fragment="#_flask_first_example"><img src="/img/ic_flask.svg" style="width: 1em"> First example</a></li>
+<li><a class="link" fragment="#_how_gradle_works">How Gradle works ?</a></li>
+<li><a class="link" fragment="#_tasks">Tasks</a></li>
+<li><a class="link" fragment="#_incremental_build">Incremental build</a></li>
+<li><a class="link" fragment="#_flask_create_your_own_tasks"><img src="/img/ic_flask.svg" style="width: 1em"> Create your own tasks</a></li>
+<li><a class="link" fragment="#_gradle_life_cycle">Gradle Life cycle</a></li>
+<li><a class="link" fragment="#_plugins">Plugins</a></li>
+<li><a class="link" fragment="#_flask_custom_tasks_and_their_configurations"><img src="/img/ic_flask.svg" style="width: 1em"> Custom tasks and their configurations</a></li>
+<li><a class="link" fragment="#_dependency_management">Dependency management</a></li>
+<li><a class="link" fragment="#_reference">Reference</a></li>
 </ul>
 </div>
 <div id="preamble">
@@ -329,7 +341,7 @@ Major IDEs allow you to import Gradle builds</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722522443270.325">sdk install gradle 8.2.1</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443270.325')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1722604316167.4126">sdk install gradle 8.2.1</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316167.4126')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -340,11 +352,11 @@ Major IDEs allow you to import Gradle builds</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722522443270.5806">$ java -version
+<pre class="highlight"><code class="language-shell" id="1722604316167.4363">$ java -version
 
 java version "17.0.7" 2023-04-18 LTS
 Java(TM) SE Runtime Environment Oracle GraalVM 17.0.7+8.1 (build 17.0.7+8-LTS-jvmci-23.0-b12)
-Java HotSpot(TM) 64-Bit Server VM Oracle GraalVM 17.0.7+8.1 (build 17.0.7+8-LTS-jvmci-23.0-b12, mixed mode, sharing)</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443270.5806')">Copy</button></pre>
+Java HotSpot(TM) 64-Bit Server VM Oracle GraalVM 17.0.7+8.1 (build 17.0.7+8-LTS-jvmci-23.0-b12, mixed mode, sharing)</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316167.4363')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -353,9 +365,9 @@ You will create a directory and link it to Gradle</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722522443270.5647">mkdir gradle-demo
+<pre class="highlight"><code class="language-shell" id="1722604316167.7795">mkdir gradle-demo
 cd gradle-demo
-gradle init</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443270.5647')">Copy</button></pre>
+gradle init</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316167.7795')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -363,7 +375,7 @@ gradle init</code><button class="btn-copy-code" onclick="copyToClipboard('172252
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722522443270.6973">Select type of project to generate:
+<pre class="highlight"><code class="language-shell" id="1722604316167.8555">Select type of project to generate:
   1: basic
   2: application
   3: library
@@ -392,7 +404,7 @@ Select test framework:
   4: JUnit Jupiter
 Enter selection (default: JUnit Jupiter) [1..4] 4
 
-Generate build using new APIs and behavior (some features may change in the next minor release)? (default: no) [yes, no] no</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443270.6973')">Copy</button></pre>
+Generate build using new APIs and behavior (some features may change in the next minor release)? (default: no) [yes, no] no</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316167.8555')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -400,11 +412,11 @@ Generate build using new APIs and behavior (some features may change in the next
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722522443270.3655">&amp;gt; Task :init
+<pre class="highlight"><code class="language-shell" id="1722604316167.0747">&gt; Task :init
 Get more help with your project: Learn more about Gradle by exploring our samples at https://docs.gradle.org/7.5/samples
 
 BUILD SUCCESSFUL in 56s
-2 actionable tasks: 2 executed</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443270.3655')">Copy</button></pre>
+2 actionable tasks: 2 executed</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316167.0747')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -412,7 +424,7 @@ BUILD SUCCESSFUL in 56s
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722522443270.34">|-- app
+<pre class="highlight"><code class="language-shell" id="1722604316167.6118">|-- app
 |   | src
 |   | -- build.gradle.kts  (1)
 |-- .gitattributes (2)
@@ -423,7 +435,7 @@ BUILD SUCCESSFUL in 56s
 |       | -- gradle-wrapper.properties  (4)
 |-- gradlew  (5)
 |-- gradlew.bat (5)
-|-- settings.gradle.kts (6)</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443270.34')">Copy</button></pre>
+|-- settings.gradle.kts (6)</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316167.6118')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -458,7 +470,7 @@ BUILD SUCCESSFUL in 56s
 </div>
 <div class="listingblock code-height">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722522443270.7942">$ ./gradlew -v
+<pre class="highlight"><code class="language-shell" id="1722604316167.3274">$ ./gradlew -v
 Downloading https://services.gradle.org/distributions/gradle-8.2.1-bin.zip
 ..........10%...........20%...........30%...........40%...........50%...........60%...........70%...........80%...........90%...........100%
 
@@ -473,7 +485,7 @@ Kotlin:       1.8.20
 Groovy:       3.0.17
 Ant:          Apache Ant(TM) version 1.10.13 compiled on January 4 2023
 JVM:          17.0.7 (Oracle Corporation 17.0.7+8-LTS-jvmci-23.0-b12)
-OS:           Linux 5.19.0-50-generic amd64</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443270.7942')">Copy</button></pre>
+OS:           Linux 5.19.0-50-generic amd64</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316167.3274')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -505,7 +517,7 @@ OS:           Linux 5.19.0-50-generic amd64</code><button class="btn-copy-code" 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722522443271.52">|-- app
+<pre class="highlight"><code class="language-shell" id="1722604316167.0247">|-- app
 |   | -- src
 |      | -- main
 |          | -- java
@@ -523,7 +535,7 @@ OS:           Linux 5.19.0-50-generic amd64</code><button class="btn-copy-code" 
 |-- gradle.properties
 |-- gradlew
 |-- gradlew.bat
-|-- settings.gradle.kts</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443271.52')">Copy</button></pre>
+|-- settings.gradle.kts</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316167.0247')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -532,7 +544,7 @@ This is a Java project. So we use the plugin provided by Gradle to manage an app
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-groovy" id="1722522443271.2827">plugins {
+<pre class="highlight"><code class="language-groovy" id="1722604316168.1357">plugins {
     <span class="hljs-comment">// Apply the application plugin to add support for building a CLI application in Java.</span>
     application
 }
@@ -560,7 +572,7 @@ java {
 application {
     <span class="hljs-comment">// Define the main class for the application.</span>
     mainClass.set(<span class="hljs-string">"com.devmind.gradle.MyApplication"</span>)
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443271.2827')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316168.1357')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -568,10 +580,10 @@ application {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722522443271.2593">$ ./gradlew build
+<pre class="highlight"><code class="language-shell" id="1722604316168.94">$ ./gradlew build
 
 BUILD SUCCESSFUL in 7s
-8 actionable tasks: 8 executed</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443271.2593')">Copy</button></pre>
+8 actionable tasks: 8 executed</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316168.94')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -582,9 +594,9 @@ BUILD SUCCESSFUL in 7s
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722522443271.0928">$ ./gradlew build
+<pre class="highlight"><code class="language-shell" id="1722604316168.7366">$ ./gradlew build
 BUILD SUCCESSFUL in 517ms
-8 actionable tasks: 8 up-to-date</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443271.0928')">Copy</button></pre>
+8 actionable tasks: 8 up-to-date</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316168.7366')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -595,12 +607,12 @@ BUILD SUCCESSFUL in 517ms
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722522443271.597">$ ./gradlew :app:run
-&amp;gt; Task :app:run
+<pre class="highlight"><code class="language-shell" id="1722604316168.8735">$ ./gradlew :app:run
+&gt; Task :app:run
 I want to learn Gradle
 
 BUILD SUCCESSFUL in 503ms
-3 actionable tasks: 1 executed, 2 up-to-date</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443271.597')">Copy</button></pre>
+3 actionable tasks: 1 executed, 2 up-to-date</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316168.8735')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -616,9 +628,9 @@ BUILD SUCCESSFUL in 503ms
 </div>
 <div class="listingblock code-height">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722522443272.8123">$ ./gradlew tasks
+<pre class="highlight"><code class="language-shell" id="1722604316168.3953">$ ./gradlew tasks
 
-&amp;gt; Task :tasks
+&gt; Task :tasks
 
 ------------------------------------------------------------
 Tasks runnable from root project 'gradle-demo'
@@ -676,10 +688,10 @@ test - Runs the test suite.
 
 To see all tasks and more detail, run gradlew tasks --all
 
-To see more detail about a task, run gradlew help --task &amp;lt;task&amp;gt;
+To see more detail about a task, run gradlew help --task &lt;task&gt;
 
 BUILD SUCCESSFUL in 1s
-1 actionable task: 1 executed</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443272.8123')">Copy</button></pre>
+1 actionable task: 1 executed</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316168.3953')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -784,7 +796,7 @@ BUILD SUCCESSFUL in 1s
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722522443272.111">tasks.create("hello") {
+<pre class="highlight"><code class="language-shell" id="1722604316168.3271">tasks.create("hello") {
     doLast {
         println("Hello")
     }
@@ -794,7 +806,7 @@ tasks.create("world") {
     doLast {
         println("World")
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443272.111')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316168.3271')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -802,8 +814,8 @@ tasks.create("world") {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722522443272.1907">$ ./gradlew hello
-$ ./gradlew world</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443272.1907')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1722604316168.0608">$ ./gradlew hello
+$ ./gradlew world</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316168.0608')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -840,9 +852,9 @@ Gradle executes one or several tasks (arguments added to <code>./gradlew</code>)
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722522443272.452">plugins {
+<pre class="highlight"><code class="language-kotlin" id="1722604316169.185">plugins {
     java
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443272.452')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316169.185')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -858,7 +870,7 @@ Gradle executes one or several tasks (arguments added to <code>./gradlew</code>)
 </div>
 <div class="listingblock code-height">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722522443272.0317">buildscript {
+<pre class="highlight"><code class="language-shell" id="1722604316169.8887">buildscript {
     plugins {  (1)
       java
       id("org.springframework.boot") version "3.1.2"
@@ -882,10 +894,10 @@ Gradle executes one or several tasks (arguments added to <code>./gradlew</code>)
        testImplementation("org.springframework.boot:spring-boot-starter-test")
     }
 
-    tasks.withType&amp;lt;Test&amp;gt; {
+    tasks.withType&lt;Test&gt; {
       useJUnitPlatform()
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443272.0317')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316169.8887')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -907,7 +919,7 @@ Gradle executes one or several tasks (arguments added to <code>./gradlew</code>)
 </div>
 <div class="listingblock code-height">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722522443272.011">println("This is executed during the configuration phase.")
+<pre class="highlight"><code class="language-shell" id="1722604316169.9744">println("This is executed during the configuration phase.")
 
 tasks.create("configured") {
     description = "My own configured task"
@@ -930,7 +942,7 @@ tasks.create("testWriteBoth") {
         println("This (testWriteBoth) is executed last during the execution phase.")
     }
     println("This (testWriteBoth) is executed during the configuration phase as well.")
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443272.011')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316169.9744')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -938,7 +950,7 @@ tasks.create("testWriteBoth") {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722522443272.113">$ ./gradlew tasks --all</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443272.113')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1722604316169.3833">$ ./gradlew tasks --all</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316169.3833')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -946,7 +958,7 @@ tasks.create("testWriteBoth") {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722522443272.9749">$ ./gradlew testWrite</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443272.9749')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1722604316169.2144">$ ./gradlew testWrite</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316169.2144')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -954,7 +966,7 @@ tasks.create("testWriteBoth") {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722522443272.8508">$ ./gradlew testWriteBoth</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443272.8508')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1722604316169.3352">$ ./gradlew testWriteBoth</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316169.3352')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -962,14 +974,14 @@ tasks.create("testWriteBoth") {
 </div>
 <div class="listingblock code-height">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722522443272.5767">$ ./gradlew testWrite
+<pre class="highlight"><code class="language-shell" id="1722604316169.4414">$ ./gradlew testWrite
 
-&amp;gt; Configure project :
+&gt; Configure project :
 This is executed during the configuration phase.
 This (configured) is also executed during the configuration phase.
 This (testWriteBoth) is executed during the configuration phase as well.
 
-...</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443272.5767')">Copy</button></pre>
+...</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316169.4414')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -1004,14 +1016,14 @@ This (testWriteBoth) is executed during the configuration phase as well.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722522443272.7273">dependencies {
+<pre class="highlight"><code class="language-kotlin" id="1722604316169.6887">dependencies {
     <span class="hljs-comment">// Use JUnit Jupiter for testing.</span>
     testImplementation(<span class="hljs-string">"org.junit.jupiter:junit-jupiter:5.10.0"</span>)
     testRuntimeOnly(<span class="hljs-string">"org.junit.jupiter:junit-jupiter-engine:5.10.0"</span>)
 
     <span class="hljs-comment">// This dependency is used by the application.</span>
     implementation(<span class="hljs-string">"org.springframework:spring-context:6.0.11"</span>)
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443272.7273')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316169.6887')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1038,10 +1050,10 @@ This (testWriteBoth) is executed during the configuration phase as well.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722522443273.7856">dependencies {
+<pre class="highlight"><code class="language-kotlin" id="1722604316169.2048">dependencies {
     implementation(group = <span class="hljs-string">"org.springframework"</span>, name = <span class="hljs-string">"spring-core"</span>, version = <span class="hljs-string">"2.5"</span>)
     implementation(<span class="hljs-string">"org.hibernate:hibernate:3.0.5"</span>)
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443273.7856')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316169.2048')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1049,9 +1061,9 @@ This (testWriteBoth) is executed during the configuration phase as well.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722522443273.617">dependencies {
+<pre class="highlight"><code class="language-kotlin" id="1722604316170.5571">dependencies {
     implementation(project(<span class="hljs-string">":shared"</span>))
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443273.617')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316170.5571')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1062,7 +1074,7 @@ This (testWriteBoth) is executed during the configuration phase as well.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722522443273.2822">dependencies {
+<pre class="highlight"><code class="language-kotlin" id="1722604316170.8323">dependencies {
     implementation(<span class="hljs-string">"org.hibernate:hibernate:3.1"</span>) {
         exclude(module = <span class="hljs-string">"cglib"</span>) <span class="hljs-comment">//by artifact name</span>
         exclude(group = <span class="hljs-string">"org.jmock"</span>) <span class="hljs-comment">//by group</span>
@@ -1070,7 +1082,7 @@ This (testWriteBoth) is executed during the configuration phase as well.
         <span class="hljs-comment">//disabling all transitive dependencies of this dependency</span>
         isTransitive = <span class="hljs-literal">false</span>
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443273.2822')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316170.8323')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1106,8 +1118,8 @@ This (testWriteBoth) is executed during the configuration phase as well.
 </ul>
 </div>
 </div>
-</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 01/08/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
+</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 02/08/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
 
-<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-KZZ4TXLO.js" type="module"></script>
+<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-EXB64UBH.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t0"},"c":{"7":[{"i":"t0","r":1}]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t7"},"c":{"7":[{"i":"t7","r":1}]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>

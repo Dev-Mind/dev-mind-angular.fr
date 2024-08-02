@@ -151,7 +151,19 @@
   </style>
   <script>
     function copyToClipboard(id) {
-      const text = document.getElementById(id).innerText;
+      const text = document.getElementById(id).innerText
+        .replaceAll('~$', '')
+        .replaceAll('(1)', '')
+        .replaceAll('(2)', '')
+        .replaceAll('(3)', '')
+        .replaceAll('(4)', '')
+        .replaceAll('(5)', '')
+        .replaceAll('(6)', '')
+        .replaceAll('(7)', '')
+        .replaceAll('(8)', '')
+        .replaceAll('(9)', '')
+        .replaceAll('(10)', '')
+      ;
       navigator.clipboard.writeText(text.substring(0, text.length));
     }
   </script>
@@ -162,20 +174,20 @@
   <app-root _nghost-ng-c582792440 ng-version="18.0.0" ngh="2" ng-server-context="ssg"><app-header _ngcontent-ng-c582792440 _nghost-ng-c2882497807 ngh="0"><header _ngcontent-ng-c2882497807><div _ngcontent-ng-c2882497807 class="header-img"><a _ngcontent-ng-c2882497807 routerlink="/" aria-label="Accueil" href="/"><img _ngcontent-ng-c2882497807 src="img/logo/logo_long.svg" alt="Dev-Mind" title="Dev-Mind"></a></div><nav _ngcontent-ng-c2882497807><a _ngcontent-ng-c2882497807 routerlink="/" aria-label="Accueil" class="nav-home" href="/"><img _ngcontent-ng-c2882497807 src="/img/ic_home_white_24px.svg" rel="start" alt="Accueil"></a><a _ngcontent-ng-c2882497807 routerlink="/formations.html" aria-label="Formations" class="active" href="/formations.html"> Formations</a><a _ngcontent-ng-c2882497807 routerlink="/blog.html" aria-label="Blog" class href="/blog.html">Blog</a><a _ngcontent-ng-c2882497807 routerlink="/experience.html" aria-label="Experience" class href="/experience.html"> Expérience</a></nav><hr _ngcontent-ng-c2882497807></header><div _ngcontent-ng-c2882497807 class="header-space"></div></app-header><router-outlet _ngcontent-ng-c582792440></router-outlet><app-asciidoc-viewer ngh="1"><div class="dm-block--blog"><div class="devmind-section"><h1><!--ngetn--></h1><div class="blog-keywords"><div class="dm-blog--info-date">08/11/2023</div><div class="dm-blog--keyword-detail">Java</div><div class="dm-blog--keyword-detail">Unit</div><div class="dm-blog--keyword-detail">Test</div><div class="dm-blog--keyword-detail">AssertJ</div><div class="dm-blog--keyword-detail">Mockito</div><div class="dm-blog--keyword-detail">Junit</div><!---->&nbsp; </div><div class="preview"><div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<a class="link" fragment="#_software_testing">Software testing</a>
+<li><a class="link" fragment="#_software_testing">Software testing</a>
 <ul class="sectlevel2">
 <li><a class="link" fragment="#_why_do_we_need_testing">Why do we need testing ?</a></li>
 <li><a class="link" fragment="#_why_do_we_need_to_automate_testing">Why do we need to automate testing ?</a></li>
 <li><a class="link" fragment="#_what_are_the_different_types_of_tests">What are the different types of tests ?</a></li>
 <li><a class="link" fragment="#_how_to_facilitate_the_writing_of_tests">How to facilitate the writing of tests?</a></li>
 </ul>
-
-<a class="link" fragment="#_unit_tests">Unit tests</a>
-<a class="link" fragment="#_black_box">Black box</a>
-<a class="link" fragment="#_junit">Junit</a>
-<a class="link" fragment="#_assertions">Assertions</a>
-<a class="link" fragment="#_mockito">Mockito</a>
-<a class="link" fragment="#_flask_unit_tests"><img src="/img/ic_flask.svg" style="width: 1em"> Unit tests</a>
+</li>
+<li><a class="link" fragment="#_unit_tests">Unit tests</a></li>
+<li><a class="link" fragment="#_black_box">Black box</a></li>
+<li><a class="link" fragment="#_junit">Junit</a></li>
+<li><a class="link" fragment="#_assertions">Assertions</a></li>
+<li><a class="link" fragment="#_mockito">Mockito</a></li>
+<li><a class="link" fragment="#_flask_unit_tests"><img src="/img/ic_flask.svg" style="width: 1em"> Unit tests</a></li>
 </ul>
 </div>
 <div id="preamble">
@@ -207,7 +219,7 @@
 <p>helps to identify errors by testing limits</p>
 </li>
 <li>
-<p>helps to not reproduce errors : when a bug occurs, we create a new test case, we fix the bug.. And after each code update, we execute this tests to know if the bug won’t occur anymore#</p>
+<p>helps to not reproduce errors : when a bug occurs, we create a new test case, we fix the bug.. And after each code update, we execute this tests to know if the bug won’t occur anymore</p>
 </li>
 <li>
 <p>helps to know how your code works : tests are often the best documentation to understand how a piece of source code works</p>
@@ -336,12 +348,12 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443683.7876"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">FriendService</span> {
+<pre class="highlight"><code class="language-java" id="1722604316642.9976"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">FriendService</span> {
    <span class="hljs-comment">/**
     * Compute friend age from his birth year
     */</span>
    <span class="hljs-type">int</span> <span class="hljs-title function_">computeFriendAge</span><span class="hljs-params">(Friend friend)</span>;
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443683.7876')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316642.9976')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -349,7 +361,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443683.4375"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">FriendServiceImpl</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">FriendService</span> {
+<pre class="highlight"><code class="language-java" id="1722604316643.1746"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">FriendServiceImpl</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">FriendService</span> {
     <span class="hljs-meta">@Override</span>
     <span class="hljs-keyword">public</span> <span class="hljs-type">int</span> <span class="hljs-title function_">computeFriendAge</span><span class="hljs-params">(Friend friend)</span> {
         <span class="hljs-keyword">if</span>(friend == <span class="hljs-literal">null</span>) {
@@ -357,7 +369,7 @@
         }
         <span class="hljs-keyword">return</span> LocalDate.now().getYear() - friend.getBirthYear();
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443683.4375')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316643.1746')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -384,7 +396,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443684.0662"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">FriendServiceImpl</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">FriendService</span> {
+<pre class="highlight"><code class="language-java" id="1722604316643.7634"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">FriendServiceImpl</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">FriendService</span> {
 
     <span class="hljs-keyword">private</span> FriendRepository friendRepository;
     <span class="hljs-keyword">private</span> IntegerComputer integerComputer;
@@ -397,7 +409,7 @@
 
 
     <span class="hljs-comment">// ...</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443684.0662')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316643.7634')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -417,7 +429,7 @@
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Use a fake object</strong>: You create an object only for your test (it’s not the best solution)</p>
+<p><strong>Use a fake object</strong>: You create an object only for your test</p>
 </li>
 <li>
 <p><strong>Use a spy object</strong>: You create a spy from the real implementation of one collaborator. You use a library for that, and you can override the returned values</p>
@@ -512,7 +524,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443685.0967"><span class="hljs-keyword">package</span> com.devmind.unitests.friend;
+<pre class="highlight"><code class="language-java" id="1722604316645.3254"><span class="hljs-keyword">package</span> com.devmind.unitests.friend;
 
 <span class="hljs-keyword">import</span> org.junit.jupiter.api.Assertions;
 <span class="hljs-keyword">import</span> org.junit.jupiter.api.BeforeEach;
@@ -544,9 +556,9 @@
 
     <span class="hljs-meta">@Test</span>
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">computeFriendAgeWithNullFriendShouldFail</span><span class="hljs-params">()</span> { <span class="hljs-comment">// 4.</span>
-        Assertions.assertThrows(IllegalArgumentException.class, () -&amp;gt; friendService.computeFriendAge(<span class="hljs-literal">null</span>));
+        Assertions.assertThrows(IllegalArgumentException.class, () <span class="hljs-meta">-&gt;</span> friendService.computeFriendAge(<span class="hljs-literal">null</span>));
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443685.0967')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316645.3254')">Copy</button></pre>
 </div>
 </div>
 <div class="olist arabic">
@@ -578,8 +590,8 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443685.9753">Assertions.assertThat(age).isEqualTo(<span class="hljs-number">45</span>);
-Assertions.assertThat(name).isEqualTo(<span class="hljs-string">"Bellamy"</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443685.9753')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1722604316645.1624">Assertions.assertThat(age).isEqualTo(<span class="hljs-number">45</span>);
+Assertions.assertThat(name).isEqualTo(<span class="hljs-string">"Bellamy"</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316645.1624')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -587,9 +599,9 @@ Assertions.assertThat(name).isEqualTo(<span class="hljs-string">"Bellamy"</span>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443686.2334">Assertions.assertThatThrownBy(() -&amp;gt; friendService.computeFriendAge(<span class="hljs-literal">null</span>))
+<pre class="highlight"><code class="language-java" id="1722604316645.7698">Assertions.assertThatThrownBy(() <span class="hljs-meta">-&gt;</span> friendService.computeFriendAge(<span class="hljs-literal">null</span>))
                 .isExactlyInstanceOf(IllegalArgumentException.class)
-                .hasMessage(<span class="hljs-string">"Friend is required"</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443686.2334')">Copy</button></pre>
+                .hasMessage(<span class="hljs-string">"Friend is required"</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316645.7698')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -597,9 +609,9 @@ Assertions.assertThat(name).isEqualTo(<span class="hljs-string">"Bellamy"</span>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443686.991">List&amp;lt;Friend&amp;gt; myFriends = Arrays.asList(
+<pre class="highlight"><code class="language-java" id="1722604316646.6255">List<span class="hljs-meta">&lt;Friend</span><span class="hljs-meta">&gt;</span> myFriends = Arrays.asList(
                 <span class="hljs-keyword">new</span> <span class="hljs-title class_">Friend</span>(<span class="hljs-string">"Elodie"</span>, <span class="hljs-number">1999</span>),
-                <span class="hljs-keyword">new</span> <span class="hljs-title class_">Friend</span>(<span class="hljs-string">"Charles"</span>, <span class="hljs-number">2001</span>));</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443686.991')">Copy</button></pre>
+                <span class="hljs-keyword">new</span> <span class="hljs-title class_">Friend</span>(<span class="hljs-string">"Charles"</span>, <span class="hljs-number">2001</span>));</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316646.6255')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -607,7 +619,7 @@ Assertions.assertThat(name).isEqualTo(<span class="hljs-string">"Bellamy"</span>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443686.2346">Assertions.assertThat(myFriends)
+<pre class="highlight"><code class="language-java" id="1722604316646.284">Assertions.assertThat(myFriends)
                   .hasSize(<span class="hljs-number">2</span>)
                   .extracting(Friend::getName)
                   .containsExactlyInAnyOrder(<span class="hljs-string">"Elodie"</span>, <span class="hljs-string">"Charles"</span>);
@@ -617,7 +629,7 @@ Assertions.assertThat(myFriends)
           .extracting(Friend::getName, Friend::getBirthYear)
           .containsExactlyInAnyOrder(
                   Tuple.tuple(<span class="hljs-string">"Elodie"</span>, <span class="hljs-number">1999</span>),
-                  Tuple.tuple(<span class="hljs-string">"Charles"</span>, <span class="hljs-number">2001</span>));</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443686.2346')">Copy</button></pre>
+                  Tuple.tuple(<span class="hljs-string">"Charles"</span>, <span class="hljs-number">2001</span>));</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316646.284')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -650,7 +662,7 @@ Assertions.assertThat(myFriends)
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443687.3699"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">FriendServiceImpl</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">FriendService</span> {
+<pre class="highlight"><code class="language-java" id="1722604316647.158"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">FriendServiceImpl</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">FriendService</span> {
 
     <span class="hljs-keyword">private</span> FriendRepository friendRepository; <span class="hljs-comment">// 1.</span>
 
@@ -660,12 +672,12 @@ Assertions.assertThat(myFriends)
 
     <span class="hljs-meta">@Override</span>
     <span class="hljs-keyword">public</span> <span class="hljs-type">double</span> <span class="hljs-title function_">computeFriendAgeAverage</span><span class="hljs-params">()</span> {
-        List&amp;lt;Friend&amp;gt; friends = friendRepository.findAll();
+        List<span class="hljs-meta">&lt;Friend</span><span class="hljs-meta">&gt;</span> friends = friendRepository.findAll();
         <span class="hljs-keyword">return</span> friends.stream().collect(Collectors.averagingInt(<span class="hljs-built_in">this</span>::computeFriendAge));
     }
 
     <span class="hljs-comment">// ...</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443687.3699')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316647.158')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -677,7 +689,7 @@ Assertions.assertThat(myFriends)
 <div style="page-break-after: always;"></div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443688.193"><span class="hljs-meta">@ExtendWith(MockitoExtension.class)</span> <span class="hljs-comment">// 1.</span>
+<pre class="highlight"><code class="language-java" id="1722604316648.327"><span class="hljs-meta">@ExtendWith(MockitoExtension.class)</span> <span class="hljs-comment">// 1.</span>
 <span class="hljs-keyword">class</span> <span class="hljs-title class_">FriendServiceTest</span> {
 
     <span class="hljs-meta">@Mock</span> <span class="hljs-comment">// 2.</span>
@@ -692,7 +704,7 @@ Assertions.assertThat(myFriends)
     <span class="hljs-meta">@Test</span>
     <span class="hljs-keyword">void</span> <span class="hljs-title function_">computeFriendAgeAverage</span><span class="hljs-params">()</span> {
         <span class="hljs-comment">// Arrange</span>
-        List&amp;lt;Friend&amp;gt; myFriends = List.of(
+        List<span class="hljs-meta">&lt;Friend</span><span class="hljs-meta">&gt;</span> myFriends = List.of(
                 <span class="hljs-keyword">new</span> <span class="hljs-title class_">Friend</span>(LocalDate.of(<span class="hljs-number">1999</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>), <span class="hljs-string">"Elodie"</span>),
                 <span class="hljs-keyword">new</span> <span class="hljs-title class_">Friend</span>(LocalDate.of(<span class="hljs-number">2001</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>), <span class="hljs-string">"Charles"</span>)
         );
@@ -704,7 +716,7 @@ Assertions.assertThat(myFriends)
         <span class="hljs-comment">// Assert</span>
         Assertions.assertThat(average).isEqualTo(<span class="hljs-number">22.0</span>);
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443688.193')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316648.327')">Copy</button></pre>
 </div>
 </div>
 <div style="page-break-after: always;"></div>
@@ -751,7 +763,7 @@ Assertions.assertThat(myFriends)
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443688.599">Mockito.when(friendRepository.findAll()).thenThrow(<span class="hljs-keyword">new</span> <span class="hljs-title class_">IllegalArgumentException</span>(<span class="hljs-string">"Error"</span>));</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443688.599')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1722604316648.9702">Mockito.when(friendRepository.findAll()).thenThrow(<span class="hljs-keyword">new</span> <span class="hljs-title class_">IllegalArgumentException</span>(<span class="hljs-string">"Error"</span>));</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316648.9702')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -780,7 +792,7 @@ Assertions.assertThat(myFriends)
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight">git clone <span class="hljs-attr">https</span>:<span class="hljs-comment">//github.com/Dev-Mind/unitTestInAction.git</span></pre>
+<pre class="highlight"><code class="language-shell" id="1722604316648.2947">git clone https://github.com/Dev-Mind/unitTestInAction.git</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316648.2947')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -788,7 +800,8 @@ Assertions.assertThat(myFriends)
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight">git clone git@github.<span class="hljs-property">com</span>:<span class="hljs-title class_">Dev</span>-<span class="hljs-title class_">Mind</span>/unitTestInAction.<span class="hljs-property">git</span></pre>
+<pre class="highlight"><code class="language-shell" id="1722604316648.184">git clone git@github.com:Dev-Mind/unitTestInAction.git
+----</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316648.184')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -892,8 +905,8 @@ Assertions.assertThat(myFriends)
 <p>Writing tests help to fix problems. Fix the code of <code>computeFriendAgeAverage</code> and return 0 when the list is empty. You can now fix your test</p>
 </div>
 </div>
-</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 01/08/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
+</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 02/08/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
 
-<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-KZZ4TXLO.js" type="module"></script>
+<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-EXB64UBH.js" type="module"></script>
 
 <script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t1"},"c":{"7":[{"i":"t1","r":1,"x":6}]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>

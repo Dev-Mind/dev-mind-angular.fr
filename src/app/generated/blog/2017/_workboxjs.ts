@@ -78,7 +78,7 @@ export const _workboxjs:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1722519597575.5442">gulp.<span class="hljs-title function_">task</span>(<span class="hljs-string">&#x27;bundle-sw&#x27;</span>, <span class="hljs-function">() =&gt;</span> {
+<pre class="highlight"><code class="language-javascript" id="1722604315119.5842">gulp.<span class="hljs-title function_">task</span>(<span class="hljs-string">&#x27;bundle-sw&#x27;</span>, <span class="hljs-function">() =&gt;</span> {
 
   <span class="hljs-keyword">return</span> wbBuild.<span class="hljs-title function_">generateSW</span>({
     <span class="hljs-attr">cacheId</span>: <span class="hljs-string">&#x27;dev-mind&#x27;</span>,
@@ -93,7 +93,7 @@ export const _workboxjs:string = `<div id="preamble">
     .<span class="hljs-title function_">catch</span>(<span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
       <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;[ERROR] This happened: &#x27;</span> + err);
     });
-});</code><button class="btn-copy-code" onclick="copyToClipboard('1722519597575.5442')">Copy</button></pre>
+});</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315119.5842')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -101,7 +101,7 @@ export const _workboxjs:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1722519597576.349">importScripts(<span class="hljs-string">&#x27;workbox-sw.prod.v1.0.1.js&#x27;</span>);
+<pre class="highlight"><code class="language-javascript" id="1722604315121.4165">importScripts(<span class="hljs-string">&#x27;workbox-sw.prod.v1.0.1.js&#x27;</span>);
 
 <span class="hljs-keyword">const</span> fileManifest = [
   {
@@ -115,7 +115,7 @@ export const _workboxjs:string = `<div id="preamble">
   <span class="hljs-string">&quot;cacheId&quot;</span>: <span class="hljs-string">&quot;dev-mind&quot;</span>,
   <span class="hljs-string">&quot;clientsClaim&quot;</span>: <span class="hljs-literal">true</span>
 });
-workboxSW.<span class="hljs-title function_">precache</span>(fileManifest);</code><button class="btn-copy-code" onclick="copyToClipboard('1722519597576.349')">Copy</button></pre>
+workboxSW.<span class="hljs-title function_">precache</span>(fileManifest);</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315121.4165')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -175,7 +175,7 @@ workboxSW.<span class="hljs-title function_">precache</span>(fileManifest);</cod
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1722519597580.2087"> <span class="hljs-keyword">const</span> assetRoute = <span class="hljs-keyword">new</span> <span class="hljs-title class_">RegExpRoute</span>({
+<pre class="highlight"><code class="language-javascript" id="1722604315125.3687"> <span class="hljs-keyword">const</span> assetRoute = <span class="hljs-keyword">new</span> <span class="hljs-title class_">RegExpRoute</span>({
    <span class="hljs-attr">regExp</span>: <span class="hljs-regexp">/assets/</span>,
    <span class="hljs-attr">handler</span>: <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">runtimeCaching</span>.<span class="hljs-title class_">StaleWhileRevalidate</span>(),
  });
@@ -191,7 +191,7 @@ workboxSW.<span class="hljs-title function_">precache</span>(fileManifest);</cod
  router.<span class="hljs-title function_">registerRoutes</span>({<span class="hljs-attr">routes</span>: [assetRoute, imageRoute, expressRoute]});
  router.<span class="hljs-title function_">setDefaultHandler</span>({
    <span class="hljs-attr">handler</span>: <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">runtimeCaching</span>.<span class="hljs-title class_">NetworkFirst</span>(),
- });</code><button class="btn-copy-code" onclick="copyToClipboard('1722519597580.2087')">Copy</button></pre>
+ });</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315125.3687')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -246,7 +246,7 @@ workboxSW.<span class="hljs-title function_">precache</span>(fileManifest);</cod
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1722519597584.985"><span class="hljs-keyword">const</span> requestWrapper = <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">runtimeCaching</span>.<span class="hljs-title class_">RequestWrapper</span>({
+<pre class="highlight"><code class="language-javascript" id="1722604315130.6687"><span class="hljs-keyword">const</span> requestWrapper = <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">runtimeCaching</span>.<span class="hljs-title class_">RequestWrapper</span>({
   <span class="hljs-attr">cacheName</span>: <span class="hljs-string">&#x27;runtime-cache&#x27;</span>,
   <span class="hljs-attr">plugins</span>: [
     <span class="hljs-comment">// The cache size will be capped at 10 entries.</span>
@@ -258,7 +258,7 @@ workboxSW.<span class="hljs-title function_">precache</span>(fileManifest);</cod
 <span class="hljs-keyword">const</span> route = <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">routing</span>.<span class="hljs-title class_">RegExpRoute</span>({
   <span class="hljs-attr">match</span>: <span class="hljs-function">(<span class="hljs-params">{url}</span>) =&gt;</span> url.<span class="hljs-property">domain</span> === <span class="hljs-string">&#x27;dev-mind.fr&#x27;</span>,
   <span class="hljs-attr">handler</span>: <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">runtimeCaching</span>.<span class="hljs-title class_">StaleWhileRevalidate</span>({requestWrapper})
-});</code><button class="btn-copy-code" onclick="copyToClipboard('1722519597584.985')">Copy</button></pre>
+});</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315130.6687')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -278,7 +278,7 @@ workboxSW.<span class="hljs-title function_">precache</span>(fileManifest);</cod
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1722519597588.0347"><span class="hljs-keyword">let</span> bgQueue = <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">backgroundSync</span>.<span class="hljs-title class_">QueuePlugin</span>({
+<pre class="highlight"><code class="language-javascript" id="1722604315134.8384"><span class="hljs-keyword">let</span> bgQueue = <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">backgroundSync</span>.<span class="hljs-title class_">QueuePlugin</span>({
   <span class="hljs-attr">callbacks</span>: {
     <span class="hljs-attr">onResponse</span>: <span class="hljs-title function_">async</span>(hash, res) =&gt; {
       <span class="hljs-comment">// une notification sera affichée quand tout est OK</span>
@@ -301,7 +301,7 @@ workboxSW.<span class="hljs-title function_">precache</span>(fileManifest);</cod
 });
 
 <span class="hljs-keyword">const</span> router = <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">routing</span>.<span class="hljs-title class_">Router</span>();
-router.<span class="hljs-title function_">registerRoute</span>({route});</code><button class="btn-copy-code" onclick="copyToClipboard('1722519597588.0347')">Copy</button></pre>
+router.<span class="hljs-title function_">registerRoute</span>({route});</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315134.8384')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -315,7 +315,7 @@ router.<span class="hljs-title function_">registerRoute</span>({route});</code><
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1722519597591.1497"><span class="hljs-keyword">const</span> cacheablePlugin = <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">cacheableResponse</span>.<span class="hljs-title class_">Plugin</span>({
+<pre class="highlight"><code class="language-javascript" id="1722604315137.3381"><span class="hljs-keyword">const</span> cacheablePlugin = <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">cacheableResponse</span>.<span class="hljs-title class_">Plugin</span>({
   <span class="hljs-attr">statuses</span>: [<span class="hljs-number">0</span>, <span class="hljs-number">200</span>]
 });
 
@@ -329,7 +329,7 @@ router.<span class="hljs-title function_">registerRoute</span>({route});</code><
 <span class="hljs-keyword">const</span> route = <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">routing</span>.<span class="hljs-title class_">RegExpRoute</span>({
   <span class="hljs-attr">match</span>: <span class="hljs-function">(<span class="hljs-params">{url}</span>) =&gt;</span> url.<span class="hljs-property">domain</span> === <span class="hljs-string">&#x27;example.com&#x27;</span>,
   <span class="hljs-attr">handler</span>: <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">runtimeCaching</span>.<span class="hljs-title class_">StaleWhileRevalidate</span>({requestWrapper})
-});</code><button class="btn-copy-code" onclick="copyToClipboard('1722519597591.1497')">Copy</button></pre>
+});</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315137.3381')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -340,7 +340,7 @@ router.<span class="hljs-title function_">registerRoute</span>({route});</code><
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1722519597593.962"><span class="hljs-keyword">const</span> requestWrapper = <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">runtimeCaching</span>.<span class="hljs-title class_">RequestWrapper</span>({
+<pre class="highlight"><code class="language-javascript" id="1722604315139.1616"><span class="hljs-keyword">const</span> requestWrapper = <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">runtimeCaching</span>.<span class="hljs-title class_">RequestWrapper</span>({
   <span class="hljs-attr">cacheName</span>: <span class="hljs-string">&#x27;text-files&#x27;</span>,
   <span class="hljs-attr">plugins</span>: [
     <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">broadcastCacheUpdate</span>.<span class="hljs-title class_">BroadcastCacheUpdatePlugin</span>(
@@ -354,7 +354,7 @@ router.<span class="hljs-title function_">registerRoute</span>({route});</code><
 });
 
 <span class="hljs-keyword">const</span> router = <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">routing</span>.<span class="hljs-title class_">Router</span>();
-router.<span class="hljs-title function_">registerRoute</span>({route});</code><button class="btn-copy-code" onclick="copyToClipboard('1722519597593.962')">Copy</button></pre>
+router.<span class="hljs-title function_">registerRoute</span>({route});</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315139.1616')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -362,10 +362,10 @@ router.<span class="hljs-title function_">registerRoute</span>({route});</code><
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1722519597594.5884"><span class="hljs-keyword">const</span> updateChannel = <span class="hljs-keyword">new</span> <span class="hljs-title class_">BroadcastChannel</span>(<span class="hljs-string">&#x27;cache-updates&#x27;</span>);
+<pre class="highlight"><code class="language-javascript" id="1722604315140.5818"><span class="hljs-keyword">const</span> updateChannel = <span class="hljs-keyword">new</span> <span class="hljs-title class_">BroadcastChannel</span>(<span class="hljs-string">&#x27;cache-updates&#x27;</span>);
 updateChannel.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;message&#x27;</span>, <span class="hljs-function"><span class="hljs-params">event</span> =&gt;</span> {
   <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;Cache updated: @dollar@{event.data.payload.updatedUrl}&#x27;</span>);
-});</code><button class="btn-copy-code" onclick="copyToClipboard('1722519597594.5884')">Copy</button></pre>
+});</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315140.5818')">Copy</button></pre>
 </div>
 </div>
 </div>

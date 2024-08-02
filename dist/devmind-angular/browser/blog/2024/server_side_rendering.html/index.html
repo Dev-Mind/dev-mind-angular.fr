@@ -151,7 +151,19 @@
   </style>
   <script>
     function copyToClipboard(id) {
-      const text = document.getElementById(id).innerText;
+      const text = document.getElementById(id).innerText
+        .replaceAll('~$', '')
+        .replaceAll('(1)', '')
+        .replaceAll('(2)', '')
+        .replaceAll('(3)', '')
+        .replaceAll('(4)', '')
+        .replaceAll('(5)', '')
+        .replaceAll('(6)', '')
+        .replaceAll('(7)', '')
+        .replaceAll('(8)', '')
+        .replaceAll('(9)', '')
+        .replaceAll('(10)', '')
+      ;
       navigator.clipboard.writeText(text.substring(0, text.length));
     }
   </script>
@@ -162,18 +174,18 @@
   <app-root _nghost-ng-c582792440 ng-version="18.0.0" ngh="2" ng-server-context="ssg"><app-header _ngcontent-ng-c582792440 _nghost-ng-c2882497807 ngh="0"><header _ngcontent-ng-c2882497807><div _ngcontent-ng-c2882497807 class="header-img"><a _ngcontent-ng-c2882497807 routerlink="/" aria-label="Accueil" href="/"><img _ngcontent-ng-c2882497807 src="img/logo/logo_long.svg" alt="Dev-Mind" title="Dev-Mind"></a></div><nav _ngcontent-ng-c2882497807><a _ngcontent-ng-c2882497807 routerlink="/" aria-label="Accueil" class="nav-home" href="/"><img _ngcontent-ng-c2882497807 src="/img/ic_home_white_24px.svg" rel="start" alt="Accueil"></a><a _ngcontent-ng-c2882497807 routerlink="/formations.html" aria-label="Formations" class href="/formations.html"> Formations</a><a _ngcontent-ng-c2882497807 routerlink="/blog.html" aria-label="Blog" class="active" href="/blog.html">Blog</a><a _ngcontent-ng-c2882497807 routerlink="/experience.html" aria-label="Experience" class href="/experience.html"> Expérience</a></nav><hr _ngcontent-ng-c2882497807></header><div _ngcontent-ng-c2882497807 class="header-space"></div></app-header><router-outlet _ngcontent-ng-c582792440></router-outlet><app-asciidoc-viewer ngh="1"><div class="dm-block--blog"><div class="devmind-section"><h1><!--ngetn--></h1><div class="blog-keywords"><div class="dm-blog--info-date">31/05/2024</div><div class="dm-blog--keyword-detail">Angular</div><!---->&nbsp; </div><div class="preview"><div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<a class="link" fragment="#_pourquoi_le_ssr">Pourquoi le SSR ?</a>
+<li><a class="link" fragment="#_pourquoi_le_ssr">Pourquoi le SSR ?</a>
 <ul class="sectlevel2">
 <li><a class="link" fragment="#_comment_fonctionne_le_ssr">Comment fonctionne le SSR ?</a></li>
 <li><a class="link" fragment="#_inconvénients_du_ssr">Inconvénients du SSR</a></li>
 </ul>
-
-<a class="link" fragment="#_mettre_en_place_le_ssr_dans_une_application_angular">Mettre en place le SSR dans une application Angular</a>
+</li>
+<li><a class="link" fragment="#_mettre_en_place_le_ssr_dans_une_application_angular">Mettre en place le SSR dans une application Angular</a>
 <ul class="sectlevel2">
 <li><a class="link" fragment="#_comment_procéder">Comment procéder ?</a></li>
 </ul>
-
-<a class="link" fragment="#_conclusion">Conclusion</a>
+</li>
+<li><a class="link" fragment="#_conclusion">Conclusion</a></li>
 </ul>
 </div>
 <div id="preamble">
@@ -275,7 +287,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722522442854.9075">ng new my-ssr-app</code><button class="btn-copy-code" onclick="copyToClipboard('1722522442854.9075')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1722604315718.0444">ng new my-ssr-app</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315718.0444')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -283,11 +295,11 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722522442854.342">$ ng new my-ssr-app
+<pre class="highlight"><code class="language-shell" id="1722604315718.9941">$ ng new my-ssr-app
 ? Which stylesheet format would you like to use? Sass (SCSS)     [
 https://sass-lang.com/documentation/syntax#scss                ]
 ? Do you want to enable Server-Side Rendering (SSR) and Static Site Generation (SSG/Prerendering)?
-(y/N)</code><button class="btn-copy-code" onclick="copyToClipboard('1722522442854.342')">Copy</button></pre>
+(y/N)</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315718.9941')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -295,7 +307,7 @@ https://sass-lang.com/documentation/syntax#scss                ]
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722522442854.2776">ng add @nguniversal/express-engine</code><button class="btn-copy-code" onclick="copyToClipboard('1722522442854.2776')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1722604315718.9731">ng add @nguniversal/express-engine</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315718.9731')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -303,7 +315,7 @@ https://sass-lang.com/documentation/syntax#scss                ]
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-json" id="1722522442855.648"><span class="hljs-punctuation">{</span>
+<pre class="highlight"><code class="language-json" id="1722604315719.6675"><span class="hljs-punctuation">{</span>
   <span class="hljs-attr">"name"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"my-ssr-app"</span><span class="hljs-punctuation">,</span>
   <span class="hljs-attr">"version"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"0.0.0"</span><span class="hljs-punctuation">,</span>
   <span class="hljs-attr">"scripts"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
@@ -315,7 +327,7 @@ https://sass-lang.com/documentation/syntax#scss                ]
     <span class="hljs-attr">"serve:ssr:example"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"node dist/example/server/server.mjs"</span>
   <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
   ...
-<span class="hljs-punctuation">}</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722522442855.648')">Copy</button></pre>
+<span class="hljs-punctuation">}</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722604315719.6675')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -323,7 +335,7 @@ https://sass-lang.com/documentation/syntax#scss                ]
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722522442855.7087">npm run watch</code><button class="btn-copy-code" onclick="copyToClipboard('1722522442855.7087')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1722604315719.4856">npm run watch</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315719.4856')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -331,7 +343,7 @@ https://sass-lang.com/documentation/syntax#scss                ]
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722522442855.9392">npm run  serve:ssr:example</code><button class="btn-copy-code" onclick="copyToClipboard('1722522442855.9392')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1722604315720.0332">npm run  serve:ssr:example</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315720.0332')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -353,8 +365,8 @@ https://sass-lang.com/documentation/syntax#scss                ]
 <p>Le SSR est une bonne option pour les sites web statiques qui ne changent pas souvent de contenu. Mon site web est un excellent exemple. Il est composé de pages statiques générées en Asciisdoc et le travail se fait à la compilation.</p>
 </div>
 </div>
-</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 01/08/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
+</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 02/08/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
 
-<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-KZZ4TXLO.js" type="module"></script>
+<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-EXB64UBH.js" type="module"></script>
 
 <script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t0"},"c":{"7":[{"i":"t0","r":1}]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>

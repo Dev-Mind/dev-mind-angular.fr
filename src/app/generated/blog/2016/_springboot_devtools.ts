@@ -18,7 +18,7 @@ export const _springboot_devtools:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722519596778.5464">compile <span class="hljs-string">&quot;org.springframework.boot:spring-boot-devtools&quot;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722519596778.5464')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1722604314757.4111">compile <span class="hljs-string">&quot;org.springframework.boot:spring-boot-devtools&quot;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722604314757.4111')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -40,7 +40,7 @@ export const _springboot_devtools:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722519596779.1125">./gradlew bootRun</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596779.1125')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1722604314757.1328">./gradlew bootRun</code><button class="btn-copy-code" onclick="copyToClipboard('1722604314757.1328')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -68,7 +68,7 @@ export const _springboot_devtools:string = `<div id="preamble">
 <h2 id="_redémarrage_automatique">Redémarrage automatique</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Lorsque DevTools est ajouté à votre projet Spring, la compilation d&#8217;un fichier source va déclencher un redémarrage pour vous aider à tester au plus vite votre modification. La compilation n&#8217;est pas toujours automatique dans un IDE. Sous IntelliJ vous devez faire <code><em>Ctrl+F9</em></code> ou aller dans le menu <code><em>Build</em></code> &gt; <code><em>Make project</em></code>.</p>
+<p>Lorsque DevTools est ajouté à votre projet Spring, la compilation d&#8217;un fichier source va déclencher un redémarrage pour vous aider à tester au plus vite votre modification. La compilation n&#8217;est pas toujours automatique dans un IDE. Sous IntelliJ vous devez faire <code><em>Ctrl+F9</em></code> ou aller dans le menu <code><em>Build</em></code> @GT <code><em>Make project</em></code>.</p>
 </div>
 <div class="paragraph">
 <p>Super mais quand est il de ma partie Javascript ?</p>
@@ -81,7 +81,7 @@ export const _springboot_devtools:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1722519596780.667"><span class="hljs-attr">spring</span>:
+<pre class="highlight"><code class="language-javascript" id="1722604314760.4924"><span class="hljs-attr">spring</span>:
   <span class="hljs-attr">profiles</span>: dev
   <span class="hljs-attr">resources</span>:
     <span class="hljs-keyword">static</span>-<span class="hljs-attr">locations</span>:
@@ -92,7 +92,7 @@ export const _springboot_devtools:string = `<div id="preamble">
       additional-<span class="hljs-attr">paths</span>:
         - ../dm-client/app/
         - ../dm-client/build/.<span class="hljs-property">tmp</span>/
-      additional-<span class="hljs-attr">exclude</span>: <span class="hljs-string">&quot;**/*.js, **/*.css, **/*.html&quot;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722519596780.667')">Copy</button></pre>
+      additional-<span class="hljs-attr">exclude</span>: <span class="hljs-string">&quot;**/*.js, **/*.css, **/*.html&quot;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722604314760.4924')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -137,7 +137,7 @@ export const _springboot_devtools:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1722519596781.6091">gulp watch</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596781.6091')">Copy</button></pre>
+<pre class="highlight"><code class="language-javascript" id="1722604314760.3916">gulp watch</code><button class="btn-copy-code" onclick="copyToClipboard('1722604314760.3916')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -145,12 +145,12 @@ export const _springboot_devtools:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1722519596782.3965">gulp.<span class="hljs-title function_">task</span>(<span class="hljs-string">&#x27;watch&#x27;</span>, [<span class="hljs-string">&#x27;scripts&#x27;</span>, <span class="hljs-string">&#x27;styles&#x27;</span>, <span class="hljs-string">&#x27;html-template&#x27;</span>], <span class="hljs-function">() =&gt;</span> {
+<pre class="highlight"><code class="language-javascript" id="1722604314762.0837">gulp.<span class="hljs-title function_">task</span>(<span class="hljs-string">&#x27;watch&#x27;</span>, [<span class="hljs-string">&#x27;scripts&#x27;</span>, <span class="hljs-string">&#x27;styles&#x27;</span>, <span class="hljs-string">&#x27;html-template&#x27;</span>], <span class="hljs-function">() =&gt;</span> {
   gulp.<span class="hljs-title function_">watch</span>([<span class="hljs-string">&#x27;app/**/*.html&#x27;</span>], [<span class="hljs-string">&#x27;html-template&#x27;</span>, reload]);
   gulp.<span class="hljs-title function_">watch</span>([<span class="hljs-string">&#x27;app/src/**/*.{scss,css}&#x27;</span>], [<span class="hljs-string">&#x27;styles&#x27;</span>, reload]);
   gulp.<span class="hljs-title function_">watch</span>([<span class="hljs-string">&#x27;app/**/*.js&#x27;</span>], [<span class="hljs-string">&#x27;lint&#x27;</span>, <span class="hljs-string">&#x27;scripts&#x27;</span>]);
   gulp.<span class="hljs-title function_">watch</span>([<span class="hljs-string">&#x27;app/images/**/*&#x27;</span>], reload);
-});</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596782.3965')">Copy</button></pre>
+});</code><button class="btn-copy-code" onclick="copyToClipboard('1722604314762.0837')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">

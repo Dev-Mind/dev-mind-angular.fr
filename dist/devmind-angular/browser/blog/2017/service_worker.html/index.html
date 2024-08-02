@@ -151,7 +151,19 @@
   </style>
   <script>
     function copyToClipboard(id) {
-      const text = document.getElementById(id).innerText;
+      const text = document.getElementById(id).innerText
+        .replaceAll('~$', '')
+        .replaceAll('(1)', '')
+        .replaceAll('(2)', '')
+        .replaceAll('(3)', '')
+        .replaceAll('(4)', '')
+        .replaceAll('(5)', '')
+        .replaceAll('(6)', '')
+        .replaceAll('(7)', '')
+        .replaceAll('(8)', '')
+        .replaceAll('(9)', '')
+        .replaceAll('(10)', '')
+      ;
       navigator.clipboard.writeText(text.substring(0, text.length));
     }
   </script>
@@ -211,7 +223,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1722522441868.6663"><span class="hljs-comment">// Création du worker</span>
+<pre class="highlight"><code class="language-javascript" id="1722604315040.6252"><span class="hljs-comment">// Création du worker</span>
 <span class="hljs-keyword">var</span> worker = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Worker</span>(<span class="hljs-string">'doWork.js'</span>);
 
 <span class="hljs-comment">// On crée un event listener pour intercepter les messages envoyés par le worker</span>
@@ -220,7 +232,7 @@ worker.<span class="hljs-title function_">addEventListener</span>(<span class="h
 }, <span class="hljs-literal">false</span>);
 
 <span class="hljs-comment">// Vous pouvez à tout moment envoyé un message au worker</span>
-worker.<span class="hljs-title function_">postMessage</span>(<span class="hljs-string">'Hello World'</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1722522441868.6663')">Copy</button></pre>
+worker.<span class="hljs-title function_">postMessage</span>(<span class="hljs-string">'Hello World'</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315040.6252')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -228,11 +240,11 @@ worker.<span class="hljs-title function_">postMessage</span>(<span class="hljs-s
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1722522441869.05"><span class="hljs-comment">// On crée un listener pour recevoir les messages du thread principal</span>
+<pre class="highlight"><code class="language-javascript" id="1722604315041.1145"><span class="hljs-comment">// On crée un listener pour recevoir les messages du thread principal</span>
 self.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'message'</span>,<span class="hljs-function">(<span class="hljs-params">e</span>) =&gt;</span> {
    <span class="hljs-comment">// la méthode postMessage permet de renvoyer un message</span>
    self.<span class="hljs-title function_">postMessage</span>(e.<span class="hljs-property">data</span>);
-}, <span class="hljs-literal">false</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1722522441869.05')">Copy</button></pre>
+}, <span class="hljs-literal">false</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315041.1145')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -272,9 +284,9 @@ self.<span class="hljs-title function_">addEventListener</span>(<span class="hlj
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1722522441870.2803"><span class="hljs-keyword">if</span> (<span class="hljs-string">'serviceWorker'</span> <span class="hljs-keyword">in</span> navigator){
+<pre class="highlight"><code class="language-javascript" id="1722604315042.08"><span class="hljs-keyword">if</span> (<span class="hljs-string">'serviceWorker'</span> <span class="hljs-keyword">in</span> navigator){
     <span class="hljs-comment">// ..</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522441870.2803')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315042.08')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -305,8 +317,8 @@ self.<span class="hljs-title function_">addEventListener</span>(<span class="hlj
 <p>Nous venons de voir comment fonctionnait un service worker. Regardons maintenant comment se passe la mise en place. Pour celà rendez vous dans l’article <a href="https://www.dev-mind.fr/blog/2017/creer_service_worker.html">créer un service worker</a>.</p>
 </div>
 </div>
-</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 01/08/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
+</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 02/08/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
 
-<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-KZZ4TXLO.js" type="module"></script>
+<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-EXB64UBH.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t7"},"c":{"7":[{"i":"t7","r":1,"x":3}]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t1"},"c":{"7":[{"i":"t1","r":1,"x":3}]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>

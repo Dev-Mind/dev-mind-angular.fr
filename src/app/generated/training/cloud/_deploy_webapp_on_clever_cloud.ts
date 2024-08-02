@@ -1,19 +1,19 @@
 export const _deploy_webapp_on_clever_cloud:string = `<div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<a class="link" fragment="#_clever_cloud">Clever Cloud</a>
+<li><a class="link" fragment="#_clever_cloud">Clever Cloud</a>
 <ul class="sectlevel2">
 <li><a class="link" fragment="#_account_creation">Account creation</a></li>
 <li><a class="link" fragment="#_configure_your_project">Configure your project</a></li>
 <li><a class="link" fragment="#_deploy_on_clevercloud">Deploy on Clevercloud</a></li>
 </ul>
-
-<a class="link" fragment="#_common_errors">Common errors</a>
+</li>
+<li><a class="link" fragment="#_common_errors">Common errors</a>
 <ul class="sectlevel2">
 <li><a class="link" fragment="#_java_version">Java version</a></li>
 <li><a class="link" fragment="#_windows">Windows</a></li>
 </ul>
-
+</li>
 </ul>
 </div>
 <div class="sect1">
@@ -88,7 +88,7 @@ export const _deploy_webapp_on_clever_cloud:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722519595918.8574">{
+<pre class="highlight"><code class="language-java" id="1722604316127.178">{
   <span class="hljs-string">&quot;build&quot;</span>: {
     <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;gradle&quot;</span>,
     <span class="hljs-string">&quot;goal&quot;</span>: <span class="hljs-string">&quot;assemble&quot;</span>
@@ -96,7 +96,7 @@ export const _deploy_webapp_on_clever_cloud:string = `<div id="toc" class="toc">
   <span class="hljs-string">&quot;deploy&quot;</span>: {
     <span class="hljs-string">&quot;jarName&quot;</span>: <span class="hljs-string">&quot;./build/libs/automacorp-0.0.1-SNAPSHOT.jar&quot;</span>
   }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722519595918.8574')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316127.178')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">

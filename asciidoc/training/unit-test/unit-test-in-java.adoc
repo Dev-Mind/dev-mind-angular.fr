@@ -21,7 +21,7 @@ Software testing is very important when you create an application, because it
 
 * checks if the actual results match the expected results
 * helps to identify errors by testing limits
-* helps to not reproduce errors : when a bug occurs, we create a new test case, we fix the bug.. And after each code update, we execute this tests to know if the bug won't occur anymore#
+* helps to not reproduce errors : when a bug occurs, we create a new test case, we fix the bug.. And after each code update, we execute this tests to know if the bug won't occur anymore
 * helps to know how your code works : tests are often the best documentation to understand how a piece of source code works
 * helps you be more confident when you need to evolve your code: if you have good code coverage by testing, you will identify regressions quickly
 
@@ -140,7 +140,7 @@ image::../../img/training/unit-test/test3.png[width=800, align="center"]
 
 To simulate collabators, you have several possibilities
 
-* *Use a fake object*: You create an object only for your test (it's not the best solution)
+* *Use a fake object*: You create an object only for your test
 * *Use a spy object*: You create a spy from the real implementation of one collaborator. You use a library for that, and you can override the returned values
 * *Use a mock object*: A mock is created via a library from a specified contract (an interface). And you can pre preprogram these objects to return your wanted values during the test
 
@@ -380,15 +380,16 @@ I won't talk about several features of Mockito, but you can read the official do
 
 Use Git to clone the following project in a folder in your workspace. Use a terminal and launch this command if you use basic auth in Github
 
-```
+[source,shell, subs="specialchars"]
+----
 git clone https://github.com/Dev-Mind/unitTestInAction.git
-```
+----
 
 If you use a SSH key launch
 
-```
+[source,shell, subs="specialchars"]
 git clone git@github.com:Dev-Mind/unitTestInAction.git
-```
+----
 
 This project is a https://dev-mind.fr/training/gradle/gradle.html[Gradle] project. You can open it in IntelliJ and configure it as we explained in the last course lecture.
 

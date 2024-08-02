@@ -178,7 +178,7 @@ NOTE: Git will display a warning if you name the default branch master (default 
 === Linking files to Git
 Let's start by creating files in this `git-demo` directory
 
-[source,shell,subs="specialchars"]
+[source,shell,subs="verbatim"]
 ----
 ~$ echo "Hello world" > hello.txt
 ~$ echo "<html><body><h1>Hello World</h1></body></html>" > hello.html
@@ -210,8 +210,8 @@ Use the `git add` command to indicate that a new or multiple files will be handl
 
 [source,shell]
 ----
-~$ git add hello.txt (1)
-~$ git add .         (2)
+~$ git add hello.txt
+~$ git add .
 ----
 
 1. Adds hello.txt file
@@ -241,9 +241,9 @@ The following command saves the snapshot in the project history and completes th
 
 [source,shell]
 ----
-~$ git commit -m "First commit"     (1)
+~$ git commit -m "First commit"
 
-[main a7d5b84] First commit       (2)
+[main a7d5b84] First commit
  3 files changed, 3 insertions(+)
  create mode 100644 hello.html
  create mode 100644 hello.md

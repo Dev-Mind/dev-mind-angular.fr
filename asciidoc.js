@@ -70,7 +70,11 @@ async function convertAsciiDocFiles(section) {
           .replaceAll('`', '@backtick@')
           .replaceAll('&quot;', '@quot@')
           .replaceAll('&apos;', '@apos@')
-          .replaceAll('href="#', 'href="@link@#');
+          .replaceAll('-&gt;', '@LAMBDA')
+          .replaceAll('=&gt;', '@ARROW')
+          .replaceAll('&gt;', '@GT')
+          .replaceAll('&lt;', '@LT')
+          .replaceAll('href="#', 'class="link" fragment="#');
 
 
         // We use cheerio to parse the html and highlight the code
@@ -81,11 +85,6 @@ async function convertAsciiDocFiles(section) {
           normalizeWhitespace: false,
           recognizeSelfClosing: true
         });
-
-        html('div.toc li').each((index, code) => {
-          const elem = html(code);
-          elem.replaceWith(elem.html().replaceAll('href="@link@', 'class="link" fragment="'));
-        })
 
         html('pre.highlight code').each((index, code) => {
           const elem = html(code);

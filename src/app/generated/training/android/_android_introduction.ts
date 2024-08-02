@@ -1,13 +1,13 @@
 export const _android_introduction:string = `<div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<a class="link" fragment="#_android_ecosystem">Android ecosystem</a>
+<li><a class="link" fragment="#_android_ecosystem">Android ecosystem</a>
 <ul class="sectlevel2">
 <li><a class="link" fragment="#_android_the_most_used_os">Android the most used OS</a></li>
 <li><a class="link" fragment="#_principle_of_mobile_programming">Principle of mobile programming</a></li>
 </ul>
-
-<a class="link" fragment="#_android_platform">Android platform</a>
+</li>
+<li><a class="link" fragment="#_android_platform">Android platform</a>
 <ul class="sectlevel2">
 <li><a class="link" fragment="#_linux_kernel">Linux kernel</a></li>
 <li><a class="link" fragment="#_hardware_abstraction_layer_hal">Hardware abstraction layer (HAL)</a></li>
@@ -15,15 +15,15 @@ export const _android_introduction:string = `<div id="toc" class="toc">
 <li><a class="link" fragment="#_development_tool_and_ide">Development tool and IDE</a></li>
 <li><a class="link" fragment="#_security">Security</a></li>
 </ul>
-
-<a class="link" fragment="#_fragmentation">Fragmentation</a>
+</li>
+<li><a class="link" fragment="#_fragmentation">Fragmentation</a>
 <ul class="sectlevel2">
 <li><a class="link" fragment="#_fragmentation_on_the_os_versions">Fragmentation on the OS versions</a></li>
 <li><a class="link" fragment="#_screen_level_fragmentation">Screen-level fragmentation</a></li>
 <li><a class="link" fragment="#_fragmentation_at_the_hardware_level">Fragmentation at the hardware level</a></li>
 </ul>
-
-<a class="link" fragment="#_conclusion">Conclusion</a>
+</li>
+<li><a class="link" fragment="#_conclusion">Conclusion</a></li>
 </ul>
 </div>
 <div id="preamble">

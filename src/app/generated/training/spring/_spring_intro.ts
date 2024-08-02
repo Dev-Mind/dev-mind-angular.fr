@@ -1,40 +1,40 @@
 export const _spring_intro:string = `<div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<a class="link" fragment="#_introduction">Introduction</a>
+<li><a class="link" fragment="#_introduction">Introduction</a>
 <ul class="sectlevel2">
 <li><a class="link" fragment="#_requirements">Requirements</a></li>
 <li><a class="link" fragment="#_whats_spring">What&#8217;s Spring ?</a></li>
 <li><a class="link" fragment="#_spring_framework">Spring framework</a></li>
 <li><a class="link" fragment="#_documentation">Documentation</a></li>
 </ul>
-
-<a class="link" fragment="#_spring_boot">Spring Boot</a>
+</li>
+<li><a class="link" fragment="#_spring_boot">Spring Boot</a>
 <ul class="sectlevel2">
 <li><a class="link" fragment="#_spring_boot_starters">Spring boot starters</a></li>
 <li><a class="link" fragment="#_spring_boot_autoconfiguration">Spring Boot autoconfiguration</a></li>
 </ul>
-
-<a class="link" fragment="#_flask_start_a_new_project"><span class="icon">[flask&#93;</span> Start a new project</a>
+</li>
+<li><a class="link" fragment="#_flask_start_a_new_project"><span class="icon">[flask&#93;</span> Start a new project</a>
 <ul class="sectlevel2">
 <li><a class="link" fragment="#_generate">Generate</a></li>
 <li><a class="link" fragment="#_import_zip_in_your_ide">Import zip in your IDE</a></li>
 </ul>
-
-<a class="link" fragment="#_flask_launch_application"><span class="icon">[flask&#93;</span> Launch application</a>
+</li>
+<li><a class="link" fragment="#_flask_launch_application"><span class="icon">[flask&#93;</span> Launch application</a>
 <ul class="sectlevel2">
 <li><a class="link" fragment="#_with_gradle">With Gradle</a></li>
 <li><a class="link" fragment="#_application_packaging">Application packaging</a></li>
 <li><a class="link" fragment="#_launch_application_in_dev_mode">Launch application in dev mode</a></li>
 </ul>
-
-<a class="link" fragment="#_flask_update_the_welcome_page_of_your_app"><span class="icon">[flask&#93;</span> Update the welcome page of your app</a>
-<a class="link" fragment="#_understand_whats_happened">Understand what&#8217;s happened</a>
+</li>
+<li><a class="link" fragment="#_flask_update_the_welcome_page_of_your_app"><span class="icon">[flask&#93;</span> Update the welcome page of your app</a></li>
+<li><a class="link" fragment="#_understand_whats_happened">Understand what&#8217;s happened</a>
 <ul class="sectlevel2">
 <li><a class="link" fragment="#_spring_framework_2">Spring Framework</a></li>
 <li><a class="link" fragment="#_spring_boot_2">Spring Boot</a></li>
 </ul>
-
+</li>
 </ul>
 </div>
 <div id="preamble">
@@ -288,19 +288,19 @@ A framework comes with rules to organize developments</p>
 <div class="sect3">
 <h4 id="_read_gradle_configuration">Read Gradle configuration</h4>
 <div class="paragraph">
-<p>File : <strong>&gt; settings.gradle.kts</strong> contains the project name</p>
+<p>File : <strong>@GT settings.gradle.kts</strong> contains the project name</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722519596327.5833">rootProject.name = <span class="hljs-string">&quot;automacorp&quot;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722519596327.5833')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1722604316449.1533">rootProject.name = <span class="hljs-string">&quot;automacorp&quot;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722604316449.1533')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>File : <strong>&gt; build.gradle.kts</strong> contains information used by Gradle to build app</p>
+<p>File : <strong>@GT build.gradle.kts</strong> contains information used by Gradle to build app</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722519596328.565">plugins {
+<pre class="highlight"><code class="language-kotlin" id="1722604316451.4534">plugins {
 	java <span class="hljs-comment">// (1)</span>
 	id(<span class="hljs-string">&quot;org.springframework.boot&quot;</span>) version <span class="hljs-string">&quot;3.1.2&quot;</span> <span class="hljs-comment">// (2)</span>
 	id(<span class="hljs-string">&quot;io.spring.dependency-management&quot;</span>) version <span class="hljs-string">&quot;1.1.2&quot;</span> <span class="hljs-comment">// (3)</span>
@@ -324,9 +324,9 @@ dependencies { <span class="hljs-comment">// (7)</span>
 	testImplementation(<span class="hljs-string">&quot;org.springframework.boot:spring-boot-starter-test&quot;</span>) <span class="hljs-comment">// (10)</span>
 }
 
-tasks.withType&amp;lt;Test&amp;gt; { <span class="hljs-comment">// (11)</span>
+tasks.<span class="hljs-symbol">withType@</span><span class="hljs-symbol">LTTest@</span>GT { <span class="hljs-comment">// (11)</span>
 	useJUnitPlatform()
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596328.565')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316451.4534')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -370,14 +370,14 @@ tasks.withType&amp;lt;Test&amp;gt; { <span class="hljs-comment">// (11)</span>
 <div class="sect3">
 <h4 id="_app_files">App files</h4>
 <div class="paragraph">
-<p>File : <strong>&gt; src &gt; main &gt; java &gt; com.emse.spring.automacorp.AutomacorpApplication</strong></p>
+<p>File : <strong>@GT src @GT main @GT java @GT com.emse.spring.automacorp.AutomacorpApplication</strong></p>
 </div>
 <div class="paragraph">
 <p>The annotation <code>@SpringBootApplication</code> initialize a Spring Boot application. This is your app entry point</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722519596328.6355"><span class="hljs-keyword">package</span> com.emse.spring.automacorp;
+<pre class="highlight"><code class="language-java" id="1722604316452.1873"><span class="hljs-keyword">package</span> com.emse.spring.automacorp;
 
 <span class="hljs-keyword">import</span> org.springframework.boot.SpringApplication;
 <span class="hljs-keyword">import</span> org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -387,7 +387,7 @@ tasks.withType&amp;lt;Test&amp;gt; { <span class="hljs-comment">// (11)</span>
 	<span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> {
 		SpringApplication.run(AutomacorpApplication.class, args);
 	}
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596328.6355')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316452.1873')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -397,20 +397,20 @@ tasks.withType&amp;lt;Test&amp;gt; { <span class="hljs-comment">// (11)</span>
 <p>If these packages contain Spring Beans (classes annotated with special annotations like <code>@Controller</code>, <code>@Service</code> &#8230;&#8203;), Spring Boot will automatically add them to the Spring context.</p>
 </div>
 <div class="paragraph">
-<p>File : <strong>&gt; src &gt; main &gt; java &gt; com.emse.spring.automacorp.AutomacorpApplicationTests</strong></p>
+<p>File : <strong>@GT src @GT main @GT java @GT com.emse.spring.automacorp.AutomacorpApplicationTests</strong></p>
 </div>
 <div class="paragraph">
 <p>This class is the test file of your AutomacorpApplication. In a good application, all files are tested and verified by unit tests</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722519596329.7686"><span class="hljs-meta">@RunWith(SpringRunner.class)</span> <span class="hljs-comment">// (1)</span>
+<pre class="highlight"><code class="language-java" id="1722604316453.3923"><span class="hljs-meta">@RunWith(SpringRunner.class)</span> <span class="hljs-comment">// (1)</span>
 <span class="hljs-meta">@SpringBootTest</span> <span class="hljs-comment">// (2)</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">AutomacorpApplicationTests</span> {
     <span class="hljs-meta">@Test</span>
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">contextLoads</span><span class="hljs-params">()</span> {
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596329.7686')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316453.3923')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -432,7 +432,7 @@ tasks.withType&amp;lt;Test&amp;gt; { <span class="hljs-comment">// (11)</span>
 </div>
 </div>
 <div class="paragraph">
-<p>File : <strong>&gt; src &gt; main &gt; resources &gt; application.properties</strong></p>
+<p>File : <strong>@GT src @GT main @GT resources @GT application.properties</strong></p>
 </div>
 <div class="paragraph">
 <p>It contains all the application properties. For the moment this file is empty</p>
@@ -461,7 +461,7 @@ tasks.withType&amp;lt;Test&amp;gt; { <span class="hljs-comment">// (11)</span>
 <h3 id="_with_gradle">With Gradle</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722519596331.082">./gradlew --continuous bootRun // (1)
+<pre class="highlight"><code class="language-shell" id="1722604316454.2102">./gradlew --continuous bootRun // (1)
 
 [...]
 2023-08-22T17:15:59.685+02:00  INFO 124158 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path &#x27;&#x27;
@@ -470,7 +470,7 @@ tasks.withType&amp;lt;Test&amp;gt; { <span class="hljs-comment">// (11)</span>
 2023-08-22T17:16:04.332+02:00  INFO 124158 --- [nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet &#x27;dispatcherServlet&#x27;
 2023-08-22T17:16:04.334+02:00  INFO 124158 --- [nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
 &lt;==========---&gt; 80% EXECUTING
-<span class="hljs-meta prompt_">&gt; </span><span class="language-bash">:bootRun  // (2)&lt;/==========---&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722519596331.082')">Copy</button></pre>
+<span class="hljs-meta prompt_">&gt; </span><span class="language-bash">:bootRun  // (2)&lt;/==========---&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722604316454.2102')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -496,7 +496,7 @@ tasks.withType&amp;lt;Test&amp;gt; { <span class="hljs-comment">// (11)</span>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722519596332.9116">***************************
+<pre class="highlight"><code class="language-shell" id="1722604316454.9998">***************************
 APPLICATION FAILED TO START
 ***************************
 
@@ -506,7 +506,7 @@ Web server failed to start. Port 8080 was already in use.
 
 Action:
 
-Identify and stop the process that&#x27;s listening on port 8080 or configure this application to listen on another port.</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596332.9116')">Copy</button></pre>
+Identify and stop the process that&#x27;s listening on port 8080 or configure this application to listen on another port.</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316454.9998')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -514,7 +514,7 @@ Identify and stop the process that&#x27;s listening on port 8080 or configure th
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-properties" id="1722519596332.2415"><span class="hljs-attr">server.port</span>=<span class="hljs-string">8085</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722519596332.2415')">Copy</button></pre>
+<pre class="highlight"><code class="language-properties" id="1722604316454.574"><span class="hljs-attr">server.port</span>=<span class="hljs-string">8085</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722604316454.574')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -533,7 +533,7 @@ Identify and stop the process that&#x27;s listening on port 8080 or configure th
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722519596332.3206">./gradlew assemble</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596332.3206')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1722604316455.6377">./gradlew assemble</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316455.6377')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -551,7 +551,7 @@ Identify and stop the process that&#x27;s listening on port 8080 or configure th
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722519596332.4968">java -jar build/libs/automacorp-0.0.1-SNAPSHOT.jar</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596332.4968')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1722604316455.869">java -jar build/libs/automacorp-0.0.1-SNAPSHOT.jar</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316455.869')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -565,7 +565,7 @@ Identify and stop the process that&#x27;s listening on port 8080 or configure th
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722519596332.038"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> { }</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596332.038')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1722604316455.157"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> { }</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316455.157')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -603,14 +603,14 @@ Identify and stop the process that&#x27;s listening on port 8080 or configure th
 <p>In this file copy the following code</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-html" id="1722519596333.7334"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<pre class="highlight"><code class="language-html" id="1722604316455.8567"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span> Spring in practice<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
         Hello world
     <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722519596333.7334')">Copy</button></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722604316455.8567')">Copy</button></pre>
 </div>
 </div>
 </li>
@@ -627,7 +627,7 @@ Identify and stop the process that&#x27;s listening on port 8080 or configure th
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-html" id="1722519596333.9568"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">integrity</span>=<span class="hljs-string">&quot;sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9&quot;</span> <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">&quot;anonymous&quot;</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722519596333.9568')">Copy</button></pre>
+<pre class="highlight"><code class="language-html" id="1722604316456.838"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">integrity</span>=<span class="hljs-string">&quot;sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9&quot;</span> <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">&quot;anonymous&quot;</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722604316456.838')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -635,14 +635,14 @@ Identify and stop the process that&#x27;s listening on port 8080 or configure th
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-html" id="1722519596334.037"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+<pre class="highlight"><code class="language-html" id="1722604316456.8767"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Automacorp<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;lead&quot;</span>&gt;</span>
             Welcome on the Automacorp App used to learn Spring.
         <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722519596334.037')">Copy</button></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722604316456.8767')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -689,10 +689,10 @@ When we use the Spring support of Hibernate/JPA, we would need to configure a da
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722519596334.9192">dependencies {
+<pre class="highlight"><code class="language-kotlin" id="1722604316457.7695">dependencies {
  implementation(<span class="hljs-string">&#x27;org.springframework.boot:spring-boot-starter-web&#x27;</span>)
  testImplementation(<span class="hljs-string">&#x27;org.springframework.boot:spring-boot-starter-test&#x27;</span>)
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722519596334.9192')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316457.7695')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">

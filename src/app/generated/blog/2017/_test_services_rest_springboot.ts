@@ -13,7 +13,7 @@ export const _test_services_rest_springboot:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722519597522.2397"><span class="hljs-meta">@RestController</span>
+<pre class="highlight"><code class="language-java" id="1722604315064.859"><span class="hljs-meta">@RestController</span>
 <span class="hljs-meta">@RequestMapping(&quot;/api/session&quot;)</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SessionController</span> {
 
@@ -21,12 +21,12 @@ export const _test_services_rest_springboot:string = `<div id="preamble">
     <span class="hljs-keyword">private</span> SessionService sessionService;
 
     <span class="hljs-meta">@GetMapping</span>
-    <span class="hljs-keyword">public</span> List&amp;lt;Session&amp;gt; findAll() {
+    <span class="hljs-keyword">public</span> List<span class="hljs-meta">@LTSession</span><span class="hljs-meta">@GT</span> findAll() {
         <span class="hljs-keyword">return</span> sessionService.findAll();
     }
 
     <span class="hljs-meta">@GetMapping((&quot;/{id}&quot;))</span>
-    <span class="hljs-keyword">public</span> ResponseEntity&amp;lt;Session&amp;gt; findOne(<span class="hljs-meta">@PathVariable(&quot;id&quot;)</span> String id) {
+    <span class="hljs-keyword">public</span> ResponseEntity<span class="hljs-meta">@LTSession</span><span class="hljs-meta">@GT</span> findOne(<span class="hljs-meta">@PathVariable(&quot;id&quot;)</span> String id) {
         <span class="hljs-type">Session</span> <span class="hljs-variable">session</span> <span class="hljs-operator">=</span> sessionService.findOne(id);
 
         <span class="hljs-keyword">if</span> (session == <span class="hljs-literal">null</span>) {
@@ -37,10 +37,10 @@ export const _test_services_rest_springboot:string = `<div id="preamble">
 
 
     <span class="hljs-meta">@PostMapping</span>
-        <span class="hljs-keyword">public</span> ResponseEntity&amp;lt;Session&amp;gt; save(<span class="hljs-meta">@Valid</span> <span class="hljs-meta">@RequestBody</span> Session session) {
+        <span class="hljs-keyword">public</span> ResponseEntity<span class="hljs-meta">@LTSession</span><span class="hljs-meta">@GT</span> save(<span class="hljs-meta">@Valid</span> <span class="hljs-meta">@RequestBody</span> Session session) {
         <span class="hljs-keyword">return</span> ok(sessionService.save(session));
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722519597522.2397')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315064.859')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -56,8 +56,8 @@ export const _test_services_rest_springboot:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722519597522.3652">compile <span class="hljs-string">&quot;javax.validation:validation-api:1.1.0.Final&quot;</span>
-compile <span class="hljs-string">&quot;org.hibernate:hibernate-validator:1.1.0.Final&quot;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722519597522.3652')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1722604315064.0266">compile <span class="hljs-string">&quot;javax.validation:validation-api:1.1.0.Final&quot;</span>
+compile <span class="hljs-string">&quot;org.hibernate:hibernate-validator:1.1.0.Final&quot;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722604315064.0266')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -65,7 +65,7 @@ compile <span class="hljs-string">&quot;org.hibernate:hibernate-validator:1.1.0.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722519597525.8806"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Session</span> {
+<pre class="highlight"><code class="language-java" id="1722604315065.0981"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Session</span> {
     <span class="hljs-keyword">private</span> String id;
     <span class="hljs-meta">@NotEmpty</span>
     <span class="hljs-keyword">private</span> String title;
@@ -74,7 +74,7 @@ compile <span class="hljs-string">&quot;org.hibernate:hibernate-validator:1.1.0.
     <span class="hljs-meta">@Max(500)</span>
     <span class="hljs-keyword">private</span> Integer maxAttendees;
     <span class="hljs-comment">// ...</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722519597525.8806')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315065.0981')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -87,7 +87,7 @@ compile <span class="hljs-string">&quot;org.hibernate:hibernate-validator:1.1.0.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722519597526.9802"><span class="hljs-meta">@RunWith(SpringRunner.class)</span>
+<pre class="highlight"><code class="language-java" id="1722604315065.7676"><span class="hljs-meta">@RunWith(SpringRunner.class)</span>
 <span class="hljs-meta">@WebMvcTest(SessionController.class)</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SessionControllerTest</span> {
     <span class="hljs-meta">@Autowired</span>
@@ -98,7 +98,7 @@ compile <span class="hljs-string">&quot;org.hibernate:hibernate-validator:1.1.0.
 
     <span class="hljs-keyword">private</span> <span class="hljs-type">ObjectMapper</span> <span class="hljs-variable">mapper</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">ObjectMapper</span>();
 
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722519597526.9802')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315065.7676')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -117,7 +117,7 @@ compile <span class="hljs-string">&quot;org.hibernate:hibernate-validator:1.1.0.
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722519597526.2214"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-java" id="1722604315066.4531"><span class="hljs-meta">@Test</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">shouldFindAllSessions</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception {
 
     given(<span class="hljs-built_in">this</span>.sessionService.findAll())
@@ -129,7 +129,7 @@ compile <span class="hljs-string">&quot;org.hibernate:hibernate-validator:1.1.0.
             .andExpect(status().isOk())
             .andExpect(jsonPath(<span class="hljs-string">&quot;@dollar@.length()&quot;</span>, is(<span class="hljs-number">2</span>)))
             .andExpect(jsonPath(<span class="hljs-string">&quot;@dollar@.[0].title&quot;</span>, is(<span class="hljs-string">&quot;title1&quot;</span>)));
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722519597526.2214')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315066.4531')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -146,10 +146,10 @@ compile <span class="hljs-string">&quot;org.hibernate:hibernate-validator:1.1.0.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722519597527.3494"><span class="hljs-built_in">this</span>.mvc.perform(get(<span class="hljs-string">&quot;/api/session&quot;</span>).with(httpBasic(<span class="hljs-string">&quot;admin&quot;</span>, <span class="hljs-string">&quot;password&quot;</span>)))
+<pre class="highlight"><code class="language-java" id="1722604315067.9924"><span class="hljs-built_in">this</span>.mvc.perform(get(<span class="hljs-string">&quot;/api/session&quot;</span>).with(httpBasic(<span class="hljs-string">&quot;admin&quot;</span>, <span class="hljs-string">&quot;password&quot;</span>)))
             .andExpect(status().isOk())
             .andExpect(jsonPath(<span class="hljs-string">&quot;@dollar@.length()&quot;</span>, is(<span class="hljs-number">2</span>)))
-            .andExpect(jsonPath(<span class="hljs-string">&quot;@dollar@.[0].title&quot;</span>, is(<span class="hljs-string">&quot;title1&quot;</span>)));</code><button class="btn-copy-code" onclick="copyToClipboard('1722519597527.3494')">Copy</button></pre>
+            .andExpect(jsonPath(<span class="hljs-string">&quot;@dollar@.[0].title&quot;</span>, is(<span class="hljs-string">&quot;title1&quot;</span>)));</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315067.9924')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -157,7 +157,7 @@ compile <span class="hljs-string">&quot;org.hibernate:hibernate-validator:1.1.0.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722519597527.4626"><span class="hljs-meta">@WebMvcTest(value = SessionController.class, secure = false)</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722519597527.4626')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1722604315067.2412"><span class="hljs-meta">@WebMvcTest(value = SessionController.class, secure = false)</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722604315067.2412')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -170,7 +170,7 @@ compile <span class="hljs-string">&quot;org.hibernate:hibernate-validator:1.1.0.
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722519597528.6887"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-java" id="1722604315068.5742"><span class="hljs-meta">@Test</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">shouldCreateSession</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception {
 
     <span class="hljs-type">Session</span> <span class="hljs-variable">session</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Session</span>().withTitle(<span class="hljs-string">&quot;My Spring session&quot;</span>).withMaxAttendees(<span class="hljs-number">10</span>);
@@ -186,7 +186,7 @@ compile <span class="hljs-string">&quot;org.hibernate:hibernate-validator:1.1.0.
             .andExpect(status().isOk())
             .andExpect(jsonPath(<span class="hljs-string">&quot;@dollar@.id&quot;</span>, is(<span class="hljs-string">&quot;id&quot;</span>)))
             .andExpect(jsonPath(<span class="hljs-string">&quot;@dollar@.title&quot;</span>, is(<span class="hljs-string">&quot;My Spring session&quot;</span>)));
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722519597528.6887')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315068.5742')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -202,7 +202,7 @@ compile <span class="hljs-string">&quot;org.hibernate:hibernate-validator:1.1.0.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722519597528.7175"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-java" id="1722604315068.5312"><span class="hljs-meta">@Test</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">shouldNotCreateSessionWhenBeanInvalid</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception {
 
     <span class="hljs-type">Session</span> <span class="hljs-variable">session</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Session</span>();
@@ -214,7 +214,7 @@ compile <span class="hljs-string">&quot;org.hibernate:hibernate-validator:1.1.0.
                     .with(httpBasic(<span class="hljs-string">&quot;admin&quot;</span>, <span class="hljs-string">&quot;password&quot;</span>))
     )
             .andExpect(status().isBadRequest());
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722519597528.7175')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315068.5312')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">

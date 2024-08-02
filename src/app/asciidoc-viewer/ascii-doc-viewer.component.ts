@@ -3,7 +3,6 @@ import {DomSanitizer, SafeHtml} from "@angular/platform-browser";
 import {blogGeneratedTemplates} from "../generated/generated.blog.templates";
 import {trainingGeneratedTemplates} from "../generated/generated.training.templates";
 import {NgForOf} from "@angular/common";
-import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-asciidoc-viewer',
@@ -39,7 +38,7 @@ export class AsciiDocViewerComponent implements OnInit {
 
   content: SafeHtml | null = null;
 
-  constructor(private domSanitizer: DomSanitizer, private router: Router) {
+  constructor(private domSanitizer: DomSanitizer) {
   }
 
   ngOnInit(): void {
@@ -50,6 +49,10 @@ export class AsciiDocViewerComponent implements OnInit {
       .replaceAll('&amp;apos;', '&apos;')
       .replaceAll('@link@', this.filename + '.html')
       .replaceAll('@dollar@', '$')
+      .replaceAll('@GT', '&gt;')
+      .replaceAll('@LT', '&lt;')
+      .replaceAll('@LAMBDA', '->')
+      .replaceAll('@ARROW', '=>')
       .replaceAll('@backtick@', '`')
       .replaceAll('&amp;#xEA;', '&ecirc;')
       .replaceAll('<span class="icon">[flask&#93;</span>', '<img src="/img/ic_flask.svg" style="width: 1em"/>')

@@ -151,7 +151,19 @@
   </style>
   <script>
     function copyToClipboard(id) {
-      const text = document.getElementById(id).innerText;
+      const text = document.getElementById(id).innerText
+        .replaceAll('~$', '')
+        .replaceAll('(1)', '')
+        .replaceAll('(2)', '')
+        .replaceAll('(3)', '')
+        .replaceAll('(4)', '')
+        .replaceAll('(5)', '')
+        .replaceAll('(6)', '')
+        .replaceAll('(7)', '')
+        .replaceAll('(8)', '')
+        .replaceAll('(9)', '')
+        .replaceAll('(10)', '')
+      ;
       navigator.clipboard.writeText(text.substring(0, text.length));
     }
   </script>
@@ -182,7 +194,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522442293.7136"><span class="hljs-meta">@Component</span>
+<pre class="highlight"><code class="language-java" id="1722604315474.8362"><span class="hljs-meta">@Component</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ElasticMailSender</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">EmailSender</span> {
 
     <span class="hljs-keyword">private</span> WebClient webClient;
@@ -217,7 +229,7 @@
             <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">RuntimeException</span>(response.getError());
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522442293.7136')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315474.8362')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -228,7 +240,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522442294.085">testCompile(<span class="hljs-string">"com.squareup.okhttp3:mockwebserver:3.9.1"</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1722522442294.085')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1722604315475.1455">testCompile(<span class="hljs-string">"com.squareup.okhttp3:mockwebserver:3.9.1"</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315475.1455')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -236,7 +248,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522442296.379"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ElasticMailSenderTest</span> {
+<pre class="highlight"><code class="language-java" id="1722604315479.0098"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ElasticMailSenderTest</span> {
     <span class="hljs-meta">@Rule</span>
     <span class="hljs-keyword">public</span> <span class="hljs-type">MockWebServer</span> <span class="hljs-variable">server</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">MockWebServer</span>();
     <span class="hljs-keyword">private</span> WebClient webClient;
@@ -250,14 +262,14 @@
 
     <span class="hljs-meta">@Test</span>
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">send</span><span class="hljs-params">()</span> {
-        prepareResponse(response -&amp;gt; response
+        prepareResponse(response <span class="hljs-meta">-&gt;</span> response
                 .setHeader(<span class="hljs-string">"Content-Type"</span>, <span class="hljs-string">"application/json"</span>)
                 .setBody(<span class="hljs-string">"{ "success" : true }"</span>));
 
         elasticMailSender.send(<span class="hljs-keyword">new</span> <span class="hljs-title class_">EmailMessage</span>(
                 <span class="hljs-string">"guillaume@test.fr"</span>,
                 <span class="hljs-string">"Email test"</span>,
-                <span class="hljs-string">"&amp;lt;h1&amp;gt;Hi Guillaume&amp;lt;/h1&amp;gt;&amp;lt;p&amp;gt;Waow... you are able to send an email&amp;lt;/p&amp;gt;"</span>)
+                <span class="hljs-string">"&lt;h1&gt;Hi Guillaume&lt;/h1&gt;&lt;p&gt;Waow... you are able to send an email&lt;/p&gt;"</span>)
         );
 
         verify(webClient, atLeastOnce()).post();
@@ -265,24 +277,24 @@
 
     <span class="hljs-meta">@Test</span>
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">sendWithError</span><span class="hljs-params">()</span> {
-        prepareResponse(response -&amp;gt; response
+        prepareResponse(response <span class="hljs-meta">-&gt;</span> response
                 .setHeader(<span class="hljs-string">"Content-Type"</span>, <span class="hljs-string">"application/json"</span>)
                 .setBody(<span class="hljs-string">"{ "success" : false, "error" : "error expected" }"</span>));
 
-        assertThatThrownBy(() -&amp;gt; elasticMailSender.send(<span class="hljs-keyword">new</span> <span class="hljs-title class_">EmailMessage</span>(
+        assertThatThrownBy(() <span class="hljs-meta">-&gt;</span> elasticMailSender.send(<span class="hljs-keyword">new</span> <span class="hljs-title class_">EmailMessage</span>(
                 <span class="hljs-string">"guillaume@test.fr"</span>,
                 <span class="hljs-string">"Email test"</span>,
-                <span class="hljs-string">"&amp;lt;h1&amp;gt;Hi Guillaume&amp;lt;/h1&amp;gt;&amp;lt;p&amp;gt;Waow... you are able to send an email&amp;lt;/p&amp;gt;"</span>)))
+                <span class="hljs-string">"&lt;h1&gt;Hi Guillaume&lt;/h1&gt;&lt;p&gt;Waow... you are able to send an email&lt;/p&gt;"</span>)))
                 .isExactlyInstanceOf(RuntimeException.class)
                 .hasMessage(<span class="hljs-string">"error expected"</span>);
     }
 
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">prepareResponse</span><span class="hljs-params">(Consumer&amp;lt;MockResponse&amp;gt; consumer)</span> {
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">prepareResponse</span><span class="hljs-params">(Consumer<span class="hljs-meta">&lt;MockResponse</span><span class="hljs-meta">&gt;</span> consumer)</span> {
         <span class="hljs-type">MockResponse</span> <span class="hljs-variable">response</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">MockResponse</span>();
         consumer.accept(response);
         <span class="hljs-built_in">this</span>.server.enqueue(response);
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522442296.379')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315479.0098')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -290,7 +302,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522442296.3235">WebClient.create(<span class="hljs-built_in">this</span>.server.url(<span class="hljs-string">"/"</span>).toString())</code><button class="btn-copy-code" onclick="copyToClipboard('1722522442296.3235')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1722604315479.0344">WebClient.create(<span class="hljs-built_in">this</span>.server.url(<span class="hljs-string">"/"</span>).toString())</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315479.0344')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -309,13 +321,13 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522442296.0464">configurations {
+<pre class="highlight"><code class="language-java" id="1722604315480.1128">configurations {
 	all {
 		exclude <span class="hljs-keyword">module</span>: <span class="hljs-string">"junit"</span>
 	}
 }
 testCompile(<span class="hljs-string">"org.junit.jupiter:junit-jupiter-api"</span>)
-testRuntime(<span class="hljs-string">"org.junit.jupiter:junit-jupiter-engine"</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1722522442296.0464')">Copy</button></pre>
+testRuntime(<span class="hljs-string">"org.junit.jupiter:junit-jupiter-engine"</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315480.1128')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -329,7 +341,7 @@ testRuntime(<span class="hljs-string">"org.junit.jupiter:junit-jupiter-engine"</
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522442297.3655">testCompile(<span class="hljs-string">"com.devmind:mockwebserver:0.1.0"</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1722522442297.3655')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1722604315480.8035">testCompile(<span class="hljs-string">"com.devmind:mockwebserver:0.1.0"</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315480.8035')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -337,7 +349,7 @@ testRuntime(<span class="hljs-string">"org.junit.jupiter:junit-jupiter-engine"</
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522442298.7036"><span class="hljs-meta">@ExtendWith(MockWebServerExtension.class)</span>
+<pre class="highlight"><code class="language-java" id="1722604315481.7256"><span class="hljs-meta">@ExtendWith(MockWebServerExtension.class)</span>
 <span class="hljs-keyword">class</span> <span class="hljs-title class_">MySpringWebfluxServiceTest</span> {
 
     <span class="hljs-keyword">private</span> MockWebServer server;
@@ -353,7 +365,7 @@ testRuntime(<span class="hljs-string">"org.junit.jupiter:junit-jupiter-engine"</
 
     <span class="hljs-meta">@Test</span>
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">mytest</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception {
-        prepareResponse(response -&amp;gt; response
+        prepareResponse(response <span class="hljs-meta">-&gt;</span> response
                 .setHeader(<span class="hljs-string">"Content-Type"</span>, <span class="hljs-string">"application/json"</span>)
                 .setBody( <span class="hljs-string">"{
 "</span> +
@@ -376,7 +388,7 @@ testRuntime(<span class="hljs-string">"org.junit.jupiter:junit-jupiter-engine"</
         <span class="hljs-built_in">this</span>.server.enqueue(response);
     }
 
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522442298.7036')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315481.7256')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -384,7 +396,7 @@ testRuntime(<span class="hljs-string">"org.junit.jupiter:junit-jupiter-engine"</
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522442300.9246"><span class="hljs-meta">@ExtendWith(MockSimpleWebServerExtension.class)</span>
+<pre class="highlight"><code class="language-java" id="1722604315483.5508"><span class="hljs-meta">@ExtendWith(MockSimpleWebServerExtension.class)</span>
 <span class="hljs-meta">@TestInstance(TestInstance.Lifecycle.PER_CLASS)</span>
 <span class="hljs-keyword">class</span> <span class="hljs-title class_">MySpringWebfluxServiceTest</span> {
 
@@ -411,7 +423,7 @@ testRuntime(<span class="hljs-string">"org.junit.jupiter:junit-jupiter-engine"</
 
     <span class="hljs-meta">@Test</span>
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">mytest</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception {
-        prepareResponse(response -&amp;gt; response
+        prepareResponse(response <span class="hljs-meta">-&gt;</span> response
                 .setHeader(<span class="hljs-string">"Content-Type"</span>, <span class="hljs-string">"application/json"</span>)
                 .setBody( <span class="hljs-string">"{
 "</span> +
@@ -428,20 +440,20 @@ testRuntime(<span class="hljs-string">"org.junit.jupiter:junit-jupiter-engine"</
                 .verify(Duration.ofSeconds(<span class="hljs-number">3</span>));
     }
 
-    <span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">prepareResponse</span><span class="hljs-params">(Consumer&amp;lt;MockResponse&amp;gt; consumer)</span> {
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">prepareResponse</span><span class="hljs-params">(Consumer<span class="hljs-meta">&lt;MockResponse</span><span class="hljs-meta">&gt;</span> consumer)</span> {
         <span class="hljs-type">MockResponse</span> <span class="hljs-variable">response</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">MockResponse</span>();
         consumer.accept(response);
         <span class="hljs-built_in">this</span>.server.enqueue(response);
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522442300.9246')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315483.5508')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
 <p>Voila vous n’avez plus d’excuse pour ne pas tester vos services Spring utilisant WebClient en Junit 5. Le fork proposé par Dev-Mind peut être utilisé en attendant que Square mette à jour sa librairie.</p>
 </div>
 </div>
-</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 01/08/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
+</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 02/08/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
 
-<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-KZZ4TXLO.js" type="module"></script>
+<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-EXB64UBH.js" type="module"></script>
 
 <script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t6"},"c":{"7":[{"i":"t6","r":1,"x":5}]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>

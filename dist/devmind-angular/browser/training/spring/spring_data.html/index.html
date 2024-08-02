@@ -151,7 +151,19 @@
   </style>
   <script>
     function copyToClipboard(id) {
-      const text = document.getElementById(id).innerText;
+      const text = document.getElementById(id).innerText
+        .replaceAll('~$', '')
+        .replaceAll('(1)', '')
+        .replaceAll('(2)', '')
+        .replaceAll('(3)', '')
+        .replaceAll('(4)', '')
+        .replaceAll('(5)', '')
+        .replaceAll('(6)', '')
+        .replaceAll('(7)', '')
+        .replaceAll('(8)', '')
+        .replaceAll('(9)', '')
+        .replaceAll('(10)', '')
+      ;
       navigator.clipboard.writeText(text.substring(0, text.length));
     }
   </script>
@@ -162,29 +174,29 @@
   <app-root _nghost-ng-c582792440 ng-version="18.0.0" ngh="2" ng-server-context="ssg"><app-header _ngcontent-ng-c582792440 _nghost-ng-c2882497807 ngh="0"><header _ngcontent-ng-c2882497807><div _ngcontent-ng-c2882497807 class="header-img"><a _ngcontent-ng-c2882497807 routerlink="/" aria-label="Accueil" href="/"><img _ngcontent-ng-c2882497807 src="img/logo/logo_long.svg" alt="Dev-Mind" title="Dev-Mind"></a></div><nav _ngcontent-ng-c2882497807><a _ngcontent-ng-c2882497807 routerlink="/" aria-label="Accueil" class="nav-home" href="/"><img _ngcontent-ng-c2882497807 src="/img/ic_home_white_24px.svg" rel="start" alt="Accueil"></a><a _ngcontent-ng-c2882497807 routerlink="/formations.html" aria-label="Formations" class="active" href="/formations.html"> Formations</a><a _ngcontent-ng-c2882497807 routerlink="/blog.html" aria-label="Blog" class href="/blog.html">Blog</a><a _ngcontent-ng-c2882497807 routerlink="/experience.html" aria-label="Experience" class href="/experience.html"> Expérience</a></nav><hr _ngcontent-ng-c2882497807></header><div _ngcontent-ng-c2882497807 class="header-space"></div></app-header><router-outlet _ngcontent-ng-c582792440></router-outlet><app-asciidoc-viewer ngh="1"><div class="dm-block--blog"><div class="devmind-section"><h1><!--ngetn--></h1><div class="blog-keywords"><div class="dm-blog--info-date">03/11/2023</div><div class="dm-blog--keyword-detail">Java</div><div class="dm-blog--keyword-detail">Spring</div><!---->&nbsp; </div><div class="preview"><div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<a class="link" fragment="#_database">Database</a>
+<li><a class="link" fragment="#_database">Database</a>
 <ul class="sectlevel2">
 <li><a class="link" fragment="#_jdbc">JDBC</a></li>
 <li><a class="link" fragment="#_h2">H2</a></li>
 <li><a class="link" fragment="#_flask_database_and_sql"><img src="/img/ic_flask.svg" style="width: 1em"> Database and SQL</a></li>
 </ul>
-
-<a class="link" fragment="#_java_and_jdbc">Java and JDBC</a>
+</li>
+<li><a class="link" fragment="#_java_and_jdbc">Java and JDBC</a>
 <ul class="sectlevel2">
 <li><a class="link" fragment="#_open_a_connection">Open a connection</a></li>
 <li><a class="link" fragment="#_execute_a_request">Execute a request</a></li>
 <li><a class="link" fragment="#_transaction">Transaction</a></li>
 </ul>
-
-<a class="link" fragment="#_jpa">JPA</a>
+</li>
+<li><a class="link" fragment="#_jpa">JPA</a>
 <ul class="sectlevel2">
 <li><a class="link" fragment="#_jpa_entity">JPA Entity</a></li>
 <li><a class="link" fragment="#_entity_manager">Entity manager</a></li>
 <li><a class="link" fragment="#_transaction_and_spring">Transaction and Spring</a></li>
 <li><a class="link" fragment="#_schema_generation">Schema generation</a></li>
 </ul>
-
-<a class="link" fragment="#_jpa_and_association_mappings">JPA and association mappings</a>
+</li>
+<li><a class="link" fragment="#_jpa_and_association_mappings">JPA and association mappings</a>
 <ul class="sectlevel2">
 <li><a class="link" fragment="#_onetoone">@OneToOne</a></li>
 <li><a class="link" fragment="#_onetomany">@OneToMany</a></li>
@@ -193,21 +205,21 @@
 <li><a class="link" fragment="#_manytomany">@ManyToMany</a></li>
 <li><a class="link" fragment="#_fetching_strategy">Fetching Strategy</a></li>
 </ul>
-
-<a class="link" fragment="#_jpql">JPQL</a>
-<a class="link" fragment="#_data_access_object_dao">Data Access Object (DAO)</a>
+</li>
+<li><a class="link" fragment="#_jpql">JPQL</a></li>
+<li><a class="link" fragment="#_data_access_object_dao">Data Access Object (DAO)</a>
 <ul class="sectlevel2">
 <li><a class="link" fragment="#_spring_data_jpa">Spring Data JPA</a></li>
 <li><a class="link" fragment="#_custom_dao">Custom DAO</a></li>
 </ul>
-
-<a class="link" fragment="#_flask_jpa"><img src="/img/ic_flask.svg" style="width: 1em"> : JPA</a>
+</li>
+<li><a class="link" fragment="#_flask_jpa"><img src="/img/ic_flask.svg" style="width: 1em"> : JPA</a>
 <ul class="sectlevel2">
 <li><a class="link" fragment="#_entity_creation">Entity creation</a></li>
 <li><a class="link" fragment="#_populate_data">Populate data</a></li>
 <li><a class="link" fragment="#_dao_creation">Dao creation</a></li>
 </ul>
-
+</li>
 </ul>
 </div>
 <div id="preamble">
@@ -322,8 +334,8 @@ In our examples we will Hibernate as JPA implementation and a H2 Database.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-groovy" id="1722522443425.9202">implementation(<span class="hljs-string">"org.springframework.boot:spring-boot-starter-data-jpa"</span>) <span class="hljs-comment">// libs to use JPA in your project</span>
-implementation(<span class="hljs-string">"com.h2database:h2"</span>) <span class="hljs-comment">// libs to use a H2 database</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722522443425.9202')">Copy</button></pre>
+<pre class="highlight"><code class="language-groovy" id="1722604316364.0183">implementation(<span class="hljs-string">"org.springframework.boot:spring-boot-starter-data-jpa"</span>) <span class="hljs-comment">// libs to use JPA in your project</span>
+implementation(<span class="hljs-string">"com.h2database:h2"</span>) <span class="hljs-comment">// libs to use a H2 database</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722604316364.0183')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -342,7 +354,7 @@ implementation(<span class="hljs-string">"com.h2database:h2"</span>) <span class
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-properties" id="1722522443428.3896"><span class="hljs-comment"># Spring boot : datasource</span>
+<pre class="highlight"><code class="language-properties" id="1722604316367.9265"><span class="hljs-comment"># Spring boot : datasource</span>
 <span class="hljs-attr">spring.datasource.url</span>=<span class="hljs-string">jdbc:h2:mem:automacorp;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE</span>
 <span class="hljs-attr">spring.datasource.username</span>=<span class="hljs-string">sa</span>
 <span class="hljs-attr">spring.datasource.password</span>=<span class="hljs-string"></span>
@@ -353,7 +365,7 @@ implementation(<span class="hljs-string">"com.h2database:h2"</span>) <span class
 <span class="hljs-attr">spring.h2.console.path</span>=<span class="hljs-string">/console</span>
 <span class="hljs-comment">
 # Spring boot : JPA</span>
-<span class="hljs-attr">spring.jpa.database</span>=<span class="hljs-string">h2</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722522443428.3896')">Copy</button></pre>
+<span class="hljs-attr">spring.jpa.database</span>=<span class="hljs-string">h2</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722604316367.9265')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -384,7 +396,7 @@ implementation(<span class="hljs-string">"com.h2database:h2"</span>) <span class
 <p>SQL order to create a table (Id is generated by the database and with use option auto_increment)</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-sql" id="1722522443433.5676"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> ROOM(ID <span class="hljs-type">BIGINT</span> auto_increment <span class="hljs-keyword">PRIMARY</span> KEY, NAME <span class="hljs-type">VARCHAR</span>(<span class="hljs-number">255</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-keyword">NULL</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443433.5676')">Copy</button></pre>
+<pre class="highlight"><code class="language-sql" id="1722604316373.7974"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> ROOM(ID <span class="hljs-type">BIGINT</span> auto_increment <span class="hljs-keyword">PRIMARY</span> KEY, NAME <span class="hljs-type">VARCHAR</span>(<span class="hljs-number">255</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-keyword">NULL</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316373.7974')">Copy</button></pre>
 </div>
 </div>
 </li>
@@ -392,7 +404,7 @@ implementation(<span class="hljs-string">"com.h2database:h2"</span>) <span class
 <p>SQL order to insert data in this table (We use a negative id because we don’t use the ID generator in manual inserts)</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-sql" id="1722522443434.332"><span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> ROOM(ID, NAME) <span class="hljs-keyword">VALUES</span>(<span class="hljs-number">-10</span>, <span class="hljs-string">'Room1'</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443434.332')">Copy</button></pre>
+<pre class="highlight"><code class="language-sql" id="1722604316373.6436"><span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> ROOM(ID, NAME) <span class="hljs-keyword">VALUES</span>(<span class="hljs-number">-10</span>, <span class="hljs-string">'Room1'</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316373.6436')">Copy</button></pre>
 </div>
 </div>
 </li>
@@ -400,7 +412,7 @@ implementation(<span class="hljs-string">"com.h2database:h2"</span>) <span class
 <p>SQL order to select this data</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-sql" id="1722522443434.046"><span class="hljs-keyword">SELECT</span> <span class="hljs-operator">*</span> <span class="hljs-keyword">FROM</span> ROOM;</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443434.046')">Copy</button></pre>
+<pre class="highlight"><code class="language-sql" id="1722604316374.6956"><span class="hljs-keyword">SELECT</span> <span class="hljs-operator">*</span> <span class="hljs-keyword">FROM</span> ROOM;</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316374.6956')">Copy</button></pre>
 </div>
 </div>
 </li>
@@ -422,7 +434,7 @@ implementation(<span class="hljs-string">"com.h2database:h2"</span>) <span class
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443435.139"><span class="hljs-keyword">try</span> {
+<pre class="highlight"><code class="language-java" id="1722604316374.6287"><span class="hljs-keyword">try</span> {
   Class.forName(<span class="hljs-string">"org.h2.Drive"</span>); <span class="hljs-comment">// (1)</span>
 }
 <span class="hljs-keyword">catch</span> (ClassNotFoundException e) {
@@ -434,7 +446,7 @@ implementation(<span class="hljs-string">"com.h2database:h2"</span>) <span class
 }
 <span class="hljs-keyword">catch</span> (SQLException e) {
   logger.error(<span class="hljs-string">"Unable to connect to the database"</span>, e);
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443435.139')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316374.6287')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -480,7 +492,7 @@ implementation(<span class="hljs-string">"com.h2database:h2"</span>) <span class
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443435.1526"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">insertSite</span><span class="hljs-params">(Site site)</span> {
+<pre class="highlight"><code class="language-java" id="1722604316375.156"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">insertSite</span><span class="hljs-params">(Site site)</span> {
     <span class="hljs-keyword">try</span>(<span class="hljs-type">Connection</span> <span class="hljs-variable">conn</span> <span class="hljs-operator">=</span> dataSource.getConnection()){
         <span class="hljs-type">String</span> <span class="hljs-variable">sql</span> <span class="hljs-operator">=</span> <span class="hljs-string">"insert into SITE (id, name) values (?, ?)"</span>;
         <span class="hljs-keyword">try</span>(<span class="hljs-type">PreparedStatement</span> <span class="hljs-variable">stmt</span> <span class="hljs-operator">=</span> conn.prepareStatement(sql)){
@@ -493,7 +505,7 @@ implementation(<span class="hljs-string">"com.h2database:h2"</span>) <span class
         <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">DatabaseException</span>(<span class="hljs-string">"Impossible to insert site "</span> +
             site.getName(), e);
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443435.1526')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316375.156')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -501,8 +513,8 @@ implementation(<span class="hljs-string">"com.h2database:h2"</span>) <span class
 </div>
 <div class="listingblock langage-small">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443436.7905"><span class="hljs-keyword">public</span> List&amp;lt;Site&amp;gt; findAll() {
-    List&amp;lt;Site&amp;gt; sites = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ArrayList</span>&amp;lt;&amp;gt;();
+<pre class="highlight"><code class="language-java" id="1722604316376.6738"><span class="hljs-keyword">public</span> List<span class="hljs-meta">&lt;Site</span><span class="hljs-meta">&gt;</span> findAll() {
+    List<span class="hljs-meta">&lt;Site</span><span class="hljs-meta">&gt;</span> sites = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ArrayList</span><span class="hljs-meta">&lt;</span><span class="hljs-meta">&gt;()</span>;
     <span class="hljs-keyword">try</span>(<span class="hljs-type">Connection</span> <span class="hljs-variable">conn</span> <span class="hljs-operator">=</span> dataSource.getConnection()){
         <span class="hljs-type">String</span> <span class="hljs-variable">sql</span> <span class="hljs-operator">=</span> <span class="hljs-string">"select id, name from SITE"</span>;
         <span class="hljs-keyword">try</span>(<span class="hljs-type">PreparedStatement</span> <span class="hljs-variable">stmt</span> <span class="hljs-operator">=</span> conn.prepareStatement(sql)){
@@ -519,7 +531,7 @@ implementation(<span class="hljs-string">"com.h2database:h2"</span>) <span class
         <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">DatabaseException</span>(<span class="hljs-string">"Impossible to read sites"</span>, e);
     }
     <span class="hljs-keyword">return</span> sites;
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443436.7905')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316376.6738')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -580,7 +592,7 @@ implementation(<span class="hljs-string">"com.h2database:h2"</span>) <span class
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443437.369"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">insertSite</span><span class="hljs-params">(Site site)</span> {
+<pre class="highlight"><code class="language-java" id="1722604316377.633"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">insertSite</span><span class="hljs-params">(Site site)</span> {
         <span class="hljs-keyword">try</span>(<span class="hljs-type">Connection</span> <span class="hljs-variable">conn</span> <span class="hljs-operator">=</span> dataSource.getConnection()){
             conn.setAutoCommit(<span class="hljs-literal">false</span>); <span class="hljs-comment">// 1.</span>
             <span class="hljs-type">String</span> <span class="hljs-variable">sql</span> <span class="hljs-operator">=</span> <span class="hljs-string">"insert into SITE (id, name) values (?, ?)"</span>;
@@ -599,7 +611,7 @@ implementation(<span class="hljs-string">"com.h2database:h2"</span>) <span class
         <span class="hljs-keyword">catch</span>(SQLException e) {
             <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">DatabaseException</span>(<span class="hljs-string">"Impossible insérer site "</span> + site.getName(), e);
         }
-    }</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443437.369')">Copy</button></pre>
+    }</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316377.633')">Copy</button></pre>
 </div>
 </div>
 <div class="olist arabic">
@@ -692,7 +704,7 @@ implementation(<span class="hljs-string">"com.h2database:h2"</span>) <span class
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443439.498"><span class="hljs-keyword">import</span> jakarta.persistence.*;
+<pre class="highlight"><code class="language-java" id="1722604316380.983"><span class="hljs-keyword">import</span> jakarta.persistence.*;
 
 <span class="hljs-meta">@Entity</span> <span class="hljs-comment">// (1).</span>
 <span class="hljs-meta">@Table(name = "SP_SENSOR")</span> <span class="hljs-comment">// (2).</span>
@@ -761,7 +773,7 @@ implementation(<span class="hljs-string">"com.h2database:h2"</span>) <span class
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">setNotImportant</span><span class="hljs-params">(Integer notImportant)</span> {
         <span class="hljs-built_in">this</span>.notImportant = notImportant;
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443439.498')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316380.983')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -867,7 +879,7 @@ implementation(<span class="hljs-string">"com.h2database:h2"</span>) <span class
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443440.1873"><span class="hljs-meta">@Service</span>
+<pre class="highlight"><code class="language-java" id="1722604316381.4043"><span class="hljs-meta">@Service</span>
 <span class="hljs-meta">@Transactional</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SiteServiceImpl</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">SiteService</span> {
 
@@ -879,7 +891,7 @@ implementation(<span class="hljs-string">"com.h2database:h2"</span>) <span class
         siteDao.save(site);
         <span class="hljs-keyword">return</span> site;
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443440.1873')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316381.4043')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -925,11 +937,11 @@ implementation(<span class="hljs-string">"com.h2database:h2"</span>) <span class
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443440.195"># Spring boot : JPA
+<pre class="highlight"><code class="language-java" id="1722604316381.0203"># Spring boot : JPA
 spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
 spring.jpa.generate-ddl=<span class="hljs-literal">true</span>
 spring.jpa.show_sql=<span class="hljs-literal">true</span>
-spring.jpa.defer-datasource-initialization=<span class="hljs-literal">true</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722522443440.195')">Copy</button></pre>
+spring.jpa.defer-datasource-initialization=<span class="hljs-literal">true</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722604316381.0203')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -982,7 +994,7 @@ In this second case, one of the two entities must be the parent (the main entity
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443441.9956"><span class="hljs-meta">@Entity</span>
+<pre class="highlight"><code class="language-java" id="1722604316382.9321"><span class="hljs-meta">@Entity</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Mayor</span> {
     <span class="hljs-meta">@Id</span>
     <span class="hljs-keyword">private</span> Long id;
@@ -1001,7 +1013,7 @@ In this second case, one of the two entities must be the parent (the main entity
      <span class="hljs-keyword">private</span> Mayor mayor;
 
      <span class="hljs-comment">// ...</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443441.9956')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316382.9321')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1023,7 +1035,7 @@ In this second case, one of the two entities must be the parent (the main entity
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443442.3594"><span class="hljs-meta">@Entity</span>
+<pre class="highlight"><code class="language-java" id="1722604316383.3594"><span class="hljs-meta">@Entity</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">City</span> {
     <span class="hljs-meta">@Id</span>
     <span class="hljs-keyword">private</span> Long id;
@@ -1045,7 +1057,7 @@ In this second case, one of the two entities must be the parent (the main entity
     <span class="hljs-keyword">private</span> City city;
 
     <span class="hljs-comment">//...</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443442.3594')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316383.3594')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1078,7 +1090,7 @@ In this case, you will not be able to delete a row because you will always have 
 </div>
 <div class="listingblock langage-small">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443442.688"><span class="hljs-meta">@Entity</span>
+<pre class="highlight"><code class="language-java" id="1722604316384.2942"><span class="hljs-meta">@Entity</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Sensor</span> {
     <span class="hljs-meta">@Id</span>
     <span class="hljs-keyword">private</span> Long id;
@@ -1094,10 +1106,10 @@ In this case, you will not be able to delete a row because you will always have 
     <span class="hljs-keyword">private</span> String name;
 
     <span class="hljs-meta">@OneToMany</span>
-    <span class="hljs-keyword">private</span> Set&amp;lt;Sensor&amp;gt; sensors = Set.of();
+    <span class="hljs-keyword">private</span> Set<span class="hljs-meta">&lt;Sensor</span><span class="hljs-meta">&gt;</span> sensors = Set.of();
 
     <span class="hljs-comment">// ...</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443442.688')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316384.2942')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -1116,7 +1128,7 @@ In this case, you will not be able to delete a row because you will always have 
 </div>
 <div class="listingblock langage-small">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443443.5635"><span class="hljs-meta">@Entity</span>
+<pre class="highlight"><code class="language-java" id="1722604316384.217"><span class="hljs-meta">@Entity</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Sensor</span> {
     <span class="hljs-meta">@Id</span>
     <span class="hljs-keyword">private</span> Long id;
@@ -1135,7 +1147,7 @@ In this case, you will not be able to delete a row because you will always have 
     <span class="hljs-keyword">private</span> Sensor sensor;
 
     <span class="hljs-comment">// ...</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443443.5635')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316384.217')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -1155,7 +1167,7 @@ So you can’t make a mistake, add this <code>mappedBy</code> property on @OneTo
 </div>
 <div class="listingblock langage-small">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443443.0837"><span class="hljs-meta">@Entity</span>
+<pre class="highlight"><code class="language-java" id="1722604316385.144"><span class="hljs-meta">@Entity</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Measure</span> {
     <span class="hljs-meta">@Id</span>
     <span class="hljs-keyword">private</span> Long id;
@@ -1172,8 +1184,8 @@ So you can’t make a mistake, add this <code>mappedBy</code> property on @OneTo
     <span class="hljs-keyword">private</span> String name;
 
     <span class="hljs-meta">@OneToMany(mappedBy = "sensor")</span>
-    <span class="hljs-keyword">private</span> Set&amp;lt;Measure&amp;gt; measures = Set.of();
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443443.0837')">Copy</button></pre>
+    <span class="hljs-keyword">private</span> Set<span class="hljs-meta">&lt;Measure</span><span class="hljs-meta">&gt;</span> measures = Set.of();
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316385.144')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1195,7 +1207,7 @@ So you can’t make a mistake, add this <code>mappedBy</code> property on @OneTo
 </div>
 <div class="listingblock langage-small">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443444.3467"><span class="hljs-meta">@Entity</span>
+<pre class="highlight"><code class="language-java" id="1722604316386.902"><span class="hljs-meta">@Entity</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Instrument</span> {
     <span class="hljs-meta">@Id</span>
     <span class="hljs-keyword">private</span> Long id;
@@ -1211,10 +1223,10 @@ So you can’t make a mistake, add this <code>mappedBy</code> property on @OneTo
     <span class="hljs-keyword">private</span> String name;
 
     <span class="hljs-meta">@ManyToMany</span>
-    <span class="hljs-keyword">private</span> Set&amp;lt;Instrument&amp;gt; instruments;
+    <span class="hljs-keyword">private</span> Set<span class="hljs-meta">&lt;Instrument</span><span class="hljs-meta">&gt;</span> instruments;
 
     <span class="hljs-comment">// ...</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443444.3467')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316386.902')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1230,7 +1242,7 @@ So you can’t make a mistake, add this <code>mappedBy</code> property on @OneTo
 </div>
 <div class="listingblock langage-small">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443444.3506"><span class="hljs-comment">// Child</span>
+<pre class="highlight"><code class="language-java" id="1722604316387.8652"><span class="hljs-comment">// Child</span>
 <span class="hljs-meta">@Entity</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Instrument</span> {
     <span class="hljs-meta">@Id</span>
@@ -1238,7 +1250,7 @@ So you can’t make a mistake, add this <code>mappedBy</code> property on @OneTo
     <span class="hljs-keyword">private</span> String name;
 
     <span class="hljs-meta">@ManyToMany</span>
-    <span class="hljs-keyword">private</span> Set&amp;lt;Musician&amp;gt; musicians;
+    <span class="hljs-keyword">private</span> Set<span class="hljs-meta">&lt;Musician</span><span class="hljs-meta">&gt;</span> musicians;
      <span class="hljs-comment">// ...</span>
 }
 
@@ -1250,10 +1262,10 @@ So you can’t make a mistake, add this <code>mappedBy</code> property on @OneTo
     <span class="hljs-keyword">private</span> String name;
 
     <span class="hljs-meta">@ManyToMany(mappedBy="musicians")</span>
-    <span class="hljs-keyword">private</span> Set&amp;lt;Instrument&amp;gt; instruments;
+    <span class="hljs-keyword">private</span> Set<span class="hljs-meta">&lt;Instrument</span><span class="hljs-meta">&gt;</span> instruments;
 
     <span class="hljs-comment">// ...</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443444.3506')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316387.8652')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -1274,8 +1286,8 @@ So you can’t make a mistake, add this <code>mappedBy</code> property on @OneTo
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443445.0518"><span class="hljs-meta">@OneToMany(fetch = FetchType.EAGER)</span>
-<span class="hljs-keyword">private</span> Set&amp;lt;Sensor&amp;gt; sensors = Set.of();</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443445.0518')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1722604316388.1829"><span class="hljs-meta">@OneToMany(fetch = FetchType.EAGER)</span>
+<span class="hljs-keyword">private</span> Set<span class="hljs-meta">&lt;Sensor</span><span class="hljs-meta">&gt;</span> sensors = Set.of();</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316388.1829')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1293,7 +1305,7 @@ So you can’t make a mistake, add this <code>mappedBy</code> property on @OneTo
 </div>
 <div class="listingblock langage-small">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443445.921">org.hibernate.LazyInitializationException: could not initialize proxy</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443445.921')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1722604316388.2456">org.hibernate.LazyInitializationException: could not initialize proxy</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316388.2456')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1313,11 +1325,11 @@ So you can’t make a mistake, add this <code>mappedBy</code> property on @OneTo
 </div>
 <div class="listingblock langage-small">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443445.6653"><span class="hljs-comment">// Selection sensors</span>
+<pre class="highlight"><code class="language-java" id="1722604316388.9683"><span class="hljs-comment">// Selection sensors</span>
 select c from SensorEntity c
 
 <span class="hljs-comment">// Selection sites linked to a sensor</span>
-select c.site from SensorEntity c</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443445.6653')">Copy</button></pre>
+select c.site from SensorEntity c</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316388.9683')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1325,7 +1337,7 @@ select c.site from SensorEntity c</code><button class="btn-copy-code" onclick="c
 </div>
 <div class="listingblock langage-small">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443445.9224">select c from SensorEntity c where c.site.id = :siteId</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443445.9224')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1722604316388.7634">select c from SensorEntity c where c.site.id = :siteId</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316388.7634')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1333,8 +1345,8 @@ select c.site from SensorEntity c</code><button class="btn-copy-code" onclick="c
 </div>
 <div class="listingblock langage-small">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443445.9604">select c from SensorEntity c join c.site s where s.id = :siteId
-select c from SensorEntity c left join c.site s where s.id = :siteId</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443445.9604')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1722604316388.441">select c from SensorEntity c join c.site s where s.id = :siteId
+select c from SensorEntity c left join c.site s where s.id = :siteId</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316388.441')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -1353,10 +1365,10 @@ select c from SensorEntity c left join c.site s where s.id = :siteId</code><butt
 </div>
 <div class="listingblock langage-small">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443445.3384"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">SensorDao</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">JpaRepository</span>&amp;lt;SensorEntity, Long&amp;gt; {
+<pre class="highlight"><code class="language-java" id="1722604316389.9675"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">SensorDao</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">JpaRepository</span><span class="hljs-meta">&lt;SensorEntity</span>, Long<span class="hljs-meta">&gt;</span> {
     <span class="hljs-meta">@Query("select c from SensorEntity c where c.name=:name")</span>
     Sensor <span class="hljs-title function_">findByName</span><span class="hljs-params">(<span class="hljs-meta">@Param("name")</span> String name)</span>;
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443445.3384')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316389.9675')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1369,9 +1381,9 @@ select c from SensorEntity c left join c.site s where s.id = :siteId</code><butt
 </div>
 <div class="listingblock langage-small">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443446.5894"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">SensorDao</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">JpaRepository</span>&amp;lt;SensorEntity, Long&amp;gt; {
+<pre class="highlight"><code class="language-java" id="1722604316390.2"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">SensorDao</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">JpaRepository</span><span class="hljs-meta">&lt;SensorEntity</span>, Long<span class="hljs-meta">&gt;</span> {
 
-    List&amp;lt;SensorEntity&amp;gt; findBySiteId(Long siteId); <span class="hljs-comment">// (1).</span>
+    List<span class="hljs-meta">&lt;SensorEntity</span><span class="hljs-meta">&gt;</span> findBySiteId(Long siteId); <span class="hljs-comment">// (1).</span>
 
     <span class="hljs-meta">@Query("select c from SensorEntity c where c.name=:name")</span>  <span class="hljs-comment">// (2)</span>
     Sensor <span class="hljs-title function_">findByName</span><span class="hljs-params">(<span class="hljs-meta">@Param("name")</span> String name)</span>;
@@ -1379,7 +1391,7 @@ select c from SensorEntity c left join c.site s where s.id = :siteId</code><butt
     <span class="hljs-meta">@Modifying</span> <span class="hljs-comment">// (3)</span>
     <span class="hljs-meta">@Query("delete from SensorEntity c where c.name = ?1")</span>
     <span class="hljs-keyword">void</span> <span class="hljs-title function_">deleteByName</span><span class="hljs-params">(String name)</span>;
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443446.5894')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316390.2')">Copy</button></pre>
 </div>
 </div>
 <div class="olist arabic">
@@ -1404,7 +1416,7 @@ select c from SensorEntity c left join c.site s where s.id = :siteId</code><butt
 <p>You can after add a property</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443446.643">List&amp;lt;SensorEntity&amp;gt; findByName(String name);</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443446.643')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1722604316390.7065">List<span class="hljs-meta">&lt;SensorEntity</span><span class="hljs-meta">&gt;</span> findByName(String name);</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316390.7065')">Copy</button></pre>
 </div>
 </div>
 </li>
@@ -1412,7 +1424,7 @@ select c from SensorEntity c left join c.site s where s.id = :siteId</code><butt
 <p>You can add a property of a property</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443446.3208">List&amp;lt;SensorEntity&amp;gt; findBySiteId(String siteId);</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443446.3208')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1722604316390.1624">List<span class="hljs-meta">&lt;SensorEntity</span><span class="hljs-meta">&gt;</span> findBySiteId(String siteId);</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316390.1624')">Copy</button></pre>
 </div>
 </div>
 </li>
@@ -1420,8 +1432,8 @@ select c from SensorEntity c left join c.site s where s.id = :siteId</code><butt
 <p>You can cumulate criteria</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443446.2449">List&amp;lt;SensorEntity&amp;gt; findByNameAndSiteId(String name, String siteId);
-List&amp;lt;SensorEntity&amp;gt; findByNameOrSiteId(String name, String siteId);</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443446.2449')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1722604316391.8354">List<span class="hljs-meta">&lt;SensorEntity</span><span class="hljs-meta">&gt;</span> findByNameAndSiteId(String name, String siteId);
+List<span class="hljs-meta">&lt;SensorEntity</span><span class="hljs-meta">&gt;</span> findByNameOrSiteId(String name, String siteId);</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316391.8354')">Copy</button></pre>
 </div>
 </div>
 </li>
@@ -1429,8 +1441,8 @@ List&amp;lt;SensorEntity&amp;gt; findByNameOrSiteId(String name, String siteId);
 <p>You can ignore upper or lower case</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443446.439">List&amp;lt;SensorEntity&amp;gt; findByNameIgnoreCase(String name);
-List&amp;lt;SensorEntity&amp;gt; findByNameAndSiteIdAllIgnoreCase(String name, String siteId);</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443446.439')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1722604316391.2925">List<span class="hljs-meta">&lt;SensorEntity</span><span class="hljs-meta">&gt;</span> findByNameIgnoreCase(String name);
+List<span class="hljs-meta">&lt;SensorEntity</span><span class="hljs-meta">&gt;</span> findByNameAndSiteIdAllIgnoreCase(String name, String siteId);</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316391.2925')">Copy</button></pre>
 </div>
 </div>
 </li>
@@ -1438,8 +1450,8 @@ List&amp;lt;SensorEntity&amp;gt; findByNameAndSiteIdAllIgnoreCase(String name, S
 <p>You can sort data</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443446.4502">List&amp;lt;SensorEntity&amp;gt; findByNameOrderByNameAsc(String name);
-List&amp;lt;SensorEntity&amp;gt; findByNameOrderByNameDesc(String name);</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443446.4502')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1722604316391.936">List<span class="hljs-meta">&lt;SensorEntity</span><span class="hljs-meta">&gt;</span> findByNameOrderByNameAsc(String name);
+List<span class="hljs-meta">&lt;SensorEntity</span><span class="hljs-meta">&gt;</span> findByNameOrderByNameDesc(String name);</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316391.936')">Copy</button></pre>
 </div>
 </div>
 </li>
@@ -1447,7 +1459,7 @@ List&amp;lt;SensorEntity&amp;gt; findByNameOrderByNameDesc(String name);</code><
 <p>You can select only one element (if you have for example an unicity constraint). But in this case if several elements are found an exception is thrown</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443447.0403">SensorEntity <span class="hljs-title function_">findByName</span><span class="hljs-params">(String name)</span>;</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443447.0403')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1722604316392.1108">SensorEntity <span class="hljs-title function_">findByName</span><span class="hljs-params">(String name)</span>;</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316392.1108')">Copy</button></pre>
 </div>
 </div>
 </li>
@@ -1464,9 +1476,9 @@ List&amp;lt;SensorEntity&amp;gt; findByNameOrderByNameDesc(String name);</code><
 </div>
 <div class="listingblock langage-verysmall">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443447.0557"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">SensorCustomDao</span> {
-    List&amp;lt;SensorEntity&amp;gt; findBySiteText(String searchText);
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443447.0557')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1722604316392.2493"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">SensorCustomDao</span> {
+    List<span class="hljs-meta">&lt;SensorEntity</span><span class="hljs-meta">&gt;</span> findBySiteText(String searchText);
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316392.2493')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1474,8 +1486,8 @@ List&amp;lt;SensorEntity&amp;gt; findByNameOrderByNameDesc(String name);</code><
 </div>
 <div class="listingblock langage-verysmall">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443447.0083"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">SensorDao</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">JpaRepository</span>&amp;lt;SensorEntity, String&amp;gt;, SensorCustomDao {
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443447.0083')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1722604316392.5945"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">SensorDao</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">JpaRepository</span><span class="hljs-meta">&lt;SensorEntity</span>, String<span class="hljs-meta">&gt;</span>, SensorCustomDao {
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316392.5945')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1483,20 +1495,20 @@ List&amp;lt;SensorEntity&amp;gt; findByNameOrderByNameDesc(String name);</code><
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443447.0874"><span class="hljs-meta">@Repository</span>
+<pre class="highlight"><code class="language-java" id="1722604316393.4414"><span class="hljs-meta">@Repository</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SensorCustomDaoImpl</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">SensorCustomDao</span> {
 
     <span class="hljs-meta">@PersistenceContext</span>
     <span class="hljs-keyword">private</span> EntityManager em;
 
     <span class="hljs-meta">@Override</span>
-    <span class="hljs-keyword">public</span> List&amp;lt;SensorEntity&amp;gt; findBySiteText(String searchText) {
+    <span class="hljs-keyword">public</span> List<span class="hljs-meta">&lt;SensorEntity</span><span class="hljs-meta">&gt;</span> findBySiteText(String searchText) {
         <span class="hljs-keyword">return</span> em.createQuery(<span class="hljs-string">"select c from SensorEntity c inner join c.site s where lover(s.name) like :searchText"</span>,
                               Sensor.class)
                  .setParameter(<span class="hljs-string">"searchText"</span>, <span class="hljs-string">"%"</span> + searchText.toLowerCase() + <span class="hljs-string">"%"</span>)
                  .getResultList();
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443447.0874')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316393.4414')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -1542,7 +1554,7 @@ List&amp;lt;SensorEntity&amp;gt; findByNameOrderByNameDesc(String name);</code><
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443448.3193"><span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> <span class="hljs-title class_">SensorType</span> { TEMPERATURE, POWER, STATUS }</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443448.3193')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1722604316393.9788"><span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> <span class="hljs-title class_">SensorType</span> { TEMPERATURE, POWER, STATUS }</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316393.9788')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -1556,7 +1568,7 @@ List&amp;lt;SensorEntity&amp;gt; findByNameOrderByNameDesc(String name);</code><
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443448.6626"><span class="hljs-comment">// (1)</span>
+<pre class="highlight"><code class="language-java" id="1722604316395.6"><span class="hljs-comment">// (1)</span>
 <span class="hljs-comment">// (2)</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">WindowEntity</span> {
     <span class="hljs-comment">// (3)</span>
@@ -1599,7 +1611,7 @@ List&amp;lt;SensorEntity&amp;gt; findByNameOrderByNameDesc(String name);</code><
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">setWindowStatus</span><span class="hljs-params">(Sensor windowStatus)</span> {
         <span class="hljs-built_in">this</span>.windowStatus = windowStatus;
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443448.6626')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316395.6')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1741,7 +1753,7 @@ Hibernate: alter table if exists sp_window add constraint FKqdj6jbtn59whbpgt93n9
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-sql" id="1722522443450.771"><span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> SP_SENSOR(id, name, sensor_value, sensor_type) <span class="hljs-keyword">VALUES</span>(<span class="hljs-number">-10</span>, <span class="hljs-string">'Temperature room 2'</span>, <span class="hljs-number">21.3</span>, <span class="hljs-string">'TEMPERATURE'</span>);
+<pre class="highlight"><code class="language-sql" id="1722604316397.9458"><span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> SP_SENSOR(id, name, sensor_value, sensor_type) <span class="hljs-keyword">VALUES</span>(<span class="hljs-number">-10</span>, <span class="hljs-string">'Temperature room 2'</span>, <span class="hljs-number">21.3</span>, <span class="hljs-string">'TEMPERATURE'</span>);
 <span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> SP_SENSOR(id, name, sensor_value, sensor_type) <span class="hljs-keyword">VALUES</span>(<span class="hljs-number">-9</span>, <span class="hljs-string">'Window 1 status room 1'</span>, <span class="hljs-number">1.0</span>, <span class="hljs-string">'STATUS'</span>);
 <span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> SP_SENSOR(id, name, sensor_value, sensor_type) <span class="hljs-keyword">VALUES</span>(<span class="hljs-number">-8</span>, <span class="hljs-string">'Window 2 status room 1'</span>, <span class="hljs-number">0.0</span>, <span class="hljs-string">'STATUS'</span>);
 <span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> SP_SENSOR(id, name, sensor_value, sensor_type) <span class="hljs-keyword">VALUES</span>(<span class="hljs-number">-7</span>, <span class="hljs-string">'Window 1 status room 2'</span>, <span class="hljs-number">0.0</span>, <span class="hljs-string">'STATUS'</span>);
@@ -1753,7 +1765,7 @@ Hibernate: alter table if exists sp_window add constraint FKqdj6jbtn59whbpgt93n9
 <span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> SP_WINDOW(id, window_status_id, name, room_id) <span class="hljs-keyword">VALUES</span>(<span class="hljs-number">-10</span>, <span class="hljs-number">-9</span>, <span class="hljs-string">'Window 1'</span>, <span class="hljs-number">-10</span>);
 <span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> SP_WINDOW(id, window_status_id, name, room_id) <span class="hljs-keyword">VALUES</span>(<span class="hljs-number">-9</span>, <span class="hljs-number">-8</span>, <span class="hljs-string">'Window 2'</span>, <span class="hljs-number">-10</span>);
 <span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> SP_WINDOW(id, window_status_id, name, room_id) <span class="hljs-keyword">VALUES</span>(<span class="hljs-number">-8</span>, <span class="hljs-number">-7</span>, <span class="hljs-string">'Window 1'</span>, <span class="hljs-number">-9</span>);
-<span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> SP_WINDOW(id, window_status_id, name, room_id) <span class="hljs-keyword">VALUES</span>(<span class="hljs-number">-7</span>, <span class="hljs-number">-6</span>, <span class="hljs-string">'Window 2'</span>, <span class="hljs-number">-9</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443450.771')">Copy</button></pre>
+<span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> SP_WINDOW(id, window_status_id, name, room_id) <span class="hljs-keyword">VALUES</span>(<span class="hljs-number">-7</span>, <span class="hljs-number">-6</span>, <span class="hljs-string">'Window 2'</span>, <span class="hljs-number">-9</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316397.9458')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -1772,7 +1784,7 @@ Hibernate: alter table if exists sp_window add constraint FKqdj6jbtn59whbpgt93n9
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443451.5095"><span class="hljs-keyword">import</span> com.emse.spring.automacorp.model.Window;
+<pre class="highlight"><code class="language-java" id="1722604316398.1123"><span class="hljs-keyword">import</span> com.emse.spring.automacorp.model.Window;
 <span class="hljs-keyword">import</span> com.emse.spring.automacorp.model.WindowStatus;
 <span class="hljs-keyword">import</span> org.assertj.core.api.Assertions;
 <span class="hljs-keyword">import</span> org.junit.jupiter.api.Test;
@@ -1792,7 +1804,7 @@ Hibernate: alter table if exists sp_window add constraint FKqdj6jbtn59whbpgt93n9
         Assertions.assertThat(window.getName()).isEqualTo(<span class="hljs-string">"Window 1"</span>);
         Assertions.assertThat(window.getWindowStatus().getValue()).isEqualTo(<span class="hljs-number">1.0</span>);
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443451.5095')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316398.1123')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -1827,9 +1839,9 @@ Hibernate: alter table if exists sp_window add constraint FKqdj6jbtn59whbpgt93n9
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443451.9841"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">WindowDaoCustom</span> {
-    List&amp;lt;WindowEntity&amp;gt; findRoomsWithOpenWindows(Long id);
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443451.9841')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1722604316399.125"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">WindowDaoCustom</span> {
+    List<span class="hljs-meta">&lt;WindowEntity</span><span class="hljs-meta">&gt;</span> findRoomsWithOpenWindows(Long id);
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316399.125')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1840,7 +1852,7 @@ Hibernate: alter table if exists sp_window add constraint FKqdj6jbtn59whbpgt93n9
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443452.8342"><span class="hljs-keyword">import</span> com.emse.spring.automacorp.model.Window;
+<pre class="highlight"><code class="language-java" id="1722604316400.208"><span class="hljs-keyword">import</span> com.emse.spring.automacorp.model.Window;
 <span class="hljs-keyword">import</span> jakarta.persistence.EntityManager;
 <span class="hljs-keyword">import</span> jakarta.persistence.PersistenceContext;
 
@@ -1851,14 +1863,14 @@ Hibernate: alter table if exists sp_window add constraint FKqdj6jbtn59whbpgt93n9
     <span class="hljs-keyword">private</span> EntityManager em;
 
     <span class="hljs-meta">@Override</span>
-    <span class="hljs-keyword">public</span> List&amp;lt;WindowEntity&amp;gt; findRoomsWithOpenWindows(Long id) {
+    <span class="hljs-keyword">public</span> List<span class="hljs-meta">&lt;WindowEntity</span><span class="hljs-meta">&gt;</span> findRoomsWithOpenWindows(Long id) {
         <span class="hljs-type">String</span> <span class="hljs-variable">jpql</span> <span class="hljs-operator">=</span> <span class="hljs-string">"select w from Window w inner join w.windowStatus s "</span> +
-                <span class="hljs-string">"where w.room.id = :id and s.value &amp;gt; 0.0 order by w.name"</span>;
+                <span class="hljs-string">"where w.room.id = :id and s.value &gt; 0.0 order by w.name"</span>;
         <span class="hljs-keyword">return</span> em.createQuery(jpql, WindowEntity.class)
                 .setParameter(<span class="hljs-string">"id"</span>, id)
                 .getResultList();
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443452.8342')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316400.208')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1866,9 +1878,9 @@ Hibernate: alter table if exists sp_window add constraint FKqdj6jbtn59whbpgt93n9
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443452.0005"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-java" id="1722604316401.5847"><span class="hljs-meta">@Test</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">shouldFindRoomsWithOpenWindows</span><span class="hljs-params">()</span> {
-    List&amp;lt;WindowEntity&amp;gt; result = windowDao.findRoomsWithOpenWindows(-<span class="hljs-number">10L</span>);
+    List<span class="hljs-meta">&lt;WindowEntity</span><span class="hljs-meta">&gt;</span> result = windowDao.findRoomsWithOpenWindows(-<span class="hljs-number">10L</span>);
     Assertions.assertThat(result)
               .hasSize(<span class="hljs-number">1</span>)
               .extracting(<span class="hljs-string">"id"</span>, <span class="hljs-string">"name"</span>)
@@ -1877,9 +1889,9 @@ Hibernate: alter table if exists sp_window add constraint FKqdj6jbtn59whbpgt93n9
 
 <span class="hljs-meta">@Test</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">shouldNotFindRoomsWithOpenWindows</span><span class="hljs-params">()</span> {
-    List&amp;lt;WindowEntity&amp;gt; result = windowDao.findRoomsWithOpenWindows(-<span class="hljs-number">9L</span>);
+    List<span class="hljs-meta">&lt;WindowEntity</span><span class="hljs-meta">&gt;</span> result = windowDao.findRoomsWithOpenWindows(-<span class="hljs-number">9L</span>);
     Assertions.assertThat(result).isEmpty();
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443452.0005')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316401.5847')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1906,17 +1918,17 @@ Hibernate: alter table if exists sp_window add constraint FKqdj6jbtn59whbpgt93n9
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722522443453.4734"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-java" id="1722604316401.0286"><span class="hljs-meta">@Test</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">shouldDeleteWindowsRoom</span><span class="hljs-params">()</span> {
     <span class="hljs-type">RoomEntity</span> <span class="hljs-variable">room</span> <span class="hljs-operator">=</span> roomDao.getById(-<span class="hljs-number">10L</span>);
-    List&amp;lt;Long&amp;gt; roomIds = room.getWindows().stream().map(Window::getId).collect(Collectors.toList());
+    List<span class="hljs-meta">&lt;Long</span><span class="hljs-meta">&gt;</span> roomIds = room.getWindows().stream().map(Window::getId).collect(Collectors.toList());
     Assertions.assertThat(roomIds).hasSize(<span class="hljs-number">2</span>);
 
     windowDao.deleteByRoom(-<span class="hljs-number">10L</span>);
-    List&amp;lt;WindowEntity&amp;gt; result = windowDao.findAllById(roomIds);
+    List<span class="hljs-meta">&lt;WindowEntity</span><span class="hljs-meta">&gt;</span> result = windowDao.findAllById(roomIds);
     Assertions.assertThat(result).isEmpty();
 
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443453.4734')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604316401.0286')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1925,8 +1937,8 @@ Hibernate: alter table if exists sp_window add constraint FKqdj6jbtn59whbpgt93n9
 </div>
 </div>
 </div>
-</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 01/08/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
+</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 02/08/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
 
-<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-KZZ4TXLO.js" type="module"></script>
+<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-EXB64UBH.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t1"},"c":{"7":[{"i":"t1","r":1,"x":2}]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t0"},"c":{"7":[{"i":"t0","r":1,"x":2}]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>

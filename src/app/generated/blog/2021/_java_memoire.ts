@@ -1,28 +1,28 @@
 export const _java_memoire:string = `<div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<a class="link" fragment="#_le_garbage_collector">Le garbage collector</a>
-<a class="link" fragment="#_fonctionnement">Fonctionnement</a>
+<li><a class="link" fragment="#_le_garbage_collector">Le garbage collector</a></li>
+<li><a class="link" fragment="#_fonctionnement">Fonctionnement</a>
 <ul class="sectlevel2">
 <li><a class="link" fragment="#_collecte_genérationnelle">Collecte genérationnelle</a></li>
 <li><a class="link" fragment="#_logguer_ce_que_fait_le_garbage_collector">Logguer ce que fait le garbage collector</a></li>
 </ul>
-
-<a class="link" fragment="#_métriques">Métriques</a>
+</li>
+<li><a class="link" fragment="#_métriques">Métriques</a>
 <ul class="sectlevel2">
 <li><a class="link" fragment="#_maximum_pause_time">Maximum Pause-Time</a></li>
 <li><a class="link" fragment="#_débit_de_lapplication_throughput">Débit de l&#8217;application (throughput)</a></li>
 </ul>
-
-<a class="link" fragment="#_performances">Performances</a>
+</li>
+<li><a class="link" fragment="#_performances">Performances</a>
 <ul class="sectlevel2">
 <li><a class="link" fragment="#_taille_de_la_heap_espace_mémoire_global">Taille de la heap (espace mémoire global)</a></li>
 <li><a class="link" fragment="#_taille_de_la_jeune_génération">Taille de la jeune génération</a></li>
 </ul>
-
-<a class="link" fragment="#_serial_collector">Serial Collector</a>
-<a class="link" fragment="#_parallel_collector">Parallel Collector</a>
-<a class="link" fragment="#_garbage_first_g1">Garbage-First (G1)</a>
+</li>
+<li><a class="link" fragment="#_serial_collector">Serial Collector</a></li>
+<li><a class="link" fragment="#_parallel_collector">Parallel Collector</a></li>
+<li><a class="link" fragment="#_garbage_first_g1">Garbage-First (G1)</a>
 <ul class="sectlevel2">
 <li><a class="link" fragment="#_fonctionnement_2">Fonctionnement</a></li>
 <li><a class="link" fragment="#_principales_options">Principales options</a></li>
@@ -36,8 +36,8 @@ export const _java_memoire:string = `<div id="toc" class="toc">
 </ul>
 </li>
 </ul>
-
-<a class="link" fragment="#_z_garbage_collector">Z Garbage Collector</a>
+</li>
+<li><a class="link" fragment="#_z_garbage_collector">Z Garbage Collector</a>
 <ul class="sectlevel2">
 <li><a class="link" fragment="#_découpage_de_la_mémoire">Découpage de la mémoire</a></li>
 <li><a class="link" fragment="#_coloration_de_référence_colored_pointer">Coloration de référence (colored pointer)</a></li>
@@ -45,16 +45,16 @@ export const _java_memoire:string = `<div id="toc" class="toc">
 <li><a class="link" fragment="#_cycle_de_vie">Cycle de vie</a></li>
 <li><a class="link" fragment="#_principales_options_2">Principales options</a></li>
 </ul>
-
-<a class="link" fragment="#_epsilon_garbage_collector">Epsilon Garbage Collector</a>
-<a class="link" fragment="#_shenandoah_garbage_collector">Shenandoah Garbage Collector</a>
+</li>
+<li><a class="link" fragment="#_epsilon_garbage_collector">Epsilon Garbage Collector</a></li>
+<li><a class="link" fragment="#_shenandoah_garbage_collector">Shenandoah Garbage Collector</a>
 <ul class="sectlevel2">
 <li><a class="link" fragment="#_fonctionnement_3">Fonctionnement</a></li>
 <li><a class="link" fragment="#_principales_options_3">Principales options</a></li>
 </ul>
-
-<a class="link" fragment="#_conclusion">Conclusion</a>
-<a class="link" fragment="#_références">Références</a>
+</li>
+<li><a class="link" fragment="#_conclusion">Conclusion</a></li>
+<li><a class="link" fragment="#_références">Références</a></li>
 </ul>
 </div>
 <div id="preamble">
@@ -294,11 +294,11 @@ Pour activer des logs, vous pouvez ajouter des options comme <code>-verbose:gc</
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>[1,733s][info][gc] GC(4) Pause Young (Normal) (G1 Evacuation Pause) 149M-&gt;23M(258M) 8,546ms
-[1,760s][info][gc] GC(5) Pause Young (Concurrent Start) (Metadata GC Threshold) 25M-&gt;23M(258M) 12,065ms
+<pre>[1,733s][info][gc] GC(4) Pause Young (Normal) (G1 Evacuation Pause) 149M@LAMBDA23M(258M) 8,546ms
+[1,760s][info][gc] GC(5) Pause Young (Concurrent Start) (Metadata GC Threshold) 25M@LAMBDA23M(258M) 12,065ms
 [1,760s][info][gc] GC(6) Concurrent Cycle
-[1,769s][info][gc] GC(6) Pause Remark 24M-&gt;24M(258M) 1,524ms
-[1,772s][info][gc] GC(6) Pause Cleanup 24M-&gt;24M(258M) 0,034ms
+[1,769s][info][gc] GC(6) Pause Remark 24M@LAMBDA24M(258M) 1,524ms
+[1,772s][info][gc] GC(6) Pause Cleanup 24M@LAMBDA24M(258M) 0,034ms
 [1,773s][info][gc] GC(6) Concurrent Cycle 13,448ms</pre>
 </div>
 </div>
@@ -324,12 +324,12 @@ Pour activer des logs, vous pouvez ajouter des options comme <code>-verbose:gc</
 [3,534s][info][gc,phases     ] GC(9)   Evacuate Collection Set: 7,3ms
 [3,534s][info][gc,phases     ] GC(9)   Post Evacuate Collection Set: 0,5ms
 [3,534s][info][gc,phases     ] GC(9)   Other: 0,1ms
-[3,534s][info][gc,heap       ] GC(9) Eden regions: 53-&gt;0(141)
-[3,534s][info][gc,heap       ] GC(9) Survivor regions: 15-&gt;12(20)
-[3,534s][info][gc,heap       ] GC(9) Old regions: 23-&gt;29
-[3,534s][info][gc,heap       ] GC(9) Humongous regions: 0-&gt;0
-[3,534s][info][gc,metaspace  ] GC(9) Metaspace: 58647K-&gt;58647K(307200K)
-[3,534s][info][gc            ] GC(9) Pause Young (Concurrent Start) (Metadata GC Threshold) 88M-&gt;39M(258M) 8,056ms
+[3,534s][info][gc,heap       ] GC(9) Eden regions: 53@LAMBDA0(141)
+[3,534s][info][gc,heap       ] GC(9) Survivor regions: 15@LAMBDA12(20)
+[3,534s][info][gc,heap       ] GC(9) Old regions: 23@LAMBDA29
+[3,534s][info][gc,heap       ] GC(9) Humongous regions: 0@LAMBDA0
+[3,534s][info][gc,metaspace  ] GC(9) Metaspace: 58647K@LAMBDA58647K(307200K)
+[3,534s][info][gc            ] GC(9) Pause Young (Concurrent Start) (Metadata GC Threshold) 88M@LAMBDA39M(258M) 8,056ms
 [3,534s][info][gc,cpu        ] GC(9) User=0,06s Sys=0,00s Real=0,01s
 [3,534s][info][gc            ] GC(10) Concurrent Cycle
 [3,534s][info][gc,marking    ] GC(10) Concurrent Clear Claimed Marks
@@ -345,12 +345,12 @@ Pour activer des logs, vous pouvez ajouter des options comme <code>-verbose:gc</
 [3,551s][info][gc,marking    ] GC(10) Concurrent Mark (3,537s, 3,551s) 13,821ms
 [3,551s][info][gc,start      ] GC(10) Pause Remark
 [3,553s][info][gc,stringtable] GC(10) Cleaned string and symbol table, strings: 33455 processed, 61 removed, symbols: 177525 processed, 231 removed
-[3,553s][info][gc            ] GC(10) Pause Remark 43M-&gt;43M(258M) 2,309ms
+[3,553s][info][gc            ] GC(10) Pause Remark 43M@LAMBDA43M(258M) 2,309ms
 [3,553s][info][gc,cpu        ] GC(10) User=0,02s Sys=0,00s Real=0,00s
 [3,553s][info][gc,marking    ] GC(10) Concurrent Rebuild Remembered Sets
 [3,561s][info][gc,marking    ] GC(10) Concurrent Rebuild Remembered Sets 7,794ms
 [3,561s][info][gc,start      ] GC(10) Pause Cleanup
-[3,561s][info][gc            ] GC(10) Pause Cleanup 44M-&gt;44M(258M) 0,046ms
+[3,561s][info][gc            ] GC(10) Pause Cleanup 44M@LAMBDA44M(258M) 0,046ms
 [3,561s][info][gc,cpu        ] GC(10) User=0,00s Sys=0,00s Real=0,00s
 [3,561s][info][gc,marking    ] GC(10) Concurrent Cleanup for Next Mark
 [3,562s][info][gc,marking    ] GC(10) Concurrent Cleanup for Next Mark 0,093ms
@@ -384,7 +384,7 @@ On peut se poser la question de comment est calculé ce temps ?</p>
 Au démarrage votre mémoire est peu remplie et le passé récent est beaucoup plus intéressant.</p>
 </div>
 <div class="paragraph">
-<p>L&#8217;objectif de temps de pause maximum est spécifié en millisecondes avec l&#8217;option <code>-XX: MaxGCPauseMillis=&lt;nnn&gt;</code>.
+<p>L&#8217;objectif de temps de pause maximum est spécifié en millisecondes avec l&#8217;option <code>-XX: MaxGCPauseMillis=@LTnnn@GT</code>.
 Si la moyenne plus la variation du temps de pause est supérieure à l&#8217;objectif de temps de pause maximum, alors le GC considère que l&#8217;objectif n&#8217;est pas atteint.</p>
 </div>
 <div class="paragraph">
@@ -431,10 +431,10 @@ Mais ce n&#8217;est pas magique car plus il y a de l&#8217;espace allouable plus
 <div class="ulist">
 <ul>
 <li>
-<p><code>-Xms=&lt;nnn&gt;</code> taille minimale</p>
+<p><code>-Xms=@LTnnn@GT</code> taille minimale</p>
 </li>
 <li>
-<p><code>-Xmx=&lt;mmm&gt;</code> taille maximale</p>
+<p><code>-Xmx=@LTmmm@GT</code> taille maximale</p>
 </li>
 </ul>
 </div>
@@ -448,10 +448,10 @@ Si vous regardez l&#8217;image plus haut décrivant la répartition génération
 <div class="ulist">
 <ul>
 <li>
-<p><code>-XX:MinHeapFreeRatio = &lt;nnn&gt;</code> (n = 40 par défaut) si le pourcentage d&#8217;espace libre dans une génération tombe en dessous de 40%, alors elle essaie d&#8217;utiliser plus d&#8217;espace pour maintenir 40% d&#8217;espace libre, jusqu&#8217;à la taille maximale autorisée de la génération.</p>
+<p><code>-XX:MinHeapFreeRatio = @LTnnn@GT</code> (n = 40 par défaut) si le pourcentage d&#8217;espace libre dans une génération tombe en dessous de 40%, alors elle essaie d&#8217;utiliser plus d&#8217;espace pour maintenir 40% d&#8217;espace libre, jusqu&#8217;à la taille maximale autorisée de la génération.</p>
 </li>
 <li>
-<p><code>-XX:MaxHeapFreeRatio = &lt;nnn&gt;</code> (n = 70 par défaut) si l&#8217;espace libre dépasse 70%, alors la génération libère de l&#8217;espace pour ne pas utiliser plus de 70%, sous réserve de la taille minimale de la génération.</p>
+<p><code>-XX:MaxHeapFreeRatio = @LTnnn@GT</code> (n = 70 par défaut) si l&#8217;espace libre dépasse 70%, alors la génération libère de l&#8217;espace pour ne pas utiliser plus de 70%, sous réserve de la taille minimale de la génération.</p>
 </li>
 </ul>
 </div>
@@ -497,13 +497,13 @@ Les paramètres pour jouer sur cette taille sont les suivants</p>
 <div class="ulist">
 <ul>
 <li>
-<p><code>-XX:NewRatio=&lt;nnn&gt;</code> si nnn=3 ce ratio permet de dire que la jeune génération utilisera 1 et la vieille génération 3 (soit 1/4 de la <code>heap</code>)</p>
+<p><code>-XX:NewRatio=@LTnnn@GT</code> si nnn=3 ce ratio permet de dire que la jeune génération utilisera 1 et la vieille génération 3 (soit 1/4 de la <code>heap</code>)</p>
 </li>
 <li>
-<p><code>-XX:NewSize=&lt;nnn&gt;</code> taille minimale jeune génération</p>
+<p><code>-XX:NewSize=@LTnnn@GT</code> taille minimale jeune génération</p>
 </li>
 <li>
-<p><code>-XX:MaxNewSize=&lt;nnn&gt;</code> taille maximale jeune génération</p>
+<p><code>-XX:MaxNewSize=@LTnnn@GT</code> taille maximale jeune génération</p>
 </li>
 </ul>
 </div>
@@ -514,7 +514,7 @@ L&#8217;option</p>
 <div class="ulist">
 <ul>
 <li>
-<p><code>-XX:SurvivorRatio=&lt;nnn&gt;</code> permet de régler la taille des zones Survivor.
+<p><code>-XX:SurvivorRatio=@LTnnn@GT</code> permet de régler la taille des zones Survivor.
 Si vous choisissez un ratio à 8 la taille d&#8217;un Survivor sera 1/8 de la zone Eden et donc 1/10 de la jeune génération (nous avons 2 zones Survicor).</p>
 </li>
 </ul>
@@ -529,7 +529,7 @@ Si ces espaces sont trop grands, ils sont inutilement vides.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>N&#8217;affinez cet espace que lorsque vous avez définis une taille maximale de la <code>heap</code> (<code>-Xmx = &lt;mmm&gt;</code>)</p>
+<p>N&#8217;affinez cet espace que lorsque vous avez définis une taille maximale de la <code>heap</code> (<code>-Xmx = @LTmmm@GT</code>)</p>
 </li>
 <li>
 <p>Augmenter la taille de la jeune génération nécessite de réduire la taille de la vieille génération.
@@ -584,16 +584,16 @@ Réduire le nombre de threads de ramasse-miettes et augmenter la taille de l&#82
 <p><code>-XX:+UseParallelGC</code> activation du <code>Parallel Collector</code></p>
 </li>
 <li>
-<p><code>-XX:ParallelGCThreads=&lt;N&gt;</code> nombre de thread utilisé</p>
+<p><code>-XX:ParallelGCThreads=@LTN@GT</code> nombre de thread utilisé</p>
 </li>
 <li>
-<p><code>-XX:YoungGenerationSizeIncrement=&lt;N&gt;</code> pourcentage utilisé quand la jeune génération doit être augmentée (par défaut 20%)</p>
+<p><code>-XX:YoungGenerationSizeIncrement=@LTN@GT</code> pourcentage utilisé quand la jeune génération doit être augmentée (par défaut 20%)</p>
 </li>
 <li>
-<p><code>-XX:TenuredGenerationSizeIncrement=&lt;N&gt;</code> pourcentage utilisé quand la vielle génération doit être augmentée (par défaut 20%)</p>
+<p><code>-XX:TenuredGenerationSizeIncrement=@LTN@GT</code> pourcentage utilisé quand la vielle génération doit être augmentée (par défaut 20%)</p>
 </li>
 <li>
-<p><code>-XX:AdaptiveSizeDecrementScaleFactor=&lt;N&gt;</code> pourcentage utilisé quand une génération doit être réduite (par défaut 5%)</p>
+<p><code>-XX:AdaptiveSizeDecrementScaleFactor=@LTN@GT</code> pourcentage utilisé quand une génération doit être réduite (par défaut 5%)</p>
 </li>
 </ul>
 </div>
@@ -704,20 +704,20 @@ Si vous surchargé cette valeur vous perdrez ce paramètrage dynamique</p>
 <p><code>-XX:MaxGCPauseMillis=200</code> objectif pour le temps de pause</p>
 </li>
 <li>
-<p><code>-XX:GCPauseTimeInterval=&lt;ergonomics&gt;</code> objectif pour l&#8217;intervalle de temps de pause maximal.</p>
+<p><code>-XX:GCPauseTimeInterval=@LTergonomics@GT</code> objectif pour l&#8217;intervalle de temps de pause maximal.</p>
 </li>
 <li>
-<p><code>-XX:ParallelGCThreads=&lt;ergonomics&gt;</code> nombre maximum de threads utilisés pour le parallélisme pendant les pauses de récupération.</p>
+<p><code>-XX:ParallelGCThreads=@LTergonomics@GT</code> nombre maximum de threads utilisés pour le parallélisme pendant les pauses de récupération.</p>
 </li>
 <li>
-<p><code>-XX:ConcGCThreads=&lt;ergonomics&gt;</code> nombre maximum de threads utilisés pour le travail en cours (normalement 1/4 de <code>ParallelGCThreads</code>)</p>
+<p><code>-XX:ConcGCThreads=@LTergonomics@GT</code> nombre maximum de threads utilisés pour le travail en cours (normalement 1/4 de <code>ParallelGCThreads</code>)</p>
 </li>
 <li>
 <p><code>-XX:+G1UseAdaptiveIHOP -XX:InitiatingHeapOccupancyPercent=45</code> IHOP (Initiating Heap Occupancy Percent) est le seuil à partir duquel un marquage est déclenché et il est défini comme un pourcentage de la taille de l&#8217;ancienne génération.
 Ces paramétres indiquent que la détermination adaptative de cette valeur est activée, et que pour les premiers cycles de collecte, G1 utilisera un seuile fixé à 45%</p>
 </li>
 <li>
-<p><code>-XX:G1HeapRegionSize=&lt;ergonomics&gt;</code> taille des régions.
+<p><code>-XX:G1HeapRegionSize=@LTergonomics@GT</code> taille des régions.
 Cette taille dépend des tailles initiales et maximales de la heap.</p>
 </li>
 <li>
@@ -902,7 +902,7 @@ Utilisez <code>-XX:-ReduceInitialCardMarks</code> pour désactiver ce comporteme
 <p>G1 essaie de compresser les références mémorisées pour maintenir une taille de stockage faible.
 Plus l&#8217;ensemble mémorisé est compacté en mémoire, plus il faut de temps pour récupérer les valeurs stockées.
 Activez l&#8217;option <code>-XX:G1SummarizeRSetStatsPeriod</code> en combinaison avec <code>gc+remset=trace</code> au niveau des logs pour voir si vous avez ce problème.
-Vous devez avoir une section <code>Before GC Summary</code> avec une ligne <code>Did &lt;X&gt; coarsenings</code>.
+Vous devez avoir une section <code>Before GC Summary</code> avec une ligne <code>Did @LTX@GT coarsenings</code>.
 Si la valeur de X est élevée, vous pouvez être dans ce cas.
 Augmenter significativement <code>-XX:G1RSetRegionEntries</code> peut diminuer ce phénomène.
 Une fois résolu, revenez à un niveau de log normal, car la collecte de ces données peut prendre un temps considérable.</p>
@@ -983,7 +983,7 @@ Les pages peuvent avoir des tailles différentes (mais toujours un multiple de 2
 <p>moyenne (taille 32 Mo) qui contient les objets allant jusqu&#8217;à 4 Mo</p>
 </li>
 <li>
-<p>grande (taille &gt; 4Mo, multiple de 2 Mo) qui contient les objets de plus de 4 Mo.
+<p>grande (taille @GT 4Mo, multiple de 2 Mo) qui contient les objets de plus de 4 Mo.
 Une grande page ne peut stocker qu&#8217;un seul objet, contrairement aux autres (une grande page peut au final être plus petite qu&#8217;une page moyenne).</p>
 </li>
 </ul>
@@ -1131,7 +1131,7 @@ Si la nouvelle phase de marquage utilise le même bit de marquage, la barrière 
 <div class="ulist">
 <ul>
 <li>
-<p><code>-XX:ConcGCThreads=&lt;number&gt;</code> définit la quantité de temps processeur à affecter aux threads ZGC. Ce paramètre permet de contrôler la fréquence à laquelle le GC va rentrer en action.
+<p><code>-XX:ConcGCThreads=@LTnumber@GT</code> définit la quantité de temps processeur à affecter aux threads ZGC. Ce paramètre permet de contrôler la fréquence à laquelle le GC va rentrer en action.
 Une valeur plus élevée laissera moins de temps CPU pour votre application.
 Une valeur trop basse peut être problématique car votre application peut générer plus de déchets que ce qui est collecté par ZGC.</p>
 </li>

@@ -1,12 +1,12 @@
 export const _spring_boot_starter_database_schema_initialization:string = `<div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<a class="link" fragment="#_un_use_case_réel">Un use case réel</a>
-<a class="link" fragment="#_quest_ce_quune_auto_configuration_spring_boot">Qu&#8217;est ce qu&#8217;une auto configuration Spring Boot ?</a>
-<a class="link" fragment="#_ce_que_jaimerai_faire">Ce que j&#8217;aimerai faire</a>
-<a class="link" fragment="#_les_conditions_sur_les_beans_de_configuration">Les conditions sur les beans de configuration</a>
-<a class="link" fragment="#_utiliser_votre_code">Utiliser votre code</a>
-<a class="link" fragment="#_conclusion">Conclusion</a>
+<li><a class="link" fragment="#_un_use_case_réel">Un use case réel</a></li>
+<li><a class="link" fragment="#_quest_ce_quune_auto_configuration_spring_boot">Qu&#8217;est ce qu&#8217;une auto configuration Spring Boot ?</a></li>
+<li><a class="link" fragment="#_ce_que_jaimerai_faire">Ce que j&#8217;aimerai faire</a></li>
+<li><a class="link" fragment="#_les_conditions_sur_les_beans_de_configuration">Les conditions sur les beans de configuration</a></li>
+<li><a class="link" fragment="#_utiliser_votre_code">Utiliser votre code</a></li>
+<li><a class="link" fragment="#_conclusion">Conclusion</a></li>
 </ul>
 </div>
 <div id="preamble">
@@ -106,9 +106,9 @@ export const _spring_boot_starter_database_schema_initialization:string = `<div 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722519597694.3174"><span class="hljs-meta">@Configuration(proxyBeanMethods = false)</span>
+<pre class="highlight"><code class="language-kotlin" id="1722604315365.221"><span class="hljs-meta">@Configuration(proxyBeanMethods = false)</span>
 <span class="hljs-meta">@AutoConfigureBefore(DataSourceAutoConfiguration::class, LiquibaseAutoConfiguration::class)</span>
-<span class="hljs-keyword">class</span> <span class="hljs-title class_">DatabaseSchemaInitializerAutoConfiguration</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722519597694.3174')">Copy</button></pre>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">DatabaseSchemaInitializerAutoConfiguration</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722604315365.221')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -161,7 +161,7 @@ export const _spring_boot_starter_database_schema_initialization:string = `<div 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722519597694.3274"><span class="hljs-meta">@Configuration(proxyBeanMethods = false)</span>
+<pre class="highlight"><code class="language-kotlin" id="1722604315366.1365"><span class="hljs-meta">@Configuration(proxyBeanMethods = false)</span>
 <span class="hljs-meta">@ConditionalOnProperty(prefix = PROPERTIES_PREFIX, name = [<span class="hljs-string">&quot;enabled&quot;</span>], matchIfMissing = true)</span>
 <span class="hljs-meta">@AutoConfigureBefore(DataSourceAutoConfiguration::class, LiquibaseAutoConfiguration::class)</span>
 <span class="hljs-keyword">class</span> <span class="hljs-title class_">DatabaseSchemaInitializerAutoConfiguration</span> {
@@ -178,11 +178,11 @@ export const _spring_boot_starter_database_schema_initialization:string = `<div 
          <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">databaseSchemaInitializer</span><span class="hljs-params">()</span></span> =
              DatabaseSchemaInitializer()
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722519597694.3274')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315366.1365')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Notre <code>DatabaseSchemaInitializer</code> doit maintenant s&#8217;exécuter avant la mise en place de la datasource de Flyway ou Liquibase. Votre code marche en Java 8 mais pas avec les versions supérieures où les modules ont été introduits. Sur Java &gt; 9 avec une configuration par défaut où les modules dont fermés, <code>SpringLiquibase</code> et <code>Flyway</code> ne sont pas accessible.</p>
+<p>Notre <code>DatabaseSchemaInitializer</code> doit maintenant s&#8217;exécuter avant la mise en place de la datasource de Flyway ou Liquibase. Votre code marche en Java 8 mais pas avec les versions supérieures où les modules ont été introduits. Sur Java @GT 9 avec une configuration par défaut où les modules dont fermés, <code>SpringLiquibase</code> et <code>Flyway</code> ne sont pas accessible.</p>
 </div>
 <div class="paragraph">
 <p>Si on maitrisait le code, nous pourrions ajouter une annotation @DependsOn() vers <code>DatabaseSchemaInitializer</code> sur les beans <code>SpringLiquibase</code> et <code>Flyway</code>, mais ce n&#8217;est pas le cas.</p>
@@ -192,7 +192,7 @@ export const _spring_boot_starter_database_schema_initialization:string = `<div 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722519597695.3743"><span class="hljs-meta">@Configuration(proxyBeanMethods = false)</span>
+<pre class="highlight"><code class="language-kotlin" id="1722604315370.3677"><span class="hljs-meta">@Configuration(proxyBeanMethods = false)</span>
 <span class="hljs-meta">@ConditionalOnProperty(prefix = PROPERTIES_PREFIX, name = [<span class="hljs-string">&quot;enabled&quot;</span>], matchIfMissing = true)</span>
 <span class="hljs-meta">@AutoConfigureBefore(DataSourceAutoConfiguration::class, LiquibaseAutoConfiguration::class)</span>
 <span class="hljs-keyword">class</span> <span class="hljs-title class_">DatabaseSchemaInitializerAutoConfiguration</span> {
@@ -214,7 +214,7 @@ export const _spring_boot_starter_database_schema_initialization:string = `<div 
          <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">databaseSchemaInitializer</span><span class="hljs-params">()</span></span> =
              DatabaseSchemaInitializer()
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722519597695.3743')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315370.3677')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -238,12 +238,12 @@ export const _spring_boot_starter_database_schema_initialization:string = `<div 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722519597696.3547">    <span class="hljs-comment">// ...</span>
+<pre class="highlight"><code class="language-kotlin" id="1722604315371.107">    <span class="hljs-comment">// ...</span>
     dependencies {
         implementation(project(<span class="hljs-string">&quot;:database-initializer&quot;</span>))
         <span class="hljs-comment">// ...</span>
     }
-    <span class="hljs-comment">// ...</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722519597696.3547')">Copy</button></pre>
+    <span class="hljs-comment">// ...</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722604315371.107')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -254,11 +254,11 @@ export const _spring_boot_starter_database_schema_initialization:string = `<div 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722519597696.4324"><span class="hljs-meta">@Retention(AnnotationRetention.RUNTIME)</span>
+<pre class="highlight"><code class="language-kotlin" id="1722604315372.111"><span class="hljs-meta">@Retention(AnnotationRetention.RUNTIME)</span>
 <span class="hljs-meta">@Target(AnnotationTarget.CLASS, AnnotationTarget.TYPE)</span>
 <span class="hljs-meta">@MustBeDocumented</span>
 <span class="hljs-meta">@Import(DatabaseSchemaInitializerAutoConfiguration::class)</span>
-<span class="hljs-keyword">annotation</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">EnableDatabaseSchemaInitializer</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722519597696.4324')">Copy</button></pre>
+<span class="hljs-keyword">annotation</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">EnableDatabaseSchemaInitializer</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722604315372.111')">Copy</button></pre>
 </div>
 </div>
 </div>
