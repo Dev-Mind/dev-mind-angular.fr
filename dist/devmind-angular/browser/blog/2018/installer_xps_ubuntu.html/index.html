@@ -1,0 +1,314 @@
+<!DOCTYPE html><html lang="en" data-critters-container><head>
+  <meta charset="utf-8">
+  <title>Blog</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    body {
+      min-height: 100vh;
+      max-height: 100vh;
+      font-family: "Helvetica", "Arial", "sans-serif";
+      padding: 0;
+      margin: 0;
+    }
+
+    header {
+      height: 90px;
+      max-height: 90px;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+      background-color: white;
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      z-index: 99;
+      transition-duration: 0.2s;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: max-height, box-shadow;
+      position: fixed;
+      width: 100%;
+      text-align: center;
+    }
+    header hr {
+      width:100%;
+      background-color: #424242;
+      border-color: #424242;
+      display: block;
+      border: 0;
+      height: 0.5em;
+      margin: 0;
+    }
+    .header-img {
+      margin: auto;
+      width: 50%;
+      padding-top: 0.5em;
+      height: 30px;
+    }
+    .header-img img {
+      max-height: 30px !important;
+    }
+    .header-space {
+      min-height: 90px;
+    }
+
+
+    @media screen and (min-width: 901px) {
+      header {
+        height: 120px;
+        max-height: 120px;
+      }
+      .header-img {
+        height: 60px;
+      }
+      .header-img img {
+        max-height: 60px !important;
+      }
+      .header-space {
+        min-height: 120px;
+      }
+      nav a {
+        padding: 6px 24px;
+      }
+      .nav-home{
+        display: block !important;
+      }
+    }
+
+
+    nav {
+      display: -webkit-flex;
+      display: flex;
+      margin: auto;
+    }
+
+    nav a {
+      padding: 0 12px;
+      line-height: 28px;
+      height: 28px;
+      color: #424242;
+      margin: auto;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 13px;
+      border-radius: 4px;
+    }
+    .nav-home{
+      display: none;
+    }
+    nav a > img {
+    // height: 20px;
+    }
+
+    nav a:hover {
+      background-color: #9e9e9e;
+    }
+
+    nav .active {
+      background-color: rgba(0, 0, 0, 0.14);
+    }
+
+    main {
+      overflow-x: hidden;
+    }
+
+    img, picture {
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+    }
+
+    * {
+      box-sizing: border-box; /* pour maîtriser width et flex-basis */
+    }
+
+    .devmind-section {
+      display: block;
+      margin: 0 auto;
+      max-width: 1600px;
+      padding: 60px 40px;
+    }
+
+    @media (max-width: 700px) {
+      .devmind-section {
+        padding: 25px 10px;
+      }
+    }
+
+    @media (min-width: 701px) and (max-width: 900px) {
+      .devmind-section {
+        padding: 40px 25px;
+      }
+    }
+
+    .dm-social {
+      min-width: 2em;
+      max-width: 2em;
+      width: 2em;
+      height: 2em;
+    }
+  </style>
+  <script>
+    function copyToClipboard(id) {
+      const text = document.getElementById(id).innerText;
+      navigator.clipboard.writeText(text.substring(0, text.length));
+    }
+  </script>
+<style>code[class*=language-]{color:#555;background:none;text-shadow:0 1px white;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}.imageblock{text-align:center}h1,h2{font-weight:100}h1{font-size:35px;line-height:38px}.dm-block--blog{width:100%;background-color:#eceff1;color:#424242;padding:0;margin:0}.dm-block--blog a,.dm-block--blog a:hover,.dm-block--blog a:visited{font-weight:700;color:#424242;text-decoration:none;cursor:pointer}.btn-copy-code{background-color:#fff;border:2px solid white;border-radius:24px;color:#424242!important;margin:1em .5em auto auto;font-weight:700;font-size:16px;display:block;cursor:pointer;width:auto;text-align:center;box-shadow:0 4px 5px #00000024,0 1px 10px #0000001f,0 2px 4px -1px #0003;padding:4px;font-size:small}.btn-copy-code:hover{background-color:#424242;border:2px solid #424242;color:#fff!important;padding:.5em 1em}footer{background-color:#424242}.is-small-screen{display:none}.is-large-screen{display:inherit}@media screen and (max-width: 900px){.is-small-screen{display:inherit}.is-large-screen{display:none}}h1,h2{color:#424242;font-weight:100}h1{font-weight:bolder;font-size:35px;line-height:38px}h2{font-size:25px;line-height:28px}@media (max-width: 700px){h1{font-size:28px;line-height:30px}h2{font-size:22px;line-height:24px}}
+</style><link rel="stylesheet" href="styles-2E537E2B.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-2E537E2B.css"></noscript><style ng-app-id="ng">.dm_footer[_ngcontent-ng-c2660501952]{color:#eee;display:flex;justify-content:space-between;font-size:14px}.dm_footer[_ngcontent-ng-c2660501952]   .dm_society[_ngcontent-ng-c2660501952]{color:#fff}.dm_footer[_ngcontent-ng-c2660501952]   div[_ngcontent-ng-c2660501952]{margin-right:1em;width:100%}.dm_footer[_ngcontent-ng-c2660501952]   .dm_footer__middle[_ngcontent-ng-c2660501952]{flex-grow:1}.dm_footer[_ngcontent-ng-c2660501952]   .dm_footer__right[_ngcontent-ng-c2660501952]{text-align:right}.dm_footer[_ngcontent-ng-c2660501952]   .is-large-screen[_ngcontent-ng-c2660501952]{padding:.7em;margin:.7em 1em}.dm_footer[_ngcontent-ng-c2660501952]   .is-small-screen[_ngcontent-ng-c2660501952]{padding:0;margin:0 1em;font-size:12px}</style><style ng-app-id="ng">h1{margin-top:.5em}.dm-blog--info-date{font-size:smaller;color:#424242;border:1px solid #aaa;border-radius:24px;padding:.5em 1em;margin-right:.5em;display:inline}.blog-keywords{display:flex;margin-bottom:1em}.blog-keywords .dm-blog--keyword-detail{background-color:#ccc;color:#424242;padding:.5em 1em;margin-right:.5em;border-radius:24px;font-size:smaller}.toc{background-color:#ccc;margin-top:1em;border:1px solid #ccc;padding:1em;border-radius:8px}.toc #toctitle{font-weight:700;margin-bottom:.5em}img{max-width:100%;height:auto}.imageblock>.content{display:flex;justify-content:center;align-items:center}.highlight{display:block;overflow-x:auto;background:#f3f3f3;color:#444;padding:1.5em;box-shadow:0 8px 16px #00000026;border-radius:8px}code.hljs{padding:3px 5px}.hljs-comment{color:#697070}.hljs-punctuation,.hljs-tag{color:#444a}.hljs-tag .hljs-attr,.hljs-tag .hljs-name{color:#444}.hljs-attribute,.hljs-doctag,.hljs-keyword,.hljs-meta .hljs-keyword,.hljs-name,.hljs-selector-tag{font-weight:700}.hljs-deletion,.hljs-number,.hljs-quote,.hljs-selector-class,.hljs-selector-id,.hljs-string,.hljs-template-tag,.hljs-type{color:#800}.hljs-section,.hljs-title{color:#800;font-weight:700}.hljs-link,.hljs-operator,.hljs-regexp,.hljs-selector-attr,.hljs-selector-pseudo,.hljs-symbol,.hljs-template-variable,.hljs-variable{color:#ab5656}.hljs-literal{color:#695}.hljs-addition,.hljs-built_in,.hljs-bullet,.hljs-code{color:#397300}.hljs-meta{color:#1f7199}.hljs-meta .hljs-string{color:#38a}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}.language-kotlin:before{display:block;float:right;content:"kotlin";font-weight:700;text-transform:uppercase}.language-typescript:before{display:block;float:right;content:"typescript";font-weight:700;text-transform:uppercase}.language-java:before{display:block;float:right;content:"java";font-weight:700;text-transform:uppercase}.language-javascript:before{display:block;float:right;content:"javascript";font-weight:700;text-transform:uppercase}.language-shell:before{display:block;float:right;content:"shell";font-weight:700;text-transform:uppercase}.language-yaml:before{display:block;float:right;content:"yaml";font-weight:700;text-transform:uppercase}.language-json:before{display:block;float:right;content:"json";font-weight:700;text-transform:uppercase}.language-xml:before{display:block;float:right;content:"xml";font-weight:700;text-transform:uppercase}.language-html:before{display:block;float:right;content:"html";font-weight:700;text-transform:uppercase}.language-css:before{display:block;float:right;content:"css";font-weight:700;text-transform:uppercase}.language-scss:before{display:block;float:right;content:"scss";font-weight:700;text-transform:uppercase}
+</style></head>
+<body><!--nghm-->
+  <app-root _nghost-ng-c582792440 ng-version="18.0.0" ngh="2" ng-server-context="ssg"><app-header _ngcontent-ng-c582792440 _nghost-ng-c2882497807 ngh="0"><header _ngcontent-ng-c2882497807><div _ngcontent-ng-c2882497807 class="header-img"><a _ngcontent-ng-c2882497807 routerlink="/" aria-label="Accueil" href="/"><img _ngcontent-ng-c2882497807 src="img/logo/logo_long.svg" alt="Dev-Mind" title="Dev-Mind"></a></div><nav _ngcontent-ng-c2882497807><a _ngcontent-ng-c2882497807 routerlink="/" aria-label="Accueil" class="nav-home" href="/"><img _ngcontent-ng-c2882497807 src="/img/ic_home_white_24px.svg" rel="start" alt="Accueil"></a><a _ngcontent-ng-c2882497807 routerlink="/formations.html" aria-label="Formations" class href="/formations.html"> Formations</a><a _ngcontent-ng-c2882497807 routerlink="/blog.html" aria-label="Blog" class="active" href="/blog.html">Blog</a><a _ngcontent-ng-c2882497807 routerlink="/experience.html" aria-label="Experience" class href="/experience.html"> Expérience</a></nav><hr _ngcontent-ng-c2882497807></header><div _ngcontent-ng-c2882497807 class="header-space"></div></app-header><router-outlet _ngcontent-ng-c582792440></router-outlet><app-asciidoc-viewer ngh="1"><div class="dm-block--blog"><div class="devmind-section"><h1><!--ngetn--></h1><div class="blog-keywords"><div class="dm-blog--info-date">16/09/2018</div><div class="dm-blog--keyword-detail">Système</div><div class="dm-blog--keyword-detail">Ubuntu</div><!---->&nbsp; </div><div class="preview"><div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Un bon artisan doit avoir les bons outils. En tant que développeur j’ai décidé de changer mon portable pour avoir un peu plus de mémoires et de CPU. Mon choix c’est porté sur un XPS15. Voici ce que j’ai du faire pour le mettre sous Ubuntu</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_quelle_machine_choisir">Quelle machine choisir ?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>J’utilisais au quotidien un XPS 15 depuis plus de 3 ans. Je me suis donc logiquement porté sur la même gamme.</p>
+</div>
+<div class="paragraph">
+<p>Mon premier choix portait sur un Core i9. Ce choix n’a pas été très opportun car ces toutes dernières machines ne sont pas capable de supporter des processeurs aussi rapide. Quand vous utilisez votre portable 10h par jour en lançant beaucoup de compilations, le CPU a tendance à être utilisé…​ au final au bout de 2 jours d’utilisation le portable se mettait en sécurité car le CPU chauffait…​ 2 jours plus tard l’alimentation a grillé…​ et donc retour à l’envoyeur.</p>
+</div>
+<div class="paragraph">
+<p>Pour ma deuxième tentative je me suis rabattu sur XPS15 core i7. La machine se comporte beaucoup mieux malgré quelques problèmes avec le Wifi qui devraient être résolus rapidement.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2018/ubuntun00.png" alt="Installer Ubuntu sous XPS15">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_quel_os_choisir">Quel OS choisir ?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>En tant que développeur, je trouve que l’OS le plus intéressant est Linux. Malheureusement Dell ne livre pas de PC de cette gamme sous Linux. Comme la gamme XPS 13 comporte une machine sur Ubuntu, j’ai choisi d’utiliser la même édition afin de bénéficier des drivers pour les composants communs aux XPS13 et XPS15.</p>
+</div>
+<div class="paragraph">
+<p>Vous pouvez écraser le disque et n’installer qu’un Ubuntu. Mais si vous avez un problème matériel, le support Dell ne maîtrise que les outils installés sous Windows. J’ai fait le choix de faire cohabiter les deux systèmes</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_comment_installer_ubuntu">Comment installer Ubuntu ?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Je ne vais pas vous décrire la procédure ici car vous trouverez de nombreux forum vous expliquant comment installer <a href="http://releases.ubuntu.com/18.04/">Ubuntu 18.04</a> sur votre laptop. Je vais plutôt revenir sur les commandes "non standards" que j’ai du faire pour installer Ubuntu à côté de Windows.</p>
+</div>
+<div class="paragraph">
+<p>En effet les postes sont packagés pour Windows et le mode Secure Boot est activé pour bloquer tout élément étranger au système (comme un autre système d’exploitation). Autre problème, votre système est configuré pour protéger votre disque et le disque dur n’est pas visible par défaut quand vous lancez un live CD pour l’installation à partir d’une clé ou d’un disque externe.</p>
+</div>
+<div class="paragraph">
+<p>Si vous ête dans le même cas que moi, voici la procédure à suivre</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_préparer_windows_à_accepter_un_petit_nouveau">Préparer Windows à accepter un petit nouveau ?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Pour pouvoir installer Ubuntu sur le disque système, il faut lui faire de la place! Pour le moment, 100% de l’espace disque est occupé par Windows et ses partitions : une partition EFI, une partition MSR, une partition Système et une partition Windows. Ce qu’on va faire, c’est réduire la taille de la partition Windows afin qu’Ubuntu puisse s’installer dans l’espace libre désormais disponible.</p>
+</div>
+<div class="paragraph">
+<p>Vous devez pour celà</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>lancer le gestionnaire de disque Windows,</p>
+</li>
+<li>
+<p>sélectionner le disque C, réduire l’espace</p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2018/ubuntun02.png" alt="Changer taille partition C:">
+</div>
+</div>
+<div class="paragraph">
+<p>Normalement après cette opération vous avez la taille nécéssaire à l’installation de Ubuntu</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2018/ubuntun01.png" alt="Changer taille partition C:">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_modifier_les_options_de_démarrage">Modifier les options de démarrage</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Ubuntu ne sait pas encore accéder aux disques en technologie <a href="https://fr.wikipedia.org/wiki/RAID_%28informatique%29">RAID</a> souvent utilisés par windows. Il faut donc casser ce mode d’accès. Démarrez sous Windows et ouvrez une console PowerShell en mode admin (clic droit sur l’icône windows en bas à gauche)</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2018/ubuntun03.png" alt="Ouvrir console PowerShell">
+</div>
+</div>
+<div class="paragraph">
+<p>Vous devez lancer la commande suivante</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" id="1722522442237.8955">bcdedit /set ""{current}" safeboot minimal</code><button class="btn-copy-code" onclick="copyToClipboard('1722522442237.8955')">Copy</button></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Il faut ensuite rebooter et aller dans les options dans le bios de votre machine (F2) et choisir option AHCI</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2018/ubuntun04.png" alt="BIOS désactiver RAID">
+</div>
+</div>
+<div class="paragraph">
+<p>Vous pouvez aussi en profiter pour désactiver le SecureBoot</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2018/ubuntun05.png" alt="BIOS désactiver SecureBoot">
+</div>
+</div>
+<div class="paragraph">
+<p>Booter ensuite sous Windows et lancez dans une console PowerShell en mode admin la commande</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" id="1722522442237.7688">bcdedit /deletevalue "{current}" safeboot</code><button class="btn-copy-code" onclick="copyToClipboard('1722522442237.7688')">Copy</button></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Vous pouvez redémarrer votre machine pour vérifier que tout est opérationnel.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_installer_ubuntu">Installer Ubuntu</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Vous pouvez maintenant installer Ubuntu via ue clé USB. Pour pouvoir la lancer n’oubliez pas de changer le boot sequence. Dans mon cas j’ai passé mon disque USB Toshiba en premier</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2018/ubuntun06.png" alt="Changer boot sequence">
+</div>
+</div>
+<div class="paragraph">
+<p>Vous n’avez plus qu’à suivre les instructions de Ubuntu pour installer votre systême</p>
+</div>
+</div>
+</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 01/08/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
+
+<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-KZZ4TXLO.js" type="module"></script>
+
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t7"},"c":{"7":[{"i":"t7","r":1,"x":2}]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>

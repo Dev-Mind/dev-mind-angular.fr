@@ -1,0 +1,320 @@
+<!DOCTYPE html><html lang="en" data-critters-container><head>
+  <meta charset="utf-8">
+  <title>Blog</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    body {
+      min-height: 100vh;
+      max-height: 100vh;
+      font-family: "Helvetica", "Arial", "sans-serif";
+      padding: 0;
+      margin: 0;
+    }
+
+    header {
+      height: 90px;
+      max-height: 90px;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+      background-color: white;
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      z-index: 99;
+      transition-duration: 0.2s;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: max-height, box-shadow;
+      position: fixed;
+      width: 100%;
+      text-align: center;
+    }
+    header hr {
+      width:100%;
+      background-color: #424242;
+      border-color: #424242;
+      display: block;
+      border: 0;
+      height: 0.5em;
+      margin: 0;
+    }
+    .header-img {
+      margin: auto;
+      width: 50%;
+      padding-top: 0.5em;
+      height: 30px;
+    }
+    .header-img img {
+      max-height: 30px !important;
+    }
+    .header-space {
+      min-height: 90px;
+    }
+
+
+    @media screen and (min-width: 901px) {
+      header {
+        height: 120px;
+        max-height: 120px;
+      }
+      .header-img {
+        height: 60px;
+      }
+      .header-img img {
+        max-height: 60px !important;
+      }
+      .header-space {
+        min-height: 120px;
+      }
+      nav a {
+        padding: 6px 24px;
+      }
+      .nav-home{
+        display: block !important;
+      }
+    }
+
+
+    nav {
+      display: -webkit-flex;
+      display: flex;
+      margin: auto;
+    }
+
+    nav a {
+      padding: 0 12px;
+      line-height: 28px;
+      height: 28px;
+      color: #424242;
+      margin: auto;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 13px;
+      border-radius: 4px;
+    }
+    .nav-home{
+      display: none;
+    }
+    nav a > img {
+    // height: 20px;
+    }
+
+    nav a:hover {
+      background-color: #9e9e9e;
+    }
+
+    nav .active {
+      background-color: rgba(0, 0, 0, 0.14);
+    }
+
+    main {
+      overflow-x: hidden;
+    }
+
+    img, picture {
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+    }
+
+    * {
+      box-sizing: border-box; /* pour maîtriser width et flex-basis */
+    }
+
+    .devmind-section {
+      display: block;
+      margin: 0 auto;
+      max-width: 1600px;
+      padding: 60px 40px;
+    }
+
+    @media (max-width: 700px) {
+      .devmind-section {
+        padding: 25px 10px;
+      }
+    }
+
+    @media (min-width: 701px) and (max-width: 900px) {
+      .devmind-section {
+        padding: 40px 25px;
+      }
+    }
+
+    .dm-social {
+      min-width: 2em;
+      max-width: 2em;
+      width: 2em;
+      height: 2em;
+    }
+  </style>
+  <script>
+    function copyToClipboard(id) {
+      const text = document.getElementById(id).innerText;
+      navigator.clipboard.writeText(text.substring(0, text.length));
+    }
+  </script>
+<style>code[class*=language-]{color:#555;background:none;text-shadow:0 1px white;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}.imageblock{text-align:center}h1,h2{font-weight:100}h1{font-size:35px;line-height:38px}.dm-block--blog{width:100%;background-color:#eceff1;color:#424242;padding:0;margin:0}.dm-block--blog a,.dm-block--blog a:hover,.dm-block--blog a:visited{font-weight:700;color:#424242;text-decoration:none;cursor:pointer}.btn-copy-code{background-color:#fff;border:2px solid white;border-radius:24px;color:#424242!important;margin:1em .5em auto auto;font-weight:700;font-size:16px;display:block;cursor:pointer;width:auto;text-align:center;box-shadow:0 4px 5px #00000024,0 1px 10px #0000001f,0 2px 4px -1px #0003;padding:4px;font-size:small}.btn-copy-code:hover{background-color:#424242;border:2px solid #424242;color:#fff!important;padding:.5em 1em}footer{background-color:#424242}.is-small-screen{display:none}.is-large-screen{display:inherit}@media screen and (max-width: 900px){.is-small-screen{display:inherit}.is-large-screen{display:none}}h1,h2{color:#424242;font-weight:100}h1{font-weight:bolder;font-size:35px;line-height:38px}h2{font-size:25px;line-height:28px}@media (max-width: 700px){h1{font-size:28px;line-height:30px}h2{font-size:22px;line-height:24px}}
+</style><link rel="stylesheet" href="styles-2E537E2B.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-2E537E2B.css"></noscript><style ng-app-id="ng">.dm_footer[_ngcontent-ng-c2660501952]{color:#eee;display:flex;justify-content:space-between;font-size:14px}.dm_footer[_ngcontent-ng-c2660501952]   .dm_society[_ngcontent-ng-c2660501952]{color:#fff}.dm_footer[_ngcontent-ng-c2660501952]   div[_ngcontent-ng-c2660501952]{margin-right:1em;width:100%}.dm_footer[_ngcontent-ng-c2660501952]   .dm_footer__middle[_ngcontent-ng-c2660501952]{flex-grow:1}.dm_footer[_ngcontent-ng-c2660501952]   .dm_footer__right[_ngcontent-ng-c2660501952]{text-align:right}.dm_footer[_ngcontent-ng-c2660501952]   .is-large-screen[_ngcontent-ng-c2660501952]{padding:.7em;margin:.7em 1em}.dm_footer[_ngcontent-ng-c2660501952]   .is-small-screen[_ngcontent-ng-c2660501952]{padding:0;margin:0 1em;font-size:12px}</style><style ng-app-id="ng">h1{margin-top:.5em}.dm-blog--info-date{font-size:smaller;color:#424242;border:1px solid #aaa;border-radius:24px;padding:.5em 1em;margin-right:.5em;display:inline}.blog-keywords{display:flex;margin-bottom:1em}.blog-keywords .dm-blog--keyword-detail{background-color:#ccc;color:#424242;padding:.5em 1em;margin-right:.5em;border-radius:24px;font-size:smaller}.toc{background-color:#ccc;margin-top:1em;border:1px solid #ccc;padding:1em;border-radius:8px}.toc #toctitle{font-weight:700;margin-bottom:.5em}img{max-width:100%;height:auto}.imageblock>.content{display:flex;justify-content:center;align-items:center}.highlight{display:block;overflow-x:auto;background:#f3f3f3;color:#444;padding:1.5em;box-shadow:0 8px 16px #00000026;border-radius:8px}code.hljs{padding:3px 5px}.hljs-comment{color:#697070}.hljs-punctuation,.hljs-tag{color:#444a}.hljs-tag .hljs-attr,.hljs-tag .hljs-name{color:#444}.hljs-attribute,.hljs-doctag,.hljs-keyword,.hljs-meta .hljs-keyword,.hljs-name,.hljs-selector-tag{font-weight:700}.hljs-deletion,.hljs-number,.hljs-quote,.hljs-selector-class,.hljs-selector-id,.hljs-string,.hljs-template-tag,.hljs-type{color:#800}.hljs-section,.hljs-title{color:#800;font-weight:700}.hljs-link,.hljs-operator,.hljs-regexp,.hljs-selector-attr,.hljs-selector-pseudo,.hljs-symbol,.hljs-template-variable,.hljs-variable{color:#ab5656}.hljs-literal{color:#695}.hljs-addition,.hljs-built_in,.hljs-bullet,.hljs-code{color:#397300}.hljs-meta{color:#1f7199}.hljs-meta .hljs-string{color:#38a}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}.language-kotlin:before{display:block;float:right;content:"kotlin";font-weight:700;text-transform:uppercase}.language-typescript:before{display:block;float:right;content:"typescript";font-weight:700;text-transform:uppercase}.language-java:before{display:block;float:right;content:"java";font-weight:700;text-transform:uppercase}.language-javascript:before{display:block;float:right;content:"javascript";font-weight:700;text-transform:uppercase}.language-shell:before{display:block;float:right;content:"shell";font-weight:700;text-transform:uppercase}.language-yaml:before{display:block;float:right;content:"yaml";font-weight:700;text-transform:uppercase}.language-json:before{display:block;float:right;content:"json";font-weight:700;text-transform:uppercase}.language-xml:before{display:block;float:right;content:"xml";font-weight:700;text-transform:uppercase}.language-html:before{display:block;float:right;content:"html";font-weight:700;text-transform:uppercase}.language-css:before{display:block;float:right;content:"css";font-weight:700;text-transform:uppercase}.language-scss:before{display:block;float:right;content:"scss";font-weight:700;text-transform:uppercase}
+</style></head>
+<body><!--nghm-->
+  <app-root _nghost-ng-c582792440 ng-version="18.0.0" ngh="2" ng-server-context="ssg"><app-header _ngcontent-ng-c582792440 _nghost-ng-c2882497807 ngh="0"><header _ngcontent-ng-c2882497807><div _ngcontent-ng-c2882497807 class="header-img"><a _ngcontent-ng-c2882497807 routerlink="/" aria-label="Accueil" href="/"><img _ngcontent-ng-c2882497807 src="img/logo/logo_long.svg" alt="Dev-Mind" title="Dev-Mind"></a></div><nav _ngcontent-ng-c2882497807><a _ngcontent-ng-c2882497807 routerlink="/" aria-label="Accueil" class="nav-home" href="/"><img _ngcontent-ng-c2882497807 src="/img/ic_home_white_24px.svg" rel="start" alt="Accueil"></a><a _ngcontent-ng-c2882497807 routerlink="/formations.html" aria-label="Formations" class href="/formations.html"> Formations</a><a _ngcontent-ng-c2882497807 routerlink="/blog.html" aria-label="Blog" class="active" href="/blog.html">Blog</a><a _ngcontent-ng-c2882497807 routerlink="/experience.html" aria-label="Experience" class href="/experience.html"> Expérience</a></nav><hr _ngcontent-ng-c2882497807></header><div _ngcontent-ng-c2882497807 class="header-space"></div></app-header><router-outlet _ngcontent-ng-c582792440></router-outlet><app-asciidoc-viewer ngh="1"><div class="dm-block--blog"><div class="devmind-section"><h1><!--ngetn--></h1><div class="blog-keywords"><div class="dm-blog--info-date">10/07/2016</div><div class="dm-blog--keyword-detail">Java</div><div class="dm-blog--keyword-detail">SpringBoot</div><div class="dm-blog--keyword-detail">HTTP/2</div><!---->&nbsp; </div><div class="preview"><div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Le web se base sur le protocole HTTP (HyperText Transfer Protocol). Ce protocole permet d’échanger des documents hypermédia entre un client (un navigateur Internet) et un serveur. Le client ouvre une connexion, émet une requête et attend une réponse.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2016/springhttp2_00.png" alt="Spring boot HTTP/2">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_http_1_1_1">HTTP 1 &amp; 1.1</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Au départ (en 1991), HTTP ne pouvait transférer que des fichiers. Le protocole a ensuite vite évolué (version 1.0 en 1996) pour permettre le transfert de tout type de fichiers comme des images, vidéos, scripts, feuilles de styles… La version 1.1 a permis d’améliorer les performances en permettant de réutiliser la même connexion. C’est la version la plus répandue aujourd’hui alors qu’elle date de pratiquement 20 ans. Il aura fallu attendre tout ce temps pour que les différents acteurs s’entendent sur une nouvelle version du protocole.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_http_2">HTTP 2</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>La version 2 a été finalisée en 2015 et est en cours de déploiement. Cette nouvelle mouture se veut tout d’abord à 100% rétrocompatible afin de ne pas à avoir à changer le code des différentes applications utilisant les versions anciennes du protocole. En gros les méthodes, statuts, codes erreur sont conservés.</p>
+</div>
+<div class="paragraph">
+<p>Le but principal de HTTP2, est de rendre les requêtes moins coûteuses en ressources, afin d’améliorer les performances sur des devices où la qualité du réseau varie beaucoup.</p>
+</div>
+<div class="paragraph">
+<p>HTTP se base sur les protocoles TCP et IP. Actuellement HTTP peut ouvrir plusieurs connexions TCP en parallèle ce qui peut congestionner le réseau. Les navigateurs mettent des garde fous en limitant ce nombre de requêtes et si votre site doit charger beaucoup de ressources, les temps de chargement peuvent être assez longs.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2016/springhttp2_01.png" alt="Spring boot HTTP 1">
+</div>
+</div>
+<div class="paragraph">
+<p>Avec HTTP 2 le but est de regrouper ces échanges sur la même connexion TCP.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2016/springhttp2_01.png" alt="Spring boot HTTP 2">
+</div>
+</div>
+<div class="paragraph">
+<p>HTTP 2 n’impose pas de sécuriser les échanges en cryptant les informations via un chiffrement TLS. Mais il va par contre limiter le surcoût dans le chiffrement. Certaines implémentations comme nous allons le voir plus loin et vous imposent des échanges sécurisés.</p>
+</div>
+<div class="paragraph">
+<p>HTTP 2 permet le multiplexage pour échanger différents messages en même temps. Une connexion TCP est aujourd’hui clôturée à la fin d’un échange. En HTTP 2 un client pourra maintenir une connexion même si l’utilisateur clique sur un bouton ou choisit de fermer une connexion. Ceci permet au serveur de pouvoir faire du push.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_spring_boot_et_http_2">Spring Boot et HTTP 2</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Regardons maintenant comment migrer une application Spring Boot pour que cette dernière puisse bénéficier de HTTP 2. Ces problématiques ne sont d’ailleurs pas liées à Spring mais au container dans lequel l’application sera déployée.</p>
+</div>
+<div class="paragraph">
+<p>Par défaut une application Spring Boot utilise un Tomcat embarqué. Tomcat n’implémente HTTP 2 que depuis la version 8.5, Jetty depuis 9.3 et Undertow depuis sa version 1.2.</p>
+</div>
+<div class="paragraph">
+<p>Vous pouvez consulter l’exemple de <a href="https://twitter.com/brianclozel?lang=fr">Brian Clozel</a> (Pivotal) sous <a href="https://github.com/bclozel/http2-experiments">Github</a> fait pour Jetty en HTTP 2. Je vous conseille aussi vivement de suivre le talk de Brian sur <a href="https://www.infoq.com/fr/presentations/mix-it-brian-clozel-http2-pour-le-developpeur-web">HTTP 2  à Mix-IT</a> en 2016.</p>
+</div>
+<div class="paragraph">
+<p>Dans cet article nous allons détailler comment mettre en place undertow</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_changer_les_dépendances">Changer les dépendances</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Dans la première étape nous allons changer le build pour utiliser undertow à la place de Tomcat</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" id="1722522442167.2795">compile(<span class="hljs-string">"org.springframework.boot:spring-boot-starter-web"</span>) {
+    exclude <span class="hljs-keyword">module</span>: <span class="hljs-string">"spring-boot-starter-tomcat"</span>
+}
+compile <span class="hljs-string">"org.springframework.boot:spring-boot-starter-undertow"</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722522442167.2795')">Copy</button></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_configuration_tls">Configuration TLS</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Vous pouvez créer votre propre keystore (.jks). Le but est de le référencer ensuite dans la configuration Spring</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-javascript" id="1722522442169.7305"><span class="hljs-attr">server</span>:
+  <span class="hljs-attr">ssl</span>:
+    key-<span class="hljs-attr">store</span>: <span class="hljs-attr">classpath</span>:perf.<span class="hljs-property">jks</span>
+    key-store-<span class="hljs-attr">password</span>: <span class="hljs-title class_">DevMind</span>
+    key-<span class="hljs-attr">password</span>: <span class="hljs-title class_">DevMind</span>
+    <span class="hljs-attr">protocol</span>: <span class="hljs-title class_">TLSv1</span><span class="hljs-number">.2</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722522442169.7305')">Copy</button></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Dans le cadre de vos tests vous pouvez générer une keystore simple avec cette ligne de commande. Pour de la prod vous pouvez passer par exemple par du <a href="https://letsencrypt.org/">let’s encrypt</a></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>keytool -genkeypair -alias mycert -keyalg RSA -sigalg MD5withRSA -keystore perf.jks -storepass DevMind -keypass DevMind -validity 9999</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>HTTP 2 utilise un nouveau protocole appelé TLS ALPN (TLS application-layer protocol negotiation). Nous avons préciser la version dans le fichier de paramètres juste ci dessus (TLSv1.2). En attendant que le JDK intègre ce protocole en standard, nous devons ajouter dans le classpath une librairie lors du lancement de l’application (voir la liste)</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>java -Xbootclasspath/p:&lt;path_to_alpn_boot_jar&gt; …</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Dans mon exemple j’utilise Java 1.8.0_101 et la version de la librairie est alpn-boot-8.1.9.v20160720 (voir la <a href="http://www.eclipse.org/jetty/documentation/current/alpn-chapter.html#alpn-versions">liste</a>)</p>
+</div>
+<div class="paragraph">
+<p>Pour mes tests voici mon launcher dans IntelliJ</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2016/springhttp2_03.png" alt="Spring boot HTTP/2">
+</div>
+</div>
+<div class="paragraph">
+<p>Maintenant tout est prêt pour faire de l’HTTP 2.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_références">Références</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>J’espère vous avoir montré que nous pouvons passer dès maintenant à HTTP 2. Voici quelques références qui m’ont servi à écrire cet article. Les sources sont disponibles sous Github.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://www.eclipse.org/jetty/documentation/current/alpn-chapter.html#alpn-versions" class="bare">http://www.eclipse.org/jetty/documentation/current/alpn-chapter.html#alpn-versions</a></p>
+</li>
+<li>
+<p><a href="https://github.com/bclozel/http2-experiments" class="bare">https://github.com/bclozel/http2-experiments</a></p>
+</li>
+<li>
+<p><a href="http://undertow.io/" class="bare">http://undertow.io/</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 01/08/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
+
+<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-KZZ4TXLO.js" type="module"></script>
+
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t0"},"c":{"7":[{"i":"t0","r":1,"x":3}]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>

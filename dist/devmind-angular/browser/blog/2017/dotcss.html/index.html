@@ -1,0 +1,600 @@
+<!DOCTYPE html><html lang="en" data-critters-container><head>
+  <meta charset="utf-8">
+  <title>Blog</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    body {
+      min-height: 100vh;
+      max-height: 100vh;
+      font-family: "Helvetica", "Arial", "sans-serif";
+      padding: 0;
+      margin: 0;
+    }
+
+    header {
+      height: 90px;
+      max-height: 90px;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+      background-color: white;
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      z-index: 99;
+      transition-duration: 0.2s;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: max-height, box-shadow;
+      position: fixed;
+      width: 100%;
+      text-align: center;
+    }
+    header hr {
+      width:100%;
+      background-color: #424242;
+      border-color: #424242;
+      display: block;
+      border: 0;
+      height: 0.5em;
+      margin: 0;
+    }
+    .header-img {
+      margin: auto;
+      width: 50%;
+      padding-top: 0.5em;
+      height: 30px;
+    }
+    .header-img img {
+      max-height: 30px !important;
+    }
+    .header-space {
+      min-height: 90px;
+    }
+
+
+    @media screen and (min-width: 901px) {
+      header {
+        height: 120px;
+        max-height: 120px;
+      }
+      .header-img {
+        height: 60px;
+      }
+      .header-img img {
+        max-height: 60px !important;
+      }
+      .header-space {
+        min-height: 120px;
+      }
+      nav a {
+        padding: 6px 24px;
+      }
+      .nav-home{
+        display: block !important;
+      }
+    }
+
+
+    nav {
+      display: -webkit-flex;
+      display: flex;
+      margin: auto;
+    }
+
+    nav a {
+      padding: 0 12px;
+      line-height: 28px;
+      height: 28px;
+      color: #424242;
+      margin: auto;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 13px;
+      border-radius: 4px;
+    }
+    .nav-home{
+      display: none;
+    }
+    nav a > img {
+    // height: 20px;
+    }
+
+    nav a:hover {
+      background-color: #9e9e9e;
+    }
+
+    nav .active {
+      background-color: rgba(0, 0, 0, 0.14);
+    }
+
+    main {
+      overflow-x: hidden;
+    }
+
+    img, picture {
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+    }
+
+    * {
+      box-sizing: border-box; /* pour maîtriser width et flex-basis */
+    }
+
+    .devmind-section {
+      display: block;
+      margin: 0 auto;
+      max-width: 1600px;
+      padding: 60px 40px;
+    }
+
+    @media (max-width: 700px) {
+      .devmind-section {
+        padding: 25px 10px;
+      }
+    }
+
+    @media (min-width: 701px) and (max-width: 900px) {
+      .devmind-section {
+        padding: 40px 25px;
+      }
+    }
+
+    .dm-social {
+      min-width: 2em;
+      max-width: 2em;
+      width: 2em;
+      height: 2em;
+    }
+  </style>
+  <script>
+    function copyToClipboard(id) {
+      const text = document.getElementById(id).innerText;
+      navigator.clipboard.writeText(text.substring(0, text.length));
+    }
+  </script>
+<style>code[class*=language-]{color:#555;background:none;text-shadow:0 1px white;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}.imageblock,.imageblock .title{text-align:center}h1,h2{font-weight:100}h1{font-size:35px;line-height:38px}.dm-block--blog{width:100%;background-color:#eceff1;color:#424242;padding:0;margin:0}.dm-block--blog a,.dm-block--blog a:hover,.dm-block--blog a:visited{font-weight:700;color:#424242;text-decoration:none;cursor:pointer}.btn-copy-code{background-color:#fff;border:2px solid white;border-radius:24px;color:#424242!important;margin:1em .5em auto auto;font-weight:700;font-size:16px;display:block;cursor:pointer;width:auto;text-align:center;box-shadow:0 4px 5px #00000024,0 1px 10px #0000001f,0 2px 4px -1px #0003;padding:4px;font-size:small}.btn-copy-code:hover{background-color:#424242;border:2px solid #424242;color:#fff!important;padding:.5em 1em}footer{background-color:#424242}.is-small-screen{display:none}.is-large-screen{display:inherit}@media screen and (max-width: 900px){.is-small-screen{display:inherit}.is-large-screen{display:none}}h1,h2{color:#424242;font-weight:100}h1{font-weight:bolder;font-size:35px;line-height:38px}h2{font-size:25px;line-height:28px}@media (max-width: 700px){h1{font-size:28px;line-height:30px}h2{font-size:22px;line-height:24px}}
+</style><link rel="stylesheet" href="styles-2E537E2B.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-2E537E2B.css"></noscript><style ng-app-id="ng">.dm_footer[_ngcontent-ng-c2660501952]{color:#eee;display:flex;justify-content:space-between;font-size:14px}.dm_footer[_ngcontent-ng-c2660501952]   .dm_society[_ngcontent-ng-c2660501952]{color:#fff}.dm_footer[_ngcontent-ng-c2660501952]   div[_ngcontent-ng-c2660501952]{margin-right:1em;width:100%}.dm_footer[_ngcontent-ng-c2660501952]   .dm_footer__middle[_ngcontent-ng-c2660501952]{flex-grow:1}.dm_footer[_ngcontent-ng-c2660501952]   .dm_footer__right[_ngcontent-ng-c2660501952]{text-align:right}.dm_footer[_ngcontent-ng-c2660501952]   .is-large-screen[_ngcontent-ng-c2660501952]{padding:.7em;margin:.7em 1em}.dm_footer[_ngcontent-ng-c2660501952]   .is-small-screen[_ngcontent-ng-c2660501952]{padding:0;margin:0 1em;font-size:12px}</style><style ng-app-id="ng">h1{margin-top:.5em}.dm-blog--info-date{font-size:smaller;color:#424242;border:1px solid #aaa;border-radius:24px;padding:.5em 1em;margin-right:.5em;display:inline}.blog-keywords{display:flex;margin-bottom:1em}.blog-keywords .dm-blog--keyword-detail{background-color:#ccc;color:#424242;padding:.5em 1em;margin-right:.5em;border-radius:24px;font-size:smaller}.toc{background-color:#ccc;margin-top:1em;border:1px solid #ccc;padding:1em;border-radius:8px}.toc #toctitle{font-weight:700;margin-bottom:.5em}img{max-width:100%;height:auto}.imageblock>.content{display:flex;justify-content:center;align-items:center}.highlight{display:block;overflow-x:auto;background:#f3f3f3;color:#444;padding:1.5em;box-shadow:0 8px 16px #00000026;border-radius:8px}code.hljs{padding:3px 5px}.hljs-comment{color:#697070}.hljs-punctuation,.hljs-tag{color:#444a}.hljs-tag .hljs-attr,.hljs-tag .hljs-name{color:#444}.hljs-attribute,.hljs-doctag,.hljs-keyword,.hljs-meta .hljs-keyword,.hljs-name,.hljs-selector-tag{font-weight:700}.hljs-deletion,.hljs-number,.hljs-quote,.hljs-selector-class,.hljs-selector-id,.hljs-string,.hljs-template-tag,.hljs-type{color:#800}.hljs-section,.hljs-title{color:#800;font-weight:700}.hljs-link,.hljs-operator,.hljs-regexp,.hljs-selector-attr,.hljs-selector-pseudo,.hljs-symbol,.hljs-template-variable,.hljs-variable{color:#ab5656}.hljs-literal{color:#695}.hljs-addition,.hljs-built_in,.hljs-bullet,.hljs-code{color:#397300}.hljs-meta{color:#1f7199}.hljs-meta .hljs-string{color:#38a}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}.language-kotlin:before{display:block;float:right;content:"kotlin";font-weight:700;text-transform:uppercase}.language-typescript:before{display:block;float:right;content:"typescript";font-weight:700;text-transform:uppercase}.language-java:before{display:block;float:right;content:"java";font-weight:700;text-transform:uppercase}.language-javascript:before{display:block;float:right;content:"javascript";font-weight:700;text-transform:uppercase}.language-shell:before{display:block;float:right;content:"shell";font-weight:700;text-transform:uppercase}.language-yaml:before{display:block;float:right;content:"yaml";font-weight:700;text-transform:uppercase}.language-json:before{display:block;float:right;content:"json";font-weight:700;text-transform:uppercase}.language-xml:before{display:block;float:right;content:"xml";font-weight:700;text-transform:uppercase}.language-html:before{display:block;float:right;content:"html";font-weight:700;text-transform:uppercase}.language-css:before{display:block;float:right;content:"css";font-weight:700;text-transform:uppercase}.language-scss:before{display:block;float:right;content:"scss";font-weight:700;text-transform:uppercase}
+</style></head>
+<body><!--nghm-->
+  <app-root _nghost-ng-c582792440 ng-version="18.0.0" ngh="2" ng-server-context="ssg"><app-header _ngcontent-ng-c582792440 _nghost-ng-c2882497807 ngh="0"><header _ngcontent-ng-c2882497807><div _ngcontent-ng-c2882497807 class="header-img"><a _ngcontent-ng-c2882497807 routerlink="/" aria-label="Accueil" href="/"><img _ngcontent-ng-c2882497807 src="img/logo/logo_long.svg" alt="Dev-Mind" title="Dev-Mind"></a></div><nav _ngcontent-ng-c2882497807><a _ngcontent-ng-c2882497807 routerlink="/" aria-label="Accueil" class="nav-home" href="/"><img _ngcontent-ng-c2882497807 src="/img/ic_home_white_24px.svg" rel="start" alt="Accueil"></a><a _ngcontent-ng-c2882497807 routerlink="/formations.html" aria-label="Formations" class href="/formations.html"> Formations</a><a _ngcontent-ng-c2882497807 routerlink="/blog.html" aria-label="Blog" class="active" href="/blog.html">Blog</a><a _ngcontent-ng-c2882497807 routerlink="/experience.html" aria-label="Experience" class href="/experience.html"> Expérience</a></nav><hr _ngcontent-ng-c2882497807></header><div _ngcontent-ng-c2882497807 class="header-space"></div></app-header><router-outlet _ngcontent-ng-c582792440></router-outlet><app-asciidoc-viewer ngh="1"><div class="dm-block--blog"><div class="devmind-section"><h1><!--ngetn--></h1><div class="blog-keywords"><div class="dm-blog--info-date">01/12/2017</div><div class="dm-blog--keyword-detail">Internet</div><div class="dm-blog--keyword-detail">Web</div><div class="dm-blog--keyword-detail">CSS</div><div class="dm-blog--keyword-detail">MediaQueries</div><div class="dm-blog--keyword-detail">Font</div><!---->&nbsp; </div><div class="preview"><div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Dans cet article je reviens sur la conférence dotCSS qui a eu lieu à Paris le 30 novembre 2017.  Si vous voulez suivre les talks ils vont très rapidement être publiés sur la chaîne <a href="https://www.youtube.com/user/dotconferences">Youtube</a>  et via le <a href="https://www.2017.dotcss.io/">site web</a> .</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2017/dotcss_00.jpg" alt="Dot CSS">
+</div>
+</div>
+<div class="paragraph">
+<p>Dans ce compte rendu je ne parle pas de toutes les sessions. Je n’ai sélectionné que celles qui m’ont vraiment fait ressortir des idées ou des concepts applicables dans mon quotidien proche ou futur.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2017/dotcss_01.jpg" alt="Dot CSS">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_tim_carry"><a href="https://twitter.com/pixelastic">Tim Carry</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Avant de venir à la conférence, Tim était le seul speaker que je connaissais. Tim était venu l’an dernier à <a href="https://mixitconf.org">MiXiT</a> donner un talk sur le CSS intitulé <a href="https://mixitconf.org/2017/compagnonnage-css-et-vexillologie"><em>Compagnonnage, CSS et Vexillologie</em></a>.</p>
+</div>
+<div class="paragraph">
+<p>Tim aime apprendre le CSS en essayant de trouver des projets concrets. Il avait fait sensation dans les conférences, en montrant projet sur les drapeaux entièrement créés en CSS. Allez jeter un cou d’oeil à <a href="http://pixelastic.github.io/css-flags/">CSS Flags</a>.</p>
+</div>
+<div class="paragraph">
+<p>Son nouveau délire était de créer un moteur de recherche exclusivement en CSS. Certes le langage CSS est assez limité pour gérer les conditions, les boucles, les fonctions… Mais il est très performant pour sélectionner des éléments dans le DOM via les selectors. Et les combinateurs permettent d’ajuster les styles à un sous ensemble d’éléments.</p>
+</div>
+<div class="paragraph">
+<p>Si vous n’êtes pas familier avec cette notion, les sélecteurs sont en fait des blocs de déclaration CSS pour identifier les parties spécifiques à mettre en forme dans un document HTML. Si vous avez déja ajouté du code dans une feuille de style CSS, vous connaissez forcément les sélecteurs</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>sélecteurs de type permettant de sélectionner des balises du langages HTML</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>h1 {
+   font-size: 1.5em;
+}</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Sélecteur de classes permettant de sélectionner des éléments via les valeurs définies dans les propriétés HTML de type class</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>.devmind_title{
+   font-size: 1.1em;
+   color: #2c2c2c;
+}</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Sélecteur d’identifiant permettant de sélectionner l’élément défini avec un id particulier</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>#welcome{
+   text-transform: uppercase;
+}</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Les sélecteurs d’attribut sont moins connus. Ils permettent de sélectionner les éléments HTML en fonction de leurs attributs et des valeurs de ces derniers. Un sélecteur d’attribut s’écrit avec des crochets "[]", dans lesquels on place le nom de l’attribut et éventuellement une condition sur la valeur de l’attribut.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code><em>[attr]</em></code> : sélectionne tous les éléments avec l’attribut <code><em>attr</em></code>, quelque soit sa valeur.</p>
+</li>
+<li>
+<p><code><em>[attr=val]</em></code> : sélectionne tous les éléments avec l’attribut <code><em>attr</em></code>, mais seulement si la valeur est égale à <code><em>val</em></code>.</p>
+</li>
+<li>
+<p><code><em>[attr|=val]</em></code> : sélectionne tous les éléments dont l’attribut <code><em>attr</em></code> vaut val ou commence par <code><em>val</em></code></p>
+</li>
+<li>
+<p><code><em>[attr^=val]</em></code> : sélectionne tous les éléments dont la valeur de l’attribut <code><em>attr</em></code> commence par <code><em>val</em></code></p>
+</li>
+<li>
+<p><code><em>[attr$=val]</em></code> : sélectionne tous les éléments dont la valeur de l’attribut <code><em>attr</em></code> finit avec <code><em>val</em></code></p>
+</li>
+<li>
+<p><code><em>[attr*=val]</em></code> : sélectionne tous les éléments dont la valeur de l’attribut <code><em>attr</em></code> contient la chaîne <code><em>val</em></code></p>
+</li>
+<li>
+<p><code><em>[attr~=val]</em></code>: sélectionne tous les éléments avec l’attribut <code><em>attr</em></code>, seulement si la valeur <code><em>val</em></code> correspond à une des valeurs <code><em>attr</em></code>, séparées par des espaces.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Au delà des sélecteurs il est intéressant aussi de s’attarder sur les combinateurs qui permettent de sélectionner des voisins à un sélecteur donné.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Combinateur <code><em>‘+’</em></code> (voisin direct) permet de sélectionner les éléments qui suivent immédiatement un élément donné. Par exemple <code><em>p + span</em></code> permettra de cibler n’importe quel élément span qui suit un élémént  p</p>
+</li>
+<li>
+<p>Combinateur <code><em>‘~’</em></code> (voisins) permet de sélectionner les nœuds qui suivent un élément et qui ont le même parent. Par exemple : <code><em>p ~ span</em></code> cible tous les spans d’un élement</p>
+</li>
+<li>
+<p>Combinateur <code><em>‘&gt;’</em></code> (enfants directs) permet de sélectionner les nœuds qui les fils directs d’un élément donné.</p>
+</li>
+<li>
+<p>Combinateur <code><em>‘ ‘</em></code> (blanc) permet de sélectionner les nœuds qui sont des descendants (pas nécessairement des fils directs) d’un élément donné.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_benjamin_de_cock"><a href="https://twitter.com/bdc">Benjamin De Cock</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Benjamin travaille pour la société <a href="https://stripe.com/fr">Stripe</a>. Sa présentation avait pour but de faire un focus sur la puissance de la propriété CSS <a href="https://developer.mozilla.org/fr/docs/Web/CSS/display">display</a> et notamment de <a href="https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout">CSS Grid</a>  et dans une moinde mesure de CSS Flexbox.</p>
+</div>
+<div class="paragraph">
+<p>Contrairement à quelques années en arrière, vous avez tous les outils aujourd’hui pour disposer facilement des éléments (selon une direction donnée via les flexbox) ou en découpant l’écran en zone (grid). Les flexbox sont utilisables partout</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2017/dotcss_03.png" alt="Flexbox">
+</div>
+<div class="title">Figure 1. Can i use flexbox</div>
+</div>
+<div class="paragraph">
+<p>Et les CSS grid bientôt</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2017/dotcss_04.png" alt="CSS Grid">
+</div>
+<div class="title">Figure 2. Can i use CSS Grid</div>
+</div>
+<div class="paragraph">
+<p>Sur les Flexbox je vous laisse lire <a href="https://www.dev-mind.fr/blog/2016/flexbox_layouts_faciles.html">mon article</a> sur le sujet. Il contient un lien vers la très bonne vidéo de <a href="https://twitter.com/hsablonniere">Hubert Sablonière</a> sur le sujet.</p>
+</div>
+<div class="paragraph">
+<p>Chez Stripe, Benjamin a mis en place des feuilles de style à base de grilles (CSS grid) pour définir le layout commun à tous les écrans. Les animations sont ensuite appliquées sur ce layout complet et ceci a considérablement simplifier leur code.</p>
+</div>
+<div class="paragraph">
+<p>Je ferai certainement un article sur CSS GRid prochainement mais voici un exemple simple. Si vous avez le HTML suivant</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-html" id="1722522441704.4316"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"grid"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"one"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"two"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"three"</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"four"</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"five"</span>&gt;</span>5<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"six"</span>&gt;</span>6<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722522441704.4316')">Copy</button></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Vous pouvez utiliser CSS grid pour indiquer que ce code s’affiche sous forme de grille. Cette spécification permet de définir les contraintes
+* sur les colonnes et les lignes (nombre total et tailles minimales ou maximales) et
+* sur chacune des cellules pour indiquer où les placer sur la grille et sur combien de colonnes ou de lignes</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-css" id="1722522441722.3303"><span class="hljs-selector-class">.grid</span>{
+		<span class="hljs-attribute">display</span>: grid;
+    <span class="hljs-attribute">grid-template-columns</span>: <span class="hljs-built_in">repeat</span>(<span class="hljs-number">3</span>, <span class="hljs-number">1</span>fr);
+    <span class="hljs-attribute">grid-gap</span>: <span class="hljs-number">1em</span>;
+    <span class="hljs-attribute">grid-auto-rows</span>: <span class="hljs-built_in">minmax</span>(<span class="hljs-number">100px</span>, auto);
+
+	}
+  <span class="hljs-selector-class">.grid</span> &gt; <span class="hljs-selector-tag">div</span> {
+    <span class="hljs-attribute">border</span>: <span class="hljs-number">2px</span> solid <span class="hljs-built_in">rgb</span>(<span class="hljs-number">24</span>,<span class="hljs-number">111</span>,<span class="hljs-number">198</span>);
+    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">5px</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">rgba</span>(<span class="hljs-number">33</span>,<span class="hljs-number">150</span>,<span class="hljs-number">243</span>,.<span class="hljs-number">5</span>);
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">1em</span>;
+   }
+	<span class="hljs-selector-class">.one</span> {
+    <span class="hljs-attribute">grid-column</span>: <span class="hljs-number">1</span> / <span class="hljs-number">3</span>;
+    <span class="hljs-attribute">grid-row</span>: <span class="hljs-number">1</span>;
+  }
+  <span class="hljs-selector-class">.two</span> {
+    <span class="hljs-attribute">grid-column</span>: <span class="hljs-number">2</span> / <span class="hljs-number">4</span>;
+    <span class="hljs-attribute">grid-row</span>: <span class="hljs-number">1</span> / <span class="hljs-number">3</span>;
+  }
+  <span class="hljs-selector-class">.three</span> {
+    <span class="hljs-attribute">grid-column</span>: <span class="hljs-number">1</span>;
+    <span class="hljs-attribute">grid-row</span>: <span class="hljs-number">2</span> / <span class="hljs-number">5</span>;
+  }
+  <span class="hljs-selector-class">.four</span> {
+    <span class="hljs-attribute">grid-column</span>: <span class="hljs-number">3</span>;
+    <span class="hljs-attribute">grid-row</span>: <span class="hljs-number">3</span>;
+  }
+  <span class="hljs-selector-class">.five</span> {
+    <span class="hljs-attribute">grid-column</span>: <span class="hljs-number">2</span>;
+    <span class="hljs-attribute">grid-row</span>: <span class="hljs-number">4</span>;
+  }
+  <span class="hljs-selector-class">.six</span> {
+    <span class="hljs-attribute">grid-column</span>: <span class="hljs-number">3</span>;
+    <span class="hljs-attribute">grid-row</span>: <span class="hljs-number">4</span>;
+  }</code><button class="btn-copy-code" onclick="copyToClipboard('1722522441722.3303')">Copy</button></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Ce qui donnera le visuel suivant</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2017/dotcss_02.png" alt="CSS Grid example">
+</div>
+<div class="title">Figure 3. Exemple CSS Grid</div>
+</div>
+<div class="paragraph">
+<p>Vous pouvez voir le <a href="https://jsfiddle.net/devmindfr/awgo1u11/">JsFiddle</a></p>
+</div>
+<div class="paragraph">
+<p>Une astuce intéressante a été montrée pendant le talk. Il est important de gérer les navigateurs qui ne savent pas interpréter une version trop récente d’une spécification CSS. Vous pouvez par exemple charger une feuille de style de fallback dynamiquement en JavaScript si votre navigateur n’implémente pas encore les CSS Grid. Par exemple</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-javascript" id="1722522441726.125"><span class="hljs-keyword">if</span>(!<span class="hljs-string">'grid'</span> <span class="hljs-keyword">in</span> <span class="hljs-variable language_">document</span>.<span class="hljs-property">body</span>.<span class="hljs-property">style</span>){
+  <span class="hljs-keyword">var</span> head  = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementsByTagName</span>(<span class="hljs-string">'head'</span>)[<span class="hljs-number">0</span>];
+  <span class="hljs-keyword">var</span> link  = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">'link'</span>);
+  link.<span class="hljs-property">rel</span>  = <span class="hljs-string">'stylesheet'</span>;
+  link.<span class="hljs-property">type</span> = <span class="hljs-string">'text/css'</span>;
+  link.<span class="hljs-property">href</span> = <span class="hljs-string">'styles/fallbax.css'</span>;
+  head.<span class="hljs-title function_">appendChild</span>(link);
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522441726.125')">Copy</button></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_adam_detrick"><a href="https://twitter.com/akdetrick">Adam Detrick</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Adam travaille chez <a href="https://www.meetup.com">Meetup</a>. Lorsqu’un projet commence à grossir, à avoir plusieurs équipes, le CSS suit la même tendance, il grossit sans cesse. Comme le disait Melvin Conway, “organizations which design systems are constrained to produce designs which are copies of the communication structures of these organizations”…​</p>
+</div>
+<div class="paragraph">
+<p>Le CSS augmente et il est de plus en plus compliqué à lire. Nous avons tendance à ne pas réutiliser les styles existants car nous avons toujours peur de casser quelque chose… Malheureusement on en crée de nouveaux, faisant encore grandir la complexité. Au bout d’un moment, quand on arrive à ne plus avoir ce que l’on veut à l’écran, on introduit les <code><em>!important</em></code>.  Pour rappel cette propriété indique que nous cassons l’héritage des styles, et là nous commençons à toucher le fond.</p>
+</div>
+<div class="paragraph">
+<p>Mais il faut garder à l’esprit que le CSS est une ressource bloquante. Le navigateur doit l’interpréter pour être capable d’afficher les éléments à l’écran.  Plus vos feuilles de style seront grosses et complexes plus les pages seront longues à s’afficher.</p>
+</div>
+<div class="paragraph">
+<p>Il est important de maîtriser les styles que l’on défini. Le problème n’est pas technique mais humain.</p>
+</div>
+<div class="paragraph">
+<p>Plusieurs pistes</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Bannir le <code><em>!important</em></code></p>
+</li>
+<li>
+<p>Définir une nomenclature de styles en utilisant des noms de style ni trop précis ni trop abstrait</p>
+</li>
+<li>
+<p>Mettre en place une documentation des styles utilisés. Il existe plusieurs outils pour générer automatiquement cette documentation.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Niveau nomenclature Adam proposait d’utiliser la notation suivante</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-javascript" id="1722522441727.1372">.<span class="hljs-property">at</span>[<span class="hljs-title class_">Breakpoint</span>]_[property]--[variant]</code><button class="btn-copy-code" onclick="copyToClipboard('1722522441727.1372')">Copy</button></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Les breakpoint correspondent aux changements d’affichage au niveau des media queries. Par exemple</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2017/dotcss_05.png" alt="Nommage">
+</div>
+</div>
+<div class="paragraph">
+<p>Vous pouvez par exemple définir un style <code><em>.atLarge_margin—​center</em></code>. Il est important de définir des règles simples que tout le monde peut retrouver ou partager.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_florian_rivoal"><a href="https://twitter.com/frivoal">Florian Rivoal</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Florian est membre du CSS working group et il est venu nous parler des prochaines évolutions du langage, et plus précisément des dernières évolutions sur les Media Queries.</p>
+</div>
+<div class="paragraph">
+<p>Pour rappel une media query (ou requête média) définit un type de média et permet d’appliquer un ensemble de styles différents en fonction des particularités du média : largeur, hauteur, couleurs…​.</p>
+</div>
+<div class="paragraph">
+<p>Les media queries ont connu plusieurs évolutions</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>CSS 2.1 : introduction de <code><em>@media screen</em></code> (écran), <code><em>@media print</em></code> (imprimante)</p>
+</li>
+<li>
+<p>Le niveau 3 a permi de définir des caractéristiques du media afin d’être plus générique (largeur minimale, maximale….)</p>
+</li>
+<li>
+<p>Les niveaux 4 et 5 arrivent et vont permettre de simplifier la syntaxe</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Par exemple aujourd’hui on écrit</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-css" id="1722522441728.8696"><span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">20em</span>) <span class="hljs-keyword">and</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">40em</span>){
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522441728.8696')">Copy</button></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Demain nous écrirons</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-css" id="1722522441729.61"><span class="hljs-keyword">@media</span> (<span class="hljs-number">20em</span> &lt;= <span class="hljs-attribute">width</span> &lt;=<span class="hljs-string">"40em){"</span> }&lt; code&gt;&lt;/=&gt;</code><button class="btn-copy-code" onclick="copyToClipboard('1722522441729.61')">Copy</button></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Autre exemple, nous pouvons aujourd’hui cumuler les déclarations pour être plus précis. Les déclarations peuvent être illisible comme par exemple</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-css" id="1722522441729.9253"><span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">20em</span>), <span class="hljs-keyword">not</span> all <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-height</span>: <span class="hljs-number">40em</span>){
+   <span class="hljs-keyword">@media</span> <span class="hljs-keyword">not</span> all <span class="hljs-keyword">and</span> (<span class="hljs-attribute">pointer</span>:none){
+   }
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522441729.9253')">Copy</button></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Alors que demain nous pourrons simplement écrire</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-css" id="1722522441730.648"><span class="hljs-keyword">@media</span> ((<span class="hljs-attribute">width</span> &gt;= <span class="hljs-number">20em</span>) <span class="hljs-keyword">or</span> (<span class="hljs-attribute">height</span> &lt; <span class="hljs-number">40em</span>)) <span class="hljs-keyword">and</span> (<span class="hljs-keyword">not</span> (<span class="hljs-attribute">pointer</span>:none)){
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522441730.648')">Copy</button></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Voici le récapitulatif des propriétés</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2017/dotcss_06.png" alt="Media queries">
+</div>
+<div class="title">Figure 4. Media queries level 3, 4 and 5</div>
+</div>
+<div class="paragraph">
+<p>Malheureusement ceci n’est pas encore implémenté dans les navigateurs et nous devrons encore attendre avant de les utiliser.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_laurence_penney"><a href="https://twitter.com/lorp">Laurence Penney</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Laurence est venu nous parler de l’utilisation des fonts dans une application web. Quand nous voulons utiliser une police d’écriture (par exemple Lato), nous avons plusieurs niveaux de personnalisation.</p>
+</div>
+<div class="paragraph">
+<p>Par exemple quand voulez utilisez la police d’écriture Lato vous déclarez dans votre page que vous utilisez la famille Lato</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-css" id="1722522441733.562">&lt;link href="https://fonts.googleapis.com/css?family=Lato<span class="hljs-string">" rel="</span>stylesheet<span class="hljs-string">"&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722522441733.562')">Copy</button></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Mais derrière si vous téléchargez cette famille vous avez plusieurs fichiers (dont la taille peut être non négligeable) en fonction des styles</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2017/dotcss_07.png" alt="Fonts">
+</div>
+<div class="title">Figure 5. Fonts de la famille Lato</div>
+</div>
+<div class="paragraph">
+<p>Les possibilités de déclinaison sont énormes et nous pouvons définir des dizaines de dimension
+* Taille
+* Couleur
+* Espacement
+* Style
+* Poids : Largeur du trait de thin à bold
+* …</p>
+</div>
+<div class="paragraph">
+<p>Avec les dernière versions de OpenType (2016 v1.8) le but est de définir un seul fichier et de définir à l’intérieur les variations autorisées. Ces variations sont personnalisables en CSS via les <code><em>font-variation-settings</em></code></p>
+</div>
+<div class="paragraph">
+<p>Malheureusement pour le moment peu de navigateur permettent leur utilisation</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2017/dotcss_08.png" alt="font-variation-settings">
+</div>
+<div class="title">Figure 6. Can i use font-variation-settings</div>
+</div>
+<div class="paragraph">
+<p>Si vous voulez tester les possibilités vous pouvez aller sur le site <a href="http://www.axis-praxis.org/specimens/dunbar">AxisPraxis</a>, développé par Laurence</p>
+</div>
+<div class="paragraph">
+<p>A la fin de sa présentation Laurence nous a montré des travaux effectués sur des fonts contenant des icônes pour montrer que les fonts pourraient même servir dans un futur proche à créer des animations</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/blog/2017/dotcss_09.jpg" alt="DotCSS">
+</div>
+</div>
+<div class="paragraph">
+<p>Merci à toute la team dotCSS pour l’organisation de cet event</p>
+</div>
+</div>
+</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 01/08/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
+
+<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-KZZ4TXLO.js" type="module"></script>
+
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t1"},"c":{"7":[{"i":"t1","r":1,"x":5}]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>

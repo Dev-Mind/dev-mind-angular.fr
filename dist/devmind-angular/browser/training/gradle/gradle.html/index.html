@@ -1,0 +1,1113 @@
+<!DOCTYPE html><html lang="en" data-critters-container><head>
+  <meta charset="utf-8">
+  <title>Training</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    body {
+      min-height: 100vh;
+      max-height: 100vh;
+      font-family: "Helvetica", "Arial", "sans-serif";
+      padding: 0;
+      margin: 0;
+    }
+
+    header {
+      height: 90px;
+      max-height: 90px;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+      background-color: white;
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      z-index: 99;
+      transition-duration: 0.2s;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: max-height, box-shadow;
+      position: fixed;
+      width: 100%;
+      text-align: center;
+    }
+    header hr {
+      width:100%;
+      background-color: #424242;
+      border-color: #424242;
+      display: block;
+      border: 0;
+      height: 0.5em;
+      margin: 0;
+    }
+    .header-img {
+      margin: auto;
+      width: 50%;
+      padding-top: 0.5em;
+      height: 30px;
+    }
+    .header-img img {
+      max-height: 30px !important;
+    }
+    .header-space {
+      min-height: 90px;
+    }
+
+
+    @media screen and (min-width: 901px) {
+      header {
+        height: 120px;
+        max-height: 120px;
+      }
+      .header-img {
+        height: 60px;
+      }
+      .header-img img {
+        max-height: 60px !important;
+      }
+      .header-space {
+        min-height: 120px;
+      }
+      nav a {
+        padding: 6px 24px;
+      }
+      .nav-home{
+        display: block !important;
+      }
+    }
+
+
+    nav {
+      display: -webkit-flex;
+      display: flex;
+      margin: auto;
+    }
+
+    nav a {
+      padding: 0 12px;
+      line-height: 28px;
+      height: 28px;
+      color: #424242;
+      margin: auto;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 13px;
+      border-radius: 4px;
+    }
+    .nav-home{
+      display: none;
+    }
+    nav a > img {
+    // height: 20px;
+    }
+
+    nav a:hover {
+      background-color: #9e9e9e;
+    }
+
+    nav .active {
+      background-color: rgba(0, 0, 0, 0.14);
+    }
+
+    main {
+      overflow-x: hidden;
+    }
+
+    img, picture {
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+    }
+
+    * {
+      box-sizing: border-box; /* pour maîtriser width et flex-basis */
+    }
+
+    .devmind-section {
+      display: block;
+      margin: 0 auto;
+      max-width: 1600px;
+      padding: 60px 40px;
+    }
+
+    @media (max-width: 700px) {
+      .devmind-section {
+        padding: 25px 10px;
+      }
+    }
+
+    @media (min-width: 701px) and (max-width: 900px) {
+      .devmind-section {
+        padding: 40px 25px;
+      }
+    }
+
+    .dm-social {
+      min-width: 2em;
+      max-width: 2em;
+      width: 2em;
+      height: 2em;
+    }
+  </style>
+  <script>
+    function copyToClipboard(id) {
+      const text = document.getElementById(id).innerText;
+      navigator.clipboard.writeText(text.substring(0, text.length));
+    }
+  </script>
+<style>code[class*=language-]{color:#555;background:none;text-shadow:0 1px white;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}.imageblock,.imageblock .title{text-align:center}.toc{background:#f0f8ff;padding:1em}h1,h2{font-weight:100}h1{font-size:35px;line-height:38px}.dm-block--blog{width:100%;background-color:#eceff1;color:#424242;padding:0;margin:0}.dm-block--blog a,.dm-block--blog a:hover,.dm-block--blog a:visited{font-weight:700;color:#424242;text-decoration:none;cursor:pointer}.dm-block--blog .link{display:block}.btn-copy-code{background-color:#fff;border:2px solid white;border-radius:24px;color:#424242!important;margin:1em .5em auto auto;font-weight:700;font-size:16px;display:block;cursor:pointer;width:auto;text-align:center;box-shadow:0 4px 5px #00000024,0 1px 10px #0000001f,0 2px 4px -1px #0003;padding:4px;font-size:small}.btn-copy-code:hover{background-color:#424242;border:2px solid #424242;color:#fff!important;padding:.5em 1em}footer{background-color:#424242}.is-small-screen{display:none}.is-large-screen{display:inherit}@media screen and (max-width: 900px){.is-small-screen{display:inherit}.is-large-screen{display:none}}h1,h2{color:#424242;font-weight:100}h1{font-weight:bolder;font-size:35px;line-height:38px}h2{font-size:25px;line-height:28px}.small{font-size:small}@media (max-width: 700px){h1{font-size:28px;line-height:30px}h2{font-size:22px;line-height:24px}}
+</style><link rel="stylesheet" href="styles-2E537E2B.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-2E537E2B.css"></noscript><style ng-app-id="ng">.dm_footer[_ngcontent-ng-c2660501952]{color:#eee;display:flex;justify-content:space-between;font-size:14px}.dm_footer[_ngcontent-ng-c2660501952]   .dm_society[_ngcontent-ng-c2660501952]{color:#fff}.dm_footer[_ngcontent-ng-c2660501952]   div[_ngcontent-ng-c2660501952]{margin-right:1em;width:100%}.dm_footer[_ngcontent-ng-c2660501952]   .dm_footer__middle[_ngcontent-ng-c2660501952]{flex-grow:1}.dm_footer[_ngcontent-ng-c2660501952]   .dm_footer__right[_ngcontent-ng-c2660501952]{text-align:right}.dm_footer[_ngcontent-ng-c2660501952]   .is-large-screen[_ngcontent-ng-c2660501952]{padding:.7em;margin:.7em 1em}.dm_footer[_ngcontent-ng-c2660501952]   .is-small-screen[_ngcontent-ng-c2660501952]{padding:0;margin:0 1em;font-size:12px}</style><style ng-app-id="ng">h1{margin-top:.5em}.dm-blog--info-date{font-size:smaller;color:#424242;border:1px solid #aaa;border-radius:24px;padding:.5em 1em;margin-right:.5em;display:inline}.blog-keywords{display:flex;margin-bottom:1em}.blog-keywords .dm-blog--keyword-detail{background-color:#ccc;color:#424242;padding:.5em 1em;margin-right:.5em;border-radius:24px;font-size:smaller}.toc{background-color:#ccc;margin-top:1em;border:1px solid #ccc;padding:1em;border-radius:8px}.toc #toctitle{font-weight:700;margin-bottom:.5em}img{max-width:100%;height:auto}.imageblock>.content{display:flex;justify-content:center;align-items:center}.highlight{display:block;overflow-x:auto;background:#f3f3f3;color:#444;padding:1.5em;box-shadow:0 8px 16px #00000026;border-radius:8px}code.hljs{padding:3px 5px}.hljs-comment{color:#697070}.hljs-punctuation,.hljs-tag{color:#444a}.hljs-tag .hljs-attr,.hljs-tag .hljs-name{color:#444}.hljs-attribute,.hljs-doctag,.hljs-keyword,.hljs-meta .hljs-keyword,.hljs-name,.hljs-selector-tag{font-weight:700}.hljs-deletion,.hljs-number,.hljs-quote,.hljs-selector-class,.hljs-selector-id,.hljs-string,.hljs-template-tag,.hljs-type{color:#800}.hljs-section,.hljs-title{color:#800;font-weight:700}.hljs-link,.hljs-operator,.hljs-regexp,.hljs-selector-attr,.hljs-selector-pseudo,.hljs-symbol,.hljs-template-variable,.hljs-variable{color:#ab5656}.hljs-literal{color:#695}.hljs-addition,.hljs-built_in,.hljs-bullet,.hljs-code{color:#397300}.hljs-meta{color:#1f7199}.hljs-meta .hljs-string{color:#38a}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}.language-kotlin:before{display:block;float:right;content:"kotlin";font-weight:700;text-transform:uppercase}.language-typescript:before{display:block;float:right;content:"typescript";font-weight:700;text-transform:uppercase}.language-java:before{display:block;float:right;content:"java";font-weight:700;text-transform:uppercase}.language-javascript:before{display:block;float:right;content:"javascript";font-weight:700;text-transform:uppercase}.language-shell:before{display:block;float:right;content:"shell";font-weight:700;text-transform:uppercase}.language-yaml:before{display:block;float:right;content:"yaml";font-weight:700;text-transform:uppercase}.language-json:before{display:block;float:right;content:"json";font-weight:700;text-transform:uppercase}.language-xml:before{display:block;float:right;content:"xml";font-weight:700;text-transform:uppercase}.language-html:before{display:block;float:right;content:"html";font-weight:700;text-transform:uppercase}.language-css:before{display:block;float:right;content:"css";font-weight:700;text-transform:uppercase}.language-scss:before{display:block;float:right;content:"scss";font-weight:700;text-transform:uppercase}
+</style></head>
+<body><!--nghm-->
+  <app-root _nghost-ng-c582792440 ng-version="18.0.0" ngh="2" ng-server-context="ssg"><app-header _ngcontent-ng-c582792440 _nghost-ng-c2882497807 ngh="0"><header _ngcontent-ng-c2882497807><div _ngcontent-ng-c2882497807 class="header-img"><a _ngcontent-ng-c2882497807 routerlink="/" aria-label="Accueil" href="/"><img _ngcontent-ng-c2882497807 src="img/logo/logo_long.svg" alt="Dev-Mind" title="Dev-Mind"></a></div><nav _ngcontent-ng-c2882497807><a _ngcontent-ng-c2882497807 routerlink="/" aria-label="Accueil" class="nav-home" href="/"><img _ngcontent-ng-c2882497807 src="/img/ic_home_white_24px.svg" rel="start" alt="Accueil"></a><a _ngcontent-ng-c2882497807 routerlink="/formations.html" aria-label="Formations" class="active" href="/formations.html"> Formations</a><a _ngcontent-ng-c2882497807 routerlink="/blog.html" aria-label="Blog" class href="/blog.html">Blog</a><a _ngcontent-ng-c2882497807 routerlink="/experience.html" aria-label="Experience" class href="/experience.html"> Expérience</a></nav><hr _ngcontent-ng-c2882497807></header><div _ngcontent-ng-c2882497807 class="header-space"></div></app-header><router-outlet _ngcontent-ng-c582792440></router-outlet><app-asciidoc-viewer ngh="1"><div class="dm-block--blog"><div class="devmind-section"><h1><!--ngetn--></h1><div class="blog-keywords"><div class="dm-blog--info-date">10/11/2023</div><div class="dm-blog--keyword-detail">Gradle</div><!---->&nbsp; </div><div class="preview"><div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<a class="link" fragment="#_introduction">Introduction</a>
+<a class="link" fragment="#_why_a_build_tool">Why a build tool?</a>
+<a class="link" fragment="#_usage">Usage</a>
+<a class="link" fragment="#_principle">Principle</a>
+<a class="link" fragment="#_starting_with_gradle">Starting with Gradle</a>
+<a class="link" fragment="#_gradle_wrapper">Gradle wrapper</a>
+<a class="link" fragment="#_flask_first_example"><img src="/img/ic_flask.svg" style="width: 1em"> First example</a>
+<a class="link" fragment="#_how_gradle_works">How Gradle works ?</a>
+<a class="link" fragment="#_tasks">Tasks</a>
+<a class="link" fragment="#_incremental_build">Incremental build</a>
+<a class="link" fragment="#_flask_create_your_own_tasks"><img src="/img/ic_flask.svg" style="width: 1em"> Create your own tasks</a>
+<a class="link" fragment="#_gradle_life_cycle">Gradle Life cycle</a>
+<a class="link" fragment="#_plugins">Plugins</a>
+<a class="link" fragment="#_flask_custom_tasks_and_their_configurations"><img src="/img/ic_flask.svg" style="width: 1em"> Custom tasks and their configurations</a>
+<a class="link" fragment="#_dependency_management">Dependency management</a>
+<a class="link" fragment="#_reference">Reference</a>
+</ul>
+</div>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>In this training, we will learn how Gradle works and how use it in our projects.</p>
+</div>
+<div class="paragraph">
+<p>It’s just a fast presentation of this tool, and you will find more informations on official website <a href="https://docs.gradle.org/current/userguide/userguide.html" class="bare">https://docs.gradle.org/current/userguide/userguide.html</a></p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="../../img/training/gradle.png" alt="Gradle by Dev-Mind" width="800">
+</div>
+</div>
+<div class="paragraph">
+<p>Gradle is an open source tool for automating the build of your Java, Kotlin, Android, Web projects…​ If you only have a web project, you don’t need to use Gradle, but when all your projects are in a mono repository on Git, with heterogeneous languages, it’s easier to use a same life cycle tool like Gradle.</p>
+</div>
+<div class="paragraph">
+<p>Gradle is not the only solution in the ecosystem. You can also use Maven or older tool like Ant.</p>
+</div>
+<div class="paragraph">
+<p>Gradle has the Ant flexibility and apply many Maven conventions.</p>
+</div>
+<div class="paragraph">
+<p>Maven helps to build only one project. But Gradle was created to be more flexible, you can build several artifacts for example. That’s why the Android community has chosen this tool. You can define different flavors and build 2 artifacts : one for the free version for example and another one for the paid version.</p>
+</div>
+<div class="paragraph">
+<p>Java users use both Maven and Gradle. But I choose Gradle for you, because we will use this tool in our Java/Spring project, and in the Android project.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_introduction">Introduction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Highly customizable</strong><br>
+You have a convention to use the plugins but everything is customizable.
+You can write your scripts in Kotlin (default) or in Groovy (the legacy solution)</p>
+</div>
+<div class="paragraph">
+<p><strong>Fast / Incremental build / Cache / Parallel</strong> <br>
+Incremental build : Gradle reuses outputs from previous executions, processing only inputs that changed. For a fastest build, you can also execute tasks in parallel and you can configure Gradle cache.</p>
+</div>
+<div class="paragraph">
+<p><strong>Powerful</strong><br>
+Gradle build projects in several languages but its success is linked to Android developers. Today</p>
+</div>
+<div class="paragraph">
+<p><strong>Useful</strong><br>
+Based on Ivy and supports Maven, it simplifies the project dependencies (libraries). By the default, the dependency resolution is transitive. If you declare one dependency and if this library depends from another ones, you don’t need to declare all the libraries tree because Gradle is able to resolve this task for you.</p>
+</div>
+<div class="paragraph">
+<p><strong>JVM foundation</strong><br>
+Gradle runs on the JVM and you must have a Java Development Kit (JDK) installed to use it. You can also use Gradle for native projects like Spring native, Micronaut or Quarkus.</p>
+</div>
+<div class="paragraph">
+<p><strong>Extensibility</strong><br>
+You can extend Gradle to provide your own task types, your own plugins or even your own build model. Android added for example many new build concepts such as flavors and build types.</p>
+</div>
+<div class="paragraph">
+<p><strong>IDE support</strong><br>
+Major IDEs allow you to import Gradle builds</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_why_a_build_tool">Why a build tool?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Write once, run everywhere</strong></p>
+</div>
+<div class="paragraph">
+<p>Build automation is the act of scripting or automating a wide variety of <strong>tasks</strong> that software developers have to do in their day to day activities such as:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>compiling program source code into binary code</p>
+</li>
+<li>
+<p>packaging a compiled program for delivery</p>
+</li>
+<li>
+<p>running automated tests</p>
+</li>
+<li>
+<p>deploying to production systems</p>
+</li>
+<li>
+<p>generating documentation and/or release notes.</p>
+</li>
+<li>
+<p>…​</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_usage">Usage</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can execute Gradle
+* In command line in a terminal
+* In your IDE (development tools to write and execute code) <span class="small">NetBeans, Eclipse or IntelliJ (we will use IntelliJ)</span></p>
+</div>
+<div class="paragraph">
+<p>Online documentation is very complete for the main usages <a href="https://docs.gradle.org/current/userguide/userguide.html" class="bare">https://docs.gradle.org/current/userguide/userguide.html</a>. It’s more difficult when you want to create your own plugins. But it’s not a problem in our case.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_principle">Principle</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Gradle was not the first build tool. In the past we used <a href="https://ant.apache.org/">Ant</a> and after <a href="https://maven.apache.org/">Maven</a></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://ant.apache.org/">Ant</a> is very powerful, but you describe your build in an xml file, the configuration is not readable and difficult to use on a project with a lot of people, because you don’t have conventions to use this tool.</p>
+</li>
+<li>
+<p><a href="https://maven.apache.org/">Maven</a> is better but in my opinion Gradle is the best solution because Maven is</p>
+<div class="ulist">
+<ul>
+<li>
+<p>very verbose (you have to write a lot of thing to configure a build)</p>
+</li>
+<li>
+<p>the project is not very flexible by its governance</p>
+</li>
+<li>
+<p>slower than Gradle: incremental build is present in the last version and the Gradle cache and parallel execution give an advantage to Gradle</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_starting_with_gradle">Starting with Gradle</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can install the last version on <a href="https://gradle.org/install/" class="bare">https://gradle.org/install/</a>. If you followed the installation of the package manager <a href="https://sdkman.io/">Sdk Man</a> in the <a href="https://dev-mind.fr/training/outil/install-development-environment.html">first lesson</a>, you just have to launch</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" id="1722522443270.325">sdk install gradle 8.2.1</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443270.325')">Copy</button></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Gradle runs on all major operating systems and requires only a Java JDK version 17 or higher to be installed.</p>
+</div>
+<div class="paragraph">
+<p>To check, run java -version in a terminal on your laptop:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" id="1722522443270.5806">$ java -version
+
+java version "17.0.7" 2023-04-18 LTS
+Java(TM) SE Runtime Environment Oracle GraalVM 17.0.7+8.1 (build 17.0.7+8-LTS-jvmci-23.0-b12)
+Java HotSpot(TM) 64-Bit Server VM Oracle GraalVM 17.0.7+8.1 (build 17.0.7+8-LTS-jvmci-23.0-b12, mixed mode, sharing)</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443270.5806')">Copy</button></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Open a terminal on your laptop or computer to create and initialize a new Gradle project.
+You will create a directory and link it to Gradle</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" id="1722522443270.5647">mkdir gradle-demo
+cd gradle-demo
+gradle init</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443270.5647')">Copy</button></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If you use a Gradle version &gt; 7, you will have to respond to few questions</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" id="1722522443270.6973">Select type of project to generate:
+  1: basic
+  2: application
+  3: library
+  4: Gradle plugin
+Enter selection (default: basic) [1..4] 2
+
+Select implementation language:
+  1: C++
+  2: Groovy
+  3: Java
+  4: Kotlin
+  5: Scala
+  6: Swift
+Enter selection (default: Java) [1..6] 3
+
+Generate multiple subprojects for application? (default: no) [yes, no] no
+Select build script DSL:
+  1: Kotlin
+  2: Groovy
+Enter selection (default: Kotlin) [1..2] 1
+
+Select test framework:
+  1: JUnit 4
+  2: TestNG
+  3: Spock
+  4: JUnit Jupiter
+Enter selection (default: JUnit Jupiter) [1..4] 4
+
+Generate build using new APIs and behavior (some features may change in the next minor release)? (default: no) [yes, no] no</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443270.6973')">Copy</button></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You should have this message after</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" id="1722522443270.3655">&amp;gt; Task :init
+Get more help with your project: Learn more about Gradle by exploring our samples at https://docs.gradle.org/7.5/samples
+
+BUILD SUCCESSFUL in 56s
+2 actionable tasks: 2 executed</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443270.3655')">Copy</button></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Gradle should have generated this tree</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" id="1722522443270.34">|-- app
+|   | src
+|   | -- build.gradle.kts  (1)
+|-- .gitattributes (2)
+|-- .gitignore (2)
+|-- gradle
+|   | -- wrapper
+|       | -- gradle-wrapper.jar  (3)
+|       | -- gradle-wrapper.properties  (4)
+|-- gradlew  (5)
+|-- gradlew.bat (5)
+|-- settings.gradle.kts (6)</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443270.34')">Copy</button></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(1). Gradle configuration script for the project<br>
+(2). A git init is automatically made on the project generation<br>
+(3). This jar contains Gradle Wrapper classes and libraries<br>
+(4). Wrapper configuration file (you find the Gradle version used by the project)<br>
+(5). These scripts are used to launch Gradle via the wrapper (2 scripts, one for Unix one for Windows)<br>
+(6). general configuration file (used to declare Gradle sub modules, and global variables)</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_gradle_wrapper">Gradle wrapper</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Team members can have different versions of Gradle on their laptop. But on a project everybody must use the same version.</p>
+</div>
+<div class="paragraph">
+<p>From one project to another, you can have different versions of the tool (it’s difficult to switch the version on your computer).</p>
+</div>
+<div class="paragraph">
+<p>Gradle wrapper resolves these problems. The recommended way to execute any Gradle build, is with the help of the Gradle Wrapper (in short just “Wrapper”). The Wrapper is a script that invokes a declared version of Gradle (it fixes the version used in your project), downloading it beforehand if necessary.</p>
+</div>
+<div class="paragraph">
+<p>As a result, developers can get up and running with a Gradle project quickly without having to follow manual installation.</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="../../img/training/gradle/wrapper.png" alt="wrapper" width="800">
+</div>
+</div>
+<div class="listingblock code-height">
+<div class="content">
+<pre class="highlight"><code class="language-shell" id="1722522443270.7942">$ ./gradlew -v
+Downloading https://services.gradle.org/distributions/gradle-8.2.1-bin.zip
+..........10%...........20%...........30%...........40%...........50%...........60%...........70%...........80%...........90%...........100%
+
+------------------------------------------------------------
+Gradle 8.2.1
+------------------------------------------------------------
+
+Build time:   2023-07-10 12:12:35 UTC
+Revision:     a38ec64d3c4612da9083cc506a1ccb212afeecaa
+
+Kotlin:       1.8.20
+Groovy:       3.0.17
+Ant:          Apache Ant(TM) version 1.10.13 compiled on January 4 2023
+JVM:          17.0.7 (Oracle Corporation 17.0.7+8-LTS-jvmci-23.0-b12)
+OS:           Linux 5.19.0-50-generic amd64</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443270.7942')">Copy</button></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_flask_first_example"><img src="/img/ic_flask.svg" style="width: 1em"> First example</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Clone the Github project <a href="https://github.com/Dev-Mind/gradle-demo.git" class="bare">https://github.com/Dev-Mind/gradle-demo.git</a></p>
+</div>
+<div class="paragraph">
+<p>Go in IntelliJ in the menu <code>File</code> → <code>New</code> → <code>Project From Existing Sources</code> and select the Gradle model</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="../../img/training/gradle/idea1.png" alt="idea1" width="800">
+</div>
+</div>
+<div class="paragraph">
+<p>When everything is finished you have your project opened in your IDE with the Gradle configuration loaded.</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="../../img/training/gradle/idea1&amp;2.png" alt="idea1&amp;2" width="1000">
+</div>
+</div>
+<div class="paragraph">
+<p>You can browse the gradle files as in the tree below</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" id="1722522443271.52">|-- app
+|   | -- src
+|      | -- main
+|          | -- java
+|          | -- resources
+|      | -- test
+|          | -- java
+|          | -- resources
+|   | -- build.gradle.kts
+|-- gradle
+|   | -- wrapper
+|       | -- gradle-wrapper.jar
+|       | -- gradle-wrapper.properties
+|-- .gitattributes
+|-- .gitignore
+|-- gradle.properties
+|-- gradlew
+|-- gradlew.bat
+|-- settings.gradle.kts</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443271.52')">Copy</button></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Open the main file called <code>build.gradle.kts</code>.
+This is a Java project. So we use the plugin provided by Gradle to manage an application written in Java.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-groovy" id="1722522443271.2827">plugins {
+    <span class="hljs-comment">// Apply the application plugin to add support for building a CLI application in Java.</span>
+    application
+}
+
+repositories {
+    <span class="hljs-comment">// Use Maven Central for resolving dependencies.</span>
+    mavenCentral()
+}
+
+dependencies {
+    <span class="hljs-comment">// Use JUnit Jupiter for testing.</span>
+    testImplementation(<span class="hljs-string">"org.junit.jupiter:junit-jupiter:5.10.0"</span>)
+
+    <span class="hljs-comment">// This dependency is used by the application.</span>
+    implementation(<span class="hljs-string">"org.springframework:spring-context:6.0.11"</span>)
+}
+
+<span class="hljs-comment">// Apply a specific Java toolchain to ease working on different environments.</span>
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(<span class="hljs-number">17</span>))
+    }
+}
+
+application {
+    <span class="hljs-comment">// Define the main class for the application.</span>
+    mainClass.set(<span class="hljs-string">"com.devmind.gradle.MyApplication"</span>)
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443271.2827')">Copy</button></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can now launch this command</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" id="1722522443271.2593">$ ./gradlew build
+
+BUILD SUCCESSFUL in 7s
+8 actionable tasks: 8 executed</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443271.2593')">Copy</button></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Gradle executes tasks and in our case Java plugin has launched 8 tasks to build the project. As this is the first build you should have 8 executed task.</p>
+</div>
+<div class="paragraph">
+<p>If you try to relaunch the same command you should have this output</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" id="1722522443271.0928">$ ./gradlew build
+BUILD SUCCESSFUL in 517ms
+8 actionable tasks: 8 up-to-date</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443271.0928')">Copy</button></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can observe the execution time. The 8 tasks are now executed in 517ms. As you changed nothing Gradle does not relaunch each task. All task have the status UP-TO-DATE</p>
+</div>
+<div class="paragraph">
+<p>You can launch the <code>run</code> task to execute your app</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" id="1722522443271.597">$ ./gradlew :app:run
+&amp;gt; Task :app:run
+I want to learn Gradle
+
+BUILD SUCCESSFUL in 503ms
+3 actionable tasks: 1 executed, 2 up-to-date</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443271.597')">Copy</button></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>With IntelliJ, we have a synthetic view of dependencies and tasks</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="../../img/training/gradle/idea3.png" alt="idea3" width="600">
+</div>
+</div>
+<div class="paragraph">
+<p>Now try to list all available tasks in a command window. Run</p>
+</div>
+<div class="listingblock code-height">
+<div class="content">
+<pre class="highlight"><code class="language-shell" id="1722522443272.8123">$ ./gradlew tasks
+
+&amp;gt; Task :tasks
+
+------------------------------------------------------------
+Tasks runnable from root project 'gradle-demo'
+------------------------------------------------------------
+
+Application tasks
+-----------------
+run - Runs this project as a JVM application
+
+Build tasks
+-----------
+assemble - Assembles the outputs of this project.
+build - Assembles and tests this project.
+buildDependents - Assembles and tests this project and all projects that depend on it.
+buildNeeded - Assembles and tests this project and all projects it depends on.
+classes - Assembles main classes.
+clean - Deletes the build directory.
+jar - Assembles a jar archive containing the classes of the 'main' feature.
+testClasses - Assembles test classes.
+
+Build Setup tasks
+-----------------
+init - Initializes a new Gradle build.
+wrapper - Generates Gradle wrapper files.
+
+Distribution tasks
+------------------
+assembleDist - Assembles the main distributions
+distTar - Bundles the project as a distribution.
+distZip - Bundles the project as a distribution.
+installDist - Installs the project as a distribution as-is.
+
+Documentation tasks
+-------------------
+javadoc - Generates Javadoc API documentation for the 'main' feature.
+
+Help tasks
+----------
+buildEnvironment - Displays all buildscript dependencies declared in root project 'gradle-demo'.
+dependencies - Displays all dependencies declared in root project 'gradle-demo'.
+dependencyInsight - Displays the insight into a specific dependency in root project 'gradle-demo'.
+help - Displays a help message.
+javaToolchains - Displays the detected java toolchains.
+kotlinDslAccessorsReport - Prints the Kotlin code for accessing the currently available project extensions and conventions.
+outgoingVariants - Displays the outgoing variants of root project 'gradle-demo'.
+projects - Displays the sub-projects of root project 'gradle-demo'.
+properties - Displays the properties of root project 'gradle-demo'.
+resolvableConfigurations - Displays the configurations that can be resolved in root project 'gradle-demo'.
+tasks - Displays the tasks runnable from root project 'gradle-demo' (some of the displayed tasks may belong to subprojects).
+
+Verification tasks
+------------------
+check - Runs all checks.
+test - Runs the test suite.
+
+To see all tasks and more detail, run gradlew tasks --all
+
+To see more detail about a task, run gradlew help --task &amp;lt;task&amp;gt;
+
+BUILD SUCCESSFUL in 1s
+1 actionable task: 1 executed</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443272.8123')">Copy</button></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_how_gradle_works">How Gradle works ?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When you want to manage your project with Gradle, you will define a configuration file to declare</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>how to download Gradle plugins (that provide a set of tasks)</p>
+</li>
+<li>
+<p>how to configure Gradle plugins (properties)</p>
+</li>
+<li>
+<p>how to download dependencies of our project (Java libraries)</p>
+</li>
+<li>
+<p>add or configure your own tasks</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Everything is configured via a DSL (Domain Specific Language) written in Kotlin (or Groovy)</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_tasks">Tasks</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You have many predefined tasks (provided by plugins)</p>
+</div>
+<div class="paragraph">
+<p>A task</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>defines what to do on a set of resources</p>
+</li>
+<li>
+<p>may depend on one or more tasks.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Gradle models its builds as Directed Acyclic Graphs (DAGs) of tasks (units of work).</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="../../img/training/gradle/1_dag.png" alt="How Gradle works ?" width="500">
+</div>
+</div>
+<div class="paragraph">
+<p>You can add your own tasks and let them depend on others</p>
+</div>
+<div class="paragraph">
+<p>Task graph can be defined by both plugins and your own build scripts, with tasks linked together via the task dependency mechanism.</p>
+</div>
+<div class="paragraph">
+<p>Tasks themselves consist of:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Actions</strong> — pieces of work that do something, like copy files or compile source</p>
+</li>
+<li>
+<p><strong>Inputs</strong> — values, files and directories that the actions use or operate on</p>
+</li>
+<li>
+<p><strong>Outputs</strong> — files and directories that the actions modify or generate</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_incremental_build">Incremental build</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When inputs and outputs on a gradle task have no change, Gradle won’t execute this task and will display <strong>UP-TO-DATE</strong></p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="../../img/training/gradle/1_incremetal.png" alt="Incremental build" width="700">
+</div>
+<div class="title">Figure 1. Example with JavaCompile task</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_flask_create_your_own_tasks"><img src="/img/ic_flask.svg" style="width: 1em"> Create your own tasks</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Add these lines to your <code>build.gradle.kts</code> file</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" id="1722522443272.111">tasks.create("hello") {
+    doLast {
+        println("Hello")
+    }
+}
+tasks.create("world") {
+    dependsOn("hello")
+    doLast {
+        println("World")
+    }
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443272.111')">Copy</button></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Test by launching these tasks</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" id="1722522443272.1907">$ ./gradlew hello
+$ ./gradlew world</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443272.1907')">Copy</button></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_gradle_life_cycle">Gradle Life cycle</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A Gradle build has 3 steps</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Initialization</strong><br>
+Gradle determines which projects are involved in the build. A project can have subprojects. All of them have a <code>build.gradle.kts</code>.</p>
+</li>
+<li>
+<p><strong>Configuration</strong><br>
+Gradle parses the <code>build.gradle.kts</code> configuration file (or more if you have some subprojects). After this step, Gradle has built its Directed Acyclic Graphs (DAGs)</p>
+</li>
+<li>
+<p><strong>Execution</strong><br>
+Gradle executes one or several tasks (arguments added to <code>./gradlew</code>) according to this task graph. Gradle executes tasks one by one in the order defined in the graph.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_plugins">Plugins</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A plugin provides a task set and entry points to configure this plugin. For example</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-kotlin" id="1722522443272.452">plugins {
+    java
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443272.452')">Copy</button></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The Java plugin has these tasks</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/training/gradle/pluginJava.png" alt="Fonctionnement de Gradle" width="100%">
+</div>
+</div>
+<div class="paragraph">
+<p>In the next lab, we will use Spring and Spring Boot. We will use Gradle to manage our projects. We will use 2 more plugins</p>
+</div>
+<div class="listingblock code-height">
+<div class="content">
+<pre class="highlight"><code class="language-shell" id="1722522443272.0317">buildscript {
+    plugins {  (1)
+      java
+      id("org.springframework.boot") version "3.1.2"
+      id("io.spring.dependency-management") version "1.1.2"
+    }
+
+    repositories { (2)
+      mavenCentral()
+    }
+
+    group = "com.devmind.automacorp"
+    version = "0.0.1-SNAPSHOT"
+
+    java { (3)
+      sourceCompatibility = JavaVersion.VERSION_17
+    }
+
+
+    dependencies {
+       implementation("org.springframework.boot:spring-boot-starter") (4)
+       testImplementation("org.springframework.boot:spring-boot-starter-test")
+    }
+
+    tasks.withType&amp;lt;Test&amp;gt; {
+      useJUnitPlatform()
+    }
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443272.0317')">Copy</button></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(1). Gradle plugin used<br>
+(2). repository used to download plugins or app libraries<br>
+(3). Personalization of the <code>java</code> plugin.
+(4). Application dependencies (libraries used by the project)</p>
+</div>
+<div class="paragraph">
+<p>You have a lot of free plugin to enrich your build. All of them are available on this URL <a href="https://plugins.gradle.org/" class="bare">https://plugins.gradle.org/</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_flask_custom_tasks_and_their_configurations"><img src="/img/ic_flask.svg" style="width: 1em"> Custom tasks and their configurations</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Open your project <code>gradle-demo</code> in IntelliJ and add the following code in <code>build.gradle</code></p>
+</div>
+<div class="listingblock code-height">
+<div class="content">
+<pre class="highlight"><code class="language-shell" id="1722522443272.011">println("This is executed during the configuration phase.")
+
+tasks.create("configured") {
+    description = "My own configured task"
+    println("This (configured) is also executed during the configuration phase.")
+}
+
+tasks.create("testWrite") {
+    description = "My own testWrite task"
+    doLast {
+        println("This (testWrite) is executed during the execution phase.")
+    }
+}
+
+tasks.create("testWriteBoth") {
+    description = "My own testWriteBoth task"
+    doFirst {
+        println("This (testWriteBoth) is executed first during the execution phase.")
+    }
+    doLast {
+        println("This (testWriteBoth) is executed last during the execution phase.")
+    }
+    println("This (testWriteBoth) is executed during the configuration phase as well.")
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443272.011')">Copy</button></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Launch the following command to see new tasks</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" id="1722522443272.113">$ ./gradlew tasks --all</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443272.113')">Copy</button></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Then you can test your new task</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" id="1722522443272.9749">$ ./gradlew testWrite</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443272.9749')">Copy</button></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>And</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" id="1722522443272.8508">$ ./gradlew testWriteBoth</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443272.8508')">Copy</button></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Try to understand what happens ? If you are lost I can help you during face-to-face sessions</p>
+</div>
+<div class="listingblock code-height">
+<div class="content">
+<pre class="highlight"><code class="language-shell" id="1722522443272.5767">$ ./gradlew testWrite
+
+&amp;gt; Configure project :
+This is executed during the configuration phase.
+This (configured) is also executed during the configuration phase.
+This (testWriteBoth) is executed during the configuration phase as well.
+
+...</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443272.5767')">Copy</button></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_dependency_management">Dependency management</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You have to define the project dependencies in the build.gradle.kts</p>
+</div>
+<div class="paragraph">
+<p>Every dependency declared for a Gradle project applies to a specific scope. For example for a Java project, some dependencies should be used</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>for compiling source code (scope <code>implementation</code>)</p>
+</li>
+<li>
+<p>for compiling test code (scope <code>testImplementation</code>)</p>
+</li>
+<li>
+<p>for running your code (scope <code>runtime</code>)</p>
+</li>
+<li>
+<p>for running your tests (scope <code>testRuntime</code>)</p>
+</li>
+<li>
+<p>…​</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-kotlin" id="1722522443272.7273">dependencies {
+    <span class="hljs-comment">// Use JUnit Jupiter for testing.</span>
+    testImplementation(<span class="hljs-string">"org.junit.jupiter:junit-jupiter:5.10.0"</span>)
+    testRuntimeOnly(<span class="hljs-string">"org.junit.jupiter:junit-jupiter-engine:5.10.0"</span>)
+
+    <span class="hljs-comment">// This dependency is used by the application.</span>
+    implementation(<span class="hljs-string">"org.springframework:spring-context:6.0.11"</span>)
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443272.7273')">Copy</button></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>A scope correspond to a configuration in Gradle. A plugin can add pre-defined configurations to your project. The Java plugin, for example, adds several configurations</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="../../img/training/gradle/5_dependencies.png" alt="5 dependencies" width="1000">
+</div>
+<div class="title">Figure 2. Source : <a href="https://docs.gradle.org" class="bare">https://docs.gradle.org</a></div>
+</div>
+<div class="paragraph">
+<p>A configuration can extend other configurations to form an inheritance hierarchy. Child configurations inherit the whole set of dependencies declared for any of its parent.</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="../../img/training/gradle/5_dependencies_confiog.png" alt="5 dependencies confiog" width="500">
+</div>
+<div class="title">Figure 3. Source : <a href="https://docs.gradle.org" class="bare">https://docs.gradle.org</a></div>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="paragraph">
+<p>You can define a module dependency (reference to a library in a repository [maven central for example]).</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-kotlin" id="1722522443273.7856">dependencies {
+    implementation(group = <span class="hljs-string">"org.springframework"</span>, name = <span class="hljs-string">"spring-core"</span>, version = <span class="hljs-string">"2.5"</span>)
+    implementation(<span class="hljs-string">"org.hibernate:hibernate:3.0.5"</span>)
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443273.7856')">Copy</button></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can define a project dependency if you have a multi-project configuration</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-kotlin" id="1722522443273.617">dependencies {
+    implementation(project(<span class="hljs-string">":shared"</span>))
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443273.617')">Copy</button></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>A module can have dependencies on other modules to work properly, so-called transitive dependencies.  By default, Gradle resolves transitive dependencies automatically.</p>
+</div>
+<div class="paragraph">
+<p>In some case we can help Gradle to not use this mode, to exclude some dependencies or to force a specific version if we have a conflict</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-kotlin" id="1722522443273.2822">dependencies {
+    implementation(<span class="hljs-string">"org.hibernate:hibernate:3.1"</span>) {
+        exclude(module = <span class="hljs-string">"cglib"</span>) <span class="hljs-comment">//by artifact name</span>
+        exclude(group = <span class="hljs-string">"org.jmock"</span>) <span class="hljs-comment">//by group</span>
+
+        <span class="hljs-comment">//disabling all transitive dependencies of this dependency</span>
+        isTransitive = <span class="hljs-literal">false</span>
+    }
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722522443273.2822')">Copy</button></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This schema resumes how Gradle download a dependency</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="../../img/training/gradle/dependencies.png" alt="dependencies" width="800">
+</div>
+</div>
+<div class="paragraph">
+<p>(1) Gradle looks in his cache if the dependency is present<br>
+(2) It parses the given remote repository(ies), downloads the dependency and stores it in his cache<br>
+(3) Dependency can be provided to project. If this dependency has another dependencies, Gradle loads them transitively</p>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_reference">Reference</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://gradle.org/">Gradle web site</a></p>
+</li>
+<li>
+<p><a href="https://docs.gradle.org/current/userguide/userguide.html">Official documentation</a></p>
+</li>
+<li>
+<p><a href="https://melix.github.io/blog/2021/03/version-catalogs.html">Library version management</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 01/08/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
+
+<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-KZZ4TXLO.js" type="module"></script>
+
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t0"},"c":{"7":[{"i":"t0","r":1}]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>
