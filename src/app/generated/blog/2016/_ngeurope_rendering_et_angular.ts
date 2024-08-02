@@ -24,11 +24,11 @@ export const _ngeurope_rendering_et_angular:string = `<div class="sect1">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1722604314662.3992"><span class="hljs-keyword">var</span> worker = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Worker</span>(<span class="hljs-string">&#x27;doWork.js&#x27;</span>);
+<pre class="highlight"><code class="language-javascript" id="1722609005427.381"><span class="hljs-keyword">var</span> worker = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Worker</span>(<span class="hljs-string">&#x27;doWork.js&#x27;</span>);
 worker.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;message&#x27;</span>, <span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) {
   <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;Worker said: &#x27;</span>, e.<span class="hljs-property">data</span>);
 }, <span class="hljs-literal">false</span>);
-worker.<span class="hljs-title function_">postMessage</span>(<span class="hljs-string">&#x27;Hello World&#x27;</span>); <span class="hljs-comment">// Send data to our worker.</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722604314662.3992')">Copy</button></pre>
+worker.<span class="hljs-title function_">postMessage</span>(<span class="hljs-string">&#x27;Hello World&#x27;</span>); <span class="hljs-comment">// Send data to our worker.</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722609005427.381')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -36,9 +36,9 @@ worker.<span class="hljs-title function_">postMessage</span>(<span class="hljs-s
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1722604314664.6655">self.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;message&#x27;</span>, <span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) {
+<pre class="highlight"><code class="language-javascript" id="1722609005429.7083">self.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;message&#x27;</span>, <span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) {
   self.<span class="hljs-title function_">postMessage</span>(e.<span class="hljs-property">data</span>);
-}, <span class="hljs-literal">false</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1722604314664.6655')">Copy</button></pre>
+}, <span class="hljs-literal">false</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005429.7083')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">

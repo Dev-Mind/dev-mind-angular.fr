@@ -334,8 +334,8 @@ class FriendServiceTest {
     void computeFriendAgeAverage() {
         // Arrange
         List<Friend> myFriends = List.of(
-                new Friend(LocalDate.of(1999, 1, 1), "Elodie"),
-                new Friend(LocalDate.of(2001, 1, 1), "Charles")
+                new Friend("Elodie", LocalDate.of(1999, 1, 1)),
+                new Friend("Charles", LocalDate.of(2001, 1, 1))
         );
         Mockito.when(friendRepository.findAll()).thenReturn(myFriends); // 4.
 
@@ -388,6 +388,7 @@ git clone https://github.com/Dev-Mind/unitTestInAction.git
 If you use a SSH key launch
 
 [source,shell, subs="specialchars"]
+----
 git clone git@github.com:Dev-Mind/unitTestInAction.git
 ----
 
@@ -399,8 +400,9 @@ This service use a collaborator to load the friend list. This collaborator is `F
 
 We're going to update the Gradle configuration to load libraries needed to write the tests.
 
-Open the file `build.gradle` and add these dependencies
+Open the file `build.gradle.kts` and add these dependencies
 
+[source,kotlin, subs="specialchars"]
 ----
 dependencies {
     implementation("org.springframework:spring-context-support:6.0.11")
@@ -428,14 +430,15 @@ Write the tests to check the methods `computeFriendAge` and `computeFriendAgeAve
 1. Add an annotation `@ExtendWith(MockitoExtension.class)` to be able to use the Mockito injection
 2. Declare 2 properties of type `FriendRepository` (mocked dependency) and `FriendService` (class to test)
 3. In `@BeforeEach` block, create `FriendService` and inject the mock of `FriendRepository`
-4. Write a unit test to compute your age.For that use the pattern AAA
+4. Write a unit test method to compute your age.For that use the pattern AAA
 ** Arrange => define a Friend object with your firstname and your birthYear
 ** Act => call the method `computeFriendAge`
 ** Assert => check that the result is equal to your age
-5. Execute test (red means fail and green means pass)
-6. Write a second test and verify the exception thrown when you call computeFriendAge with a null friend
-7. Use now Mockito to simulate the `FriendRepository` behavior and write a test to check `computeFriendAgeAverage` method.
-8. Create a new test to check `computeFriendAgeAverage` behavior when `FriendRepository` returns a an empty list of friends.
+5. Don't forget to add the `@Test` annotation on the method
+6. Execute test (red means fail and green means pass)
+7. Write a second test and verify the exception thrown when you call computeFriendAge with a null friend
+8. Use now Mockito to simulate the `FriendRepository` behavior and write a test to check `computeFriendAgeAverage` method.
+9. Create a new test to check `computeFriendAgeAverage` behavior when `FriendRepository` returns a an empty list of friends.
 
 
 What happens ?

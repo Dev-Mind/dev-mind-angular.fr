@@ -197,7 +197,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1722604315519.8943"><span class="hljs-keyword">const</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">'http'</span>);
+<pre class="highlight"><code class="language-javascript" id="1722609005955.4324"><span class="hljs-keyword">const</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">'http'</span>);
 
 <span class="hljs-comment">//create a server object which listens on port 8080</span>
 http.<span class="hljs-title function_">createServer</span>((req, res) @<span class="hljs-variable constant_">ARROW</span> {
@@ -205,7 +205,7 @@ http.<span class="hljs-title function_">createServer</span>((req, res) @<span cl
   res.<span class="hljs-title function_">write</span>(<span class="hljs-string">'Hello World!'</span>);
   <span class="hljs-comment">//end the response</span>
   res.<span class="hljs-title function_">end</span>();
-}).<span class="hljs-title function_">listen</span>(<span class="hljs-number">8080</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315519.8943')">Copy</button></pre>
+}).<span class="hljs-title function_">listen</span>(<span class="hljs-number">8080</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005955.4324')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -213,7 +213,7 @@ http.<span class="hljs-title function_">createServer</span>((req, res) @<span cl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722604315520.3306">node app.js</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315520.3306')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1722609005956.7488">node app.js</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005956.7488')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -240,12 +240,12 @@ http.<span class="hljs-title function_">createServer</span>((req, res) @<span cl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1722604315521.3577"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express'</span>);
+<pre class="highlight"><code class="language-javascript" id="1722609005957.896"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express'</span>);
 
 <span class="hljs-title function_">express</span>()
   .<span class="hljs-title function_">get</span>(<span class="hljs-string">'/'</span>, (req, res) @<span class="hljs-variable constant_">ARROW</span> res.<span class="hljs-title function_">send</span>(<span class="hljs-string">'Hello World!'</span>)) <span class="hljs-comment">// (1)</span>
   .<span class="hljs-title function_">get</span>(<span class="hljs-string">'/users/:userName'</span>, (req, res) @<span class="hljs-variable constant_">ARROW</span> res.<span class="hljs-title function_">send</span>(`<span class="hljs-title class_">Hello</span> ${req.<span class="hljs-property">params</span>.<span class="hljs-property">userName</span>}!`)) <span class="hljs-comment">// (2)</span>
-  .<span class="hljs-title function_">listen</span>(<span class="hljs-number">8085</span>); <span class="hljs-comment">// (3)</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722604315521.3577')">Copy</button></pre>
+  .<span class="hljs-title function_">listen</span>(<span class="hljs-number">8085</span>); <span class="hljs-comment">// (3)</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722609005957.896')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -266,7 +266,7 @@ http.<span class="hljs-title function_">createServer</span>((req, res) @<span cl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1722604315522.2961">.<span class="hljs-title function_">use</span>(express.<span class="hljs-title function_">static</span>(`build/dist`))</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315522.2961')">Copy</button></pre>
+<pre class="highlight"><code class="language-javascript" id="1722609005958.486">.<span class="hljs-title function_">use</span>(express.<span class="hljs-title function_">static</span>(`build/dist`))</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005958.486')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -316,7 +316,7 @@ http.<span class="hljs-title function_">createServer</span>((req, res) @<span cl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1722604315524.383"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express'</span>);
+<pre class="highlight"><code class="language-javascript" id="1722609005960.2712"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express'</span>);
 <span class="hljs-keyword">const</span> compression = <span class="hljs-built_in">require</span>(<span class="hljs-string">'compression'</span>);
 
 <span class="hljs-title function_">express</span>()
@@ -324,7 +324,7 @@ http.<span class="hljs-title function_">createServer</span>((req, res) @<span cl
   .<span class="hljs-title function_">use</span>(express.<span class="hljs-title function_">static</span>(`build/dist`))
   .<span class="hljs-title function_">get</span>(<span class="hljs-string">'/'</span>, (req, res) @<span class="hljs-variable constant_">ARROW</span> res.<span class="hljs-title function_">send</span>(<span class="hljs-string">'Hello World!'</span>))
   .<span class="hljs-title function_">get</span>(<span class="hljs-string">'/users/:userName'</span>, (req, res) @<span class="hljs-variable constant_">ARROW</span> res.<span class="hljs-title function_">send</span>(`<span class="hljs-title class_">Hello</span> ${req.<span class="hljs-property">params</span>.<span class="hljs-property">userName</span>}!`))
-  .<span class="hljs-title function_">listen</span>(<span class="hljs-number">8085</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315524.383')">Copy</button></pre>
+  .<span class="hljs-title function_">listen</span>(<span class="hljs-number">8085</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005960.2712')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -338,7 +338,7 @@ http.<span class="hljs-title function_">createServer</span>((req, res) @<span cl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1722604315531.259"><span class="hljs-keyword">const</span> nocache = (res) @<span class="hljs-variable constant_">ARROW</span> {
+<pre class="highlight"><code class="language-javascript" id="1722609005966.6484"><span class="hljs-keyword">const</span> nocache = (res) @<span class="hljs-variable constant_">ARROW</span> {
   res.<span class="hljs-title function_">setHeader</span>(<span class="hljs-string">'Cache-Control'</span>, <span class="hljs-string">'private, no-cache, no-store, must-revalidate'</span>);
   res.<span class="hljs-title function_">setHeader</span>(<span class="hljs-string">'Expires'</span>, <span class="hljs-string">'-1'</span>);
   res.<span class="hljs-title function_">setHeader</span>(<span class="hljs-string">'Pragma'</span>, <span class="hljs-string">'no-cache'</span>);
@@ -387,7 +387,7 @@ http.<span class="hljs-title function_">createServer</span>((req, res) @<span cl
 
     <span class="hljs-attr">default</span>:
   }
-};</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315531.259')">Copy</button></pre>
+};</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005966.6484')">Copy</button></pre>
 </div>
 </div>
 <div class="olist arabic small">
@@ -411,7 +411,7 @@ http.<span class="hljs-title function_">createServer</span>((req, res) @<span cl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1722604315532.0461">.<span class="hljs-title function_">use</span>(express.<span class="hljs-title function_">static</span>(`build/dist`, {<span class="hljs-attr">setHeaders</span>: <span class="hljs-variable constant_">CACHE_MIDDLEWARE</span>}))</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315532.0461')">Copy</button></pre>
+<pre class="highlight"><code class="language-javascript" id="1722609005967.7231">.<span class="hljs-title function_">use</span>(express.<span class="hljs-title function_">static</span>(`build/dist`, {<span class="hljs-attr">setHeaders</span>: <span class="hljs-variable constant_">CACHE_MIDDLEWARE</span>}))</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005967.7231')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -483,7 +483,7 @@ http.<span class="hljs-title function_">createServer</span>((req, res) @<span cl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1722604315535.5247"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express'</span>);
+<pre class="highlight"><code class="language-javascript" id="1722609005969.848"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express'</span>);
 <span class="hljs-keyword">const</span> helmet = <span class="hljs-built_in">require</span>(<span class="hljs-string">'helmet'</span>);
 
 <span class="hljs-keyword">const</span> <span class="hljs-variable constant_">SECURITY_POLICY</span> = {
@@ -504,7 +504,7 @@ http.<span class="hljs-title function_">createServer</span>((req, res) @<span cl
   .<span class="hljs-title function_">use</span>(<span class="hljs-title function_">helmet</span>())
   .<span class="hljs-title function_">use</span>(helmet.<span class="hljs-title function_">contentSecurityPolicy</span>(<span class="hljs-variable constant_">SECURITY_POLICY</span>))
   <span class="hljs-comment">// Reste de la config</span>
-  .<span class="hljs-title function_">listen</span>(<span class="hljs-number">8085</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315535.5247')">Copy</button></pre>
+  .<span class="hljs-title function_">listen</span>(<span class="hljs-number">8085</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005969.848')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -512,7 +512,7 @@ http.<span class="hljs-title function_">createServer</span>((req, res) @<span cl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1722604315538.4617"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express'</span>);
+<pre class="highlight"><code class="language-javascript" id="1722609005972.6785"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express'</span>);
 <span class="hljs-keyword">const</span> session = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express-session'</span>);
 
 <span class="hljs-keyword">const</span> app = <span class="hljs-title function_">express</span>()
@@ -534,7 +534,7 @@ http.<span class="hljs-title function_">createServer</span>((req, res) @<span cl
       <span class="hljs-attr">user</span>: {}
     })
   <span class="hljs-comment">// Reste de la config</span>
-  .<span class="hljs-title function_">listen</span>(<span class="hljs-number">8085</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315538.4617')">Copy</button></pre>
+  .<span class="hljs-title function_">listen</span>(<span class="hljs-number">8085</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005972.6785')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -542,7 +542,7 @@ http.<span class="hljs-title function_">createServer</span>((req, res) @<span cl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1722604315544.267"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express'</span>);
+<pre class="highlight"><code class="language-javascript" id="1722609005977.8389"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express'</span>);
 
 <span class="hljs-keyword">const</span> app = <span class="hljs-title function_">express</span>()
   .<span class="hljs-title function_">enable</span>(<span class="hljs-string">'trust proxy'</span>)
@@ -569,7 +569,7 @@ http.<span class="hljs-title function_">createServer</span>((req, res) @<span cl
   <span class="hljs-comment">// Reste de la config</span>
   <span class="hljs-comment">// En dernier on dit que pour toutes les autres requêtes on ouvre une page 404</span>
   .<span class="hljs-title function_">all</span>(<span class="hljs-string">'*'</span>, (req, res) @<span class="hljs-variable constant_">ARROW</span> res.<span class="hljs-title function_">redirect</span>(`/<span class="hljs-number">404.</span>html`));
-  .<span class="hljs-title function_">listen</span>(<span class="hljs-number">8085</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315544.267')">Copy</button></pre>
+  .<span class="hljs-title function_">listen</span>(<span class="hljs-number">8085</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005977.8389')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -583,7 +583,7 @@ http.<span class="hljs-title function_">createServer</span>((req, res) @<span cl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1722604315545.7627">{
+<pre class="highlight"><code class="language-javascript" id="1722609005978.0967">{
   <span class="hljs-string">"name"</span>: <span class="hljs-string">"dev-mind.com"</span>,
   <span class="hljs-string">"scripts"</span>: {
     <span class="hljs-string">"install"</span>: <span class="hljs-string">"gulp"</span>,
@@ -591,7 +591,7 @@ http.<span class="hljs-title function_">createServer</span>((req, res) @<span cl
     <span class="hljs-string">"dev"</span>: <span class="hljs-string">"gulp serve"</span>
   },
   <span class="hljs-string">"dependencies"</span>: { }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315545.7627')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005978.0967')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -607,9 +607,9 @@ http.<span class="hljs-title function_">createServer</span>((req, res) @<span cl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1722604315545.2021"><span class="hljs-variable constant_">NODE_BUILD_TOOL</span>=yarn
+<pre class="highlight"><code class="language-javascript" id="1722609005979.8677"><span class="hljs-variable constant_">NODE_BUILD_TOOL</span>=yarn
 <span class="hljs-variable constant_">NODE_ENV</span>=prod
-<span class="hljs-variable constant_">PORT</span>=<span class="hljs-number">8080</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722604315545.2021')">Copy</button></pre>
+<span class="hljs-variable constant_">PORT</span>=<span class="hljs-number">8080</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722609005979.8677')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -631,6 +631,6 @@ http.<span class="hljs-title function_">createServer</span>((req, res) @<span cl
 </div>
 </div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 02/08/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
 
-<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-EXB64UBH.js" type="module"></script>
+<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-WMWLRSFQ.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t6"},"c":{"7":[{"i":"t6","r":1,"x":3}]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t0"},"c":{"7":[{"i":"t0","r":1,"x":3}]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>

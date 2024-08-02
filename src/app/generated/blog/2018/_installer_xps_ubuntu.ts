@@ -99,7 +99,7 @@ export const _installer_xps_ubuntu:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722604315416.5764">bcdedit /set &quot;&quot;{current}&quot; safeboot minimal</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315416.5764')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1722609005851.5825">bcdedit /set &quot;&quot;{current}&quot; safeboot minimal</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005851.5825')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -123,7 +123,7 @@ export const _installer_xps_ubuntu:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722604315416.4915">bcdedit /deletevalue &quot;{current}&quot; safeboot</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315416.4915')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1722609005851.9421">bcdedit /deletevalue &quot;{current}&quot; safeboot</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005851.9421')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">

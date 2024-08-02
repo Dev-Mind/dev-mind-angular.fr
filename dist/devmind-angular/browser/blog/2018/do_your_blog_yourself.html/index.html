@@ -241,7 +241,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1722604315397.0308">gulp.<span class="hljs-title function_">task</span>(<span class="hljs-string">'images-min'</span>, <span class="hljs-function">() =&gt;</span>
+<pre class="highlight"><code class="language-javascript" id="1722609005835.4363">gulp.<span class="hljs-title function_">task</span>(<span class="hljs-string">'images-min'</span>, <span class="hljs-function">() =&gt;</span>
   gulp.<span class="hljs-title function_">src</span>(<span class="hljs-string">'src/images/**/*.{svg,png,jpg}'</span>)
     .<span class="hljs-title function_">pipe</span>(<span class="hljs-title function_">imagemin</span>([imagemin.<span class="hljs-title function_">gifsicle</span>(), <span class="hljs-title function_">imageminMozjpeg</span>(), imagemin.<span class="hljs-title function_">optipng</span>(), imagemin.<span class="hljs-title function_">svgo</span>()], {
       <span class="hljs-attr">progressive</span>: <span class="hljs-literal">true</span>,
@@ -252,7 +252,7 @@
     .<span class="hljs-title function_">pipe</span>($.<span class="hljs-title function_">if</span>(<span class="hljs-string">'**/*.{jpg,png}'</span>, $.<span class="hljs-title function_">webp</span>()))
     .<span class="hljs-title function_">pipe</span>($.<span class="hljs-title function_">size</span>({<span class="hljs-attr">title</span>: <span class="hljs-string">'images'</span>, <span class="hljs-attr">showFiles</span>: <span class="hljs-literal">false</span>}))
     .<span class="hljs-title function_">pipe</span>(gulp.<span class="hljs-title function_">dest</span>(<span class="hljs-string">'build/.tmp/img'</span>))
-);</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315397.0308')">Copy</button></pre>
+);</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005835.4363')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -263,7 +263,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1722604315399.1917"><span class="hljs-keyword">const</span> map = <span class="hljs-built_in">require</span>(<span class="hljs-string">'map-stream'</span>);
+<pre class="highlight"><code class="language-javascript" id="1722609005837.4238"><span class="hljs-keyword">const</span> map = <span class="hljs-built_in">require</span>(<span class="hljs-string">'map-stream'</span>);
 
 <span class="hljs-variable language_">module</span>.<span class="hljs-property">exports</span> = <span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) {
   <span class="hljs-keyword">return</span> <span class="hljs-title function_">map</span>(<span class="hljs-function">(<span class="hljs-params">file, next</span>) =&gt;</span> {
@@ -273,7 +273,7 @@
     file.<span class="hljs-property">path</span> = file.<span class="hljs-property">path</span>.<span class="hljs-title function_">replace</span>(<span class="hljs-string">'.adoc'</span>, <span class="hljs-string">'.html'</span>);
     <span class="hljs-title function_">next</span>(<span class="hljs-literal">null</span>, file);
   });
-};</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315399.1917')">Copy</button></pre>
+};</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005837.4238')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -281,7 +281,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1722604315401.6023">gulp.<span class="hljs-title function_">task</span>(<span class="hljs-string">'blog-indexing'</span>, <span class="hljs-function">(<span class="hljs-params">cb</span>) =&gt;</span> {
+<pre class="highlight"><code class="language-javascript" id="1722609005839.8887">gulp.<span class="hljs-title function_">task</span>(<span class="hljs-string">'blog-indexing'</span>, <span class="hljs-function">(<span class="hljs-params">cb</span>) =&gt;</span> {
   gulp.<span class="hljs-title function_">src</span>(<span class="hljs-string">'src/blog/**/*.adoc'</span>)
     .<span class="hljs-title function_">pipe</span>(<span class="hljs-title function_">readAsciidoc</span>(modeDev))
     .<span class="hljs-title function_">pipe</span>(<span class="hljs-title function_">convertToHtml</span>())
@@ -289,7 +289,7 @@
     .<span class="hljs-title function_">pipe</span>(<span class="hljs-title function_">convertToJson</span>(<span class="hljs-string">'blogindex.json'</span>))
     .<span class="hljs-title function_">pipe</span>(gulp.<span class="hljs-title function_">dest</span>(<span class="hljs-string">'build/.tmp'</span>))
     .<span class="hljs-title function_">on</span>(<span class="hljs-string">'end'</span>, <span class="hljs-function">() =&gt;</span> <span class="hljs-title function_">cb</span>())
-});</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315401.6023')">Copy</button></pre>
+});</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005839.8887')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -398,14 +398,14 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1722604315403.5872"><span class="hljs-variable language_">module</span>.<span class="hljs-property">exports</span> = {
+<pre class="highlight"><code class="language-javascript" id="1722609005840.615"><span class="hljs-variable language_">module</span>.<span class="hljs-property">exports</span> = {
   <span class="hljs-string">"apiKey"</span>: process.<span class="hljs-property">env</span>.<span class="hljs-property">DEVMIND_API_KEY</span>,
   <span class="hljs-string">"authDomain"</span>: process.<span class="hljs-property">env</span>.<span class="hljs-property">DEVMIND_AUTH_DOMAIN</span>,
   <span class="hljs-string">"databaseURL"</span>: process.<span class="hljs-property">env</span>.<span class="hljs-property">DEVMIND_DATABASE_URL</span>,
   <span class="hljs-string">"storageBucket"</span>: process.<span class="hljs-property">env</span>.<span class="hljs-property">DEVMIND_STORAGE_BUCKET</span>,
   <span class="hljs-string">"user"</span>: process.<span class="hljs-property">env</span>.<span class="hljs-property">DEVMIND_USER_MAIL</span>,
   <span class="hljs-string">"password"</span>: process.<span class="hljs-property">env</span>.<span class="hljs-property">DEVMIND_PASSWORD</span>
-};</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315403.5872')">Copy</button></pre>
+};</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005840.615')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -413,14 +413,14 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1722604315403.5703">{
+<pre class="highlight"><code class="language-javascript" id="1722609005841.519">{
   <span class="hljs-string">"name"</span>: <span class="hljs-string">"dev-mind.com"</span>,
   <span class="hljs-string">"repository"</span>: <span class="hljs-string">"https://github.com/Dev-Mind/dev-mind.com.git"</span>,
   <span class="hljs-string">"scripts"</span>: {
     <span class="hljs-string">"install"</span>: <span class="hljs-string">"gulp"</span>,
     <span class="hljs-string">"dev"</span>: <span class="hljs-string">"gulp serve"</span>
   }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315403.5703')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005841.519')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -431,11 +431,11 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1722604315404.0227">{
+<pre class="highlight"><code class="language-javascript" id="1722609005841.1843">{
   <span class="hljs-string">"deploy"</span>: {
     <span class="hljs-string">"webroot"</span>: <span class="hljs-string">"/build/dist"</span>
   }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722604315404.0227')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005841.1843')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -455,6 +455,6 @@
 </div>
 </div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 02/08/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
 
-<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-EXB64UBH.js" type="module"></script>
+<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-WMWLRSFQ.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t7"},"c":{"7":[{"i":"t7","r":1,"x":7}]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t1"},"c":{"7":[{"i":"t1","r":1,"x":7}]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>

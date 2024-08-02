@@ -76,10 +76,10 @@ export const _springboot_http2:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722604314776.64">compile(<span class="hljs-string">&quot;org.springframework.boot:spring-boot-starter-web&quot;</span>) {
+<pre class="highlight"><code class="language-java" id="1722609005516.8804">compile(<span class="hljs-string">&quot;org.springframework.boot:spring-boot-starter-web&quot;</span>) {
     exclude <span class="hljs-keyword">module</span>: <span class="hljs-string">&quot;spring-boot-starter-tomcat&quot;</span>
 }
-compile <span class="hljs-string">&quot;org.springframework.boot:spring-boot-starter-undertow&quot;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722604314776.64')">Copy</button></pre>
+compile <span class="hljs-string">&quot;org.springframework.boot:spring-boot-starter-undertow&quot;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722609005516.8804')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -92,12 +92,12 @@ compile <span class="hljs-string">&quot;org.springframework.boot:spring-boot-sta
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1722604314778.0496"><span class="hljs-attr">server</span>:
+<pre class="highlight"><code class="language-javascript" id="1722609005517.6785"><span class="hljs-attr">server</span>:
   <span class="hljs-attr">ssl</span>:
     key-<span class="hljs-attr">store</span>: <span class="hljs-attr">classpath</span>:perf.<span class="hljs-property">jks</span>
     key-store-<span class="hljs-attr">password</span>: <span class="hljs-title class_">DevMind</span>
     key-<span class="hljs-attr">password</span>: <span class="hljs-title class_">DevMind</span>
-    <span class="hljs-attr">protocol</span>: <span class="hljs-title class_">TLSv1</span><span class="hljs-number">.2</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722604314778.0496')">Copy</button></pre>
+    <span class="hljs-attr">protocol</span>: <span class="hljs-title class_">TLSv1</span><span class="hljs-number">.2</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722609005517.6785')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
