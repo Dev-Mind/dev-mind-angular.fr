@@ -54,7 +54,7 @@ export const _android_add_activity_list:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722609004132.1191"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomsAdapter</span> : <span class="hljs-type">RecyclerView.Adapter@LTRoomsAdapter.RoomsViewHolder@GT</span>() { <span class="hljs-comment">// (1)</span>
+<pre class="highlight"><code class="language-kotlin" id="1722865737445.6543"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomsAdapter</span> : <span class="hljs-type">RecyclerView.Adapter@LTRoomsAdapter.RoomsViewHolder@GT</span>() { <span class="hljs-comment">// (1)</span>
 
     <span class="hljs-keyword">inner</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomsViewHolder</span>(view: View) : RecyclerView.ViewHolder(view) { <span class="hljs-comment">// (2)</span>
         <span class="hljs-keyword">val</span> name: TextView = view.findViewById(R.id.txt_room_name)
@@ -84,7 +84,7 @@ export const _android_add_activity_list:string = `<div id="toc" class="toc">
             currentTemperature.text = roomDto.currentTemperature?.toString() ?: <span class="hljs-string">&quot;?&quot;</span>
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722609004132.1191')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722865737445.6543')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -316,7 +316,7 @@ export const _android_add_activity_list:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722609004134.8652"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomsActivity</span> : <span class="hljs-type">BasicActivity</span>() {
+<pre class="highlight"><code class="language-kotlin" id="1722865737448.9534"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomsActivity</span> : <span class="hljs-type">BasicActivity</span>() {
     <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(savedInstanceState: <span class="hljs-type">Bundle</span>?)</span></span> {
         <span class="hljs-keyword">super</span>.onCreate(savedInstanceState)
         setContentView(R.layout.activity_rooms)
@@ -332,7 +332,7 @@ export const _android_add_activity_list:string = `<div id="toc" class="toc">
 
         roomsAdapter.setItems(RoomService.ROOMS)  <span class="hljs-comment">// (6)</span>
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722609004134.8652')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722865737448.9534')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -381,9 +381,9 @@ export const _android_add_activity_list:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722609004135.0686"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">OnRoomClickListener</span> {
+<pre class="highlight"><code class="language-kotlin" id="1722865737449.9014"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">OnRoomClickListener</span> {
     <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">selectRoom</span><span class="hljs-params">(id: <span class="hljs-type">Long</span>)</span></span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722609004135.0686')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722865737449.9014')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -401,7 +401,7 @@ export const _android_add_activity_list:string = `<div id="toc" class="toc">
 <h3 id="_update_roomsactivity">Update RoomsActivity</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722609004136.1682">We will implement the contract and create an Intent to <span class="hljs-keyword">open</span> a <span class="hljs-meta">@backtick</span><span class="hljs-meta">@RoomActivity</span><span class="hljs-meta">@backtick</span>@</code><button class="btn-copy-code" onclick="copyToClipboard('1722609004136.1682')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1722865737450.3635">We will implement the contract and create an Intent to <span class="hljs-keyword">open</span> a <span class="hljs-meta">@backtick</span><span class="hljs-meta">@RoomActivity</span><span class="hljs-meta">@backtick</span>@</code><button class="btn-copy-code" onclick="copyToClipboard('1722865737450.3635')">Copy</button></pre>
 </div>
 </div>
 <div class="listingblock">
@@ -424,7 +424,7 @@ export const _android_add_activity_list:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722609004137.3875"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomsAdapter</span>(<span class="hljs-keyword">val</span> listener: OnRoomClickListener): RecyclerView.<span class="hljs-symbol">Adapter@</span>LTRoomsAdapter.<span class="hljs-symbol">RoomsViewHolder@</span>GT() {
+<pre class="highlight"><code class="language-kotlin" id="1722865737451.6228"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomsAdapter</span>(<span class="hljs-keyword">val</span> listener: OnRoomClickListener): RecyclerView.<span class="hljs-symbol">Adapter@</span>LTRoomsAdapter.<span class="hljs-symbol">RoomsViewHolder@</span>GT() {
     <span class="hljs-comment">// ...</span>
     <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onBindViewHolder</span><span class="hljs-params">(holder: <span class="hljs-type">RoomsViewHolder</span>, position: <span class="hljs-type">Int</span>)</span></span> {
         <span class="hljs-keyword">val</span> roomDto = items[position]
@@ -442,7 +442,7 @@ export const _android_add_activity_list:string = `<div id="toc" class="toc">
         }
 
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722609004137.3875')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722865737451.6228')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">

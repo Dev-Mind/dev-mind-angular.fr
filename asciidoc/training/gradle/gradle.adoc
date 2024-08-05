@@ -2,7 +2,7 @@
 :description: Comment construire une application Java interfacée à une base de données et exposant des services REST
 :keywords: Gradle
 :author: Guillaume EHRET - Dev-Mind
-:revdate: 2023-11-10
+:revdate: 2024-09-08
 :category: Web
 :teaser: In this training, we will learn how Gradle works and how use it in our projects. It's just a fast presentation of this tool and you will find more informations on official website.
 :imgteaser: ../../img/training/gradle.png

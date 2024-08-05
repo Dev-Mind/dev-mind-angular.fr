@@ -108,8 +108,8 @@ export const _spring_web:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock small">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722609005161.351"><span class="hljs-keyword">public</span> <span class="hljs-keyword">record</span> <span class="hljs-title class_">Sensor</span><span class="hljs-params">(Long id, String name, Double value, SensorType sensorType)</span> {
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005161.351')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1722865738610.2725"><span class="hljs-keyword">public</span> <span class="hljs-keyword">record</span> <span class="hljs-title class_">Sensor</span><span class="hljs-params">(Long id, String name, Double value, SensorType sensorType)</span> {
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722865738610.2725')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -123,7 +123,7 @@ export const _spring_web:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722609005162.7188"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SensorMapper</span> {
+<pre class="highlight"><code class="language-java" id="1722865738611.282"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SensorMapper</span> {
   <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> Sensor <span class="hljs-title function_">of</span><span class="hljs-params">(SensorEntity sensor)</span> {
     <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Sensor</span>(
         sensor.getId(),
@@ -132,7 +132,7 @@ export const _spring_web:string = `<div id="toc" class="toc">
         sensor.getSensorType()
     );
   }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005162.7188')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722865738611.282')">Copy</button></pre>
 </div>
 </div>
 <div class="imageblock text-center">
@@ -151,8 +151,8 @@ export const _spring_web:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722609005162.4006"><span class="hljs-keyword">public</span> <span class="hljs-keyword">record</span> <span class="hljs-title class_">Window</span><span class="hljs-params">(Long id, String name, Sensor windowStatus, Long roomId)</span> {
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005162.4006')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1722865738611.9753"><span class="hljs-keyword">public</span> <span class="hljs-keyword">record</span> <span class="hljs-title class_">Window</span><span class="hljs-params">(Long id, String name, Sensor windowStatus, Long roomId)</span> {
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722865738611.9753')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -163,7 +163,7 @@ export const _spring_web:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722609005164.6265"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomMapperTest</span> {
+<pre class="highlight"><code class="language-java" id="1722865738614.9133"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomMapperTest</span> {
 
     <span class="hljs-meta">@Test</span>
     <span class="hljs-keyword">void</span> <span class="hljs-title function_">shouldMapRoom</span><span class="hljs-params">()</span> {
@@ -203,7 +203,7 @@ export const _spring_web:string = `<div id="toc" class="toc">
         );
         Assertions.assertThat(room).usingRecursiveAssertion().isEqualTo(expectedRoom);
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005164.6265')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722865738614.9133')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -313,7 +313,7 @@ export const _spring_web:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722609005167.9724"><span class="hljs-meta">@CrossOrigin</span>
+<pre class="highlight"><code class="language-java" id="1722865738618.9458"><span class="hljs-meta">@CrossOrigin</span>
 <span class="hljs-meta">@RestController</span> <span class="hljs-comment">// (1)</span>
 <span class="hljs-meta">@RequestMapping(&quot;/api/sensors&quot;)</span> <span class="hljs-comment">// (2)</span>
 <span class="hljs-meta">@Transactional</span> <span class="hljs-comment">// (3)</span>
@@ -363,7 +363,7 @@ export const _spring_web:string = `<div id="toc" class="toc">
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">delete</span><span class="hljs-params">(<span class="hljs-meta">@PathVariable</span> Long id)</span> {
         sensorDao.deleteById(id);
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005167.9724')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722865738618.9458')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -405,8 +405,8 @@ export const _spring_web:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722609005168.9243"><span class="hljs-keyword">public</span> <span class="hljs-keyword">record</span> <span class="hljs-title class_">SensorCommand</span><span class="hljs-params">(String name, Double value, SensorType sensorType)</span> {
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005168.9243')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1722865738619.9778"><span class="hljs-keyword">public</span> <span class="hljs-keyword">record</span> <span class="hljs-title class_">SensorCommand</span><span class="hljs-params">(String name, Double value, SensorType sensorType)</span> {
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722865738619.9778')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -433,13 +433,13 @@ export const _spring_web:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722609005168.149"><span class="hljs-comment">// static import of MockMvcRequestBuilders.*</span>
+<pre class="highlight"><code class="language-java" id="1722865738619.4424"><span class="hljs-comment">// static import of MockMvcRequestBuilders.*</span>
 
 <span class="hljs-comment">// a post example</span>
 mockMvc.perform(post(<span class="hljs-string">&quot;/hotels/{id}&quot;</span>, <span class="hljs-number">42</span>).accept(MediaType.APPLICATION_JSON));
 
 <span class="hljs-comment">// you can specify query parameters in URI template style</span>
-mockMvc.perform(get(<span class="hljs-string">&quot;/hotels&quot;</span>).param(<span class="hljs-string">&quot;thing&quot;</span>, <span class="hljs-string">&quot;somewhere&quot;</span>));</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005168.149')">Copy</button></pre>
+mockMvc.perform(get(<span class="hljs-string">&quot;/hotels&quot;</span>).param(<span class="hljs-string">&quot;thing&quot;</span>, <span class="hljs-string">&quot;somewhere&quot;</span>));</code><button class="btn-copy-code" onclick="copyToClipboard('1722865738619.4424')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -447,9 +447,9 @@ mockMvc.perform(get(<span class="hljs-string">&quot;/hotels&quot;</span>).param(
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722609005168.3992"><span class="hljs-comment">// static import of MockMvcRequestBuilders.* and MockMvcResultMatchers.*</span>
+<pre class="highlight"><code class="language-java" id="1722865738620.626"><span class="hljs-comment">// static import of MockMvcRequestBuilders.* and MockMvcResultMatchers.*</span>
 
-mockMvc.perform(get(<span class="hljs-string">&quot;/accounts/1&quot;</span>)).andExpect(status().isOk());</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005168.3992')">Copy</button></pre>
+mockMvc.perform(get(<span class="hljs-string">&quot;/accounts/1&quot;</span>)).andExpect(status().isOk());</code><button class="btn-copy-code" onclick="copyToClipboard('1722865738620.626')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -460,7 +460,7 @@ mockMvc.perform(get(<span class="hljs-string">&quot;/accounts/1&quot;</span>)).a
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722609005173.0325"><span class="hljs-keyword">package</span> com.emse.spring.automacorp.web;
+<pre class="highlight"><code class="language-java" id="1722865738626.7742"><span class="hljs-keyword">package</span> com.emse.spring.automacorp.web;
 
 <span class="hljs-keyword">import</span> com.emse.spring.automacorp.dao.SensorDao;
 <span class="hljs-keyword">import</span> com.emse.spring.automacorp.model.SensorEntity;
@@ -611,7 +611,7 @@ mockMvc.perform(get(<span class="hljs-string">&quot;/accounts/1&quot;</span>)).a
                 .andExpect(MockMvcResultMatchers.status().isOk());
     }
 
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005173.0325')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722865738626.7742')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -630,7 +630,7 @@ mockMvc.perform(get(<span class="hljs-string">&quot;/accounts/1&quot;</span>)).a
 </div>
 <div class="listingblock small">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722609005174.7368"><span class="hljs-meta">@RestController</span>
+<pre class="highlight"><code class="language-java" id="1722865738630.7153"><span class="hljs-meta">@RestController</span>
 <span class="hljs-meta">@RequestMapping(&quot;/api/hello&quot;)</span>
 <span class="hljs-meta">@Transactional</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">HelloController</span> {
@@ -641,7 +641,7 @@ mockMvc.perform(get(<span class="hljs-string">&quot;/accounts/1&quot;</span>)).a
 
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">record</span> <span class="hljs-title class_">Message</span><span class="hljs-params">(String message)</span> {
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005174.7368')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722865738630.7153')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -658,7 +658,7 @@ mockMvc.perform(get(<span class="hljs-string">&quot;/accounts/1&quot;</span>)).a
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1722609005175.4717">{<span class="hljs-string">&quot;message&quot;</span>:<span class="hljs-string">&quot;Hello Guillaume}</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722609005175.4717')">Copy</button></pre>
+<pre class="highlight"><code class="language-javascript" id="1722865738630.1946">{<span class="hljs-string">&quot;message&quot;</span>:<span class="hljs-string">&quot;Hello Guillaume}</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722865738630.1946')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -672,7 +672,7 @@ mockMvc.perform(get(<span class="hljs-string">&quot;/accounts/1&quot;</span>)).a
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722609005175.872">implementation(<span class="hljs-string">&quot;org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0&quot;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005175.872')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1722865738630.097">implementation(<span class="hljs-string">&quot;org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0&quot;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1722865738630.097')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -762,21 +762,21 @@ mockMvc.perform(get(<span class="hljs-string">&quot;/accounts/1&quot;</span>)).a
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722609005175.9858">/api/windows (GET) send windows list
+<pre class="highlight"><code class="language-shell" id="1722865738631.101">/api/windows (GET) send windows list
 /api/windows (POST) add a window
 /api/windows/{id} (PUT) update a window
 /api/windows/{id} (GET) read a window
-/api/windows/{id} (DELETE) delete a window</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005175.9858')">Copy</button></pre>
+/api/windows/{id} (DELETE) delete a window</code><button class="btn-copy-code" onclick="copyToClipboard('1722865738631.101')">Copy</button></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722609005175.2441">/api/rooms (GET) send room list
+<pre class="highlight"><code class="language-shell" id="1722865738631.6453">/api/rooms (GET) send room list
 /api/rooms (POST) add or update a room
 /api/rooms/{room_id} (GET) read a room
 /api/rooms/{room_id} (DELETE) delete a room and all its windows and its heaters
 /api/rooms/{room_id}/openWindows switch the room windows to OPEN (status != 0)
-/api/rooms/{room_id}/closeWindows switch the room windows to CLOSED (status = 0)</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005175.2441')">Copy</button></pre>
+/api/rooms/{room_id}/closeWindows switch the room windows to CLOSED (status = 0)</code><button class="btn-copy-code" onclick="copyToClipboard('1722865738631.6453')">Copy</button></pre>
 </div>
 </div>
 <div style="page-break-after: always;"></div>
@@ -836,11 +836,11 @@ mockMvc.perform(get(<span class="hljs-string">&quot;/accounts/1&quot;</span>)).a
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722609005175.114"> <span class="hljs-type">String</span> <span class="hljs-variable">result</span> <span class="hljs-operator">=</span> restTemplate.getForObject(
+<pre class="highlight"><code class="language-java" id="1722865738631.4282"> <span class="hljs-type">String</span> <span class="hljs-variable">result</span> <span class="hljs-operator">=</span> restTemplate.getForObject(
          <span class="hljs-string">&quot;http://example.com/hotels/{hotel}/bookings/{booking}&quot;</span>,
          String.class,
          <span class="hljs-string">&quot;42&quot;</span>,
-         <span class="hljs-string">&quot;21&quot;</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005175.114')">Copy</button></pre>
+         <span class="hljs-string">&quot;21&quot;</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1722865738631.4282')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -851,12 +851,12 @@ mockMvc.perform(get(<span class="hljs-string">&quot;/accounts/1&quot;</span>)).a
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722609005176.019"> Map<span class="hljs-meta">@LTString</span>, String<span class="hljs-meta">@GT</span> vars = Collections.singletonMap(<span class="hljs-string">&quot;hotel&quot;</span>, <span class="hljs-string">&quot;42&quot;</span>);
+<pre class="highlight"><code class="language-java" id="1722865738632.4883"> Map<span class="hljs-meta">@LTString</span>, String<span class="hljs-meta">@GT</span> vars = Collections.singletonMap(<span class="hljs-string">&quot;hotel&quot;</span>, <span class="hljs-string">&quot;42&quot;</span>);
  <span class="hljs-type">String</span> <span class="hljs-variable">result</span> <span class="hljs-operator">=</span> restTemplate.getForObject(
          <span class="hljs-string">&quot;http://example.com/hotels/{hotel}/rooms/{hotel}&quot;</span>,
          String.class,
          vars
-);</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005176.019')">Copy</button></pre>
+);</code><button class="btn-copy-code" onclick="copyToClipboard('1722865738632.4883')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -867,7 +867,7 @@ mockMvc.perform(get(<span class="hljs-string">&quot;/accounts/1&quot;</span>)).a
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722609005176.4585"><span class="hljs-meta">@Service</span>
+<pre class="highlight"><code class="language-java" id="1722865738633.914"><span class="hljs-meta">@Service</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SearchService</span> {
 
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> RestTemplate restTemplate;
@@ -883,7 +883,7 @@ mockMvc.perform(get(<span class="hljs-string">&quot;/accounts/1&quot;</span>)).a
                                          .toUriString();
         <span class="hljs-keyword">return</span> restTemplate.getForObject(uri, ResponseDto.class);
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005176.4585')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722865738633.914')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -965,27 +965,27 @@ mockMvc.perform(get(<span class="hljs-string">&quot;/accounts/1&quot;</span>)).a
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722609005177.9587"><span class="hljs-keyword">public</span> <span class="hljs-keyword">record</span> <span class="hljs-title class_">ApiGouvResponse</span><span class="hljs-params">(
+<pre class="highlight"><code class="language-java" id="1722865738634.3396"><span class="hljs-keyword">public</span> <span class="hljs-keyword">record</span> <span class="hljs-title class_">ApiGouvResponse</span><span class="hljs-params">(
     String version,
     String query,
     Integer limit,
     List@LTApiGouvFeature@GT features
 )</span> {
 
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005177.9587')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722865738634.3396')">Copy</button></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722609005177.819"><span class="hljs-keyword">public</span> <span class="hljs-keyword">record</span> <span class="hljs-title class_">ApiGouvFeature</span><span class="hljs-params">(
+<pre class="highlight"><code class="language-java" id="1722865738634.8252"><span class="hljs-keyword">public</span> <span class="hljs-keyword">record</span> <span class="hljs-title class_">ApiGouvFeature</span><span class="hljs-params">(
     String type,
     ApiGouvAdress properties
-)</span> {</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005177.819')">Copy</button></pre>
+)</span> {</code><button class="btn-copy-code" onclick="copyToClipboard('1722865738634.8252')">Copy</button></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722609005177.093"><span class="hljs-keyword">public</span> <span class="hljs-keyword">record</span> <span class="hljs-title class_">ApiGouvAdress</span><span class="hljs-params">(
+<pre class="highlight"><code class="language-java" id="1722865738635.1494"><span class="hljs-keyword">public</span> <span class="hljs-keyword">record</span> <span class="hljs-title class_">ApiGouvAdress</span><span class="hljs-params">(
     String id,
     String label,
     String housenumber,
@@ -999,7 +999,7 @@ mockMvc.perform(get(<span class="hljs-string">&quot;/accounts/1&quot;</span>)).a
     Double y
 )</span> {
 
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005177.093')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722865738635.1494')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -1029,8 +1029,8 @@ mockMvc.perform(get(<span class="hljs-string">&quot;/accounts/1&quot;</span>)).a
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722609005177.9954"><span class="hljs-type">String</span> <span class="hljs-variable">params</span> <span class="hljs-operator">=</span> String.join(<span class="hljs-string">&quot;+&quot;</span>, keys);
-UriComponentsBuilder.fromUriString(<span class="hljs-string">&quot;/search&quot;</span>).queryParam(<span class="hljs-string">&quot;q&quot;</span>, params).queryParam(<span class="hljs-string">&quot;limit&quot;</span>, <span class="hljs-number">15</span>).build().toUriString()<span class="hljs-meta">@backtick</span>@</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005177.9954')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1722865738636.2598"><span class="hljs-type">String</span> <span class="hljs-variable">params</span> <span class="hljs-operator">=</span> String.join(<span class="hljs-string">&quot;+&quot;</span>, keys);
+UriComponentsBuilder.fromUriString(<span class="hljs-string">&quot;/search&quot;</span>).queryParam(<span class="hljs-string">&quot;q&quot;</span>, params).queryParam(<span class="hljs-string">&quot;limit&quot;</span>, <span class="hljs-number">15</span>).build().toUriString()<span class="hljs-meta">@backtick</span>@</code><button class="btn-copy-code" onclick="copyToClipboard('1722865738636.2598')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -1055,7 +1055,7 @@ UriComponentsBuilder.fromUriString(<span class="hljs-string">&quot;/search&quot;
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722609005180.0884"><span class="hljs-keyword">package</span> com.emse.spring.automacorp.adress;
+<pre class="highlight"><code class="language-java" id="1722865738640.102"><span class="hljs-keyword">package</span> com.emse.spring.automacorp.adress;
 
 <span class="hljs-keyword">import</span> com.fasterxml.jackson.core.JsonProcessingException;
 <span class="hljs-keyword">import</span> com.fasterxml.jackson.databind.ObjectMapper;
@@ -1132,7 +1132,7 @@ UriComponentsBuilder.fromUriString(<span class="hljs-string">&quot;/search&quot;
         <span class="hljs-type">ApiGouvFeature</span> <span class="hljs-variable">feature</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">ApiGouvFeature</span>(<span class="hljs-string">&quot;type&quot;</span>, adress);
         <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">ApiGouvResponse</span>(<span class="hljs-string">&quot;v1&quot;</span>, <span class="hljs-string">&quot;cours+fauriel&quot;</span>, <span class="hljs-number">15</span>, List.of(feature));
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005180.0884')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722865738640.102')">Copy</button></pre>
 </div>
 </div>
 </div>

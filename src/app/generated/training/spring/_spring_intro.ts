@@ -64,20 +64,20 @@ export const _spring_intro:string = `<div id="toc" class="toc">
 <ul>
 <li>
 <p>some basics in Java and JEE.
-If you need to follow a complete course you can see the fabulous work of <a href="https://www.youtube.com/c/coursenlignejava/videos?view=0&amp;sort=da&amp;flow=grid">Jose Paumard</a></p>
+If you need to follow a complete course you can see the fabulous work of <a href="https://www.youtube.com/c/coursenlignejava/videos?view=0&amp;sort=da&amp;flow=grid">Jose Paumard</a> and watch his video to learn Java.</p>
 </li>
 <li>
 <p>know unit testing in Java.
-If not you have a <a href="http://localhost:8080/training/unit-test/unit-test-in-java.html">course</a> on this web site.</p>
+If not you have a <a href="/training/unit-test/unit_test_in_java.html">course</a> on this web site.</p>
 </li>
 <li>
 <p>have knowledge of the Web mechanisms</p>
 </li>
 <li>
-<p>know about <a href="https://docs.oracle.com/javase/tutorial/jdbc/basics/index.html">JDBC</a> and <a href="https://docs.jboss.org/hibernate/orm/5.4/quickstart/html_single/">Hibernate</a></p>
+<p>know about <a href="https://docs.oracle.com/javase/tutorial/jdbc/basics/index.html">JDBC</a> and <a href="https://hibernate.org/orm/documentation/6.5">Hibernate</a>. We will see the main principles of these libraries during this course.</p>
 </li>
 <li>
-<p>a PC with a good IDE as <a href="https://www.jetbrains.com/idea">IntelliJ</a>. Follow this <a href="../outil/install-development-environment">page</a> to install your dev environment (IDE + Java)</p>
+<p>a PC with a good IDE as <a href="https://www.jetbrains.com/idea">IntelliJ</a>. Follow this <a href="../training/outil/install_development_environment.html">page</a> to install your dev environment (IDE + Java)</p>
 </li>
 </ul>
 </div>
@@ -119,7 +119,7 @@ A framework comes with rules to organize developments</p>
 <p>a <a href="https://spring.io/community">community</a></p>
 </li>
 <li>
-<p>a company (Spring is open source Licence «Apache 2.0» but managed by a company VM Ware Tanzu)</p>
+<p>a company (Spring is open source Licence «Apache 2.0» but managed by a company Broadcom)</p>
 </li>
 </ul>
 </div>
@@ -127,7 +127,7 @@ A framework comes with rules to organize developments</p>
 <div class="sect2">
 <h3 id="_spring_framework">Spring framework</h3>
 <div class="paragraph">
-<p>Make Java development easier</p>
+<p>Spring projects were created to facilitate Java development</p>
 </div>
 <div class="ulist">
 <ul>
@@ -141,7 +141,7 @@ A framework comes with rules to organize developments</p>
 <p>Nothing is mandatory, everything is configurable</p>
 </li>
 <li>
-<p>Big effort on backward compatibility</p>
+<p>Big effort on backward compatibility to be able to always upgrade your project to the last versions.</p>
 </li>
 </ul>
 </div>
@@ -198,10 +198,10 @@ A framework comes with rules to organize developments</p>
 <p><strong>spring-boot-starter-web</strong> : Starter for building web, including RESTful, applications using Spring MVC. Uses Tomcat as the default embedded container</p>
 </li>
 <li>
-<p><strong>spring-boot-devtools</strong> : <a href="https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#using-boot-devtools">devtools</a> is a set of tools that can make the application development experience a little more pleasant (live reload or automatic restart)</p>
+<p><strong>spring-boot-starter-data-jpa</strong> : Starter to configure Hibernate and a datasource to store your data in a DBMS.</p>
 </li>
 <li>
-<p><strong>spring-boot-starter-test</strong> : Starter for testing Spring Boot applications with libraries including JUnit, Hamcrest and Mockito</p>
+<p><strong>spring-boot-starter-test</strong> : Starter for testing Spring Boot applications with libraries including JUnit, AssertJ and Mockito</p>
 </li>
 <li>
 <p>&#8230;&#8203;</p>
@@ -212,7 +212,7 @@ A framework comes with rules to organize developments</p>
 <div class="sect2">
 <h3 id="_spring_boot_autoconfiguration">Spring Boot autoconfiguration</h3>
 <div class="paragraph">
-<p>Spring Boot attempts to automatically configure your Spring application based on the jar dependencies that you have added. For example, if HSQLDB is on your classpath, and you have not manually configured any database connection beans, then Spring Boot auto-configures an in-memory database.</p>
+<p>Spring Boot attempts to automatically configure your Spring application based on the jar dependencies that you have added. For example, if you have a database driver in your classpath, you don&#8217;t have to configure any database, the Spring Boot auto-configuration do the job for you. You juste have to configure some properties to customize the datasource username, password and Url.</p>
 </div>
 </div>
 </div>
@@ -244,19 +244,22 @@ A framework comes with rules to organize developments</p>
 <p>group : <code>com.emse.spring</code></p>
 </li>
 <li>
+<p>Spring version: <code>3.3.2</code></p>
+</li>
+<li>
 <p>artifact &amp; name :  <code>automacorp</code></p>
 </li>
 <li>
 <p>Packaging : <code>jar</code></p>
 </li>
 <li>
-<p>Java : <code>17</code></p>
+<p>Java : <code>21</code></p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p><strong>Dependencies</strong>, click on button "ADD DEPENDENCIES"" to choose which sub projects we will use. Choose <strong>Spring Web</strong> and <strong>Spring Boot DevTools</strong></p>
+<p><strong>Dependencies</strong>, click on button "ADD DEPENDENCIES"" to choose which sub projects we will use. Choose <strong>Spring Web</strong></p>
 </li>
 </ul>
 </div>
@@ -292,7 +295,7 @@ A framework comes with rules to organize developments</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722609005005.3901">rootProject.name = <span class="hljs-string">&quot;automacorp&quot;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722609005005.3901')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1722865738424.931">rootProject.name = <span class="hljs-string">&quot;automacorp&quot;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722865738424.931')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -300,10 +303,10 @@ A framework comes with rules to organize developments</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722609005006.5554">plugins {
+<pre class="highlight"><code class="language-kotlin" id="1722865738425.0322">plugins {
 	java <span class="hljs-comment">// (1)</span>
-	id(<span class="hljs-string">&quot;org.springframework.boot&quot;</span>) version <span class="hljs-string">&quot;3.1.2&quot;</span> <span class="hljs-comment">// (2)</span>
-	id(<span class="hljs-string">&quot;io.spring.dependency-management&quot;</span>) version <span class="hljs-string">&quot;1.1.2&quot;</span> <span class="hljs-comment">// (3)</span>
+	id(<span class="hljs-string">&quot;org.springframework.boot&quot;</span>) version <span class="hljs-string">&quot;3.3.2&quot;</span> <span class="hljs-comment">// (2)</span>
+	id(<span class="hljs-string">&quot;io.spring.dependency-management&quot;</span>) version <span class="hljs-string">&quot;1.1.6&quot;</span> <span class="hljs-comment">// (3)</span>
 }
 
 group = <span class="hljs-string">&quot;com.emse.spring&quot;</span> <span class="hljs-comment">// (4)</span>
@@ -314,19 +317,21 @@ repositories { <span class="hljs-comment">// (5)</span>
 }
 
 java { <span class="hljs-comment">// (6)</span>
-	sourceCompatibility = JavaVersion.VERSION_17
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(<span class="hljs-number">21</span>)
+	}
 }
 
 
 dependencies { <span class="hljs-comment">// (7)</span>
 	implementation(<span class="hljs-string">&quot;org.springframework.boot:spring-boot-starter-web&quot;</span>) <span class="hljs-comment">// (8)</span>
-	developmentOnly(<span class="hljs-string">&quot;org.springframework.boot:spring-boot-devtools&quot;</span>) <span class="hljs-comment">// (9)</span>
-	testImplementation(<span class="hljs-string">&quot;org.springframework.boot:spring-boot-starter-test&quot;</span>) <span class="hljs-comment">// (10)</span>
+	testImplementation(<span class="hljs-string">&quot;org.springframework.boot:spring-boot-starter-test&quot;</span>) <span class="hljs-comment">// (9)</span>
+  testRuntimeOnly(<span class="hljs-string">&quot;org.junit.platform:junit-platform-launcher&quot;</span>) <span class="hljs-comment">// (10)</span>
 }
 
 tasks.<span class="hljs-symbol">withType@</span><span class="hljs-symbol">LTTest@</span>GT { <span class="hljs-comment">// (11)</span>
 	useJUnitPlatform()
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005006.5554')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722865738425.0322')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -356,10 +361,10 @@ tasks.<span class="hljs-symbol">withType@</span><span class="hljs-symbol">LTTest
 <p>(8) spring-boot-starter-web to load all the elements to start a web app (embedded server, libs to write REST services&#8230;&#8203;)</p>
 </li>
 <li>
-<p>(9) spring-boot-devtools (tools used only in dev mode)</p>
+<p>(9) spring-boot-starter-test contains all lib used in tests (Junit, Mockito, Assetj&#8230;&#8203;)</p>
 </li>
 <li>
-<p>(10) spring-boot-starter-test contains all lib used in tests (Junit, Mockito, Assetj&#8230;&#8203;)</p>
+<p>(10) configure junit runner to test execution</p>
 </li>
 <li>
 <p>(11) declare the Junit 5 runner to use to execute the tests</p>
@@ -377,7 +382,7 @@ tasks.<span class="hljs-symbol">withType@</span><span class="hljs-symbol">LTTest
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722609005006.2988"><span class="hljs-keyword">package</span> com.emse.spring.automacorp;
+<pre class="highlight"><code class="language-java" id="1722865738426.6565"><span class="hljs-keyword">package</span> com.emse.spring.automacorp;
 
 <span class="hljs-keyword">import</span> org.springframework.boot.SpringApplication;
 <span class="hljs-keyword">import</span> org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -387,14 +392,14 @@ tasks.<span class="hljs-symbol">withType@</span><span class="hljs-symbol">LTTest
 	<span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> {
 		SpringApplication.run(AutomacorpApplication.class, args);
 	}
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005006.2988')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722865738426.6565')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
 <p>On startup Spring Boot will automatically scan all sub packages, defined below <code>com.emse.spring.automacorp</code>.</p>
 </div>
 <div class="paragraph">
-<p>If these packages contain Spring Beans (classes annotated with special annotations like <code>@Controller</code>, <code>@Service</code> &#8230;&#8203;), Spring Boot will automatically add them to the Spring context.</p>
+<p>If these packages contain classes annotated with special annotations like <code>@Controller</code>, <code>@Service</code>, Spring Boot will automatically add them to the Spring context. This classes will be called Spring Beans. We will see more in the next chapter.</p>
 </div>
 <div class="paragraph">
 <p>File : <strong>@GT src @GT main @GT java @GT com.emse.spring.automacorp.AutomacorpApplicationTests</strong></p>
@@ -404,22 +409,25 @@ tasks.<span class="hljs-symbol">withType@</span><span class="hljs-symbol">LTTest
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722609005007.656"><span class="hljs-meta">@RunWith(SpringRunner.class)</span> <span class="hljs-comment">// (1)</span>
+<pre class="highlight"><code class="language-java" id="1722865738427.725"><span class="hljs-meta">@RunWith(SpringRunner.class)</span> <span class="hljs-comment">// (1)</span>
 <span class="hljs-meta">@SpringBootTest</span> <span class="hljs-comment">// (2)</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">AutomacorpApplicationTests</span> {
     <span class="hljs-meta">@Test</span>
-    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">contextLoads</span><span class="hljs-params">()</span> {
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">contextLoads</span><span class="hljs-params">()</span> { <span class="hljs-comment">// (3)</span>
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005007.656')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722865738427.725')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>(1) Runner to use when we want to test a Spring class</p>
+<p>(1) Runner to use when we want to test a Spring class. This Junit runner is a class that extends the Junit Runner to add more feature when your test is launched. x</p>
 </li>
 <li>
-<p>(2) Annotation which creates an application context dedicated for tests</p>
+<p>(2) Annotation which creates an application context dedicated for tests. Spring Boot provide several annotations to <a href="https://docs.spring.io/spring-boot/reference/testing/spring-boot-applications.html">facilitate tests</a>. <code>@SpringBootTest</code> will launch a complete context and help to test a class in a real context. To be more efficient you can load only some part of the context. <code>@DataJpaTest</code> will only load the database objects and the class to test&#8230;&#8203;.</p>
+</li>
+<li>
+<p>(3) In a Junit test you always have to write a test method. This method will be executed when you launch the test. Even if the content is empty, in this example Spring will try to launch all the context. If somethings is wrong you will have an error</p>
 </li>
 </ul>
 </div>
@@ -428,7 +436,7 @@ tasks.<span class="hljs-symbol">withType@</span><span class="hljs-symbol">LTTest
 </div>
 <div class="videoblock">
 <div class="content">
-<iframe width="700" height="300" src="https://www.youtube.com/embed/6FlusTFOmRA?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="1000" height="500" src="https://www.youtube.com/embed/6FlusTFOmRA?rel=0" frameborder="0" allowfullscreen></iframe>
 </div>
 </div>
 <div class="paragraph">
@@ -461,7 +469,7 @@ tasks.<span class="hljs-symbol">withType@</span><span class="hljs-symbol">LTTest
 <h3 id="_with_gradle">With Gradle</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722609005010.3916">./gradlew --continuous bootRun // (1)
+<pre class="highlight"><code class="language-shell" id="1722865738430.9648">./gradlew --continuous bootRun // (1)
 
 [...]
 2023-08-22T17:15:59.685+02:00  INFO 124158 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path &#x27;&#x27;
@@ -470,7 +478,7 @@ tasks.<span class="hljs-symbol">withType@</span><span class="hljs-symbol">LTTest
 2023-08-22T17:16:04.332+02:00  INFO 124158 --- [nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet &#x27;dispatcherServlet&#x27;
 2023-08-22T17:16:04.334+02:00  INFO 124158 --- [nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
 &lt;==========---&gt; 80% EXECUTING
-<span class="hljs-meta prompt_">&gt; </span><span class="language-bash">:bootRun  // (2)&lt;/==========---&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722609005010.3916')">Copy</button></pre>
+<span class="hljs-meta prompt_">&gt; </span><span class="language-bash">:bootRun  // (2)&lt;/==========---&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722865738430.9648')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -496,7 +504,7 @@ tasks.<span class="hljs-symbol">withType@</span><span class="hljs-symbol">LTTest
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722609005010.4397">***************************
+<pre class="highlight"><code class="language-shell" id="1722865738430.0984">***************************
 APPLICATION FAILED TO START
 ***************************
 
@@ -506,7 +514,7 @@ Web server failed to start. Port 8080 was already in use.
 
 Action:
 
-Identify and stop the process that&#x27;s listening on port 8080 or configure this application to listen on another port.</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005010.4397')">Copy</button></pre>
+Identify and stop the process that&#x27;s listening on port 8080 or configure this application to listen on another port.</code><button class="btn-copy-code" onclick="copyToClipboard('1722865738430.0984')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -514,7 +522,7 @@ Identify and stop the process that&#x27;s listening on port 8080 or configure th
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-properties" id="1722609005011.8933"><span class="hljs-attr">server.port</span>=<span class="hljs-string">8085</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722609005011.8933')">Copy</button></pre>
+<pre class="highlight"><code class="language-properties" id="1722865738430.9583"><span class="hljs-attr">server.port</span>=<span class="hljs-string">8085</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722865738430.9583')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -524,16 +532,11 @@ Identify and stop the process that&#x27;s listening on port 8080 or configure th
 <div class="sect2">
 <h3 id="_application_packaging">Application packaging</h3>
 <div class="paragraph">
-<p>With Spring Boot, your application is packaged in a jar file containing an embedded application server to run your code</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../../img/training/spring-intro/mvc-run.png" alt="mvc run">
-</div>
+<p>With Spring Boot, your application is packaged in a jar file containing an embedded application server to run your code. You have only one jar and all dependencies are inside</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722609005011.7031">./gradlew assemble</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005011.7031')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1722865738430.5354">./gradlew assemble</code><button class="btn-copy-code" onclick="copyToClipboard('1722865738430.5354')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -542,7 +545,7 @@ Identify and stop the process that&#x27;s listening on port 8080 or configure th
 <p>This task generate a jar (Java archive) in <code>build/libs</code>.</p>
 </li>
 <li>
-<p>jar name is <code>automacorp-0.0.1-SNAPSHOT.jar</code>. It contains everything you need to launch the application (conf + libs)</p>
+<p>jar name is <code>automacorp-0.0.1-SNAPSHOT.jar</code>. The version is defined in your Gradle configuration. It contains everything you need to launch the application (conf + libs)</p>
 </li>
 </ul>
 </div>
@@ -551,7 +554,7 @@ Identify and stop the process that&#x27;s listening on port 8080 or configure th
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1722609005011.153">java -jar build/libs/automacorp-0.0.1-SNAPSHOT.jar</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005011.153')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1722865738431.4907">java -jar build/libs/automacorp-0.0.1-SNAPSHOT.jar</code><button class="btn-copy-code" onclick="copyToClipboard('1722865738431.4907')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -565,7 +568,7 @@ Identify and stop the process that&#x27;s listening on port 8080 or configure th
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722609005011.564"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> { }</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005011.564')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1722865738431.6719"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> { }</code><button class="btn-copy-code" onclick="copyToClipboard('1722865738431.6719')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -603,14 +606,14 @@ Identify and stop the process that&#x27;s listening on port 8080 or configure th
 <p>In this file copy the following code</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-html" id="1722609005012.6636"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<pre class="highlight"><code class="language-html" id="1722865738431.0728"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span> Spring in practice<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
         Hello world
     <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722609005012.6636')">Copy</button></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722865738431.0728')">Copy</button></pre>
 </div>
 </div>
 </li>
@@ -627,7 +630,7 @@ Identify and stop the process that&#x27;s listening on port 8080 or configure th
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-html" id="1722609005012.4062"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">integrity</span>=<span class="hljs-string">&quot;sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9&quot;</span> <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">&quot;anonymous&quot;</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722609005012.4062')">Copy</button></pre>
+<pre class="highlight"><code class="language-html" id="1722865738432.2432"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">integrity</span>=<span class="hljs-string">&quot;sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH&quot;</span> <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">&quot;anonymous&quot;</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722865738432.2432')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -635,14 +638,14 @@ Identify and stop the process that&#x27;s listening on port 8080 or configure th
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-html" id="1722609005013.1746"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+<pre class="highlight"><code class="language-html" id="1722865738433.5425"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Automacorp<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;lead&quot;</span>&gt;</span>
             Welcome on the Automacorp App used to learn Spring.
         <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722609005013.1746')">Copy</button></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722865738433.5425')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -689,10 +692,10 @@ When we use the Spring support of Hibernate/JPA, we would need to configure a da
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722609005013.6604">dependencies {
+<pre class="highlight"><code class="language-kotlin" id="1722865738433.9565">dependencies {
  implementation(<span class="hljs-string">&#x27;org.springframework.boot:spring-boot-starter-web&#x27;</span>)
  testImplementation(<span class="hljs-string">&#x27;org.springframework.boot:spring-boot-starter-test&#x27;</span>)
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722609005013.6604')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1722865738433.9565')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">

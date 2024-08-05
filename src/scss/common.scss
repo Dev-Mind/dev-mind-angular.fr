@@ -28,9 +28,13 @@ $header__heigth: 64px;
 @mixin dm_home_link($linkcolor) {
   a, a:hover, a:visited {
     font-weight: bold;
-    color: $linkcolor;
+    color: opacify($linkcolor, 0.6);
     text-decoration: none;
     cursor: pointer;
+  }
+  a:hover {
+    color: opacify($linkcolor, 1);
+    text-decoration: underline;
   }
   .link {
     display: block;
