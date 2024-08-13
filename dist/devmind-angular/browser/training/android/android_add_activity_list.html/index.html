@@ -227,7 +227,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722865737445.6543"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomsAdapter</span> : <span class="hljs-type">RecyclerView.Adapter&lt;RoomsAdapter.RoomsViewHolder&gt;</span>() { <span class="hljs-comment">// (1)</span>
+<pre class="highlight"><code class="language-kotlin" id="1723541686785.366"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomsAdapter</span> : <span class="hljs-type">RecyclerView.Adapter&lt;RoomsAdapter.RoomsViewHolder&gt;</span>() { <span class="hljs-comment">// (1)</span>
 
     <span class="hljs-keyword">inner</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomsViewHolder</span>(view: View) : RecyclerView.ViewHolder(view) { <span class="hljs-comment">// (2)</span>
         <span class="hljs-keyword">val</span> name: TextView = view.findViewById(R.id.txt_room_name)
@@ -236,7 +236,7 @@
 
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> items = <span class="hljs-symbol">mutableListOf@</span><span class="hljs-symbol">LTRoomDto@</span>GT() <span class="hljs-comment">// (3)</span>
 
-    <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">setItems</span><span class="hljs-params">(rooms: <span class="hljs-type">List</span>@<span class="hljs-type">LTRoomDto</span>@<span class="hljs-type">GT</span>)</span></span> {  <span class="hljs-comment">// (4)</span>
+    <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">setItems</span><span class="hljs-params">(rooms: <span class="hljs-type">List</span><span>&lt;RoomDto</span><span>&gt;</span>)</span></span> {  <span class="hljs-comment">// (4)</span>
         items.clear()
         items.addAll(rooms)
         notifyDataSetChanged()
@@ -257,7 +257,7 @@
             currentTemperature.text = roomDto.currentTemperature?.toString() ?: <span class="hljs-string">"?"</span>
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722865737445.6543')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541686785.366')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -489,7 +489,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722865737448.9534"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomsActivity</span> : <span class="hljs-type">BasicActivity</span>() {
+<pre class="highlight"><code class="language-kotlin" id="1723541686789.7952"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomsActivity</span> : <span class="hljs-type">BasicActivity</span>() {
     <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(savedInstanceState: <span class="hljs-type">Bundle</span>?)</span></span> {
         <span class="hljs-keyword">super</span>.onCreate(savedInstanceState)
         setContentView(R.layout.activity_rooms)
@@ -505,7 +505,7 @@
 
         roomsAdapter.setItems(RoomService.ROOMS)  <span class="hljs-comment">// (6)</span>
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722865737448.9534')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541686789.7952')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -554,9 +554,9 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722865737449.9014"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">OnRoomClickListener</span> {
+<pre class="highlight"><code class="language-kotlin" id="1723541686789.3816"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">OnRoomClickListener</span> {
     <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">selectRoom</span><span class="hljs-params">(id: <span class="hljs-type">Long</span>)</span></span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722865737449.9014')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541686789.3816')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -574,7 +574,7 @@
 <h3 id="_update_roomsactivity">Update RoomsActivity</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722865737450.3635">We will implement the contract and create an Intent to <span class="hljs-keyword">open</span> a `RoomActivity`</code><button class="btn-copy-code" onclick="copyToClipboard('1722865737450.3635')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1723541686790.8088">We will implement the contract and create an Intent to <span class="hljs-keyword">open</span> a `RoomActivity`</code><button class="btn-copy-code" onclick="copyToClipboard('1723541686790.8088')">Copy</button></pre>
 </div>
 </div>
 <div class="listingblock">
@@ -597,7 +597,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722865737451.6228"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomsAdapter</span>(<span class="hljs-keyword">val</span> listener: OnRoomClickListener): RecyclerView.<span class="hljs-symbol">Adapter@</span>LTRoomsAdapter.<span class="hljs-symbol">RoomsViewHolder@</span>GT() {
+<pre class="highlight"><code class="language-kotlin" id="1723541686790.0479"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomsAdapter</span>(<span class="hljs-keyword">val</span> listener: OnRoomClickListener): RecyclerView.<span class="hljs-symbol">Adapter@</span>LTRoomsAdapter.<span class="hljs-symbol">RoomsViewHolder@</span>GT() {
     <span class="hljs-comment">// ...</span>
     <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onBindViewHolder</span><span class="hljs-params">(holder: <span class="hljs-type">RoomsViewHolder</span>, position: <span class="hljs-type">Int</span>)</span></span> {
         <span class="hljs-keyword">val</span> roomDto = items[position]
@@ -615,7 +615,7 @@
         }
 
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722865737451.6228')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541686790.0479')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -644,8 +644,8 @@
 <p>If you want more explanations about RecyclerView you can read this <a href="https://codelabs.developers.google.com/codelabs/kotlin-android-training-recyclerview-fundamentals/index.html?index=..%2F..android-kotlin-fundamentals#2">codelabs</a> made by Google</p>
 </div>
 </div>
-</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 05/08/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
+</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 13/08/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
 
-<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-ZCI4HYXA.js" type="module"></script>
+<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-ING7W5GR.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t6"},"c":{"7":[{"i":"t6","r":1}]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t1"},"c":{"7":[{"i":"t1","r":1}]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>

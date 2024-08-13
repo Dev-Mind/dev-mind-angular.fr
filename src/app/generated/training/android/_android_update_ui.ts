@@ -227,9 +227,9 @@ This is a string resources file, where you can specify all of your UI strings. I
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" id="1722865737916.7346"><span class="hljs-tag">&lt;<span class="hljs-name">resources</span>&gt;</span>
+<pre class="highlight"><code class="language-xml" id="1723541686950.215"><span class="hljs-tag">&lt;<span class="hljs-name">resources</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">string</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;app_name&quot;</span>&gt;</span>Automacorp<span class="hljs-tag">&lt;/<span class="hljs-name">string</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">resources</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722865737916.7346')">Copy</button></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">resources</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1723541686950.215')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -237,14 +237,14 @@ This is a string resources file, where you can specify all of your UI strings. I
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" id="1722865737917.8958"><span class="hljs-tag">&lt;<span class="hljs-name">resources</span>&gt;</span>
+<pre class="highlight"><code class="language-xml" id="1723541686951.2566"><span class="hljs-tag">&lt;<span class="hljs-name">resources</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">string</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;app_name&quot;</span>&gt;</span>automacorp<span class="hljs-tag">&lt;/<span class="hljs-name">string</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">string</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;app_logo_description&quot;</span>&gt;</span>automacorp logo<span class="hljs-tag">&lt;/<span class="hljs-name">string</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">string</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;act_main_windowname_hint&quot;</span>&gt;</span>Window name<span class="hljs-tag">&lt;/<span class="hljs-name">string</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">string</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;act_main_welcome&quot;</span>&gt;</span>Welcome on automacorp,\n the app to manage building windows<span class="hljs-tag">&lt;/<span class="hljs-name">string</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">string</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;act_main_open_window&quot;</span>&gt;</span>Open window<span class="hljs-tag">&lt;/<span class="hljs-name">string</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">resources</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722865737917.8958')">Copy</button></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">resources</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1723541686951.2566')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -269,7 +269,7 @@ This is a string resources file, where you can specify all of your UI strings. I
 <p>In the file <strong>app @GT java @GT com.automacorp @GT MainActivity</strong>, add the following openWindow() method stub:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722865737919.702"><span class="hljs-keyword">class</span> <span class="hljs-title class_">MainActivity</span> : <span class="hljs-type">AppCompatActivity</span>() {
+<pre class="highlight"><code class="language-kotlin" id="1723541686951.0488"><span class="hljs-keyword">class</span> <span class="hljs-title class_">MainActivity</span> : <span class="hljs-type">AppCompatActivity</span>() {
     <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(savedInstanceState: <span class="hljs-type">Bundle</span>?)</span></span> {
         <span class="hljs-keyword">super</span>.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -282,7 +282,7 @@ This is a string resources file, where you can specify all of your UI strings. I
         <span class="hljs-comment">// Display a message</span>
         Toast.makeText(<span class="hljs-keyword">this</span>, <span class="hljs-string">&quot;You choose @dollar@windowName&quot;</span>, Toast.LENGTH_LONG).show()
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722865737919.702')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541686951.0488')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -323,8 +323,8 @@ This is a string resources file, where you can specify all of your UI strings. I
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" id="1722865737920.304"><span class="hljs-tag">&lt;<span class="hljs-name">application</span> <span class="hljs-attr">android:allowbackup</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">android:dataextractionrules</span>=<span class="hljs-string">&quot;@xml/data_extraction_rules&quot;</span> <span class="hljs-attr">android:fullbackupcontent</span>=<span class="hljs-string">&quot;@xml/backup_rules&quot;</span> <span class="hljs-attr">android:icon</span>=<span class="hljs-string">&quot;@mipmap/ic_launcher&quot;</span> <span class="hljs-attr">android:label</span>=<span class="hljs-string">&quot;@string/app_name&quot;</span> <span class="hljs-attr">android:roundicon</span>=<span class="hljs-string">&quot;@mipmap/ic_launcher_round&quot;</span> <span class="hljs-attr">android:supportsrtl</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">android:theme</span>=<span class="hljs-string">&quot;@style/Theme.automacorp&quot;</span> <span class="hljs-attr">tools:targetapi</span>=<span class="hljs-string">&quot;31&quot;</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">application</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722865737920.304')">Copy</button></pre>
+<pre class="highlight"><code class="language-xml" id="1723541686952.9695"><span class="hljs-tag">&lt;<span class="hljs-name">application</span> <span class="hljs-attr">android:allowbackup</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">android:dataextractionrules</span>=<span class="hljs-string">&quot;@xml/data_extraction_rules&quot;</span> <span class="hljs-attr">android:fullbackupcontent</span>=<span class="hljs-string">&quot;@xml/backup_rules&quot;</span> <span class="hljs-attr">android:icon</span>=<span class="hljs-string">&quot;@mipmap/ic_launcher&quot;</span> <span class="hljs-attr">android:label</span>=<span class="hljs-string">&quot;@string/app_name&quot;</span> <span class="hljs-attr">android:roundicon</span>=<span class="hljs-string">&quot;@mipmap/ic_launcher_round&quot;</span> <span class="hljs-attr">android:supportsrtl</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">android:theme</span>=<span class="hljs-string">&quot;@style/Theme.automacorp&quot;</span> <span class="hljs-attr">tools:targetapi</span>=<span class="hljs-string">&quot;31&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">application</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1723541686952.9695')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -341,7 +341,7 @@ This is a string resources file, where you can specify all of your UI strings. I
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" id="1722865737920.0234">@LTresources xmlns:tools=&quot;http://schemas.android.com/tools&quot;@GT
+<pre class="highlight"><code class="language-xml" id="1723541686952.9688">@LTresources xmlns:tools=&quot;http://schemas.android.com/tools&quot;@GT
     @LT!-- Base application theme. -@LAMBDA
     @LTstyle name=&quot;Base.Theme.Automacorp&quot; parent=&quot;Theme.Material3.DayNight.NoActionBar&quot;@GT
         @LT!-- Customize your light theme here. -@LAMBDA
@@ -349,7 +349,7 @@ This is a string resources file, where you can specify all of your UI strings. I
     @LT/style@GT
 
     @LTstyle name=&quot;Theme.Automacorp&quot; parent=&quot;Base.Theme.Automacorp&quot; /@GT
-@LT/resources@GT</code><button class="btn-copy-code" onclick="copyToClipboard('1722865737920.0234')">Copy</button></pre>
+@LT/resources@GT</code><button class="btn-copy-code" onclick="copyToClipboard('1723541686952.9688')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -360,11 +360,11 @@ This is a string resources file, where you can specify all of your UI strings. I
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" id="1722865737920.1978">@LT?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?@GT
+<pre class="highlight"><code class="language-xml" id="1723541686952.2024">@LT?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?@GT
 @LTresources@GT
   @LTcolor name=&quot;black&quot;@GT#FF000000@LT/color@GT
   @LTcolor name=&quot;white&quot;@GT#FFFFFFFF@LT/color@GT
-@LT/resources@GT</code><button class="btn-copy-code" onclick="copyToClipboard('1722865737920.1978')">Copy</button></pre>
+@LT/resources@GT</code><button class="btn-copy-code" onclick="copyToClipboard('1723541686952.2024')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -383,12 +383,12 @@ This is a string resources file, where you can specify all of your UI strings. I
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" id="1722865737920.8186">@LT?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?@GT
+<pre class="highlight"><code class="language-xml" id="1723541686952.724">@LT?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?@GT
 @LTresources@GT
   @LTcolor name=&quot;black&quot;@GT#FF000000@LT/color@GT
   @LTcolor name=&quot;white&quot;@GT#FFFFFFFF@LT/color@GT
   @LTcolor name=&quot;primary&quot;@GT#2979ff@LT/color@GT
-@LT/resources@GT</code><button class="btn-copy-code" onclick="copyToClipboard('1722865737920.8186')">Copy</button></pre>
+@LT/resources@GT</code><button class="btn-copy-code" onclick="copyToClipboard('1723541686952.724')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -396,14 +396,14 @@ This is a string resources file, where you can specify all of your UI strings. I
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" id="1722865737921.6057">@LTresources xmlns:tools=&quot;http://schemas.android.com/tools&quot;@GT
+<pre class="highlight"><code class="language-xml" id="1723541686952.682">@LTresources xmlns:tools=&quot;http://schemas.android.com/tools&quot;@GT
     @LT!-- Base application theme. -@LAMBDA
     @LTstyle name=&quot;Base.Theme.Automacorp&quot; parent=&quot;Theme.Material3.DayNight.NoActionBar&quot;@GT
         @LT@LTitem name=&quot;colorPrimary&quot;@GT@color/primary@LT/item@GT
     @LT/style@GT
 
     @LTstyle name=&quot;Theme.Automacorp&quot; parent=&quot;Base.Theme.Automacorp&quot; /@GT
-@LT/resources@GT</code><button class="btn-copy-code" onclick="copyToClipboard('1722865737921.6057')">Copy</button></pre>
+@LT/resources@GT</code><button class="btn-copy-code" onclick="copyToClipboard('1723541686952.682')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">

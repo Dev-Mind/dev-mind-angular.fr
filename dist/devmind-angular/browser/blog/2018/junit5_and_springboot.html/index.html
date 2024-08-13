@@ -210,14 +210,14 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722865739193.2463"><span class="hljs-meta">@ConfigurationProperties("devmind")</span>
+<pre class="highlight"><code class="language-java" id="1723541687642.409"><span class="hljs-meta">@ConfigurationProperties("devmind")</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Junit5ApplicationProperties</span> {
     <span class="hljs-keyword">private</span> String name;
 
     <span class="hljs-keyword">public</span> String <span class="hljs-title function_">getName</span><span class="hljs-params">()</span> { <span class="hljs-keyword">return</span> name; }
 
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">setName</span><span class="hljs-params">(String name)</span> { <span class="hljs-built_in">this</span>.name = name; }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722865739193.2463')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687642.409')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -225,13 +225,13 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722865739194.1099"><span class="hljs-meta">@SpringBootApplication</span>
+<pre class="highlight"><code class="language-java" id="1723541687642.524"><span class="hljs-meta">@SpringBootApplication</span>
 <span class="hljs-meta">@EnableConfigurationProperties(Junit5ApplicationProperties.class)</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Junit5Application</span> {
 	<span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> {
 		SpringApplication.run(Junit5Application.class, args);
 	}
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722865739194.1099')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687642.524')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -239,7 +239,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722865739194.3828"><span class="hljs-keyword">import</span> org.assertj.core.api.Assertions;
+<pre class="highlight"><code class="language-java" id="1723541687643.8438"><span class="hljs-keyword">import</span> org.assertj.core.api.Assertions;
 <span class="hljs-keyword">import</span> org.junit.Test;
 <span class="hljs-keyword">import</span> org.junit.runner.RunWith;
 <span class="hljs-keyword">import</span> org.springframework.beans.factory.annotation.Autowired;
@@ -258,7 +258,7 @@
 		Assertions.assertThat(properties.getName()).isEqualTo(<span class="hljs-string">"Dev-Mind"</span>);
 	}
 
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722865739194.3828')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687643.8438')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -274,7 +274,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-groovy" id="1722865739195.0684">buildscript {
+<pre class="highlight"><code class="language-groovy" id="1723541687643.3796">buildscript {
 	ext {
 		springBootVersion = <span class="hljs-string">'2.0.0.M7'</span>
 	}
@@ -304,7 +304,7 @@ repositories {
 dependencies {
 	compile(<span class="hljs-string">'org.springframework.boot:spring-boot-starter'</span>)
 	testCompile(<span class="hljs-string">'org.springframework.boot:spring-boot-starter-test'</span>)
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722865739195.0684')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687643.3796')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -312,8 +312,8 @@ dependencies {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-groovy" id="1722865739196.2253">classpath(<span class="hljs-string">"org.junit.platform:junit-platform-gradle-plugin:${junitPlatformVersion}"</span>)
-apply <span class="hljs-attr">plugin:</span> <span class="hljs-string">"org.junit.platform.gradle.plugin"</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722865739196.2253')">Copy</button></pre>
+<pre class="highlight"><code class="language-groovy" id="1723541687643.6248">classpath(<span class="hljs-string">"org.junit.platform:junit-platform-gradle-plugin:${junitPlatformVersion}"</span>)
+apply <span class="hljs-attr">plugin:</span> <span class="hljs-string">"org.junit.platform.gradle.plugin"</span></code><button class="btn-copy-code" onclick="copyToClipboard('1723541687643.6248')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -321,9 +321,9 @@ apply <span class="hljs-attr">plugin:</span> <span class="hljs-string">"org.juni
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-groovy" id="1722865739196.4143">testCompile(<span class="hljs-string">"org.springframework.boot:spring-boot-starter-test"</span>) {
+<pre class="highlight"><code class="language-groovy" id="1723541687643.4841">testCompile(<span class="hljs-string">"org.springframework.boot:spring-boot-starter-test"</span>) {
 	exclude <span class="hljs-attr">module:</span> <span class="hljs-string">"junit"</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722865739196.4143')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687643.4841')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -331,11 +331,11 @@ apply <span class="hljs-attr">plugin:</span> <span class="hljs-string">"org.juni
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-groovy" id="1722865739196.3489">configurations {
+<pre class="highlight"><code class="language-groovy" id="1723541687643.857">configurations {
 	all {
 		exclude <span class="hljs-attr">module:</span> <span class="hljs-string">"junit"</span>
 	}
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722865739196.3489')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687643.857')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -343,8 +343,8 @@ apply <span class="hljs-attr">plugin:</span> <span class="hljs-string">"org.juni
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-groovy" id="1722865739196.2812">testCompile(<span class="hljs-string">"org.junit.jupiter:junit-jupiter-api"</span>)
-testRuntime(<span class="hljs-string">"org.junit.jupiter:junit-jupiter-engine"</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1722865739196.2812')">Copy</button></pre>
+<pre class="highlight"><code class="language-groovy" id="1723541687643.7605">testCompile(<span class="hljs-string">"org.junit.jupiter:junit-jupiter-api"</span>)
+testRuntime(<span class="hljs-string">"org.junit.jupiter:junit-jupiter-engine"</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687643.7605')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -355,7 +355,7 @@ testRuntime(<span class="hljs-string">"org.junit.jupiter:junit-jupiter-engine"</
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-groovy" id="1722865739196.774">testRuntime(<span class="hljs-string">"org.junit.vintage:junit-vintage-engine:4.12.2"</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1722865739196.774')">Copy</button></pre>
+<pre class="highlight"><code class="language-groovy" id="1723541687643.8013">testRuntime(<span class="hljs-string">"org.junit.vintage:junit-vintage-engine:4.12.2"</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687643.8013')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -404,8 +404,8 @@ testRuntime(<span class="hljs-string">"org.junit.jupiter:junit-jupiter-engine"</
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722865739196.4673"><span class="hljs-meta">@ExtendWith(MockitoExtension.class)</span>
-<span class="hljs-meta">@ExtendWith(SpringExtension.class)</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722865739196.4673')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1723541687644.8955"><span class="hljs-meta">@ExtendWith(MockitoExtension.class)</span>
+<span class="hljs-meta">@ExtendWith(SpringExtension.class)</span></code><button class="btn-copy-code" onclick="copyToClipboard('1723541687644.8955')">Copy</button></pre>
 </div>
 </div>
 <div class="sidebarblock">
@@ -426,7 +426,7 @@ testRuntime(<span class="hljs-string">"org.junit.jupiter:junit-jupiter-engine"</
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722865739197.2292"><span class="hljs-keyword">import</span> org.assertj.core.api.Assertions;
+<pre class="highlight"><code class="language-java" id="1723541687644.0146"><span class="hljs-keyword">import</span> org.assertj.core.api.Assertions;
 <span class="hljs-keyword">import</span> org.junit.jupiter.api.Test;
 <span class="hljs-keyword">import</span> org.junit.jupiter.api.extension.ExtendWith;
 <span class="hljs-keyword">import</span> org.springframework.beans.factory.annotation.Autowired;
@@ -445,7 +445,7 @@ testRuntime(<span class="hljs-string">"org.junit.jupiter:junit-jupiter-engine"</
 		Assertions.assertThat(properties.getName()).isEqualTo(<span class="hljs-string">"Dev-Mind"</span>);
 	}
 
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722865739197.2292')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687644.0146')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -456,7 +456,7 @@ testRuntime(<span class="hljs-string">"org.junit.jupiter:junit-jupiter-engine"</
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722865739198.4316"><span class="hljs-meta">@ExtendWith(SpringExtension.class)</span>
+<pre class="highlight"><code class="language-java" id="1723541687644.328"><span class="hljs-meta">@ExtendWith(SpringExtension.class)</span>
 <span class="hljs-meta">@ContextConfiguration({"/app-config.xml", "/test-data-access-config.xml"})</span>
 <span class="hljs-meta">@ActiveProfiles("dev")</span>
 <span class="hljs-meta">@Transactional</span>
@@ -466,7 +466,7 @@ testRuntime(<span class="hljs-string">"org.junit.jupiter:junit-jupiter-engine"</
 <span class="hljs-meta">@ContextConfiguration({"/app-config.xml", "/test-data-access-config.xml"})</span>
 <span class="hljs-meta">@ActiveProfiles("dev")</span>
 <span class="hljs-meta">@Transactional</span>
-<span class="hljs-keyword">class</span> <span class="hljs-title class_">UserRepositoryTests</span> { }</code><button class="btn-copy-code" onclick="copyToClipboard('1722865739198.4316')">Copy</button></pre>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">UserRepositoryTests</span> { }</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687644.328')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -474,13 +474,13 @@ testRuntime(<span class="hljs-string">"org.junit.jupiter:junit-jupiter-engine"</
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722865739199.4622"><span class="hljs-meta">@Target(ElementType.TYPE)</span>
+<pre class="highlight"><code class="language-java" id="1723541687644.0178"><span class="hljs-meta">@Target(ElementType.TYPE)</span>
 <span class="hljs-meta">@Retention(RetentionPolicy.RUNTIME)</span>
 <span class="hljs-meta">@ExtendWith(SpringExtension.class)</span>
 <span class="hljs-meta">@ContextConfiguration({"/app-config.xml", "/test-data-access-config.xml"})</span>
 <span class="hljs-meta">@ActiveProfiles("dev")</span>
 <span class="hljs-meta">@Transactional</span>
-<span class="hljs-keyword">public</span> <span class="hljs-meta">@interface</span> TransactionalDevTestConfig { }</code><button class="btn-copy-code" onclick="copyToClipboard('1722865739199.4622')">Copy</button></pre>
+<span class="hljs-keyword">public</span> <span class="hljs-meta">@interface</span> TransactionalDevTestConfig { }</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687644.0178')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -488,11 +488,11 @@ testRuntime(<span class="hljs-string">"org.junit.jupiter:junit-jupiter-engine"</
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722865739199.2131"><span class="hljs-meta">@TransactionalDevTestConfig</span>
+<pre class="highlight"><code class="language-java" id="1723541687644.729"><span class="hljs-meta">@TransactionalDevTestConfig</span>
 <span class="hljs-keyword">class</span> <span class="hljs-title class_">OrderRepositoryTests</span> { }
 
 <span class="hljs-meta">@TransactionalDevTestConfig</span>
-<span class="hljs-keyword">class</span> <span class="hljs-title class_">UserRepositoryTests</span> { }</code><button class="btn-copy-code" onclick="copyToClipboard('1722865739199.2131')">Copy</button></pre>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">UserRepositoryTests</span> { }</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687644.729')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -512,11 +512,11 @@ testRuntime(<span class="hljs-string">"org.junit.jupiter:junit-jupiter-engine"</
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722865739200.5613"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">CallForPaperService</span> {
+<pre class="highlight"><code class="language-java" id="1723541687645.8079"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">CallForPaperService</span> {
     <span class="hljs-keyword">void</span> <span class="hljs-title function_">submit</span><span class="hljs-params">(Proposal proposal)</span>;
     <span class="hljs-keyword">void</span> <span class="hljs-title function_">accept</span><span class="hljs-params">(Proposal proposal)</span>;
     <span class="hljs-keyword">void</span> <span class="hljs-title function_">refuse</span><span class="hljs-params">(Proposal proposal)</span>;
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722865739200.5613')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687645.8079')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -524,7 +524,7 @@ testRuntime(<span class="hljs-string">"org.junit.jupiter:junit-jupiter-engine"</
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722865739200.9238"><span class="hljs-keyword">class</span> <span class="hljs-title class_">CallForPaperServiceTests</span> {
+<pre class="highlight"><code class="language-java" id="1723541687645.202"><span class="hljs-keyword">class</span> <span class="hljs-title class_">CallForPaperServiceTests</span> {
 
     <span class="hljs-meta">@Test</span>
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">submitShouldFailWhenRequiredDataAreAbsent</span><span class="hljs-params">()</span>{  }
@@ -542,7 +542,7 @@ testRuntime(<span class="hljs-string">"org.junit.jupiter:junit-jupiter-engine"</
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">acceptShouldFailWhenSpeakerEmailCantBeSend</span><span class="hljs-params">()</span>{  }
 
     <span class="hljs-comment">// ... on peut imaginer des dizaines de tests supplémentaires avec des noms beaucoup plus long</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722865739200.9238')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687645.202')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -558,7 +558,7 @@ testRuntime(<span class="hljs-string">"org.junit.jupiter:junit-jupiter-engine"</
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1722865739201.2556"><span class="hljs-title function_">it</span>(<span class="hljs-string">'submit should fail when required data are absent'</span>, <span class="hljs-function">() =&gt;</span> { });</code><button class="btn-copy-code" onclick="copyToClipboard('1722865739201.2556')">Copy</button></pre>
+<pre class="highlight"><code class="language-javascript" id="1723541687645.3066"><span class="hljs-title function_">it</span>(<span class="hljs-string">'submit should fail when required data are absent'</span>, <span class="hljs-function">() =&gt;</span> { });</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687645.3066')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -566,8 +566,8 @@ testRuntime(<span class="hljs-string">"org.junit.jupiter:junit-jupiter-engine"</
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722865739201.5378"><span class="hljs-meta">@Test</span>
-fun `submit should fail when required data are absent`() {  }</code><button class="btn-copy-code" onclick="copyToClipboard('1722865739201.5378')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1723541687645.754"><span class="hljs-meta">@Test</span>
+fun `submit should fail when required data are absent`() {  }</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687645.754')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -575,7 +575,7 @@ fun `submit should fail when required data are absent`() {  }</code><button clas
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722865739203.9954"><span class="hljs-meta">@DisplayName("Test service CallForPaperService")</span>
+<pre class="highlight"><code class="language-java" id="1723541687646.6714"><span class="hljs-meta">@DisplayName("Test service CallForPaperService")</span>
 <span class="hljs-keyword">class</span> <span class="hljs-title class_">CallForPaperServiceTests</span> {
 
     <span class="hljs-meta">@Test</span>
@@ -597,7 +597,7 @@ fun `submit should fail when required data are absent`() {  }</code><button clas
     <span class="hljs-meta">@Test</span>
     <span class="hljs-meta">@DisplayName("accept should fail when speaker email can't be send")</span>
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">acceptFailOnEmailError</span><span class="hljs-params">()</span>{ }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722865739203.9954')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687646.6714')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -613,7 +613,7 @@ fun `submit should fail when required data are absent`() {  }</code><button clas
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722865739204.0598"><span class="hljs-meta">@DisplayName("Test service CallForPaperService")</span>
+<pre class="highlight"><code class="language-java" id="1723541687646.432"><span class="hljs-meta">@DisplayName("Test service CallForPaperService")</span>
 <span class="hljs-keyword">class</span> <span class="hljs-title class_">CallForPaperServiceTests</span> {
 
     <span class="hljs-meta">@Nested</span>
@@ -644,7 +644,7 @@ fun `submit should fail when required data are absent`() {  }</code><button clas
         <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">acceptFailOnEmailError</span><span class="hljs-params">()</span>{  }
     }
 
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722865739204.0598')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687646.432')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -669,12 +669,12 @@ fun `submit should fail when required data are absent`() {  }</code><button clas
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722865739205.45"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-java" id="1723541687647.49"><span class="hljs-meta">@Test</span>
 <span class="hljs-meta">@DisplayName("should send email to session speakers")</span>
 <span class="hljs-meta">@RepeatedTest(10)</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">acceptSendEmailToSessionSpeakers</span><span class="hljs-params">()</span>{
     assertThat(<span class="hljs-literal">true</span>).isTrue();
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722865739205.45')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687647.49')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -693,7 +693,7 @@ fun `submit should fail when required data are absent`() {  }</code><button clas
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722865739205.6855"><span class="hljs-meta">@Category({IntegrationTest.class, Exernal.class})</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722865739205.6855')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1723541687647.4194"><span class="hljs-meta">@Category({IntegrationTest.class, Exernal.class})</span></code><button class="btn-copy-code" onclick="copyToClipboard('1723541687647.4194')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -701,8 +701,8 @@ fun `submit should fail when required data are absent`() {  }</code><button clas
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722865739205.7188"><span class="hljs-meta">@Tag("integration")</span>
-<span class="hljs-meta">@Tag("exernal")</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722865739205.7188')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1723541687647.692"><span class="hljs-meta">@Tag("integration")</span>
+<span class="hljs-meta">@Tag("exernal")</span></code><button class="btn-copy-code" onclick="copyToClipboard('1723541687647.692')">Copy</button></pre>
 </div>
 </div>
 <div class="sidebarblock">
@@ -720,7 +720,7 @@ fun `submit should fail when required data are absent`() {  }</code><button clas
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1722865739206.6304">junitPlatform {
+<pre class="highlight"><code class="language-java" id="1723541687647.9495">junitPlatform {
     filters {
         tags {
             include <span class="hljs-string">'fast'</span>, <span class="hljs-string">'smoke'</span>
@@ -732,7 +732,7 @@ fun `submit should fail when required data are absent`() {  }</code><button clas
         includeClassNamePattern <span class="hljs-string">'.*Spec'</span>
         includeClassNamePatterns <span class="hljs-string">'.*Test'</span>, <span class="hljs-string">'.*Tests'</span>
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722865739206.6304')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687647.9495')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -745,8 +745,8 @@ fun `submit should fail when required data are absent`() {  }</code><button clas
 <p>Comme nous avons pu le voir vous pouvez dès aujourd’hui adopter Junit 5 dans vos projets Spring Boot ou autre projet Java. Cette refonte de Junit apporte à mon sens plein de petits plus dans l’écriture des tests. D’autres évolutions qui sont encore au stade expérimentations peuvent être utilisées par parcimonie. Mais rien ne dit si elles seront conservées ou non dans les futures versions (voir la <a href="http://junit.org/junit5/docs/current/user-guide/#api-evolution-experimental-apis">liste</a>)</p>
 </div>
 </div>
-</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 05/08/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
+</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 13/08/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
 
-<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-ZCI4HYXA.js" type="module"></script>
+<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-ING7W5GR.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t0"},"c":{"7":[{"i":"t0","r":1,"x":4}]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t7"},"c":{"7":[{"i":"t7","r":1,"x":4}]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>

@@ -152,13 +152,13 @@ At runtime, Android uses the appropriate resource based on the current configura
 <p>You can copy these string definitions in  <strong>res/values/string.xml</strong></p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" id="1722865737593.8823"><span class="hljs-tag">&lt;<span class="hljs-name">resources</span>&gt;</span>
+<pre class="highlight"><code class="language-xml" id="1723541686843.2751"><span class="hljs-tag">&lt;<span class="hljs-name">resources</span>&gt;</span>
     <span class="hljs-comment">&lt;!-- ... --&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">string</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;menu_rooms&quot;</span>&gt;</span>Building rooms<span class="hljs-tag">&lt;/<span class="hljs-name">string</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">string</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;menu_website&quot;</span>&gt;</span>Our website<span class="hljs-tag">&lt;/<span class="hljs-name">string</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">string</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;menu_email&quot;</span>&gt;</span>Send us an email<span class="hljs-tag">&lt;/<span class="hljs-name">string</span>&gt;</span>
     <span class="hljs-comment">&lt;!-- ... --&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">resources</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722865737593.8823')">Copy</button></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">resources</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1723541686843.2751')">Copy</button></pre>
 </div>
 </div>
 </li>
@@ -177,7 +177,7 @@ At runtime, Android uses the appropriate resource based on the current configura
 <p>In this file you can copy this code</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722865737594.8857"><span class="hljs-keyword">open</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">BasicActivity</span> : <span class="hljs-type">AppCompatActivity</span>()</code><button class="btn-copy-code" onclick="copyToClipboard('1722865737594.8857')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1723541686843.1687"><span class="hljs-keyword">open</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">BasicActivity</span> : <span class="hljs-type">AppCompatActivity</span>()</code><button class="btn-copy-code" onclick="copyToClipboard('1723541686843.1687')">Copy</button></pre>
 </div>
 </div>
 </li>
@@ -188,13 +188,13 @@ At runtime, Android uses the appropriate resource based on the current configura
 <p>We will now activate the menu. Override <strong>onCreateOptionsMenu()</strong> in <strong>BasicActivity</strong>. In this method, you can inflate your menu resource in the Menu provided in the callback</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722865737595.7864"><span class="hljs-keyword">open</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">BasicActivity</span> : <span class="hljs-type">AppCompatActivity</span>() {
+<pre class="highlight"><code class="language-kotlin" id="1723541686844.5396"><span class="hljs-keyword">open</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">BasicActivity</span> : <span class="hljs-type">AppCompatActivity</span>() {
     <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onCreateOptionsMenu</span><span class="hljs-params">(menu: <span class="hljs-type">Menu</span>)</span></span>: <span class="hljs-built_in">Boolean</span> {
         <span class="hljs-keyword">val</span> inflater: MenuInflater = menuInflater
         inflater.inflate(R.menu.main_menu, menu)
         <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722865737595.7864')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541686844.5396')">Copy</button></pre>
 </div>
 </div>
 </li>
@@ -202,7 +202,7 @@ At runtime, Android uses the appropriate resource based on the current configura
 <p>When the user selects an item from the options menu (including action items in the app bar), the system calls your activity&#8217;s <strong>onOptionsItemSelected()</strong> method. This method passes the MenuItem selected. We will handle each possible values in <strong>BasicActivity</strong> class</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722865737596.5557"><span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onOptionsItemSelected</span><span class="hljs-params">(item: <span class="hljs-type">MenuItem</span>)</span></span>: <span class="hljs-built_in">Boolean</span> {
+<pre class="highlight"><code class="language-kotlin" id="1723541686844.2827"><span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onOptionsItemSelected</span><span class="hljs-params">(item: <span class="hljs-type">MenuItem</span>)</span></span>: <span class="hljs-built_in">Boolean</span> {
     <span class="hljs-keyword">when</span>(item.itemId){
         R.id.menu_rooms <span class="hljs-meta">@LAMBDA</span> startActivity(
             Intent(<span class="hljs-keyword">this</span>, RoomsActivity::<span class="hljs-keyword">class</span>.java)
@@ -216,7 +216,7 @@ At runtime, Android uses the appropriate resource based on the current configura
 
     }
     <span class="hljs-keyword">return</span> <span class="hljs-keyword">super</span>.onContextItemSelected(item)
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722865737596.5557')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541686844.2827')">Copy</button></pre>
 </div>
 </div>
 </li>
@@ -275,9 +275,9 @@ The second one is the data to operate on, such an URL, an email, expressed as a 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" id="1722865737597.4343"> @LTstyle name=&quot;Base.Theme.Automacorp&quot; parent=&quot;Theme.Material3.DayNight.NoActionBar&quot;@GT
+<pre class="highlight"><code class="language-xml" id="1723541686844.558"> @LTstyle name=&quot;Base.Theme.Automacorp&quot; parent=&quot;Theme.Material3.DayNight.NoActionBar&quot;@GT
     @LT!-- ... -@LAMBDA
- @LT/style@GT</code><button class="btn-copy-code" onclick="copyToClipboard('1722865737597.4343')">Copy</button></pre>
+ @LT/style@GT</code><button class="btn-copy-code" onclick="copyToClipboard('1723541686844.558')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -285,9 +285,9 @@ The second one is the data to operate on, such an URL, an email, expressed as a 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" id="1722865737597.9224"> @LTstyle name=&quot;Base.Theme.Automacorp&quot; parent=&quot;Theme.Material3.DayNight&quot;@GT
+<pre class="highlight"><code class="language-xml" id="1723541686844.9885"> @LTstyle name=&quot;Base.Theme.Automacorp&quot; parent=&quot;Theme.Material3.DayNight&quot;@GT
     @LT!-- ... -@LAMBDA
- @LT/style@GT</code><button class="btn-copy-code" onclick="copyToClipboard('1722865737597.9224')">Copy</button></pre>
+ @LT/style@GT</code><button class="btn-copy-code" onclick="copyToClipboard('1723541686844.9885')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -303,13 +303,13 @@ The second one is the data to operate on, such an URL, an email, expressed as a 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" id="1722865737597.286"> @LTstyle name=&quot;Base.Theme.Automacorp&quot; parent=&quot;Theme.Material3.DayNight&quot;@GT
+<pre class="highlight"><code class="language-xml" id="1723541686845.2842"> @LTstyle name=&quot;Base.Theme.Automacorp&quot; parent=&quot;Theme.Material3.DayNight&quot;@GT
     @LT!-- ... -@LAMBDA
     @LTitem name=&quot;toolbarStyle&quot;@GT@style/Theme.Custom.Toolbar@LT/item@GT
  @LT/style@GT
  @LTstyle name=&quot;Theme.Custom.Toolbar&quot; parent=&quot;Widget.Material3.Toolbar&quot;@GT
     @LTitem name=&quot;android:background&quot;@GT@color/primary@LT/item@GT
- @LT/style@GT</code><button class="btn-copy-code" onclick="copyToClipboard('1722865737597.286')">Copy</button></pre>
+ @LT/style@GT</code><button class="btn-copy-code" onclick="copyToClipboard('1723541686845.2842')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -322,7 +322,7 @@ The second one is the data to operate on, such an URL, an email, expressed as a 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722865737598.9978"><span class="hljs-keyword">class</span> <span class="hljs-title class_">WindowActivity</span> : <span class="hljs-type">AppCompatActivity</span>() {
+<pre class="highlight"><code class="language-kotlin" id="1723541686845.668"><span class="hljs-keyword">class</span> <span class="hljs-title class_">WindowActivity</span> : <span class="hljs-type">AppCompatActivity</span>() {
 
     <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(savedInstanceState: <span class="hljs-type">Bundle</span>?)</span></span> {
         <span class="hljs-keyword">super</span>.onCreate(savedInstanceState)
@@ -330,7 +330,7 @@ The second one is the data to operate on, such an URL, an email, expressed as a 
         supportActionBar?.setDisplayHomeAsUpEnabled(<span class="hljs-literal">true</span>)
         <span class="hljs-comment">//...</span>
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722865737598.9978')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541686845.668')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -338,7 +338,7 @@ The second one is the data to operate on, such an URL, an email, expressed as a 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" id="1722865737598.7908">@LTactivity android:name=&quot;.WindowActivity&quot; android:parentActivityName=&quot;.MainActivity&quot;@GT@LT/activity@GT</code><button class="btn-copy-code" onclick="copyToClipboard('1722865737598.7908')">Copy</button></pre>
+<pre class="highlight"><code class="language-xml" id="1723541686845.1074">@LTactivity android:name=&quot;.WindowActivity&quot; android:parentActivityName=&quot;.MainActivity&quot;@GT@LT/activity@GT</code><button class="btn-copy-code" onclick="copyToClipboard('1723541686845.1074')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">

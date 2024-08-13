@@ -106,9 +106,9 @@ export const _spring_boot_starter_database_schema_initialization:string = `<div 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722865740207.9197"><span class="hljs-meta">@Configuration(proxyBeanMethods = false)</span>
+<pre class="highlight"><code class="language-kotlin" id="1723541687783.378"><span class="hljs-meta">@Configuration(proxyBeanMethods = false)</span>
 <span class="hljs-meta">@AutoConfigureBefore(DataSourceAutoConfiguration::class, LiquibaseAutoConfiguration::class)</span>
-<span class="hljs-keyword">class</span> <span class="hljs-title class_">DatabaseSchemaInitializerAutoConfiguration</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722865740207.9197')">Copy</button></pre>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">DatabaseSchemaInitializerAutoConfiguration</span></code><button class="btn-copy-code" onclick="copyToClipboard('1723541687783.378')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -161,7 +161,7 @@ export const _spring_boot_starter_database_schema_initialization:string = `<div 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722865740209.013"><span class="hljs-meta">@Configuration(proxyBeanMethods = false)</span>
+<pre class="highlight"><code class="language-kotlin" id="1723541687783.417"><span class="hljs-meta">@Configuration(proxyBeanMethods = false)</span>
 <span class="hljs-meta">@ConditionalOnProperty(prefix = PROPERTIES_PREFIX, name = [<span class="hljs-string">&quot;enabled&quot;</span>], matchIfMissing = true)</span>
 <span class="hljs-meta">@AutoConfigureBefore(DataSourceAutoConfiguration::class, LiquibaseAutoConfiguration::class)</span>
 <span class="hljs-keyword">class</span> <span class="hljs-title class_">DatabaseSchemaInitializerAutoConfiguration</span> {
@@ -178,7 +178,7 @@ export const _spring_boot_starter_database_schema_initialization:string = `<div 
          <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">databaseSchemaInitializer</span><span class="hljs-params">()</span></span> =
              DatabaseSchemaInitializer()
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722865740209.013')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687783.417')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -192,7 +192,7 @@ export const _spring_boot_starter_database_schema_initialization:string = `<div 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722865740211.012"><span class="hljs-meta">@Configuration(proxyBeanMethods = false)</span>
+<pre class="highlight"><code class="language-kotlin" id="1723541687784.173"><span class="hljs-meta">@Configuration(proxyBeanMethods = false)</span>
 <span class="hljs-meta">@ConditionalOnProperty(prefix = PROPERTIES_PREFIX, name = [<span class="hljs-string">&quot;enabled&quot;</span>], matchIfMissing = true)</span>
 <span class="hljs-meta">@AutoConfigureBefore(DataSourceAutoConfiguration::class, LiquibaseAutoConfiguration::class)</span>
 <span class="hljs-keyword">class</span> <span class="hljs-title class_">DatabaseSchemaInitializerAutoConfiguration</span> {
@@ -214,7 +214,7 @@ export const _spring_boot_starter_database_schema_initialization:string = `<div 
          <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">databaseSchemaInitializer</span><span class="hljs-params">()</span></span> =
              DatabaseSchemaInitializer()
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1722865740211.012')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687784.173')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -238,12 +238,12 @@ export const _spring_boot_starter_database_schema_initialization:string = `<div 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722865740212.9775">    <span class="hljs-comment">// ...</span>
+<pre class="highlight"><code class="language-kotlin" id="1723541687784.1687">    <span class="hljs-comment">// ...</span>
     dependencies {
         implementation(project(<span class="hljs-string">&quot;:database-initializer&quot;</span>))
         <span class="hljs-comment">// ...</span>
     }
-    <span class="hljs-comment">// ...</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722865740212.9775')">Copy</button></pre>
+    <span class="hljs-comment">// ...</span></code><button class="btn-copy-code" onclick="copyToClipboard('1723541687784.1687')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -254,11 +254,11 @@ export const _spring_boot_starter_database_schema_initialization:string = `<div 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1722865740213.3274"><span class="hljs-meta">@Retention(AnnotationRetention.RUNTIME)</span>
+<pre class="highlight"><code class="language-kotlin" id="1723541687784.1704"><span class="hljs-meta">@Retention(AnnotationRetention.RUNTIME)</span>
 <span class="hljs-meta">@Target(AnnotationTarget.CLASS, AnnotationTarget.TYPE)</span>
 <span class="hljs-meta">@MustBeDocumented</span>
 <span class="hljs-meta">@Import(DatabaseSchemaInitializerAutoConfiguration::class)</span>
-<span class="hljs-keyword">annotation</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">EnableDatabaseSchemaInitializer</span></code><button class="btn-copy-code" onclick="copyToClipboard('1722865740213.3274')">Copy</button></pre>
+<span class="hljs-keyword">annotation</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">EnableDatabaseSchemaInitializer</span></code><button class="btn-copy-code" onclick="copyToClipboard('1723541687784.1704')">Copy</button></pre>
 </div>
 </div>
 </div>
