@@ -32,8 +32,10 @@ export const _spring_security:string = `<div id="toc" class="toc">
 <div class="paragraph">
 <p><a href="https://docs.spring.io/spring-security/reference/index.html">Spring Security</a> provides comprehensive support for authentication, authorization, and protection against <a href="https://docs.spring.io/spring-security/reference/features/exploits/index.html">common exploits</a>.</p>
 </div>
-<div class="paragraph text-center">
-<p><span class="image"><img src="../../img/training/spring-security.png" alt="spring security" width="800"></span></p>
+<div class="imageblock text-center">
+<div class="content">
+<img src="../../img/training/spring-security.png" alt="spring security" width="800">
+</div>
 </div>
 <div class="paragraph">
 <p>The security is a complex subject. We retrieve this complexity in Spring Security</p>
@@ -54,24 +56,20 @@ export const _spring_security:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><span class="hljs-title class_">Access</span> to fetch at <span class="hljs-string">&#x27;http://localhost:8080/api/rooms&#x27;</span> <span class="hljs-keyword">from</span> origin <span class="hljs-string">&#x27;null&#x27;</span> has been blocked by <span class="hljs-variable constant_">CORS</span> <span class="hljs-attr">policy</span>: <span class="hljs-title class_">No</span> <span class="hljs-string">&#x27;Access-Control-Allow-Origin&#x27;</span> header is present on the requested resource. <span class="hljs-title class_">If</span> an opaque response serves your needs, set the request<span class="hljs-string">&#x27;s mode to &#x27;</span>no-cors<span class="hljs-string">&#x27; to fetch the resource with CORS disabled.</span></pre>
+<pre class="highlight"><span class="hljs-title class_">Access</span> to fetch at <span class="hljs-string">&#x27;http://localhost:8080/api/rooms&#x27;</span> <span class="hljs-keyword">from</span> origin <span class="hljs-string">&#x27;null&#x27;</span> has been blocked by <span class="hljs-variable constant_">CORS</span> <span class="hljs-attr">policy</span>:
+<span class="hljs-title class_">No</span> <span class="hljs-string">&#x27;Access-Control-Allow-Origin&#x27;</span> header is present on the requested resource. <span class="hljs-title class_">If</span> an opaque response serves
+your needs, set the request<span class="hljs-string">&#x27;s mode to &#x27;</span>no-cors<span class="hljs-string">&#x27; to fetch the resource with CORS disabled.</span></pre>
 </div>
 </div>
 <div class="paragraph">
 <p><a href="https://en.wikipedia.org/wiki/Cross-origin_resource_sharing">Cross-Origin Resource Sharing</a> is a mechanism that allows this dialog</p>
 </div>
 <div class="paragraph">
-<p>To resolve this problem you have to manage CORS headers or you install a proxy.</p>
-</div>
-<div class="paragraph">
-<p>As we won&#8217;t install a web proxy we will manage CORS in our app</p>
-</div>
-<div class="paragraph">
-<p>Add annotation <code>@CrossOrigin</code> to your <code>@RestController</code> to open your API to all other apps</p>
+<p>To resolve this problem you have to manage CORS headers in the different requests. With Spring you can add annotation <code>@CrossOrigin</code> to your <code>@RestController</code> to open your API to all other apps</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1723541687192.499"><span class="hljs-meta">@CrossOrigin</span></code><button class="btn-copy-code" onclick="copyToClipboard('1723541687192.499')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1724055769601.5386"><span class="hljs-meta">@CrossOrigin</span></code><button class="btn-copy-code" onclick="copyToClipboard('1724055769601.5386')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -79,8 +77,11 @@ export const _spring_security:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1723541687192.8718"><span class="hljs-meta">@CrossOrigin(origins = { &quot;http://localhost:3010&quot; }, maxAge = 3600)</span></code><button class="btn-copy-code" onclick="copyToClipboard('1723541687192.8718')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1724055769601.0146"><span class="hljs-meta">@CrossOrigin(origins = { &quot;http://localhost:3010&quot; }, maxAge = 3600)</span></code><button class="btn-copy-code" onclick="copyToClipboard('1724055769601.0146')">Copy</button></pre>
 </div>
+</div>
+<div class="paragraph">
+<p>On a web application you can also install a proxy.</p>
 </div>
 </div>
 </div>
@@ -90,8 +91,10 @@ export const _spring_security:string = `<div id="toc" class="toc">
 <div class="paragraph">
 <p>Authentication is how we verify the identity of who is trying to access a particular resource.</p>
 </div>
-<div class="paragraph text-center">
-<p><span class="image"><img src="../../img/training/spring-security/authentication.png" alt="authentication" width="800"></span></p>
+<div class="imageblock text-center">
+<div class="content">
+<img src="../../img/training/spring-security/authentication.png" alt="authentication" width="600">
+</div>
 </div>
 <div class="paragraph">
 <p>A common way to authenticate users is to force them to enter a username and password. If user is unknown, app will return a 401 error (Bad authentication)</p>
@@ -104,8 +107,10 @@ export const _spring_security:string = `<div id="toc" class="toc">
 <div class="paragraph">
 <p>Once authentication is performed we know the identity and can perform authorization.</p>
 </div>
-<div class="paragraph text-center">
-<p><span class="image"><img src="../../img/training/spring-security/authorization.png" alt="authorization" width="800"></span></p>
+<div class="imageblock text-center">
+<div class="content">
+<img src="../../img/training/spring-security/authorization.png" alt="authorization" width="600">
+</div>
 </div>
 <div class="paragraph">
 <p>If user has no access to a resource, he will receive a 403 error (Forbidden)</p>
@@ -120,8 +125,8 @@ export const _spring_security:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1723541687192.2136">implementation(<span class="hljs-string">&quot;org.springframework.boot:spring-boot-starter-security&quot;</span>)
-testImplementation(<span class="hljs-string">&quot;org.springframework.security:spring-security-test&quot;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687192.2136')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1724055769601.6042">implementation(<span class="hljs-string">&quot;org.springframework.boot:spring-boot-starter-security&quot;</span>)
+testImplementation(<span class="hljs-string">&quot;org.springframework.security:spring-security-test&quot;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1724055769601.6042')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -167,8 +172,10 @@ spring.security.user.password=password</pre>
 <div class="paragraph">
 <p>When a request is sent to call a controller, the HTTP request is sent to a chain of filters. Activated filters and servlets depend on the path of the request URI.</p>
 </div>
-<div class="paragraph text-center">
-<p><span class="image"><img src="../../img/training/spring-security/filter.png" alt="filter" width="900"></span></p>
+<div class="imageblock text-center">
+<div class="content">
+<img src="../../img/training/spring-security/filter.png" alt="filter" width="800">
+</div>
 </div>
 <div class="paragraph">
 <p>In a Spring MVC application you have only one Servlet. This Servlet is an instance of DispatcherServlet. The servlet can handle a single HttpServletRequest and HttpServletResponse.</p>
@@ -178,27 +185,31 @@ spring.security.user.password=password</pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1723541687192.1995"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">doFilter</span><span class="hljs-params">(
+<pre class="highlight"><code class="language-java" id="1724055769602.285"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">doFilter</span><span class="hljs-params">(
         ServletRequest request,
         ServletResponse response,
         FilterChain chain)</span> {
 	  <span class="hljs-comment">// do something before the rest of the application</span>
     chain.doFilter(request, response); <span class="hljs-comment">// invoke the rest of the application</span>
     <span class="hljs-comment">// do something after the rest of the application</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687192.1995')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1724055769602.285')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
 <p>Filters can be activated only on a given path URI and you can add different filter chain depending on this path</p>
 </div>
-<div class="paragraph text-center">
-<p><span class="image"><img src="../../img/training/spring-security/filter2.png" alt="filter2" width="900"></span></p>
+<div class="imageblock text-center">
+<div class="content">
+<img src="../../img/training/spring-security/filter2.png" alt="filter2" width="800">
+</div>
 </div>
 <div class="paragraph">
 <p>Spring Security add several filters. And Spring filter will throw an exception if user is not authenticated or if he has no right to access to a resource</p>
 </div>
-<div class="paragraph text-center">
-<p><span class="image"><img src="../../img/training/spring-security/filter3.png" alt="filter3" width="900"></span></p>
+<div class="imageblock text-center">
+<div class="content">
+<img src="../../img/training/spring-security/filter3.png" alt="filter3" width="800">
+</div>
 </div>
 </div>
 <div class="sect2">
@@ -206,8 +217,10 @@ spring.security.user.password=password</pre>
 <div class="paragraph">
 <p>The security context is hold by a SecurityContextHolder. This object uses a ThreadLocal to store its data (one value by user thread)</p>
 </div>
-<div class="paragraph text-center">
-<p><span class="image"><img src="../../img/training/spring-security/architecture.png" alt="architecture" width="500"></span></p>
+<div class="imageblock text-center">
+<div class="content">
+<img src="../../img/training/spring-security/architecture.png" alt="architecture" width="500">
+</div>
 </div>
 <div class="paragraph">
 <p><code>SecurityContext</code> contains an <code>Authentication</code> object.</p>
@@ -224,18 +237,20 @@ spring.security.user.password=password</pre>
 <p><code>credentials</code> contains the password or the token</p>
 </li>
 <li>
-<p><code>authorities</code> contains the user permissions. These permissions are usually loaded by a UserDetailsService.</p>
+<p><code>authorities</code> contains the user permissions. These permissions are usually loaded by a <code>UserDetailsService</code> class.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>An <code>Authentication</code> request is processed by an AuthenticationProvider. You can have different  providers in you app. For example,</p>
+<p>An <code>Authentication</code> request is processed by an <code>AuthenticationProvider</code>. You can have different  providers in you app. For example,</p>
 </div>
-<div class="paragraph text-center">
-<p><span class="image"><img src="../../img/training/spring-security/architecture2.png" alt="architecture2" width="700"></span></p>
+<div class="imageblock text-center">
+<div class="content">
+<img src="../../img/training/spring-security/architecture2.png" alt="architecture2" width="700">
+</div>
 </div>
 <div class="paragraph">
-<p>DaoAuthenticationProvider supports username/password based authentication while JwtAuthenticationProvider supports authenticating a JWT token.</p>
+<p><code>DaoAuthenticationProvider</code> supports username/password based authentication while <code>JwtAuthenticationProvider</code> supports authenticating a JWT token.</p>
 </div>
 </div>
 </div>
@@ -248,7 +263,7 @@ spring.security.user.password=password</pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1723541687193.8342"><span class="hljs-meta">@Configuration</span>
+<pre class="highlight"><code class="language-java" id="1724055769603.0002"><span class="hljs-meta">@Configuration</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SpringSecurityConfig</span> {
 
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-type">String</span> <span class="hljs-variable">ROLE_USER</span> <span class="hljs-operator">=</span> <span class="hljs-string">&quot;USER&quot;</span>;
@@ -263,7 +278,7 @@ spring.security.user.password=password</pre>
         );
         <span class="hljs-keyword">return</span> manager;
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687193.8342')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1724055769603.0002')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -271,14 +286,14 @@ spring.security.user.password=password</pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1723541687193.3137"><span class="hljs-meta">@Bean</span>
+<pre class="highlight"><code class="language-java" id="1724055769604.9087"><span class="hljs-meta">@Bean</span>
 <span class="hljs-meta">@Order(SecurityProperties.BASIC_AUTH_ORDER)</span>
 SecurityFilterChain <span class="hljs-title function_">defaultSecurityFilterChain</span><span class="hljs-params">(HttpSecurity http)</span> <span class="hljs-keyword">throws</span> Exception {
 			http.authorizeHttpRequests((requests) <span class="hljs-meta">@LAMBDA</span> requests.anyRequest().authenticated());
 			http.formLogin(withDefaults());
 			http.httpBasic(withDefaults());
 			<span class="hljs-keyword">return</span> http.build();
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687193.3137')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1724055769604.9087')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -300,7 +315,7 @@ SecurityFilterChain <span class="hljs-title function_">defaultSecurityFilterChai
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1723541687193.4778"><span class="hljs-meta">@Bean</span>
+<pre class="highlight"><code class="language-java" id="1724055769609.6897"><span class="hljs-meta">@Bean</span>
 <span class="hljs-meta">@Order(1)</span>
 <span class="hljs-keyword">public</span> SecurityFilterChain <span class="hljs-title function_">filterChain</span><span class="hljs-params">(HttpSecurity http)</span> <span class="hljs-keyword">throws</span> Exception {
     <span class="hljs-keyword">return</span> http
@@ -311,7 +326,7 @@ SecurityFilterChain <span class="hljs-title function_">defaultSecurityFilterChai
             .formLogin(withDefaults())
             .httpBasic(withDefaults())
             .build();
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687193.4778')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1724055769609.6897')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -338,8 +353,8 @@ SecurityFilterChain <span class="hljs-title function_">defaultSecurityFilterChai
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1723541687193.0215"><span class="hljs-type">Authentication</span> <span class="hljs-variable">authentication</span> <span class="hljs-operator">=</span> SecurityContextHolder.getContext().getAuthentication();
-<span class="hljs-type">String</span> <span class="hljs-variable">currentPrincipalName</span> <span class="hljs-operator">=</span> authentication.getName();</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687193.0215')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1724055769610.9263"><span class="hljs-type">Authentication</span> <span class="hljs-variable">authentication</span> <span class="hljs-operator">=</span> SecurityContextHolder.getContext().getAuthentication();
+<span class="hljs-type">String</span> <span class="hljs-variable">currentPrincipalName</span> <span class="hljs-operator">=</span> authentication.getName();</code><button class="btn-copy-code" onclick="copyToClipboard('1724055769610.9263')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -347,7 +362,7 @@ SecurityFilterChain <span class="hljs-title function_">defaultSecurityFilterChai
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1723541687194.4783"><span class="hljs-meta">@CrossOrigin</span>
+<pre class="highlight"><code class="language-java" id="1724055769611.343"><span class="hljs-meta">@CrossOrigin</span>
 <span class="hljs-meta">@RestController</span>
 <span class="hljs-meta">@RequestMapping(&quot;/api/admin/users&quot;)</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SecurityController</span> {
@@ -358,7 +373,7 @@ SecurityFilterChain <span class="hljs-title function_">defaultSecurityFilterChai
     <span class="hljs-keyword">public</span> User <span class="hljs-title function_">findUserName</span><span class="hljs-params">(<span class="hljs-meta">@AuthenticationPrincipal</span> UserDetails userDetails)</span> {
         <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">User</span>(userDetails.getUsername());
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687194.4783')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1724055769611.343')">Copy</button></pre>
 </div>
 </div>
 <div style="page-break-after: always;"></div>
@@ -372,11 +387,11 @@ SecurityFilterChain <span class="hljs-title function_">defaultSecurityFilterChai
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1723541687194.8247"><span class="hljs-meta">@PreAuthorize(&quot;hasRole(&#x27;ADMIN&#x27;)&quot;)</span> <span class="hljs-comment">// 1</span>
+<pre class="highlight"><code class="language-java" id="1724055769612.199"><span class="hljs-meta">@PreAuthorize(&quot;hasRole(&#x27;ADMIN&#x27;)&quot;)</span> <span class="hljs-comment">// 1</span>
 <span class="hljs-meta">@GetMapping(path = &quot;/me&quot;)</span>
 <span class="hljs-keyword">public</span> User <span class="hljs-title function_">findUserName</span><span class="hljs-params">(<span class="hljs-meta">@AuthenticationPrincipal</span> UserDetails userDetails)</span> {
     <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">User</span>(userDetails.getUsername());
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687194.8247')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1724055769612.199')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -426,7 +441,7 @@ SecurityFilterChain <span class="hljs-title function_">defaultSecurityFilterChai
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1723541687194.8447"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-java" id="1724055769613.1719"><span class="hljs-meta">@Test</span>
 <span class="hljs-meta">@WithMockUser(username = &quot;admin&quot;, roles = &quot;ADMIN&quot;)</span>
 <span class="hljs-keyword">void</span> <span class="hljs-title function_">shouldLoadAWindowAndReturnNullIfNotFound</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception {
     given(windowDao.findById(<span class="hljs-number">999L</span>)).willReturn(Optional.empty());
@@ -435,7 +450,7 @@ SecurityFilterChain <span class="hljs-title function_">defaultSecurityFilterChai
                 .andExpect(status().isOk())
                 <span class="hljs-comment">// the content can be tested with Json path</span>
                 .andExpect(content().string(<span class="hljs-string">&quot;&quot;</span>));
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687194.8447')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1724055769613.1719')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -452,9 +467,9 @@ SecurityFilterChain <span class="hljs-title function_">defaultSecurityFilterChai
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1723541687195.048"><span class="hljs-keyword">const</span> headers = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Headers</span>();
+<pre class="highlight"><code class="language-javascript" id="1724055769614.8176"><span class="hljs-keyword">const</span> headers = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Headers</span>();
 headers.<span class="hljs-title function_">set</span>(<span class="hljs-string">&#x27;Authorization&#x27;</span>, <span class="hljs-string">&#x27;Basic &#x27;</span> + <span class="hljs-title function_">btoa</span>(username + <span class="hljs-string">&quot;:&quot;</span> + password));
-<span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(<span class="hljs-string">&#x27;myurl&#x27;</span>, {headers});</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687195.048')">Copy</button></pre>
+<span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(<span class="hljs-string">&#x27;myurl&#x27;</span>, {headers});</code><button class="btn-copy-code" onclick="copyToClipboard('1724055769614.8176')">Copy</button></pre>
 </div>
 </div>
 <div class="sect3">
@@ -464,7 +479,7 @@ headers.<span class="hljs-title function_">set</span>(<span class="hljs-string">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1723541687195.855"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-java" id="1724055769615.4707"><span class="hljs-meta">@Test</span>
 <span class="hljs-meta">@WithMockUser(username = &quot;admin&quot;, roles = &quot;ADMIN&quot;)</span>
 <span class="hljs-keyword">void</span> <span class="hljs-title function_">shouldSwitchWindow</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception {
     <span class="hljs-type">Window</span> <span class="hljs-variable">expectedWindow</span> <span class="hljs-operator">=</span> createWindow(<span class="hljs-string">&quot;window 1&quot;</span>);
@@ -477,7 +492,7 @@ headers.<span class="hljs-title function_">set</span>(<span class="hljs-string">
             .andExpect(status().isOk())
             .andExpect(jsonPath(<span class="hljs-string">&quot;@dollar@.name&quot;</span>).value(<span class="hljs-string">&quot;window 1&quot;</span>))
             .andExpect(jsonPath(<span class="hljs-string">&quot;@dollar@.windowStatus&quot;</span>).value(<span class="hljs-string">&quot;CLOSED&quot;</span>));
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687195.855')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1724055769615.4707')">Copy</button></pre>
 </div>
 </div>
 </div>

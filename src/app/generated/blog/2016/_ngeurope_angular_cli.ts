@@ -46,7 +46,7 @@ A chaque fois vous êtes dépendants de une ou plusieurs solutions techniques (n
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1723541687336.545">  ng <span class="hljs-keyword">new</span> <span class="hljs-variable constant_">PROJECT_NAME</span></code><button class="btn-copy-code" onclick="copyToClipboard('1723541687336.545')">Copy</button></pre>
+<pre class="highlight"><code class="language-javascript" id="1724055770052.9807">  ng <span class="hljs-keyword">new</span> <span class="hljs-variable constant_">PROJECT_NAME</span></code><button class="btn-copy-code" onclick="copyToClipboard('1724055770052.9807')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -54,7 +54,7 @@ A chaque fois vous êtes dépendants de une ou plusieurs solutions techniques (n
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1723541687336.0322">  ng serve</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687336.0322')">Copy</button></pre>
+<pre class="highlight"><code class="language-javascript" id="1724055770052.71">  ng serve</code><button class="btn-copy-code" onclick="copyToClipboard('1724055770052.71')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -62,7 +62,7 @@ A chaque fois vous êtes dépendants de une ou plusieurs solutions techniques (n
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1723541687336.8455">  ng test</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687336.8455')">Copy</button></pre>
+<pre class="highlight"><code class="language-javascript" id="1724055770052.8445">  ng test</code><button class="btn-copy-code" onclick="copyToClipboard('1724055770052.8445')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -70,7 +70,7 @@ A chaque fois vous êtes dépendants de une ou plusieurs solutions techniques (n
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1723541687336.8118">  ng e2e</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687336.8118')">Copy</button></pre>
+<pre class="highlight"><code class="language-javascript" id="1724055770053.6963">  ng e2e</code><button class="btn-copy-code" onclick="copyToClipboard('1724055770053.6963')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -78,7 +78,7 @@ A chaque fois vous êtes dépendants de une ou plusieurs solutions techniques (n
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1723541687337.552">  ng build --target=production --environment=prod (distinction des environnements dev et prod)</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687337.552')">Copy</button></pre>
+<pre class="highlight"><code class="language-javascript" id="1724055770053.276">  ng build --target=production --environment=prod (distinction des environnements dev et prod)</code><button class="btn-copy-code" onclick="copyToClipboard('1724055770053.276')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -86,7 +86,7 @@ A chaque fois vous êtes dépendants de une ou plusieurs solutions techniques (n
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1723541687337.2705">  ng g component my-<span class="hljs-keyword">new</span>-component</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687337.2705')">Copy</button></pre>
+<pre class="highlight"><code class="language-javascript" id="1724055770053.7456">  ng g component my-<span class="hljs-keyword">new</span>-component</code><button class="btn-copy-code" onclick="copyToClipboard('1724055770053.7456')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -97,7 +97,7 @@ A chaque fois vous êtes dépendants de une ou plusieurs solutions techniques (n
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1723541687337.469">ng build --prod --aot</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687337.469')">Copy</button></pre>
+<pre class="highlight"><code class="language-javascript" id="1724055770053.1135">ng build --prod --aot</code><button class="btn-copy-code" onclick="copyToClipboard('1724055770053.1135')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">

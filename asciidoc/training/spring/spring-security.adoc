@@ -14,7 +14,7 @@
 https://docs.spring.io/spring-security/reference/index.html[Spring Security] provides comprehensive support for authentication, authorization, and protection against https://docs.spring.io/spring-security/reference/features/exploits/index.html[common exploits].
 
 [.text-center]
-image:../../img/training/spring-security.png[width=800]
+image::../../img/training/spring-security.png[width=800]
 
 The security is a complex subject. We retrieve this complexity in Spring Security
 
@@ -28,16 +28,14 @@ Today browsers forbid a website to access to resources served by another website
 If you want to call your API on http://localhost:8080 from a webapp exposed on a different port you should have this error.
 
 ```
-Access to fetch at 'http://localhost:8080/api/rooms' from origin 'null' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode to 'no-cors' to fetch the resource with CORS disabled.
+Access to fetch at 'http://localhost:8080/api/rooms' from origin 'null' has been blocked by CORS policy:
+No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves
+your needs, set the request's mode to 'no-cors' to fetch the resource with CORS disabled.
 ```
 
 https://en.wikipedia.org/wiki/Cross-origin_resource_sharing[Cross-Origin Resource Sharing] is a mechanism that allows this dialog
 
-To resolve this problem you have to manage CORS headers or you install a proxy.
-
-As we won't install a web proxy we will manage CORS in our app
-
-Add annotation `@CrossOrigin` to your `@RestController` to open your API to all other apps
+To resolve this problem you have to manage CORS headers in the different requests. With Spring you can add annotation `@CrossOrigin` to your `@RestController` to open your API to all other apps
 
 [source,java, subs="specialchars"]
 ----
@@ -51,13 +49,14 @@ If your Vue.js app is launched on http://localhost:3010 ou can open your API onl
 @CrossOrigin(origins = { "http://localhost:3010" }, maxAge = 3600)
 ----
 
+On a web application you can also install a proxy.
 
 == Authentication
 
 Authentication is how we verify the identity of who is trying to access a particular resource.
 
 [.text-center]
-image:../../img/training/spring-security/authentication.png[width=800]
+image::../../img/training/spring-security/authentication.png[width=600]
 
 A common way to authenticate users is to force them to enter a username and password. If user is unknown, app will return a 401 error (Bad authentication)
 
@@ -67,7 +66,7 @@ A common way to authenticate users is to force them to enter a username and pass
 Once authentication is performed we know the identity and can perform authorization.
 
 [.text-center]
-image:../../img/training/spring-security/authorization.png[width=800]
+image::../../img/training/spring-security/authorization.png[width=600]
 
 If user has no access to a resource, he will receive a 403 error (Forbidden)
 
@@ -114,7 +113,7 @@ On a Spring web application, Spring Security support is based on Servlet Filters
 When a request is sent to call a controller, the HTTP request is sent to a chain of filters. Activated filters and servlets depend on the path of the request URI.
 
 [.text-center]
-image:../../img/training/spring-security/filter.png[width=900]
+image::../../img/training/spring-security/filter.png[width=800]
 
 In a Spring MVC application you have only one Servlet. This Servlet is an instance of DispatcherServlet. The servlet can handle a single HttpServletRequest and HttpServletResponse.
 
@@ -135,13 +134,13 @@ public void doFilter(
 Filters can be activated only on a given path URI and you can add different filter chain depending on this path
 
 [.text-center]
-image:../../img/training/spring-security/filter2.png[width=900]
+image::../../img/training/spring-security/filter2.png[width=800]
 
 
 Spring Security add several filters. And Spring filter will throw an exception if user is not authenticated or if he has no right to access to a resource
 
 [.text-center]
-image:../../img/training/spring-security/filter3.png[width=900]
+image::../../img/training/spring-security/filter3.png[width=800]
 
 
 === Architecture
@@ -149,7 +148,7 @@ image:../../img/training/spring-security/filter3.png[width=900]
 The security context is hold by a SecurityContextHolder. This object uses a ThreadLocal to store its data (one value by user thread)
 
 [.text-center]
-image:../../img/training/spring-security/architecture.png[width=500]
+image::../../img/training/spring-security/architecture.png[width=500]
 
 `SecurityContext` contains an `Authentication` object.
 
@@ -157,14 +156,14 @@ An `Authentication` represents the currently authenticated user.
 
 - `principal` contains the details (often an instance of UserDetails)
 - `credentials` contains the password or the token
-- `authorities` contains the user permissions. These permissions are usually loaded by a UserDetailsService.
+- `authorities` contains the user permissions. These permissions are usually loaded by a `UserDetailsService` class.
 
-An `Authentication` request is processed by an AuthenticationProvider. You can have different  providers in you app. For example,
+An `Authentication` request is processed by an `AuthenticationProvider`. You can have different  providers in you app. For example,
 
 [.text-center]
-image:../../img/training/spring-security/architecture2.png[width=700]
+image::../../img/training/spring-security/architecture2.png[width=700]
 
-DaoAuthenticationProvider supports username/password based authentication while JwtAuthenticationProvider supports authenticating a JWT token.
+`DaoAuthenticationProvider` supports username/password based authentication while `JwtAuthenticationProvider` supports authenticating a JWT token.
 
 
 == Configuration

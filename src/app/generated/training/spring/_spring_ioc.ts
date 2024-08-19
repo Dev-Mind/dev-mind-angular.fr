@@ -90,12 +90,12 @@ export const _spring_ioc:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1723541687165.243"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">NameService</span> {
+<pre class="highlight"><code class="language-java" id="1724055769549.6128"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">NameService</span> {
 
     <span class="hljs-keyword">public</span> String <span class="hljs-title function_">getName</span><span class="hljs-params">()</span> {
         <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;Guillaume&quot;</span>;
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687165.243')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1724055769549.6128')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -103,13 +103,13 @@ export const _spring_ioc:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1723541687166.993"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">WelcomeService</span> {
+<pre class="highlight"><code class="language-java" id="1724055769550.8997"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">WelcomeService</span> {
 
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">sayHello</span><span class="hljs-params">()</span> {
         <span class="hljs-type">NameService</span> <span class="hljs-variable">nameService</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">NameService</span>();
         System.out.println(<span class="hljs-string">&quot;Hello &quot;</span> + nameService.getName());
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687166.993')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1724055769550.8997')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -121,7 +121,7 @@ If we want to change <strong>NameService</strong> we have a good chance of havin
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1723541687166.7268"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">NameService</span> {
+<pre class="highlight"><code class="language-java" id="1724055769551.269"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">NameService</span> {
 
     <span class="hljs-keyword">private</span> UserService userService;
 
@@ -134,7 +134,7 @@ If we want to change <strong>NameService</strong> we have a good chance of havin
     }
 
     <span class="hljs-comment">// ...</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687166.7268')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1724055769551.269')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -142,14 +142,14 @@ If we want to change <strong>NameService</strong> we have a good chance of havin
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1723541687167.7883"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">WelcomeService</span> {
+<pre class="highlight"><code class="language-java" id="1724055769551.6553"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">WelcomeService</span> {
 
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">sayHello</span><span class="hljs-params">()</span> {
         <span class="hljs-type">UserService</span> <span class="hljs-variable">userService</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">UserService</span>();
         <span class="hljs-type">NameService</span> <span class="hljs-variable">nameService</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">NameService</span>(userService);
         System.out.println(<span class="hljs-string">&quot;Hello &quot;</span> + nameService.getName());
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687167.7883')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1724055769551.6553')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -168,7 +168,7 @@ If we want to change <strong>NameService</strong> we have a good chance of havin
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1723541687168.7441"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">B</span> {
+<pre class="highlight"><code class="language-java" id="1724055769552.8647"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">B</span> {
     <span class="hljs-keyword">public</span> String <span class="hljs-title function_">name</span><span class="hljs-params">()</span> {
         <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;Guillaume&quot;</span>;
     }
@@ -179,7 +179,7 @@ If we want to change <strong>NameService</strong> we have a good chance of havin
         <span class="hljs-type">B</span> <span class="hljs-variable">b</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">B</span>();
         System.out.println(<span class="hljs-string">&quot;Hello &quot;</span> + b.name());
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687168.7441')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1724055769552.8647')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -267,7 +267,7 @@ Spring provides <a href="https://docs.spring.io/spring-framework/docs/current/re
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1723541687168.498"><span class="hljs-meta">@Service</span>
+<pre class="highlight"><code class="language-java" id="1724055769553.3594"><span class="hljs-meta">@Service</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">MyGreetingService</span> {
    <span class="hljs-comment">// Code ...</span>
 }
@@ -275,7 +275,7 @@ Spring provides <a href="https://docs.spring.io/spring-framework/docs/current/re
 <span class="hljs-meta">@Controller</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">MyGreetingController</span> {
    <span class="hljs-comment">// Code ...</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687168.498')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1724055769553.3594')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -299,12 +299,12 @@ This annotation indicates that the class can be used by the Spring IoC container
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1723541687169.2705"><span class="hljs-meta">@Configuration</span>
+<pre class="highlight"><code class="language-java" id="1724055769553.0916"><span class="hljs-meta">@Configuration</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">MyAppConfiguration</span> {
 
     <span class="hljs-comment">// ...</span>
 
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687169.2705')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1724055769553.0916')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -318,7 +318,7 @@ This annotation indicates that the class can be used by the Spring IoC container
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1723541687169.9124"><span class="hljs-meta">@Configuration</span>
+<pre class="highlight"><code class="language-java" id="1724055769553.929"><span class="hljs-meta">@Configuration</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">MyAppConfiguration</span> {
 
   <span class="hljs-meta">@Bean</span>
@@ -326,7 +326,7 @@ This annotation indicates that the class can be used by the Spring IoC container
     <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">UserStore</span>(connectionPool.fetchConnection());
   }
 
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687169.9124')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1724055769553.929')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -344,7 +344,7 @@ This annotation indicates that the class can be used by the Spring IoC container
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1723541687170.9666"><span class="hljs-meta">@Component</span>
+<pre class="highlight"><code class="language-java" id="1724055769554.4336"><span class="hljs-meta">@Component</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">AImpl</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">A</span> {
 
     <span class="hljs-meta">@Autowired</span>
@@ -357,7 +357,7 @@ This annotation indicates that the class can be used by the Spring IoC container
     <span class="hljs-keyword">public</span> B <span class="hljs-title function_">getB</span><span class="hljs-params">()</span> {
         <span class="hljs-keyword">return</span> b;
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687170.9666')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1724055769554.4336')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -365,7 +365,7 @@ This annotation indicates that the class can be used by the Spring IoC container
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1723541687170.6763"><span class="hljs-meta">@Component</span>
+<pre class="highlight"><code class="language-java" id="1724055769555.6167"><span class="hljs-meta">@Component</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">AImpl</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">A</span> {
 
     <span class="hljs-keyword">private</span> B b;
@@ -378,7 +378,7 @@ This annotation indicates that the class can be used by the Spring IoC container
     <span class="hljs-keyword">public</span> B <span class="hljs-title function_">getB</span><span class="hljs-params">()</span> {
         <span class="hljs-keyword">return</span> b;
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687170.6763')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1724055769555.6167')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -396,7 +396,7 @@ This annotation indicates that the class can be used by the Spring IoC container
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1723541687171.9375"><span class="hljs-meta">@Service</span>
+<pre class="highlight"><code class="language-java" id="1724055769556.353"><span class="hljs-meta">@Service</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">AuthenticationService</span> {
 
   <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> UserStore userStore;
@@ -410,7 +410,7 @@ This annotation indicates that the class can be used by the Spring IoC container
   <span class="hljs-keyword">public</span> AcccountStatus <span class="hljs-title function_">getAccountStatus</span><span class="hljs-params">(UserAccount account)</span> {
     <span class="hljs-comment">// here we can use the UserStore with this.userStore</span>
   }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687171.9375')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1724055769556.353')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -464,12 +464,12 @@ This annotation indicates that the class can be used by the Spring IoC container
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1723541687171.2512"><span class="hljs-keyword">package</span> com.emse.spring.automacorp.hello;
+<pre class="highlight"><code class="language-java" id="1724055769556.38"><span class="hljs-keyword">package</span> com.emse.spring.automacorp.hello;
 
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">GreetingService</span> {
 
   <span class="hljs-keyword">void</span> <span class="hljs-title function_">greet</span><span class="hljs-params">(String name)</span>;
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687171.2512')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1724055769556.38')">Copy</button></pre>
 </div>
 </div>
 <div class="quoteblock">
@@ -503,7 +503,7 @@ This annotation indicates that the class can be used by the Spring IoC container
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1723541687171.7305"><span class="hljs-keyword">package</span> com.emse.spring.automacorp.hello;
+<pre class="highlight"><code class="language-java" id="1724055769557.1948"><span class="hljs-keyword">package</span> com.emse.spring.automacorp.hello;
 
 <span class="hljs-keyword">import</span> org.assertj.core.api.Assertions;
 <span class="hljs-keyword">import</span> org.junit.jupiter.api.Test;
@@ -520,7 +520,7 @@ This annotation indicates that the class can be used by the Spring IoC container
         greetingService.greet(<span class="hljs-string">&quot;Spring&quot;</span>);
         Assertions.assertThat(output.getAll()).contains(<span class="hljs-string">&quot;Hello, Spring!&quot;</span>);
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687171.7305')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1724055769557.1948')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -552,13 +552,13 @@ This annotation indicates that the class can be used by the Spring IoC container
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1723541687172.2202"><span class="hljs-keyword">package</span> com.emse.spring.automacorp.hello;
+<pre class="highlight"><code class="language-java" id="1724055769558.3516"><span class="hljs-keyword">package</span> com.emse.spring.automacorp.hello;
 
 <span class="hljs-keyword">import</span> java.util.List;
 
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">UserService</span> {
     <span class="hljs-keyword">void</span> <span class="hljs-title function_">greetAll</span><span class="hljs-params">(List<span class="hljs-meta">@LTString</span><span class="hljs-meta">@GT</span> name)</span>;
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687172.2202')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1724055769558.3516')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -585,7 +585,7 @@ This annotation indicates that the class can be used by the Spring IoC container
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1723541687172.113"><span class="hljs-keyword">package</span> com.emse.spring.automacorp.hello;
+<pre class="highlight"><code class="language-java" id="1724055769559.039"><span class="hljs-keyword">package</span> com.emse.spring.automacorp.hello;
 
 <span class="hljs-keyword">import</span> org.assertj.core.api.Assertions;
 <span class="hljs-keyword">import</span> org.junit.jupiter.api.Test;
@@ -613,7 +613,7 @@ This annotation indicates that the class can be used by the Spring IoC container
         dummyUserService.greetAll(List.of(<span class="hljs-string">&quot;Elodie&quot;</span>, <span class="hljs-string">&quot;Charles&quot;</span>));
         Assertions.assertThat(output).contains(<span class="hljs-string">&quot;Hello, Elodie!&quot;</span>, <span class="hljs-string">&quot;Hello, Charles!&quot;</span>);
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687172.113')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1724055769559.039')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -643,7 +643,7 @@ This annotation indicates that the class can be used by the Spring IoC container
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1723541687173.7302"><span class="hljs-comment">// (1)</span>
+<pre class="highlight"><code class="language-java" id="1724055769560.0535"><span class="hljs-comment">// (1)</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">AutomacorpApplicationConfig</span> {
 
   <span class="hljs-comment">// (2)</span>
@@ -652,7 +652,7 @@ This annotation indicates that the class can be used by the Spring IoC container
       <span class="hljs-comment">// (4)</span>
     };
   }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687173.7302')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1724055769560.0535')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -676,10 +676,10 @@ This annotation indicates that the class can be used by the Spring IoC container
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1723541687173.9817">2023-08-23T19:59:02.183+02:00  INFO 152677 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+<pre class="highlight"><code class="language-shell" id="1724055769560.1716">2023-08-23T19:59:02.183+02:00  INFO 152677 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
 2023-08-23T19:59:02.210+02:00  INFO 152677 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path &#x27;&#x27;
 2023-08-23T19:59:02.219+02:00  INFO 152677 --- [  restartedMain] c.e.spring.automacorp.AutomacorpApplication  : Started AutomacorpApplication in 1.825 seconds (process running for 2.506)
-Hello, Spring!</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687173.9817')">Copy</button></pre>
+Hello, Spring!</code><button class="btn-copy-code" onclick="copyToClipboard('1724055769560.1716')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -706,7 +706,7 @@ Hello, Spring!</code><button class="btn-copy-code" onclick="copyToClipboard('172
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1723541687173.3801"><span class="hljs-meta">@Service</span>
+<pre class="highlight"><code class="language-java" id="1724055769561.9146"><span class="hljs-meta">@Service</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ConsoleGreetingService</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">GreetingService</span> {
 
   <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> CycleService cycleService;
@@ -720,12 +720,12 @@ Hello, Spring!</code><button class="btn-copy-code" onclick="copyToClipboard('172
   <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">greet</span><span class="hljs-params">(String name)</span> {
     System.out.println(<span class="hljs-string">&quot;Hello, &quot;</span> + name + <span class="hljs-string">&quot;!&quot;</span>);
   }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687173.3801')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1724055769561.9146')">Copy</button></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1723541687173.7056"><span class="hljs-meta">@Service</span>
+<pre class="highlight"><code class="language-java" id="1724055769562.5142"><span class="hljs-meta">@Service</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">CycleService</span> {
 
   <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> ConsoleGreetingService consoleGreetingService;
@@ -734,7 +734,7 @@ Hello, Spring!</code><button class="btn-copy-code" onclick="copyToClipboard('172
   <span class="hljs-keyword">public</span> <span class="hljs-title function_">CycleService</span><span class="hljs-params">(ConsoleGreetingService consoleGreetingService)</span> {
     <span class="hljs-built_in">this</span>.consoleGreetingService = consoleGreetingService;
   }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541687173.7056')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1724055769562.5142')">Copy</button></pre>
 </div>
 </div>
 <div class="quoteblock">

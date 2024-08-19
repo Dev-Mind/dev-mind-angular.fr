@@ -4,7 +4,8 @@ export const _android_first_app:string = `<div id="toc" class="toc">
 <li><a class="link" fragment="#_android_studio">Android studio</a>
 <ul class="sectlevel2">
 <li><a class="link" fragment="#_installation">Installation</a></li>
-<li><a class="link" fragment="#_update">Update</a></li>
+<li><a class="link" fragment="#_update_android_studio">Update Android Studio</a></li>
+<li><a class="link" fragment="#_update_android_sdk">Update Android SDK</a></li>
 </ul>
 </li>
 <li><a class="link" fragment="#_fundamental_concepts">Fundamental concepts</a></li>
@@ -63,8 +64,8 @@ You need to install it on your computer (installation requires 900MB) on <a href
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1723541686925.9932">cd ~/appli/android-studio/bin
-sh ./studio.sh</code><button class="btn-copy-code" onclick="copyToClipboard('1723541686925.9932')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1724055769042.3545">cd ~/appli/android-studio/bin
+sh ./studio.sh</code><button class="btn-copy-code" onclick="copyToClipboard('1724055769042.3545')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -84,27 +85,18 @@ It&#8217;s important to do that to download the last version of Android SDK, rec
 <img src="../../img/training/android/firstapp/android-studio1.png" alt="Follow wizard" width="700">
 </div>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_update_android_studio">Update Android Studio</h3>
 <div class="paragraph">
-<p>If you want to cutomize the display and use the new UI you can</p>
+<p>It&#8217;s always better to use the last version of Android Studio. To update it, you can go in the menu <strong>Help @GT Check for updates</strong>.</p>
 </div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>click on the customize section on the left</p>
-</li>
-<li>
-<p>click on the link "All settings&#8230;&#8203;"</p>
-</li>
-</ol>
-</div>
-<div class="imageblock text-center">
-<div class="content">
-<img src="../../img/training/android/firstapp/android-studio2.png" alt="Follow wizard" width="700">
-</div>
+<div class="paragraph">
+<p>If a version is available, you can download it and install it.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_update">Update</h3>
+<h3 id="_update_android_sdk">Update Android SDK</h3>
 <div class="paragraph">
 <p>If you already have a version of Android Studio on your laptop, you should update Android Sdk.
 For that go on menu <strong>Tools @GT SDK manager</strong></p>
@@ -115,7 +107,7 @@ For that go on menu <strong>Tools @GT SDK manager</strong></p>
 </div>
 </div>
 <div class="paragraph">
-<p>Below on my example, I have 2 versions installed : Android 13.0 Tiramisu. Here I can choose the last version of the API</p>
+<p>Below on my example, I choose to install the last version of the SDK, keep the version 14 and remove Android 13</p>
 </div>
 <div class="imageblock text-center">
 <div class="content">
@@ -123,8 +115,7 @@ For that go on menu <strong>Tools @GT SDK manager</strong></p>
 </div>
 </div>
 <div class="paragraph">
-<p>When you develop in Android you should always do it on the last SDK version.
-Google requires you to always target this latest version when you publish apps to the official store. In our case we have to target the Tiramisu version (API level 34)</p>
+<p>When you develop in Android you should always do it on the last SDK version. Google requires you to always target this latest version when you publish apps to the official store. In our case we have to target the Tiramisu version (API level 35)</p>
 </div>
 </div>
 </div>
@@ -292,12 +283,12 @@ This Android view let see you the main files of your Android project</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" id="1723541686925.3416"> <span class="hljs-tag">&lt;<span class="hljs-name">activity</span> <span class="hljs-attr">android:name</span>=<span class="hljs-string">&quot;.MainActivity&quot;</span> <span class="hljs-attr">android:exported</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>
+<pre class="highlight"><code class="language-xml" id="1724055769043.448"> <span class="hljs-tag">&lt;<span class="hljs-name">activity</span> <span class="hljs-attr">android:name</span>=<span class="hljs-string">&quot;.MainActivity&quot;</span> <span class="hljs-attr">android:exported</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">intent-filter</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">action</span> <span class="hljs-attr">android:name</span>=<span class="hljs-string">&quot;android.intent.action.MAIN&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">action</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">category</span> <span class="hljs-attr">android:name</span>=<span class="hljs-string">&quot;android.intent.category.LAUNCHER&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">category</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">intent-filter</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">activity</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1723541686925.3416')">Copy</button></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">activity</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1724055769043.448')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -350,12 +341,12 @@ This Android view let see you the main files of your Android project</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1723541686925.3281"><span class="hljs-keyword">class</span> <span class="hljs-title class_">MainActivity</span> : <span class="hljs-type">AppCompatActivity</span>() {
+<pre class="highlight"><code class="language-kotlin" id="1724055769044.959"><span class="hljs-keyword">class</span> <span class="hljs-title class_">MainActivity</span> : <span class="hljs-type">AppCompatActivity</span>() {
      <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(savedInstanceState: <span class="hljs-type">Bundle</span>?)</span></span> {
           <span class="hljs-keyword">super</span>.onCreate(savedInstanceState)
           setContentView(R.layout.activity_main)
      }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541686925.3281')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1724055769044.959')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -395,12 +386,12 @@ This Android view let see you the main files of your Android project</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" id="1723541686926.5195"><span class="hljs-meta">&lt;?xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;utf-8&quot;</span>?&gt;</span>
+<pre class="highlight"><code class="language-xml" id="1724055769046.7256"><span class="hljs-meta">&lt;?xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;utf-8&quot;</span>?&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">androidx.constraintlayout.widget.ConstraintLayout</span> <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">&quot;http://schemas.android.com/apk/res/android&quot;</span> <span class="hljs-attr">xmlns:app</span>=<span class="hljs-string">&quot;http://schemas.android.com/apk/res-auto&quot;</span> <span class="hljs-attr">xmlns:tools</span>=<span class="hljs-string">&quot;http://schemas.android.com/tools&quot;</span> <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span> <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;match_parent&quot;</span> <span class="hljs-attr">tools:context</span>=<span class="hljs-string">&quot;.MainActivity&quot;</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">TextView</span> <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span> <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span> <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;Hello World!&quot;</span> <span class="hljs-attr">app:layout_constraintbottom_tobottomof</span>=<span class="hljs-string">&quot;parent&quot;</span> <span class="hljs-attr">app:layout_constraintleft_toleftof</span>=<span class="hljs-string">&quot;parent&quot;</span> <span class="hljs-attr">app:layout_constraintright_torightof</span>=<span class="hljs-string">&quot;parent&quot;</span> <span class="hljs-attr">app:layout_constrainttop_totopof</span>=<span class="hljs-string">&quot;parent&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">TextView</span>&gt;</span>
 
-<span class="hljs-tag">&lt;/<span class="hljs-name">androidx.constraintlayout.widget.ConstraintLayout</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1723541686926.5195')">Copy</button></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">androidx.constraintlayout.widget.ConstraintLayout</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1724055769046.7256')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -449,7 +440,7 @@ This Android view let see you the main files of your Android project</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1723541686927.4626">android {
+<pre class="highlight"><code class="language-kotlin" id="1724055769047.1548">android {
    namespace = <span class="hljs-string">&quot;com.automacorp&quot;</span>
     compileSdk = <span class="hljs-number">34</span>
 
@@ -480,7 +471,7 @@ This Android view let see you the main files of your Android project</p>
     kotlinOptions {
         jvmTarget = <span class="hljs-string">&#x27;1.8&#x27;</span>
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1723541686927.4626')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1724055769047.1548')">Copy</button></pre>
 </div>
 </div>
 </div>

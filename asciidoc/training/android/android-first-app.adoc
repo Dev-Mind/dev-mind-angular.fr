@@ -45,26 +45,24 @@ After the installation, you should have this screen
 
 image::../../img/training/android/firstapp/android-studio1.png[Follow wizard,width=700, align="center"]
 
-If you want to cutomize the display and use the new UI you can
+=== Update Android Studio
 
-1. click on the customize section on the left
-2. click on the link "All settings..."
+It's always better to use the last version of Android Studio. To update it, you can go in the menu *Help > Check for updates*.
 
-image::../../img/training/android/firstapp/android-studio2.png[Follow wizard,width=700, align="center"]
+If a version is available, you can download it and install it.
 
-=== Update
+=== Update Android SDK
 
 If you already have a version of Android Studio on your laptop, you should update Android Sdk.
 For that go on menu *Tools > SDK manager*
 
 image::../../img/training/android/firstapp/android-studio-update1.png[Menu SDK manager, width=800, align="center"]
 
-Below on my example, I have 2 versions installed : Android 13.0 Tiramisu. Here I can choose the last version of the API
+Below on my example, I choose to install the last version of the SDK, keep the version 14 and remove Android 13
 
 image::../../img/training/android/firstapp/android-studio-update2.png[Choose SDK versions,width=800, align="center"]
 
-When you develop in Android you should always do it on the last SDK version.
-Google requires you to always target this latest version when you publish apps to the official store. In our case we have to target the Tiramisu version (API level 34)
+When you develop in Android you should always do it on the last SDK version. Google requires you to always target this latest version when you publish apps to the official store. In our case we have to target the Tiramisu version (API level 35)
 
 == Fundamental concepts
 
