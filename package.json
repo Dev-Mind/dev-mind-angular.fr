@@ -8,6 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "preview": "node dist/devmind-angular/server/server.mjs",
+    "dev": "node asciidoc.js && ng build && node dist/devmind-angular/server/server.mjs",
     "serve:ssr:devmind-angular": "node dist/devmind-angular/server/server.mjs"
   },
   "engines" : {

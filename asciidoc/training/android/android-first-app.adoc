@@ -2,7 +2,7 @@
 :description: A tutorial to start Android development. In this example we develop an Hello World app
 :keywords: Android
 :author: Guillaume EHRET - Dev-Mind
-:revdate: 2023-10-14
+:revdate: 2024-08-19
 :category: Android
 :teaser: A tutorial to start Android development. In this example we develop an Hello World app (EN)
 :imgteaser: ../../img/training/android/android-course1.png
@@ -15,11 +15,10 @@ If you know Java, everything will be easier with Kotlin.
 
 image::../../img/training/android/android-course1.png[Android course step1,width=800]
 
-We have a limited number of lesson hours.
-We will therefore quickly go over some concepts.
-If you want to go deeper, you will find more informations in link:android-first-app.html#_resources[resource chapter]
+We have a limited number of lesson hours. We will therefore quickly go over some concepts.
+If you want to go deeper, you will find more informations on https://developer.android.com/
 
-The aim is to be able to develop a simple application to call a REST API developed in Java (Spring) to display building rooms and manage windows in these rooms. It is necessary to ventilate as much as possible rooms, but as winter approaches it will become important to heat the buildings to ensure user comfort .Windows should be open during and after classes, closed at night or in case of heavy rain or severe cold.
+The aim is to be able to develop a simple application to call a REST API developed in Java (Spring) to display building rooms and manage windows in these rooms. It is necessary to ventilate as much as possible rooms, but as winter approaches it will become important to heat the buildings to ensure user comfort. Windows should be open during and after classes, closed at night or in case of heavy rain or severe cold.
 
 == Android studio
 
@@ -62,7 +61,7 @@ Below on my example, I choose to install the last version of the SDK, keep the v
 
 image::../../img/training/android/firstapp/android-studio-update2.png[Choose SDK versions,width=800, align="center"]
 
-When you develop in Android you should always do it on the last SDK version. Google requires you to always target this latest version when you publish apps to the official store. In our case we have to target the Tiramisu version (API level 35)
+When you develop in Android you should always do it on the last SDK version. Google requires you to always target this latest version when you publish apps to the official store. In our case we have to target the VanillaCream version (API level 35)
 
 == Fundamental concepts
 
@@ -91,9 +90,13 @@ The system determines which layout to use based on the screen size of the curren
 
 image::../../img/training/android/firstapp/android-activities.png[A view is an activity and an XML file, width=800, align="center"]
 
-Note that there is also another important concept in Android development with the https://developer.android.com/guide/fragments?hl=en[fragements]. A Fragment represents a reusable portion of your app's UI. A fragment defines and manages its own layout, has its own lifecycle, and can handle its own input events. Fragments can't live on their own. They must be hosted by an activity.
+Note that there is also another important concept in Android development with the https://developer.android.com/guide/fragments?hl=en[fragments]. A Fragment represents a reusable portion of your app's UI. A fragment defines and manages its own layout, has its own lifecycle, and can handle its own input events. Fragments can't live on their own. They must be hosted by an activity.
 
-== icon:flask[] : A first example
+Another remark, today you can always write your screen interface in an XML file. But you can also do this job in Kotlin with the Jetpack Compose library. This library is a modern toolkit for building native Android UI. It simplifies and accelerates UI development on Android.
+
+image::../../img/training/android/firstapp/jetpack-compose.svg[Jetpacj compose, width=60, align="center"]
+
+== icon:flask[] : A first example with Jetpack compose
 
 In this lab, you will learn how create a new Android project with Android Studio
 
@@ -104,11 +107,11 @@ image::../../img/training/android/firstapp/android-studio1.png[Follow wizard,wid
 +
 3. Android Studio will initialize a new project with an activity.
 It asks you to select a template for this activity.
-In the *Select a Project Template window*, select *Empty Views Activity* and click Next.
+In the *Select a Project Template window*, select *Empty Activity* (in JetPack compose) and click Next.
 +
-image::../../img/training/android/firstapp/android-studio-select-type.png[Select project type, width=700, align="center"]
+image::../../img/training/android/firstapp/android-studio2.png[Select project type, width=700, align="center"]
 +
-4. In the `Configure your project` window, complete the following:
+4. In the next wizard window, you have to define the app name and the language
 +
 image::../../img/training/android/firstapp/android-studio-new.png[New project, width=700, align="center"]
 +
@@ -126,7 +129,9 @@ image::../../img/training/android/firstapp/android-versions.png[API versions, wi
 +
 5. Click on *Finish* button.
 
-After some processing time for code generation, the Android Studio main window appears.
+After some processing time for code generation, the project appears in Android Studio.
+
+image::../../img/training/android/firstapp/android-studio3.png[Follow wizard,width=1000, align="center"]
 
 == Most important files
 
@@ -136,15 +141,11 @@ https://developer.android.com/studio[Android Studio] is organized like https://w
 First, be sure the Project window is open (select *View > Tool Windows > Project*) and the Android view is selected from the drop-down list at the top of that window.
 This Android view let see you the main files of your Android project
 
-image::../../img/training/android/firstapp/android-view.png[Android view to select file, width=300, align="center"]
-
-You can then see the following files:
-
 === Manifest file
 
 *File :* *_app > manifests > AndroidManifest.xml_*
 
-Manifest file is a kind of id card for your project.
+Manifest file is a kind of project id card.
 
 The manifest file describes essential information about your app to the Android build tools, the Android operating system, and Google Play.
 
@@ -152,12 +153,34 @@ All activities must be defined inside and one of them will be defined as entry p
 
 [source,xml,subs="none"]
 ----
- <activity android:name=".MainActivity" android:exported="true">
-    <intent-filter>
-        <action android:name="android.intent.action.MAIN" />
-        <category android:name="android.intent.category.LAUNCHER" />
-    </intent-filter>
-</activity>
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Automacorp"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Automacorp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
 ----
 
 === Activity
@@ -176,6 +199,8 @@ You can find more information about tests https://developer.android.com/training
 
 *File :* *_app > java > com.automacorp > MainActivity_*
 
+==== The code to create an activity
+
 This is the main activity and it's the entry point for your app.
 
 When you build and run your app, the system launches an instance of this Activity and loads its layout.
@@ -184,19 +209,75 @@ Each activity (as each components in Android) has a lifecyle and you can interac
 
 image::../../img/training/android/firstapp/android-activity-lifecycle.png[Activity lifecyle]
 
-For example in `MainActivity`, we declare the XML resource file where your view content is defined (`R.layout.activity_main`)
+For example in `MainActivity`, the view is associated in the `onCreate` function. In this example the work is done in the `setContent` block. This block is used to declare which Jetpack Compose components will be used to create the view. We load a custom type (ie `AutomacorpTheme`) and a `Scaffold` component. The `Scaffold` component is a layout component that provides a material design layout structure for the screen.
 
 [source,kotlin,subs="none"]
 ----
-class MainActivity : AppCompatActivity() {
-     override fun onCreate(savedInstanceState: Bundle?) {
-          super.onCreate(savedInstanceState)
-          setContentView(R.layout.activity_main)
-     }
+class MainActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        setContent {
+            AutomacorpTheme {
+                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                    Greeting(
+                        name = "Android",
+                        modifier = Modifier.padding(innerPadding)
+                    )
+                }
+            }
+        }
+    }
 }
 ----
 
-NOTE : directory is named java to assure compatibility with old projects or libs written in Java but don't be afraid we will use Kotlin :-)
+==== Jetpack component
+
+`Greeting` is a composable function. A function composable has the `@Composable` annotation.
+
+[source,kotlin,subs="none"]
+----
+@Composable
+fun Greeting(name: String, modifier: Modifier = Modifier) {
+    Text(text = "Hello $name!", modifier = modifier)
+}
+----
+
+A few noteworthy things about this function:
+
+* The function is annotated with the @Composable annotation. All Composable functions must have this annotation; this annotation informs the Compose compiler that this function is intended to convert data into UI.
+* The function takes in data. Composable functions can accept parameters, which allow the app logic to describe the UI. In this case, our widget accepts a String so it can greet the user by name.
+* The function displays text in the UI. It does so by calling the Text() composable function, which actually creates the text UI element. Composable functions emit UI hierarchy by calling other composable functions.
+* The function doesn't return anything. Compose functions that emit UI do not need to return anything, because they describe the desired screen state instead of constructing UI widgets.
+
+This function is fast, idempotent, and free of side-effects. The function describes the UI without any side-effects, such as modifying properties or global variables.
+
+==== Preview the component
+
+To test your app, you can run it on your phone or on an emulator. We will see that in the next chapter.
+
+But you can write a simple function to be able to test a composable alone. The @Preview annotation lets you preview your composable functions within Android Studio without having to build and install the app to an Android device or emulator. The annotation must be used on a composable function that does not take in parameters.
+
+[source,kotlin,subs="none"]
+----
+@Preview(showBackground = true)
+@Composable
+fun GreetingPreview() {
+    AutomacorpTheme {
+        Greeting("Android")
+    }
+}
+----
+
+You can choose to display the design view at the right of your code editor with the button at the top right of the editor.
+
+image::../../img/training/android/firstapp/compoasable_preview.png[Composable preview, width=800]
+
+
+image:../../img/training/android/firstapp/composable_view_code.png[Code, width=30] Code View
+image:../../img/training/android/firstapp/composable_view_code_design.png[Code and design, width=30] Code And Design View
+image:../../img/training/android/firstapp/composable_view_design.png[Design, width=30] Design View
+
 
 === Resource files
 
@@ -209,38 +290,6 @@ You can provide alternative resources for specific device configurations, by gro
 At runtime, Android uses the appropriate resource based on the current configuration.
 
 For example, you might want to provide a different UI layout depending on the screen size or different strings depending on user language. In this case you will have a default file `app/src/main/res/values/string.xml` and a specific file for France `app/src/main/res/values-fr/string.xml`
-
-*File :* *_app > res > layout > activity_main.xml_*
-
-This XML file defines the layout for the activity's user interface (UI).
-
-Defining the content of a view is like placing widgets (View) in layouts (ViewGroup)
-
-In the following example, we use a constraint layout. It contains a TextView element with the text "Hello, World!"
-
-[source,xml,subs="none"]
-----
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
- xmlns:app="http://schemas.android.com/apk/res-auto"
- xmlns:tools="http://schemas.android.com/tools"
-     android:layout_width="match_parent"
-     android:layout_height="match_parent"
-     tools:context=".MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
-----
-
-We will see later how to update or create a new layout and include inside widgets
 
 === Gradle file
 
@@ -264,17 +313,20 @@ You can also configure the `android` plugin (APi version, SDK version).The `defa
 [source,kotlin,subs="none"]
 ----
 android {
-   namespace = "com.automacorp"
+    namespace = "com.automacorp"
     compileSdk = 34
 
     defaultConfig {
         applicationId = "com.automacorp"
-        minSdk = 29
+        minSdk = 31
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables {
+            useSupportLibrary = true
+        }
     }
 
     buildTypes {
@@ -286,13 +338,23 @@ android {
             )
         }
     }
-
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
     }
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = "1.8"
+    }
+    buildFeatures {
+        compose = true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.5.1"
+    }
+    packaging {
+        resources {
+            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+        }
     }
 }
 ----
@@ -317,15 +379,21 @@ You need to set up your phone
 
 Since few versions of Android, you can also pair your phone via your Wifi connection. Your laptop and your phone must use the same Wifi.
 
-- On your laptop go in Android Studio running devices select and choose *Pair devices using Wifi*
+- On Android Studio, open the running devices window (with the button on the right of the UI).
 
-image::../../img/training/android/android_pair_wifi1.png[Pair devices using Wifi, width=400]
+image::../../img/training/android/firstapp/android_pair_wifi1.png[Pair devices using Wifi, width=800]
 
-image::../../img/training/android/android_pair_wifi3.png[Pair devices using Wifi, width=500]
+- Select in the toolbar the button *Pair devices using Wifi* image:../../img/training/android/firstapp/android_pair_wifi_button.png[Pair devices using Wifi, width=30]
 
-- On your phone, in *Developer options*,  select *Wireless debugging* and *Pair using QR code* and scan the QR code. If everything is OK you should see
+image::../../img/training/android/firstapp/android_pair_wifi3.png[Pair devices using Wifi, width=500]
 
-image::../../img/training/android/android_pair_wifi2.png[Pair devices using Wifi, width=500]
+- On your phone, in *Developer options*,  select *Wireless debugging* and *Pair using QR code* and scan the QR code. If everything is OK you should see. *To work you should set the same Wifi on your laptop and on your mobile*.
+
+image::../../img/training/android/firstapp/adb_wifi-wireless_debugging.png[Pair devices using Wifi, width=300]
+
+- When you are connected you should see your device in the running devices window
+
+image::../../img/training/android/firstapp/android_pair_wifi2.png[Pair devices using Wifi, width=500]
 
 Now you are ready to run your app
 
@@ -335,12 +403,12 @@ When you install Android Studio the first time, an AVD (Android Virtual Device) 
 
 You can add, update or delete your virtual devices on the AVD. Open menu  *Select Tools > Device Manager.*. You can also access this window through a side tab.
 
-image::../../img/training/android/android_device_manager.png[Android virtual device manager, width=800]
+image::../../img/training/android/firstapp/android_pair_wifi1.png[Pair devices using Wifi, width=800]
 
-If you click on *Create Virtual Device*, at the bottom of the AVD Manager dialog you will be able to create a device. You can choose device type (TV, phone, auto...), its configuration (OS version, density, size...)
+If you click on the + button, at the top of the AVD Manager dialog you will be able to create a device. You can choose device type (TV, phone, auto...), its configuration (OS version, density, size...)
 The Select Hardware page appears.
 
-image::../../img/training/android/android_device_manager2.png[Create virtual device manager, width=700]
+image::../../img/training/android/firstapp/android_device_manager2.png[Create virtual device manager, width=700]
 
 For more informations you can read https://developer.android.com/studio/run/managing-avds#createavd[this article]
 
@@ -352,19 +420,15 @@ Everything is now ready to test your project.
 2. From the target device drop-down menu, select the AVD or the device, that you want to run your app on.
 3. Click on Run button
 
-image::../../img/training/android/android-run.png[Run application, width=500]
+image::../../img/training/android/firstapp/android-run.png[Run application, width=500]
 
 If everything is OK you should see your first app. It is very simple and not very pretty but we do better in the next chapter
 
 image::../../img/training/android/firstapp/android_emulator.png[Hello world application, width=400, align="center"]
 
-To analyze errors you can open the run console on the bottom. This window contains messages send when app is launched with Gradle
+To analyze errors you can open the Logcat view to see logs send by your device or the emulated device
 
-image::../../img/training/android/android-error1.png[Run view]
-
-You also can open Logcat view to see logs send by your device or the emulated device
-
-image::../../img/training/android/android-error2.png[Logcat view]
+image::../../img/training/android/firstapp/android_error.png[Logcat view]
 
 == Resources
 

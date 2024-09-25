@@ -2,7 +2,7 @@
 :description: In this lesson you will learn how add a new activity in your project and call it
 :keywords: Android
 :author: Guillaume EHRET - Dev-Mind
-:revdate: 2023-10-12
+:revdate: 2024-08-18
 :category: Android
 :teaser: In this lesson you will learn how add a new activity in your project and call it
 :imgteaser: ../../img/training/android/android-add-activity.png
@@ -16,35 +16,73 @@ image::../../img/training/android/android-add-activity.png[Add activity, width=9
 
 == icon:flask[] : Create a new activity
 
-1. In the *Project window*, right-click the app folder and select *New > Activity > Empty Activity*.You can also use menu *File > New > Activity > Empty Activity*
+1. In the *Project window*, right-click the app folder and select *New > Compose > Empty Activity*. You can also use menu *File > New > Compose > Empty Activity*. Enter a name for our new activity : _RoomActivity_. Leave all other properties set to their defaults and click Finish.
 +
-video::f-X8EXSsRYk[youtube, width=600, height=330]
+video::rAAgTjU-6sc[youtube, width=600, height=330]
 +
-2. In the *Configure Activity window*, enter a name for our new activity : _WindowActivity_. Leave all other properties set to their defaults and click Finish.
+2. Android Studio automatically does does things:
 +
-Android Studio automatically does three things:
-+
-* Creates the *WindowActivity* file.
-* Creates the layout file *activity_window.xml*, which corresponds with the *WindowActivity* file.
-* Adds the required *<activity>* element in *AndroidManifest.xml*.
-+
-3. We will now update *activity_window.xml* to display a window name and a label. Open this file
-4. Add a new TextView to display a label name with these properties
-+
-* *text* : _Window name_ (should be defined in strings.xml)
-* *margin top* 16dp
-* *margin left* 16dp
-5. Add a new TextView below the first one with these properties
-+
-* *text* : empty
-* *textAppearance* : _@style/TextAppearance.AppCompat.Large_
-* *margin top* 8dp
-* *margin left* 16dp
-* *id* txt_window_name
-+
-video::ppyIYuRpNWk[youtube, width=600, height=330]
+* Creates the *RoomActivity* file.
+* Adds the required *<activity>* element in *AndroidManifest.xml* (each activity must be declared in this file).
 
-== Intent : how communicate with other component ?
+
+For the moment the new activity is empty. We will add some widgets to display a room name.
+
+You can also add a new key in the `strings.xml` file to store the room name
+
+[source,xml,subs="specialchars"]
+----
+<string name="act_room_name">Room name</string>
+----
+
+
+[source,kotlin,subs="none"]
+----
+class RoomActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        setContent {
+            AutomacorpTheme {
+                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                    RoomDetail(
+                        name = "Android",
+                        modifier = Modifier.padding(innerPadding)
+                    )
+                }
+            }
+        }
+    }
+}
+
+@Composable
+fun RoomDetail(name: String, modifier: Modifier = Modifier) {
+    Column(modifier = modifier.padding(16.dp)) {
+        var nameState by remember { mutableStateOf(name) }
+        Text(
+            text = stringResource(R.string.act_room_name),
+            style = MaterialTheme.typography.labelSmall,
+            modifier = Modifier.padding(bottom = 4.dp)
+        )
+        OutlinedTextField(
+            nameState,
+            onValueChange = { nameState = it },
+            placeholder = { Text(stringResource(R.string.act_room_name)) },
+        )
+    }
+
+}
+
+@Preview(showBackground = true)
+@Composable
+fun RoomDetailPreview() {
+    AutomacorpTheme {
+        RoomDetail("Android")
+    }
+}
+----
+
+== Intent : how communicate with this new component ?
 
 An https://developer.android.com/reference/android/content/Intent[Intent] is an object that provides runtime binding between separate components, such as two activities. These activities can be in the same app or not.
 
@@ -54,60 +92,63 @@ The https://developer.android.com/reference/android/content/Intent[Intent] repre
 
 image::../../img/training/android/newactivity/android-intent.png[Intent, width=700, align="center"]
 
-When you create an Intent you define a context, a target and you can send zero, one or more informations to the target.
+The primary information contained in an Intent is the following:
 
-An Intent can carry data types as key-value pairs called extras. In this lab you will open *WindowActivity* when a user will click on *MainActivity* button *Open Window*
+- *Component name* [optional] The name of the component to start. This information makes an intent explicit or not, meaning that the intent should be delivered only to the app component defined by the component name. Without a component name, the intent is implicit and the system decides which component should receive the intent based on the other intent information (such as the action, data, and category—described below).
+- *Action* A string that specifies the generic action to perform (such as ACTION_VIEW, ACTION_EDIT, ACTION_MAIN, etc.). The action is a string that specifies what the intent should do. For example, ACTION_VIEW might display data to the user, while ACTION_SEND might send data to another app.
+- *Data* [optional] A URI that references the data to be acted on by the intent (such as a webpage, a contact record, etc.). The data is a URI that references the data to be acted on by the intent. For example, the data can be a webpage, a contact record, or a file.
+- *Extras* [optional] A Bundle of additional information. This information can be used to provide extended information to the component. For example, if the intent is to send an email, the extras can include the email subject, the email text, etc.
+- ...
+
+In this lab we will open *RoomActivity* when a user will click on *MainActivity* button *Open Room name*
 
 == icon:flask[] : Build an intent to open an activity
 
-Update method *openWindow* in *MainActivity* to
-
-1. define an Intent
-2. target *WindowActivity*
-3. put the window name filled in *MainActivity* in the sent attributes (extra). Each extra is identified by a string. It's a good practice to define keys for intent extras with your app's package name as a prefix. This ensures that the keys are unique, in case your app interacts with other apps.
+It's a good practice to define keys for intent extras with your app's package name as a prefix. This ensures that the keys are unique, in case your app interacts with other apps. You can define a companion object in the activity class to store these keys as constant.
 
 [source,kotlin,subs="specialchars"]
 ----
 class MainActivity : AppCompatActivity() {
 
     companion object {
-        const val WINDOW_NAME_PARAM = "com.automacorp.windowname.attribute"
+        const val ROOM_PARAM = "com.automacorp.room.attribute"
     }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-    }
-
-    fun openWindow(view: View) {
-        // Extract value filled in editext identified with txt_window_name id
-        val windowName = findViewById<EditText>(R.id.txt_window_name).text.toString()
-
-        val intent = Intent(this, WindowActivity::class.java).apply {
-            putExtra(WINDOW_NAME_PARAM, windowName)
-        }
-        startActivity(intent)
-    }
-}
+    // ...
 ----
 
-On the other side on *WindowActivity* you have to
+We will update the `onSayHelloButtonClick` method to open the `RoomActivity` with the name filled in the `MainActivity` (you can remove the Toast message).
 
-1. read the name sent in intent
-2. find Textview to update in Layout (this widget is identified by an id)
-3. update this Textview with the name
+For that we will define an Intent, target `RoomActivity`, and put the room name filled in `MainActivity` in the sent attributes (extra).
 
 [source,kotlin,subs="specialchars"]
 ----
-class WindowActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_window)
+val onSayHelloButtonClick: (name: String) -> Unit = { name ->
+  val intent = Intent(this, RoomActivity::class.java).apply {
+    putExtra(ROOM_PARAM, name)
+  }
+  startActivity(intent)
+}
+----
 
-        val param = intent.getStringExtra(MainActivity.WINDOW_NAME_PARAM)
-        val windowName = findViewById<TextView>(R.id.txt_window_name)
-        windowName.text = param
-    }
+In the `RoomActivity` class, we will read the name sent in the intent and update the Textview with this name. The job is done in the `onCreate` method. All parameters sent in the intent are stored in the `Bundle` object used as argument.
+
+[source,kotlin,subs="specialchars"]
+----
+override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        val param = intent.getStringExtra(MainActivity.ROOM_PARAM)
+        enableEdgeToEdge()
+        setContent {
+            AutomacorpTheme {
+                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                    RoomDetail(
+                        name = param ?: "",
+                        modifier = Modifier.padding(innerPadding)
+                    )
+                }
+            }
+        }
 }
 ----
 
@@ -131,6 +172,7 @@ A Window is defined by several properties
 * a room
 * a status : : in the backend app this value is read by a sensor, but here we just need the value OPENED or CLOSED
 
+
 We are going to create classes to represent windows and rooms.
 
 1. In the *Project window*, right-click the package _com.automacorp_ and select *New > package*.
@@ -145,7 +187,7 @@ data class RoomDto(
     val name: String,
     val currentTemperature: Double?,
     val targetTemperature: Double?,
-    val windows: List<WindowDto>
+    val windows: List<WindowDto>,
 )
 ----
 +
@@ -202,6 +244,7 @@ object RoomService {
             roomId = 3,
             roomName = ROOMS_NAME[2],
             windowStatus = WindowStatus.OPENED
+        ),
         WindowDto(
             id = 5,
             name = "Window 2",
@@ -212,72 +255,135 @@ object RoomService {
     )
 
     // Fake rooms
-    val ROOMS: List<RoomDto> = listOf(
+    val ROOMS: MutableList<RoomDto> = mutableListOf(
         RoomDto(1, "Room EF 6.10", 18.2, 20.0, WINDOWS.filter { it.roomId == 1L }),
         RoomDto(2, "Hall", 18.2, 18.0, WINDOWS.filter { it.roomId == 2L }),
         RoomDto(3, "Room EF 7.10", 21.2, 20.0, WINDOWS.filter { it.roomId == 3L })
     )
-}
-----
 
-== icon:flask[] : Create a new activity to display the room detail
+    fun findAll(): List<RoomDto> {
+        // TODO return all rooms sorted by name
+    }
 
-You can reproduce the firsts steps to create a new activity called `RoomActivity`.
+    fun findById(id: Long): RoomDto? {
+        // TODO return the room with the given id or null
+    }
 
-Follow the same steps to create a page to display all the room property.
+    fun findByName(name: String): RoomDto? {
+        // TODO return the room with the given name or null
+    }
 
-Create a new button on the home page and a method to open the room with the id equals to 1
+    fun updateRoom(id: Long, room: RoomDto): RoomDto {
+        // TODO update an existing room with the given values
+    }
 
-The method to add on the `MainActivity` can be this one
-
-[source,kotlin,subs="specialchars"]
-----
-fun openRoom(view: View) {
-   val intent = Intent(this, RoomActivity::class.java).apply {
-       putExtra(ROOM_ID_PARAM, 1L)
-   }
-   startActivity(intent)
-}
-----
-
-The code of the `RoomActivity` can be this one
-
-[source,kotlin,subs="specialchars"]
-----
-class RoomActivity : AppCompatActivity() {
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_room)
-
-        val roomId = intent.getLongExtra(MainActivity.ROOM_ID_PARAM, 0)
-        val room = RoomService.ROOMS.firstOrNull {it.id == roomId}
-
-        val roomName = findViewById<TextView>(R.id.txt_room_name)
-        roomName.text = room?.name ?: ""
-
-        val roomCurrentTemperature = findViewById<TextView>(R.id.txt_room_current_temperature)
-        roomCurrentTemperature.text = room?.currentTemperature?.toString() ?: ""
-
-        val roomTargetTemperature = findViewById<TextView>(R.id.txt_room_target_temperature)
-        roomTargetTemperature.text = room?.targetTemperature?.toString() ?: ""
+    fun findByNameOrId(nameOrId: String?): RoomDto? {
+        if (nameOrId != null) {
+            return if (nameOrId.isDigitsOnly()) {
+                findById(nameOrId.toLong())
+            } else {
+                findByName(nameOrId)
+            }
+        }
+        return null
     }
 }
 ----
 
-Note that the Kotlin code `room?.targetTemperature?.toString() ?: ""` is equivalent to
+For the moment the given class is not complete. You have to implement each method. For example the `updateRoom` method can be implemented like this
 
 [source,kotlin,subs="specialchars"]
 ----
-if (room !=null && room.targetTemperature != null) room.targetTemperature.toString() else ""
+fun updateRoom(id: Long, room: RoomDto): RoomDto? {
+    val index = ROOMS.indexOfFirst { it.id == id }
+    val updatedRoom = findById(id)?.copy(
+        name = room.name,
+        targetTemperature = room.targetTemperature,
+        currentTemperature = room.currentTemperature
+    ) ?: throw IllegalArgumentException()
+    return ROOMS.set(index, updatedRoom)
+}
 ----
+
+== icon:flask[] : Update RoomActivity to display all room properties
+
+We will update the existing `RoomActivity` to display more data.
+
+You can add a new keys in the `strings.xml` file to store the room name
+
+[source,xml,subs="specialchars"]
+----
+    <string name="act_room_name">Room name</string>
+    <string name="act_room_none">No round found for this id or name</string>
+    <string name="act_room_current_temperature">Current temperature</string>
+    <string name="act_room_target_temperature">Target temperature</string>
+----
+
+We will search for a room that matches the name given in the Intent or if the user fill the room ID we will directly display the corresponding room.
+
+[source,kotlin,subs="specialchars"]
+----
+override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+    enableEdgeToEdge()
+    val param = intent.getStringExtra(MainActivity.ROOM_PARAM)
+    val room = RoomService.findByNameOrId(param)
+
+    setContent {
+        AutomacorpTheme {
+            Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                if (room != null) {
+                    RoomDetail(room,Modifier.padding(innerPadding))
+                } else {
+                    NoRoom(Modifier.padding(innerPadding))
+                }
+
+            }
+        }
+    }
+}
+----
+
+*Step 1*. Create a new composable called NoRoom to display a message (key `act_room_none`) when no room is found
+
+*Step 2*. In the composable RoomDetail, display the room name, the current temperature and the target temperature. As we want to bind the field with the room object, we will use the `remember` function to store the room object in a mutable state.
+[source,kotlin,subs="specialchars"]
+----
+    var room by remember { mutableStateOf(roomDto) }
+    Column(modifier = modifier.padding(16.dp)) {
+        // ...
+        OutlinedTextField(
+            room.name,
+            modifier = Modifier.fillMaxWidth(),
+            onValueChange = { room = room.copy(name = it) },
+            placeholder = { Text(stringResource(R.string.act_room_name)) },
+        )
+        // ...
+    }
+----
+
+*Step 3*. Add a `Text` to display the current temperature. This data is not updatable so we don't need to use a TextField
+
+*Step 4*. Add a `OutlinedTextField` to display the target temperature. This data is updatable so we need to use a TextField. In place of this `OutlinedTextField` you can use a  `Slider` (more detail on https://developer.android.com/develop/ui/compose/components/slider)
+
+[source,kotlin,subs="specialchars"]
+----
+    Slider(
+        value = room.targetTemperature?.toFloat() ?: 18.0f,
+        onValueChange = { room = room.copy(targetTemperature = it.toDouble()) },
+        colors = SliderDefaults.colors(
+            thumbColor = MaterialTheme.colorScheme.secondary,
+            activeTrackColor = MaterialTheme.colorScheme.secondary,
+            inactiveTrackColor = MaterialTheme.colorScheme.secondaryContainer,
+        ),
+        steps = 0,
+        valueRange = 10f..28f
+    )
+    Text(text = (round((room.targetTemperature ?: 18.0) * 10) / 10).toString())
+----
+
 
 This image below show you an implementation example
 
-image::../../img/training/android/newactivity/android-second-activity.png[Activity room, width=700, align="center"]
+image::../../img/training/android/newactivity/example.png[Activity room, width=700, align="center"]
 
-== icon:flask[] : Create a new activity to list rooms
-
-You need to create an empty activity with just a TextView with a label "Rooms".
-
-image::../../img/training/android/newactivity/android-new-activity.png[Add activity for list windows]

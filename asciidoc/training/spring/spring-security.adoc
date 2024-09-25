@@ -2,7 +2,7 @@
 :description: Each app must be secured and Spring is still here to simplify the work
 :keywords: Java, Spring
 :author: Guillaume EHRET - Dev-Mind
-:revdate: 2023-11-01
+:revdate: 2024-08-27
 :category: Java
 :teaser:  Each app must be secured and Spring is still here to simplify the work
 :imgteaser: ../../img/training/spring-security.png

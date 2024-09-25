@@ -160,14 +160,14 @@ export const _dotcss:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-html" id="1724055770710.483"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;grid&quot;</span>&gt;</span>
+<pre class="highlight"><code class="language-html" id="1727248806728.7205"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;grid&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;one&quot;</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;two&quot;</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;three&quot;</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;four&quot;</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;five&quot;</span>&gt;</span>5<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;six&quot;</span>&gt;</span>6<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1724055770710.483')">Copy</button></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1727248806728.7205')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -177,7 +177,7 @@ export const _dotcss:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-css" id="1724055770714.4082"><span class="hljs-selector-class">.grid</span>{
+<pre class="highlight"><code class="language-css" id="1727248806736.3857"><span class="hljs-selector-class">.grid</span>{
 		<span class="hljs-attribute">display</span>: grid;
     <span class="hljs-attribute">grid-template-columns</span>: <span class="hljs-built_in">repeat</span>(<span class="hljs-number">3</span>, <span class="hljs-number">1</span>fr);
     <span class="hljs-attribute">grid-gap</span>: <span class="hljs-number">1em</span>;
@@ -213,7 +213,7 @@ export const _dotcss:string = `<div id="preamble">
   <span class="hljs-selector-class">.six</span> {
     <span class="hljs-attribute">grid-column</span>: <span class="hljs-number">3</span>;
     <span class="hljs-attribute">grid-row</span>: <span class="hljs-number">4</span>;
-  }</code><button class="btn-copy-code" onclick="copyToClipboard('1724055770714.4082')">Copy</button></pre>
+  }</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806736.3857')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -233,14 +233,14 @@ export const _dotcss:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1724055770717.7207"><span class="hljs-keyword">if</span>(!<span class="hljs-string">&#x27;grid&#x27;</span> <span class="hljs-keyword">in</span> <span class="hljs-variable language_">document</span>.<span class="hljs-property">body</span>.<span class="hljs-property">style</span>){
+<pre class="highlight"><code class="language-javascript" id="1727248806738.9885"><span class="hljs-keyword">if</span>(!<span class="hljs-string">&#x27;grid&#x27;</span> <span class="hljs-keyword">in</span> <span class="hljs-variable language_">document</span>.<span class="hljs-property">body</span>.<span class="hljs-property">style</span>){
   <span class="hljs-keyword">var</span> head  = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementsByTagName</span>(<span class="hljs-string">&#x27;head&#x27;</span>)[<span class="hljs-number">0</span>];
   <span class="hljs-keyword">var</span> link  = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">&#x27;link&#x27;</span>);
   link.<span class="hljs-property">rel</span>  = <span class="hljs-string">&#x27;stylesheet&#x27;</span>;
   link.<span class="hljs-property">type</span> = <span class="hljs-string">&#x27;text/css&#x27;</span>;
   link.<span class="hljs-property">href</span> = <span class="hljs-string">&#x27;styles/fallbax.css&#x27;</span>;
   head.<span class="hljs-title function_">appendChild</span>(link);
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1724055770717.7207')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806738.9885')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -281,7 +281,7 @@ export const _dotcss:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1724055770719.791">.<span class="hljs-property">at</span>[<span class="hljs-title class_">Breakpoint</span>]_[property]--[variant]</code><button class="btn-copy-code" onclick="copyToClipboard('1724055770719.791')">Copy</button></pre>
+<pre class="highlight"><code class="language-javascript" id="1727248806738.5964">.<span class="hljs-property">at</span>[<span class="hljs-title class_">Breakpoint</span>]_[property]--[variant]</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806738.5964')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -327,8 +327,8 @@ export const _dotcss:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-css" id="1724055770719.463"><span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">20em</span>) <span class="hljs-keyword">and</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">40em</span>){
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1724055770719.463')">Copy</button></pre>
+<pre class="highlight"><code class="language-css" id="1727248806739.951"><span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">20em</span>) <span class="hljs-keyword">and</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">40em</span>){
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806739.951')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -336,7 +336,7 @@ export const _dotcss:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-css" id="1724055770720.3008"><span class="hljs-keyword">@media</span> (<span class="hljs-number">20em</span> &lt;= <span class="hljs-attribute">width</span> &lt;=<span class="hljs-string">&quot;40em){&quot;</span> }&lt; code&gt;&lt;/=&gt;</code><button class="btn-copy-code" onclick="copyToClipboard('1724055770720.3008')">Copy</button></pre>
+<pre class="highlight"><code class="language-css" id="1727248806739.8801"><span class="hljs-keyword">@media</span> (<span class="hljs-number">20em</span> &lt;= <span class="hljs-attribute">width</span> &lt;=<span class="hljs-string">&quot;40em){&quot;</span> }&lt; code&gt;&lt;/=&gt;</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806739.8801')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -344,10 +344,10 @@ export const _dotcss:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-css" id="1724055770721.1614"><span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">20em</span>), <span class="hljs-keyword">not</span> all <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-height</span>: <span class="hljs-number">40em</span>){
+<pre class="highlight"><code class="language-css" id="1727248806739.7742"><span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">20em</span>), <span class="hljs-keyword">not</span> all <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-height</span>: <span class="hljs-number">40em</span>){
    <span class="hljs-keyword">@media</span> <span class="hljs-keyword">not</span> all <span class="hljs-keyword">and</span> (<span class="hljs-attribute">pointer</span>:none){
    }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1724055770721.1614')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806739.7742')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -355,8 +355,8 @@ export const _dotcss:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-css" id="1724055770721.767"><span class="hljs-keyword">@media</span> ((<span class="hljs-attribute">width</span> &gt;= <span class="hljs-number">20em</span>) <span class="hljs-keyword">or</span> (<span class="hljs-attribute">height</span> &lt; <span class="hljs-number">40em</span>)) <span class="hljs-keyword">and</span> (<span class="hljs-keyword">not</span> (<span class="hljs-attribute">pointer</span>:none)){
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1724055770721.767')">Copy</button></pre>
+<pre class="highlight"><code class="language-css" id="1727248806740.2666"><span class="hljs-keyword">@media</span> ((<span class="hljs-attribute">width</span> &gt;= <span class="hljs-number">20em</span>) <span class="hljs-keyword">or</span> (<span class="hljs-attribute">height</span> &lt; <span class="hljs-number">40em</span>)) <span class="hljs-keyword">and</span> (<span class="hljs-keyword">not</span> (<span class="hljs-attribute">pointer</span>:none)){
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806740.2666')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -384,7 +384,7 @@ export const _dotcss:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-css" id="1724055770722.2332">&lt;link href=&quot;https://fonts.googleapis.com/css?family=Lato<span class="hljs-string">&quot; rel=&quot;</span>stylesheet<span class="hljs-string">&quot;&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1724055770722.2332')">Copy</button></pre>
+<pre class="highlight"><code class="language-css" id="1727248806740.9246">&lt;link href=&quot;https://fonts.googleapis.com/css?family=Lato<span class="hljs-string">&quot; rel=&quot;</span>stylesheet<span class="hljs-string">&quot;&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1727248806740.9246')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">

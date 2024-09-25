@@ -9,7 +9,7 @@ export const _android_first_app:string = `<div id="toc" class="toc">
 </ul>
 </li>
 <li><a class="link" fragment="#_fundamental_concepts">Fundamental concepts</a></li>
-<li><a class="link" fragment="#_flask_a_first_example"><span class="icon">[flask&#93;</span> : A first example</a></li>
+<li><a class="link" fragment="#_flask_a_first_example_with_jetpack_compose"><span class="icon">[flask&#93;</span> : A first example with Jetpack compose</a></li>
 <li><a class="link" fragment="#_most_important_files">Most important files</a>
 <ul class="sectlevel2">
 <li><a class="link" fragment="#_manifest_file">Manifest file</a></li>
@@ -41,12 +41,11 @@ If you know Java, everything will be easier with Kotlin.</p>
 </div>
 </div>
 <div class="paragraph">
-<p>We have a limited number of lesson hours.
-We will therefore quickly go over some concepts.
-If you want to go deeper, you will find more informations in <a href="android-first-app.html#_resources">resource chapter</a></p>
+<p>We have a limited number of lesson hours. We will therefore quickly go over some concepts.
+If you want to go deeper, you will find more informations on <a href="https://developer.android.com/" class="bare">https://developer.android.com/</a></p>
 </div>
 <div class="paragraph">
-<p>The aim is to be able to develop a simple application to call a REST API developed in Java (Spring) to display building rooms and manage windows in these rooms. It is necessary to ventilate as much as possible rooms, but as winter approaches it will become important to heat the buildings to ensure user comfort .Windows should be open during and after classes, closed at night or in case of heavy rain or severe cold.</p>
+<p>The aim is to be able to develop a simple application to call a REST API developed in Java (Spring) to display building rooms and manage windows in these rooms. It is necessary to ventilate as much as possible rooms, but as winter approaches it will become important to heat the buildings to ensure user comfort. Windows should be open during and after classes, closed at night or in case of heavy rain or severe cold.</p>
 </div>
 </div>
 </div>
@@ -64,8 +63,8 @@ You need to install it on your computer (installation requires 900MB) on <a href
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1724055769042.3545">cd ~/appli/android-studio/bin
-sh ./studio.sh</code><button class="btn-copy-code" onclick="copyToClipboard('1724055769042.3545')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1727248806259.1113">cd ~/appli/android-studio/bin
+sh ./studio.sh</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806259.1113')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -115,7 +114,7 @@ For that go on menu <strong>Tools @GT SDK manager</strong></p>
 </div>
 </div>
 <div class="paragraph">
-<p>When you develop in Android you should always do it on the last SDK version. Google requires you to always target this latest version when you publish apps to the official store. In our case we have to target the Tiramisu version (API level 35)</p>
+<p>When you develop in Android you should always do it on the last SDK version. Google requires you to always target this latest version when you publish apps to the official store. In our case we have to target the VanillaCream version (API level 35)</p>
 </div>
 </div>
 </div>
@@ -169,12 +168,20 @@ The system determines which layout to use based on the screen size of the curren
 </div>
 </div>
 <div class="paragraph">
-<p>Note that there is also another important concept in Android development with the <a href="https://developer.android.com/guide/fragments?hl=en">fragements</a>. A Fragment represents a reusable portion of your app&#8217;s UI. A fragment defines and manages its own layout, has its own lifecycle, and can handle its own input events. Fragments can&#8217;t live on their own. They must be hosted by an activity.</p>
+<p>Note that there is also another important concept in Android development with the <a href="https://developer.android.com/guide/fragments?hl=en">fragments</a>. A Fragment represents a reusable portion of your app&#8217;s UI. A fragment defines and manages its own layout, has its own lifecycle, and can handle its own input events. Fragments can&#8217;t live on their own. They must be hosted by an activity.</p>
+</div>
+<div class="paragraph">
+<p>Another remark, today you can always write your screen interface in an XML file. But you can also do this job in Kotlin with the Jetpack Compose library. This library is a modern toolkit for building native Android UI. It simplifies and accelerates UI development on Android.</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="../../img/training/android/firstapp/jetpack-compose.svg" alt="Jetpacj compose" width="60">
+</div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_flask_a_first_example"><span class="icon">[flask&#93;</span> : A first example</h2>
+<h2 id="_flask_a_first_example_with_jetpack_compose"><span class="icon">[flask&#93;</span> : A first example with Jetpack compose</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>In this lab, you will learn how create a new Android project with Android Studio</p>
@@ -195,15 +202,15 @@ The system determines which layout to use based on the screen size of the curren
 <li>
 <p>Android Studio will initialize a new project with an activity.
 It asks you to select a template for this activity.
-In the <strong>Select a Project Template window</strong>, select <strong>Empty Views Activity</strong> and click Next.</p>
+In the <strong>Select a Project Template window</strong>, select <strong>Empty Activity</strong> (in JetPack compose) and click Next.</p>
 <div class="imageblock text-center">
 <div class="content">
-<img src="../../img/training/android/firstapp/android-studio-select-type.png" alt="Select project type" width="700">
+<img src="../../img/training/android/firstapp/android-studio2.png" alt="Select project type" width="700">
 </div>
 </div>
 </li>
 <li>
-<p>In the <code>Configure your project</code> window, complete the following:</p>
+<p>In the next wizard window, you have to define the app name and the language</p>
 <div class="imageblock text-center">
 <div class="content">
 <img src="../../img/training/android/firstapp/android-studio-new.png" alt="New project" width="700">
@@ -244,7 +251,12 @@ You can click on <strong>Help me choose</strong> link to select the good API ver
 </ol>
 </div>
 <div class="paragraph">
-<p>After some processing time for code generation, the Android Studio main window appears.</p>
+<p>After some processing time for code generation, the project appears in Android Studio.</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="../../img/training/android/firstapp/android-studio3.png" alt="Follow wizard" width="1000">
+</div>
 </div>
 </div>
 </div>
@@ -259,21 +271,13 @@ You can click on <strong>Help me choose</strong> link to select the good API ver
 <p>First, be sure the Project window is open (select <strong>View @GT Tool Windows @GT Project</strong>) and the Android view is selected from the drop-down list at the top of that window.
 This Android view let see you the main files of your Android project</p>
 </div>
-<div class="imageblock text-center">
-<div class="content">
-<img src="../../img/training/android/firstapp/android-view.png" alt="Android view to select file" width="300">
-</div>
-</div>
-<div class="paragraph">
-<p>You can then see the following files:</p>
-</div>
 <div class="sect2">
 <h3 id="_manifest_file">Manifest file</h3>
 <div class="paragraph">
 <p><strong>File :</strong> <strong><em>app @GT manifests @GT AndroidManifest.xml</em></strong></p>
 </div>
 <div class="paragraph">
-<p>Manifest file is a kind of id card for your project.</p>
+<p>Manifest file is a kind of project id card.</p>
 </div>
 <div class="paragraph">
 <p>The manifest file describes essential information about your app to the Android build tools, the Android operating system, and Google Play.</p>
@@ -283,12 +287,20 @@ This Android view let see you the main files of your Android project</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" id="1724055769043.448"> <span class="hljs-tag">&lt;<span class="hljs-name">activity</span> <span class="hljs-attr">android:name</span>=<span class="hljs-string">&quot;.MainActivity&quot;</span> <span class="hljs-attr">android:exported</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">intent-filter</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">action</span> <span class="hljs-attr">android:name</span>=<span class="hljs-string">&quot;android.intent.action.MAIN&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">action</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">category</span> <span class="hljs-attr">android:name</span>=<span class="hljs-string">&quot;android.intent.category.LAUNCHER&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">category</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">intent-filter</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">activity</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1724055769043.448')">Copy</button></pre>
+<pre class="highlight"><code class="language-xml" id="1727248806266.813"><span class="hljs-meta">&lt;?xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;utf-8&quot;</span>?&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">manifest</span> <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">&quot;http://schemas.android.com/apk/res/android&quot;</span> <span class="hljs-attr">xmlns:tools</span>=<span class="hljs-string">&quot;http://schemas.android.com/tools&quot;</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">application</span> <span class="hljs-attr">android:allowbackup</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">android:dataextractionrules</span>=<span class="hljs-string">&quot;@xml/data_extraction_rules&quot;</span> <span class="hljs-attr">android:fullbackupcontent</span>=<span class="hljs-string">&quot;@xml/backup_rules&quot;</span> <span class="hljs-attr">android:icon</span>=<span class="hljs-string">&quot;@mipmap/ic_launcher&quot;</span> <span class="hljs-attr">android:label</span>=<span class="hljs-string">&quot;@string/app_name&quot;</span> <span class="hljs-attr">android:roundicon</span>=<span class="hljs-string">&quot;@mipmap/ic_launcher_round&quot;</span> <span class="hljs-attr">android:supportsrtl</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">android:theme</span>=<span class="hljs-string">&quot;@style/Theme.Automacorp&quot;</span> <span class="hljs-attr">tools:targetapi</span>=<span class="hljs-string">&quot;31&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">activity</span> <span class="hljs-attr">android:name</span>=<span class="hljs-string">&quot;.MainActivity&quot;</span> <span class="hljs-attr">android:exported</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">android:label</span>=<span class="hljs-string">&quot;@string/app_name&quot;</span> <span class="hljs-attr">android:theme</span>=<span class="hljs-string">&quot;@style/Theme.Automacorp&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">intent-filter</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">action</span> <span class="hljs-attr">android:name</span>=<span class="hljs-string">&quot;android.intent.action.MAIN&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">action</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">category</span> <span class="hljs-attr">android:name</span>=<span class="hljs-string">&quot;android.intent.category.LAUNCHER&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">category</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">intent-filter</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">activity</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">application</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">manifest</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1727248806266.813')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -322,6 +334,8 @@ This Android view let see you the main files of your Android project</p>
 <div class="paragraph">
 <p><strong>File :</strong> <strong><em>app @GT java @GT com.automacorp @GT MainActivity</em></strong></p>
 </div>
+<div class="sect3">
+<h4 id="_the_code_to_create_an_activity">The code to create an activity</h4>
 <div class="paragraph">
 <p>This is the main activity and it&#8217;s the entry point for your app.</p>
 </div>
@@ -337,20 +351,97 @@ This Android view let see you the main files of your Android project</p>
 </div>
 </div>
 <div class="paragraph">
-<p>For example in <code>MainActivity</code>, we declare the XML resource file where your view content is defined (<code>R.layout.activity_main</code>)</p>
+<p>For example in <code>MainActivity</code>, the view is associated in the <code>onCreate</code> function. In this example the work is done in the <code>setContent</code> block. This block is used to declare which Jetpack Compose components will be used to create the view. We load a custom type (ie <code>AutomacorpTheme</code>) and a <code>Scaffold</code> component. The <code>Scaffold</code> component is a layout component that provides a material design layout structure for the screen.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1724055769044.959"><span class="hljs-keyword">class</span> <span class="hljs-title class_">MainActivity</span> : <span class="hljs-type">AppCompatActivity</span>() {
-     <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(savedInstanceState: <span class="hljs-type">Bundle</span>?)</span></span> {
-          <span class="hljs-keyword">super</span>.onCreate(savedInstanceState)
-          setContentView(R.layout.activity_main)
-     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1724055769044.959')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1727248806266.1492"><span class="hljs-keyword">class</span> <span class="hljs-title class_">MainActivity</span> : <span class="hljs-type">ComponentActivity</span>() {
+    <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(savedInstanceState: <span class="hljs-type">Bundle</span>?)</span></span> {
+        <span class="hljs-keyword">super</span>.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        setContent {
+            AutomacorpTheme {
+                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding -&gt;
+                    Greeting(
+                        name = <span class="hljs-string">&quot;Android&quot;</span>,
+                        modifier = Modifier.padding(innerPadding)
+                    )
+                }
+            }
+        }
+    }
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806266.1492')">Copy</button></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_jetpack_component">Jetpack component</h4>
+<div class="paragraph">
+<p><code>Greeting</code> is a composable function. A function composable has the <code>@Composable</code> annotation.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-kotlin" id="1727248806266.5876"><span class="hljs-meta">@Composable</span>
+<span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">Greeting</span><span class="hljs-params">(name: <span class="hljs-type">String</span>, modifier: <span class="hljs-type">Modifier</span> = Modifier)</span></span> {
+    Text(text = <span class="hljs-string">&quot;Hello @dollar@name!&quot;</span>, modifier = modifier)
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806266.5876')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>NOTE : directory is named java to assure compatibility with old projects or libs written in Java but don&#8217;t be afraid we will use Kotlin :-)</p>
+<p>A few noteworthy things about this function:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The function is annotated with the @Composable annotation. All Composable functions must have this annotation; this annotation informs the Compose compiler that this function is intended to convert data into UI.</p>
+</li>
+<li>
+<p>The function takes in data. Composable functions can accept parameters, which allow the app logic to describe the UI. In this case, our widget accepts a String so it can greet the user by name.</p>
+</li>
+<li>
+<p>The function displays text in the UI. It does so by calling the Text() composable function, which actually creates the text UI element. Composable functions emit UI hierarchy by calling other composable functions.</p>
+</li>
+<li>
+<p>The function doesn&#8217;t return anything. Compose functions that emit UI do not need to return anything, because they describe the desired screen state instead of constructing UI widgets.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>This function is fast, idempotent, and free of side-effects. The function describes the UI without any side-effects, such as modifying properties or global variables.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_preview_the_component">Preview the component</h4>
+<div class="paragraph">
+<p>To test your app, you can run it on your phone or on an emulator. We will see that in the next chapter.</p>
+</div>
+<div class="paragraph">
+<p>But you can write a simple function to be able to test a composable alone. The @Preview annotation lets you preview your composable functions within Android Studio without having to build and install the app to an Android device or emulator. The annotation must be used on a composable function that does not take in parameters.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-kotlin" id="1727248806267.4285"><span class="hljs-meta">@Preview(showBackground = true)</span>
+<span class="hljs-meta">@Composable</span>
+<span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">GreetingPreview</span><span class="hljs-params">()</span></span> {
+    AutomacorpTheme {
+        Greeting(<span class="hljs-string">&quot;Android&quot;</span>)
+    }
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806267.4285')">Copy</button></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can choose to display the design view at the right of your code editor with the button at the top right of the editor.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/training/android/firstapp/compoasable_preview.png" alt="Composable preview" width="800">
+</div>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../../img/training/android/firstapp/composable_view_code.png" alt="Code" width="30"></span> Code View
+<span class="image"><img src="../../img/training/android/firstapp/composable_view_code_design.png" alt="Code and design" width="30"></span> Code And Design View
+<span class="image"><img src="../../img/training/android/firstapp/composable_view_design.png" alt="Design" width="30"></span> Design View</p>
+</div>
 </div>
 </div>
 <div class="sect2">
@@ -371,31 +462,6 @@ This Android view let see you the main files of your Android project</p>
 </div>
 <div class="paragraph">
 <p>For example, you might want to provide a different UI layout depending on the screen size or different strings depending on user language. In this case you will have a default file <code>app/src/main/res/values/string.xml</code> and a specific file for France <code>app/src/main/res/values-fr/string.xml</code></p>
-</div>
-<div class="paragraph">
-<p><strong>File :</strong> <strong><em>app @GT res @GT layout @GT activity_main.xml</em></strong></p>
-</div>
-<div class="paragraph">
-<p>This XML file defines the layout for the activity&#8217;s user interface (UI).</p>
-</div>
-<div class="paragraph">
-<p>Defining the content of a view is like placing widgets (View) in layouts (ViewGroup)</p>
-</div>
-<div class="paragraph">
-<p>In the following example, we use a constraint layout. It contains a TextView element with the text "Hello, World!"</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-xml" id="1724055769046.7256"><span class="hljs-meta">&lt;?xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;utf-8&quot;</span>?&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">androidx.constraintlayout.widget.ConstraintLayout</span> <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">&quot;http://schemas.android.com/apk/res/android&quot;</span> <span class="hljs-attr">xmlns:app</span>=<span class="hljs-string">&quot;http://schemas.android.com/apk/res-auto&quot;</span> <span class="hljs-attr">xmlns:tools</span>=<span class="hljs-string">&quot;http://schemas.android.com/tools&quot;</span> <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span> <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;match_parent&quot;</span> <span class="hljs-attr">tools:context</span>=<span class="hljs-string">&quot;.MainActivity&quot;</span>&gt;</span>
-
-    <span class="hljs-tag">&lt;<span class="hljs-name">TextView</span> <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span> <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span> <span class="hljs-attr">android:text</span>=<span class="hljs-string">&quot;Hello World!&quot;</span> <span class="hljs-attr">app:layout_constraintbottom_tobottomof</span>=<span class="hljs-string">&quot;parent&quot;</span> <span class="hljs-attr">app:layout_constraintleft_toleftof</span>=<span class="hljs-string">&quot;parent&quot;</span> <span class="hljs-attr">app:layout_constraintright_torightof</span>=<span class="hljs-string">&quot;parent&quot;</span> <span class="hljs-attr">app:layout_constrainttop_totopof</span>=<span class="hljs-string">&quot;parent&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">TextView</span>&gt;</span>
-
-<span class="hljs-tag">&lt;/<span class="hljs-name">androidx.constraintlayout.widget.ConstraintLayout</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1724055769046.7256')">Copy</button></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>We will see later how to update or create a new layout and include inside widgets</p>
 </div>
 </div>
 <div class="sect2">
@@ -440,18 +506,21 @@ This Android view let see you the main files of your Android project</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1724055769047.1548">android {
-   namespace = <span class="hljs-string">&quot;com.automacorp&quot;</span>
+<pre class="highlight"><code class="language-kotlin" id="1727248806267.999">android {
+    namespace = <span class="hljs-string">&quot;com.automacorp&quot;</span>
     compileSdk = <span class="hljs-number">34</span>
 
     defaultConfig {
         applicationId = <span class="hljs-string">&quot;com.automacorp&quot;</span>
-        minSdk = <span class="hljs-number">29</span>
+        minSdk = <span class="hljs-number">31</span>
         targetSdk = <span class="hljs-number">34</span>
         versionCode = <span class="hljs-number">1</span>
         versionName = <span class="hljs-string">&quot;1.0&quot;</span>
 
         testInstrumentationRunner = <span class="hljs-string">&quot;androidx.test.runner.AndroidJUnitRunner&quot;</span>
+        vectorDrawables {
+            useSupportLibrary = <span class="hljs-literal">true</span>
+        }
     }
 
     buildTypes {
@@ -463,15 +532,25 @@ This Android view let see you the main files of your Android project</p>
             )
         }
     }
-
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
     }
     kotlinOptions {
-        jvmTarget = <span class="hljs-string">&#x27;1.8&#x27;</span>
+        jvmTarget = <span class="hljs-string">&quot;1.8&quot;</span>
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1724055769047.1548')">Copy</button></pre>
+    buildFeatures {
+        compose = <span class="hljs-literal">true</span>
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion = <span class="hljs-string">&quot;1.5.1&quot;</span>
+    }
+    packaging {
+        resources {
+            excludes += <span class="hljs-string">&quot;/META-INF/{AL2.0,LGPL2.1}&quot;</span>
+        }
+    }
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806267.999')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -526,30 +605,49 @@ This Android view let see you the main files of your Android project</p>
 <div class="ulist">
 <ul>
 <li>
-<p>On your laptop go in Android Studio running devices select and choose <strong>Pair devices using Wifi</strong></p>
+<p>On Android Studio, open the running devices window (with the button on the right of the UI).</p>
 </li>
 </ul>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../../img/training/android/android_pair_wifi1.png" alt="Pair devices using Wifi" width="400">
-</div>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../../img/training/android/android_pair_wifi3.png" alt="Pair devices using Wifi" width="500">
+<img src="../../img/training/android/firstapp/android_pair_wifi1.png" alt="Pair devices using Wifi" width="800">
 </div>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>On your phone, in <strong>Developer options</strong>,  select <strong>Wireless debugging</strong> and <strong>Pair using QR code</strong> and scan the QR code. If everything is OK you should see</p>
+<p>Select in the toolbar the button <strong>Pair devices using Wifi</strong> <span class="image"><img src="../../img/training/android/firstapp/android_pair_wifi_button.png" alt="Pair devices using Wifi" width="30"></span></p>
 </li>
 </ul>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../../img/training/android/android_pair_wifi2.png" alt="Pair devices using Wifi" width="500">
+<img src="../../img/training/android/firstapp/android_pair_wifi3.png" alt="Pair devices using Wifi" width="500">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>On your phone, in <strong>Developer options</strong>,  select <strong>Wireless debugging</strong> and <strong>Pair using QR code</strong> and scan the QR code. If everything is OK you should see. <strong>To work you should set the same Wifi on your laptop and on your mobile</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/training/android/firstapp/adb_wifi-wireless_debugging.png" alt="Pair devices using Wifi" width="300">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>When you are connected you should see your device in the running devices window</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../img/training/android/firstapp/android_pair_wifi2.png" alt="Pair devices using Wifi" width="500">
 </div>
 </div>
 <div class="paragraph">
@@ -566,16 +664,16 @@ This Android view let see you the main files of your Android project</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../../img/training/android/android_device_manager.png" alt="Android virtual device manager" width="800">
+<img src="../../img/training/android/firstapp/android_pair_wifi1.png" alt="Pair devices using Wifi" width="800">
 </div>
 </div>
 <div class="paragraph">
-<p>If you click on <strong>Create Virtual Device</strong>, at the bottom of the AVD Manager dialog you will be able to create a device. You can choose device type (TV, phone, auto&#8230;&#8203;), its configuration (OS version, density, size&#8230;&#8203;)
+<p>If you click on the + button, at the top of the AVD Manager dialog you will be able to create a device. You can choose device type (TV, phone, auto&#8230;&#8203;), its configuration (OS version, density, size&#8230;&#8203;)
 The Select Hardware page appears.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../../img/training/android/android_device_manager2.png" alt="Create virtual device manager" width="700">
+<img src="../../img/training/android/firstapp/android_device_manager2.png" alt="Create virtual device manager" width="700">
 </div>
 </div>
 <div class="paragraph">
@@ -602,7 +700,7 @@ The Select Hardware page appears.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../../img/training/android/android-run.png" alt="Run application" width="500">
+<img src="../../img/training/android/firstapp/android-run.png" alt="Run application" width="500">
 </div>
 </div>
 <div class="paragraph">
@@ -614,19 +712,11 @@ The Select Hardware page appears.</p>
 </div>
 </div>
 <div class="paragraph">
-<p>To analyze errors you can open the run console on the bottom. This window contains messages send when app is launched with Gradle</p>
+<p>To analyze errors you can open the Logcat view to see logs send by your device or the emulated device</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../../img/training/android/android-error1.png" alt="Run view">
-</div>
-</div>
-<div class="paragraph">
-<p>You also can open Logcat view to see logs send by your device or the emulated device</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../../img/training/android/android-error2.png" alt="Logcat view">
+<img src="../../img/training/android/firstapp/android_error.png" alt="Logcat view">
 </div>
 </div>
 </div>

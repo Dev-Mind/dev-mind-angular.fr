@@ -44,7 +44,7 @@ export const _headlesss_testing:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1724055770034.3865">yum install -y Xvfb libXfont Xorg firefox</code><button class="btn-copy-code" onclick="copyToClipboard('1724055770034.3865')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1727248806877.6362">yum install -y Xvfb libXfont Xorg firefox</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806877.6362')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -52,7 +52,7 @@ export const _headlesss_testing:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1724055770035.3752">Error: no display specified</code><button class="btn-copy-code" onclick="copyToClipboard('1724055770035.3752')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1727248806877.4263">Error: no display specified</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806877.4263')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -60,7 +60,7 @@ export const _headlesss_testing:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1724055770035.8833">xvfb-run -a firefox</code><button class="btn-copy-code" onclick="copyToClipboard('1724055770035.8833')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1727248806877.6772">xvfb-run -a firefox</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806877.6772')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -68,11 +68,11 @@ export const _headlesss_testing:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1724055770035.1755">gulp unit
+<pre class="highlight"><code class="language-java" id="1727248806877.129">gulp unit
 ⇒ error
 
 xvfb-run -a gulp unit
-⇒ OK</code><button class="btn-copy-code" onclick="copyToClipboard('1724055770035.1755')">Copy</button></pre>
+⇒ OK</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806877.129')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -80,11 +80,11 @@ xvfb-run -a gulp unit
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1724055770035.3303">gulp e2e
+<pre class="highlight"><code class="language-java" id="1727248806877.968">gulp e2e
 ⇒ error
 
 xvfb-run -a gulp e2e
-⇒ OK</code><button class="btn-copy-code" onclick="copyToClipboard('1724055770035.3303')">Copy</button></pre>
+⇒ OK</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806877.968')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -111,7 +111,7 @@ xvfb-run -a gulp e2e
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1724055770035.624">Xvfb :<span class="hljs-number">1</span> -screen <span class="hljs-number">0</span> 1600x1200x32</code><button class="btn-copy-code" onclick="copyToClipboard('1724055770035.624')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1727248806878.4468">Xvfb :<span class="hljs-number">1</span> -screen <span class="hljs-number">0</span> 1600x1200x32</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806878.4468')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -119,7 +119,7 @@ xvfb-run -a gulp e2e
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1724055770035.2854">Xvfb :<span class="hljs-number">45</span> -screen <span class="hljs-number">1</span> 1600x1200x16</code><button class="btn-copy-code" onclick="copyToClipboard('1724055770035.2854')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1727248806878.6025">Xvfb :<span class="hljs-number">45</span> -screen <span class="hljs-number">1</span> 1600x1200x16</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806878.6025')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -130,7 +130,7 @@ xvfb-run -a gulp e2e
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1724055770035.713">xvfb-run -a --server-args=<span class="hljs-string">&quot;-screen 0 1024x768x24&quot;</span> gulp e2e</code><button class="btn-copy-code" onclick="copyToClipboard('1724055770035.713')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1727248806878.2688">xvfb-run -a --server-args=<span class="hljs-string">&quot;-screen 0 1024x768x24&quot;</span> gulp e2e</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806878.2688')">Copy</button></pre>
 </div>
 </div>
 </div>

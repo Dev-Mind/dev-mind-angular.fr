@@ -64,7 +64,11 @@ export class AsciiDocViewerComponent implements OnInit {
       .replaceAll('<span class="hljs-meta">@backtick</span><span class="hljs-meta">@', '`')
       .replaceAll('<span class="hljs-meta">@dollar</span>@', '$')
       .replaceAll('<span class="hljs-symbol">&amp;lt;</span>', '&lt;')
-      .replaceAll('<span class="hljs-symbol">&amp;gt;</span>', '&gt;');
+      .replaceAll('<span class="hljs-symbol">&amp;gt;</span>', '&gt;')
+      .replaceAll('@</span><span class="hljs-symbol">LT', '&lt;')
+      .replaceAll('@</span><span class="hljs-symbol">GT', '&gt;')
+      .replaceAll('@</span>GT', '&gt;')
+    ;
 
     this.content = this.domSanitizer.bypassSecurityTrustHtml(contentWithoutSpecialChars);
   }
@@ -74,6 +78,7 @@ export class AsciiDocViewerComponent implements OnInit {
     const attributes: NamedNodeMap = target.attributes;
     const redirectUrl = attributes.getNamedItem('fragment')?.value;
     if (redirectUrl) {
+      console.log('Go on', redirectUrl)
       document.querySelector(redirectUrl)?.scrollIntoView({block: "center"});
     }
   }

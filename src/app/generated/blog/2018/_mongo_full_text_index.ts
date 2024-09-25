@@ -132,9 +132,9 @@ export const _mongo_full_text_index:string = `<div class="sect1">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1724055770328.3206">compile(<span class="hljs-string">&quot;org.springframework.boot:spring-boot-starter-webflux&quot;</span>)
+<pre class="highlight"><code class="language-java" id="1727248807046.2231">compile(<span class="hljs-string">&quot;org.springframework.boot:spring-boot-starter-webflux&quot;</span>)
 compile(<span class="hljs-string">&quot;org.springframework.boot:spring-boot-starter-data-mongodb-reactive&quot;</span>)
-runtime(<span class="hljs-string">&quot;de.flapdoodle.embed:de.flapdoodle.embed.mongo&quot;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1724055770328.3206')">Copy</button></pre>
+runtime(<span class="hljs-string">&quot;de.flapdoodle.embed:de.flapdoodle.embed.mongo&quot;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1727248807046.2231')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -145,7 +145,7 @@ runtime(<span class="hljs-string">&quot;de.flapdoodle.embed:de.flapdoodle.embed.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1724055770329.009"><span class="hljs-meta">@Document</span>
+<pre class="highlight"><code class="language-kotlin" id="1727248807046.4197"><span class="hljs-meta">@Document</span>
 <span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Talk</span>(
         <span class="hljs-keyword">val</span> format: TalkFormat,
         <span class="hljs-meta">@TextIndexed(weight = 10F)</span> <span class="hljs-keyword">val</span> title: String,
@@ -156,7 +156,7 @@ runtime(<span class="hljs-string">&quot;de.flapdoodle.embed:de.flapdoodle.embed.
         <span class="hljs-keyword">val</span> start: LocalDateTime? = <span class="hljs-literal">null</span>,
         <span class="hljs-keyword">val</span> end: LocalDateTime? = <span class="hljs-literal">null</span>,
         <span class="hljs-meta">@Id</span> <span class="hljs-keyword">val</span> id: String? = <span class="hljs-literal">null</span>
-)</code><button class="btn-copy-code" onclick="copyToClipboard('1724055770329.009')">Copy</button></pre>
+)</code><button class="btn-copy-code" onclick="copyToClipboard('1727248807046.4197')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -167,7 +167,7 @@ runtime(<span class="hljs-string">&quot;de.flapdoodle.embed:de.flapdoodle.embed.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1724055770330.835"><span class="hljs-meta">@Repository</span>
+<pre class="highlight"><code class="language-kotlin" id="1727248807047.1245"><span class="hljs-meta">@Repository</span>
 <span class="hljs-keyword">class</span> <span class="hljs-title class_">TalkRepository</span>(<span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> template: ReactiveMongoTemplate) {
 
     <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">findOne</span><span class="hljs-params">(id: <span class="hljs-type">String</span>)</span></span> = template.<span class="hljs-symbol">findById@</span><span class="hljs-symbol">LTTalk@</span>GT(id)
@@ -179,7 +179,7 @@ runtime(<span class="hljs-string">&quot;de.flapdoodle.embed:de.flapdoodle.embed.
         <span class="hljs-keyword">val</span> query = TextQuery(textCriteria).sortByScore()
         <span class="hljs-keyword">return</span> template.find(query)
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1724055770330.835')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1727248807047.1245')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
