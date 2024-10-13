@@ -222,7 +222,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1727248806746.2712">buildscript {
+<pre class="highlight"><code class="language-kotlin" id="1728847001526.1375">buildscript {
     ext {
         nodePluginVersion = <span class="hljs-string">'1.0.1'</span>
     }
@@ -236,7 +236,7 @@
     dependencies {
         classpath <span class="hljs-string">"com.moowork.gradle:gradle-node-plugin:${nodePluginVersion}"</span>
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806746.2712')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001526.1375')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -244,7 +244,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-groovy" id="1727248806746.5984">buildscript {
+<pre class="highlight"><code class="language-groovy" id="1728847001526.5708">buildscript {
     ext {
         nodePluginVersion = <span class="hljs-string">'1.0.1'</span>
     }
@@ -258,7 +258,7 @@
     dependencies {
         classpath <span class="hljs-string">"com.moowork.gradle:gradle-node-plugin:${nodePluginVersion}"</span>
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806746.5984')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001526.5708')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -269,9 +269,9 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-groovy" id="1727248806747.5696">apply <span class="hljs-attr">plugin:</span> <span class="hljs-string">'idea'</span>
+<pre class="highlight"><code class="language-groovy" id="1728847001526.465">apply <span class="hljs-attr">plugin:</span> <span class="hljs-string">'idea'</span>
 apply <span class="hljs-attr">plugin:</span> <span class="hljs-string">'com.moowork.node'</span>
-apply <span class="hljs-attr">plugin:</span> <span class="hljs-string">'com.moowork.gulp'</span></code><button class="btn-copy-code" onclick="copyToClipboard('1727248806747.5696')">Copy</button></pre>
+apply <span class="hljs-attr">plugin:</span> <span class="hljs-string">'com.moowork.gulp'</span></code><button class="btn-copy-code" onclick="copyToClipboard('1728847001526.465')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -279,13 +279,13 @@ apply <span class="hljs-attr">plugin:</span> <span class="hljs-string">'com.moow
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1727248806747.0183">apply {
+<pre class="highlight"><code class="language-kotlin" id="1728847001526.4268">apply {
     plugin(<span class="hljs-string">"idea"</span>)
     plugin(<span class="hljs-string">"kotlin"</span>)
     plugin(<span class="hljs-string">"kotlin-noarg"</span>)
     plugin(<span class="hljs-string">"com.moowork.node"</span>)
     plugin(<span class="hljs-string">"com.moowork.gulp"</span>)
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806747.0183')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001526.4268')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -301,10 +301,10 @@ apply <span class="hljs-attr">plugin:</span> <span class="hljs-string">'com.moow
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-groovy" id="1727248806747.9016">node {
+<pre class="highlight"><code class="language-groovy" id="1728847001526.7864">node {
     version = <span class="hljs-string">'6.9.2'</span>
     download = <span class="hljs-literal">true</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806747.9016')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001526.7864')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -312,12 +312,12 @@ apply <span class="hljs-attr">plugin:</span> <span class="hljs-string">'com.moow
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1727248806747.0554"><span class="hljs-keyword">import</span> com.moowork.gradle.node.NodeExtension
+<pre class="highlight"><code class="language-kotlin" id="1728847001526.2644"><span class="hljs-keyword">import</span> com.moowork.gradle.node.NodeExtension
 
 <span class="hljs-symbol">configure&lt;NodeExtension&gt; {
     version = <span class="hljs-string">"6.9.2"</span>
     download = <span class="hljs-literal">true</span>
-}</span></code><button class="btn-copy-code" onclick="copyToClipboard('1727248806747.0554')">Copy</button></pre>
+}</span></code><button class="btn-copy-code" onclick="copyToClipboard('1728847001526.2644')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -333,14 +333,14 @@ apply <span class="hljs-attr">plugin:</span> <span class="hljs-string">'com.moow
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-groovy" id="1727248806747.8132">task gulpBuild(<span class="hljs-attr">type:</span> GulpTask, <span class="hljs-attr">dependsOn:</span> yarnInstall) {
+<pre class="highlight"><code class="language-groovy" id="1728847001526.916">task gulpBuild(<span class="hljs-attr">type:</span> GulpTask, <span class="hljs-attr">dependsOn:</span> yarnInstall) {
   inputs.dir <span class="hljs-string">'src/main/sass'</span>  inputs.files(npmInstall.outputs)
   outputs.dir <span class="hljs-string">"src/main/static/css"</span>  args = [<span class="hljs-string">"default"</span>]
 }
 
 processResources {
   dependsOn gulpBuild
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806747.8132')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001526.916')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -348,7 +348,7 @@ processResources {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1727248806747.9673"><span class="hljs-keyword">import</span> com.moowork.gradle.gulp.GulpTask
+<pre class="highlight"><code class="language-kotlin" id="1728847001527.735"><span class="hljs-keyword">import</span> com.moowork.gradle.gulp.GulpTask
 <span class="hljs-keyword">import</span> com.moowork.gradle.node.yarn.YarnInstallTask
 
 <span class="hljs-symbol">task&lt;GulpTask&gt;(<span class="hljs-string">"gulpBuild"</span>) {
@@ -359,7 +359,7 @@ processResources {
   args = listOf(<span class="hljs-string">"default"</span>)
 }
 
-tasks.getByName(<span class="hljs-string">"processResources"</span>).dependsOn(<span class="hljs-string">"gulpBuild"</span>)</span></code><button class="btn-copy-code" onclick="copyToClipboard('1727248806747.9673')">Copy</button></pre>
+tasks.getByName(<span class="hljs-string">"processResources"</span>).dependsOn(<span class="hljs-string">"gulpBuild"</span>)</span></code><button class="btn-copy-code" onclick="copyToClipboard('1728847001527.735')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -369,8 +369,8 @@ tasks.getByName(<span class="hljs-string">"processResources"</span>).dependsOn(<
 <p>Nous verrons dans les mois qui viennent si Kotlin prend la main sur Groovy dans les scripts de configuration Gradle. Pour le moment le manque de documentation sur Gradle Script Kotlin est vraiment problématique.</p>
 </div>
 </div>
-</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 25/09/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
+</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 13/10/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
 
-<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-TXEFGQ4F.js" type="module"></script>
+<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-T64CL6AM.js" type="module"></script>
 
 <script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t1"},"c":{"7":[{"i":"t1","r":1,"x":3}]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>

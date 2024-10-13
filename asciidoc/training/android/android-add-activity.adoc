@@ -213,53 +213,34 @@ data class WindowDto(
 [source,kotlin,subs="specialchars"]
 ----
 object RoomService {
-    val ROOMS_NAME = listOf("Room EF 6.10", "Hall", "Room EF 7.10")
+    val ROOM_KIND: List<String> = listOf("Room", "Meeting", "Laboratory", "Office", "Boardroom")
+    val ROOM_NUMBER: List<Char> = ('A'..'Z').toList()
+    val WINDOW_KIND: List<String> = listOf("Sliding", "Bay", "Casement", "Hung", "Fixed")
 
-    // Fake windows
-    val WINDOWS: List<WindowDto> = listOf(
-        WindowDto(
-            id = 1,
-            name = "Entry Window",
-            roomId = 1,
-            roomName = ROOMS_NAME[0],
-            windowStatus = WindowStatus.CLOSED
-        ),
-        WindowDto(
-            id = 2,
-            name = "Back Window",
-            roomId = 1,
-            roomName = ROOMS_NAME[0],
-            windowStatus = WindowStatus.CLOSED
-        ),
-        WindowDto(
-            id = 3,
-            name = "Sliding door",
-            roomId = 2,
-            roomName = ROOMS_NAME[1],
-            windowStatus = WindowStatus.OPENED
-        ),
-        WindowDto(
-            id = 4,
-            name = "Window 1",
-            roomId = 3,
-            roomName = ROOMS_NAME[2],
-            windowStatus = WindowStatus.OPENED
-        ),
-        WindowDto(
-            id = 5,
-            name = "Window 2",
-            roomId = 3,
-            roomName = ROOMS_NAME[2],
-            windowStatus = WindowStatus.CLOSED
+    fun generateWindow(id: Long, roomId: Long, roomName: String): WindowDto {
+        return WindowDto(
+            id = id,
+            name = "${ WINDOW_KIND.random()} Window $id",
+            roomName = roomName,
+            roomId = roomId,
+            windowStatus = WindowStatus.values().random()
         )
-    )
+    }
 
-    // Fake rooms
-    val ROOMS: MutableList<RoomDto> = mutableListOf(
-        RoomDto(1, "Room EF 6.10", 18.2, 20.0, WINDOWS.filter { it.roomId == 1L }),
-        RoomDto(2, "Hall", 18.2, 18.0, WINDOWS.filter { it.roomId == 2L }),
-        RoomDto(3, "Room EF 7.10", 21.2, 20.0, WINDOWS.filter { it.roomId == 3L })
-    )
+    fun generateRoom(id: Long): RoomDto {
+        val roomName = "${ROOM_NUMBER.random()}$id ${ROOM_KIND.random()}"
+        val windows = (1..(1..6).random()).map { generateWindow(it.toLong(), id, roomName) }
+        return RoomDto(
+            id = id,
+            name = roomName,
+            currentTemperature = (15..30).random().toDouble(),
+            targetTemperature = (15..22).random().toDouble(),
+            windows = windows
+        )
+    }
+
+    // Create 50 rooms
+    val ROOMS = (1..50).map { generateRoom(it.toLong()) }.toMutableList()
 
     fun findAll(): List<RoomDto> {
         // TODO return all rooms sorted by name

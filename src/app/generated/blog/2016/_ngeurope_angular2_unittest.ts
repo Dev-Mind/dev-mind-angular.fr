@@ -24,7 +24,7 @@ export const _ngeurope_angular2_unittest:string = `<div class="sect1">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1727248806882.4717"><span class="hljs-title function_">it</span>(<span class="hljs-string">&#x27;displays user details on click&#x27;</span>, <span class="hljs-title function_">async</span>(<span class="hljs-function">() =&gt;</span> {
+<pre class="highlight"><code class="language-javascript" id="1728847001626.5374"><span class="hljs-title function_">it</span>(<span class="hljs-string">&#x27;displays user details on click&#x27;</span>, <span class="hljs-title function_">async</span>(<span class="hljs-function">() =&gt;</span> {
   ...
   <span class="hljs-comment">// Locate the fetch button.  let debugFetchButton = fixture.debugElement.query(By.css(&#x27;button&#x27;));</span>
   <span class="hljs-title function_">expect</span>(debugFetchButton).<span class="hljs-property">not</span>.<span class="hljs-title function_">toBe</span>(<span class="hljs-literal">null</span>);
@@ -39,7 +39,7 @@ export const _ngeurope_angular2_unittest:string = `<div class="sect1">
 
     <span class="hljs-comment">// Check that the user list is displayed.    ...</span>
   });
-}));</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806882.4717')">Copy</button></pre>
+}));</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001626.5374')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">

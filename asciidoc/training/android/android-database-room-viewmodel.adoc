@@ -2,17 +2,17 @@
 :description: You'll learn about the fundamentals of using Room, including the database class, the DAO, entities, and view models.
 :keywords: Android, database, room
 :author: Guillaume EHRET - Dev-Mind
-:revdate: 2023-10-08
+:revdate: 2024-08-14
 :category: Android, Kotlin
 :teaser:  You'll learn about the fundamentals of using Room, including the database class, the DAO, entities, and view models.
-:imgteaser: ../../img/training/android/android-use-room.png
+:imgteaser: ../../img/training/android/database/database.png
 :toc:
 :icons: font
 
 In this lesson, we will learn how to use a database in our application.
 For the moment we need an Internet connection to display data on our screens, but we want to be able to display something when a user is offline or when the remote API is not able to answer.
 
-image::../../img/training/android/android-use-room.png[width=800,align="center"]
+image::../../img/training/android/database/database.png[width=800,align="center"]
 
 == Jetpack Room
 

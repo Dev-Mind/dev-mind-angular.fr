@@ -6,32 +6,32 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
       <loc>https://dev-mind.fr/</loc>
-      <lastmod>Wed, 25 Sep 2024 07:20:07 GMT</lastmod>
+      <lastmod>Sun, 13 Oct 2024 19:16:41 GMT</lastmod>
       <priority>1.00</priority>
     </url>
     <url>
       <loc>https://dev-mind.fr/blog.html</loc>
-      <lastmod>Wed, 25 Sep 2024 07:20:07 GMT</lastmod>
+      <lastmod>Sun, 13 Oct 2024 19:16:41 GMT</lastmod>
       <priority>0.90</priority>
     </url>
     <url>
       <loc>https://dev-mind.fr/blog_archive.html</loc>
-      <lastmod>Wed, 25 Sep 2024 07:20:07 GMT</lastmod>
+      <lastmod>Sun, 13 Oct 2024 19:16:41 GMT</lastmod>
       <priority>0.90</priority>
     </url>
     <url>
       <loc>https://dev-mind.fr/formations.html</loc>
-      <lastmod>Wed, 25 Sep 2024 07:20:07 GMT</lastmod>
+      <lastmod>Sun, 13 Oct 2024 19:16:41 GMT</lastmod>
       <priority>0.90</priority>
     </url>
     <url>
       <loc>https://dev-mind.fr/training/trainings.html</loc>
-      <lastmod>Wed, 25 Sep 2024 07:20:07 GMT</lastmod>
+      <lastmod>Sun, 13 Oct 2024 19:16:41 GMT</lastmod>
       <priority>0.90</priority>
     </url>
     <url>
       <loc>https://dev-mind.fr/experience.html</loc>
-      <lastmod>Wed, 25 Sep 2024 07:20:07 GMT</lastmod>
+      <lastmod>Sun, 13 Oct 2024 19:16:41 GMT</lastmod>
       <priority>0.70</priority>
     </url>
     

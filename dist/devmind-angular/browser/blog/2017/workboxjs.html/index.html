@@ -251,7 +251,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1727248806837.3672">gulp.<span class="hljs-title function_">task</span>(<span class="hljs-string">'bundle-sw'</span>, <span class="hljs-function">() =&gt;</span> {
+<pre class="highlight"><code class="language-javascript" id="1728847001599.0718">gulp.<span class="hljs-title function_">task</span>(<span class="hljs-string">'bundle-sw'</span>, <span class="hljs-function">() =&gt;</span> {
 
   <span class="hljs-keyword">return</span> wbBuild.<span class="hljs-title function_">generateSW</span>({
     <span class="hljs-attr">cacheId</span>: <span class="hljs-string">'dev-mind'</span>,
@@ -266,7 +266,7 @@
     .<span class="hljs-title function_">catch</span>(<span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
       <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'[ERROR] This happened: '</span> + err);
     });
-});</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806837.3672')">Copy</button></pre>
+});</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001599.0718')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -274,7 +274,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1727248806839.8032">importScripts(<span class="hljs-string">'workbox-sw.prod.v1.0.1.js'</span>);
+<pre class="highlight"><code class="language-javascript" id="1728847001600.8542">importScripts(<span class="hljs-string">'workbox-sw.prod.v1.0.1.js'</span>);
 
 <span class="hljs-keyword">const</span> fileManifest = [
   {
@@ -288,7 +288,7 @@
   <span class="hljs-string">"cacheId"</span>: <span class="hljs-string">"dev-mind"</span>,
   <span class="hljs-string">"clientsClaim"</span>: <span class="hljs-literal">true</span>
 });
-workboxSW.<span class="hljs-title function_">precache</span>(fileManifest);</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806839.8032')">Copy</button></pre>
+workboxSW.<span class="hljs-title function_">precache</span>(fileManifest);</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001600.8542')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -348,7 +348,7 @@ workboxSW.<span class="hljs-title function_">precache</span>(fileManifest);</cod
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1727248806842.4924"> <span class="hljs-keyword">const</span> assetRoute = <span class="hljs-keyword">new</span> <span class="hljs-title class_">RegExpRoute</span>({
+<pre class="highlight"><code class="language-javascript" id="1728847001601.981"> <span class="hljs-keyword">const</span> assetRoute = <span class="hljs-keyword">new</span> <span class="hljs-title class_">RegExpRoute</span>({
    <span class="hljs-attr">regExp</span>: <span class="hljs-regexp">/assets/</span>,
    <span class="hljs-attr">handler</span>: <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">runtimeCaching</span>.<span class="hljs-title class_">StaleWhileRevalidate</span>(),
  });
@@ -364,7 +364,7 @@ workboxSW.<span class="hljs-title function_">precache</span>(fileManifest);</cod
  router.<span class="hljs-title function_">registerRoutes</span>({<span class="hljs-attr">routes</span>: [assetRoute, imageRoute, expressRoute]});
  router.<span class="hljs-title function_">setDefaultHandler</span>({
    <span class="hljs-attr">handler</span>: <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">runtimeCaching</span>.<span class="hljs-title class_">NetworkFirst</span>(),
- });</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806842.4924')">Copy</button></pre>
+ });</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001601.981')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -419,7 +419,7 @@ workboxSW.<span class="hljs-title function_">precache</span>(fileManifest);</cod
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1727248806843.2944"><span class="hljs-keyword">const</span> requestWrapper = <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">runtimeCaching</span>.<span class="hljs-title class_">RequestWrapper</span>({
+<pre class="highlight"><code class="language-javascript" id="1728847001603.6545"><span class="hljs-keyword">const</span> requestWrapper = <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">runtimeCaching</span>.<span class="hljs-title class_">RequestWrapper</span>({
   <span class="hljs-attr">cacheName</span>: <span class="hljs-string">'runtime-cache'</span>,
   <span class="hljs-attr">plugins</span>: [
     <span class="hljs-comment">// The cache size will be capped at 10 entries.</span>
@@ -431,7 +431,7 @@ workboxSW.<span class="hljs-title function_">precache</span>(fileManifest);</cod
 <span class="hljs-keyword">const</span> route = <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">routing</span>.<span class="hljs-title class_">RegExpRoute</span>({
   <span class="hljs-attr">match</span>: <span class="hljs-function">(<span class="hljs-params">{url}</span>) =&gt;</span> url.<span class="hljs-property">domain</span> === <span class="hljs-string">'dev-mind.fr'</span>,
   <span class="hljs-attr">handler</span>: <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">runtimeCaching</span>.<span class="hljs-title class_">StaleWhileRevalidate</span>({requestWrapper})
-});</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806843.2944')">Copy</button></pre>
+});</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001603.6545')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -451,7 +451,7 @@ workboxSW.<span class="hljs-title function_">precache</span>(fileManifest);</cod
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1727248806845.8083"><span class="hljs-keyword">let</span> bgQueue = <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">backgroundSync</span>.<span class="hljs-title class_">QueuePlugin</span>({
+<pre class="highlight"><code class="language-javascript" id="1728847001604.9883"><span class="hljs-keyword">let</span> bgQueue = <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">backgroundSync</span>.<span class="hljs-title class_">QueuePlugin</span>({
   <span class="hljs-attr">callbacks</span>: {
     <span class="hljs-attr">onResponse</span>: <span class="hljs-title function_">async</span>(hash, res) =&gt; {
       <span class="hljs-comment">// une notification sera affichée quand tout est OK</span>
@@ -474,7 +474,7 @@ workboxSW.<span class="hljs-title function_">precache</span>(fileManifest);</cod
 });
 
 <span class="hljs-keyword">const</span> router = <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">routing</span>.<span class="hljs-title class_">Router</span>();
-router.<span class="hljs-title function_">registerRoute</span>({route});</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806845.8083')">Copy</button></pre>
+router.<span class="hljs-title function_">registerRoute</span>({route});</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001604.9883')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -488,7 +488,7 @@ router.<span class="hljs-title function_">registerRoute</span>({route});</code><
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1727248806847.1296"><span class="hljs-keyword">const</span> cacheablePlugin = <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">cacheableResponse</span>.<span class="hljs-title class_">Plugin</span>({
+<pre class="highlight"><code class="language-javascript" id="1728847001605.8088"><span class="hljs-keyword">const</span> cacheablePlugin = <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">cacheableResponse</span>.<span class="hljs-title class_">Plugin</span>({
   <span class="hljs-attr">statuses</span>: [<span class="hljs-number">0</span>, <span class="hljs-number">200</span>]
 });
 
@@ -502,7 +502,7 @@ router.<span class="hljs-title function_">registerRoute</span>({route});</code><
 <span class="hljs-keyword">const</span> route = <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">routing</span>.<span class="hljs-title class_">RegExpRoute</span>({
   <span class="hljs-attr">match</span>: <span class="hljs-function">(<span class="hljs-params">{url}</span>) =&gt;</span> url.<span class="hljs-property">domain</span> === <span class="hljs-string">'example.com'</span>,
   <span class="hljs-attr">handler</span>: <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">runtimeCaching</span>.<span class="hljs-title class_">StaleWhileRevalidate</span>({requestWrapper})
-});</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806847.1296')">Copy</button></pre>
+});</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001605.8088')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -513,7 +513,7 @@ router.<span class="hljs-title function_">registerRoute</span>({route});</code><
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1727248806848.8855"><span class="hljs-keyword">const</span> requestWrapper = <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">runtimeCaching</span>.<span class="hljs-title class_">RequestWrapper</span>({
+<pre class="highlight"><code class="language-javascript" id="1728847001606.8271"><span class="hljs-keyword">const</span> requestWrapper = <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">runtimeCaching</span>.<span class="hljs-title class_">RequestWrapper</span>({
   <span class="hljs-attr">cacheName</span>: <span class="hljs-string">'text-files'</span>,
   <span class="hljs-attr">plugins</span>: [
     <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">broadcastCacheUpdate</span>.<span class="hljs-title class_">BroadcastCacheUpdatePlugin</span>(
@@ -527,7 +527,7 @@ router.<span class="hljs-title function_">registerRoute</span>({route});</code><
 });
 
 <span class="hljs-keyword">const</span> router = <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">routing</span>.<span class="hljs-title class_">Router</span>();
-router.<span class="hljs-title function_">registerRoute</span>({route});</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806848.8855')">Copy</button></pre>
+router.<span class="hljs-title function_">registerRoute</span>({route});</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001606.8271')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -535,10 +535,10 @@ router.<span class="hljs-title function_">registerRoute</span>({route});</code><
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1727248806848.833"><span class="hljs-keyword">const</span> updateChannel = <span class="hljs-keyword">new</span> <span class="hljs-title class_">BroadcastChannel</span>(<span class="hljs-string">'cache-updates'</span>);
+<pre class="highlight"><code class="language-javascript" id="1728847001607.1675"><span class="hljs-keyword">const</span> updateChannel = <span class="hljs-keyword">new</span> <span class="hljs-title class_">BroadcastChannel</span>(<span class="hljs-string">'cache-updates'</span>);
 updateChannel.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'message'</span>, <span class="hljs-function"><span class="hljs-params">event</span> =&gt;</span> {
   <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Cache updated: ${event.data.payload.updatedUrl}'</span>);
-});</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806848.833')">Copy</button></pre>
+});</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001607.1675')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -601,8 +601,8 @@ updateChannel.<span class="hljs-title function_">addEventListener</span>(<span c
 </ul>
 </div>
 </div>
-</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 25/09/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
+</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 13/10/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
 
-<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-TXEFGQ4F.js" type="module"></script>
+<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-T64CL6AM.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t7"},"c":{"7":[{"i":"t7","r":1,"x":4}]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t0"},"c":{"7":[{"i":"t0","r":1,"x":4}]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>

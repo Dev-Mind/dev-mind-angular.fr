@@ -68,7 +68,7 @@ export const _do_your_blog_yourself:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1727248807005.264">gulp.<span class="hljs-title function_">task</span>(<span class="hljs-string">&#x27;images-min&#x27;</span>, <span class="hljs-function">() =&gt;</span>
+<pre class="highlight"><code class="language-javascript" id="1728847001782.4053">gulp.<span class="hljs-title function_">task</span>(<span class="hljs-string">&#x27;images-min&#x27;</span>, <span class="hljs-function">() =&gt;</span>
   gulp.<span class="hljs-title function_">src</span>(<span class="hljs-string">&#x27;src/images/**/*.{svg,png,jpg}&#x27;</span>)
     .<span class="hljs-title function_">pipe</span>(<span class="hljs-title function_">imagemin</span>([imagemin.<span class="hljs-title function_">gifsicle</span>(), <span class="hljs-title function_">imageminMozjpeg</span>(), imagemin.<span class="hljs-title function_">optipng</span>(), imagemin.<span class="hljs-title function_">svgo</span>()], {
       <span class="hljs-attr">progressive</span>: <span class="hljs-literal">true</span>,
@@ -79,7 +79,7 @@ export const _do_your_blog_yourself:string = `<div id="preamble">
     .<span class="hljs-title function_">pipe</span>(@dollar@.<span class="hljs-title function_">if</span>(<span class="hljs-string">&#x27;**/*.{jpg,png}&#x27;</span>, @dollar@.<span class="hljs-title function_">webp</span>()))
     .<span class="hljs-title function_">pipe</span>(@dollar@.<span class="hljs-title function_">size</span>({<span class="hljs-attr">title</span>: <span class="hljs-string">&#x27;images&#x27;</span>, <span class="hljs-attr">showFiles</span>: <span class="hljs-literal">false</span>}))
     .<span class="hljs-title function_">pipe</span>(gulp.<span class="hljs-title function_">dest</span>(<span class="hljs-string">&#x27;build/.tmp/img&#x27;</span>))
-);</code><button class="btn-copy-code" onclick="copyToClipboard('1727248807005.264')">Copy</button></pre>
+);</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001782.4053')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -90,7 +90,7 @@ export const _do_your_blog_yourself:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1727248807006.8594"><span class="hljs-keyword">const</span> map = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;map-stream&#x27;</span>);
+<pre class="highlight"><code class="language-javascript" id="1728847001783.174"><span class="hljs-keyword">const</span> map = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;map-stream&#x27;</span>);
 
 <span class="hljs-variable language_">module</span>.<span class="hljs-property">exports</span> = <span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) {
   <span class="hljs-keyword">return</span> <span class="hljs-title function_">map</span>(<span class="hljs-function">(<span class="hljs-params">file, next</span>) =&gt;</span> {
@@ -100,7 +100,7 @@ export const _do_your_blog_yourself:string = `<div id="preamble">
     file.<span class="hljs-property">path</span> = file.<span class="hljs-property">path</span>.<span class="hljs-title function_">replace</span>(<span class="hljs-string">&#x27;.adoc&#x27;</span>, <span class="hljs-string">&#x27;.html&#x27;</span>);
     <span class="hljs-title function_">next</span>(<span class="hljs-literal">null</span>, file);
   });
-};</code><button class="btn-copy-code" onclick="copyToClipboard('1727248807006.8594')">Copy</button></pre>
+};</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001783.174')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -108,7 +108,7 @@ export const _do_your_blog_yourself:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1727248807007.5112">gulp.<span class="hljs-title function_">task</span>(<span class="hljs-string">&#x27;blog-indexing&#x27;</span>, <span class="hljs-function">(<span class="hljs-params">cb</span>) =&gt;</span> {
+<pre class="highlight"><code class="language-javascript" id="1728847001784.5415">gulp.<span class="hljs-title function_">task</span>(<span class="hljs-string">&#x27;blog-indexing&#x27;</span>, <span class="hljs-function">(<span class="hljs-params">cb</span>) =&gt;</span> {
   gulp.<span class="hljs-title function_">src</span>(<span class="hljs-string">&#x27;src/blog/**/*.adoc&#x27;</span>)
     .<span class="hljs-title function_">pipe</span>(<span class="hljs-title function_">readAsciidoc</span>(modeDev))
     .<span class="hljs-title function_">pipe</span>(<span class="hljs-title function_">convertToHtml</span>())
@@ -116,7 +116,7 @@ export const _do_your_blog_yourself:string = `<div id="preamble">
     .<span class="hljs-title function_">pipe</span>(<span class="hljs-title function_">convertToJson</span>(<span class="hljs-string">&#x27;blogindex.json&#x27;</span>))
     .<span class="hljs-title function_">pipe</span>(gulp.<span class="hljs-title function_">dest</span>(<span class="hljs-string">&#x27;build/.tmp&#x27;</span>))
     .<span class="hljs-title function_">on</span>(<span class="hljs-string">&#x27;end&#x27;</span>, <span class="hljs-function">() =&gt;</span> <span class="hljs-title function_">cb</span>())
-});</code><button class="btn-copy-code" onclick="copyToClipboard('1727248807007.5112')">Copy</button></pre>
+});</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001784.5415')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -225,14 +225,14 @@ export const _do_your_blog_yourself:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1727248807007.3232"><span class="hljs-variable language_">module</span>.<span class="hljs-property">exports</span> = {
+<pre class="highlight"><code class="language-javascript" id="1728847001784.446"><span class="hljs-variable language_">module</span>.<span class="hljs-property">exports</span> = {
   <span class="hljs-string">&quot;apiKey&quot;</span>: process.<span class="hljs-property">env</span>.<span class="hljs-property">DEVMIND_API_KEY</span>,
   <span class="hljs-string">&quot;authDomain&quot;</span>: process.<span class="hljs-property">env</span>.<span class="hljs-property">DEVMIND_AUTH_DOMAIN</span>,
   <span class="hljs-string">&quot;databaseURL&quot;</span>: process.<span class="hljs-property">env</span>.<span class="hljs-property">DEVMIND_DATABASE_URL</span>,
   <span class="hljs-string">&quot;storageBucket&quot;</span>: process.<span class="hljs-property">env</span>.<span class="hljs-property">DEVMIND_STORAGE_BUCKET</span>,
   <span class="hljs-string">&quot;user&quot;</span>: process.<span class="hljs-property">env</span>.<span class="hljs-property">DEVMIND_USER_MAIL</span>,
   <span class="hljs-string">&quot;password&quot;</span>: process.<span class="hljs-property">env</span>.<span class="hljs-property">DEVMIND_PASSWORD</span>
-};</code><button class="btn-copy-code" onclick="copyToClipboard('1727248807007.3232')">Copy</button></pre>
+};</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001784.446')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -240,14 +240,14 @@ export const _do_your_blog_yourself:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1727248807008.684">{
+<pre class="highlight"><code class="language-javascript" id="1728847001786.2424">{
   <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;dev-mind.com&quot;</span>,
   <span class="hljs-string">&quot;repository&quot;</span>: <span class="hljs-string">&quot;https://github.com/Dev-Mind/dev-mind.com.git&quot;</span>,
   <span class="hljs-string">&quot;scripts&quot;</span>: {
     <span class="hljs-string">&quot;install&quot;</span>: <span class="hljs-string">&quot;gulp&quot;</span>,
     <span class="hljs-string">&quot;dev&quot;</span>: <span class="hljs-string">&quot;gulp serve&quot;</span>
   }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1727248807008.684')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001786.2424')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -258,11 +258,11 @@ export const _do_your_blog_yourself:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1727248807008.967">{
+<pre class="highlight"><code class="language-javascript" id="1728847001786.586">{
   <span class="hljs-string">&quot;deploy&quot;</span>: {
     <span class="hljs-string">&quot;webroot&quot;</span>: <span class="hljs-string">&quot;/build/dist&quot;</span>
   }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1727248807008.967')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001786.586')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">

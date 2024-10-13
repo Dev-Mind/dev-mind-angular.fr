@@ -206,7 +206,6 @@ This class is the test file of your AutomacorpApplication. In a good application
 
 [source,java,subs="specialchars"]
 ----
-@RunWith(SpringRunner.class) // (1)
 @SpringBootTest // (2)
 public class AutomacorpApplicationTests {
     @Test

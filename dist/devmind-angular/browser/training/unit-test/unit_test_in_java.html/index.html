@@ -348,12 +348,12 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1727248806573.855"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">FriendService</span> {
+<pre class="highlight"><code class="language-java" id="1728847001458.9294"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">FriendService</span> {
    <span class="hljs-comment">/**
     * Compute friend age from his birth year
     */</span>
    <span class="hljs-type">int</span> <span class="hljs-title function_">computeFriendAge</span><span class="hljs-params">(Friend friend)</span>;
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806573.855')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001458.9294')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -361,7 +361,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1727248806574.8157"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">FriendServiceImpl</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">FriendService</span> {
+<pre class="highlight"><code class="language-java" id="1728847001458.9966"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">FriendServiceImpl</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">FriendService</span> {
     <span class="hljs-meta">@Override</span>
     <span class="hljs-keyword">public</span> <span class="hljs-type">int</span> <span class="hljs-title function_">computeFriendAge</span><span class="hljs-params">(Friend friend)</span> {
         <span class="hljs-keyword">if</span>(friend == <span class="hljs-literal">null</span>) {
@@ -369,7 +369,7 @@
         }
         <span class="hljs-keyword">return</span> LocalDate.now().getYear() - friend.getBirthYear();
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806574.8157')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001458.9966')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -396,7 +396,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1727248806574.9055"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">FriendServiceImpl</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">FriendService</span> {
+<pre class="highlight"><code class="language-java" id="1728847001459.803"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">FriendServiceImpl</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">FriendService</span> {
 
     <span class="hljs-keyword">private</span> FriendRepository friendRepository;
     <span class="hljs-keyword">private</span> IntegerComputer integerComputer;
@@ -409,7 +409,7 @@
 
 
     <span class="hljs-comment">// ...</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806574.9055')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001459.803')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -524,7 +524,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1727248806575.0415"><span class="hljs-keyword">package</span> com.devmind.unitests.friend;
+<pre class="highlight"><code class="language-java" id="1728847001459.502"><span class="hljs-keyword">package</span> com.devmind.unitests.friend;
 
 <span class="hljs-keyword">import</span> org.junit.jupiter.api.Assertions;
 <span class="hljs-keyword">import</span> org.junit.jupiter.api.BeforeEach;
@@ -558,7 +558,7 @@
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">computeFriendAgeWithNullFriendShouldFail</span><span class="hljs-params">()</span> { <span class="hljs-comment">// 4.</span>
         Assertions.assertThrows(IllegalArgumentException.class, () <span class="hljs-meta">-&gt;</span> friendService.computeFriendAge(<span class="hljs-literal">null</span>));
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806575.0415')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001459.502')">Copy</button></pre>
 </div>
 </div>
 <div class="olist arabic">
@@ -590,8 +590,8 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1727248806575.9504">Assertions.assertThat(age).isEqualTo(<span class="hljs-number">45</span>);
-Assertions.assertThat(name).isEqualTo(<span class="hljs-string">"Bellamy"</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806575.9504')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1728847001459.9824">Assertions.assertThat(age).isEqualTo(<span class="hljs-number">45</span>);
+Assertions.assertThat(name).isEqualTo(<span class="hljs-string">"Bellamy"</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001459.9824')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -599,9 +599,9 @@ Assertions.assertThat(name).isEqualTo(<span class="hljs-string">"Bellamy"</span>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1727248806575.3062">Assertions.assertThatThrownBy(() <span class="hljs-meta">-&gt;</span> friendService.computeFriendAge(<span class="hljs-literal">null</span>))
+<pre class="highlight"><code class="language-java" id="1728847001459.2388">Assertions.assertThatThrownBy(() <span class="hljs-meta">-&gt;</span> friendService.computeFriendAge(<span class="hljs-literal">null</span>))
                 .isExactlyInstanceOf(IllegalArgumentException.class)
-                .hasMessage(<span class="hljs-string">"Friend is required"</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806575.3062')">Copy</button></pre>
+                .hasMessage(<span class="hljs-string">"Friend is required"</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001459.2388')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -609,9 +609,9 @@ Assertions.assertThat(name).isEqualTo(<span class="hljs-string">"Bellamy"</span>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1727248806575.5605">List<span class="hljs-meta">&lt;Friend</span><span class="hljs-meta">&gt;</span> myFriends = Arrays.asList(
+<pre class="highlight"><code class="language-java" id="1728847001460.0232">List<span class="hljs-meta">&lt;Friend</span><span class="hljs-meta">&gt;</span> myFriends = Arrays.asList(
                 <span class="hljs-keyword">new</span> <span class="hljs-title class_">Friend</span>(<span class="hljs-string">"Elodie"</span>, <span class="hljs-number">1999</span>),
-                <span class="hljs-keyword">new</span> <span class="hljs-title class_">Friend</span>(<span class="hljs-string">"Charles"</span>, <span class="hljs-number">2001</span>));</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806575.5605')">Copy</button></pre>
+                <span class="hljs-keyword">new</span> <span class="hljs-title class_">Friend</span>(<span class="hljs-string">"Charles"</span>, <span class="hljs-number">2001</span>));</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001460.0232')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -619,7 +619,7 @@ Assertions.assertThat(name).isEqualTo(<span class="hljs-string">"Bellamy"</span>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1727248806575.348">Assertions.assertThat(myFriends)
+<pre class="highlight"><code class="language-java" id="1728847001460.0989">Assertions.assertThat(myFriends)
                   .hasSize(<span class="hljs-number">2</span>)
                   .extracting(Friend::getName)
                   .containsExactlyInAnyOrder(<span class="hljs-string">"Elodie"</span>, <span class="hljs-string">"Charles"</span>);
@@ -629,7 +629,7 @@ Assertions.assertThat(myFriends)
           .extracting(Friend::getName, Friend::getBirthYear)
           .containsExactlyInAnyOrder(
                   Tuple.tuple(<span class="hljs-string">"Elodie"</span>, <span class="hljs-number">1999</span>),
-                  Tuple.tuple(<span class="hljs-string">"Charles"</span>, <span class="hljs-number">2001</span>));</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806575.348')">Copy</button></pre>
+                  Tuple.tuple(<span class="hljs-string">"Charles"</span>, <span class="hljs-number">2001</span>));</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001460.0989')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -662,7 +662,7 @@ Assertions.assertThat(myFriends)
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1727248806576.6885"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">FriendServiceImpl</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">FriendService</span> {
+<pre class="highlight"><code class="language-java" id="1728847001460.712"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">FriendServiceImpl</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">FriendService</span> {
 
     <span class="hljs-keyword">private</span> FriendRepository friendRepository; <span class="hljs-comment">// 1.</span>
 
@@ -677,7 +677,7 @@ Assertions.assertThat(myFriends)
     }
 
     <span class="hljs-comment">// ...</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806576.6885')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001460.712')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -689,7 +689,7 @@ Assertions.assertThat(myFriends)
 <div style="page-break-after: always;"></div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1727248806576.9226"><span class="hljs-meta">@ExtendWith(MockitoExtension.class)</span> <span class="hljs-comment">// 1.</span>
+<pre class="highlight"><code class="language-java" id="1728847001461.2942"><span class="hljs-meta">@ExtendWith(MockitoExtension.class)</span> <span class="hljs-comment">// 1.</span>
 <span class="hljs-keyword">class</span> <span class="hljs-title class_">FriendServiceTest</span> {
 
     <span class="hljs-meta">@Mock</span> <span class="hljs-comment">// 2.</span>
@@ -716,7 +716,7 @@ Assertions.assertThat(myFriends)
         <span class="hljs-comment">// Assert</span>
         Assertions.assertThat(average).isEqualTo(<span class="hljs-number">22.0</span>);
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806576.9226')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001461.2942')">Copy</button></pre>
 </div>
 </div>
 <div style="page-break-after: always;"></div>
@@ -763,7 +763,7 @@ Assertions.assertThat(myFriends)
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1727248806576.9617">Mockito.when(friendRepository.findAll()).thenThrow(<span class="hljs-keyword">new</span> <span class="hljs-title class_">IllegalArgumentException</span>(<span class="hljs-string">"Error"</span>));</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806576.9617')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1728847001461.646">Mockito.when(friendRepository.findAll()).thenThrow(<span class="hljs-keyword">new</span> <span class="hljs-title class_">IllegalArgumentException</span>(<span class="hljs-string">"Error"</span>));</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001461.646')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -792,7 +792,7 @@ Assertions.assertThat(myFriends)
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1727248806576.3281">git clone https://github.com/Dev-Mind/unitTestInAction.git</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806576.3281')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1728847001461.0337">git clone https://github.com/Dev-Mind/unitTestInAction.git</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001461.0337')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -800,7 +800,7 @@ Assertions.assertThat(myFriends)
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1727248806576.0269">git clone git@github.com:Dev-Mind/unitTestInAction.git</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806576.0269')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1728847001461.098">git clone git@github.com:Dev-Mind/unitTestInAction.git</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001461.098')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -820,13 +820,13 @@ Assertions.assertThat(myFriends)
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1727248806577.6484">dependencies {
+<pre class="highlight"><code class="language-kotlin" id="1728847001461.494">dependencies {
     implementation(<span class="hljs-string">"org.springframework:spring-context-support:6.0.11"</span>)
     testImplementation(<span class="hljs-string">"org.junit.jupiter:junit-jupiter-api:5.10.0"</span>)
     testRuntimeOnly(<span class="hljs-string">"org.junit.jupiter:junit-jupiter-engine:5.10.0"</span>)
     testImplementation(<span class="hljs-string">"org.mockito:mockito-junit-jupiter:5.4.0"</span>)
     testImplementation(<span class="hljs-string">"org.assertj:assertj-core:3.24.2"</span>)
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1727248806577.6484')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001461.494')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -907,8 +907,8 @@ Assertions.assertThat(myFriends)
 <p>Writing tests help to fix problems. Fix the code of <code>computeFriendAgeAverage</code> and return 0 when the list is empty. You can now fix your test</p>
 </div>
 </div>
-</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 25/09/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
+</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 13/10/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
 
-<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-TXEFGQ4F.js" type="module"></script>
+<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-T64CL6AM.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t1"},"c":{"7":[{"i":"t1","r":1,"x":6}]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t6"},"c":{"7":[{"i":"t6","r":1,"x":6}]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>

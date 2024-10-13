@@ -1,4 +1,4 @@
-:doctitle: Add a menu in your app
+:doctitle: Page structuration
 :description: In this lesson you will learn how add a menu and launch intent to open internal or external activities
 :keywords: Android
 :author: Guillaume EHRET - Dev-Mind
@@ -400,17 +400,9 @@ startActivity(intent)
 
 Update the `AutomacorpTopAppBar` composable to add the intents to the different actions.
 
-- The first action will open the `RoomsActivity` activity. For that create a new empty activity `RoomsActivity`
+- The first action will open the `RoomsActivity` activity. For that create a new empty activity `RoomListActivity`
 - The second action will send an email to your email address
 - The third action will open your Github page
 
-.Note:
-if you have an error when you try to send an email, you should check that you have an email client installed on your virtual or real device. If not you can launch Google Play Store to install an email client as Gmail.
+ If you have an error when you try to send an email, you should check that you have an email client installed on your virtual or real device. If not you can launch Google Play Store to install an email client as Gmail.
 
-
-[.text-center]
-[cols="2*"]
-|===
-| image:../../img/training/android/menu/final_example1.png[Example, width=400]
-| image:../../img/training/android/menu/final_example2.png[Example, width=400]
-|===
