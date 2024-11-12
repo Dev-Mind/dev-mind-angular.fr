@@ -88,7 +88,7 @@ export const _deploy_webapp_on_clever_cloud:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1728847001204.4526">{
+<pre class="highlight"><code class="language-java" id="1731447060288.2483">{
   <span class="hljs-string">&quot;build&quot;</span>: {
     <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;gradle&quot;</span>,
     <span class="hljs-string">&quot;goal&quot;</span>: <span class="hljs-string">&quot;assemble&quot;</span>
@@ -96,7 +96,7 @@ export const _deploy_webapp_on_clever_cloud:string = `<div id="toc" class="toc">
   <span class="hljs-string">&quot;deploy&quot;</span>: {
     <span class="hljs-string">&quot;jarName&quot;</span>: <span class="hljs-string">&quot;./build/libs/automacorp-0.0.1-SNAPSHOT.jar&quot;</span>
   }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001204.4526')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1731447060288.2483')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">

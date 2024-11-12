@@ -62,13 +62,13 @@ export const _android_update_ui:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1728847001191.777"><span class="hljs-meta">@Composable</span>
+<pre class="highlight"><code class="language-kotlin" id="1731447060869.9666"><span class="hljs-meta">@Composable</span>
 <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">Greeting</span><span class="hljs-params">(name: <span class="hljs-type">String</span>, modifier: <span class="hljs-type">Modifier</span> = Modifier)</span></span> {
   Text(
     text = <span class="hljs-string">&quot;Hello @dollar@name!&quot;</span>,
     modifier = modifier
   )
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001191.777')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1731447060869.9666')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -76,7 +76,7 @@ export const _android_update_ui:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1728847001191.511"><span class="hljs-meta">@Composable</span>
+<pre class="highlight"><code class="language-kotlin" id="1731447060870.9927"><span class="hljs-meta">@Composable</span>
 <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">Greeting</span><span class="hljs-params">(name: <span class="hljs-type">String</span>, modifier: <span class="hljs-type">Modifier</span> = Modifier)</span></span> {
     Text(
         text = <span class="hljs-string">&quot;Hello @dollar@name!&quot;</span>,
@@ -86,7 +86,7 @@ export const _android_update_ui:string = `<div id="toc" class="toc">
         text = <span class="hljs-string">&quot;I learn to create a new app&quot;</span>,
         modifier = modifier
     )
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001191.511')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1731447060870.9927')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -157,7 +157,7 @@ export const _android_update_ui:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1728847001191.7024"><span class="hljs-meta">@Composable</span>
+<pre class="highlight"><code class="language-kotlin" id="1731447060870.5562"><span class="hljs-meta">@Composable</span>
 <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">Greeting</span><span class="hljs-params">(name: <span class="hljs-type">String</span>, modifier: <span class="hljs-type">Modifier</span> = Modifier)</span></span> {
     Column {
         Text(
@@ -171,7 +171,7 @@ export const _android_update_ui:string = `<div id="toc" class="toc">
             )
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001191.7024')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1731447060870.5562')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -179,7 +179,7 @@ export const _android_update_ui:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1728847001191.7795"><span class="hljs-meta">@Composable</span>
+<pre class="highlight"><code class="language-kotlin" id="1731447060871.7515"><span class="hljs-meta">@Composable</span>
 <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">Greeting</span><span class="hljs-params">(name: <span class="hljs-type">String</span>, onClick: () -&gt; <span class="hljs-type">Unit</span>,  modifier: <span class="hljs-type">Modifier</span> = Modifier)</span></span> {
     Column {
         Text(
@@ -192,7 +192,7 @@ export const _android_update_ui:string = `<div id="toc" class="toc">
             )
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001191.7795')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1731447060871.7515')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -200,7 +200,7 @@ export const _android_update_ui:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1728847001192.4272"><span class="hljs-keyword">class</span> <span class="hljs-title class_">MainActivity</span> : <span class="hljs-type">ComponentActivity</span>() {
+<pre class="highlight"><code class="language-kotlin" id="1731447060872.515"><span class="hljs-keyword">class</span> <span class="hljs-title class_">MainActivity</span> : <span class="hljs-type">ComponentActivity</span>() {
     <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(savedInstanceState: <span class="hljs-type">Bundle</span>?)</span></span> {
         <span class="hljs-keyword">super</span>.onCreate(savedInstanceState)
 
@@ -221,7 +221,7 @@ export const _android_update_ui:string = `<div id="toc" class="toc">
             }
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001192.4272')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1731447060872.515')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -301,14 +301,14 @@ This is a string resources file, where you can specify all of your UI strings. I
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" id="1728847001192.4333"><span class="hljs-tag">&lt;<span class="hljs-name">resources</span>&gt;</span>
+<pre class="highlight"><code class="language-xml" id="1731447060873.0952"><span class="hljs-tag">&lt;<span class="hljs-name">resources</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">string</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;app_name&quot;</span>&gt;</span>automacorp<span class="hljs-tag">&lt;/<span class="hljs-name">string</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">string</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;app_logo_description&quot;</span>&gt;</span>automacorp logo<span class="hljs-tag">&lt;/<span class="hljs-name">string</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">string</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;act_main_welcome&quot;</span>&gt;</span>Welcome on automacorp,\n the app to manage building windows<span class="hljs-tag">&lt;/<span class="hljs-name">string</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">string</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;act_main_open&quot;</span>&gt;</span>Open<span class="hljs-tag">&lt;/<span class="hljs-name">string</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">string</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;act_main_fill_name&quot;</span>&gt;</span>Fill a name<span class="hljs-tag">&lt;/<span class="hljs-name">string</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">resources</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1728847001192.4333')">Copy</button></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">resources</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1731447060873.0952')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -316,10 +316,10 @@ This is a string resources file, where you can specify all of your UI strings. I
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1728847001192.9077"> Text(
+<pre class="highlight"><code class="language-kotlin" id="1731447060874.808"> Text(
     stringResource(R.string.act_main_welcome),
     textAlign = TextAlign.Center
-)</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001192.9077')">Copy</button></pre>
+)</code><button class="btn-copy-code" onclick="copyToClipboard('1731447060874.808')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -333,14 +333,14 @@ This is a string resources file, where you can specify all of your UI strings. I
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1728847001192.9968"><span class="hljs-meta">@Composable</span>
+<pre class="highlight"><code class="language-kotlin" id="1731447060874.2751"><span class="hljs-meta">@Composable</span>
 <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">AppLogo</span><span class="hljs-params">(modifier: <span class="hljs-type">Modifier</span>)</span></span> {
     Image(
         painter = painterResource(R.drawable.ic_logo),
         contentDescription = stringResource(R.string.app_logo_description),
         modifier = modifier.paddingFromBaseline(top = <span class="hljs-number">100.</span>dp).height(<span class="hljs-number">80.</span>dp),
     )
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001192.9968')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1731447060874.2751')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -351,7 +351,7 @@ This is a string resources file, where you can specify all of your UI strings. I
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1728847001193.88"><span class="hljs-meta">@Composable</span>
+<pre class="highlight"><code class="language-kotlin" id="1731447060875.0588"><span class="hljs-meta">@Composable</span>
 <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">Greeting</span><span class="hljs-params">(onClick: (<span class="hljs-type">name</span>: <span class="hljs-type">String</span>) -&gt; <span class="hljs-type">Unit</span>,  modifier: <span class="hljs-type">Modifier</span> = Modifier)</span></span> {
     Column {
         AppLogo(Modifier.padding(top = <span class="hljs-number">32.</span>dp).fillMaxWidth())
@@ -364,7 +364,7 @@ This is a string resources file, where you can specify all of your UI strings. I
             textAlign = TextAlign.Center
         )
    }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001193.88')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1731447060875.0588')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -378,11 +378,11 @@ This is a string resources file, where you can specify all of your UI strings. I
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1728847001193.8542">OutlinedTextField(
+<pre class="highlight"><code class="language-kotlin" id="1731447060875.9014">OutlinedTextField(
     <span class="hljs-string">&quot;&quot;</span>,
     onValueChange = { println(<span class="hljs-string">&quot;value of the field : @dollar@it&quot;</span>) },
     modifier = Modifier.padding(<span class="hljs-number">24.</span>dp).fillMaxWidth()
-)</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001193.8542')">Copy</button></pre>
+)</code><button class="btn-copy-code" onclick="copyToClipboard('1731447060875.9014')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -396,13 +396,13 @@ This is a string resources file, where you can specify all of your UI strings. I
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1728847001193.336"><span class="hljs-keyword">var</span> name <span class="hljs-keyword">by</span> remember { mutableStateOf(<span class="hljs-string">&quot;&quot;</span>) }
+<pre class="highlight"><code class="language-kotlin" id="1731447060875.03"><span class="hljs-keyword">var</span> name <span class="hljs-keyword">by</span> remember { mutableStateOf(<span class="hljs-string">&quot;&quot;</span>) }
 
 OutlinedTextField(
     name,
     onValueChange = { name = it },
     modifier = Modifier.padding(<span class="hljs-number">24.</span>dp).fillMaxWidth()
-)</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001193.336')">Copy</button></pre>
+)</code><button class="btn-copy-code" onclick="copyToClipboard('1731447060875.03')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -410,7 +410,7 @@ OutlinedTextField(
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1728847001193.6963">OutlinedTextField(
+<pre class="highlight"><code class="language-kotlin" id="1731447060876.8303">OutlinedTextField(
     name,
     onValueChange = { name = it },
     modifier = Modifier.padding(<span class="hljs-number">24.</span>dp).fillMaxWidth(),
@@ -423,7 +423,7 @@ OutlinedTextField(
             )
             Text(stringResource(R.string.act_main_fill_name))
         }
-    })</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001193.6963')">Copy</button></pre>
+    })</code><button class="btn-copy-code" onclick="copyToClipboard('1731447060876.8303')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -443,7 +443,7 @@ OutlinedTextField(
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1728847001193.2947"><span class="hljs-meta">@Composable</span>
+<pre class="highlight"><code class="language-kotlin" id="1731447060876.8845"><span class="hljs-meta">@Composable</span>
 <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">Greeting</span><span class="hljs-params">(onClick: (<span class="hljs-type">name</span>: <span class="hljs-type">String</span>) -&gt; <span class="hljs-type">Unit</span>, modifier: <span class="hljs-type">Modifier</span> = Modifier)</span></span> {
     Column {
         <span class="hljs-comment">// ...</span>
@@ -463,7 +463,7 @@ OutlinedTextField(
             Text(stringResource(R.string.act_main_open))
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001193.2947')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1731447060876.8845')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -471,7 +471,7 @@ OutlinedTextField(
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1728847001193.135"><span class="hljs-keyword">class</span> <span class="hljs-title class_">MainActivity</span> : <span class="hljs-type">ComponentActivity</span>() {
+<pre class="highlight"><code class="language-kotlin" id="1731447060877.3718"><span class="hljs-keyword">class</span> <span class="hljs-title class_">MainActivity</span> : <span class="hljs-type">ComponentActivity</span>() {
     <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(savedInstanceState: <span class="hljs-type">Bundle</span>?)</span></span> {
         <span class="hljs-keyword">super</span>.onCreate(savedInstanceState)
 
@@ -491,7 +491,7 @@ OutlinedTextField(
             }
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001193.135')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1731447060877.3718')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">

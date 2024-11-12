@@ -400,7 +400,7 @@ startActivity(intent)
 
 Update the `AutomacorpTopAppBar` composable to add the intents to the different actions.
 
-- The first action will open the `RoomsActivity` activity. For that create a new empty activity `RoomListActivity`
+- The first action will open the `RoomListActivity` activity. For that create a new empty activity `RoomListActivity`
 - The second action will send an email to your email address
 - The third action will open your Github page
 

@@ -125,13 +125,13 @@ export const _nouveau_site_asciidoctor:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-adoc" id="1728847001560.0808">----_
+<pre class="highlight"><code class="language-adoc" id="1731447061904.5078">----_
 <span class="hljs-meta">:doctitle:</span> Créer son blog via Asciidoctor
 <span class="hljs-meta">:description:</span> Migrer son blog de blogger vers un blog généré via Asciidoctor
 <span class="hljs-meta">:keywords:</span> Web, Blog, Asciidoctor, CMS
 <span class="hljs-meta">:revdate:</span> 2017-05-09
 <span class="hljs-meta">:teaser:</span> Pourquoi et comment j\<span class="hljs-emphasis">&#x27;ai choisi de changer ma manière de publier mes articles en passant de Blogger à un blog généré via Asciidoctor.
-:imgteaser: ../../img/blog/unknown.png</span></code><button class="btn-copy-code" onclick="copyToClipboard('1728847001560.0808')">Copy</button></pre>
+:imgteaser: ../../img/blog/unknown.png</span></code><button class="btn-copy-code" onclick="copyToClipboard('1731447061904.5078')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -184,7 +184,7 @@ export const _nouveau_site_asciidoctor:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1728847001561.8967">gulp.<span class="hljs-title function_">task</span>(<span class="hljs-string">&#x27;blog-indexing&#x27;</span>, <span class="hljs-function">() =&gt;</span>
+<pre class="highlight"><code class="language-javascript" id="1731447061909.928">gulp.<span class="hljs-title function_">task</span>(<span class="hljs-string">&#x27;blog-indexing&#x27;</span>, <span class="hljs-function">() =&gt;</span>
   gulp.<span class="hljs-title function_">src</span>(<span class="hljs-string">&#x27;src/blog/**/*.adoc&#x27;</span>)
     .<span class="hljs-title function_">pipe</span>(<span class="hljs-title function_">asciidoctorRead</span>())
     .<span class="hljs-title function_">pipe</span>(<span class="hljs-title function_">asciidoctorConvert</span>())
@@ -201,7 +201,7 @@ gulp.<span class="hljs-title function_">task</span>(<span class="hljs-string">&#
     .<span class="hljs-title function_">pipe</span>(gulp.<span class="hljs-title function_">dest</span>(<span class="hljs-string">&#x27;build/.tmp/blog&#x27;</span>))
     .<span class="hljs-title function_">pipe</span>(@dollar@.<span class="hljs-title function_">htmlmin</span>(<span class="hljs-variable constant_">HTMLMIN_OPTIONS</span>))
     .<span class="hljs-title function_">pipe</span>(gulp.<span class="hljs-title function_">dest</span>(<span class="hljs-string">&#x27;build/dist/blog&#x27;</span>))
-);</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001561.8967')">Copy</button></pre>
+);</code><button class="btn-copy-code" onclick="copyToClipboard('1731447061909.928')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">

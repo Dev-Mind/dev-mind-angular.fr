@@ -356,7 +356,7 @@ image:../../img/training/android/android-gradle-sync.png[Sync Gradle project]
 * Create a property `val database: AutomacorpDatabase by lazy {}` in your `AutomacorpApplication`
 * Create in package `com.automacorp.viewmodel` a `RoomViewModel` class to manage all CRUD operations (Create, read all or one, update and delete)
 
-Now, you can update the `RoomsActivity` used to list all rooms.
+Now, you can update the `RoomListActivity` used to list all rooms.
 
 1. Add a new global property to define your view model
 +
@@ -369,7 +369,7 @@ private val viewModel: RoomViewModel by viewModels {
 +
 2. We need to replace the code used to populate the adapter, to update a room (ie the calls to ApiServices.windowsApiService)
 +
-3. In `RoomsActivity` you can for example used this code with a method to observe our livedata returned by the view model. The code was
+3. In `RoomListActivity` you can for example used this code with a method to observe our livedata returned by the view model. The code was
 made to manage asynchronous calls and you don't need anymore to switch between coroutines in your Activity or Fragment
 +
 [source,kotlin,subs="specialchars"]
@@ -485,7 +485,7 @@ val networkState: MutableLiveData<State> by lazy {
 }
 ----
 +
-3. You can add a new Observable in your activity `RoomsActivity` and `RoomActivity` to display a message when the data will be loaded from the local database
+3. You can add a new Observable in your activity `RoomListActivity` and `RoomActivity` to display a message when the data will be loaded from the local database
 +
 [source,kotlin,subs="specialchars"]
 ----

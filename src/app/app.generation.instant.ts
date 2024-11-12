@@ -1,1 +1,1 @@
-export const generationInstant = '13/10/2024';
+export const generationInstant = '12/11/2024';

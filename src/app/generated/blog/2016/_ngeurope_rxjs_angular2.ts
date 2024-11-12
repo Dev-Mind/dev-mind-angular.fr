@@ -34,7 +34,7 @@ export const _ngeurope_rxjs_angular2:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1728847001660.013"><span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">AppComponent</span> {
+<pre class="highlight"><code class="language-javascript" id="1731447062301.121"><span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">AppComponent</span> {
   myControl = <span class="hljs-keyword">new</span> <span class="hljs-title class_">FormControl</span>();
   <span class="hljs-title function_">constructor</span>(<span class="hljs-params">http:Http</span>){
     <span class="hljs-variable language_">this</span>.<span class="hljs-property">myControl</span>.<span class="hljs-property">valueChanges</span>
@@ -42,7 +42,7 @@ export const _ngeurope_rxjs_angular2:string = `<div id="preamble">
       .<span class="hljs-title function_">flatMap</span>(<span class="hljs-function"><span class="hljs-params">url</span> =&gt;</span> http.<span class="hljs-title function_">get</span>(url), <span class="hljs-function">(<span class="hljs-params">req, res</span>) =&gt;</span> res.<span class="hljs-title function_">json</span>())
       .<span class="hljs-title function_">subscribe</span>(<span class="hljs-function"><span class="hljs-params">results</span> =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(results));
   }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001660.013')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1731447062301.121')">Copy</button></pre>
 </div>
 </div>
 <div class="videoblock">
@@ -73,7 +73,7 @@ export const _ngeurope_rxjs_angular2:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1728847001660.4692">[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>].<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">elt</span> =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(elt));</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001660.4692')">Copy</button></pre>
+<pre class="highlight"><code class="language-javascript" id="1731447062304.687">[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>].<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">elt</span> =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(elt));</code><button class="btn-copy-code" onclick="copyToClipboard('1731447062304.687')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -81,10 +81,10 @@ export const _ngeurope_rxjs_angular2:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1728847001661.634"><span class="hljs-title function_">fetch</span>(<span class="hljs-string">&#x27;api/sponsors&#x27;</span>).<span class="hljs-title function_">then</span>(
+<pre class="highlight"><code class="language-javascript" id="1731447062306.978"><span class="hljs-title function_">fetch</span>(<span class="hljs-string">&#x27;api/sponsors&#x27;</span>).<span class="hljs-title function_">then</span>(
   <span class="hljs-function"><span class="hljs-params">response</span> =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(response.<span class="hljs-title function_">json</span>()),
   <span class="hljs-function"><span class="hljs-params">error</span> =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(error)
-);</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001661.634')">Copy</button></pre>
+);</code><button class="btn-copy-code" onclick="copyToClipboard('1731447062306.978')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -114,7 +114,7 @@ export const _ngeurope_rxjs_angular2:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1728847001661.3179">myEventStream = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Observable</span>(<span class="hljs-function"><span class="hljs-params">observer</span> =&gt;</span> {
+<pre class="highlight"><code class="language-javascript" id="1731447062309.6147">myEventStream = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Observable</span>(<span class="hljs-function"><span class="hljs-params">observer</span> =&gt;</span> {
   <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =&gt;</span> {
     observer.<span class="hljs-title function_">next</span>(<span class="hljs-number">42</span>);
   }, <span class="hljs-number">1000</span>);
@@ -126,7 +126,7 @@ export const _ngeurope_rxjs_angular2:string = `<div id="preamble">
   <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =&gt;</span> {
     observer.<span class="hljs-title function_">complete</span>();
   }, <span class="hljs-number">3000</span>);
-});</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001661.3179')">Copy</button></pre>
+});</code><button class="btn-copy-code" onclick="copyToClipboard('1731447062309.6147')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -134,12 +134,12 @@ export const _ngeurope_rxjs_angular2:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1728847001662.1062"><span class="hljs-keyword">let</span> values = [];
+<pre class="highlight"><code class="language-javascript" id="1731447062311.4028"><span class="hljs-keyword">let</span> values = [];
 <span class="hljs-keyword">let</span> subscription = myEventStream.<span class="hljs-title function_">subscribe</span>(
   <span class="hljs-function"><span class="hljs-params">val</span> =&gt;</span> values.<span class="hljs-title function_">push</span>(val),
   <span class="hljs-function"><span class="hljs-params">error</span> =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(error),
   <span class="hljs-function">() =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;done&#x27;</span>)
-);</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001662.1062')">Copy</button></pre>
+);</code><button class="btn-copy-code" onclick="copyToClipboard('1731447062311.4028')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">

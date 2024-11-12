@@ -19,14 +19,7 @@ If you followed the previous code labs to build a Spring application, you will b
 
 For the moment data are static in `com.automacorp.model.RoomService`. Now we will update this service to read data stored on a web server, as a REST web service.
 
-Dev-Mind website expose simple non secured URLs to read Rooms ans their windows or heaters. This simple API can be used for the first exercices of this lab.
-
-* https://dev-mind.fr/training/android/rooms
-* https://dev-mind.fr/training/android/rooms/id (id must be replaced by the value of a room id)
-* https://dev-mind.fr/training/android/windows
-* https://dev-mind.fr/training/android/windows/id (id must be replaced by the value of a window id)
-
-You can also used your own Spring API if you followed Spring course or my implementation available on https://automacorp.devmind.cleverapps.io/swagger-ui/index.html. This app is secured by basic auth and you can the username `user` and his password `password`.
+You can use your own Spring API if you followed Spring course or my implementation available on https://automacorp.devmind.cleverapps.io/swagger-ui/index.html. This app is secured by basic auth and you can the username `user` and his password `password`.
 
 == Retrofit
 
@@ -114,16 +107,33 @@ It is the time to test by yourself.
 
 As I said we need to install Retrofit to call a remote API and we also need another library to serialize/deserialize our Kotlin objects in/from JSON.
 
-1. Open *build.gradle.kts (Module: automacorp.app)*.
-2. In the dependencies block, add 2 lines to load Retrofit and the Moshi converter (versions are available https://github.com/square/retrofit/tags[here])
-+
+Android project use now the Gradle catalog version. Open the file `libs.versions.toml`. This file register all versions of libraries used in your project. You can add a new line to register the version of Retrofit and Moshi
+
+Each section are defined by [] and the name of the section.
+
+In the section `[versions]` you can add the version of Retrofit and Moshi
+[source,toml,subs="specialchars"]
+----
+retrofit = "2.9.0"
+----
+
+In the section `[libraries]` you can add the dependency of Retrofit and Moshi
+[source,toml,subs="specialchars"]
+----
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+retrofit-moshi = { module = "com.squareup.retrofit2:converter-moshi", version.ref = "retrofit" }
+----
+
+Now open *build.gradle.kts (Module: automacorp.app)*. and add the following dependencies
+
 [source,groovy,subs="specialchars"]
 ----
-implementation "com.squareup.retrofit2:retrofit:2.9.0"
-implementation "com.squareup.retrofit2:converter-moshi:2.9.0"
+implementation (libs.retrofit)
+implementation (libs.converter.moshi)
 ----
-3. As you updated your gradle configuration, Android Studio display a message to synchronize your projet. Click on *Sync now*
-+
+
+As you updated your gradle configuration, Android Studio display a message to synchronize your projet. Click on *Sync now*
+
 image:../../img/training/android/android-gradle-sync.png[Sync Gradle project]
 
 Now you are ready to write the code to call your API.
@@ -145,7 +155,7 @@ object ApiServices {
     val roomsApiService : RoomsApiService by lazy {
         Retrofit.Builder()
                 .addConverterFactory(MoshiConverterFactory.create()) // (1)
-                .baseUrl("http://automacorp-client-for-android.cleverapps.io/api/") // (2)
+                .baseUrl("http://automacorp.devmind.cleverapps.io/api/") // (2)
                 .build()
                 .create(RoomsApiService::class.java)
     }
@@ -237,33 +247,49 @@ private fun getUnsafeOkHttpClient(): OkHttpClient.Builder =
 
 == icon:flask[] : Use Retrofit
 
-We can now adapt our code to use this API when we want to display the room list or a room detail. For the moment, the list of rooms is populated with this code `roomsAdapter.setItems(WindowService.ROOMS)` in your `RoomsActivity`
+We can now adapt our code to use this API when we want to display the room list or a room detail. For the moment, the list of rooms is populated with this code `roomsAdapter.setItems(WindowService.ROOMS)` in your `RoomListActivity`.
 
 We can replace this line by this code
 
 [source,kotlin,subs="specialchars"]
 ----
- runCatching { // (1)
-     ApiServices.roomsApiService.findAll().execute() // (2)
+ runCatching {  // (1)
+   ApiServices.roomsApiService.findAll().execute()  // (2)
  }
-    .onSuccess { roomsAdapter.setItems(it.body() ?: emptyList()) }  // (3)
-    .onFailure {
-        it.printStackTrace() (4)
-        Toast.makeText(this, "Error on rooms loading $it", Toast.LENGTH_LONG).show()  // (5)
-    }
+      .onSuccess { // (3)
+          val rooms = it.body() ?: emptyList()
+          LazyColumn(
+              state = state,
+              contentPadding = PaddingValues(4.dp),
+              verticalArrangement = Arrangement.spacedBy(8.dp),
+              modifier = Modifier.padding(innerPadding),
+
+              ) {
+              items(rooms, key = { it.id }) {
+                  RoomItem(
+                      room = it,
+                      modifier = Modifier.clickable { openRoom(it.id) },
+                  )
+              }
+          }
+      }
+      .onFailure {
+          it.printStackTrace() // (4)
+          Toast.makeText(this, "Error on rooms loading $it", Toast.LENGTH_LONG).show() // (5)
+      }
 ----
 
 * *(1)* we use *runCatching* to manage successes and failures. This block is like a try/catch block in Java
 * *(2)* `ApiServices.roomsApiService` return an implementation of our object written to call a remote API. We call the method *execute* to run a synchronous call
 * *(3)* On success we update adapter with the result contained in body property. If this response is null the list is empty.
 * *(4)* We use this line to have the real stack trace in your device log file
-* *(4)* on error we display a message in a https://developer.android.com/guide/topics/ui/notifiers/toasts[Toast notation]
+* *(5)* on error we display a message in a https://developer.android.com/guide/topics/ui/notifiers/toasts[Toast notation]
 
 Run your app to see the changes when and open the room list.
 
 Unfortunately you should have a toast notification with the following error message :
 
-image:../../img/training/android/android-main-thread.png[Network error]
+image::../../img/training/android/android-main-thread.png[Network error]
 
 To analyse the errors you can open the LogCat tab and filter on Error level. In my example below, we can see the same error
 
@@ -281,7 +307,7 @@ Making a network request on the main thread forces it to wait, or block, until i
 
 When the thread is blocked, the OS isn't able to manage UI events, which causes your app to freeze and potentially leads to an Application Not Responding (ANR) dialog. To avoid these performance issues, Android throws a *MainThreadException* and kills your app if you try to block this main thread.
 
-image:../../img/training/android/remote/android-main-thread-error.png[Main thread]
+image::../../img/training/android/remote/android-main-thread-error.png[Main thread]
 
 
 The solution is to run your network call, your long-running task in another thread, and when the result is available you can reattach the main thread to display the result. Only the main thread can update the interface.
@@ -300,21 +326,22 @@ Each object in Android which has a https://developer.android.com/topic/libraries
 
 == icon:flask[] : Use coroutines to resolve main thread error
 
-We need to add the coroutine library i your project. Open *build.gradle.kts (Module: automacorp.app)* to add the following dependency (in dependencies block)
+We need to add the coroutine library in your project. The dependency should be already present
+
+Open *build.gradle.kts (Module: automacorp.app)* to check the presence of the following dependency (in dependencies block)
 
 [source,kotlin,subs="specialchars"]
 ----
-implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
+implementation(libs.androidx.lifecycle.runtime.ktx)
 ----
 
 Android Studio display a message to synchronize your projet. Click on *Sync now*
 
-image:../../img/training/android/android-gradle-sync.png[Sync Gradle project]
+image::../../img/training/android/android-gradle-sync.png[Sync Gradle project]
 
-We can now adapt the code used in `RoomsActivity` to load the room list.
+We can now adapt the code used in `RoomListActivity` to load the room list.
 
-
-1. Open *com.automacorp.RoomsActivity*
+1. Open *com.automacorp.RoomListActivity*
 2. Update code to call roomsApiService as follows
 +
 [source,kotlin,subs="specialchars"]
@@ -322,8 +349,9 @@ We can now adapt the code used in `RoomsActivity` to load the room list.
 lifecycleScope.launch(context = Dispatchers.IO) { // (1)
     runCatching { ApiServices.roomsApiService.findAll().execute() }
         .onSuccess {
+            val rooms = it.body() ?: emptyList()
             withContext(context = Dispatchers.Main) { // (2)
-                roomsAdapter.setItems(it.body() ?: emptyList()) }
+                // setContent ....
             }
         .onFailure {
             withContext(context = Dispatchers.Main) {
@@ -334,15 +362,15 @@ lifecycleScope.launch(context = Dispatchers.IO) { // (1)
         }
 }
 ----
-* *(1)* method `lifecycleScope.launch` open a new directive. You must specify a context other than Dispatchers. `Main` (Main thread) for the code to be executed. `Dispatchers.IO` is dedicated to Input/Output tasks
+* *(1)* method `lifecycleScope.launch` open a new coroutine. You must specify a context other than Dispatchers. `Main` (Main thread) for the code to be executed. `Dispatchers.IO` is dedicated to Input/Output tasks
 * *(2)* You cant' interact with the view outside the main thread. When we receive the data we use `withContext` to reattach your code to another thread
-* *(3)* You cant' interact with the view outside the main thread. When we receive an error we use `withContext` to reattach your code to another thread
+* *(3)* Display
 
 Relaunch your app to test your Room list screen.
 
 Unfortunately you should have another toast notification with another error message. The error message tells you that your app might be missing the INTERNET permission.
 
-image:../../img/training/android/remote/android-permission-error.png[Android permission error]
+image::../../img/training/android/remote/android-permission-error.png[Android permission error]
 
 == Android permission
 
@@ -369,119 +397,165 @@ package="com.example.snazzyapp">
 
 Each user can accept or reject an app permission request, when this app is installed or when the user update the app settings in the device setting. So generally, you must handle this case and ask the user to reactivate the rights if he wants to use your application. In our case we will not test the authorization and we will consider that the user has accepted this permission.
 
-You can now relaunch your app and you will be able to open the room list without error. For more informations about permissions you can read this https://developer.android.com/guide/topics/permissions/overview[page].
+You can now relaunch your app and you will be able to open the room list without error. For more information about permissions you can read this https://developer.android.com/guide/topics/permissions/overview[page].
+
+== Use ViewModel in your code
+
+In last labs, we see how to use a `ViewModel` that can store your app data. The stored data is not lost if the framework destroys and recreates the activities during a configuration change or other events. That's why it's better to use a ViewModel
+
+image::../../img/training/android/remote/view_model.png[ViewModel state, width=500]
+
+The first thing is to create an object that will store the room list result or the error if the API call fails.
+
+[source,kotlin,subs="specialchars"]
+----
+class RoomList(
+    val rooms: List<RoomDto> = emptyList(),
+    val error: String? = null
+)
+----
+
+We can now update the `RoomViewModel` to store the result of the API call (a state) in a `StateFlow` object. StateFlow is a data holder observable flow that emits the current and new state updates. Its value property reflects the current state value. To update state and send it to the flow, assign a new value to the value property of the MutableStateFlow class.
+
+[source,kotlin,subs="specialchars"]
+----
+class RoomViewModel : ViewModel() {
+    // existing code
+
+    val roomsState = MutableStateFlow(RoomList())
+}
+----
+
+You can now add the function to load the room list in the `RoomViewModel`
+
+[source,kotlin,subs="specialchars"]
+----
+class RoomViewModel : ViewModel() {
+    // existing code
+    //...
+
+    fun findAll() {
+        viewModelScope.launch(context = Dispatchers.IO) { // (1)
+            runCatching { ApiServices.roomsApiService.findAll().execute() }
+                .onSuccess {
+                    val rooms = it.body() ?: emptyList()
+                    roomsState.value = RoomList(rooms) // (2)
+                }
+                .onFailure {
+                    it.printStackTrace()
+                    roomsState.value = RoomList(emptyList(), it.stackTraceToString() ) // (3)
+                }
+        }
+    }
+}
+----
+* *(1)* method `viewModelScope.launch` open a new coroutine to launch the API call in another thread
+* *(2)* Update the `roomsState` object with the result of the API call when everything is OK.
+* *(3)* If an error occurs, we update the `roomsState` object with an empty list and the error message
+
+
+The last step is to update the `RoomListActivity` to use the `RoomViewModel` to load the room list.
+
+[source,kotlin,subs="specialchars"]
+----
+class RoomListActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+
+        val viewModel: RoomViewModel by viewModels()
+
+        // existing code to manage the back button and the RoomItem click to open a room detail
+        // ...
+
+        setContent {
+            AutomacorpTheme {
+                Scaffold(
+                    topBar = { AutomacorpTopAppBar("Rooms", navigateBack) }
+                ) { innerPadding ->
+                    val roomsState by viewModel.roomsState.asStateFlow().collectAsState() // (1)
+                    LaunchedEffect(Unit) { // (2)
+                        viewModel.findAll()
+                    }
+                    if (roomsState.error != null) {
+                        Toast
+                            .makeText(applicationContext, "Error on rooms loading ${roomsState.error}", Toast.LENGTH_LONG)
+                            .show() // (3)
+                    }
+                    else {
+                      LazyColumn(
+                          contentPadding = PaddingValues(4.dp),
+                          verticalArrangement = Arrangement.spacedBy(8.dp),
+                          modifier = Modifier.padding(innerPadding),
+
+                          ) { // (4)
+                          items(roomsState.rooms, key = { it.id }) {
+                              RoomItem(
+                                  room = it,
+                                  modifier = Modifier.clickable { openRoom(it.id) },
+                              )
+                          }
+                      }
+                    }
+                }
+            }
+        }
+    }
+}
+----
+
+* *(1)* We use the `asStateFlow` extension function to convert the `roomsState` object to a `StateFlow` object. We can now use the `collectAsState` function to observe the `StateFlow` object and update the UI when the value of the `StateFlow` object changes.
+* *(2)* LaunchedEffect: run suspend functions (function executed in coroutine) in the scope of a composable
+* *(3)* Display a toast notification if an error occurs
+* *(4)* Display the list of rooms if no error occurs
+
+With this code we have to write less code, manage less coroutine. The activity will subscribe to the `roomsState` object to display the result, and we don't need to juggle with the main thread.
+
+On the first display of the screen, we display an empty list of rooms because the findAll function is launched in asynchronous mode (in a coroutine). When the API call is finished, the `roomsState` object is updated with the result of the API call and the screen is updated.
 
 == icon:flask[] : Update the screen to display and update the detail
 
-=== Call API to display detail and transform view screen in edit screen
-
-1. Update `RoomActivity` to replace `val room = WindowService.ROOMS.firstOrNull {it.id == roomId}` by a call to your remote API
-2. Check your screen to validate that the screen call the API to display detail
-3. For the moment, you created the view with TextView components. You can follow this video to convert them in EditText
-+
-video::rGVizyhUAzo[youtube, width=700, height=330]
-+
-4. For the temperature EditTexts, you can update the input type to force user to fill a decimal number
-+
-video::3NQbvostJhc[youtube, width=700, height=330]
-
-Don't forget to update the type of the objects used in `RoomActivity` (`EditText` in place of `TextView`)
+In `RoomViewModel` we already manage the state of the room detail screen. Add a function to load a room by its id by a remote API call
 
 [source,kotlin,subs="specialchars"]
 ----
-val roomName = findViewById<EditText>(R.id.txt_room_name)
-roomName.setText(room?.name ?: "")
-
-val roomCurrentTemperature = findViewById<EditText>(R.id.txt_room_current_temperature)
-roomCurrentTemperature.setText(room?.currentTemperature?.toString() ?: "")
-
-val roomTargetTemperature = findViewById<EditText>(R.id.txt_room_target_temperature)
-roomTargetTemperature.setText(room?.targetTemperature?.toString() ?: "")
-----
-
-=== Create a button with an icon
-
-In https://m3.material.io/[Material design] specification, Google recommends using floating buttons with images.
-
-If you search free icons, you can use the https://fonts.google.com/icons[Google library]. For example we will search a Save button
-
-image::../../img/training/android/remote/material-icon.png[Material icon]
-
-On the right side you can choose the Android target, a color and download the icon via the bottom button.
-
-You can unzip the file downloaded. You have one image for each device resolution
-
-image::../../img/training/android/remote/material-icon-download.png[Material icon, width=200, align=center]
-
-But in our case we only keep the vector image available in file `baseline_save_24.xml`, present in folder called `drawable`. Copy this file in your Android resource folder `res/drawable`
-
-image::../../img/training/android/remote/android-icon-update.png[Vector icon, width=900, align=center]
-
-Now you can go back in the layout `activity_room.xml` and
-
-* add a FloatingActionButton
-* add layout constraint to put the button on the bottom right
-* add a contentDescription
-* add a specific id to the button
-
-video::STNEdiyPNPA[youtube, width=700, height=330]
-
-You can now create the code to populate your form, add an event listener to the button or to save or update a room.
-
-[source,kotlin,subs="specialchars"]
-----
-private fun populateScreen(room: RoomDto?) {
-    val roomName = findViewById<EditText>(R.id.txt_room_name)
-    roomName.setText(room?.name ?: "")
-
-    val roomCurrentTemperature = findViewById<EditText>(R.id.txt_room_current_temperature)
-    roomCurrentTemperature.setText(room?.currentTemperature?.toString() ?: "")
-
-    val roomTargetTemperature = findViewById<EditText>(R.id.txt_room_target_temperature)
-    roomTargetTemperature.setText(room?.targetTemperature?.toString() ?: "")
-
-    findViewById<FloatingActionButton>(R.id.saveButton).setOnClickListener {
-        saveRoom()
-    }
-}
-
-override fun onDestroy() {
-    super.onDestroy()
-    findViewById<FloatingActionButton>(R.id.saveButton).setOnClickListener(null)
-}
-
-fun saveRoom() {
-    val roomId = intent.getLongExtra(MainActivity.ROOM_ID_PARAM, -1)
-    val roomDto = RoomCommandDto(
-        name = findViewById<EditText>(R.id.txt_room_name).text.toString(),
-        currentTemperature = findViewById<EditText>(R.id.txt_room_current_temperature).text.toString()
-            .toDoubleOrNull(),
-        targetTemperature = findViewById<EditText>(R.id.txt_room_target_temperature).text.toString()
-            .toDoubleOrNull()
-    )
-    lifecycleScope.launch(context = Dispatchers.IO) { // (1)
-        runCatching {
-            if (roomId == null || roomId == 0L) {
-                ApiServices.roomsApiService.save(roomDto).execute()
-            } else {
-                ApiServices.roomsApiService.updateRoom(roomId, roomDto).execute()
-            }
-        }
+fun findRoom(id: Long) {
+    viewModelScope.launch(context = Dispatchers.IO) {
+        runCatching { ApiServices.roomsApiService.findById(id).execute() }
             .onSuccess {
-                withContext(context = Dispatchers.Main) {
-                    startActivity(Intent(applicationContext, RoomsActivity::class.java))
-                }
+                room = it.body()
             }
             .onFailure {
-                withContext(context = Dispatchers.Main) {
-                    it.printStackTrace()
-                    Toast.makeText(applicationContext, "Error on room saving $it", Toast.LENGTH_LONG).show()  // (3)
-                }
+                it.printStackTrace()
+                room = null
             }
     }
 }
 ----
 
-Now you can call all your remote API. You can also update your Room detail screen to display the room windows
+You can also add a function to update a room by its id by a remote API call
 
-image:../../img/training/android/remote/room_detail.png[Room detail,width=400,align="center"]
+[source,kotlin,subs="specialchars"]
+----
+fun updateRoom(id: Long, roomDto: RoomDto) {
+      val command = RoomCommandDto(
+          name = roomDto.name,
+          targetTemperature = roomDto.targetTemperature ?.let { Math.round(it * 10) /10.0 },
+          currentTemperature = roomDto.currentTemperature,
+      )
+      viewModelScope.launch(context = Dispatchers.IO) {
+          runCatching { ApiServices.roomsApiService.updateRoom(id, command).execute() }
+              .onSuccess {
+                  room = it.body()
+              }
+              .onFailure {
+                  it.printStackTrace()
+                  room = null
+              }
+      }
+  }
+----
+
+You can now adapt the `RoomActivity` to use the `RoomViewModel` to load the room detail and remove the local call to our fake service. After this lab you should use your remote REST Service to load and update the room detail.
+
+Implement the different functions to create a room, delete a room, list the windows of a room, update a window.

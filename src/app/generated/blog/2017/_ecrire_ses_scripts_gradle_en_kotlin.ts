@@ -49,7 +49,7 @@ export const _ecrire_ses_scripts_gradle_en_kotlin:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1728847001526.1375">buildscript {
+<pre class="highlight"><code class="language-kotlin" id="1731447061784.9692">buildscript {
     ext {
         nodePluginVersion = <span class="hljs-string">&#x27;1.0.1&#x27;</span>
     }
@@ -63,7 +63,7 @@ export const _ecrire_ses_scripts_gradle_en_kotlin:string = `<div id="preamble">
     dependencies {
         classpath <span class="hljs-string">&quot;com.moowork.gradle:gradle-node-plugin:@dollar@{nodePluginVersion}&quot;</span>
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001526.1375')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1731447061784.9692')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -71,7 +71,7 @@ export const _ecrire_ses_scripts_gradle_en_kotlin:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-groovy" id="1728847001526.5708">buildscript {
+<pre class="highlight"><code class="language-groovy" id="1731447061785.7441">buildscript {
     ext {
         nodePluginVersion = <span class="hljs-string">&#x27;1.0.1&#x27;</span>
     }
@@ -85,7 +85,7 @@ export const _ecrire_ses_scripts_gradle_en_kotlin:string = `<div id="preamble">
     dependencies {
         classpath <span class="hljs-string">&quot;com.moowork.gradle:gradle-node-plugin:@dollar@{nodePluginVersion}&quot;</span>
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001526.5708')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1731447061785.7441')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -96,9 +96,9 @@ export const _ecrire_ses_scripts_gradle_en_kotlin:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-groovy" id="1728847001526.465">apply <span class="hljs-attr">plugin:</span> <span class="hljs-string">&#x27;idea&#x27;</span>
+<pre class="highlight"><code class="language-groovy" id="1731447061785.2263">apply <span class="hljs-attr">plugin:</span> <span class="hljs-string">&#x27;idea&#x27;</span>
 apply <span class="hljs-attr">plugin:</span> <span class="hljs-string">&#x27;com.moowork.node&#x27;</span>
-apply <span class="hljs-attr">plugin:</span> <span class="hljs-string">&#x27;com.moowork.gulp&#x27;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1728847001526.465')">Copy</button></pre>
+apply <span class="hljs-attr">plugin:</span> <span class="hljs-string">&#x27;com.moowork.gulp&#x27;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1731447061785.2263')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -106,13 +106,13 @@ apply <span class="hljs-attr">plugin:</span> <span class="hljs-string">&#x27;com
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1728847001526.4268">apply {
+<pre class="highlight"><code class="language-kotlin" id="1731447061786.493">apply {
     plugin(<span class="hljs-string">&quot;idea&quot;</span>)
     plugin(<span class="hljs-string">&quot;kotlin&quot;</span>)
     plugin(<span class="hljs-string">&quot;kotlin-noarg&quot;</span>)
     plugin(<span class="hljs-string">&quot;com.moowork.node&quot;</span>)
     plugin(<span class="hljs-string">&quot;com.moowork.gulp&quot;</span>)
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001526.4268')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1731447061786.493')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -128,10 +128,10 @@ apply <span class="hljs-attr">plugin:</span> <span class="hljs-string">&#x27;com
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-groovy" id="1728847001526.7864">node {
+<pre class="highlight"><code class="language-groovy" id="1731447061786.6406">node {
     version = <span class="hljs-string">&#x27;6.9.2&#x27;</span>
     download = <span class="hljs-literal">true</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001526.7864')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1731447061786.6406')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -139,12 +139,12 @@ apply <span class="hljs-attr">plugin:</span> <span class="hljs-string">&#x27;com
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1728847001526.2644"><span class="hljs-keyword">import</span> com.moowork.gradle.node.NodeExtension
+<pre class="highlight"><code class="language-kotlin" id="1731447061787.785"><span class="hljs-keyword">import</span> com.moowork.gradle.node.NodeExtension
 
 <span class="hljs-symbol">configure@</span><span class="hljs-symbol">LTNodeExtension@</span>GT {
     version = <span class="hljs-string">&quot;6.9.2&quot;</span>
     download = <span class="hljs-literal">true</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001526.2644')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1731447061787.785')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -160,14 +160,14 @@ apply <span class="hljs-attr">plugin:</span> <span class="hljs-string">&#x27;com
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-groovy" id="1728847001526.916">task gulpBuild(<span class="hljs-attr">type:</span> GulpTask, <span class="hljs-attr">dependsOn:</span> yarnInstall) {
+<pre class="highlight"><code class="language-groovy" id="1731447061788.0105">task gulpBuild(<span class="hljs-attr">type:</span> GulpTask, <span class="hljs-attr">dependsOn:</span> yarnInstall) {
   inputs.dir <span class="hljs-string">&#x27;src/main/sass&#x27;</span>  inputs.files(npmInstall.outputs)
   outputs.dir <span class="hljs-string">&quot;src/main/static/css&quot;</span>  args = [<span class="hljs-string">&quot;default&quot;</span>]
 }
 
 processResources {
   dependsOn gulpBuild
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001526.916')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1731447061788.0105')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -175,7 +175,7 @@ processResources {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1728847001527.735"><span class="hljs-keyword">import</span> com.moowork.gradle.gulp.GulpTask
+<pre class="highlight"><code class="language-kotlin" id="1731447061788.239"><span class="hljs-keyword">import</span> com.moowork.gradle.gulp.GulpTask
 <span class="hljs-keyword">import</span> com.moowork.gradle.node.yarn.YarnInstallTask
 
 <span class="hljs-symbol">task@</span><span class="hljs-symbol">LTGulpTask@</span>GT(<span class="hljs-string">&quot;gulpBuild&quot;</span>) {
@@ -186,7 +186,7 @@ processResources {
   args = listOf(<span class="hljs-string">&quot;default&quot;</span>)
 }
 
-tasks.getByName(<span class="hljs-string">&quot;processResources&quot;</span>).dependsOn(<span class="hljs-string">&quot;gulpBuild&quot;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1728847001527.735')">Copy</button></pre>
+tasks.getByName(<span class="hljs-string">&quot;processResources&quot;</span>).dependsOn(<span class="hljs-string">&quot;gulpBuild&quot;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1731447061788.239')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
