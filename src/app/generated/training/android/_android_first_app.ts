@@ -63,8 +63,8 @@ You need to install it on your computer (installation requires 900MB) on <a href
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1731447060770.9705">cd ~/appli/android-studio/bin
-sh ./studio.sh</code><button class="btn-copy-code" onclick="copyToClipboard('1731447060770.9705')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1731527925043.6753">cd ~/appli/android-studio/bin
+sh ./studio.sh</code><button class="btn-copy-code" onclick="copyToClipboard('1731527925043.6753')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -287,7 +287,7 @@ This Android view let see you the main files of your Android project</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" id="1731447060789.2078"><span class="hljs-meta">&lt;?xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;utf-8&quot;</span>?&gt;</span>
+<pre class="highlight"><code class="language-xml" id="1731527925045.9644"><span class="hljs-meta">&lt;?xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;utf-8&quot;</span>?&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">manifest</span> <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">&quot;http://schemas.android.com/apk/res/android&quot;</span> <span class="hljs-attr">xmlns:tools</span>=<span class="hljs-string">&quot;http://schemas.android.com/tools&quot;</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">application</span> <span class="hljs-attr">android:allowbackup</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">android:dataextractionrules</span>=<span class="hljs-string">&quot;@xml/data_extraction_rules&quot;</span> <span class="hljs-attr">android:fullbackupcontent</span>=<span class="hljs-string">&quot;@xml/backup_rules&quot;</span> <span class="hljs-attr">android:icon</span>=<span class="hljs-string">&quot;@mipmap/ic_launcher&quot;</span> <span class="hljs-attr">android:label</span>=<span class="hljs-string">&quot;@string/app_name&quot;</span> <span class="hljs-attr">android:roundicon</span>=<span class="hljs-string">&quot;@mipmap/ic_launcher_round&quot;</span> <span class="hljs-attr">android:supportsrtl</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">android:theme</span>=<span class="hljs-string">&quot;@style/Theme.Automacorp&quot;</span> <span class="hljs-attr">tools:targetapi</span>=<span class="hljs-string">&quot;31&quot;</span>&gt;</span>
@@ -300,7 +300,7 @@ This Android view let see you the main files of your Android project</p>
         <span class="hljs-tag">&lt;/<span class="hljs-name">activity</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">application</span>&gt;</span>
 
-<span class="hljs-tag">&lt;/<span class="hljs-name">manifest</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1731447060789.2078')">Copy</button></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">manifest</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1731527925045.9644')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -355,7 +355,7 @@ This Android view let see you the main files of your Android project</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1731447060790.3962"><span class="hljs-keyword">class</span> <span class="hljs-title class_">MainActivity</span> : <span class="hljs-type">ComponentActivity</span>() {
+<pre class="highlight"><code class="language-kotlin" id="1731527925047.2063"><span class="hljs-keyword">class</span> <span class="hljs-title class_">MainActivity</span> : <span class="hljs-type">ComponentActivity</span>() {
     <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(savedInstanceState: <span class="hljs-type">Bundle</span>?)</span></span> {
         <span class="hljs-keyword">super</span>.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -370,7 +370,7 @@ This Android view let see you the main files of your Android project</p>
             }
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1731447060790.3962')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1731527925047.2063')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -381,10 +381,10 @@ This Android view let see you the main files of your Android project</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1731447060791.131"><span class="hljs-meta">@Composable</span>
+<pre class="highlight"><code class="language-kotlin" id="1731527925048.8472"><span class="hljs-meta">@Composable</span>
 <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">Greeting</span><span class="hljs-params">(name: <span class="hljs-type">String</span>, modifier: <span class="hljs-type">Modifier</span> = Modifier)</span></span> {
     Text(text = <span class="hljs-string">&quot;Hello @dollar@name!&quot;</span>, modifier = modifier)
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1731447060791.131')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1731527925048.8472')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -420,13 +420,13 @@ This Android view let see you the main files of your Android project</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1731447060791.1262"><span class="hljs-meta">@Preview(showBackground = true)</span>
+<pre class="highlight"><code class="language-kotlin" id="1731527925049.476"><span class="hljs-meta">@Preview(showBackground = true)</span>
 <span class="hljs-meta">@Composable</span>
 <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">GreetingPreview</span><span class="hljs-params">()</span></span> {
     AutomacorpTheme {
         Greeting(<span class="hljs-string">&quot;Android&quot;</span>)
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1731447060791.1262')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1731527925049.476')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -506,7 +506,7 @@ This Android view let see you the main files of your Android project</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1731447060792.8086">android {
+<pre class="highlight"><code class="language-kotlin" id="1731527925050.8333">android {
     namespace = <span class="hljs-string">&quot;com.automacorp&quot;</span>
     compileSdk = <span class="hljs-number">34</span>
 
@@ -550,7 +550,7 @@ This Android view let see you the main files of your Android project</p>
             excludes += <span class="hljs-string">&quot;/META-INF/{AL2.0,LGPL2.1}&quot;</span>
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1731447060792.8086')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1731527925050.8333')">Copy</button></pre>
 </div>
 </div>
 </div>

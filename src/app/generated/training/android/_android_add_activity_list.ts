@@ -35,14 +35,14 @@ export const _android_add_activity_list:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1731447060412.7385">LazyColumn {
+<pre class="highlight"><code class="language-kotlin" id="1731527924741.8325">LazyColumn {
     item {
         Header()
     }
     items(<span class="hljs-keyword">data</span>) { item <span class="hljs-meta">@LAMBDA</span>
         PhotoItem(item)
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1731447060412.7385')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1731527924741.8325')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -87,7 +87,7 @@ export const _android_add_activity_list:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1731447060414.1533"><span class="hljs-meta">@Composable</span>
+<pre class="highlight"><code class="language-kotlin" id="1731527924742.2876"><span class="hljs-meta">@Composable</span>
 <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">RoomItem</span><span class="hljs-params">(room: <span class="hljs-type">RoomDto</span>, modifier: <span class="hljs-type">Modifier</span> = Modifier)</span></span> {
     Card(colors = CardDefaults.cardColors(containerColor = Color.Transparent),
         border = BorderStroke(<span class="hljs-number">1.</span>dp, PurpleGrey80)
@@ -115,7 +115,7 @@ export const _android_add_activity_list:string = `<div id="toc" class="toc">
             )
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1731447060414.1533')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1731527924742.2876')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -126,13 +126,13 @@ export const _android_add_activity_list:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1731447060414.021"><span class="hljs-meta">@Preview(showBackground = true)</span>
+<pre class="highlight"><code class="language-kotlin" id="1731527924742.138"><span class="hljs-meta">@Preview(showBackground = true)</span>
 <span class="hljs-meta">@Composable</span>
 <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">RoomItemPreview</span><span class="hljs-params">()</span></span> {
     AutomacorpTheme {
         RoomItem(RoomService.ROOMS[<span class="hljs-number">0</span>])
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1731447060414.021')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1731527924742.138')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -143,7 +143,7 @@ export const _android_add_activity_list:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1731447060415.526"> LazyColumn(
+<pre class="highlight"><code class="language-kotlin" id="1731527924743.8347"> LazyColumn(
     contentPadding = PaddingValues(<span class="hljs-number">4.</span>dp),
     verticalArrangement = Arrangement.spacedBy(<span class="hljs-number">8.</span>dp),
     modifier = Modifier.padding(innerPadding),
@@ -155,7 +155,7 @@ export const _android_add_activity_list:string = `<div id="toc" class="toc">
             modifier = Modifier
         )
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1731447060415.526')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1731527924743.8347')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -174,12 +174,12 @@ export const _android_add_activity_list:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1731447060415.7673">items(rooms, key = { it.id }) {
+<pre class="highlight"><code class="language-kotlin" id="1731527924743.7112">items(rooms, key = { it.id }) {
     RoomItem(
         room = it,
         modifier = Modifier.clickable { openRoom(it.id) },
     )
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1731447060415.7673')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1731527924743.7112')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
