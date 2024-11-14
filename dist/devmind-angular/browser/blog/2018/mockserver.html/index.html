@@ -194,7 +194,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1731447062883.8838"><span class="hljs-meta">@Component</span>
+<pre class="highlight"><code class="language-java" id="1731601745129.0881"><span class="hljs-meta">@Component</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ElasticMailSender</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">EmailSender</span> {
 
     <span class="hljs-keyword">private</span> WebClient webClient;
@@ -229,7 +229,7 @@
             <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">RuntimeException</span>(response.getError());
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1731447062883.8838')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1731601745129.0881')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -240,7 +240,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1731447062884.404">testCompile(<span class="hljs-string">"com.squareup.okhttp3:mockwebserver:3.9.1"</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1731447062884.404')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1731601745130.5916">testCompile(<span class="hljs-string">"com.squareup.okhttp3:mockwebserver:3.9.1"</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1731601745130.5916')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -248,7 +248,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1731447062886.8723"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ElasticMailSenderTest</span> {
+<pre class="highlight"><code class="language-java" id="1731601745132.6675"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ElasticMailSenderTest</span> {
     <span class="hljs-meta">@Rule</span>
     <span class="hljs-keyword">public</span> <span class="hljs-type">MockWebServer</span> <span class="hljs-variable">server</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">MockWebServer</span>();
     <span class="hljs-keyword">private</span> WebClient webClient;
@@ -294,7 +294,7 @@
         consumer.accept(response);
         <span class="hljs-built_in">this</span>.server.enqueue(response);
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1731447062886.8723')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1731601745132.6675')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -302,7 +302,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1731447062886.4983">WebClient.create(<span class="hljs-built_in">this</span>.server.url(<span class="hljs-string">"/"</span>).toString())</code><button class="btn-copy-code" onclick="copyToClipboard('1731447062886.4983')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1731601745133.9338">WebClient.create(<span class="hljs-built_in">this</span>.server.url(<span class="hljs-string">"/"</span>).toString())</code><button class="btn-copy-code" onclick="copyToClipboard('1731601745133.9338')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -321,13 +321,13 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1731447062887.61">configurations {
+<pre class="highlight"><code class="language-java" id="1731601745133.847">configurations {
 	all {
 		exclude <span class="hljs-keyword">module</span>: <span class="hljs-string">"junit"</span>
 	}
 }
 testCompile(<span class="hljs-string">"org.junit.jupiter:junit-jupiter-api"</span>)
-testRuntime(<span class="hljs-string">"org.junit.jupiter:junit-jupiter-engine"</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1731447062887.61')">Copy</button></pre>
+testRuntime(<span class="hljs-string">"org.junit.jupiter:junit-jupiter-engine"</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1731601745133.847')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -341,7 +341,7 @@ testRuntime(<span class="hljs-string">"org.junit.jupiter:junit-jupiter-engine"</
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1731447062887.704">testCompile(<span class="hljs-string">"com.devmind:mockwebserver:0.1.0"</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1731447062887.704')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1731601745133.9653">testCompile(<span class="hljs-string">"com.devmind:mockwebserver:0.1.0"</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1731601745133.9653')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -349,7 +349,7 @@ testRuntime(<span class="hljs-string">"org.junit.jupiter:junit-jupiter-engine"</
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1731447062888.9326"><span class="hljs-meta">@ExtendWith(MockWebServerExtension.class)</span>
+<pre class="highlight"><code class="language-java" id="1731601745135.3994"><span class="hljs-meta">@ExtendWith(MockWebServerExtension.class)</span>
 <span class="hljs-keyword">class</span> <span class="hljs-title class_">MySpringWebfluxServiceTest</span> {
 
     <span class="hljs-keyword">private</span> MockWebServer server;
@@ -388,7 +388,7 @@ testRuntime(<span class="hljs-string">"org.junit.jupiter:junit-jupiter-engine"</
         <span class="hljs-built_in">this</span>.server.enqueue(response);
     }
 
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1731447062888.9326')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1731601745135.3994')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -396,7 +396,7 @@ testRuntime(<span class="hljs-string">"org.junit.jupiter:junit-jupiter-engine"</
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1731447062891.0842"><span class="hljs-meta">@ExtendWith(MockSimpleWebServerExtension.class)</span>
+<pre class="highlight"><code class="language-java" id="1731601745138.469"><span class="hljs-meta">@ExtendWith(MockSimpleWebServerExtension.class)</span>
 <span class="hljs-meta">@TestInstance(TestInstance.Lifecycle.PER_CLASS)</span>
 <span class="hljs-keyword">class</span> <span class="hljs-title class_">MySpringWebfluxServiceTest</span> {
 
@@ -445,15 +445,15 @@ testRuntime(<span class="hljs-string">"org.junit.jupiter:junit-jupiter-engine"</
         consumer.accept(response);
         <span class="hljs-built_in">this</span>.server.enqueue(response);
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1731447062891.0842')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1731601745138.469')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
 <p>Voila vous n’avez plus d’excuse pour ne pas tester vos services Spring utilisant WebClient en Junit 5. Le fork proposé par Dev-Mind peut être utilisé en attendant que Square mette à jour sa librairie.</p>
 </div>
 </div>
-</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 12/11/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
+</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 14/11/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
 
-<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-7HWWU66L.js" type="module"></script>
+<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-ZP2R6S5W.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t6"},"c":{"7":[{"i":"t6","r":1,"x":5}]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t0"},"c":{"7":[{"i":"t0","r":1,"x":5}]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>

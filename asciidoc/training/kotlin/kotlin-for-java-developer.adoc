@@ -538,3 +538,149 @@ val table = Table()
 == More
 
 This is just an introduction. If you want to become a rock star in Kotlin you can read the official documentation: https://kotlinlang.org/docs/reference/
+
+== icon:flask[] Kotlin by the practise
+
+We will use https://play.kotlinlang.org/ to do the exercices. This website allows you to write and test your Kotlin code in your browser.
+
+=== Use println to display a message in the console
+
+You are developed an app on your phone and you want to display a summary of notifications.
+
+You have this code to complete. We want to display the number of notifications received. If the number of notifications is less than 100, we want to display the exact number of notifications. If the number of notifications is 100 or more, we want to display 99+ as the number of notifications.
+
+[source, kotlin, subs="specialchars"]
+----
+fun main() {
+    val morningNotification = 51
+    val eveningNotification = 135
+
+    printNotificationSummary(morningNotification)
+    printNotificationSummary(eveningNotification)
+}
+
+
+fun printNotificationSummary(numberOfMessages: Int) {
+    // Write the code here.
+}
+----
+
+The console output should be
+
+----
+You received 51 notifications
+You received 99+ notifications
+----
+
+=== Concert ticket price
+
+You are developing a ticketing system for a concert. The ticket price is determined based on the age of the concertgoer.
+
+In the initial code provided in the following code snippet, write a program that calculates these age-based ticket prices:
+
+* a children's ticket price of $10 for people 12 years old or younger.
+* a standard ticket price of $20 for people between 13 and 64 years old.
+* a senior ticket price of $15 for people 65 years old and older.
+* a null value indicate that the price is invalid when a user fills an age out the bounds
+
+[source, kotlin, subs="specialchars"]
+----
+fun main() {
+    val child = 5
+    val adult = 28
+    val senior = 87
+    val oops = -1
+
+    println("The movie ticket price for a person aged $child is \$${ticketPrice(child)}.")
+    println("The movie ticket price for a person aged $adult is \$${ticketPrice(adult)}.")
+    println("The movie ticket price for a person aged $senior is \$${ticketPrice(senior)}.")
+    println("The movie ticket price for a person aged oops is \$${ticketPrice(oops)}.")
+}
+
+fun ticketPrice(age: Int): Int? {
+    // Write the code here.
+}
+----
+
+Complete the ticketPrice() function so that the program prints these lines:
+
+----
+The movie ticket price for a person aged 5 is $15.
+The movie ticket price for a person aged 28 is $25.
+The movie ticket price for a person aged 87 is $20.
+The movie ticket price for a person aged oops is null.
+----
+
+=== Currency converter
+
+You are developing a currency converter app. The app will convert a given amount of money from one currency to another. You will have to call the function `convertCurrency()` which use a function as last argument (more detail in link:/training/kotlin/kotlin_for_java_developer.html#_higher_order_functions[Higher order function]])
+
+We will suppose that the conversion rate is
+
+* 1 USD = 0.95 EUR
+* 1 EUR = 1.05 USD
+
+If you want to use the euro currency in your code you can use the `java.util.Currency.getInstance("EUR")` static function.
+
+[source, kotlin, subs="specialchars"]
+----
+fun main() {
+    // Write the code here.
+}
+
+
+fun convertCurrency(
+    amount: Double,
+    initialCurrency: java.util.Currency,
+    targetCurrency: java.util.Currency,
+    conversionFormula: (Double) -> Double
+) {
+    val convertedAmount = String.format("%.2f", conversionFormula(amount)) // round the result to 2 decimal places
+    println("$amount $initialCurrency can be changed in $convertedAmount $targetCurrency.")
+}
+----
+
+The console output should be
+
+----
+12.3 EUR can be changed in 12.92 USD.
+12.3 USD can be changed in 11.69 EUR.
+----
+
+=== User profile
+
+You need to create a user profile for an online website. The profile contains the following information:
+
+* The username (a String)
+* The user's age (a Int)
+* his/her favorite hobby (a String)
+* an optional link to define a favorite hobby partner's profile (a nullable profile)
+
+[source, kotlin, subs="specialchars"]
+----
+// Create a data class to represent the user profile here.
+// Write the code here.
+
+fun main() {
+    val elodie = Profile("Elodie", 21, "Tennis", null)
+    val eduardo = Profile("Eduardo", 22, "Tennis", elodie)
+
+    listOf(elodie, eduardo).forEach{
+        println("Name : ${it.username}")
+        // Write the code here.
+    }
+}
+----
+
+You should display
+
+----
+Name : Elodie
+Age : 21
+Hobby : like Tennis
+Name : Eduardo
+Age : 22
+Hobby : like Tennis  with Elodie
+----
+
+You are now ready to start your first project in Kotlin.
