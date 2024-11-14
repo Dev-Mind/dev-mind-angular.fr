@@ -69,7 +69,7 @@ export const _android_call_remote_api:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1731601746354.2832"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">RoomsApiService</span> {
+<pre class="highlight"><code class="language-kotlin" id="1731613728389.7852"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">RoomsApiService</span> {
     <span class="hljs-meta">@GET(<span class="hljs-string">&quot;rooms&quot;</span>)</span>
     <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">findAll</span><span class="hljs-params">()</span></span>: <span class="hljs-symbol">Call@</span><span class="hljs-symbol">LTList@</span><span class="hljs-symbol">LTRoomDto@</span><span class="hljs-symbol">GT@</span>GT
 
@@ -80,7 +80,7 @@ export const _android_call_remote_api:string = `<div id="toc" class="toc">
     <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">updateRoom</span><span class="hljs-params">(<span class="hljs-meta">@Path(<span class="hljs-string">&quot;id&quot;</span>)</span> id: <span class="hljs-type">Long</span>, <span class="hljs-meta">@Body</span> room: <span class="hljs-type">RoomCommandDto</span>)</span></span>: <span class="hljs-symbol">Call@</span><span class="hljs-symbol">LTRoomDto@</span>GT
 
     <span class="hljs-comment">//...</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1731601746354.2832')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1731613728389.7852')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -94,8 +94,8 @@ export const _android_call_remote_api:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1731601746355.5984"><span class="hljs-meta">@GET(<span class="hljs-string">&quot;rooms/{id}&quot;</span>)</span>
-<span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">findById</span><span class="hljs-params">(<span class="hljs-meta">@Path(<span class="hljs-string">&quot;id&quot;</span>)</span> id: <span class="hljs-type">Long</span>)</span></span>: <span class="hljs-symbol">Call@</span><span class="hljs-symbol">LTRoomDto@</span>GT</code><button class="btn-copy-code" onclick="copyToClipboard('1731601746355.5984')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1731613728390.8845"><span class="hljs-meta">@GET(<span class="hljs-string">&quot;rooms/{id}&quot;</span>)</span>
+<span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">findById</span><span class="hljs-params">(<span class="hljs-meta">@Path(<span class="hljs-string">&quot;id&quot;</span>)</span> id: <span class="hljs-type">Long</span>)</span></span>: <span class="hljs-symbol">Call@</span><span class="hljs-symbol">LTRoomDto@</span>GT</code><button class="btn-copy-code" onclick="copyToClipboard('1731613728390.8845')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -103,8 +103,8 @@ export const _android_call_remote_api:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1731601746356.3904"><span class="hljs-meta">@GET(<span class="hljs-string">&quot;rooms&quot;</span>)</span>
-<span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">findAll</span><span class="hljs-params">(<span class="hljs-meta">@Query(<span class="hljs-string">&quot;sort&quot;</span>)</span> sort: <span class="hljs-type">String</span>)</span></span>: <span class="hljs-symbol">Call@</span><span class="hljs-symbol">LTList@</span><span class="hljs-symbol">LTRoomDto@</span><span class="hljs-symbol">GT@</span>GT</code><button class="btn-copy-code" onclick="copyToClipboard('1731601746356.3904')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1731613728391.2234"><span class="hljs-meta">@GET(<span class="hljs-string">&quot;rooms&quot;</span>)</span>
+<span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">findAll</span><span class="hljs-params">(<span class="hljs-meta">@Query(<span class="hljs-string">&quot;sort&quot;</span>)</span> sort: <span class="hljs-type">String</span>)</span></span>: <span class="hljs-symbol">Call@</span><span class="hljs-symbol">LTList@</span><span class="hljs-symbol">LTRoomDto@</span><span class="hljs-symbol">GT@</span>GT</code><button class="btn-copy-code" onclick="copyToClipboard('1731613728391.2234')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -112,8 +112,8 @@ export const _android_call_remote_api:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1731601746356.3792"><span class="hljs-meta">@PUT(<span class="hljs-string">&quot;rooms/{id}&quot;</span>)</span>
-<span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">updateRoom</span><span class="hljs-params">(<span class="hljs-meta">@Path(<span class="hljs-string">&quot;id&quot;</span>)</span> id: <span class="hljs-type">Long</span>, <span class="hljs-meta">@Body</span> room: <span class="hljs-type">RoomCommandDto</span>)</span></span>: <span class="hljs-symbol">Call@</span><span class="hljs-symbol">LTRoomDto@</span>GT</code><button class="btn-copy-code" onclick="copyToClipboard('1731601746356.3792')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1731613728392.9832"><span class="hljs-meta">@PUT(<span class="hljs-string">&quot;rooms/{id}&quot;</span>)</span>
+<span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">updateRoom</span><span class="hljs-params">(<span class="hljs-meta">@Path(<span class="hljs-string">&quot;id&quot;</span>)</span> id: <span class="hljs-type">Long</span>, <span class="hljs-meta">@Body</span> room: <span class="hljs-type">RoomCommandDto</span>)</span></span>: <span class="hljs-symbol">Call@</span><span class="hljs-symbol">LTRoomDto@</span>GT</code><button class="btn-copy-code" onclick="copyToClipboard('1731613728392.9832')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -121,7 +121,7 @@ export const _android_call_remote_api:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1731601746357.9692"><span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomDto</span>(
+<pre class="highlight"><code class="language-kotlin" id="1731613728393.649"><span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomDto</span>(
     <span class="hljs-keyword">val</span> id: <span class="hljs-built_in">Long</span>,
     <span class="hljs-keyword">val</span> name: String,
     <span class="hljs-keyword">val</span> currentTemperature: <span class="hljs-built_in">Double</span>?,
@@ -136,7 +136,7 @@ export const _android_call_remote_api:string = `<div id="toc" class="toc">
     <span class="hljs-keyword">val</span> floor: <span class="hljs-built_in">Int</span> = <span class="hljs-number">1</span>,
     <span class="hljs-comment">// Set to the default building ID (useful when you have not created screens to manage buildings)</span>
     <span class="hljs-keyword">val</span> buildingId: <span class="hljs-built_in">Long</span> = -<span class="hljs-number">10</span>
-)</code><button class="btn-copy-code" onclick="copyToClipboard('1731601746357.9692')">Copy</button></pre>
+)</code><button class="btn-copy-code" onclick="copyToClipboard('1731613728393.649')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -165,7 +165,7 @@ You will find more information on <a href="https://square.github.io/retrofit/">R
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-toml" id="1731601746360.1982"><span class="hljs-attr">retrofit</span> = <span class="hljs-string">&quot;2.9.0&quot;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1731601746360.1982')">Copy</button></pre>
+<pre class="highlight"><code class="language-toml" id="1731613728398.0146"><span class="hljs-attr">retrofit</span> = <span class="hljs-string">&quot;2.9.0&quot;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1731613728398.0146')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -173,8 +173,8 @@ You will find more information on <a href="https://square.github.io/retrofit/">R
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-toml" id="1731601746361.8367"><span class="hljs-attr">retrofit</span> = { module = <span class="hljs-string">&quot;com.squareup.retrofit2:retrofit&quot;</span>, version.ref = <span class="hljs-string">&quot;retrofit&quot;</span> }
-<span class="hljs-attr">retrofit-moshi</span> = { module = <span class="hljs-string">&quot;com.squareup.retrofit2:converter-moshi&quot;</span>, version.ref = <span class="hljs-string">&quot;retrofit&quot;</span> }</code><button class="btn-copy-code" onclick="copyToClipboard('1731601746361.8367')">Copy</button></pre>
+<pre class="highlight"><code class="language-toml" id="1731613728400.2222"><span class="hljs-attr">retrofit</span> = { module = <span class="hljs-string">&quot;com.squareup.retrofit2:retrofit&quot;</span>, version.ref = <span class="hljs-string">&quot;retrofit&quot;</span> }
+<span class="hljs-attr">retrofit-moshi</span> = { module = <span class="hljs-string">&quot;com.squareup.retrofit2:converter-moshi&quot;</span>, version.ref = <span class="hljs-string">&quot;retrofit&quot;</span> }</code><button class="btn-copy-code" onclick="copyToClipboard('1731613728400.2222')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -182,8 +182,8 @@ You will find more information on <a href="https://square.github.io/retrofit/">R
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-groovy" id="1731601746361.1208">implementation (libs.retrofit)
-implementation (libs.converter.moshi)</code><button class="btn-copy-code" onclick="copyToClipboard('1731601746361.1208')">Copy</button></pre>
+<pre class="highlight"><code class="language-groovy" id="1731613728404.5198">implementation (libs.retrofit)
+implementation (libs.converter.moshi)</code><button class="btn-copy-code" onclick="copyToClipboard('1731613728404.5198')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -226,7 +226,7 @@ implementation (libs.converter.moshi)</code><button class="btn-copy-code" onclic
 <p>We need to create an implementation of this interface. This implementation will be created by the Retrofit Builder. In package <code>com.automacorp.service</code> create a new class called <strong>ApiServices</strong>. This class will use a Retrofit builder to return an instance of interface <code>RoomsApiService</code></p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1731601746362.4866"><span class="hljs-keyword">object</span> ApiServices {
+<pre class="highlight"><code class="language-kotlin" id="1731613728405.2058"><span class="hljs-keyword">object</span> ApiServices {
     <span class="hljs-keyword">val</span> roomsApiService : RoomsApiService <span class="hljs-keyword">by</span> lazy {
         Retrofit.Builder()
                 .addConverterFactory(MoshiConverterFactory.create()) <span class="hljs-comment">// (1)</span>
@@ -234,7 +234,7 @@ implementation (libs.converter.moshi)</code><button class="btn-copy-code" onclic
                 .build()
                 .create(RoomsApiService::<span class="hljs-keyword">class</span>.java)
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1731601746362.4866')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1731613728405.2058')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -251,8 +251,8 @@ implementation (libs.converter.moshi)</code><button class="btn-copy-code" onclic
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1731601746362.1614"><span class="hljs-keyword">const</span> <span class="hljs-keyword">val</span> API_USERNAME = <span class="hljs-string">&quot;user&quot;</span>
-<span class="hljs-keyword">const</span> <span class="hljs-keyword">val</span> API_PASSWORD = <span class="hljs-string">&quot;password&quot;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1731601746362.1614')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1731613728406.3445"><span class="hljs-keyword">const</span> <span class="hljs-keyword">val</span> API_USERNAME = <span class="hljs-string">&quot;user&quot;</span>
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">val</span> API_PASSWORD = <span class="hljs-string">&quot;password&quot;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1731613728406.3445')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -260,7 +260,7 @@ implementation (libs.converter.moshi)</code><button class="btn-copy-code" onclic
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1731601746363.7217"><span class="hljs-keyword">class</span> <span class="hljs-title class_">BasicAuthInterceptor</span>(<span class="hljs-keyword">val</span> username: String, <span class="hljs-keyword">val</span> password: String): Interceptor {
+<pre class="highlight"><code class="language-kotlin" id="1731613728407.0203"><span class="hljs-keyword">class</span> <span class="hljs-title class_">BasicAuthInterceptor</span>(<span class="hljs-keyword">val</span> username: String, <span class="hljs-keyword">val</span> password: String): Interceptor {
     <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">intercept</span><span class="hljs-params">(chain: <span class="hljs-type">Interceptor</span>.<span class="hljs-type">Chain</span>)</span></span>: Response {
         <span class="hljs-keyword">val</span> request = chain
             .request()
@@ -269,7 +269,7 @@ implementation (libs.converter.moshi)</code><button class="btn-copy-code" onclic
             .build()
         <span class="hljs-keyword">return</span> chain.proceed(request)
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1731601746363.7217')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1731613728407.0203')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -277,7 +277,7 @@ implementation (libs.converter.moshi)</code><button class="btn-copy-code" onclic
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1731601746363.3552"><span class="hljs-keyword">val</span> roomsApiService : RoomsApiService <span class="hljs-keyword">by</span> lazy {
+<pre class="highlight"><code class="language-kotlin" id="1731613728407.9497"><span class="hljs-keyword">val</span> roomsApiService : RoomsApiService <span class="hljs-keyword">by</span> lazy {
     <span class="hljs-keyword">val</span> client = OkHttpClient.Builder()
             .addInterceptor(BasicAuthInterceptor(API_USERNAME, API_PASSWORD))
             .build()
@@ -288,7 +288,7 @@ implementation (libs.converter.moshi)</code><button class="btn-copy-code" onclic
         .baseUrl(<span class="hljs-string">&quot;https://automacorp.devmind.cleverapps.io/api/&quot;</span>)
         .build()
         .create(RoomsApiService::<span class="hljs-keyword">class</span>.java)
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1731601746363.3552')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1731613728407.9497')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -296,7 +296,7 @@ implementation (libs.converter.moshi)</code><button class="btn-copy-code" onclic
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1731601746364.6519"><span class="hljs-keyword">val</span> roomsApiService : RoomsApiService <span class="hljs-keyword">by</span> lazy {
+<pre class="highlight"><code class="language-kotlin" id="1731613728409.9346"><span class="hljs-keyword">val</span> roomsApiService : RoomsApiService <span class="hljs-keyword">by</span> lazy {
     <span class="hljs-keyword">val</span> client = getUnsafeOkHttpClient()
             .addInterceptor(BasicAuthInterceptor(API_USERNAME, API_PASSWORD))
             .build()
@@ -325,7 +325,7 @@ implementation (libs.converter.moshi)</code><button class="btn-copy-code" onclic
       sslSocketFactory(sslContext.socketFactory, trustManager)
       hostnameVerifier { hostname, _ <span class="hljs-meta">@LAMBDA</span> hostname.contains(<span class="hljs-string">&quot;cleverapps.io&quot;</span>) }
       addInterceptor(BasicAuthInterceptor(API_USERNAME, API_PASSWORD))
-  }</code><button class="btn-copy-code" onclick="copyToClipboard('1731601746364.6519')">Copy</button></pre>
+  }</code><button class="btn-copy-code" onclick="copyToClipboard('1731613728409.9346')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -341,7 +341,7 @@ implementation (libs.converter.moshi)</code><button class="btn-copy-code" onclic
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1731601746365.9893"> runCatching {  <span class="hljs-comment">// (1)</span>
+<pre class="highlight"><code class="language-kotlin" id="1731613728411.247"> runCatching {  <span class="hljs-comment">// (1)</span>
    ApiServices.roomsApiService.findAll().execute()  <span class="hljs-comment">// (2)</span>
  }
       .onSuccess { <span class="hljs-comment">// (3)</span>
@@ -364,7 +364,7 @@ implementation (libs.converter.moshi)</code><button class="btn-copy-code" onclic
       .onFailure {
           it.printStackTrace() <span class="hljs-comment">// (4)</span>
           Toast.makeText(<span class="hljs-keyword">this</span>, <span class="hljs-string">&quot;Error on rooms loading @dollar@it&quot;</span>, Toast.LENGTH_LONG).show() <span class="hljs-comment">// (5)</span>
-      }</code><button class="btn-copy-code" onclick="copyToClipboard('1731601746365.9893')">Copy</button></pre>
+      }</code><button class="btn-copy-code" onclick="copyToClipboard('1731613728411.247')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -466,7 +466,7 @@ implementation (libs.converter.moshi)</code><button class="btn-copy-code" onclic
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1731601746365.8093">implementation(libs.androidx.lifecycle.runtime.ktx)</code><button class="btn-copy-code" onclick="copyToClipboard('1731601746365.8093')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1731613728412.9717">implementation(libs.androidx.lifecycle.runtime.ktx)</code><button class="btn-copy-code" onclick="copyToClipboard('1731613728412.9717')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -489,7 +489,7 @@ implementation (libs.converter.moshi)</code><button class="btn-copy-code" onclic
 <p>Update code to call roomsApiService as follows</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1731601746366.7278">lifecycleScope.launch(context = Dispatchers.IO) { <span class="hljs-comment">// (1)</span>
+<pre class="highlight"><code class="language-kotlin" id="1731613728412.2283">lifecycleScope.launch(context = Dispatchers.IO) { <span class="hljs-comment">// (1)</span>
     runCatching { ApiServices.roomsApiService.findAll().execute() }
         .onSuccess {
             <span class="hljs-keyword">val</span> rooms = it.body() ?: emptyList()
@@ -503,7 +503,7 @@ implementation (libs.converter.moshi)</code><button class="btn-copy-code" onclic
                     .show()  <span class="hljs-comment">// (3)</span>
             }
         }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1731601746366.7278')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1731613728412.2283')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -552,7 +552,7 @@ implementation (libs.converter.moshi)</code><button class="btn-copy-code" onclic
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" id="1731601746366.9663">@LTmanifest xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+<pre class="highlight"><code class="language-xml" id="1731613728413.1545">@LTmanifest xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
 package=&quot;com.example.snazzyapp&quot;@GT
 
     @LTuses-permission android:name=&quot;android.permission.INTERNET&quot; /@GT
@@ -560,7 +560,7 @@ package=&quot;com.example.snazzyapp&quot;@GT
          android:usesCleartextTraffic=&quot;true&quot;@GT
         ...
     @LT/application@GT
-@LT/manifest@GT</code><button class="btn-copy-code" onclick="copyToClipboard('1731601746366.9663')">Copy</button></pre>
+@LT/manifest@GT</code><button class="btn-copy-code" onclick="copyToClipboard('1731613728413.1545')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -587,10 +587,10 @@ package=&quot;com.example.snazzyapp&quot;@GT
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1731601746366.8296"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomList</span>(
+<pre class="highlight"><code class="language-kotlin" id="1731613728413.8105"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomList</span>(
     <span class="hljs-keyword">val</span> rooms: <span class="hljs-symbol">List@</span><span class="hljs-symbol">LTRoomDto@</span>GT = emptyList(),
     <span class="hljs-keyword">val</span> error: String? = <span class="hljs-literal">null</span>
-)</code><button class="btn-copy-code" onclick="copyToClipboard('1731601746366.8296')">Copy</button></pre>
+)</code><button class="btn-copy-code" onclick="copyToClipboard('1731613728413.8105')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -598,11 +598,11 @@ package=&quot;com.example.snazzyapp&quot;@GT
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1731601746367.0266"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomViewModel</span> : <span class="hljs-type">ViewModel</span>() {
+<pre class="highlight"><code class="language-kotlin" id="1731613728414.2039"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomViewModel</span> : <span class="hljs-type">ViewModel</span>() {
     <span class="hljs-comment">// existing code</span>
 
     <span class="hljs-keyword">val</span> roomsState = MutableStateFlow(RoomList())
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1731601746367.0266')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1731613728414.2039')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -610,7 +610,7 @@ package=&quot;com.example.snazzyapp&quot;@GT
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1731601746367.8423"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomViewModel</span> : <span class="hljs-type">ViewModel</span>() {
+<pre class="highlight"><code class="language-kotlin" id="1731613728415.3093"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomViewModel</span> : <span class="hljs-type">ViewModel</span>() {
     <span class="hljs-comment">// existing code</span>
     <span class="hljs-comment">//...</span>
 
@@ -627,7 +627,7 @@ package=&quot;com.example.snazzyapp&quot;@GT
                 }
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1731601746367.8423')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1731613728415.3093')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -648,7 +648,7 @@ package=&quot;com.example.snazzyapp&quot;@GT
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1731601746368.235"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomListActivity</span> : <span class="hljs-type">ComponentActivity</span>() {
+<pre class="highlight"><code class="language-kotlin" id="1731613728418.749"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomListActivity</span> : <span class="hljs-type">ComponentActivity</span>() {
     <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(savedInstanceState: <span class="hljs-type">Bundle</span>?)</span></span> {
         <span class="hljs-keyword">super</span>.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -691,7 +691,7 @@ package=&quot;com.example.snazzyapp&quot;@GT
             }
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1731601746368.235')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1731613728418.749')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -726,7 +726,7 @@ package=&quot;com.example.snazzyapp&quot;@GT
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1731601746369.766"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">findRoom</span><span class="hljs-params">(id: <span class="hljs-type">Long</span>)</span></span> {
+<pre class="highlight"><code class="language-kotlin" id="1731613728419.8093"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">findRoom</span><span class="hljs-params">(id: <span class="hljs-type">Long</span>)</span></span> {
     viewModelScope.launch(context = Dispatchers.IO) {
         runCatching { ApiServices.roomsApiService.findById(id).execute() }
             .onSuccess {
@@ -737,7 +737,7 @@ package=&quot;com.example.snazzyapp&quot;@GT
                 room = <span class="hljs-literal">null</span>
             }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1731601746369.766')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1731613728419.8093')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -745,7 +745,7 @@ package=&quot;com.example.snazzyapp&quot;@GT
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1731601746370.1326"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">updateRoom</span><span class="hljs-params">(id: <span class="hljs-type">Long</span>, roomDto: <span class="hljs-type">RoomDto</span>)</span></span> {
+<pre class="highlight"><code class="language-kotlin" id="1731613728420.8303"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">updateRoom</span><span class="hljs-params">(id: <span class="hljs-type">Long</span>, roomDto: <span class="hljs-type">RoomDto</span>)</span></span> {
       <span class="hljs-keyword">val</span> command = RoomCommandDto(
           name = roomDto.name,
           targetTemperature = roomDto.targetTemperature ?.let { Math.round(it * <span class="hljs-number">10</span>) /<span class="hljs-number">10.0</span> },
@@ -761,7 +761,7 @@ package=&quot;com.example.snazzyapp&quot;@GT
                   room = <span class="hljs-literal">null</span>
               }
       }
-  }</code><button class="btn-copy-code" onclick="copyToClipboard('1731601746370.1326')">Copy</button></pre>
+  }</code><button class="btn-copy-code" onclick="copyToClipboard('1731613728420.8303')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">

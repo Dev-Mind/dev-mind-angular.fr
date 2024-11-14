@@ -229,12 +229,12 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" id="1731601746246.503">&lt;string name="act_room_name"&gt;Room name&lt;/string&gt;</code><button class="btn-copy-code" onclick="copyToClipboard('1731601746246.503')">Copy</button></pre>
+<pre class="highlight"><code class="language-xml" id="1731613728152.1895">&lt;string name="act_room_name"&gt;Room name&lt;/string&gt;</code><button class="btn-copy-code" onclick="copyToClipboard('1731613728152.1895')">Copy</button></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1731601746247.504"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomActivity</span> : <span class="hljs-type">ComponentActivity</span>() {
+<pre class="highlight"><code class="language-kotlin" id="1731613728156.9028"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomActivity</span> : <span class="hljs-type">ComponentActivity</span>() {
     <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(savedInstanceState: <span class="hljs-type">Bundle</span>?)</span></span> {
         <span class="hljs-keyword">super</span>.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -275,7 +275,7 @@
     AutomacorpTheme {
         RoomDetail(<span class="hljs-string">"Android"</span>)
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1731601746247.504')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1731613728156.9028')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -332,13 +332,13 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1731601746248.801"><span class="hljs-keyword">class</span> <span class="hljs-title class_">MainActivity</span> : <span class="hljs-type">AppCompatActivity</span>() {
+<pre class="highlight"><code class="language-kotlin" id="1731613728160.3113"><span class="hljs-keyword">class</span> <span class="hljs-title class_">MainActivity</span> : <span class="hljs-type">AppCompatActivity</span>() {
 
     <span class="hljs-keyword">companion</span> <span class="hljs-keyword">object</span> {
         <span class="hljs-keyword">const</span> <span class="hljs-keyword">val</span> ROOM_PARAM = <span class="hljs-string">"com.automacorp.room.attribute"</span>
     }
 
-    <span class="hljs-comment">// ...</span></code><button class="btn-copy-code" onclick="copyToClipboard('1731601746248.801')">Copy</button></pre>
+    <span class="hljs-comment">// ...</span></code><button class="btn-copy-code" onclick="copyToClipboard('1731613728160.3113')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -349,12 +349,12 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1731601746248.0303"><span class="hljs-keyword">val</span> onSayHelloButtonClick: (name: String) <span class="hljs-meta">-&gt;</span> <span class="hljs-built_in">Unit</span> = { name <span class="hljs-meta">-&gt;</span>
+<pre class="highlight"><code class="language-kotlin" id="1731613728162.8604"><span class="hljs-keyword">val</span> onSayHelloButtonClick: (name: String) <span class="hljs-meta">-&gt;</span> <span class="hljs-built_in">Unit</span> = { name <span class="hljs-meta">-&gt;</span>
   <span class="hljs-keyword">val</span> intent = Intent(<span class="hljs-keyword">this</span>, RoomActivity::<span class="hljs-keyword">class</span>.java).apply {
     putExtra(ROOM_PARAM, name)
   }
   startActivity(intent)
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1731601746248.0303')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1731613728162.8604')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -362,7 +362,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1731601746249.4004"><span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(savedInstanceState: <span class="hljs-type">Bundle</span>?)</span></span> {
+<pre class="highlight"><code class="language-kotlin" id="1731613728163.4365"><span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(savedInstanceState: <span class="hljs-type">Bundle</span>?)</span></span> {
         <span class="hljs-keyword">super</span>.onCreate(savedInstanceState)
         <span class="hljs-keyword">val</span> param = intent.getStringExtra(MainActivity.ROOM_PARAM)
         enableEdgeToEdge()
@@ -376,7 +376,7 @@
                 }
             }
         }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1731601746249.4004')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1731613728163.4365')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -443,13 +443,13 @@
 <p>Fill a name. For example <strong>RoomDto</strong> (dto = data transfer object) and create window properties. You can copy this code</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1731601746249.5798"><span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomDto</span>(
+<pre class="highlight"><code class="language-kotlin" id="1731613728165.4985"><span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomDto</span>(
     <span class="hljs-keyword">val</span> id: <span class="hljs-built_in">Long</span>,
     <span class="hljs-keyword">val</span> name: String,
     <span class="hljs-keyword">val</span> currentTemperature: <span class="hljs-built_in">Double</span>?,
     <span class="hljs-keyword">val</span> targetTemperature: <span class="hljs-built_in">Double</span>?,
     <span class="hljs-keyword">val</span> windows: <span class="hljs-symbol">List&lt;WindowDto&gt;,
-)</span></code><button class="btn-copy-code" onclick="copyToClipboard('1731601746249.5798')">Copy</button></pre>
+)</span></code><button class="btn-copy-code" onclick="copyToClipboard('1731613728165.4985')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -460,7 +460,7 @@
 <p>Redo same steps to create <strong>WindowDto</strong></p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1731601746250.742"><span class="hljs-keyword">enum</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">WindowStatus</span> { OPENED, CLOSED}
+<pre class="highlight"><code class="language-kotlin" id="1731613728166.6"><span class="hljs-keyword">enum</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">WindowStatus</span> { OPENED, CLOSED}
 
 <span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">WindowDto</span>(
     <span class="hljs-keyword">val</span> id: <span class="hljs-built_in">Long</span>,
@@ -468,7 +468,7 @@
     <span class="hljs-keyword">val</span> roomName: String,
     <span class="hljs-keyword">val</span> roomId: <span class="hljs-built_in">Long</span>,
     <span class="hljs-keyword">val</span> windowStatus: WindowStatus
-)</code><button class="btn-copy-code" onclick="copyToClipboard('1731601746250.742')">Copy</button></pre>
+)</code><button class="btn-copy-code" onclick="copyToClipboard('1731613728166.6')">Copy</button></pre>
 </div>
 </div>
 </li>
@@ -476,7 +476,7 @@
 <p>We will now create a service class to manage these windows. We will write 2 methods : one to find all building windows and a second to load only one window by its id. For the moment we will use fake data. In a next lesson we will learn how call a remote service to load real data. This class can be created in the package <code>com.automacorp.service</code></p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1731601746252.5803"><span class="hljs-keyword">object</span> RoomService {
+<pre class="highlight"><code class="language-kotlin" id="1731613728173.943"><span class="hljs-keyword">object</span> RoomService {
     <span class="hljs-keyword">val</span> ROOM_KIND: <span class="hljs-symbol">List&lt;String&gt; = listOf(<span class="hljs-string">"Room"</span>, <span class="hljs-string">"Meeting"</span>, <span class="hljs-string">"Laboratory"</span>, <span class="hljs-string">"Office"</span>, <span class="hljs-string">"Boardroom"</span>)
     <span class="hljs-keyword">val</span> ROOM_NUMBER: <span class="hljs-symbol">List&lt;Char&gt; = (<span class="hljs-string">'A'</span>..<span class="hljs-string">'Z'</span>).toList()
     <span class="hljs-keyword">val</span> WINDOW_KIND: <span class="hljs-symbol">List&lt;String&gt; = listOf(<span class="hljs-string">"Sliding"</span>, <span class="hljs-string">"Bay"</span>, <span class="hljs-string">"Casement"</span>, <span class="hljs-string">"Hung"</span>, <span class="hljs-string">"Fixed"</span>)
@@ -532,7 +532,7 @@
         }
         <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>
     }
-}</span></span></span></span></code><button class="btn-copy-code" onclick="copyToClipboard('1731601746252.5803')">Copy</button></pre>
+}</span></span></span></span></code><button class="btn-copy-code" onclick="copyToClipboard('1731613728173.943')">Copy</button></pre>
 </div>
 </div>
 </li>
@@ -543,7 +543,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1731601746253.0112"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">updateRoom</span><span class="hljs-params">(id: <span class="hljs-type">Long</span>, room: <span class="hljs-type">RoomDto</span>)</span></span>: RoomDto? {
+<pre class="highlight"><code class="language-kotlin" id="1731613728175.308"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">updateRoom</span><span class="hljs-params">(id: <span class="hljs-type">Long</span>, room: <span class="hljs-type">RoomDto</span>)</span></span>: RoomDto? {
     <span class="hljs-keyword">val</span> index = ROOMS.indexOfFirst { it.id == id }
     <span class="hljs-keyword">val</span> updatedRoom = findById(id)?.copy(
         name = room.name,
@@ -551,7 +551,7 @@
         currentTemperature = room.currentTemperature
     ) ?: <span class="hljs-keyword">throw</span> IllegalArgumentException()
     <span class="hljs-keyword">return</span> ROOMS.<span class="hljs-keyword">set</span>(index, updatedRoom)
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1731601746253.0112')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1731613728175.308')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -567,10 +567,10 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" id="1731601746253.9072">    &lt;string name="act_room_name"&gt;Room name&lt;/string&gt;
+<pre class="highlight"><code class="language-xml" id="1731613728180.5005">    &lt;string name="act_room_name"&gt;Room name&lt;/string&gt;
     &lt;string name="act_room_none"&gt;No round found for this id or name&lt;/string&gt;
     &lt;string name="act_room_current_temperature"&gt;Current temperature&lt;/string&gt;
-    &lt;string name="act_room_target_temperature"&gt;Target temperature&lt;/string&gt;</code><button class="btn-copy-code" onclick="copyToClipboard('1731601746253.9072')">Copy</button></pre>
+    &lt;string name="act_room_target_temperature"&gt;Target temperature&lt;/string&gt;</code><button class="btn-copy-code" onclick="copyToClipboard('1731613728180.5005')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -578,7 +578,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1731601746254.4854"><span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(savedInstanceState: <span class="hljs-type">Bundle</span>?)</span></span> {
+<pre class="highlight"><code class="language-kotlin" id="1731613728181.9724"><span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(savedInstanceState: <span class="hljs-type">Bundle</span>?)</span></span> {
     <span class="hljs-keyword">super</span>.onCreate(savedInstanceState)
     enableEdgeToEdge()
     <span class="hljs-keyword">val</span> param = intent.getStringExtra(MainActivity.ROOM_PARAM)
@@ -596,7 +596,7 @@
             }
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1731601746254.4854')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1731613728181.9724')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -607,7 +607,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1731601746254.1565">    <span class="hljs-keyword">var</span> room <span class="hljs-keyword">by</span> remember { mutableStateOf(roomDto) }
+<pre class="highlight"><code class="language-kotlin" id="1731613728183.8086">    <span class="hljs-keyword">var</span> room <span class="hljs-keyword">by</span> remember { mutableStateOf(roomDto) }
     Column(modifier = modifier.padding(<span class="hljs-number">16.</span>dp)) {
         <span class="hljs-comment">// ...</span>
         OutlinedTextField(
@@ -617,7 +617,7 @@
             placeholder = { Text(stringResource(R.string.act_room_name)) },
         )
         <span class="hljs-comment">// ...</span>
-    }</code><button class="btn-copy-code" onclick="copyToClipboard('1731601746254.1565')">Copy</button></pre>
+    }</code><button class="btn-copy-code" onclick="copyToClipboard('1731613728183.8086')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -628,7 +628,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1731601746255.0654">    Slider(
+<pre class="highlight"><code class="language-kotlin" id="1731613728184.4548">    Slider(
         value = room.targetTemperature?.toFloat() ?: <span class="hljs-number">18.0f</span>,
         onValueChange = { room = room.copy(targetTemperature = it.toDouble()) },
         colors = SliderDefaults.colors(
@@ -639,7 +639,7 @@
         steps = <span class="hljs-number">0</span>,
         valueRange = <span class="hljs-number">10f</span>.<span class="hljs-number">.28f</span>
     )
-    Text(text = (round((room.targetTemperature ?: <span class="hljs-number">18.0</span>) * <span class="hljs-number">10</span>) / <span class="hljs-number">10</span>).toString())</code><button class="btn-copy-code" onclick="copyToClipboard('1731601746255.0654')">Copy</button></pre>
+    Text(text = (round((room.targetTemperature ?: <span class="hljs-number">18.0</span>) * <span class="hljs-number">10</span>) / <span class="hljs-number">10</span>).toString())</code><button class="btn-copy-code" onclick="copyToClipboard('1731613728184.4548')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -653,6 +653,6 @@
 </div>
 </div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 14/11/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
 
-<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-ZP2R6S5W.js" type="module"></script>
+<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-RCAYVOUE.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t1"},"c":{"7":[{"i":"t1","r":1}]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t0"},"c":{"7":[{"i":"t0","r":1}]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>
