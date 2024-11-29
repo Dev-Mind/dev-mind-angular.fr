@@ -16,7 +16,7 @@ export const _highcharts_stackedarea:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1731613730387.5435">{
+<pre class="highlight"><code class="language-javascript" id="1732912450597.2722">{
    <span class="hljs-attr">source</span>: <span class="hljs-string">&quot;Captor 1&quot;</span>,
    <span class="hljs-attr">measures</span>: [
      {
@@ -28,7 +28,7 @@ export const _highcharts_stackedarea:string = `<div id="preamble">
         <span class="hljs-attr">value</span>: -<span class="hljs-number">5670</span>
      },
      <span class="hljs-comment">//...</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1731613730387.5435')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1732912450597.2722')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -36,7 +36,7 @@ export const _highcharts_stackedarea:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1731613730393.8396">  <span class="hljs-keyword">function</span> <span class="hljs-title function_">_createSeries</span>(<span class="hljs-params"></span>) {
+<pre class="highlight"><code class="language-javascript" id="1732912450599.0132">  <span class="hljs-keyword">function</span> <span class="hljs-title function_">_createSeries</span>(<span class="hljs-params"></span>) {
     <span class="hljs-keyword">return</span> <span class="hljs-variable constant_">MEASURES</span>.<span class="hljs-title function_">map</span>(<span class="hljs-function">(<span class="hljs-params">serie</span>) =&gt;</span> {
       <span class="hljs-keyword">return</span> {
         <span class="hljs-attr">type</span>: <span class="hljs-string">&#x27;area&#x27;</span>,
@@ -60,7 +60,7 @@ export const _highcharts_stackedarea:string = `<div id="preamble">
     }
   });
 
-  <span class="hljs-keyword">new</span> <span class="hljs-title class_">Highcharts</span>.<span class="hljs-title class_">Chart</span>({<span class="hljs-attr">chart</span>: {<span class="hljs-attr">renderTo</span>: <span class="hljs-string">&#x27;myChart&#x27;</span>}, <span class="hljs-attr">series</span>: <span class="hljs-title function_">_createSeries</span>()})</code><button class="btn-copy-code" onclick="copyToClipboard('1731613730393.8396')">Copy</button></pre>
+  <span class="hljs-keyword">new</span> <span class="hljs-title class_">Highcharts</span>.<span class="hljs-title class_">Chart</span>({<span class="hljs-attr">chart</span>: {<span class="hljs-attr">renderTo</span>: <span class="hljs-string">&#x27;myChart&#x27;</span>}, <span class="hljs-attr">series</span>: <span class="hljs-title function_">_createSeries</span>()})</code><button class="btn-copy-code" onclick="copyToClipboard('1732912450599.0132')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -91,7 +91,7 @@ export const _highcharts_stackedarea:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1731613730401.7925">  <span class="hljs-keyword">function</span> <span class="hljs-title function_">evaluator</span>(<span class="hljs-params">measure</span>) {
+<pre class="highlight"><code class="language-javascript" id="1732912450601.8489">  <span class="hljs-keyword">function</span> <span class="hljs-title function_">evaluator</span>(<span class="hljs-params">measure</span>) {
     <span class="hljs-keyword">if</span> (measure.<span class="hljs-property">value</span> &gt; <span class="hljs-number">0</span>) {
       <span class="hljs-keyword">return</span> positive ? measure.<span class="hljs-property">value</span> : <span class="hljs-number">0</span>;
     }
@@ -116,7 +116,7 @@ export const _highcharts_stackedarea:string = `<div id="preamble">
         <span class="hljs-keyword">return</span> {<span class="hljs-attr">x</span>: measure.<span class="hljs-property">instant</span>, <span class="hljs-attr">y</span>: positive !== <span class="hljs-literal">null</span> ? evaluator(measure) : measure.<span class="hljs-property">value</span>}
       })
     }
-  }</code><button class="btn-copy-code" onclick="copyToClipboard('1731613730401.7925')">Copy</button></pre>
+  }</code><button class="btn-copy-code" onclick="copyToClipboard('1732912450601.8489')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">

@@ -114,7 +114,7 @@ export const _server_side_rendering:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1731613732024.7004">ng new my-ssr-app</code><button class="btn-copy-code" onclick="copyToClipboard('1731613732024.7004')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1732912451026.765">ng new my-ssr-app</code><button class="btn-copy-code" onclick="copyToClipboard('1732912451026.765')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -122,11 +122,11 @@ export const _server_side_rendering:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1731613732025.8098">@dollar@ ng new my-ssr-app
+<pre class="highlight"><code class="language-shell" id="1732912451026.742">@dollar@ ng new my-ssr-app
 ? Which stylesheet format would you like to use? Sass (SCSS)     [
 https://sass-lang.com/documentation/syntax#scss                ]
 ? Do you want to enable Server-Side Rendering (SSR) and Static Site Generation (SSG/Prerendering)?
-(y/N)</code><button class="btn-copy-code" onclick="copyToClipboard('1731613732025.8098')">Copy</button></pre>
+(y/N)</code><button class="btn-copy-code" onclick="copyToClipboard('1732912451026.742')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -134,7 +134,7 @@ https://sass-lang.com/documentation/syntax#scss                ]
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1731613732025.3555">ng add @nguniversal/express-engine</code><button class="btn-copy-code" onclick="copyToClipboard('1731613732025.3555')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1732912451026.573">ng add @nguniversal/express-engine</code><button class="btn-copy-code" onclick="copyToClipboard('1732912451026.573')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -142,7 +142,7 @@ https://sass-lang.com/documentation/syntax#scss                ]
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-json" id="1731613732026.2375"><span class="hljs-punctuation">{</span>
+<pre class="highlight"><code class="language-json" id="1732912451027.973"><span class="hljs-punctuation">{</span>
   <span class="hljs-attr">&quot;name&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;my-ssr-app&quot;</span><span class="hljs-punctuation">,</span>
   <span class="hljs-attr">&quot;version&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;0.0.0&quot;</span><span class="hljs-punctuation">,</span>
   <span class="hljs-attr">&quot;scripts&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
@@ -154,7 +154,7 @@ https://sass-lang.com/documentation/syntax#scss                ]
     <span class="hljs-attr">&quot;serve:ssr:example&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;node dist/example/server/server.mjs&quot;</span>
   <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
   ...
-<span class="hljs-punctuation">}</span></code><button class="btn-copy-code" onclick="copyToClipboard('1731613732026.2375')">Copy</button></pre>
+<span class="hljs-punctuation">}</span></code><button class="btn-copy-code" onclick="copyToClipboard('1732912451027.973')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -162,7 +162,7 @@ https://sass-lang.com/documentation/syntax#scss                ]
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1731613732027.9182">npm run watch</code><button class="btn-copy-code" onclick="copyToClipboard('1731613732027.9182')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1732912451027.6042">npm run watch</code><button class="btn-copy-code" onclick="copyToClipboard('1732912451027.6042')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -170,7 +170,7 @@ https://sass-lang.com/documentation/syntax#scss                ]
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1731613732027.0964">npm run  serve:ssr:example</code><button class="btn-copy-code" onclick="copyToClipboard('1731613732027.0964')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1732912451027.422">npm run  serve:ssr:example</code><button class="btn-copy-code" onclick="copyToClipboard('1732912451027.422')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">

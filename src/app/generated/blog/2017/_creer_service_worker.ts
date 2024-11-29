@@ -86,7 +86,7 @@ export const _creer_service_worker:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1731613730209.1262"><span class="hljs-keyword">if</span> (<span class="hljs-string">&#x27;serviceWorker&#x27;</span> <span class="hljs-keyword">in</span> navigator) {
+<pre class="highlight"><code class="language-javascript" id="1732912450545.8389"><span class="hljs-keyword">if</span> (<span class="hljs-string">&#x27;serviceWorker&#x27;</span> <span class="hljs-keyword">in</span> navigator) {
   navigator.<span class="hljs-property">serviceWorker</span>.<span class="hljs-title function_">register</span>(<span class="hljs-string">&#x27;sw.js&#x27;</span>, <span class="hljs-attr">scope</span>: <span class="hljs-string">&#x27;/subcontent&#x27;</span>)
     .<span class="hljs-title function_">then</span>(<span class="hljs-keyword">function</span>(<span class="hljs-params">registration</span>) {
       <span class="hljs-comment">// registration worked</span>
@@ -95,7 +95,7 @@ export const _creer_service_worker:string = `<div id="preamble">
     .<span class="hljs-title function_">catch</span>(<span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) {
       <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">&#x27;Error during service worker registration:&#x27;</span>, e);
     });
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1731613730209.1262')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1732912450545.8389')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -145,7 +145,7 @@ export const _creer_service_worker:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1731613730216.049">gulp.<span class="hljs-title function_">task</span>(<span class="hljs-string">&#x27;generate-service-worker&#x27;</span>, <span class="hljs-function">(<span class="hljs-params">cb</span>) =&gt;</span> {
+<pre class="highlight"><code class="language-javascript" id="1732912450547.7249">gulp.<span class="hljs-title function_">task</span>(<span class="hljs-string">&#x27;generate-service-worker&#x27;</span>, <span class="hljs-function">(<span class="hljs-params">cb</span>) =&gt;</span> {
   <span class="hljs-keyword">let</span> config = {
     <span class="hljs-attr">cacheId</span>: <span class="hljs-string">&#x27;dev-mind&#x27;</span>,
     <span class="hljs-attr">runtimeCaching</span>: [{
@@ -162,7 +162,7 @@ export const _creer_service_worker:string = `<div id="preamble">
   };
 
   swPrecache.<span class="hljs-title function_">write</span>(<span class="hljs-string">&#x27;build/dist/service-worker.js&#x27;</span>, config, cb);
-});</code><button class="btn-copy-code" onclick="copyToClipboard('1731613730216.049')">Copy</button></pre>
+});</code><button class="btn-copy-code" onclick="copyToClipboard('1732912450547.7249')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">

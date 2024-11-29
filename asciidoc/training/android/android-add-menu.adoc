@@ -124,7 +124,7 @@ To create a model, you need to create a class that extends the ViewModel class. 
 [source,kotlin,subs="specialchars"]
 ----
 class RoomViewModel: ViewModel() {
-    var room by mutableStateOf<RoomDto?>(null)
+    var room by mutableStateOf <RoomDto?>(null)
 }
 ----
 

@@ -108,7 +108,7 @@ It's a good practice to define keys for intent extras with your app's package na
 
 [source,kotlin,subs="specialchars"]
 ----
-class MainActivity : AppCompatActivity() {
+class MainActivity : ComponentActivity() {
 
     companion object {
         const val ROOM_PARAM = "com.automacorp.room.attribute"
