@@ -56,18 +56,25 @@ If we use the building sensor API we can see the Window Entity. The window table
 
 [source,kotlin,subs="specialchars"]
 ----
-@Entity(tableName = "rwindow")
-data class Window(
-    @PrimaryKey(autoGenerate = true) val id: Long,
-    @ColumnInfo val name: String,
-    @ColumnInfo(name = "room_id") val roomId: Long,
-    @ColumnInfo(name = "room_name") val roomName: String,
-    @ColumnInfo(name = "window_status") val windowStatus: WindowStatus,
-    @Ignore val windows: MutableList<Window> = mutableListOf()
-) {
-    // When you need to transform your entity in a DTO (Data Transfer Object) you can use this method
-    fun toDto(): WindowDto =
-        WindowDto(id.toLong(), name, RoomDto(roomId.toLong(), roomName, null, null), windowStatus)
+@Entity(tableName = "window")
+class WindowEntity {
+    @PrimaryKey(autoGenerate = true)
+    var id: Long = 0
+
+    @ColumnInfo
+    lateinit var name: String
+
+    @ColumnInfo(name = "room_name")
+    lateinit var roomName: String
+
+    @ColumnInfo(name = "room_id")
+    var roomId: Long = 0
+
+    @ColumnInfo(name = "window_status")
+    lateinit var windowStatus: WindowStatus
+
+    @Ignore
+    var notImportant: String? = null
 }
 ----
 
@@ -109,7 +116,7 @@ To activate this mechanism you need to add the annotation @Dao on your class
 [source,kotlin,subs="specialchars"]
 ----
 @Dao
-interface WindowDao {
+interface RoomDao {
 }
 ----
 
@@ -122,23 +129,23 @@ Room provides also different annotations `@Insert`, `@Update`, `@Delete` to mani
 [source,kotlin,subs="specialchars"]
 ----
 @Dao
-interface WindowDao {
-    @Query("select * from rwindow order by name")
-    fun findAll(): List<Window>
+interface RoomDao {
+    @Query("select * from room order by name")
+    fun findAll(): List<RoomEntity>
 
-    @Query("select * from rwindow where id = :windowId")
-    fun findById(windowId: Long): Window
+    @Query("select * from room where id = :roomId")
+    fun findById(roomId: Long): RoomEntity
 
     @Insert
-    suspend fun create(window: Window)
+    suspend fun create(room: RoomEntity)
 
     @Update
-    suspend fun update(window: Window): Int
+    suspend fun update(room: RoomEntity): Int
 
     @Delete
-    suspend fun delete(window: Window)
+    suspend fun delete(room: RoomEntity)
 
-    @Query("delete from rwindow")
+    @Query("delete from room")
     suspend fun clearAll()
 }
 ----
@@ -155,10 +162,10 @@ We now need to configure the database in our project. With Jetpack Room library 
 
 [source,kotlin,subs="specialchars"]
 ----
-@Database(entities = [Window::class], version = 1)
+@Database(entities = [RoomEntity::class], version = 1)
 @TypeConverters(EnumConverters::class)
 abstract class AutomacorpDatabase : RoomDatabase() {
-    abstract fun windowDao(): WindowDao
+    abstract fun roomDao(): RoomDao
 }
 ----
 
@@ -209,7 +216,7 @@ If you need to use a DAO in your code you will be able to use
 
 [source,kotlin,subs="specialchars"]
 ----
-val windowDao = AutomacorpApplication.database.windowDao()
+val roomDao = AutomacorpApplication.database.roomDao()
 ----
 
 == Use ViewModel object
@@ -235,30 +242,32 @@ The ViewModel class is used to store data related to an app's UI, and is also li
 
 === Create a ViewModel
 
-To create a view model class, create a new class called `WindowViewModel` in a new package called `com.automacorp.viewmodel`. It should only use the `WindowDao` and for the moment we can implement inside the method used to load data
+To create a view model class, create a new class called `RoomViewModel` in a new package called `com.automacorp.viewmodel`. It should only use the `RoomDao` and for the moment we can implement inside the method used to load data
 
 [source,kotlin,subs="specialchars"]
 ----
-class WindowViewModel(private val windowDao: WindowDao) : ViewModel() { // (1)
+class RoomViewModel(private val roomDao: RoomDao) : ViewModel() {
 
-    fun findById(windowId: Long): LiveData<WindowDto> = // (2)
-        liveData(Dispatchers.IO) { // (3)
-            emit(windowDao.findById(windowId).toDto()) // (4)
+    fun findByIdInDb(windowId: Long): LiveData<RoomDto> = // (2)
+        liveData (Dispatchers.IO) { // (3)
+            emit(roomDao.findById(windowId).toDto()) // (4)
         }
 
-    fun save(windowId: Long, command: WindowCommandDto): LiveData<WindowDto> = // (2)
+    fun saveInDb(roomId: Long?, command: RoomCommandDto): LiveData<RoomDto> = // (2)
         liveData(Dispatchers.IO) { // (3)
-          val window = Window(
-              id = windowId,
-              name= command.name
-          )
-          if (windowId == 0L) {
-              windowDao.create(window)
-          } else {
-              windowDao.update(window)
-          }
-          emit(window.toDto()) // (4)
-      }
+            val room = RoomEntity().apply {
+                id = roomId ?: 0
+                name = command.name
+                currentTemperature = command.currentTemperature
+                targetTemperature = command.targetTemperature
+            }
+            if (roomId == null) {
+                roomDao.create(room)
+            } else {
+                roomDao.update(room)
+            }
+            emit(room.toDto()) // (4)
+        }
 }
 ----
 
@@ -271,7 +280,7 @@ A ViewModel class must be lifecycle aware, it should be instantiated by an objec
 
 [source,kotlin,subs="specialchars"]
 ----
-class WindowViewModel(private val windowDao: WindowDao) : ViewModel() {
+class RoomViewModel(private val windowDao: WindowDao) : ViewModel() {
 
     companion object {
         val factory: ViewModelProvider.Factory =
@@ -281,10 +290,11 @@ class WindowViewModel(private val windowDao: WindowDao) : ViewModel() {
                     extras: CreationExtras
                 ): T {
                     // Load the Dao from the Application object
-                    val windowDao = (extras[APPLICATION_KEY] as AutomacorpApplication)
+                    val dao =
+                        (extras[ViewModelProvider.AndroidViewModelFactory.APPLICATION_KEY] as AutomacorpApplication)
                             .database
-                            .windowDao()
-                    return WindowViewModel(windowDao) as T
+                            .roomDao()
+                    return RoomViewModel(dao) as T
                 }
             }
     }
@@ -299,8 +309,8 @@ You can a global property in your property to define your view model.
 +
 [source,kotlin,subs="specialchars"]
 ----
-private val viewModel: WindowViewModel by viewModels {
-    WindowViewModel.factory
+private val viewModel: RoomViewModel by viewModels {
+    RoomViewModel.factory
 }
 ----
 
@@ -308,8 +318,8 @@ And you want to pouplate your list you can use
 
 [source,kotlin,subs="specialchars"]
 ----
-viewModel.findAll().observe(this) { windows ->
-    adapter.update(windows)
+viewModel.findAll().observe(this) { rooms ->
+    adapter.update(rooms)
 }
 ----
 
@@ -317,40 +327,71 @@ viewModel.findAll().observe(this) { windows ->
 
 === Configuration
 
-1. Open *build.gradle.kts (Module: automacorp.app)*.
-2. As Room uses annotations we need to configure Gradle to launch the kotlin annotation processor. For that you just have to add a new plugin id `kotlin-kapt`
-+
-[source,groovy,subs="specialchars"]
+==== New plugin
+
+==== Update version catalogs
+
+We need to new plugins and libraries in the file `libs.versions.toml`
+
+[source,toml,subs="specialchars"]
+----
+[versions]
+# ... other versions
+room = "2.6.1"
+ksp = "2.0.21-1.0.27"
+
+[libraries]
+# ... other libraries
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
+androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
+androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycleRuntimeKtx" }
+----
+
+==== Declare Ksp plugin
+
+We have to add Kotlin Symbol Processing (KSP). KSP is a new annotation processing tool. It reads the source code of your project and generates new Kotlin code from the annotations.
+
+To install KSP, you need to add a new plugin in your `build.gradle.kts (Project: automacorp)` file.
+
+[source,kotlin,subs="specialchars"]
 ----
 plugins {
-    id("com.android.application")
-    id("org.jetbrains.kotlin.android")
-    id("kotlin-kapt")
+    // ... other plugins
+    id("com.google.devtools.ksp") version libs.versions.ksp apply false
 }
 ----
-+
-3. In the dependencies block, declare new libraries
-+
+
+Then, enable KSP in your module-level build.gradle.kts file:
+
+[source,kotlin,subs="specialchars"]
+----
+plugins {
+    // ... other plugins
+    id("com.google.devtools.ksp")
+}
+----
+
+==== Update dependencies
+
+Add dependencies in the `build.gradle.kts (Module: automacorp.app)` file.
+
+
 [source,groovy,subs="specialchars"]
 ----
-implementation "androidx.room:room-runtime:2.4.3"
-implementation "androidx.room:room-ktx:2.4.3"
-kapt "androidx.room:room-compiler:2.4.3"
-
-implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1"
-implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.5.1"
-implementation "androidx.activity:activity-ktx:1.6.0"
+implementation(libs.androidx.room.ktx)
+implementation(libs.androidx.room.runtime)
+ksp(libs.androidx.room.compiler)
+implementation(libs.androidx.lifecycle.viewmodel.ktx)
+implementation(libs.androidx.lifecycle.livedata.ktx)
 ----
-+
-4. As you updated your gradle configuration, Android Studio display a message to synchronize your projet.
-Click on *Sync now*
-+
-image:../../img/training/android/android-gradle-sync.png[Sync Gradle project]
 
 === Create your first entity
 
-* Create a new class in the package `com.automacorp.model` called `Room` and use annotations to link this class to the database (`@Entity`, `@PrimaryKey`, `@ColumnInfo`...)
+* Create a new class in the package `com.automacorp.model` called `RoomEntity` and use annotations to link this class to the database (`@Entity`, `@PrimaryKey`, `@ColumnInfo`...)
 * Create a new interface called RoomDao in the package `com.automacorp.dao` and write methods to manage a Room :  findAll, findById, save, update, delete...
+* Do the same thing for the window : a new class `WindowEntity` and a new interface `WindowDao`
 * Create a new class `AutomacorpDatabase` in `com.automacorp.dao` to declare the database
 * As we have to create this database only once, create a `AutomacorpApplication` in the root folder, and declare this App override in your `AndroidManifest.xml`
 * Create a property `val database: AutomacorpDatabase by lazy {}` in your `AutomacorpApplication`
@@ -358,7 +399,7 @@ image:../../img/training/android/android-gradle-sync.png[Sync Gradle project]
 
 Now, you can update the `RoomListActivity` used to list all rooms.
 
-1. Add a new global property to define your view model
+Update the viewModels define in your activities (`RoomListActivity` and `RoomActivity`)
 +
 [source,kotlin,subs="specialchars"]
 ----
@@ -366,22 +407,10 @@ private val viewModel: RoomViewModel by viewModels {
     RoomViewModel.factory
 }
 ----
-+
-2. We need to replace the code used to populate the adapter, to update a room (ie the calls to ApiServices.windowsApiService)
-+
-3. In `RoomListActivity` you can for example used this code with a method to observe our livedata returned by the view model. The code was
-made to manage asynchronous calls and you don't need anymore to switch between coroutines in your Activity or Fragment
-+
-[source,kotlin,subs="specialchars"]
-----
-viewModel.findAll().observe(this) { rooms ->
-    roomsAdapter.setItems(rooms) }
-}
-----
-+
-4. Do the same job in `RoomActivity`
 
-You can start your application and as we have nothing in database you should have an empty list when you want to display the window list.
+We could no longer call the remote API via Retrofit and only use data stored locally in the database. For this you only have to update your ViewModel objects used to load the data
+
+But we are going to implement another use case
 
 === Synchronize our database
 
@@ -396,104 +425,86 @@ Update the ViewModel to do these steps. Below you can find an example for the ro
 
 [source,kotlin,subs="specialchars"]
 ----
-fun findAll(): LiveData<List<RoomDto>> =
-    liveData(Dispatchers.IO) {
-        runCatching {
-            ApiServices.roomsApiService.findAll().execute()
-        }.onSuccess {
-            // If remote API is available we synchronize data locally
-            it.body()
-                ?.also { rooms ->
-                    roomDao.clearAll()
-                    windowDao.clearAll()
-                    rooms.onEach { room ->
-                        roomDao.create(
-                            Room(
-                                id = room.id,
-                                name = room.name,
-                                currentTemperature = room.currentTemperature,
-                                targetTemperature = room.targetTemperature
-                            )
-                        )
-                        room.windows.onEach {
-                            windowDao.create(
-                                Window(
-                                    id = it.id,
-                                    name = it.name,
-                                    roomId = room.id,
-                                    roomName = room.name,
-                                    windowStatus = it.windowStatus
-                                )
-                            )
-                        }
-                    }
-                    emit(rooms)
-                }
-                ?: emit(emptyList())
-        }.onFailure {
-            val rooms = roomDao.findAll().map { it.toDto() }
-            emit(rooms) // (4)
-        }
-    }
-
-fun findById(roomId: Long): LiveData<RoomDto> =
-    liveData(Dispatchers.IO) { // (2)
-        runCatching {
-            // We call the remote API
-            ApiServices.roomsApiService.findById(roomId).execute().body()!!
-        }.onSuccess {
-            emit(it)
-        }.onFailure {
-            val room = roomDao.findById(roomId).apply {
-                windows = windowDao.findByRoomId(roomId)
-            }.toDto()
-            emit(room)
-        }
-    }
-
-fun save(roomId: Long, room: RoomCommandDto): LiveData<RoomDto?> =
-    liveData(Dispatchers.IO) {
-        runCatching {
-            if (roomId == 0L) {
-                ApiServices.roomsApiService.save(room).execute().body()
-            } else {
-                ApiServices.roomsApiService.updateRoom(roomId, room).execute().body()
-            }
-        }.onSuccess {
-            emit(it)
-        }.onFailure {
-            emit(null)
-        }
-    }
+fun findAll() {
+      viewModelScope.launch(context = Dispatchers.IO) {
+          runCatching { ApiServices.roomsApiService.findAll().execute() }
+              .onSuccess {
+                  val rooms = it.body() ?: emptyList()
+                  rooms.onEach {
+                      roomDao.clearAll()
+                      windowDao.clearAll()
+                      rooms.onEach { room ->
+                          roomDao.create(
+                              RoomEntity().apply {
+                                  id = room.id
+                                  name = room.name
+                                  currentTemperature = room.currentTemperature
+                                  targetTemperature = room.targetTemperature
+                              }
+                          )
+                          room.windows.onEach {
+                              windowDao.create(
+                                  WindowEntity().apply {
+                                      id = it.id
+                                      name = it.name
+                                      roomId = room.id
+                                      roomName = room.name
+                                      windowStatus = it.windowStatus
+                                  }
+                              )
+                          }
+                      }
+                  }
+                  roomsState.value = RoomList(rooms)
+              }
+              .onFailure {
+                  it.printStackTrace()
+                  val windows = windowDao.findAll()
+                  val rooms = roomDao.findAll()
+                      .onEach { room ->
+                          room.windows.addAll(
+                              windows
+                                  .filter { window -> window.roomId == room.id }
+                                  .map { window -> window.toDto() }
+                          )
+                      }.map {
+                          room -> room.toDto()
+                      }
+                  roomsState.value = RoomList(rooms, it.message)
+              }
+      }
+  }
 ----
 
 This code should work but it should be nice to know when we are in the fallback mode. For that we can expose a new live data in your code.
 
-1. Create a new enum called `State` in `WindowViewModel`
+1. Create a new enum called `NetworkState`
 +
 [source,kotlin,subs="specialchars"]
 ----
-enum class State { ONLINE, OFFLINE }
+enum class NetworkState { ONLINE, OFFLINE }
 ----
 +
 2. Create a property in `RoomViewModel` to expose this state. By default the state is ONLINE
 +
 [source,kotlin,subs="specialchars"]
 ----
-val networkState: MutableLiveData<State> by lazy {
-    MutableLiveData<State>().also { it.postValue(State.ONLINE) }
-}
+var networkState by mutableStateOf<NetworkState>(NetworkState.ONLINE)
 ----
 +
 3. You can add a new Observable in your activity `RoomListActivity` and `RoomActivity` to display a message when the data will be loaded from the local database
 +
 [source,kotlin,subs="specialchars"]
 ----
-viewModel.networkState.observe(this) { state ->
-    if(state == State.OFFLINE) {
-        Toast.makeText(this,"Offline mode, the last known values are displayed", Toast.LENGTH_LONG)
-            .show()
-    }
+ val state = viewModel.networkState
+
+if (state == NetworkState.OFFLINE) {
+    Toast.makeText(
+        this,
+        "Offline mode, the last known values are displayed",
+        Toast.LENGTH_LONG
+    )
+        .show()
 }
 ----
 +
@@ -507,10 +518,10 @@ fun findById(roomId: Long): LiveData<RoomDto> =
             // We call the remote API
             ApiServices.roomsApiService.findById(roomId).execute().body()!!
         }.onSuccess {
-            networkState.postValue(State.ONLINE)
+            networkState = NetworkState.ONLINE
             emit(it)
         }.onFailure {
-            networkState.postValue(State.OFFLINE)
+            networkState = NetworkState.OFFLINE
             val room = roomDao.findById(roomId).apply {
                 windows = windowDao.findByRoomId(roomId)
             }.toDto()

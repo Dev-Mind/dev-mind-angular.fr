@@ -21,7 +21,7 @@ export const _mockserver:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1732912450922.3708"><span class="hljs-meta">@Component</span>
+<pre class="highlight"><code class="language-java" id="1734011714101.4128"><span class="hljs-meta">@Component</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ElasticMailSender</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">EmailSender</span> {
 
     <span class="hljs-keyword">private</span> WebClient webClient;
@@ -56,7 +56,7 @@ export const _mockserver:string = `<div id="preamble">
             <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">RuntimeException</span>(response.getError());
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1732912450922.3708')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1734011714101.4128')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -67,7 +67,7 @@ export const _mockserver:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1732912450922.8362">testCompile(<span class="hljs-string">&quot;com.squareup.okhttp3:mockwebserver:3.9.1&quot;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1732912450922.8362')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1734011714101.4204">testCompile(<span class="hljs-string">&quot;com.squareup.okhttp3:mockwebserver:3.9.1&quot;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1734011714101.4204')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -75,7 +75,7 @@ export const _mockserver:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1732912450923.8606"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ElasticMailSenderTest</span> {
+<pre class="highlight"><code class="language-java" id="1734011714102.6677"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ElasticMailSenderTest</span> {
     <span class="hljs-meta">@Rule</span>
     <span class="hljs-keyword">public</span> <span class="hljs-type">MockWebServer</span> <span class="hljs-variable">server</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">MockWebServer</span>();
     <span class="hljs-keyword">private</span> WebClient webClient;
@@ -121,7 +121,7 @@ export const _mockserver:string = `<div id="preamble">
         consumer.accept(response);
         <span class="hljs-built_in">this</span>.server.enqueue(response);
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1732912450923.8606')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1734011714102.6677')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -129,7 +129,7 @@ export const _mockserver:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1732912450923.5115">WebClient.create(<span class="hljs-built_in">this</span>.server.url(<span class="hljs-string">&quot;/&quot;</span>).toString())</code><button class="btn-copy-code" onclick="copyToClipboard('1732912450923.5115')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1734011714102.2827">WebClient.create(<span class="hljs-built_in">this</span>.server.url(<span class="hljs-string">&quot;/&quot;</span>).toString())</code><button class="btn-copy-code" onclick="copyToClipboard('1734011714102.2827')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -148,13 +148,13 @@ export const _mockserver:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1732912450923.6921">configurations {
+<pre class="highlight"><code class="language-java" id="1734011714102.815">configurations {
 	all {
 		exclude <span class="hljs-keyword">module</span>: <span class="hljs-string">&quot;junit&quot;</span>
 	}
 }
 testCompile(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-api&quot;</span>)
-testRuntime(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engine&quot;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1732912450923.6921')">Copy</button></pre>
+testRuntime(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engine&quot;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1734011714102.815')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -168,7 +168,7 @@ testRuntime(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engi
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1732912450923.6091">testCompile(<span class="hljs-string">&quot;com.devmind:mockwebserver:0.1.0&quot;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1732912450923.6091')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1734011714102.2498">testCompile(<span class="hljs-string">&quot;com.devmind:mockwebserver:0.1.0&quot;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1734011714102.2498')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -176,7 +176,7 @@ testRuntime(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engi
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1732912450924.1904"><span class="hljs-meta">@ExtendWith(MockWebServerExtension.class)</span>
+<pre class="highlight"><code class="language-java" id="1734011714103.9702"><span class="hljs-meta">@ExtendWith(MockWebServerExtension.class)</span>
 <span class="hljs-keyword">class</span> <span class="hljs-title class_">MySpringWebfluxServiceTest</span> {
 
     <span class="hljs-keyword">private</span> MockWebServer server;
@@ -211,7 +211,7 @@ testRuntime(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engi
         <span class="hljs-built_in">this</span>.server.enqueue(response);
     }
 
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1732912450924.1904')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1734011714103.9702')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -219,7 +219,7 @@ testRuntime(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engi
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1732912450925.5117"><span class="hljs-meta">@ExtendWith(MockSimpleWebServerExtension.class)</span>
+<pre class="highlight"><code class="language-java" id="1734011714103.5747"><span class="hljs-meta">@ExtendWith(MockSimpleWebServerExtension.class)</span>
 <span class="hljs-meta">@TestInstance(TestInstance.Lifecycle.PER_CLASS)</span>
 <span class="hljs-keyword">class</span> <span class="hljs-title class_">MySpringWebfluxServiceTest</span> {
 
@@ -264,7 +264,7 @@ testRuntime(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engi
         consumer.accept(response);
         <span class="hljs-built_in">this</span>.server.enqueue(response);
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1732912450925.5117')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1734011714103.5747')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">

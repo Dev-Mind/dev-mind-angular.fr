@@ -50,7 +50,7 @@ export const _service_worker:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1732912450635.7063"><span class="hljs-comment">// Création du worker</span>
+<pre class="highlight"><code class="language-javascript" id="1734011713878.1194"><span class="hljs-comment">// Création du worker</span>
 <span class="hljs-keyword">var</span> worker = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Worker</span>(<span class="hljs-string">&#x27;doWork.js&#x27;</span>);
 
 <span class="hljs-comment">// On crée un event listener pour intercepter les messages envoyés par le worker</span>
@@ -59,7 +59,7 @@ worker.<span class="hljs-title function_">addEventListener</span>(<span class="h
 }, <span class="hljs-literal">false</span>);
 
 <span class="hljs-comment">// Vous pouvez à tout moment envoyé un message au worker</span>
-worker.<span class="hljs-title function_">postMessage</span>(<span class="hljs-string">&#x27;Hello World&#x27;</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1732912450635.7063')">Copy</button></pre>
+worker.<span class="hljs-title function_">postMessage</span>(<span class="hljs-string">&#x27;Hello World&#x27;</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1734011713878.1194')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -67,11 +67,11 @@ worker.<span class="hljs-title function_">postMessage</span>(<span class="hljs-s
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1732912450635.3145"><span class="hljs-comment">// On crée un listener pour recevoir les messages du thread principal</span>
+<pre class="highlight"><code class="language-javascript" id="1734011713879.1597"><span class="hljs-comment">// On crée un listener pour recevoir les messages du thread principal</span>
 self.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;message&#x27;</span>,<span class="hljs-function">(<span class="hljs-params">e</span>) =&gt;</span> {
    <span class="hljs-comment">// la méthode postMessage permet de renvoyer un message</span>
    self.<span class="hljs-title function_">postMessage</span>(e.<span class="hljs-property">data</span>);
-}, <span class="hljs-literal">false</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1732912450635.3145')">Copy</button></pre>
+}, <span class="hljs-literal">false</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1734011713879.1597')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -111,9 +111,9 @@ self.<span class="hljs-title function_">addEventListener</span>(<span class="hlj
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1732912450636.9924"><span class="hljs-keyword">if</span> (<span class="hljs-string">&#x27;serviceWorker&#x27;</span> <span class="hljs-keyword">in</span> navigator){
+<pre class="highlight"><code class="language-javascript" id="1734011713879.681"><span class="hljs-keyword">if</span> (<span class="hljs-string">&#x27;serviceWorker&#x27;</span> <span class="hljs-keyword">in</span> navigator){
     <span class="hljs-comment">// ..</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1732912450636.9924')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1734011713879.681')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">

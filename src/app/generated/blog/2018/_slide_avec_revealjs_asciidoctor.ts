@@ -105,7 +105,7 @@ export const _slide_avec_revealjs_asciidoctor:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-adoc" id="1732912450996.9727"><span class="hljs-section">= Title Slide</span>
+<pre class="highlight"><code class="language-adoc" id="1734011714163.1013"><span class="hljs-section">= Title Slide</span>
 <span class="hljs-meta">:source-highlighter:</span> highlightjs
 <span class="hljs-meta">:revealjs_theme:</span> league
 <span class="hljs-meta">:revealjs_progress:</span> true
@@ -181,7 +181,7 @@ Top slide
 This is a vertical subslide
 
 <span class="hljs-meta">[state=dynamic]</span>
-<span class="hljs-section">== Slide Ten js...</span></code><button class="btn-copy-code" onclick="copyToClipboard('1732912450996.9727')">Copy</button></pre>
+<span class="hljs-section">== Slide Ten js...</span></code><button class="btn-copy-code" onclick="copyToClipboard('1734011714163.1013')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -257,8 +257,8 @@ gulp serve</pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-adoc" id="1732912450997.3628"><span class="hljs-meta">:revealjs_theme:</span> league
-<span class="hljs-meta">:revealjs_customtheme:</span> css/custom.css</code><button class="btn-copy-code" onclick="copyToClipboard('1732912450997.3628')">Copy</button></pre>
+<pre class="highlight"><code class="language-adoc" id="1734011714164.5789"><span class="hljs-meta">:revealjs_theme:</span> league
+<span class="hljs-meta">:revealjs_customtheme:</span> css/custom.css</code><button class="btn-copy-code" onclick="copyToClipboard('1734011714164.5789')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -271,7 +271,7 @@ gulp serve</pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-css" id="1732912450997.1077"><span class="hljs-keyword">@import</span> url(<span class="hljs-attribute">https</span>://fonts.googleapis.com/css?family=<span class="hljs-attribute">Roboto</span>:<span class="hljs-number">400</span>,<span class="hljs-number">700</span>,<span class="hljs-number">400</span>italic,<span class="hljs-number">700</span>italic);
+<pre class="highlight"><code class="language-css" id="1734011714164.0845"><span class="hljs-keyword">@import</span> url(<span class="hljs-attribute">https</span>://fonts.googleapis.com/css?family=<span class="hljs-attribute">Roboto</span>:<span class="hljs-number">400</span>,<span class="hljs-number">700</span>,<span class="hljs-number">400</span>italic,<span class="hljs-number">700</span>italic);
 <span class="hljs-selector-tag">body</span> {
   <span class="hljs-attribute">background</span>: <span class="hljs-number">#52a83b</span>;
   <span class="hljs-attribute">font-family</span>: Roboto, Arial, sans-serif;
@@ -281,7 +281,7 @@ gulp serve</pre>
   <span class="hljs-attribute">font-family</span>: <span class="hljs-string">&quot;Lato&quot;</span>, sans-serif;
   <span class="hljs-attribute">font-size</span>: <span class="hljs-number">40px</span>;
   <span class="hljs-attribute">font-weight</span>: normal;
-  <span class="hljs-attribute">color</span>: <span class="hljs-number">#eee</span>; }</code><button class="btn-copy-code" onclick="copyToClipboard('1732912450997.1077')">Copy</button></pre>
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#eee</span>; }</code><button class="btn-copy-code" onclick="copyToClipboard('1734011714164.0845')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -303,7 +303,7 @@ gulp serve</pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-css" id="1732912450998.7305"><span class="hljs-selector-tag">body</span><span class="hljs-selector-pseudo">:after</span> {
+<pre class="highlight"><code class="language-css" id="1734011714165.7756"><span class="hljs-selector-tag">body</span><span class="hljs-selector-pseudo">:after</span> {
   <span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27; &#x27;</span>;
   <span class="hljs-attribute">position</span>: fixed;
   <span class="hljs-attribute">bottom</span>: <span class="hljs-number">1em</span>;
@@ -326,7 +326,7 @@ gulp serve</pre>
   <span class="hljs-attribute">color</span>: white;
   <span class="hljs-attribute">text-align</span>: center;
   <span class="hljs-attribute">font-size</span>: <span class="hljs-number">0.9rem</span>;
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1732912450998.7305')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1734011714165.7756')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -334,7 +334,7 @@ gulp serve</pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-css" id="1732912450999.9553"><span class="hljs-selector-class">.reveal</span><span class="hljs-selector-pseudo">:before</span> {
+<pre class="highlight"><code class="language-css" id="1734011714166.185"><span class="hljs-selector-class">.reveal</span><span class="hljs-selector-pseudo">:before</span> {
   <span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;Reveal.js par la pratique&#x27;</span>;
   <span class="hljs-attribute">position</span>: fixed;
   <span class="hljs-attribute">padding</span>: <span class="hljs-number">1em</span>;
@@ -344,7 +344,7 @@ gulp serve</pre>
   <span class="hljs-attribute">color</span>: white;
   <span class="hljs-attribute">text-align</span>: center;
   <span class="hljs-attribute">font-size</span>: <span class="hljs-number">0.9rem</span>;
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1732912450999.9553')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1734011714166.185')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -361,8 +361,8 @@ gulp serve</pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-adoc" id="1732912450999.6863"><span class="hljs-meta">[state=dynamic-example]</span>
-<span class="hljs-section">== Slide Ten js...</span></code><button class="btn-copy-code" onclick="copyToClipboard('1732912450999.6863')">Copy</button></pre>
+<pre class="highlight"><code class="language-adoc" id="1734011714166.7449"><span class="hljs-meta">[state=dynamic-example]</span>
+<span class="hljs-section">== Slide Ten js...</span></code><button class="btn-copy-code" onclick="copyToClipboard('1734011714166.7449')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -370,9 +370,9 @@ gulp serve</pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-adoc" id="1732912450999.738">Reveal.addEventListener( <span class="hljs-emphasis">&#x27;dynamic-example&#x27;</span>, function() {
+<pre class="highlight"><code class="language-adoc" id="1734011714166.5708">Reveal.addEventListener( <span class="hljs-emphasis">&#x27;dynamic-example&#x27;</span>, function() {
 <span class="hljs-code">    //</span>
-}, false );</code><button class="btn-copy-code" onclick="copyToClipboard('1732912450999.738')">Copy</button></pre>
+}, false );</code><button class="btn-copy-code" onclick="copyToClipboard('1734011714166.5708')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -380,7 +380,7 @@ gulp serve</pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1732912451000.15"><span class="hljs-title class_">Reveal</span>.<span class="hljs-title function_">addEventListener</span>( <span class="hljs-string">&#x27;dynamic&#x27;</span>, <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+<pre class="highlight"><code class="language-javascript" id="1734011714168.0325"><span class="hljs-title class_">Reveal</span>.<span class="hljs-title function_">addEventListener</span>( <span class="hljs-string">&#x27;dynamic&#x27;</span>, <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
 
   <span class="hljs-keyword">const</span> html = @backtick@
     &lt;h1&gt;<span class="hljs-title class_">Dynamic</span> slide&lt;/h1&gt;
@@ -393,7 +393,7 @@ gulp serve</pre>
   @backtick@;
 
   <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">&#x27;slide_ten_js&#x27;</span>).<span class="hljs-property">innerHTML</span> = html;
-}, <span class="hljs-literal">false</span> );</code><button class="btn-copy-code" onclick="copyToClipboard('1732912451000.15')">Copy</button></pre>
+}, <span class="hljs-literal">false</span> );</code><button class="btn-copy-code" onclick="copyToClipboard('1734011714168.0325')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -401,7 +401,7 @@ gulp serve</pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1732912451002.425">gulp.<span class="hljs-title function_">task</span>(<span class="hljs-string">&#x27;copy-html&#x27;</span>, <span class="hljs-function">() =&gt;</span>
+<pre class="highlight"><code class="language-javascript" id="1734011714169.2354">gulp.<span class="hljs-title function_">task</span>(<span class="hljs-string">&#x27;copy-html&#x27;</span>, <span class="hljs-function">() =&gt;</span>
   gulp.<span class="hljs-title function_">src</span>(<span class="hljs-string">&#x27;src/**/*.html&#x27;</span>)
     .<span class="hljs-title function_">pipe</span>(@dollar@.<span class="hljs-title function_">tap</span>(<span class="hljs-function">(<span class="hljs-params">file, cb</span>) =&gt;</span> {
       <span class="hljs-keyword">const</span> newFile = file.<span class="hljs-property">contents</span>.<span class="hljs-title function_">toString</span>();
@@ -410,7 +410,7 @@ gulp serve</pre>
       <span class="hljs-keyword">return</span> file;
     }))
     .<span class="hljs-title function_">pipe</span>(gulp.<span class="hljs-title function_">dest</span>(<span class="hljs-string">&#x27;build/dist&#x27;</span>))
-);</code><button class="btn-copy-code" onclick="copyToClipboard('1732912451002.425')">Copy</button></pre>
+);</code><button class="btn-copy-code" onclick="copyToClipboard('1734011714169.2354')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">

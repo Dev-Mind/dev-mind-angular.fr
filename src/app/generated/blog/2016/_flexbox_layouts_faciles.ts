@@ -64,7 +64,7 @@ export const _flexbox_layouts_faciles:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-html" id="1732912450691.8635"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<pre class="highlight"><code class="language-html" id="1734011714196.9258"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1&quot;</span>&gt;</span>
@@ -94,7 +94,7 @@ export const _flexbox_layouts_faciles:string = `<div id="preamble">
         All right reserved - @2016 Guillaume EHRET
     <span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1732912450691.8635')">Copy</button></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1734011714196.9258')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -118,11 +118,11 @@ export const _flexbox_layouts_faciles:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-css" id="1732912450691.0183"><span class="hljs-selector-tag">html</span>, <span class="hljs-selector-tag">body</span> {
+<pre class="highlight"><code class="language-css" id="1734011714197.622"><span class="hljs-selector-tag">html</span>, <span class="hljs-selector-tag">body</span> {
     <span class="hljs-attribute">min-height</span>: <span class="hljs-number">100vh</span>;
     <span class="hljs-attribute">max-height</span>: <span class="hljs-number">100vh</span>;
     <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1732912450691.0183')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1734011714197.622')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -130,8 +130,8 @@ export const _flexbox_layouts_faciles:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-css" id="1732912450692.8977"><span class="hljs-attribute">display</span>: flex;
-<span class="hljs-attribute">flex-direction</span>: column;</code><button class="btn-copy-code" onclick="copyToClipboard('1732912450692.8977')">Copy</button></pre>
+<pre class="highlight"><code class="language-css" id="1734011714197.9382"><span class="hljs-attribute">display</span>: flex;
+<span class="hljs-attribute">flex-direction</span>: column;</code><button class="btn-copy-code" onclick="copyToClipboard('1734011714197.9382')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -158,11 +158,11 @@ export const _flexbox_layouts_faciles:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-html" id="1732912450692.1936">header {
+<pre class="highlight"><code class="language-html" id="1734011714197.7256">header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1732912450692.1936')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1734011714197.7256')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -189,7 +189,7 @@ export const _flexbox_layouts_faciles:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-html" id="1732912450692.4182">header {
+<pre class="highlight"><code class="language-html" id="1734011714197.3916">header {
     flex: 0 0 64px;
 }
 main {
@@ -197,7 +197,7 @@ main {
 }
 footer {
     flex: 0 1;
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1732912450692.4182')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1734011714197.3916')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -210,7 +210,7 @@ footer {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-html" id="1732912450692.2517">grid {
+<pre class="highlight"><code class="language-html" id="1734011714197.0552">grid {
     display: flex;
 }
 
@@ -219,7 +219,7 @@ grid &gt; div {
     margin: 10px;
     padding: 1em;
     text-align: center;
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1732912450692.2517')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1734011714197.0552')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">

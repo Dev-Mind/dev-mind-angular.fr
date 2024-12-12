@@ -45,10 +45,10 @@ export const _application_web_typescript:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1732912450778.8506">mkdir -p myproject/src/main/typescript
+<pre class="highlight"><code class="language-shell" id="1734011713942.6477">mkdir -p myproject/src/main/typescript
 mkdir -p myproject/src/test/typescript
 cd myproject
-npm init</code><button class="btn-copy-code" onclick="copyToClipboard('1732912450778.8506')">Copy</button></pre>
+npm init</code><button class="btn-copy-code" onclick="copyToClipboard('1734011713942.6477')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -56,9 +56,9 @@ npm init</code><button class="btn-copy-code" onclick="copyToClipboard('173291245
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1732912450778.0098">npm install typescript
+<pre class="highlight"><code class="language-shell" id="1734011713942.934">npm install typescript
 npm install express @types/express serve-static
-npm install errorhandler @types/errorhandler express-handlebars @types/express-handlebars</code><button class="btn-copy-code" onclick="copyToClipboard('1732912450778.0098')">Copy</button></pre>
+npm install errorhandler @types/errorhandler express-handlebars @types/express-handlebars</code><button class="btn-copy-code" onclick="copyToClipboard('1734011713942.934')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -72,7 +72,7 @@ npm install errorhandler @types/errorhandler express-handlebars @types/express-h
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-typescript" id="1732912450786.2703"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> express <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;express&#x27;</span>;
+<pre class="highlight"><code class="language-typescript" id="1734011713949.9565"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> express <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;express&#x27;</span>;
 <span class="hljs-keyword">import</span> errorHandler = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;errorhandler&quot;</span>);
 
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">ServerOptions</span> {
@@ -111,7 +111,7 @@ npm install errorhandler @types/errorhandler express-handlebars @types/express-h
         <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Express</span>(options);
     }
 
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1732912450786.2703')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1734011713949.9565')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -122,7 +122,7 @@ npm install errorhandler @types/errorhandler express-handlebars @types/express-h
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-typescript" id="1732912450787.3633"><span class="hljs-keyword">import</span> {<span class="hljs-title class_">Express</span>, <span class="hljs-title class_">ServerOptions</span>} <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;./express&#x27;</span>;
+<pre class="highlight"><code class="language-typescript" id="1734011713950.7058"><span class="hljs-keyword">import</span> {<span class="hljs-title class_">Express</span>, <span class="hljs-title class_">ServerOptions</span>} <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;./express&#x27;</span>;
 <span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> http <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;http&#x27;</span>;
 
 <span class="hljs-keyword">const</span> options = {
@@ -134,7 +134,7 @@ npm install errorhandler @types/errorhandler express-handlebars @types/express-h
 
 http.<span class="hljs-title function_">createServer</span>(server)
     .<span class="hljs-title function_">listen</span>(options.<span class="hljs-property">port</span>)
-    .<span class="hljs-title function_">on</span>(<span class="hljs-string">&quot;listening&quot;</span>, <span class="hljs-function">() =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">debug</span>(<span class="hljs-string">&#x27;Listening on &#x27;</span> + options.<span class="hljs-property">port</span>));</code><button class="btn-copy-code" onclick="copyToClipboard('1732912450787.3633')">Copy</button></pre>
+    .<span class="hljs-title function_">on</span>(<span class="hljs-string">&quot;listening&quot;</span>, <span class="hljs-function">() =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">debug</span>(<span class="hljs-string">&#x27;Listening on &#x27;</span> + options.<span class="hljs-property">port</span>));</code><button class="btn-copy-code" onclick="copyToClipboard('1734011713950.7058')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -142,7 +142,7 @@ http.<span class="hljs-title function_">createServer</span>(server)
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-json" id="1732912450788.549"><span class="hljs-punctuation">{</span>
+<pre class="highlight"><code class="language-json" id="1734011713951.3987"><span class="hljs-punctuation">{</span>
   <span class="hljs-attr">&quot;name&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;devmind-typescript&quot;</span><span class="hljs-punctuation">,</span>
   <span class="hljs-attr">&quot;scripts&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
     <span class="hljs-attr">&quot;start&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;tsc; node ./build/app.js&quot;</span>
@@ -150,7 +150,7 @@ http.<span class="hljs-title function_">createServer</span>(server)
   <span class="hljs-attr">&quot;dependencies&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
     <span class="hljs-comment">// ...</span>
   <span class="hljs-punctuation">}</span>
-<span class="hljs-punctuation">}</span></code><button class="btn-copy-code" onclick="copyToClipboard('1732912450788.549')">Copy</button></pre>
+<span class="hljs-punctuation">}</span></code><button class="btn-copy-code" onclick="copyToClipboard('1734011713951.3987')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -169,10 +169,10 @@ http.<span class="hljs-title function_">createServer</span>(server)
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-typescript" id="1732912450789.1648"><span class="hljs-variable language_">this</span>.<span class="hljs-property">app</span>
+<pre class="highlight"><code class="language-typescript" id="1734011713951.6226"><span class="hljs-variable language_">this</span>.<span class="hljs-property">app</span>
   .<span class="hljs-title function_">use</span>(express.<span class="hljs-title function_">static</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">options</span>.<span class="hljs-property">static</span>))
   .<span class="hljs-title function_">get</span>(<span class="hljs-string">&#x27;/&#x27;</span>, <span class="hljs-function">(<span class="hljs-params">req, res</span>) =&gt;</span> res.<span class="hljs-title function_">send</span>(<span class="hljs-string">&#x27;Hello World!&#x27;</span>))
-  .<span class="hljs-title function_">use</span>(<span class="hljs-title function_">errorHandler</span>());</code><button class="btn-copy-code" onclick="copyToClipboard('1732912450789.1648')">Copy</button></pre>
+  .<span class="hljs-title function_">use</span>(<span class="hljs-title function_">errorHandler</span>());</code><button class="btn-copy-code" onclick="copyToClipboard('1734011713951.6226')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -180,14 +180,14 @@ http.<span class="hljs-title function_">createServer</span>(server)
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-html" id="1732912450789.543">@LThtml@GT
+<pre class="highlight"><code class="language-html" id="1734011713951.6978">@LThtml@GT
 @LThead@GT
     @LTlink rel=&quot;stylesheet&quot; href=&quot;css/bootstrap.min.css&quot;@GT
 @LT/head@GT
 @LTbody@GT
     @LTh1@GTHello TypeScript@LT/h1@GT
 @LT/body@GT
-@LT/html@GT</code><button class="btn-copy-code" onclick="copyToClipboard('1732912450789.543')">Copy</button></pre>
+@LT/html@GT</code><button class="btn-copy-code" onclick="copyToClipboard('1734011713951.6978')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -203,7 +203,7 @@ http.<span class="hljs-title function_">createServer</span>(server)
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-typescript" id="1732912450790.6875"><span class="hljs-keyword">export</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">Todo</span> {
+<pre class="highlight"><code class="language-typescript" id="1734011713952.1853"><span class="hljs-keyword">export</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">Todo</span> {
     <span class="hljs-attr">id</span>: <span class="hljs-built_in">number</span>;
     <span class="hljs-attr">label</span>: <span class="hljs-built_in">string</span>;
     <span class="hljs-attr">checked</span>: <span class="hljs-built_in">boolean</span>;
@@ -214,7 +214,7 @@ http.<span class="hljs-title function_">createServer</span>(server)
     {<span class="hljs-attr">id</span>: sequence++, <span class="hljs-attr">label</span>: <span class="hljs-string">&#x27;Ecrire un article&#x27;</span>, <span class="hljs-attr">checked</span>: <span class="hljs-literal">true</span>},
     {<span class="hljs-attr">id</span>: sequence++, <span class="hljs-attr">label</span>: <span class="hljs-string">&#x27;Veille techno sur TypeScript&#x27;</span>, <span class="hljs-attr">checked</span>: <span class="hljs-literal">false</span>},
     {<span class="hljs-attr">id</span>: sequence++, <span class="hljs-attr">label</span>: <span class="hljs-string">&#x27;Voir la dernière release de ExpressJS&#x27;</span>, <span class="hljs-attr">checked</span>: <span class="hljs-literal">false</span>}
-];</code><button class="btn-copy-code" onclick="copyToClipboard('1732912450790.6875')">Copy</button></pre>
+];</code><button class="btn-copy-code" onclick="copyToClipboard('1734011713952.1853')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -222,7 +222,7 @@ http.<span class="hljs-title function_">createServer</span>(server)
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-typescript" id="1732912450792.8606"><span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">TodoDao</span> {
+<pre class="highlight"><code class="language-typescript" id="1734011713955.627"><span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">TodoDao</span> {
 
     <span class="hljs-title function_">findAll</span>(): <span class="hljs-title class_">Todo</span>[] {
         <span class="hljs-keyword">return</span> <span class="hljs-variable constant_">TODO_DATA</span>;
@@ -249,7 +249,7 @@ http.<span class="hljs-title function_">createServer</span>(server)
             <span class="hljs-variable constant_">TODO_DATA</span>.<span class="hljs-title function_">splice</span>(index, <span class="hljs-number">1</span>);
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1732912450792.8606')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1734011713955.627')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -307,7 +307,7 @@ http.<span class="hljs-title function_">createServer</span>(server)
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-typescript" id="1732912450794.4717"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> express <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;express&#x27;</span>;
+<pre class="highlight"><code class="language-typescript" id="1734011713957.5715"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> express <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;express&#x27;</span>;
 <span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> handlebars <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;express-handlebars&#x27;</span>;
 <span class="hljs-keyword">import</span> errorHandler = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;errorhandler&quot;</span>);
 <span class="hljs-keyword">import</span> {<span class="hljs-title class_">TodoRoute</span>} <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./todo.route&quot;</span>;
@@ -333,7 +333,7 @@ http.<span class="hljs-title function_">createServer</span>(server)
         .<span class="hljs-title function_">get</span>(<span class="hljs-string">&#x27;/&#x27;</span>, <span class="hljs-function">(<span class="hljs-params">req, res</span>) =&gt;</span> res.<span class="hljs-title function_">send</span>(<span class="hljs-string">&#x27;Hello World!&#x27;</span>))
         .<span class="hljs-title function_">use</span>(<span class="hljs-title function_">errorHandler</span>());
   }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1732912450794.4717')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1734011713957.5715')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -354,7 +354,7 @@ http.<span class="hljs-title function_">createServer</span>(server)
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-typescript" id="1732912450798.7434"><span class="hljs-keyword">import</span> {<span class="hljs-title class_">Request</span>, <span class="hljs-title class_">Response</span>, <span class="hljs-title class_">Router</span>} <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;express&quot;</span>;
+<pre class="highlight"><code class="language-typescript" id="1734011713961.378"><span class="hljs-keyword">import</span> {<span class="hljs-title class_">Request</span>, <span class="hljs-title class_">Response</span>, <span class="hljs-title class_">Router</span>} <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;express&quot;</span>;
 <span class="hljs-keyword">import</span> {<span class="hljs-title class_">Todo</span>, <span class="hljs-title class_">TodoDao</span>} <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./todo.dao&quot;</span>;
 
 
@@ -413,7 +413,7 @@ http.<span class="hljs-title function_">createServer</span>(server)
             <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">findAll</span>(req, res);
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1732912450798.7434')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1734011713961.378')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -436,7 +436,7 @@ http.<span class="hljs-title function_">createServer</span>(server)
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-html" id="1732912450799.1094">@LT!DOCTYPE html@GT
+<pre class="highlight"><code class="language-html" id="1734011713962.3132">@LT!DOCTYPE html@GT
 @LThtml@GT
 @LThead@GT
   @LTtitle@GT{{ title }}@LT/title@GT
@@ -449,7 +449,7 @@ http.<span class="hljs-title function_">createServer</span>(server)
     {{{body}}}
   @LT/div@GT
 @LT/body@GT
-@LT/html@GT</code><button class="btn-copy-code" onclick="copyToClipboard('1732912450799.1094')">Copy</button></pre>
+@LT/html@GT</code><button class="btn-copy-code" onclick="copyToClipboard('1734011713962.3132')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -476,7 +476,7 @@ http.<span class="hljs-title function_">createServer</span>(server)
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-html" id="1732912450799.124">@LTa href=&quot;/todos/create&quot; class=&quot;btn btn-dark&quot;@GTCréer Todo@LT/a@GT
+<pre class="highlight"><code class="language-html" id="1734011713962.284">@LTa href=&quot;/todos/create&quot; class=&quot;btn btn-dark&quot;@GTCréer Todo@LT/a@GT
 @LTbr@GT
 @LTtable class=&quot;table&quot;@GT
 
@@ -506,7 +506,7 @@ http.<span class="hljs-title function_">createServer</span>(server)
         @LT/tr@GT
     {{/todos}}
     @LT/tbody@GT
-@LT/table@GT</code><button class="btn-copy-code" onclick="copyToClipboard('1732912450799.124')">Copy</button></pre>
+@LT/table@GT</code><button class="btn-copy-code" onclick="copyToClipboard('1734011713962.284')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -514,7 +514,7 @@ http.<span class="hljs-title function_">createServer</span>(server)
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-html" id="1732912450799.8672">@LTform action=&quot;/todos&quot; method=&quot;post&quot;@GT
+<pre class="highlight"><code class="language-html" id="1734011713962.6313">@LTform action=&quot;/todos&quot; method=&quot;post&quot;@GT
 {{#errors.has}}
 @LTdiv class=&quot;alert alert-danger&quot;@GTVous avez une erreur dans votre formulaire@LT/div@GT{{/errors.has}}
 
@@ -541,7 +541,7 @@ http.<span class="hljs-title function_">createServer</span>(server)
         @LTbutton class=&quot;btn btn-dark&quot;@GTSave@LT/button@GT<span class="hljs-symbol">&amp;amp;</span>nbsp;<span class="hljs-symbol">&amp;amp;</span>nbsp;
         @LTa class=&quot;btn btn-outline-secondary&quot; href=&quot;/todos&quot;@GTCancel@LT/a@GT
     @LT/div@GT
-@LT/form@GT</code><button class="btn-copy-code" onclick="copyToClipboard('1732912450799.8672')">Copy</button></pre>
+@LT/form@GT</code><button class="btn-copy-code" onclick="copyToClipboard('1734011713962.6313')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
