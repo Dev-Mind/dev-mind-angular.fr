@@ -305,9 +305,9 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1732912450930.9092">compile(<span class="hljs-string">"org.springframework.boot:spring-boot-starter-webflux"</span>)
+<pre class="highlight"><code class="language-java" id="1734011714108.185">compile(<span class="hljs-string">"org.springframework.boot:spring-boot-starter-webflux"</span>)
 compile(<span class="hljs-string">"org.springframework.boot:spring-boot-starter-data-mongodb-reactive"</span>)
-runtime(<span class="hljs-string">"de.flapdoodle.embed:de.flapdoodle.embed.mongo"</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1732912450930.9092')">Copy</button></pre>
+runtime(<span class="hljs-string">"de.flapdoodle.embed:de.flapdoodle.embed.mongo"</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1734011714108.185')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -318,7 +318,7 @@ runtime(<span class="hljs-string">"de.flapdoodle.embed:de.flapdoodle.embed.mongo
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1732912450930.372"><span class="hljs-meta">@Document</span>
+<pre class="highlight"><code class="language-kotlin" id="1734011714109.077"><span class="hljs-meta">@Document</span>
 <span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Talk</span>(
         <span class="hljs-keyword">val</span> format: TalkFormat,
         <span class="hljs-meta">@TextIndexed(weight = 10F)</span> <span class="hljs-keyword">val</span> title: String,
@@ -329,7 +329,7 @@ runtime(<span class="hljs-string">"de.flapdoodle.embed:de.flapdoodle.embed.mongo
         <span class="hljs-keyword">val</span> start: LocalDateTime? = <span class="hljs-literal">null</span>,
         <span class="hljs-keyword">val</span> end: LocalDateTime? = <span class="hljs-literal">null</span>,
         <span class="hljs-meta">@Id</span> <span class="hljs-keyword">val</span> id: String? = <span class="hljs-literal">null</span>
-)</span></code><button class="btn-copy-code" onclick="copyToClipboard('1732912450930.372')">Copy</button></pre>
+)</span></code><button class="btn-copy-code" onclick="copyToClipboard('1734011714109.077')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -340,7 +340,7 @@ runtime(<span class="hljs-string">"de.flapdoodle.embed:de.flapdoodle.embed.mongo
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1732912450931.5168"><span class="hljs-meta">@Repository</span>
+<pre class="highlight"><code class="language-kotlin" id="1734011714109.9104"><span class="hljs-meta">@Repository</span>
 <span class="hljs-keyword">class</span> <span class="hljs-title class_">TalkRepository</span>(<span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> template: ReactiveMongoTemplate) {
 
     <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">findOne</span><span class="hljs-params">(id: <span class="hljs-type">String</span>)</span></span> = template.<span class="hljs-symbol">findById&lt;Talk&gt;(id)
@@ -352,15 +352,15 @@ runtime(<span class="hljs-string">"de.flapdoodle.embed:de.flapdoodle.embed.mongo
         <span class="hljs-keyword">val</span> query = TextQuery(textCriteria).sortByScore()
         <span class="hljs-keyword">return</span> template.find(query)
     }
-}</span></span></code><button class="btn-copy-code" onclick="copyToClipboard('1732912450931.5168')">Copy</button></pre>
+}</span></span></code><button class="btn-copy-code" onclick="copyToClipboard('1734011714109.9104')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
 <p>En quelques lignes nous venons de voir comment lancer une recherche fullText dans une applicaton Spring Boot Kotlin. Le code en Java est très similaire de ce qui a été montré ici.</p>
 </div>
 </div>
-</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 29/11/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
+</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 12/12/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
 
-<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-YWOLB4FD.js" type="module"></script>
+<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-IS3IYFBN.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t7"},"c":{"7":[{"i":"t7","r":1,"x":3}]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t1"},"c":{"7":[{"i":"t1","r":1,"x":3}]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>

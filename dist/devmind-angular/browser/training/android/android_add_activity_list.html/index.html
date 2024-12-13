@@ -208,14 +208,14 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1732912451034.1208">LazyColumn {
+<pre class="highlight"><code class="language-kotlin" id="1734011714288.836">LazyColumn {
     item {
         Header()
     }
     items(<span class="hljs-keyword">data</span>) { item <span class="hljs-meta">-&gt;</span>
         PhotoItem(item)
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1732912451034.1208')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1734011714288.836')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -260,7 +260,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1732912451035.8318"><span class="hljs-meta">@Composable</span>
+<pre class="highlight"><code class="language-kotlin" id="1734011714288.1194"><span class="hljs-meta">@Composable</span>
 <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">RoomItem</span><span class="hljs-params">(room: <span class="hljs-type">RoomDto</span>, modifier: <span class="hljs-type">Modifier</span> = Modifier)</span></span> {
     Card(colors = CardDefaults.cardColors(containerColor = Color.Transparent),
         border = BorderStroke(<span class="hljs-number">1.</span>dp, PurpleGrey80)
@@ -288,7 +288,7 @@
             )
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1732912451035.8318')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1734011714288.1194')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -299,13 +299,13 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1732912451035.0022"><span class="hljs-meta">@Preview(showBackground = true)</span>
+<pre class="highlight"><code class="language-kotlin" id="1734011714288.9238"><span class="hljs-meta">@Preview(showBackground = true)</span>
 <span class="hljs-meta">@Composable</span>
 <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">RoomItemPreview</span><span class="hljs-params">()</span></span> {
     AutomacorpTheme {
         RoomItem(RoomService.ROOMS[<span class="hljs-number">0</span>])
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1732912451035.0022')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1734011714288.9238')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -316,7 +316,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1732912451035.078"> LazyColumn(
+<pre class="highlight"><code class="language-kotlin" id="1734011714289.4214"> LazyColumn(
     contentPadding = PaddingValues(<span class="hljs-number">4.</span>dp),
     verticalArrangement = Arrangement.spacedBy(<span class="hljs-number">8.</span>dp),
     modifier = Modifier.padding(innerPadding),
@@ -328,7 +328,7 @@
             modifier = Modifier
         )
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1732912451035.078')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1734011714289.4214')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -347,12 +347,12 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1732912451035.6843">items(rooms, key = { it.id }) {
+<pre class="highlight"><code class="language-kotlin" id="1734011714289.3406">items(rooms, key = { it.id }) {
     RoomItem(
         room = it,
         modifier = Modifier.clickable { openRoom(it.id) },
     )
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1732912451035.6843')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1734011714289.3406')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -371,8 +371,8 @@
 <p>If you want more explanations about list and grid you can read this <a href="https://developer.android.com/develop/ui/compose/lists">article</a> made by Google</p>
 </div>
 </div>
-</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 29/11/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
+</div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 12/12/2024</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
 
-<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-YWOLB4FD.js" type="module"></script>
+<script src="polyfills-A7MJM4D4.js" type="module"></script><script src="main-IS3IYFBN.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t0"},"c":{"7":[{"i":"t0","r":1}]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t6"},"c":{"7":[{"i":"t6","r":1}]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>
