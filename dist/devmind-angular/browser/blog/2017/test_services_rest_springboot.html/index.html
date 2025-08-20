@@ -186,7 +186,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474881.5706"><span class="hljs-meta">@RestController</span>
+<pre class="highlight"><code class="language-java" id="1755670400775.1157"><span class="hljs-meta">@RestController</span>
 <span class="hljs-meta">@RequestMapping("/api/session")</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SessionController</span> {
 
@@ -213,7 +213,7 @@
         <span class="hljs-keyword">public</span> ResponseEntity<span class="hljs-meta">&lt;Session</span><span class="hljs-meta">&gt;</span> save(<span class="hljs-meta">@Valid</span> <span class="hljs-meta">@RequestBody</span> Session session) {
         <span class="hljs-keyword">return</span> ok(sessionService.save(session));
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474881.5706')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400775.1157')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -229,8 +229,8 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474881.4614">compile <span class="hljs-string">"javax.validation:validation-api:1.1.0.Final"</span>
-compile <span class="hljs-string">"org.hibernate:hibernate-validator:1.1.0.Final"</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474881.4614')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670400775.597">compile <span class="hljs-string">"javax.validation:validation-api:1.1.0.Final"</span>
+compile <span class="hljs-string">"org.hibernate:hibernate-validator:1.1.0.Final"</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670400775.597')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -238,7 +238,7 @@ compile <span class="hljs-string">"org.hibernate:hibernate-validator:1.1.0.Final
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474881.435"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Session</span> {
+<pre class="highlight"><code class="language-java" id="1755670400775.725"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Session</span> {
     <span class="hljs-keyword">private</span> String id;
     <span class="hljs-meta">@NotEmpty</span>
     <span class="hljs-keyword">private</span> String title;
@@ -247,7 +247,7 @@ compile <span class="hljs-string">"org.hibernate:hibernate-validator:1.1.0.Final
     <span class="hljs-meta">@Max(500)</span>
     <span class="hljs-keyword">private</span> Integer maxAttendees;
     <span class="hljs-comment">// ...</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474881.435')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400775.725')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -260,7 +260,7 @@ compile <span class="hljs-string">"org.hibernate:hibernate-validator:1.1.0.Final
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474881.354"><span class="hljs-meta">@RunWith(SpringRunner.class)</span>
+<pre class="highlight"><code class="language-java" id="1755670400775.8577"><span class="hljs-meta">@RunWith(SpringRunner.class)</span>
 <span class="hljs-meta">@WebMvcTest(SessionController.class)</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SessionControllerTest</span> {
     <span class="hljs-meta">@Autowired</span>
@@ -271,7 +271,7 @@ compile <span class="hljs-string">"org.hibernate:hibernate-validator:1.1.0.Final
 
     <span class="hljs-keyword">private</span> <span class="hljs-type">ObjectMapper</span> <span class="hljs-variable">mapper</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">ObjectMapper</span>();
 
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474881.354')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400775.8577')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -290,7 +290,7 @@ compile <span class="hljs-string">"org.hibernate:hibernate-validator:1.1.0.Final
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474882.2993"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-java" id="1755670400775.6753"><span class="hljs-meta">@Test</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">shouldFindAllSessions</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception {
 
     given(<span class="hljs-built_in">this</span>.sessionService.findAll())
@@ -302,7 +302,7 @@ compile <span class="hljs-string">"org.hibernate:hibernate-validator:1.1.0.Final
             .andExpect(status().isOk())
             .andExpect(jsonPath(<span class="hljs-string">"$.length()"</span>, is(<span class="hljs-number">2</span>)))
             .andExpect(jsonPath(<span class="hljs-string">"$.[0].title"</span>, is(<span class="hljs-string">"title1"</span>)));
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474882.2993')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400775.6753')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -319,10 +319,10 @@ compile <span class="hljs-string">"org.hibernate:hibernate-validator:1.1.0.Final
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474882.4329"><span class="hljs-built_in">this</span>.mvc.perform(get(<span class="hljs-string">"/api/session"</span>).with(httpBasic(<span class="hljs-string">"admin"</span>, <span class="hljs-string">"password"</span>)))
+<pre class="highlight"><code class="language-java" id="1755670400775.4739"><span class="hljs-built_in">this</span>.mvc.perform(get(<span class="hljs-string">"/api/session"</span>).with(httpBasic(<span class="hljs-string">"admin"</span>, <span class="hljs-string">"password"</span>)))
             .andExpect(status().isOk())
             .andExpect(jsonPath(<span class="hljs-string">"$.length()"</span>, is(<span class="hljs-number">2</span>)))
-            .andExpect(jsonPath(<span class="hljs-string">"$.[0].title"</span>, is(<span class="hljs-string">"title1"</span>)));</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474882.4329')">Copy</button></pre>
+            .andExpect(jsonPath(<span class="hljs-string">"$.[0].title"</span>, is(<span class="hljs-string">"title1"</span>)));</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400775.4739')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -330,7 +330,7 @@ compile <span class="hljs-string">"org.hibernate:hibernate-validator:1.1.0.Final
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474882.1138"><span class="hljs-meta">@WebMvcTest(value = SessionController.class, secure = false)</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474882.1138')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670400776.0571"><span class="hljs-meta">@WebMvcTest(value = SessionController.class, secure = false)</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670400776.0571')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -343,7 +343,7 @@ compile <span class="hljs-string">"org.hibernate:hibernate-validator:1.1.0.Final
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474882.2788"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-java" id="1755670400776.5405"><span class="hljs-meta">@Test</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">shouldCreateSession</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception {
 
     <span class="hljs-type">Session</span> <span class="hljs-variable">session</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Session</span>().withTitle(<span class="hljs-string">"My Spring session"</span>).withMaxAttendees(<span class="hljs-number">10</span>);
@@ -359,7 +359,7 @@ compile <span class="hljs-string">"org.hibernate:hibernate-validator:1.1.0.Final
             .andExpect(status().isOk())
             .andExpect(jsonPath(<span class="hljs-string">"$.id"</span>, is(<span class="hljs-string">"id"</span>)))
             .andExpect(jsonPath(<span class="hljs-string">"$.title"</span>, is(<span class="hljs-string">"My Spring session"</span>)));
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474882.2788')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400776.5405')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -375,7 +375,7 @@ compile <span class="hljs-string">"org.hibernate:hibernate-validator:1.1.0.Final
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474882.541"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-java" id="1755670400776.5405"><span class="hljs-meta">@Test</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">shouldNotCreateSessionWhenBeanInvalid</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception {
 
     <span class="hljs-type">Session</span> <span class="hljs-variable">session</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Session</span>();
@@ -387,7 +387,7 @@ compile <span class="hljs-string">"org.hibernate:hibernate-validator:1.1.0.Final
                     .with(httpBasic(<span class="hljs-string">"admin"</span>, <span class="hljs-string">"password"</span>))
     )
             .andExpect(status().isBadRequest());
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474882.541')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400776.5405')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -396,6 +396,6 @@ compile <span class="hljs-string">"org.hibernate:hibernate-validator:1.1.0.Final
 </div>
 </div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 20/08/2025</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
 
-<script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-ZZJ4HZT4.js" type="module"></script>
+<script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-VONEI5UC.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t1"},"c":{"7":[{"i":"t1","r":1,"x":3}]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t2"},"c":{"7":[{"i":"t2","r":1,"x":3}]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>

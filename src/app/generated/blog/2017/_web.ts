@@ -221,7 +221,7 @@ export const _web:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474888.7622">protocol::<span class="hljs-comment">//user:password@server:port/path/resource?param1=value1&amp;amp;param2=value2</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474888.7622')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670400783.3413">protocol::<span class="hljs-comment">//user:password@server:port/path/resource?param1=value1&amp;amp;param2=value2</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670400783.3413')">Copy</button></pre>
 </div>
 </div>
 <div class="sect3">
@@ -240,7 +240,7 @@ export const _web:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474888.7622">protocol::<span class="hljs-comment">//server/path/resource?param1=value1&amp;amp;param2=value2</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474888.7622')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670400783.058">protocol::<span class="hljs-comment">//server/path/resource?param1=value1&amp;amp;param2=value2</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670400783.058')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -304,7 +304,7 @@ export const _web:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474888.112">https:<span class="hljs-comment">//www.dev-mind.fr/api/conference?name=Mix-IT</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474888.112')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670400783.1543">https:<span class="hljs-comment">//www.dev-mind.fr/api/conference?name=Mix-IT</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670400783.1543')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -322,11 +322,11 @@ export const _web:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-html" id="1755669474888.8696"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;”part1”&quot;</span>&gt;</span>
+<pre class="highlight"><code class="language-html" id="1755670400785.6294"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;”part1”&quot;</span>&gt;</span>
   <span class="hljs-comment">&lt;!-- code --&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-comment">&lt;!-- code --&gt;</span>
-</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474888.8696')">Copy</button></pre>
+</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400785.6294')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">

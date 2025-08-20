@@ -44,7 +44,7 @@ export const _start_typescript_project_and_test_with_jest:string = `<div id="toc
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669475049.7502">@dollar@ npm
+<pre class="highlight"><code class="language-shell" id="1755670401017.3672">@dollar@ npm
 
 Usage: npm &lt;command&gt;
 
@@ -64,7 +64,7 @@ where &lt;command&gt; is one of:
 npm &lt;command&gt; -h  quick help on &lt;command&gt;
 npm -l            display full usage info
 npm help &lt;term&gt;   search for help on &lt;term&gt;
-npm help npm      involved overview&lt;/term&gt;&lt;/term&gt;</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475049.7502')">Copy</button></pre>
+npm help npm      involved overview&lt;/term&gt;&lt;/term&gt;</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401017.3672')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -72,14 +72,14 @@ npm help npm      involved overview&lt;/term&gt;&lt;/term&gt;</code><button clas
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669475049.0686">@dollar@ node
+<pre class="highlight"><code class="language-shell" id="1755670401018.5603">@dollar@ node
 <span class="hljs-meta prompt_">&gt; </span><span class="language-bash">const name = <span class="hljs-string">&#x27;Guillaume&#x27;</span></span>
 undefined
 <span class="hljs-meta prompt_">&gt; </span><span class="language-bash">console.log(name)</span>
 Guillaume
 <span class="hljs-meta prompt_">&gt;</span><span class="language-bash">
 (To <span class="hljs-built_in">exit</span>, press ^C again or <span class="hljs-built_in">type</span> .<span class="hljs-built_in">exit</span>)</span>
-<span class="hljs-meta prompt_">&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669475049.0686')">Copy</button></pre>
+<span class="hljs-meta prompt_">&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401018.5603')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -92,8 +92,8 @@ Guillaume
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669475049.8704">mkdir -p myproject/src/main/typescript
-mkdir -p myproject/src/test/typescript</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475049.8704')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670401018.0742">mkdir -p myproject/src/main/typescript
+mkdir -p myproject/src/test/typescript</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401018.0742')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -101,7 +101,7 @@ mkdir -p myproject/src/test/typescript</code><button class="btn-copy-code" oncli
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669475049.9656">@dollar@ cd myproject
+<pre class="highlight"><code class="language-shell" id="1755670401018.8826">@dollar@ cd myproject
 @dollar@ npm init
 This utility will walk you through creating a package.json file.
 It only covers the most common items, and tries to guess sensible defaults.
@@ -134,7 +134,7 @@ About to write to /home/devmind/Workspace/web/myproject/package.json:
   },
   &quot;author&quot;: &quot;Guillaume EHRET&quot;,
   &quot;license&quot;: &quot;MIT&quot;
-}&lt;/pkg&gt;</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475049.9656')">Copy</button></pre>
+}&lt;/pkg&gt;</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401018.8826')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -142,7 +142,7 @@ About to write to /home/devmind/Workspace/web/myproject/package.json:
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669475049.0251">npm install typescript</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475049.0251')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670401018.6921">npm install typescript</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401018.6921')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -150,9 +150,9 @@ About to write to /home/devmind/Workspace/web/myproject/package.json:
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-json" id="1755669475049.3408"><span class="hljs-attr">&quot;dependencies&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+<pre class="highlight"><code class="language-json" id="1755670401018.188"><span class="hljs-attr">&quot;dependencies&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
   <span class="hljs-attr">&quot;typescript&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;^3.5.3&quot;</span>
-<span class="hljs-punctuation">}</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669475049.3408')">Copy</button></pre>
+<span class="hljs-punctuation">}</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401018.188')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -167,7 +167,7 @@ Si vous n&#8217;utilisez aucune marque <code>npm</code> chargera la version spé
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669475049.1848">npm install</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475049.1848')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670401018.0815">npm install</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401018.0815')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -186,7 +186,7 @@ Si vous n&#8217;utilisez aucune marque <code>npm</code> chargera la version spé
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-json" id="1755669475050.9001"><span class="hljs-punctuation">{</span>
+<pre class="highlight"><code class="language-json" id="1755670401019.514"><span class="hljs-punctuation">{</span>
   <span class="hljs-attr">&quot;compilerOptions&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
     <span class="hljs-comment">/* Specify ECMAScript target version: &#x27;ES3&#x27; (default). Here ES5 to be compatible with all web browsers */</span>
     <span class="hljs-attr">&quot;target&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;ES5&quot;</span><span class="hljs-punctuation">,</span>
@@ -208,7 +208,7 @@ Si vous n&#8217;utilisez aucune marque <code>npm</code> chargera la version spé
   <span class="hljs-attr">&quot;exclude&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
     <span class="hljs-string">&quot;node_modules&quot;</span>
   <span class="hljs-punctuation">]</span>
-<span class="hljs-punctuation">}</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669475050.9001')">Copy</button></pre>
+<span class="hljs-punctuation">}</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401019.514')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -224,9 +224,9 @@ Si vous n&#8217;utilisez aucune marque <code>npm</code> chargera la version spé
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-typescript" id="1755669475050.4736"><span class="hljs-title function_">great</span>(<span class="hljs-params">name: <span class="hljs-built_in">string</span></span>){
+<pre class="highlight"><code class="language-typescript" id="1755670401019.5176"><span class="hljs-title function_">great</span>(<span class="hljs-params">name: <span class="hljs-built_in">string</span></span>){
     <span class="hljs-keyword">return</span> <span class="hljs-meta">@backtick</span><span class="hljs-meta">@Hi</span>, <span class="hljs-meta">@dollar</span>@{name}<span class="hljs-meta">@backtick</span>@;
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475050.4736')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401019.5176')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -234,7 +234,7 @@ Si vous n&#8217;utilisez aucune marque <code>npm</code> chargera la version spé
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669475051.38"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title function_">great</span>(<span class="hljs-number">123</span>));</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475051.38')">Copy</button></pre>
+<pre class="highlight"><code class="language-javascript" id="1755670401020.1365"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title function_">great</span>(<span class="hljs-number">123</span>));</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401020.1365')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -242,8 +242,8 @@ Si vous n&#8217;utilisez aucune marque <code>npm</code> chargera la version spé
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-typescript" id="1755669475051.9863"><span class="hljs-keyword">let</span> age = <span class="hljs-number">42</span>;
-age = <span class="hljs-string">&quot;inconnu&quot;</span>;</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475051.9863')">Copy</button></pre>
+<pre class="highlight"><code class="language-typescript" id="1755670401020.0564"><span class="hljs-keyword">let</span> age = <span class="hljs-number">42</span>;
+age = <span class="hljs-string">&quot;inconnu&quot;</span>;</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401020.0564')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -251,7 +251,7 @@ age = <span class="hljs-string">&quot;inconnu&quot;</span>;</code><button class=
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-typescript" id="1755669475051.6045"><span class="hljs-keyword">export</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">Person</span> {
+<pre class="highlight"><code class="language-typescript" id="1755670401020.9014"><span class="hljs-keyword">export</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">Person</span> {
     <span class="hljs-attr">firstName</span>: <span class="hljs-built_in">string</span>;
     <span class="hljs-attr">lastName</span>: <span class="hljs-built_in">string</span>;
 }
@@ -260,7 +260,7 @@ age = <span class="hljs-string">&quot;inconnu&quot;</span>;</code><button class=
     <span class="hljs-title function_">great</span>(<span class="hljs-params">person: Person</span>){
         <span class="hljs-keyword">return</span> <span class="hljs-meta">@backtick</span><span class="hljs-meta">@Hi</span>, <span class="hljs-meta">@dollar</span>@{person.<span class="hljs-property">firstName</span>} <span class="hljs-meta">@dollar</span>@{person.<span class="hljs-property">lastName</span>}<span class="hljs-meta">@backtick</span>@;
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475051.6045')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401020.9014')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -268,14 +268,14 @@ age = <span class="hljs-string">&quot;inconnu&quot;</span>;</code><button class=
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-typescript" id="1755669475052.2961"><span class="hljs-keyword">import</span> {<span class="hljs-title class_">GreaterService</span>, <span class="hljs-title class_">Person</span>} <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./person&quot;</span>;
+<pre class="highlight"><code class="language-typescript" id="1755670401020.5925"><span class="hljs-keyword">import</span> {<span class="hljs-title class_">GreaterService</span>, <span class="hljs-title class_">Person</span>} <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./person&quot;</span>;
 
 <span class="hljs-keyword">const</span> <span class="hljs-attr">person</span>:<span class="hljs-title class_">Person</span> = {
     <span class="hljs-attr">firstName</span>: <span class="hljs-string">&#x27;Guillaume&#x27;</span>,
     <span class="hljs-attr">lastName</span>: <span class="hljs-string">&#x27;EHRET&#x27;</span>
 }
 
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">GreaterService</span>().<span class="hljs-title function_">great</span>(person));</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475052.2961')">Copy</button></pre>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">GreaterService</span>().<span class="hljs-title function_">great</span>(person));</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401020.5925')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -283,8 +283,8 @@ age = <span class="hljs-string">&quot;inconnu&quot;</span>;</code><button class=
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669475052.786">@dollar@ tsc
-@dollar@ node build/index.js</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475052.786')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670401020.3376">@dollar@ tsc
+@dollar@ node build/index.js</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401020.3376')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -309,7 +309,7 @@ age = <span class="hljs-string">&quot;inconnu&quot;</span>;</code><button class=
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669475052.5496">npm install jest @types/jest ts-jest -D</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475052.5496')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670401020.6426">npm install jest @types/jest ts-jest -D</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401020.6426')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -317,7 +317,7 @@ age = <span class="hljs-string">&quot;inconnu&quot;</span>;</code><button class=
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669475052.2256">jest --init
+<pre class="highlight"><code class="language-shell" id="1755670401020.2559">jest --init
 
 ✔ Would you like to use Jest when running &quot;test&quot; script in &quot;package.json&quot;? … yes
 ✔ Choose the test environment that will be used for testing › node
@@ -326,7 +326,7 @@ age = <span class="hljs-string">&quot;inconnu&quot;</span>;</code><button class=
 
 
 ✏️  Modified /home/devmind/Workspace/web/dev-mind.fr/package.json
-📝  Configuration file created at /home/devmind/Workspace/web/dev-mind.fr/jest.config.js</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475052.2256')">Copy</button></pre>
+📝  Configuration file created at /home/devmind/Workspace/web/dev-mind.fr/jest.config.js</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401020.2559')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -334,10 +334,10 @@ age = <span class="hljs-string">&quot;inconnu&quot;</span>;</code><button class=
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-json" id="1755669475052.5225"><span class="hljs-punctuation">[</span>source<span class="hljs-punctuation">,</span> shell<span class="hljs-punctuation">,</span> subs=<span class="hljs-string">&quot;none&quot;</span><span class="hljs-punctuation">]</span>
+<pre class="highlight"><code class="language-json" id="1755670401021.889"><span class="hljs-punctuation">[</span>source<span class="hljs-punctuation">,</span> shell<span class="hljs-punctuation">,</span> subs=<span class="hljs-string">&quot;none&quot;</span><span class="hljs-punctuation">]</span>
 transform<span class="hljs-punctuation">:</span>  <span class="hljs-punctuation">{</span>
 <span class="hljs-attr">&quot;\\.(ts)@dollar@&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;ts-jest&quot;</span>
-<span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669475052.5225')">Copy</button></pre>
+<span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401021.889')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -345,9 +345,9 @@ transform<span class="hljs-punctuation">:</span>  <span class="hljs-punctuation"
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-json" id="1755669475052.7014"><span class="hljs-attr">&quot;scripts&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+<pre class="highlight"><code class="language-json" id="1755670401021.6575"><span class="hljs-attr">&quot;scripts&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
   <span class="hljs-attr">&quot;test&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;jest&quot;</span>
-<span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669475052.7014')">Copy</button></pre>
+<span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401021.6575')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -358,7 +358,7 @@ transform<span class="hljs-punctuation">:</span>  <span class="hljs-punctuation"
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-typescript" id="1755669475052.6963"><span class="hljs-keyword">import</span> {<span class="hljs-title class_">GreaterService</span>, <span class="hljs-title class_">Person</span>} <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;../../main/typescript/person&quot;</span>;
+<pre class="highlight"><code class="language-typescript" id="1755670401021.1614"><span class="hljs-keyword">import</span> {<span class="hljs-title class_">GreaterService</span>, <span class="hljs-title class_">Person</span>} <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;../../main/typescript/person&quot;</span>;
 
 <span class="hljs-title function_">describe</span>(<span class="hljs-string">&#x27;Test person.ts&#x27;</span>, <span class="hljs-function">() =&gt;</span> {
     <span class="hljs-keyword">let</span> <span class="hljs-attr">service</span>: <span class="hljs-title class_">GreaterService</span>;
@@ -372,7 +372,7 @@ transform<span class="hljs-punctuation">:</span>  <span class="hljs-punctuation"
         };
         <span class="hljs-title function_">expect</span>(service.<span class="hljs-title function_">great</span>(person)).<span class="hljs-title function_">toBe</span>(<span class="hljs-string">&#x27;Hi, Guillaume EHRET&#x27;</span>);
     })
-});</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475052.6963')">Copy</button></pre>
+});</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401021.1614')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -386,7 +386,7 @@ transform<span class="hljs-punctuation">:</span>  <span class="hljs-punctuation"
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669475052.8162">devmind@devmind:~/Workspace/web/myproject@dollar@ jest --coverage
+<pre class="highlight"><code class="language-shell" id="1755670401021.102">devmind@devmind:~/Workspace/web/myproject@dollar@ jest --coverage
 PASS  src/test/typescript/person.spec.ts
 Test person.ts
 ✓ should say (4ms)
@@ -401,7 +401,7 @@ Test Suites: 1 passed, 1 total
 Tests:       1 passed, 1 total
 Snapshots:   0 total
 Time:        1.358s, estimated 2s
-Ran all test suites.</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475052.8162')">Copy</button></pre>
+Ran all test suites.</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401021.102')">Copy</button></pre>
 </div>
 </div>
 </div>

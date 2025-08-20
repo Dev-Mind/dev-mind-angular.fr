@@ -105,11 +105,11 @@ export const _springboot_kotlin:string = `<div id="preamble">
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474962.5054"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Company</span>(
+<pre class="highlight"><code class="language-java" id="1755670400852.3967"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Company</span>(
         <span class="hljs-keyword">var</span> name: String,
         <span class="hljs-keyword">var</span> id: Int? = <span class="hljs-literal">null</span>,
         <span class="hljs-keyword">var</span> workers : MutableList<span class="hljs-meta">@LTWorker</span><span class="hljs-meta">@GT</span> = mutableListOf()
-)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474962.5054')">Copy</button></pre>
+)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400852.3967')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -120,11 +120,11 @@ export const _springboot_kotlin:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474962.0444">data <span class="hljs-keyword">class</span> <span class="hljs-title class_">Worker</span>(
+<pre class="highlight"><code class="language-java" id="1755670400853.6853">data <span class="hljs-keyword">class</span> <span class="hljs-title class_">Worker</span>(
         <span class="hljs-keyword">var</span> firstname: String,
         <span class="hljs-keyword">var</span> lastname: String,
         <span class="hljs-keyword">var</span> company: Company,
-        <span class="hljs-keyword">var</span> id: Int? = <span class="hljs-literal">null</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474962.0444')">Copy</button></pre>
+        <span class="hljs-keyword">var</span> id: Int? = <span class="hljs-literal">null</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400853.6853')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -132,8 +132,8 @@ export const _springboot_kotlin:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474962.7363"><span class="hljs-type">val</span> <span class="hljs-variable">guillaume</span> <span class="hljs-operator">=</span> Worker(<span class="hljs-string">&quot;Guillaume&quot;</span>, <span class="hljs-string">&quot;EHRET&quot;</span>)
-<span class="hljs-type">val</span> <span class="hljs-variable">guillaume</span> <span class="hljs-operator">=</span> Worker(<span class="hljs-string">&quot;Guillaume&quot;</span>, <span class="hljs-string">&quot;EHRET&quot;</span>, Company(<span class="hljs-string">&quot;Dev-Mind&quot;</span>))</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474962.7363')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670400853.1577"><span class="hljs-type">val</span> <span class="hljs-variable">guillaume</span> <span class="hljs-operator">=</span> Worker(<span class="hljs-string">&quot;Guillaume&quot;</span>, <span class="hljs-string">&quot;EHRET&quot;</span>)
+<span class="hljs-type">val</span> <span class="hljs-variable">guillaume</span> <span class="hljs-operator">=</span> Worker(<span class="hljs-string">&quot;Guillaume&quot;</span>, <span class="hljs-string">&quot;EHRET&quot;</span>, Company(<span class="hljs-string">&quot;Dev-Mind&quot;</span>))</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400853.1577')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -152,7 +152,7 @@ export const _springboot_kotlin:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474963.4805"><span class="hljs-meta">@SpringBootApplication</span><span class="hljs-meta">@EnableTransactionManagement</span>
+<pre class="highlight"><code class="language-java" id="1755670400853.668"><span class="hljs-meta">@SpringBootApplication</span><span class="hljs-meta">@EnableTransactionManagement</span>
 open <span class="hljs-keyword">class</span> <span class="hljs-title class_">DevmindKotlinApplication</span>{
     <span class="hljs-meta">@Bean</span>
     open fun <span class="hljs-title function_">transactionManager</span><span class="hljs-params">(dataSource: DataSource)</span> = SpringTransactionManager(dataSource)
@@ -160,7 +160,7 @@ open <span class="hljs-keyword">class</span> <span class="hljs-title class_">Dev
 
 fun <span class="hljs-title function_">main</span><span class="hljs-params">(args: Array<span class="hljs-meta">@LTString</span><span class="hljs-meta">@GT</span>)</span> {
     SpringApplication.run(DevmindKotlinApplication::class.java, *args)
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474963.4805')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400853.668')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -168,7 +168,7 @@ fun <span class="hljs-title function_">main</span><span class="hljs-params">(arg
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474963.7234"><span class="hljs-meta">@RestController</span><span class="hljs-meta">@RequestMapping(&quot;/companies&quot;)</span>
+<pre class="highlight"><code class="language-java" id="1755670400853.7424"><span class="hljs-meta">@RestController</span><span class="hljs-meta">@RequestMapping(&quot;/companies&quot;)</span>
 <span class="hljs-keyword">class</span> <span class="hljs-title class_">CompanyController</span>(val companyRepository: CompanyRepository){
 
     <span class="hljs-meta">@GetMapping</span>    fun <span class="hljs-title function_">list</span><span class="hljs-params">()</span> = companyRepository.findAll();
@@ -180,7 +180,7 @@ fun <span class="hljs-title function_">main</span><span class="hljs-params">(arg
 
     <span class="hljs-meta">@PutMapping(&quot;/{id}&quot;)</span>
     fun <span class="hljs-title function_">update</span><span class="hljs-params">(<span class="hljs-meta">@PathVariable</span> id: Int, <span class="hljs-meta">@RequestBody</span> company: Company)</span> = companyRepository.update(id, company);
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474963.7234')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400853.7424')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -202,7 +202,7 @@ fun <span class="hljs-title function_">main</span><span class="hljs-params">(arg
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474963.1155"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">formatDate</span><span class="hljs-params">(string: <span class="hljs-type">Date</span>, format: <span class="hljs-type">String</span> = <span class="hljs-string">&quot;yyyy-MM-dd&quot;</span>, addDay: <span class="hljs-type">Int</span> =<span class="hljs-number">0</span>)</span></span> : String</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474963.1155')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1755670400854.2837"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">formatDate</span><span class="hljs-params">(string: <span class="hljs-type">Date</span>, format: <span class="hljs-type">String</span> = <span class="hljs-string">&quot;yyyy-MM-dd&quot;</span>, addDay: <span class="hljs-type">Int</span> =<span class="hljs-number">0</span>)</span></span> : String</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400854.2837')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -210,9 +210,9 @@ fun <span class="hljs-title function_">main</span><span class="hljs-params">(arg
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474963.826">formatDate(Date())
+<pre class="highlight"><code class="language-kotlin" id="1755670400854.6667">formatDate(Date())
 formatDate(Date(), <span class="hljs-string">&quot;yyyy&quot;</span>)
-formatDate(Date(), addDay = <span class="hljs-number">2</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474963.826')">Copy</button></pre>
+formatDate(Date(), addDay = <span class="hljs-number">2</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400854.6667')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -234,7 +234,7 @@ formatDate(Date(), addDay = <span class="hljs-number">2</span>)</code><button cl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474964.123"><span class="hljs-keyword">object</span> Companies : Table() {
+<pre class="highlight"><code class="language-kotlin" id="1755670400854.8518"><span class="hljs-keyword">object</span> Companies : Table() {
     <span class="hljs-keyword">val</span> id = integer(<span class="hljs-string">&quot;id&quot;</span>).autoIncrement().primaryKey()
     <span class="hljs-keyword">val</span> name = varchar(<span class="hljs-string">&quot;name&quot;</span>, <span class="hljs-number">50</span>)
 }
@@ -242,7 +242,7 @@ formatDate(Date(), addDay = <span class="hljs-number">2</span>)</code><button cl
     <span class="hljs-keyword">val</span> id = integer(<span class="hljs-string">&quot;id&quot;</span>).autoIncrement().primaryKey()
     <span class="hljs-keyword">val</span> firstname = varchar(<span class="hljs-string">&quot;firstname&quot;</span>, length = <span class="hljs-number">150</span>)
     <span class="hljs-keyword">val</span> lastname = varchar(<span class="hljs-string">&quot;lastname&quot;</span>, length = <span class="hljs-number">150</span>)
-    <span class="hljs-keyword">val</span> companyId = integer(<span class="hljs-string">&quot;company_id&quot;</span>) references Companies.id}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474964.123')">Copy</button></pre>
+    <span class="hljs-keyword">val</span> companyId = integer(<span class="hljs-string">&quot;company_id&quot;</span>) references Companies.id}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400854.8518')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -250,11 +250,11 @@ formatDate(Date(), addDay = <span class="hljs-number">2</span>)</code><button cl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474964.2705"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">CrudRepository</span><span class="hljs-meta">@LTT</span>, <span class="hljs-type">K@GT</span> {
+<pre class="highlight"><code class="language-kotlin" id="1755670400854.5984"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">CrudRepository</span><span class="hljs-meta">@LTT</span>, <span class="hljs-type">K@GT</span> {
     <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">createTable</span><span class="hljs-params">()</span></span>
     <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">create</span><span class="hljs-params">(m: <span class="hljs-type">T</span>)</span></span>: T    <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">update</span><span class="hljs-params">(id: <span class="hljs-type">K</span>, m: <span class="hljs-type">T</span>)</span></span>: K    <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">findById</span><span class="hljs-params">(id: <span class="hljs-type">K</span>)</span></span>: T    <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">findAll</span><span class="hljs-params">()</span></span>: <span class="hljs-symbol">Iterable@</span><span class="hljs-symbol">LTT@</span>GT
     <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">deleteAll</span><span class="hljs-params">()</span></span>: <span class="hljs-built_in">Int</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474964.2705')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400854.5984')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -262,7 +262,7 @@ formatDate(Date(), addDay = <span class="hljs-number">2</span>)</code><button cl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474964.6125"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">CompanyRepository</span> : <span class="hljs-type">CrudRepository@LTCompany</span>, <span class="hljs-type">Int@GT</span>
+<pre class="highlight"><code class="language-kotlin" id="1755670400855.731"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">CompanyRepository</span> : <span class="hljs-type">CrudRepository@LTCompany</span>, <span class="hljs-type">Int@GT</span>
 
 <span class="hljs-meta">@Repository</span><span class="hljs-meta">@Transactionalclass</span> DefaultCompanyRepository : CompanyRepository {
 
@@ -284,7 +284,7 @@ formatDate(Date(), addDay = <span class="hljs-number">2</span>)</code><button cl
             Company(result[Companies.name],
                     result[Companies.id])
 
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474964.6125')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400855.731')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">

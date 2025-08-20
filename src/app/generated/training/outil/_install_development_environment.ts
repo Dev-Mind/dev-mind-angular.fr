@@ -74,8 +74,8 @@ export const _install_development_environment:string = `<div id="toc" class="toc
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474806.304">~@dollar@ curl -s &quot;https://get.sdkman.io&quot; | bash
-~@dollar@ source &quot;@dollar@HOME/.sdkman/bin/sdkman-init.sh&quot;</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474806.304')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670401161.7754">~@dollar@ curl -s &quot;https://get.sdkman.io&quot; | bash
+~@dollar@ source &quot;@dollar@HOME/.sdkman/bin/sdkman-init.sh&quot;</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401161.7754')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -83,11 +83,11 @@ export const _install_development_environment:string = `<div id="toc" class="toc
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474806.069">~@dollar@ sdk version
+<pre class="highlight"><code class="language-shell" id="1755670401161.7456">~@dollar@ sdk version
 
 SDKMAN!
 script: 5.18.2
-native: 0.4.2</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474806.069')">Copy</button></pre>
+native: 0.4.2</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401161.7456')">Copy</button></pre>
 </div>
 </div>
 <div class="quoteblock">
@@ -121,7 +121,7 @@ native: 0.4.2</code><button class="btn-copy-code" onclick="copyToClipboard('1755
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474806.4192">~@dollar@ sdk list java</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474806.4192')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670401161.0068">~@dollar@ sdk list java</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401161.0068')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -129,7 +129,7 @@ native: 0.4.2</code><button class="btn-copy-code" onclick="copyToClipboard('1755
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474806.1914">~@dollar@ sdk install java 21.0.4-oracle</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474806.1914')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670401161.9585">~@dollar@ sdk install java 21.0.4-oracle</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401161.9585')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -137,7 +137,7 @@ native: 0.4.2</code><button class="btn-copy-code" onclick="copyToClipboard('1755
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474806.4004">~@dollar@ sdk default java 21.0.4-oracle</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474806.4004')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670401161.2563">~@dollar@ sdk default java 21.0.4-oracle</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401161.2563')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -148,10 +148,10 @@ native: 0.4.2</code><button class="btn-copy-code" onclick="copyToClipboard('1755
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474806.7014">~@dollar@  java -version
+<pre class="highlight"><code class="language-shell" id="1755670401161.8606">~@dollar@  java -version
 java version &quot;21.0.4&quot; 2024-07-16 LTS
 Java(TM) SE Runtime Environment (build 21.0.4+8-LTS-274)
-Java HotSpot(TM) 64-Bit Server VM (build 21.0.4+8-LTS-274, mixed mode, sharing)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474806.7014')">Copy</button></pre>
+Java HotSpot(TM) 64-Bit Server VM (build 21.0.4+8-LTS-274, mixed mode, sharing)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401161.8606')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -213,8 +213,8 @@ You can also try to obtain a free licence on this <a href="https://jetbrains.com
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474806.2954">cd ~/appli/android-studio/bin
-sh ./studio.sh</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474806.2954')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670401161.4414">cd ~/appli/android-studio/bin
+sh ./studio.sh</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401161.4414')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">

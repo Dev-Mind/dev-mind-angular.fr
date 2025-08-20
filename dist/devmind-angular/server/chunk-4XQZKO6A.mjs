@@ -115,7 +115,7 @@ import{$ as ts,F as V,H as _,I as K,J as Y,K as X,L as x,M as Q,N as Z,O as w,P 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474999.586">ng new my-ssr-app</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474999.586')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670400969.6113">ng new my-ssr-app</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400969.6113')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -123,11 +123,11 @@ import{$ as ts,F as V,H as _,I as K,J as Y,K as X,L as x,M as Q,N as Z,O as w,P 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474999.1396">@dollar@ ng new my-ssr-app
+<pre class="highlight"><code class="language-shell" id="1755670400969.978">@dollar@ ng new my-ssr-app
 ? Which stylesheet format would you like to use? Sass (SCSS)     [
 https://sass-lang.com/documentation/syntax#scss                ]
 ? Do you want to enable Server-Side Rendering (SSR) and Static Site Generation (SSG/Prerendering)?
-(y/N)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474999.1396')">Copy</button></pre>
+(y/N)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400969.978')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -135,7 +135,7 @@ https://sass-lang.com/documentation/syntax#scss                ]
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474999.35">ng add @nguniversal/express-engine</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474999.35')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670400969.1519">ng add @nguniversal/express-engine</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400969.1519')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -143,7 +143,7 @@ https://sass-lang.com/documentation/syntax#scss                ]
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-json" id="1755669474999.093"><span class="hljs-punctuation">{</span>
+<pre class="highlight"><code class="language-json" id="1755670400969.7783"><span class="hljs-punctuation">{</span>
   <span class="hljs-attr">&quot;name&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;my-ssr-app&quot;</span><span class="hljs-punctuation">,</span>
   <span class="hljs-attr">&quot;version&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;0.0.0&quot;</span><span class="hljs-punctuation">,</span>
   <span class="hljs-attr">&quot;scripts&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
@@ -155,7 +155,7 @@ https://sass-lang.com/documentation/syntax#scss                ]
     <span class="hljs-attr">&quot;serve:ssr:example&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;node dist/example/server/server.mjs&quot;</span>
   <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
   ...
-<span class="hljs-punctuation">}</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474999.093')">Copy</button></pre>
+<span class="hljs-punctuation">}</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670400969.7783')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -163,7 +163,7 @@ https://sass-lang.com/documentation/syntax#scss                ]
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474999.9504">npm run watch</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474999.9504')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670400969.0667">npm run watch</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400969.0667')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -171,7 +171,7 @@ https://sass-lang.com/documentation/syntax#scss                ]
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474999.2737">npm run  serve:ssr:example</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474999.2737')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670400969.4329">npm run  serve:ssr:example</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400969.4329')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -301,9 +301,9 @@ https://sass-lang.com/documentation/syntax#scss                ]
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474995.4937"><span class="hljs-meta">@Configuration(proxyBeanMethods = false)</span>
+<pre class="highlight"><code class="language-kotlin" id="1755670400965.5564"><span class="hljs-meta">@Configuration(proxyBeanMethods = false)</span>
 <span class="hljs-meta">@AutoConfigureBefore(DataSourceAutoConfiguration::class, LiquibaseAutoConfiguration::class)</span>
-<span class="hljs-keyword">class</span> <span class="hljs-title class_">DatabaseSchemaInitializerAutoConfiguration</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474995.4937')">Copy</button></pre>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">DatabaseSchemaInitializerAutoConfiguration</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670400965.5564')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -356,7 +356,7 @@ https://sass-lang.com/documentation/syntax#scss                ]
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474995.219"><span class="hljs-meta">@Configuration(proxyBeanMethods = false)</span>
+<pre class="highlight"><code class="language-kotlin" id="1755670400965.7283"><span class="hljs-meta">@Configuration(proxyBeanMethods = false)</span>
 <span class="hljs-meta">@ConditionalOnProperty(prefix = PROPERTIES_PREFIX, name = [<span class="hljs-string">&quot;enabled&quot;</span>], matchIfMissing = true)</span>
 <span class="hljs-meta">@AutoConfigureBefore(DataSourceAutoConfiguration::class, LiquibaseAutoConfiguration::class)</span>
 <span class="hljs-keyword">class</span> <span class="hljs-title class_">DatabaseSchemaInitializerAutoConfiguration</span> {
@@ -373,7 +373,7 @@ https://sass-lang.com/documentation/syntax#scss                ]
          <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">databaseSchemaInitializer</span><span class="hljs-params">()</span></span> =
              DatabaseSchemaInitializer()
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474995.219')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400965.7283')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -387,7 +387,7 @@ https://sass-lang.com/documentation/syntax#scss                ]
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474995.1482"><span class="hljs-meta">@Configuration(proxyBeanMethods = false)</span>
+<pre class="highlight"><code class="language-kotlin" id="1755670400965.4966"><span class="hljs-meta">@Configuration(proxyBeanMethods = false)</span>
 <span class="hljs-meta">@ConditionalOnProperty(prefix = PROPERTIES_PREFIX, name = [<span class="hljs-string">&quot;enabled&quot;</span>], matchIfMissing = true)</span>
 <span class="hljs-meta">@AutoConfigureBefore(DataSourceAutoConfiguration::class, LiquibaseAutoConfiguration::class)</span>
 <span class="hljs-keyword">class</span> <span class="hljs-title class_">DatabaseSchemaInitializerAutoConfiguration</span> {
@@ -409,7 +409,7 @@ https://sass-lang.com/documentation/syntax#scss                ]
          <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">databaseSchemaInitializer</span><span class="hljs-params">()</span></span> =
              DatabaseSchemaInitializer()
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474995.1482')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400965.4966')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -433,12 +433,12 @@ https://sass-lang.com/documentation/syntax#scss                ]
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474995.89">    <span class="hljs-comment">// ...</span>
+<pre class="highlight"><code class="language-kotlin" id="1755670400965.166">    <span class="hljs-comment">// ...</span>
     dependencies {
         implementation(project(<span class="hljs-string">&quot;:database-initializer&quot;</span>))
         <span class="hljs-comment">// ...</span>
     }
-    <span class="hljs-comment">// ...</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474995.89')">Copy</button></pre>
+    <span class="hljs-comment">// ...</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670400965.166')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -449,11 +449,11 @@ https://sass-lang.com/documentation/syntax#scss                ]
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474995.0884"><span class="hljs-meta">@Retention(AnnotationRetention.RUNTIME)</span>
+<pre class="highlight"><code class="language-kotlin" id="1755670400966.951"><span class="hljs-meta">@Retention(AnnotationRetention.RUNTIME)</span>
 <span class="hljs-meta">@Target(AnnotationTarget.CLASS, AnnotationTarget.TYPE)</span>
 <span class="hljs-meta">@MustBeDocumented</span>
 <span class="hljs-meta">@Import(DatabaseSchemaInitializerAutoConfiguration::class)</span>
-<span class="hljs-keyword">annotation</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">EnableDatabaseSchemaInitializer</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474995.0884')">Copy</button></pre>
+<span class="hljs-keyword">annotation</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">EnableDatabaseSchemaInitializer</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670400966.951')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -495,7 +495,7 @@ En Kotlin cet objet se d\xE9finit de cette mani\xE8re</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474970.4475"><span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Talk</span>(<span class="hljs-keyword">val</span> id: <span class="hljs-built_in">Long</span>, <span class="hljs-keyword">val</span> name: String, <span class="hljs-keyword">val</span> speakerIds: <span class="hljs-symbol">List@</span><span class="hljs-symbol">LTLong@</span>GT)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474970.4475')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1755670400938.5115"><span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Talk</span>(<span class="hljs-keyword">val</span> id: <span class="hljs-built_in">Long</span>, <span class="hljs-keyword">val</span> name: String, <span class="hljs-keyword">val</span> speakerIds: <span class="hljs-symbol">List@</span><span class="hljs-symbol">LTLong@</span>GT)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400938.5115')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -511,13 +511,13 @@ En Kotlin cet objet se d\xE9finit de cette mani\xE8re</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474970.926"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-kotlin" id="1755670400938.142"><span class="hljs-meta">@Test</span>
 void extractPropertyOnObject() {
     Talk talk = new Talk(<span class="hljs-number">1L</span>, <span class="hljs-string">&quot;Fabulous talk&quot;</span>, asList(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>));
     assertThat(talk)
         .extracting(Talk::getId, Talk::getName, Talk::getSpeakerIds)
         .containsExactly(<span class="hljs-number">1L</span>, <span class="hljs-string">&quot;Fabulous talk&quot;</span>, asList(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>));
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474970.926')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400938.142')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -525,7 +525,7 @@ void extractPropertyOnObject() {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474970.487"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-kotlin" id="1755670400938.782"><span class="hljs-meta">@Test</span>
 void extractPropertyOnList() {
     <span class="hljs-symbol">List@</span><span class="hljs-symbol">LTTalk@</span>GT talks = asList(
         new Talk(<span class="hljs-number">1L</span>, <span class="hljs-string">&quot;Fabulous talk&quot;</span>, asList(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>)),
@@ -536,7 +536,7 @@ void extractPropertyOnList() {
             Tuple.tuple(<span class="hljs-number">1L</span>, <span class="hljs-string">&quot;Fabulous talk&quot;</span>, asList(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>)),
             Tuple.tuple(<span class="hljs-number">2L</span>, <span class="hljs-string">&quot;Other talk&quot;</span>, asList(<span class="hljs-number">14L</span>))
         );
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474970.487')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400938.782')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -557,12 +557,12 @@ Mais cette solution n&#8217;est pas tr\xE8s viable car si une propri\xE9t\xE9 ch
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474970.497"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-kotlin" id="1755670400938.7473"><span class="hljs-meta">@Test</span>
     <span class="hljs-function"><span class="hljs-keyword">fun</span> @backtick@should extract property on <span class="hljs-keyword">object</span>@backtick@<span class="hljs-params">()</span></span> {
         <span class="hljs-keyword">val</span> talk = Talk(<span class="hljs-number">1L</span>, <span class="hljs-string">&quot;Fabulous talk&quot;</span>, listOf(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>))
         assertThat(talk).extracting(<span class="hljs-string">&quot;id&quot;</span>, <span class="hljs-string">&quot;name&quot;</span>, <span class="hljs-string">&quot;speakerIds&quot;</span>)
             .containsExactly(<span class="hljs-number">1L</span>, <span class="hljs-string">&quot;Fabulous talk&quot;</span>, listOf(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>))
-    }</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474970.497')">Copy</button></pre>
+    }</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400938.7473')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -570,7 +570,7 @@ Mais cette solution n&#8217;est pas tr\xE8s viable car si une propri\xE9t\xE9 ch
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474970.3032"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-kotlin" id="1755670400939.9224"><span class="hljs-meta">@Test</span>
 <span class="hljs-function"><span class="hljs-keyword">fun</span> @backtick@should extract property on list@backtick@<span class="hljs-params">()</span></span> {
     <span class="hljs-keyword">val</span> talks = listOf(
         Talk(<span class="hljs-number">1L</span>, <span class="hljs-string">&quot;Fabulous talk&quot;</span>, listOf(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>)),
@@ -582,7 +582,7 @@ Mais cette solution n&#8217;est pas tr\xE8s viable car si une propri\xE9t\xE9 ch
             tuple(<span class="hljs-number">1L</span>, <span class="hljs-string">&quot;Fabulous talk&quot;</span>, listOf(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>)),
             tuple(<span class="hljs-number">2L</span>, <span class="hljs-string">&quot;Other talk&quot;</span>, listOf(<span class="hljs-number">14L</span>))
         )
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474970.3032')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400939.9224')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -594,13 +594,13 @@ Contrairement \xE0 ce qui avait \xE9t\xE9 dit l&#8217;API a \xE9volu\xE9 \xE0 pa
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474970.3474"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-kotlin" id="1755670400939.9421"><span class="hljs-meta">@Test</span>
 <span class="hljs-function"><span class="hljs-keyword">fun</span> @backtick@should extract property on <span class="hljs-keyword">object</span>@backtick@<span class="hljs-params">()</span></span> {
     <span class="hljs-keyword">val</span> talk = Talk(<span class="hljs-number">1L</span>, <span class="hljs-string">&quot;Fabulous talk&quot;</span>, listOf(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>))
     assertThat(talk)
         .extracting(Talk::id, Talk::name, Talk::speakerIds)
         .containsExactly(<span class="hljs-number">1L</span>, <span class="hljs-string">&quot;Fabulous talk&quot;</span>, listOf(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>))
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474970.3474')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400939.9421')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -608,7 +608,7 @@ Contrairement \xE0 ce qui avait \xE9t\xE9 dit l&#8217;API a \xE9volu\xE9 \xE0 pa
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474971.0093"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-kotlin" id="1755670400939.9546"><span class="hljs-meta">@Test</span>
 <span class="hljs-function"><span class="hljs-keyword">fun</span> @backtick@should extract property on list@backtick@<span class="hljs-params">()</span></span> {
     <span class="hljs-keyword">val</span> talks: <span class="hljs-symbol">List@</span><span class="hljs-symbol">LTTalk@</span>GT = listOf(
         Talk(<span class="hljs-number">1L</span>, <span class="hljs-string">&quot;Fabulous talk&quot;</span>, listOf(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>)),
@@ -619,7 +619,7 @@ Contrairement \xE0 ce qui avait \xE9t\xE9 dit l&#8217;API a \xE9volu\xE9 \xE0 pa
             Tuple.tuple(<span class="hljs-number">1L</span>, <span class="hljs-string">&quot;Fabulous talk&quot;</span>, listOf(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>)),
             Tuple.tuple(<span class="hljs-number">2L</span>, <span class="hljs-string">&quot;Other talk&quot;</span>, listOf(<span class="hljs-number">14L</span>))
         )
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474971.0093')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400939.9546')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -637,12 +637,12 @@ Au lieu d&#8217;utiliser la m\xE9thode <code>extracting</code>, vous pouvez par 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474971.5105"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-kotlin" id="1755670400939.9429"><span class="hljs-meta">@Test</span>
 <span class="hljs-function"><span class="hljs-keyword">fun</span> @backtick@should extract property on <span class="hljs-keyword">object</span>@backtick@<span class="hljs-params">()</span></span> {
     <span class="hljs-keyword">val</span> talk = Talk(<span class="hljs-number">1L</span>, <span class="hljs-string">&quot;Fabulous talk&quot;</span>, listOf(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>))
     assertThat(talk.let { tuple(it.id, it.name, it.speakerIds) })
         .isEqualTo(tuple(<span class="hljs-number">1L</span>, <span class="hljs-string">&quot;Fabulous talk&quot;</span>, listOf(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>)))
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474971.5105')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400939.9429')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -650,7 +650,7 @@ Au lieu d&#8217;utiliser la m\xE9thode <code>extracting</code>, vous pouvez par 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474971.421"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-kotlin" id="1755670400939.808"><span class="hljs-meta">@Test</span>
 <span class="hljs-function"><span class="hljs-keyword">fun</span> @backtick@should extract property on list@backtick@<span class="hljs-params">()</span></span> {
     <span class="hljs-keyword">val</span> talks = listOf(
         Talk(<span class="hljs-number">1L</span>, <span class="hljs-string">&quot;Fabulous talk&quot;</span>, listOf(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>)),
@@ -662,7 +662,7 @@ Au lieu d&#8217;utiliser la m\xE9thode <code>extracting</code>, vous pouvez par 
             tuple(<span class="hljs-number">2L</span>, <span class="hljs-string">&quot;Other talk&quot;</span>, listOf(<span class="hljs-number">14L</span>))
 
         )
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474971.421')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400939.808')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2106,10 +2106,10 @@ Si vous fixez des param\xE8tres vous pouvez emp\xEAcher cette adaptation car la 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669475009.415">mkdir -p myproject/src/main/typescript
+<pre class="highlight"><code class="language-shell" id="1755670400979.9727">mkdir -p myproject/src/main/typescript
 mkdir -p myproject/src/test/typescript
 cd myproject
-npm init</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475009.415')">Copy</button></pre>
+npm init</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400979.9727')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2117,9 +2117,9 @@ npm init</code><button class="btn-copy-code" onclick="copyToClipboard('175566947
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669475009.3945">npm install typescript
+<pre class="highlight"><code class="language-shell" id="1755670400979.2568">npm install typescript
 npm install express @types/express serve-static
-npm install errorhandler @types/errorhandler express-handlebars @types/express-handlebars</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475009.3945')">Copy</button></pre>
+npm install errorhandler @types/errorhandler express-handlebars @types/express-handlebars</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400979.2568')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2133,7 +2133,7 @@ npm install errorhandler @types/errorhandler express-handlebars @types/express-h
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-typescript" id="1755669475014.7656"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> express <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;express&#x27;</span>;
+<pre class="highlight"><code class="language-typescript" id="1755670400983.2097"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> express <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;express&#x27;</span>;
 <span class="hljs-keyword">import</span> errorHandler = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;errorhandler&quot;</span>);
 
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">ServerOptions</span> {
@@ -2172,7 +2172,7 @@ npm install errorhandler @types/errorhandler express-handlebars @types/express-h
         <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Express</span>(options);
     }
 
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475014.7656')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400983.2097')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2183,7 +2183,7 @@ npm install errorhandler @types/errorhandler express-handlebars @types/express-h
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-typescript" id="1755669475015.587"><span class="hljs-keyword">import</span> {<span class="hljs-title class_">Express</span>, <span class="hljs-title class_">ServerOptions</span>} <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;./express&#x27;</span>;
+<pre class="highlight"><code class="language-typescript" id="1755670400984.3696"><span class="hljs-keyword">import</span> {<span class="hljs-title class_">Express</span>, <span class="hljs-title class_">ServerOptions</span>} <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;./express&#x27;</span>;
 <span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> http <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;http&#x27;</span>;
 
 <span class="hljs-keyword">const</span> options = {
@@ -2195,7 +2195,7 @@ npm install errorhandler @types/errorhandler express-handlebars @types/express-h
 
 http.<span class="hljs-title function_">createServer</span>(server)
     .<span class="hljs-title function_">listen</span>(options.<span class="hljs-property">port</span>)
-    .<span class="hljs-title function_">on</span>(<span class="hljs-string">&quot;listening&quot;</span>, <span class="hljs-function">() =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">debug</span>(<span class="hljs-string">&#x27;Listening on &#x27;</span> + options.<span class="hljs-property">port</span>));</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475015.587')">Copy</button></pre>
+    .<span class="hljs-title function_">on</span>(<span class="hljs-string">&quot;listening&quot;</span>, <span class="hljs-function">() =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">debug</span>(<span class="hljs-string">&#x27;Listening on &#x27;</span> + options.<span class="hljs-property">port</span>));</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400984.3696')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2203,7 +2203,7 @@ http.<span class="hljs-title function_">createServer</span>(server)
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-json" id="1755669475015.0925"><span class="hljs-punctuation">{</span>
+<pre class="highlight"><code class="language-json" id="1755670400984.9443"><span class="hljs-punctuation">{</span>
   <span class="hljs-attr">&quot;name&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;devmind-typescript&quot;</span><span class="hljs-punctuation">,</span>
   <span class="hljs-attr">&quot;scripts&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
     <span class="hljs-attr">&quot;start&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;tsc; node ./build/app.js&quot;</span>
@@ -2211,7 +2211,7 @@ http.<span class="hljs-title function_">createServer</span>(server)
   <span class="hljs-attr">&quot;dependencies&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
     <span class="hljs-comment">// ...</span>
   <span class="hljs-punctuation">}</span>
-<span class="hljs-punctuation">}</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669475015.0925')">Copy</button></pre>
+<span class="hljs-punctuation">}</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670400984.9443')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2230,10 +2230,10 @@ http.<span class="hljs-title function_">createServer</span>(server)
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-typescript" id="1755669475015.0137"><span class="hljs-variable language_">this</span>.<span class="hljs-property">app</span>
+<pre class="highlight"><code class="language-typescript" id="1755670400984.6575"><span class="hljs-variable language_">this</span>.<span class="hljs-property">app</span>
   .<span class="hljs-title function_">use</span>(express.<span class="hljs-title function_">static</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">options</span>.<span class="hljs-property">static</span>))
   .<span class="hljs-title function_">get</span>(<span class="hljs-string">&#x27;/&#x27;</span>, <span class="hljs-function">(<span class="hljs-params">req, res</span>) =&gt;</span> res.<span class="hljs-title function_">send</span>(<span class="hljs-string">&#x27;Hello World!&#x27;</span>))
-  .<span class="hljs-title function_">use</span>(<span class="hljs-title function_">errorHandler</span>());</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475015.0137')">Copy</button></pre>
+  .<span class="hljs-title function_">use</span>(<span class="hljs-title function_">errorHandler</span>());</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400984.6575')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2241,14 +2241,14 @@ http.<span class="hljs-title function_">createServer</span>(server)
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-html" id="1755669475015.3037">@LThtml@GT
+<pre class="highlight"><code class="language-html" id="1755670400984.5964">@LThtml@GT
 @LThead@GT
     @LTlink rel=&quot;stylesheet&quot; href=&quot;css/bootstrap.min.css&quot;@GT
 @LT/head@GT
 @LTbody@GT
     @LTh1@GTHello TypeScript@LT/h1@GT
 @LT/body@GT
-@LT/html@GT</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475015.3037')">Copy</button></pre>
+@LT/html@GT</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400984.5964')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -2264,7 +2264,7 @@ http.<span class="hljs-title function_">createServer</span>(server)
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-typescript" id="1755669475016.868"><span class="hljs-keyword">export</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">Todo</span> {
+<pre class="highlight"><code class="language-typescript" id="1755670400985.841"><span class="hljs-keyword">export</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">Todo</span> {
     <span class="hljs-attr">id</span>: <span class="hljs-built_in">number</span>;
     <span class="hljs-attr">label</span>: <span class="hljs-built_in">string</span>;
     <span class="hljs-attr">checked</span>: <span class="hljs-built_in">boolean</span>;
@@ -2275,7 +2275,7 @@ http.<span class="hljs-title function_">createServer</span>(server)
     {<span class="hljs-attr">id</span>: sequence++, <span class="hljs-attr">label</span>: <span class="hljs-string">&#x27;Ecrire un article&#x27;</span>, <span class="hljs-attr">checked</span>: <span class="hljs-literal">true</span>},
     {<span class="hljs-attr">id</span>: sequence++, <span class="hljs-attr">label</span>: <span class="hljs-string">&#x27;Veille techno sur TypeScript&#x27;</span>, <span class="hljs-attr">checked</span>: <span class="hljs-literal">false</span>},
     {<span class="hljs-attr">id</span>: sequence++, <span class="hljs-attr">label</span>: <span class="hljs-string">&#x27;Voir la derni\xE8re release de ExpressJS&#x27;</span>, <span class="hljs-attr">checked</span>: <span class="hljs-literal">false</span>}
-];</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475016.868')">Copy</button></pre>
+];</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400985.841')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2283,7 +2283,7 @@ http.<span class="hljs-title function_">createServer</span>(server)
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-typescript" id="1755669475017.2903"><span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">TodoDao</span> {
+<pre class="highlight"><code class="language-typescript" id="1755670400986.7134"><span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">TodoDao</span> {
 
     <span class="hljs-title function_">findAll</span>(): <span class="hljs-title class_">Todo</span>[] {
         <span class="hljs-keyword">return</span> <span class="hljs-variable constant_">TODO_DATA</span>;
@@ -2310,7 +2310,7 @@ http.<span class="hljs-title function_">createServer</span>(server)
             <span class="hljs-variable constant_">TODO_DATA</span>.<span class="hljs-title function_">splice</span>(index, <span class="hljs-number">1</span>);
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475017.2903')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400986.7134')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -2368,7 +2368,7 @@ http.<span class="hljs-title function_">createServer</span>(server)
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-typescript" id="1755669475018.3218"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> express <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;express&#x27;</span>;
+<pre class="highlight"><code class="language-typescript" id="1755670400987.4353"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> express <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;express&#x27;</span>;
 <span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> handlebars <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;express-handlebars&#x27;</span>;
 <span class="hljs-keyword">import</span> errorHandler = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;errorhandler&quot;</span>);
 <span class="hljs-keyword">import</span> {<span class="hljs-title class_">TodoRoute</span>} <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./todo.route&quot;</span>;
@@ -2394,7 +2394,7 @@ http.<span class="hljs-title function_">createServer</span>(server)
         .<span class="hljs-title function_">get</span>(<span class="hljs-string">&#x27;/&#x27;</span>, <span class="hljs-function">(<span class="hljs-params">req, res</span>) =&gt;</span> res.<span class="hljs-title function_">send</span>(<span class="hljs-string">&#x27;Hello World!&#x27;</span>))
         .<span class="hljs-title function_">use</span>(<span class="hljs-title function_">errorHandler</span>());
   }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475018.3218')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400987.4353')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -2415,7 +2415,7 @@ http.<span class="hljs-title function_">createServer</span>(server)
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-typescript" id="1755669475020.8035"><span class="hljs-keyword">import</span> {<span class="hljs-title class_">Request</span>, <span class="hljs-title class_">Response</span>, <span class="hljs-title class_">Router</span>} <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;express&quot;</span>;
+<pre class="highlight"><code class="language-typescript" id="1755670400990.9634"><span class="hljs-keyword">import</span> {<span class="hljs-title class_">Request</span>, <span class="hljs-title class_">Response</span>, <span class="hljs-title class_">Router</span>} <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;express&quot;</span>;
 <span class="hljs-keyword">import</span> {<span class="hljs-title class_">Todo</span>, <span class="hljs-title class_">TodoDao</span>} <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./todo.dao&quot;</span>;
 
 
@@ -2474,7 +2474,7 @@ http.<span class="hljs-title function_">createServer</span>(server)
             <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">findAll</span>(req, res);
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475020.8035')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400990.9634')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2497,7 +2497,7 @@ http.<span class="hljs-title function_">createServer</span>(server)
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-html" id="1755669475021.155">@LT!DOCTYPE html@GT
+<pre class="highlight"><code class="language-html" id="1755670400990.5115">@LT!DOCTYPE html@GT
 @LThtml@GT
 @LThead@GT
   @LTtitle@GT{{ title }}@LT/title@GT
@@ -2510,7 +2510,7 @@ http.<span class="hljs-title function_">createServer</span>(server)
     {{{body}}}
   @LT/div@GT
 @LT/body@GT
-@LT/html@GT</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475021.155')">Copy</button></pre>
+@LT/html@GT</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400990.5115')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2537,7 +2537,7 @@ http.<span class="hljs-title function_">createServer</span>(server)
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-html" id="1755669475021.388">@LTa href=&quot;/todos/create&quot; class=&quot;btn btn-dark&quot;@GTCr\xE9er Todo@LT/a@GT
+<pre class="highlight"><code class="language-html" id="1755670400990.1836">@LTa href=&quot;/todos/create&quot; class=&quot;btn btn-dark&quot;@GTCr\xE9er Todo@LT/a@GT
 @LTbr@GT
 @LTtable class=&quot;table&quot;@GT
 
@@ -2567,7 +2567,7 @@ http.<span class="hljs-title function_">createServer</span>(server)
         @LT/tr@GT
     {{/todos}}
     @LT/tbody@GT
-@LT/table@GT</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475021.388')">Copy</button></pre>
+@LT/table@GT</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400990.1836')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2575,7 +2575,7 @@ http.<span class="hljs-title function_">createServer</span>(server)
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-html" id="1755669475021.6846">@LTform action=&quot;/todos&quot; method=&quot;post&quot;@GT
+<pre class="highlight"><code class="language-html" id="1755670400990.6436">@LTform action=&quot;/todos&quot; method=&quot;post&quot;@GT
 {{#errors.has}}
 @LTdiv class=&quot;alert alert-danger&quot;@GTVous avez une erreur dans votre formulaire@LT/div@GT{{/errors.has}}
 
@@ -2602,7 +2602,7 @@ http.<span class="hljs-title function_">createServer</span>(server)
         @LTbutton class=&quot;btn btn-dark&quot;@GTSave@LT/button@GT<span class="hljs-symbol">&amp;amp;</span>nbsp;<span class="hljs-symbol">&amp;amp;</span>nbsp;
         @LTa class=&quot;btn btn-outline-secondary&quot; href=&quot;/todos&quot;@GTCancel@LT/a@GT
     @LT/div@GT
-@LT/form@GT</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475021.6846')">Copy</button></pre>
+@LT/form@GT</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400990.6436')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2677,7 +2677,7 @@ http.<span class="hljs-title function_">createServer</span>(server)
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669475049.7502">@dollar@ npm
+<pre class="highlight"><code class="language-shell" id="1755670401017.3672">@dollar@ npm
 
 Usage: npm &lt;command&gt;
 
@@ -2697,7 +2697,7 @@ where &lt;command&gt; is one of:
 npm &lt;command&gt; -h  quick help on &lt;command&gt;
 npm -l            display full usage info
 npm help &lt;term&gt;   search for help on &lt;term&gt;
-npm help npm      involved overview&lt;/term&gt;&lt;/term&gt;</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475049.7502')">Copy</button></pre>
+npm help npm      involved overview&lt;/term&gt;&lt;/term&gt;</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401017.3672')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2705,14 +2705,14 @@ npm help npm      involved overview&lt;/term&gt;&lt;/term&gt;</code><button clas
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669475049.0686">@dollar@ node
+<pre class="highlight"><code class="language-shell" id="1755670401018.5603">@dollar@ node
 <span class="hljs-meta prompt_">&gt; </span><span class="language-bash">const name = <span class="hljs-string">&#x27;Guillaume&#x27;</span></span>
 undefined
 <span class="hljs-meta prompt_">&gt; </span><span class="language-bash">console.log(name)</span>
 Guillaume
 <span class="hljs-meta prompt_">&gt;</span><span class="language-bash">
 (To <span class="hljs-built_in">exit</span>, press ^C again or <span class="hljs-built_in">type</span> .<span class="hljs-built_in">exit</span>)</span>
-<span class="hljs-meta prompt_">&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669475049.0686')">Copy</button></pre>
+<span class="hljs-meta prompt_">&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401018.5603')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -2725,8 +2725,8 @@ Guillaume
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669475049.8704">mkdir -p myproject/src/main/typescript
-mkdir -p myproject/src/test/typescript</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475049.8704')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670401018.0742">mkdir -p myproject/src/main/typescript
+mkdir -p myproject/src/test/typescript</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401018.0742')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2734,7 +2734,7 @@ mkdir -p myproject/src/test/typescript</code><button class="btn-copy-code" oncli
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669475049.9656">@dollar@ cd myproject
+<pre class="highlight"><code class="language-shell" id="1755670401018.8826">@dollar@ cd myproject
 @dollar@ npm init
 This utility will walk you through creating a package.json file.
 It only covers the most common items, and tries to guess sensible defaults.
@@ -2767,7 +2767,7 @@ About to write to /home/devmind/Workspace/web/myproject/package.json:
   },
   &quot;author&quot;: &quot;Guillaume EHRET&quot;,
   &quot;license&quot;: &quot;MIT&quot;
-}&lt;/pkg&gt;</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475049.9656')">Copy</button></pre>
+}&lt;/pkg&gt;</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401018.8826')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2775,7 +2775,7 @@ About to write to /home/devmind/Workspace/web/myproject/package.json:
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669475049.0251">npm install typescript</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475049.0251')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670401018.6921">npm install typescript</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401018.6921')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2783,9 +2783,9 @@ About to write to /home/devmind/Workspace/web/myproject/package.json:
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-json" id="1755669475049.3408"><span class="hljs-attr">&quot;dependencies&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+<pre class="highlight"><code class="language-json" id="1755670401018.188"><span class="hljs-attr">&quot;dependencies&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
   <span class="hljs-attr">&quot;typescript&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;^3.5.3&quot;</span>
-<span class="hljs-punctuation">}</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669475049.3408')">Copy</button></pre>
+<span class="hljs-punctuation">}</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401018.188')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2800,7 +2800,7 @@ Si vous n&#8217;utilisez aucune marque <code>npm</code> chargera la version sp\x
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669475049.1848">npm install</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475049.1848')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670401018.0815">npm install</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401018.0815')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -2819,7 +2819,7 @@ Si vous n&#8217;utilisez aucune marque <code>npm</code> chargera la version sp\x
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-json" id="1755669475050.9001"><span class="hljs-punctuation">{</span>
+<pre class="highlight"><code class="language-json" id="1755670401019.514"><span class="hljs-punctuation">{</span>
   <span class="hljs-attr">&quot;compilerOptions&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
     <span class="hljs-comment">/* Specify ECMAScript target version: &#x27;ES3&#x27; (default). Here ES5 to be compatible with all web browsers */</span>
     <span class="hljs-attr">&quot;target&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;ES5&quot;</span><span class="hljs-punctuation">,</span>
@@ -2841,7 +2841,7 @@ Si vous n&#8217;utilisez aucune marque <code>npm</code> chargera la version sp\x
   <span class="hljs-attr">&quot;exclude&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
     <span class="hljs-string">&quot;node_modules&quot;</span>
   <span class="hljs-punctuation">]</span>
-<span class="hljs-punctuation">}</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669475050.9001')">Copy</button></pre>
+<span class="hljs-punctuation">}</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401019.514')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2857,9 +2857,9 @@ Si vous n&#8217;utilisez aucune marque <code>npm</code> chargera la version sp\x
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-typescript" id="1755669475050.4736"><span class="hljs-title function_">great</span>(<span class="hljs-params">name: <span class="hljs-built_in">string</span></span>){
+<pre class="highlight"><code class="language-typescript" id="1755670401019.5176"><span class="hljs-title function_">great</span>(<span class="hljs-params">name: <span class="hljs-built_in">string</span></span>){
     <span class="hljs-keyword">return</span> <span class="hljs-meta">@backtick</span><span class="hljs-meta">@Hi</span>, <span class="hljs-meta">@dollar</span>@{name}<span class="hljs-meta">@backtick</span>@;
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475050.4736')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401019.5176')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2867,7 +2867,7 @@ Si vous n&#8217;utilisez aucune marque <code>npm</code> chargera la version sp\x
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669475051.38"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title function_">great</span>(<span class="hljs-number">123</span>));</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475051.38')">Copy</button></pre>
+<pre class="highlight"><code class="language-javascript" id="1755670401020.1365"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title function_">great</span>(<span class="hljs-number">123</span>));</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401020.1365')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2875,8 +2875,8 @@ Si vous n&#8217;utilisez aucune marque <code>npm</code> chargera la version sp\x
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-typescript" id="1755669475051.9863"><span class="hljs-keyword">let</span> age = <span class="hljs-number">42</span>;
-age = <span class="hljs-string">&quot;inconnu&quot;</span>;</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475051.9863')">Copy</button></pre>
+<pre class="highlight"><code class="language-typescript" id="1755670401020.0564"><span class="hljs-keyword">let</span> age = <span class="hljs-number">42</span>;
+age = <span class="hljs-string">&quot;inconnu&quot;</span>;</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401020.0564')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2884,7 +2884,7 @@ age = <span class="hljs-string">&quot;inconnu&quot;</span>;</code><button class=
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-typescript" id="1755669475051.6045"><span class="hljs-keyword">export</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">Person</span> {
+<pre class="highlight"><code class="language-typescript" id="1755670401020.9014"><span class="hljs-keyword">export</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">Person</span> {
     <span class="hljs-attr">firstName</span>: <span class="hljs-built_in">string</span>;
     <span class="hljs-attr">lastName</span>: <span class="hljs-built_in">string</span>;
 }
@@ -2893,7 +2893,7 @@ age = <span class="hljs-string">&quot;inconnu&quot;</span>;</code><button class=
     <span class="hljs-title function_">great</span>(<span class="hljs-params">person: Person</span>){
         <span class="hljs-keyword">return</span> <span class="hljs-meta">@backtick</span><span class="hljs-meta">@Hi</span>, <span class="hljs-meta">@dollar</span>@{person.<span class="hljs-property">firstName</span>} <span class="hljs-meta">@dollar</span>@{person.<span class="hljs-property">lastName</span>}<span class="hljs-meta">@backtick</span>@;
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475051.6045')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401020.9014')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2901,14 +2901,14 @@ age = <span class="hljs-string">&quot;inconnu&quot;</span>;</code><button class=
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-typescript" id="1755669475052.2961"><span class="hljs-keyword">import</span> {<span class="hljs-title class_">GreaterService</span>, <span class="hljs-title class_">Person</span>} <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./person&quot;</span>;
+<pre class="highlight"><code class="language-typescript" id="1755670401020.5925"><span class="hljs-keyword">import</span> {<span class="hljs-title class_">GreaterService</span>, <span class="hljs-title class_">Person</span>} <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./person&quot;</span>;
 
 <span class="hljs-keyword">const</span> <span class="hljs-attr">person</span>:<span class="hljs-title class_">Person</span> = {
     <span class="hljs-attr">firstName</span>: <span class="hljs-string">&#x27;Guillaume&#x27;</span>,
     <span class="hljs-attr">lastName</span>: <span class="hljs-string">&#x27;EHRET&#x27;</span>
 }
 
-<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">GreaterService</span>().<span class="hljs-title function_">great</span>(person));</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475052.2961')">Copy</button></pre>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">GreaterService</span>().<span class="hljs-title function_">great</span>(person));</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401020.5925')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2916,8 +2916,8 @@ age = <span class="hljs-string">&quot;inconnu&quot;</span>;</code><button class=
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669475052.786">@dollar@ tsc
-@dollar@ node build/index.js</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475052.786')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670401020.3376">@dollar@ tsc
+@dollar@ node build/index.js</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401020.3376')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2942,7 +2942,7 @@ age = <span class="hljs-string">&quot;inconnu&quot;</span>;</code><button class=
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669475052.5496">npm install jest @types/jest ts-jest -D</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475052.5496')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670401020.6426">npm install jest @types/jest ts-jest -D</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401020.6426')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2950,7 +2950,7 @@ age = <span class="hljs-string">&quot;inconnu&quot;</span>;</code><button class=
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669475052.2256">jest --init
+<pre class="highlight"><code class="language-shell" id="1755670401020.2559">jest --init
 
 \u2714 Would you like to use Jest when running &quot;test&quot; script in &quot;package.json&quot;? \u2026 yes
 \u2714 Choose the test environment that will be used for testing \u203A node
@@ -2959,7 +2959,7 @@ age = <span class="hljs-string">&quot;inconnu&quot;</span>;</code><button class=
 
 
 \u270F\uFE0F  Modified /home/devmind/Workspace/web/dev-mind.fr/package.json
-\u{1F4DD}  Configuration file created at /home/devmind/Workspace/web/dev-mind.fr/jest.config.js</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475052.2256')">Copy</button></pre>
+\u{1F4DD}  Configuration file created at /home/devmind/Workspace/web/dev-mind.fr/jest.config.js</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401020.2559')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2967,10 +2967,10 @@ age = <span class="hljs-string">&quot;inconnu&quot;</span>;</code><button class=
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-json" id="1755669475052.5225"><span class="hljs-punctuation">[</span>source<span class="hljs-punctuation">,</span> shell<span class="hljs-punctuation">,</span> subs=<span class="hljs-string">&quot;none&quot;</span><span class="hljs-punctuation">]</span>
+<pre class="highlight"><code class="language-json" id="1755670401021.889"><span class="hljs-punctuation">[</span>source<span class="hljs-punctuation">,</span> shell<span class="hljs-punctuation">,</span> subs=<span class="hljs-string">&quot;none&quot;</span><span class="hljs-punctuation">]</span>
 transform<span class="hljs-punctuation">:</span>  <span class="hljs-punctuation">{</span>
 <span class="hljs-attr">&quot;\\.(ts)@dollar@&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;ts-jest&quot;</span>
-<span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669475052.5225')">Copy</button></pre>
+<span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401021.889')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2978,9 +2978,9 @@ transform<span class="hljs-punctuation">:</span>  <span class="hljs-punctuation"
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-json" id="1755669475052.7014"><span class="hljs-attr">&quot;scripts&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
+<pre class="highlight"><code class="language-json" id="1755670401021.6575"><span class="hljs-attr">&quot;scripts&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
   <span class="hljs-attr">&quot;test&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;jest&quot;</span>
-<span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669475052.7014')">Copy</button></pre>
+<span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401021.6575')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2991,7 +2991,7 @@ transform<span class="hljs-punctuation">:</span>  <span class="hljs-punctuation"
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-typescript" id="1755669475052.6963"><span class="hljs-keyword">import</span> {<span class="hljs-title class_">GreaterService</span>, <span class="hljs-title class_">Person</span>} <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;../../main/typescript/person&quot;</span>;
+<pre class="highlight"><code class="language-typescript" id="1755670401021.1614"><span class="hljs-keyword">import</span> {<span class="hljs-title class_">GreaterService</span>, <span class="hljs-title class_">Person</span>} <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;../../main/typescript/person&quot;</span>;
 
 <span class="hljs-title function_">describe</span>(<span class="hljs-string">&#x27;Test person.ts&#x27;</span>, <span class="hljs-function">() =&gt;</span> {
     <span class="hljs-keyword">let</span> <span class="hljs-attr">service</span>: <span class="hljs-title class_">GreaterService</span>;
@@ -3005,7 +3005,7 @@ transform<span class="hljs-punctuation">:</span>  <span class="hljs-punctuation"
         };
         <span class="hljs-title function_">expect</span>(service.<span class="hljs-title function_">great</span>(person)).<span class="hljs-title function_">toBe</span>(<span class="hljs-string">&#x27;Hi, Guillaume EHRET&#x27;</span>);
     })
-});</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475052.6963')">Copy</button></pre>
+});</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401021.1614')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3019,7 +3019,7 @@ transform<span class="hljs-punctuation">:</span>  <span class="hljs-punctuation"
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669475052.8162">devmind@devmind:~/Workspace/web/myproject@dollar@ jest --coverage
+<pre class="highlight"><code class="language-shell" id="1755670401021.102">devmind@devmind:~/Workspace/web/myproject@dollar@ jest --coverage
 PASS  src/test/typescript/person.spec.ts
 Test person.ts
 \u2713 should say (4ms)
@@ -3034,7 +3034,7 @@ Test Suites: 1 passed, 1 total
 Tests:       1 passed, 1 total
 Snapshots:   0 total
 Time:        1.358s, estimated 2s
-Ran all test suites.</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475052.8162')">Copy</button></pre>
+Ran all test suites.</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401021.102')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -3513,12 +3513,12 @@ Ran all test suites.</code><button class="btn-copy-code" onclick="copyToClipboar
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475039.3296"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">HelloWorld</span> {
+<pre class="highlight"><code class="language-java" id="1755670401008.7915"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">HelloWorld</span> {
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> {
         <span class="hljs-type">String</span> <span class="hljs-variable">name</span> <span class="hljs-operator">=</span> <span class="hljs-string">&quot;Dev-Mind&quot;</span>;
         System.out.println(<span class="hljs-string">&quot;Hello world &quot;</span> + name);
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475039.3296')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401008.7915')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3526,10 +3526,10 @@ Ran all test suites.</code><button class="btn-copy-code" onclick="copyToClipboar
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669475039.4744"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>{
+<pre class="highlight"><code class="language-kotlin" id="1755670401008.8672"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>{
     <span class="hljs-keyword">val</span> name = <span class="hljs-string">&quot;Dev-Mind&quot;</span>
     println(<span class="hljs-string">&quot;Hello world @dollar@name&quot;</span>)
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475039.4744')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401008.8672')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -3567,10 +3567,10 @@ Ran all test suites.</code><button class="btn-copy-code" onclick="copyToClipboar
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669475039.3179"><span class="hljs-keyword">var</span> name:String         <span class="hljs-comment">// Erreur de compilation</span>
+<pre class="highlight"><code class="language-kotlin" id="1755670401008.3594"><span class="hljs-keyword">var</span> name:String         <span class="hljs-comment">// Erreur de compilation</span>
 <span class="hljs-keyword">var</span> name:String = <span class="hljs-literal">null</span>  <span class="hljs-comment">// Erreur de compilation</span>
 <span class="hljs-keyword">var</span> name = <span class="hljs-string">&quot;Dev-Mind&quot;</span>   <span class="hljs-comment">// Valide et pas besoin de d\xE9finir un type car le compilateur peut le deviner</span>
-<span class="hljs-keyword">var</span> name:String? = <span class="hljs-literal">null</span> <span class="hljs-comment">// Valide car on utilise le type String? qui veut dire String nullable</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669475039.3179')">Copy</button></pre>
+<span class="hljs-keyword">var</span> name:String? = <span class="hljs-literal">null</span> <span class="hljs-comment">// Valide car on utilise le type String? qui veut dire String nullable</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401008.3594')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3586,11 +3586,11 @@ Ran all test suites.</code><button class="btn-copy-code" onclick="copyToClipboar
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669475039.118"><span class="hljs-keyword">val</span> name = <span class="hljs-string">&quot;Dev-Mind&quot;</span>
+<pre class="highlight"><code class="language-kotlin" id="1755670401008.1555"><span class="hljs-keyword">val</span> name = <span class="hljs-string">&quot;Dev-Mind&quot;</span>
 name = <span class="hljs-string">&quot;Guillaume&quot;</span>      <span class="hljs-comment">// Erreur de compilation car immutable</span>
 
 <span class="hljs-keyword">var</span> name2 = <span class="hljs-string">&quot;Dev-Mind&quot;</span>
-name2 = <span class="hljs-string">&quot;Guillaume&quot;</span>     <span class="hljs-comment">// OK car mutable</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669475039.118')">Copy</button></pre>
+name2 = <span class="hljs-string">&quot;Guillaume&quot;</span>     <span class="hljs-comment">// OK car mutable</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401008.1555')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3598,12 +3598,12 @@ name2 = <span class="hljs-string">&quot;Guillaume&quot;</span>     <span class="
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669475039.5935"><span class="hljs-keyword">val</span> names = listOf(<span class="hljs-string">&quot;Dev-Mind&quot;</span>, <span class="hljs-string">&quot;Guillaume&quot;</span>)
+<pre class="highlight"><code class="language-kotlin" id="1755670401008.1604"><span class="hljs-keyword">val</span> names = listOf(<span class="hljs-string">&quot;Dev-Mind&quot;</span>, <span class="hljs-string">&quot;Guillaume&quot;</span>)
 names.add(<span class="hljs-string">&quot;NewName&quot;</span>)    <span class="hljs-comment">// Erreur de compilation car add n&#x27;existe pas sur une liste immutable</span>
 
 
 <span class="hljs-keyword">val</span> names = mutableListOf(<span class="hljs-string">&quot;Dev-Mind&quot;</span>, <span class="hljs-string">&quot;Guillaume&quot;</span>)
-names.add(<span class="hljs-string">&quot;NewName&quot;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475039.5935')">Copy</button></pre>
+names.add(<span class="hljs-string">&quot;NewName&quot;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401008.1604')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3625,7 +3625,7 @@ names.add(<span class="hljs-string">&quot;NewName&quot;</span>)</code><button cl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669475039.3606"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">formatDate</span><span class="hljs-params">(string: <span class="hljs-type">Date</span>, format: <span class="hljs-type">String</span> = <span class="hljs-string">&quot;yyyy-MM-dd&quot;</span>, addDay: <span class="hljs-type">Int</span> =<span class="hljs-number">0</span>)</span></span> : String</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475039.3606')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1755670401008.6497"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">formatDate</span><span class="hljs-params">(string: <span class="hljs-type">Date</span>, format: <span class="hljs-type">String</span> = <span class="hljs-string">&quot;yyyy-MM-dd&quot;</span>, addDay: <span class="hljs-type">Int</span> =<span class="hljs-number">0</span>)</span></span> : String</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401008.6497')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3633,9 +3633,9 @@ names.add(<span class="hljs-string">&quot;NewName&quot;</span>)</code><button cl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669475040.8186">formatDate(Date())              <span class="hljs-comment">// On ne pr\xE9cise pas les valeurs si celles par d\xE9faut sont suffisantes</span>
+<pre class="highlight"><code class="language-kotlin" id="1755670401008.5083">formatDate(Date())              <span class="hljs-comment">// On ne pr\xE9cise pas les valeurs si celles par d\xE9faut sont suffisantes</span>
 formatDate(Date(), <span class="hljs-string">&quot;yyyy&quot;</span>)      <span class="hljs-comment">// Dans mon cas je ne change que la deuxi\xE8me valeur</span>
-formatDate(Date(), addDay = <span class="hljs-number">2</span>)  <span class="hljs-comment">// Si je veux pr\xE9ciser une valeur particuli\xE8re je peux u tiliser les param\xE8tres nomm\xE9s</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669475040.8186')">Copy</button></pre>
+formatDate(Date(), addDay = <span class="hljs-number">2</span>)  <span class="hljs-comment">// Si je veux pr\xE9ciser une valeur particuli\xE8re je peux u tiliser les param\xE8tres nomm\xE9s</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401008.5083')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3643,7 +3643,7 @@ formatDate(Date(), addDay = <span class="hljs-number">2</span>)  <span class="hl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669475040.4468"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">findSpeaker</span><span class="hljs-params">(firstname: <span class="hljs-type">String</span>, lastname: <span class="hljs-type">String</span>)</span></span>: Speaker</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475040.4468')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1755670401008.819"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">findSpeaker</span><span class="hljs-params">(firstname: <span class="hljs-type">String</span>, lastname: <span class="hljs-type">String</span>)</span></span>: Speaker</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401008.819')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3651,8 +3651,8 @@ formatDate(Date(), addDay = <span class="hljs-number">2</span>)  <span class="hl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669475040.3154"><span class="hljs-keyword">val</span> speaker1 = findSpeaker(<span class="hljs-string">&quot;Chet&quot;</span>, <span class="hljs-string">&quot;Haase&quot;</span>)
-<span class="hljs-keyword">val</span> speaker1 = findSpeaker(firstname = <span class="hljs-string">&quot;Chet&quot;</span>, lastname = <span class="hljs-string">&quot;Haase&quot;</span>)  <span class="hljs-comment">// les param\xE8tres nomm\xE9s am\xE8nent plus de lisibilit\xE9</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669475040.3154')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1755670401009.4429"><span class="hljs-keyword">val</span> speaker1 = findSpeaker(<span class="hljs-string">&quot;Chet&quot;</span>, <span class="hljs-string">&quot;Haase&quot;</span>)
+<span class="hljs-keyword">val</span> speaker1 = findSpeaker(firstname = <span class="hljs-string">&quot;Chet&quot;</span>, lastname = <span class="hljs-string">&quot;Haase&quot;</span>)  <span class="hljs-comment">// les param\xE8tres nomm\xE9s am\xE8nent plus de lisibilit\xE9</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401009.4429')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -3665,12 +3665,12 @@ formatDate(Date(), addDay = <span class="hljs-number">2</span>)  <span class="hl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475040.7556"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Parent</span>{ }</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475040.7556')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670401009.5696"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Parent</span>{ }</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401009.5696')">Copy</button></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475040.6147"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Child</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">Parent</span>{}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475040.6147')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670401009.5618"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Child</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">Parent</span>{}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401009.5618')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3678,9 +3678,9 @@ formatDate(Date(), addDay = <span class="hljs-number">2</span>)  <span class="hl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669475040.428"><span class="hljs-keyword">open</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Parent</span>
+<pre class="highlight"><code class="language-kotlin" id="1755670401009.4604"><span class="hljs-keyword">open</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Parent</span>
 
-<span class="hljs-keyword">class</span> <span class="hljs-title class_">Child</span> : <span class="hljs-type">Parent</span>()</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475040.428')">Copy</button></pre>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Child</span> : <span class="hljs-type">Parent</span>()</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401009.4604')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3718,10 +3718,10 @@ formatDate(Date(), addDay = <span class="hljs-number">2</span>)  <span class="hl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669475040.3218"><span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Speaker</span>(<span class="hljs-keyword">val</span> firstname: String,
+<pre class="highlight"><code class="language-kotlin" id="1755670401009.9866"><span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Speaker</span>(<span class="hljs-keyword">val</span> firstname: String,
                    <span class="hljs-keyword">val</span> lastname: String,
                    <span class="hljs-keyword">val</span> age: <span class="hljs-built_in">Int</span>? = <span class="hljs-literal">null</span>,
-                   <span class="hljs-keyword">val</span> id: String = UUID.randomUUID().toString())</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475040.3218')">Copy</button></pre>
+                   <span class="hljs-keyword">val</span> id: String = UUID.randomUUID().toString())</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401009.9866')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3732,12 +3732,12 @@ formatDate(Date(), addDay = <span class="hljs-number">2</span>)  <span class="hl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669475040.7432"><span class="hljs-keyword">val</span> s1 = Speaker(<span class="hljs-string">&quot;Chet&quot;</span>, <span class="hljs-string">&quot;Haase&quot;</span>)
+<pre class="highlight"><code class="language-kotlin" id="1755670401009.6343"><span class="hljs-keyword">val</span> s1 = Speaker(<span class="hljs-string">&quot;Chet&quot;</span>, <span class="hljs-string">&quot;Haase&quot;</span>)
 <span class="hljs-keyword">val</span> s2 = Speaker(firstname = <span class="hljs-string">&quot;Chet&quot;</span>, lastname = <span class="hljs-string">&quot;Haase&quot;</span>)
 <span class="hljs-keyword">val</span> s3 = Speaker(firstname = <span class="hljs-string">&quot;Chet&quot;</span>, lastname = <span class="hljs-string">&quot;Haase&quot;</span>, id = <span class="hljs-string">&quot;123&quot;</span>)
 
 <span class="hljs-keyword">val</span> s4 = s1.copy(age = <span class="hljs-number">999</span>)
-<span class="hljs-keyword">val</span> s5 = s1.copy()</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475040.7432')">Copy</button></pre>
+<span class="hljs-keyword">val</span> s5 = s1.copy()</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401009.6343')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3745,8 +3745,8 @@ formatDate(Date(), addDay = <span class="hljs-number">2</span>)  <span class="hl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669475040.0835">s1 == s5   <span class="hljs-comment">// @ARROW renvoie true car Kotlin fait appel \xE0 la m\xE9thode equals</span>
-s1 === s5  <span class="hljs-comment">// @ARROW renverra faux car === permet de comparer des r\xE9f\xE9rences</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669475040.0835')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1755670401009.5396">s1 == s5   <span class="hljs-comment">// @ARROW renvoie true car Kotlin fait appel \xE0 la m\xE9thode equals</span>
+s1 === s5  <span class="hljs-comment">// @ARROW renverra faux car === permet de comparer des r\xE9f\xE9rences</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401009.5396')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -3757,7 +3757,7 @@ s1 === s5  <span class="hljs-comment">// @ARROW renverra faux car === permet de 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669475040.4006"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">HelloWorld</span> {
+<pre class="highlight"><code class="language-kotlin" id="1755670401009.9597"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">HelloWorld</span> {
 
     <span class="hljs-keyword">public</span> String name(){
         <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;Dev-Mind&quot;</span>;
@@ -3768,7 +3768,7 @@ s1 === s5  <span class="hljs-comment">// @ARROW renverra faux car === permet de 
             System.<span class="hljs-keyword">out</span>.println(<span class="hljs-string">&quot;Hello world&quot;</span> + name()); <span class="hljs-comment">// NE COMPILE PAS car la m\xE9thode name() n&#x27;est pas visible</span>
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475040.4006')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401009.9597')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3782,7 +3782,7 @@ s1 === s5  <span class="hljs-comment">// @ARROW renverra faux car === permet de 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669475040.0151"><span class="hljs-keyword">class</span> <span class="hljs-title class_">HelloWorld</span> {
+<pre class="highlight"><code class="language-kotlin" id="1755670401009.7124"><span class="hljs-keyword">class</span> <span class="hljs-title class_">HelloWorld</span> {
 
     <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">name</span><span class="hljs-params">()</span></span> = <span class="hljs-string">&quot;Dev-Mind&quot;</span>
 
@@ -3791,7 +3791,7 @@ s1 === s5  <span class="hljs-comment">// @ARROW renverra faux car === permet de 
             println(<span class="hljs-string">&quot;Hello world&quot;</span> + name())
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475040.0151')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401009.7124')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3805,9 +3805,9 @@ s1 === s5  <span class="hljs-comment">// @ARROW renverra faux car === permet de 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669475040.2732">button.setOnClickListener{
+<pre class="highlight"><code class="language-kotlin" id="1755670401009.125">button.setOnClickListener{
       <span class="hljs-comment">// votre code</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475040.2732')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401009.125')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3815,10 +3815,10 @@ s1 === s5  <span class="hljs-comment">// @ARROW renverra faux car === permet de 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669475040.4348"><span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onStop</span><span class="hljs-params">()</span></span> {
+<pre class="highlight"><code class="language-kotlin" id="1755670401009.371"><span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onStop</span><span class="hljs-params">()</span></span> {
     <span class="hljs-keyword">super</span>.onStop()
     button.setOnClickListener(<span class="hljs-literal">null</span>)
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475040.4348')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401009.371')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -3835,11 +3835,11 @@ s1 === s5  <span class="hljs-comment">// @ARROW renverra faux car === permet de 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669475041.3638"><span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Citizen</span>(<span class="hljs-keyword">val</span> inseeNumber: String,
+<pre class="highlight"><code class="language-kotlin" id="1755670401009.1938"><span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Citizen</span>(<span class="hljs-keyword">val</span> inseeNumber: String,
                    <span class="hljs-keyword">val</span> firstname: String,
                    <span class="hljs-keyword">val</span> lastname: String,
                    <span class="hljs-keyword">val</span> sexe: Sexe,
-                   <span class="hljs-keyword">val</span> birthdate: LocalDate)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475041.3638')">Copy</button></pre>
+                   <span class="hljs-keyword">val</span> birthdate: LocalDate)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401009.1938')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3847,7 +3847,7 @@ s1 === s5  <span class="hljs-comment">// @ARROW renverra faux car === permet de 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669475041.4832"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">getAge</span><span class="hljs-params">(date: <span class="hljs-type">LocalDate</span>)</span></span> = LocalDate.now().year - date.year</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475041.4832')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1755670401009.7046"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">getAge</span><span class="hljs-params">(date: <span class="hljs-type">LocalDate</span>)</span></span> = LocalDate.now().year - date.year</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401009.7046')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3855,10 +3855,10 @@ s1 === s5  <span class="hljs-comment">// @ARROW renverra faux car === permet de 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669475041.916"><span class="hljs-function"><span class="hljs-keyword">fun</span> LocalDate.<span class="hljs-title">getAge</span><span class="hljs-params">()</span></span> = LocalDate.now().year - <span class="hljs-keyword">this</span>.year
+<pre class="highlight"><code class="language-kotlin" id="1755670401009.135"><span class="hljs-function"><span class="hljs-keyword">fun</span> LocalDate.<span class="hljs-title">getAge</span><span class="hljs-params">()</span></span> = LocalDate.now().year - <span class="hljs-keyword">this</span>.year
 
 <span class="hljs-comment">// Ce qui permet d&#x27;\xE9crire</span>
-LocalDate.parse(<span class="hljs-string">&quot;1977-01-01&quot;</span>).getAge()</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475041.916')">Copy</button></pre>
+LocalDate.parse(<span class="hljs-string">&quot;1977-01-01&quot;</span>).getAge()</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401009.135')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3866,11 +3866,11 @@ LocalDate.parse(<span class="hljs-string">&quot;1977-01-01&quot;</span>).getAge(
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669475041.76"><span class="hljs-keyword">val</span> LocalDate.age
+<pre class="highlight"><code class="language-kotlin" id="1755670401010.221"><span class="hljs-keyword">val</span> LocalDate.age
     <span class="hljs-keyword">get</span>() = LocalDate.now().year - <span class="hljs-keyword">this</span>.year
 
 <span class="hljs-comment">// Ce qui permet d&#x27;\xE9crire</span>
-LocalDate.parse(<span class="hljs-string">&quot;1977-01-01&quot;</span>).age</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475041.76')">Copy</button></pre>
+LocalDate.parse(<span class="hljs-string">&quot;1977-01-01&quot;</span>).age</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401010.221')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3878,11 +3878,11 @@ LocalDate.parse(<span class="hljs-string">&quot;1977-01-01&quot;</span>).age</co
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669475041.4617"><span class="hljs-keyword">class</span> <span class="hljs-title class_">DevMindApplication</span> : <span class="hljs-type">Application</span>() {
+<pre class="highlight"><code class="language-kotlin" id="1755670401010.0654"><span class="hljs-keyword">class</span> <span class="hljs-title class_">DevMindApplication</span> : <span class="hljs-type">Application</span>() {
    <span class="hljs-comment">// code...</span>
 }
 <span class="hljs-keyword">val</span> AppCompatActivity.devmindApp
-    <span class="hljs-keyword">get</span>() = <span class="hljs-keyword">this</span>.application <span class="hljs-keyword">as</span> DevMindApplication</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475041.4617')">Copy</button></pre>
+    <span class="hljs-keyword">get</span>() = <span class="hljs-keyword">this</span>.application <span class="hljs-keyword">as</span> DevMindApplication</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401010.0654')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3910,9 +3910,9 @@ LocalDate.parse(<span class="hljs-string">&quot;1977-01-01&quot;</span>).age</co
 <div class="listingblock">
 <div class="title">Issu de kotlin.collections</div>
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669475041.4924"><span class="hljs-keyword">public</span> <span class="hljs-keyword">inline</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> @LTT@GT Iterable@LTT@GT.<span class="hljs-title">find</span><span class="hljs-params">(predicate: (<span class="hljs-type">T</span>) @<span class="hljs-type">LAMBDA</span> <span class="hljs-type">Boolean</span>)</span></span>: T? {
+<pre class="highlight"><code class="language-kotlin" id="1755670401010.851"><span class="hljs-keyword">public</span> <span class="hljs-keyword">inline</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> @LTT@GT Iterable@LTT@GT.<span class="hljs-title">find</span><span class="hljs-params">(predicate: (<span class="hljs-type">T</span>) @<span class="hljs-type">LAMBDA</span> <span class="hljs-type">Boolean</span>)</span></span>: T? {
     <span class="hljs-keyword">return</span> firstOrNull(predicate)
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475041.4924')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401010.851')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3920,7 +3920,7 @@ LocalDate.parse(<span class="hljs-string">&quot;1977-01-01&quot;</span>).age</co
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669475041.9282"><span class="hljs-keyword">val</span> guillaume = speakers.firstOrNull {
+<pre class="highlight"><code class="language-kotlin" id="1755670401010.1184"><span class="hljs-keyword">val</span> guillaume = speakers.firstOrNull {
     it.firstname == <span class="hljs-string">&quot;Guillaume&quot;</span>  <span class="hljs-comment">// it correpond \xE0 l&#x27;item en cours</span>
 }
 
@@ -3930,7 +3930,7 @@ LocalDate.parse(<span class="hljs-string">&quot;1977-01-01&quot;</span>).age</co
 }
 
 <span class="hljs-comment">// Ici la syntaxe Java (o\xF9 vous passez une lambda provoque une erreur de compilation)</span>
-<span class="hljs-keyword">val</span> guillaume = speakers.firstOrNull(speaker <span class="hljs-meta">@LAMBDA</span> speaker.firstname == <span class="hljs-string">&quot;Guillaume&quot;</span>) <span class="hljs-comment">// ne compile pas</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669475041.9282')">Copy</button></pre>
+<span class="hljs-keyword">val</span> guillaume = speakers.firstOrNull(speaker <span class="hljs-meta">@LAMBDA</span> speaker.firstname == <span class="hljs-string">&quot;Guillaume&quot;</span>) <span class="hljs-comment">// ne compile pas</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401010.1184')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3938,10 +3938,10 @@ LocalDate.parse(<span class="hljs-string">&quot;1977-01-01&quot;</span>).age</co
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669475041.248"><span class="hljs-keyword">val</span> guillaumeSpeakers = speakers.stream()
+<pre class="highlight"><code class="language-kotlin" id="1755670401010.9895"><span class="hljs-keyword">val</span> guillaumeSpeakers = speakers.stream()
                                 .filter(s <span class="hljs-meta">@LAMBDA</span> s.getFirstname().equals(<span class="hljs-string">&quot;Guillaume&quot;</span>))
                                 .findFirst()
-                                .orElse(<span class="hljs-literal">null</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475041.248')">Copy</button></pre>
+                                .orElse(<span class="hljs-literal">null</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401010.9895')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3958,7 +3958,7 @@ LocalDate.parse(<span class="hljs-string">&quot;1977-01-01&quot;</span>).age</co
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669475041.362"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Cell</span>(<span class="hljs-keyword">val</span> content: String)
+<pre class="highlight"><code class="language-kotlin" id="1755670401010.8923"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Cell</span>(<span class="hljs-keyword">val</span> content: String)
 
 <span class="hljs-keyword">class</span> <span class="hljs-title class_">Row</span>(<span class="hljs-keyword">val</span> cells: <span class="hljs-symbol">MutableList@</span><span class="hljs-symbol">LTCell@</span>GT = mutableListOf()) {
     <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">cell</span><span class="hljs-params">(adder: () @<span class="hljs-type">LAMBDA</span> <span class="hljs-type">Cell</span>)</span></span>: Row {
@@ -3972,7 +3972,7 @@ LocalDate.parse(<span class="hljs-string">&quot;1977-01-01&quot;</span>).age</co
         rows.add(adder())
         <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475041.362')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401010.8923')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -3980,9 +3980,9 @@ LocalDate.parse(<span class="hljs-string">&quot;1977-01-01&quot;</span>).age</co
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669475041.97"><span class="hljs-keyword">val</span> table = Table()
+<pre class="highlight"><code class="language-kotlin" id="1755670401010.561"><span class="hljs-keyword">val</span> table = Table()
     .row { Row().cell { Cell(<span class="hljs-string">&quot;Test&quot;</span>) }}
-    .row { Row().cell { Cell(<span class="hljs-string">&quot;Test2&quot;</span>) }}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475041.97')">Copy</button></pre>
+    .row { Row().cell { Cell(<span class="hljs-string">&quot;Test2&quot;</span>) }}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401010.561')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -3996,9 +3996,9 @@ LocalDate.parse(<span class="hljs-string">&quot;1977-01-01&quot;</span>).age</co
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669475041.6387">itemView.setOnClickListener {
+<pre class="highlight"><code class="language-kotlin" id="1755670401010.4824">itemView.setOnClickListener {
      <span class="hljs-comment">// Code du listener directement</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475041.6387')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401010.4824')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -4006,7 +4006,7 @@ LocalDate.parse(<span class="hljs-string">&quot;1977-01-01&quot;</span>).age</co
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669475041.9307">holder.speakerName.text = user.fullname
+<pre class="highlight"><code class="language-kotlin" id="1755670401010.6196">holder.speakerName.text = user.fullname
 holder.speakerBio.text = user.descriptionFr
 holder.speakerBirthday.text = user.birthday
 
@@ -4015,7 +4015,7 @@ holder.apply {
     speakerName.text = user.fullname
     speakerBio.text = user.descriptionFr
     speakerBirthday.text = user.birthday
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475041.9307')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401010.6196')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -4049,7 +4049,7 @@ holder.apply {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669475042.4768"><span class="hljs-comment">// Votre activit\xE9 implemente l&#x27;interface CoroutineScope</span>
+<pre class="highlight"><code class="language-kotlin" id="1755670401010.0674"><span class="hljs-comment">// Votre activit\xE9 implemente l&#x27;interface CoroutineScope</span>
 <span class="hljs-keyword">open</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">MyActivity</span> : <span class="hljs-type">AppCompatActivity</span>(), CoroutineScope {
 
    <span class="hljs-comment">// Si vous lancez votre coroutine vous devez indiquer dans quel thread elle sera lanc\xE9. Par d\xE9faut un nouveau</span>
@@ -4077,7 +4077,7 @@ holder.apply {
           }
  	   }
    }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475042.4768')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401010.0674')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -4195,7 +4195,7 @@ holder.apply {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669475090.5989"><span class="hljs-keyword">const</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;http&#x27;</span>);
+<pre class="highlight"><code class="language-javascript" id="1755670400894.276"><span class="hljs-keyword">const</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;http&#x27;</span>);
 
 <span class="hljs-comment">//create a server object which listens on port 8080</span>
 http.<span class="hljs-title function_">createServer</span>((req, res) @<span class="hljs-variable constant_">ARROW</span> {
@@ -4203,7 +4203,7 @@ http.<span class="hljs-title function_">createServer</span>((req, res) @<span cl
   res.<span class="hljs-title function_">write</span>(<span class="hljs-string">&#x27;Hello World!&#x27;</span>);
   <span class="hljs-comment">//end the response</span>
   res.<span class="hljs-title function_">end</span>();
-}).<span class="hljs-title function_">listen</span>(<span class="hljs-number">8080</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475090.5989')">Copy</button></pre>
+}).<span class="hljs-title function_">listen</span>(<span class="hljs-number">8080</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400894.276')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -4211,7 +4211,7 @@ http.<span class="hljs-title function_">createServer</span>((req, res) @<span cl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669475090.5657">node app.js</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475090.5657')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670400894.501">node app.js</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400894.501')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -4238,12 +4238,12 @@ http.<span class="hljs-title function_">createServer</span>((req, res) @<span cl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669475090.7485"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;express&#x27;</span>);
+<pre class="highlight"><code class="language-javascript" id="1755670400895.3984"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;express&#x27;</span>);
 
 <span class="hljs-title function_">express</span>()
   .<span class="hljs-title function_">get</span>(<span class="hljs-string">&#x27;/&#x27;</span>, (req, res) @<span class="hljs-variable constant_">ARROW</span> res.<span class="hljs-title function_">send</span>(<span class="hljs-string">&#x27;Hello World!&#x27;</span>)) <span class="hljs-comment">// (1)</span>
   .<span class="hljs-title function_">get</span>(<span class="hljs-string">&#x27;/users/:userName&#x27;</span>, (req, res) @<span class="hljs-variable constant_">ARROW</span> res.<span class="hljs-title function_">send</span>(@backtick@<span class="hljs-title class_">Hello</span> @dollar@{req.<span class="hljs-property">params</span>.<span class="hljs-property">userName</span>}!@backtick@)) <span class="hljs-comment">// (2)</span>
-  .<span class="hljs-title function_">listen</span>(<span class="hljs-number">8085</span>); <span class="hljs-comment">// (3)</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669475090.7485')">Copy</button></pre>
+  .<span class="hljs-title function_">listen</span>(<span class="hljs-number">8085</span>); <span class="hljs-comment">// (3)</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670400895.3984')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -4264,7 +4264,7 @@ http.<span class="hljs-title function_">createServer</span>((req, res) @<span cl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669475090.7617">.<span class="hljs-title function_">use</span>(express.<span class="hljs-title function_">static</span>(@backtick@build/dist@backtick@))</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475090.7617')">Copy</button></pre>
+<pre class="highlight"><code class="language-javascript" id="1755670400895.0947">.<span class="hljs-title function_">use</span>(express.<span class="hljs-title function_">static</span>(@backtick@build/dist@backtick@))</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400895.0947')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -4314,7 +4314,7 @@ http.<span class="hljs-title function_">createServer</span>((req, res) @<span cl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669475091.9695"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;express&#x27;</span>);
+<pre class="highlight"><code class="language-javascript" id="1755670400895.726"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;express&#x27;</span>);
 <span class="hljs-keyword">const</span> compression = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;compression&#x27;</span>);
 
 <span class="hljs-title function_">express</span>()
@@ -4322,7 +4322,7 @@ http.<span class="hljs-title function_">createServer</span>((req, res) @<span cl
   .<span class="hljs-title function_">use</span>(express.<span class="hljs-title function_">static</span>(@backtick@build/dist@backtick@))
   .<span class="hljs-title function_">get</span>(<span class="hljs-string">&#x27;/&#x27;</span>, (req, res) @<span class="hljs-variable constant_">ARROW</span> res.<span class="hljs-title function_">send</span>(<span class="hljs-string">&#x27;Hello World!&#x27;</span>))
   .<span class="hljs-title function_">get</span>(<span class="hljs-string">&#x27;/users/:userName&#x27;</span>, (req, res) @<span class="hljs-variable constant_">ARROW</span> res.<span class="hljs-title function_">send</span>(@backtick@<span class="hljs-title class_">Hello</span> @dollar@{req.<span class="hljs-property">params</span>.<span class="hljs-property">userName</span>}!@backtick@))
-  .<span class="hljs-title function_">listen</span>(<span class="hljs-number">8085</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475091.9695')">Copy</button></pre>
+  .<span class="hljs-title function_">listen</span>(<span class="hljs-number">8085</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400895.726')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -4336,7 +4336,7 @@ http.<span class="hljs-title function_">createServer</span>((req, res) @<span cl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669475092.633"><span class="hljs-keyword">const</span> nocache = (res) @<span class="hljs-variable constant_">ARROW</span> {
+<pre class="highlight"><code class="language-javascript" id="1755670400897.5815"><span class="hljs-keyword">const</span> nocache = (res) @<span class="hljs-variable constant_">ARROW</span> {
   res.<span class="hljs-title function_">setHeader</span>(<span class="hljs-string">&#x27;Cache-Control&#x27;</span>, <span class="hljs-string">&#x27;private, no-cache, no-store, must-revalidate&#x27;</span>);
   res.<span class="hljs-title function_">setHeader</span>(<span class="hljs-string">&#x27;Expires&#x27;</span>, <span class="hljs-string">&#x27;-1&#x27;</span>);
   res.<span class="hljs-title function_">setHeader</span>(<span class="hljs-string">&#x27;Pragma&#x27;</span>, <span class="hljs-string">&#x27;no-cache&#x27;</span>);
@@ -4385,7 +4385,7 @@ http.<span class="hljs-title function_">createServer</span>((req, res) @<span cl
 
     <span class="hljs-attr">default</span>:
   }
-};</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475092.633')">Copy</button></pre>
+};</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400897.5815')">Copy</button></pre>
 </div>
 </div>
 <div class="olist arabic small">
@@ -4409,7 +4409,7 @@ http.<span class="hljs-title function_">createServer</span>((req, res) @<span cl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669475092.591">.<span class="hljs-title function_">use</span>(express.<span class="hljs-title function_">static</span>(@backtick@build/dist@backtick@, {<span class="hljs-attr">setHeaders</span>: <span class="hljs-variable constant_">CACHE_MIDDLEWARE</span>}))</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475092.591')">Copy</button></pre>
+<pre class="highlight"><code class="language-javascript" id="1755670400897.68">.<span class="hljs-title function_">use</span>(express.<span class="hljs-title function_">static</span>(@backtick@build/dist@backtick@, {<span class="hljs-attr">setHeaders</span>: <span class="hljs-variable constant_">CACHE_MIDDLEWARE</span>}))</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400897.68')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -4481,7 +4481,7 @@ http.<span class="hljs-title function_">createServer</span>((req, res) @<span cl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669475093.3972"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;express&#x27;</span>);
+<pre class="highlight"><code class="language-javascript" id="1755670400898.2258"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;express&#x27;</span>);
 <span class="hljs-keyword">const</span> helmet = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;helmet&#x27;</span>);
 
 <span class="hljs-keyword">const</span> <span class="hljs-variable constant_">SECURITY_POLICY</span> = {
@@ -4502,7 +4502,7 @@ http.<span class="hljs-title function_">createServer</span>((req, res) @<span cl
   .<span class="hljs-title function_">use</span>(<span class="hljs-title function_">helmet</span>())
   .<span class="hljs-title function_">use</span>(helmet.<span class="hljs-title function_">contentSecurityPolicy</span>(<span class="hljs-variable constant_">SECURITY_POLICY</span>))
   <span class="hljs-comment">// Reste de la config</span>
-  .<span class="hljs-title function_">listen</span>(<span class="hljs-number">8085</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475093.3972')">Copy</button></pre>
+  .<span class="hljs-title function_">listen</span>(<span class="hljs-number">8085</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400898.2258')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -4510,7 +4510,7 @@ http.<span class="hljs-title function_">createServer</span>((req, res) @<span cl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669475094.9019"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;express&#x27;</span>);
+<pre class="highlight"><code class="language-javascript" id="1755670400898.5007"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;express&#x27;</span>);
 <span class="hljs-keyword">const</span> session = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;express-session&#x27;</span>);
 
 <span class="hljs-keyword">const</span> app = <span class="hljs-title function_">express</span>()
@@ -4532,7 +4532,7 @@ http.<span class="hljs-title function_">createServer</span>((req, res) @<span cl
       <span class="hljs-attr">user</span>: {}
     })
   <span class="hljs-comment">// Reste de la config</span>
-  .<span class="hljs-title function_">listen</span>(<span class="hljs-number">8085</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475094.9019')">Copy</button></pre>
+  .<span class="hljs-title function_">listen</span>(<span class="hljs-number">8085</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400898.5007')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -4540,7 +4540,7 @@ http.<span class="hljs-title function_">createServer</span>((req, res) @<span cl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669475096.9495"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;express&#x27;</span>);
+<pre class="highlight"><code class="language-javascript" id="1755670400900.9458"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;express&#x27;</span>);
 
 <span class="hljs-keyword">const</span> app = <span class="hljs-title function_">express</span>()
   .<span class="hljs-title function_">enable</span>(<span class="hljs-string">&#x27;trust proxy&#x27;</span>)
@@ -4567,7 +4567,7 @@ http.<span class="hljs-title function_">createServer</span>((req, res) @<span cl
   <span class="hljs-comment">// Reste de la config</span>
   <span class="hljs-comment">// En dernier on dit que pour toutes les autres requ\xEAtes on ouvre une page 404</span>
   .<span class="hljs-title function_">all</span>(<span class="hljs-string">&#x27;*&#x27;</span>, (req, res) @<span class="hljs-variable constant_">ARROW</span> res.<span class="hljs-title function_">redirect</span>(@backtick@/<span class="hljs-number">404.</span>html@backtick@));
-  .<span class="hljs-title function_">listen</span>(<span class="hljs-number">8085</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475096.9495')">Copy</button></pre>
+  .<span class="hljs-title function_">listen</span>(<span class="hljs-number">8085</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400900.9458')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -4581,7 +4581,7 @@ http.<span class="hljs-title function_">createServer</span>((req, res) @<span cl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669475096.221">{
+<pre class="highlight"><code class="language-javascript" id="1755670400900.4453">{
   <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;dev-mind.com&quot;</span>,
   <span class="hljs-string">&quot;scripts&quot;</span>: {
     <span class="hljs-string">&quot;install&quot;</span>: <span class="hljs-string">&quot;gulp&quot;</span>,
@@ -4589,7 +4589,7 @@ http.<span class="hljs-title function_">createServer</span>((req, res) @<span cl
     <span class="hljs-string">&quot;dev&quot;</span>: <span class="hljs-string">&quot;gulp serve&quot;</span>
   },
   <span class="hljs-string">&quot;dependencies&quot;</span>: { }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475096.221')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400900.4453')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -4605,9 +4605,9 @@ http.<span class="hljs-title function_">createServer</span>((req, res) @<span cl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669475096.9536"><span class="hljs-variable constant_">NODE_BUILD_TOOL</span>=yarn
+<pre class="highlight"><code class="language-javascript" id="1755670400900.2334"><span class="hljs-variable constant_">NODE_BUILD_TOOL</span>=yarn
 <span class="hljs-variable constant_">NODE_ENV</span>=prod
-<span class="hljs-variable constant_">PORT</span>=<span class="hljs-number">8080</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669475096.9536')">Copy</button></pre>
+<span class="hljs-variable constant_">PORT</span>=<span class="hljs-number">8080</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670400900.2334')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -4728,7 +4728,7 @@ http.<span class="hljs-title function_">createServer</span>((req, res) @<span cl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669475063.641">bcdedit /set &quot;&quot;{current}&quot; safeboot minimal</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475063.641')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670400865.2751">bcdedit /set &quot;&quot;{current}&quot; safeboot minimal</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400865.2751')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -4752,7 +4752,7 @@ http.<span class="hljs-title function_">createServer</span>((req, res) @<span cl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669475063.773">bcdedit /deletevalue &quot;{current}&quot; safeboot</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475063.773')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670400865.2527">bcdedit /deletevalue &quot;{current}&quot; safeboot</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400865.2527')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -4882,7 +4882,7 @@ http.<span class="hljs-title function_">createServer</span>((req, res) @<span cl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-adoc" id="1755669475117.9983"><span class="hljs-section">= Title Slide</span>
+<pre class="highlight"><code class="language-adoc" id="1755670400923.3115"><span class="hljs-section">= Title Slide</span>
 <span class="hljs-meta">:source-highlighter:</span> highlightjs
 <span class="hljs-meta">:revealjs_theme:</span> league
 <span class="hljs-meta">:revealjs_progress:</span> true
@@ -4958,7 +4958,7 @@ Top slide
 This is a vertical subslide
 
 <span class="hljs-meta">[state=dynamic]</span>
-<span class="hljs-section">== Slide Ten js...</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669475117.9983')">Copy</button></pre>
+<span class="hljs-section">== Slide Ten js...</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670400923.3115')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -5034,8 +5034,8 @@ gulp serve</pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-adoc" id="1755669475117.249"><span class="hljs-meta">:revealjs_theme:</span> league
-<span class="hljs-meta">:revealjs_customtheme:</span> css/custom.css</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475117.249')">Copy</button></pre>
+<pre class="highlight"><code class="language-adoc" id="1755670400923.6453"><span class="hljs-meta">:revealjs_theme:</span> league
+<span class="hljs-meta">:revealjs_customtheme:</span> css/custom.css</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400923.6453')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -5048,7 +5048,7 @@ gulp serve</pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-css" id="1755669475119.9412"><span class="hljs-keyword">@import</span> url(<span class="hljs-attribute">https</span>://fonts.googleapis.com/css?family=<span class="hljs-attribute">Roboto</span>:<span class="hljs-number">400</span>,<span class="hljs-number">700</span>,<span class="hljs-number">400</span>italic,<span class="hljs-number">700</span>italic);
+<pre class="highlight"><code class="language-css" id="1755670400925.623"><span class="hljs-keyword">@import</span> url(<span class="hljs-attribute">https</span>://fonts.googleapis.com/css?family=<span class="hljs-attribute">Roboto</span>:<span class="hljs-number">400</span>,<span class="hljs-number">700</span>,<span class="hljs-number">400</span>italic,<span class="hljs-number">700</span>italic);
 <span class="hljs-selector-tag">body</span> {
   <span class="hljs-attribute">background</span>: <span class="hljs-number">#52a83b</span>;
   <span class="hljs-attribute">font-family</span>: Roboto, Arial, sans-serif;
@@ -5058,7 +5058,7 @@ gulp serve</pre>
   <span class="hljs-attribute">font-family</span>: <span class="hljs-string">&quot;Lato&quot;</span>, sans-serif;
   <span class="hljs-attribute">font-size</span>: <span class="hljs-number">40px</span>;
   <span class="hljs-attribute">font-weight</span>: normal;
-  <span class="hljs-attribute">color</span>: <span class="hljs-number">#eee</span>; }</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475119.9412')">Copy</button></pre>
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#eee</span>; }</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400925.623')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -5080,7 +5080,7 @@ gulp serve</pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-css" id="1755669475120.0095"><span class="hljs-selector-tag">body</span><span class="hljs-selector-pseudo">:after</span> {
+<pre class="highlight"><code class="language-css" id="1755670400926.8435"><span class="hljs-selector-tag">body</span><span class="hljs-selector-pseudo">:after</span> {
   <span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27; &#x27;</span>;
   <span class="hljs-attribute">position</span>: fixed;
   <span class="hljs-attribute">bottom</span>: <span class="hljs-number">1em</span>;
@@ -5103,7 +5103,7 @@ gulp serve</pre>
   <span class="hljs-attribute">color</span>: white;
   <span class="hljs-attribute">text-align</span>: center;
   <span class="hljs-attribute">font-size</span>: <span class="hljs-number">0.9rem</span>;
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475120.0095')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400926.8435')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -5111,7 +5111,7 @@ gulp serve</pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-css" id="1755669475120.5122"><span class="hljs-selector-class">.reveal</span><span class="hljs-selector-pseudo">:before</span> {
+<pre class="highlight"><code class="language-css" id="1755670400926.06"><span class="hljs-selector-class">.reveal</span><span class="hljs-selector-pseudo">:before</span> {
   <span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;Reveal.js par la pratique&#x27;</span>;
   <span class="hljs-attribute">position</span>: fixed;
   <span class="hljs-attribute">padding</span>: <span class="hljs-number">1em</span>;
@@ -5121,7 +5121,7 @@ gulp serve</pre>
   <span class="hljs-attribute">color</span>: white;
   <span class="hljs-attribute">text-align</span>: center;
   <span class="hljs-attribute">font-size</span>: <span class="hljs-number">0.9rem</span>;
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475120.5122')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400926.06')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -5138,8 +5138,8 @@ gulp serve</pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-adoc" id="1755669475121.1724"><span class="hljs-meta">[state=dynamic-example]</span>
-<span class="hljs-section">== Slide Ten js...</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669475121.1724')">Copy</button></pre>
+<pre class="highlight"><code class="language-adoc" id="1755670400926.6575"><span class="hljs-meta">[state=dynamic-example]</span>
+<span class="hljs-section">== Slide Ten js...</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670400926.6575')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -5147,9 +5147,9 @@ gulp serve</pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-adoc" id="1755669475121.1448">Reveal.addEventListener( <span class="hljs-emphasis">&#x27;dynamic-example&#x27;</span>, function() {
+<pre class="highlight"><code class="language-adoc" id="1755670400926.9688">Reveal.addEventListener( <span class="hljs-emphasis">&#x27;dynamic-example&#x27;</span>, function() {
 <span class="hljs-code">    //</span>
-}, false );</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475121.1448')">Copy</button></pre>
+}, false );</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400926.9688')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -5157,7 +5157,7 @@ gulp serve</pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669475121.865"><span class="hljs-title class_">Reveal</span>.<span class="hljs-title function_">addEventListener</span>( <span class="hljs-string">&#x27;dynamic&#x27;</span>, <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+<pre class="highlight"><code class="language-javascript" id="1755670400927.3965"><span class="hljs-title class_">Reveal</span>.<span class="hljs-title function_">addEventListener</span>( <span class="hljs-string">&#x27;dynamic&#x27;</span>, <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
 
   <span class="hljs-keyword">const</span> html = @backtick@
     &lt;h1&gt;<span class="hljs-title class_">Dynamic</span> slide&lt;/h1&gt;
@@ -5170,7 +5170,7 @@ gulp serve</pre>
   @backtick@;
 
   <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">&#x27;slide_ten_js&#x27;</span>).<span class="hljs-property">innerHTML</span> = html;
-}, <span class="hljs-literal">false</span> );</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475121.865')">Copy</button></pre>
+}, <span class="hljs-literal">false</span> );</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400927.3965')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -5178,7 +5178,7 @@ gulp serve</pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669475122.5103">gulp.<span class="hljs-title function_">task</span>(<span class="hljs-string">&#x27;copy-html&#x27;</span>, <span class="hljs-function">() =&gt;</span>
+<pre class="highlight"><code class="language-javascript" id="1755670400928.9285">gulp.<span class="hljs-title function_">task</span>(<span class="hljs-string">&#x27;copy-html&#x27;</span>, <span class="hljs-function">() =&gt;</span>
   gulp.<span class="hljs-title function_">src</span>(<span class="hljs-string">&#x27;src/**/*.html&#x27;</span>)
     .<span class="hljs-title function_">pipe</span>(@dollar@.<span class="hljs-title function_">tap</span>(<span class="hljs-function">(<span class="hljs-params">file, cb</span>) =&gt;</span> {
       <span class="hljs-keyword">const</span> newFile = file.<span class="hljs-property">contents</span>.<span class="hljs-title function_">toString</span>();
@@ -5187,7 +5187,7 @@ gulp serve</pre>
       <span class="hljs-keyword">return</span> file;
     }))
     .<span class="hljs-title function_">pipe</span>(gulp.<span class="hljs-title function_">dest</span>(<span class="hljs-string">&#x27;build/dist&#x27;</span>))
-);</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475122.5103')">Copy</button></pre>
+);</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400928.9285')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -5861,9 +5861,9 @@ L&#8217;autonomie est donc la cible \xE0 atteindre. Essayez de d\xE9l\xE9guer le
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475083.9937">compile(<span class="hljs-string">&quot;org.springframework.boot:spring-boot-starter-webflux&quot;</span>)
+<pre class="highlight"><code class="language-java" id="1755670400887.4636">compile(<span class="hljs-string">&quot;org.springframework.boot:spring-boot-starter-webflux&quot;</span>)
 compile(<span class="hljs-string">&quot;org.springframework.boot:spring-boot-starter-data-mongodb-reactive&quot;</span>)
-runtime(<span class="hljs-string">&quot;de.flapdoodle.embed:de.flapdoodle.embed.mongo&quot;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475083.9937')">Copy</button></pre>
+runtime(<span class="hljs-string">&quot;de.flapdoodle.embed:de.flapdoodle.embed.mongo&quot;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400887.4636')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -5874,7 +5874,7 @@ runtime(<span class="hljs-string">&quot;de.flapdoodle.embed:de.flapdoodle.embed.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669475083.8965"><span class="hljs-meta">@Document</span>
+<pre class="highlight"><code class="language-kotlin" id="1755670400888.0334"><span class="hljs-meta">@Document</span>
 <span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Talk</span>(
         <span class="hljs-keyword">val</span> format: TalkFormat,
         <span class="hljs-meta">@TextIndexed(weight = 10F)</span> <span class="hljs-keyword">val</span> title: String,
@@ -5885,7 +5885,7 @@ runtime(<span class="hljs-string">&quot;de.flapdoodle.embed:de.flapdoodle.embed.
         <span class="hljs-keyword">val</span> start: LocalDateTime? = <span class="hljs-literal">null</span>,
         <span class="hljs-keyword">val</span> end: LocalDateTime? = <span class="hljs-literal">null</span>,
         <span class="hljs-meta">@Id</span> <span class="hljs-keyword">val</span> id: String? = <span class="hljs-literal">null</span>
-)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475083.8965')">Copy</button></pre>
+)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400888.0334')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -5896,7 +5896,7 @@ runtime(<span class="hljs-string">&quot;de.flapdoodle.embed:de.flapdoodle.embed.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669475084.6565"><span class="hljs-meta">@Repository</span>
+<pre class="highlight"><code class="language-kotlin" id="1755670400888.592"><span class="hljs-meta">@Repository</span>
 <span class="hljs-keyword">class</span> <span class="hljs-title class_">TalkRepository</span>(<span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> template: ReactiveMongoTemplate) {
 
     <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">findOne</span><span class="hljs-params">(id: <span class="hljs-type">String</span>)</span></span> = template.<span class="hljs-symbol">findById@</span><span class="hljs-symbol">LTTalk@</span>GT(id)
@@ -5908,7 +5908,7 @@ runtime(<span class="hljs-string">&quot;de.flapdoodle.embed:de.flapdoodle.embed.
         <span class="hljs-keyword">val</span> query = TextQuery(textCriteria).sortByScore()
         <span class="hljs-keyword">return</span> template.find(query)
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475084.6565')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400888.592')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -5994,9 +5994,9 @@ runtime(<span class="hljs-string">&quot;de.flapdoodle.embed:de.flapdoodle.embed.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475106.856">apply plugin: <span class="hljs-string">&#x27;java&#x27;</span>
+<pre class="highlight"><code class="language-java" id="1755670400911.3918">apply plugin: <span class="hljs-string">&#x27;java&#x27;</span>
 apply plugin: <span class="hljs-string">&#x27;signing&#x27;</span>
-apply plugin: <span class="hljs-string">&#x27;maven&#x27;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669475106.856')">Copy</button></pre>
+apply plugin: <span class="hljs-string">&#x27;maven&#x27;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670400911.3918')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -6010,10 +6010,10 @@ apply plugin: <span class="hljs-string">&#x27;maven&#x27;</span></code><button c
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475106.6738">group = <span class="hljs-string">&#x27;fr.dev-mind&#x27;</span>
+<pre class="highlight"><code class="language-java" id="1755670400911.692">group = <span class="hljs-string">&#x27;fr.dev-mind&#x27;</span>
 archivesBaseName = <span class="hljs-string">&quot;mockwebserver&quot;</span>
 version = rootProject.<span class="hljs-type">version</span>
-<span class="hljs-variable">sourceCompatibility</span> <span class="hljs-operator">=</span> <span class="hljs-number">1.8</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669475106.6738')">Copy</button></pre>
+<span class="hljs-variable">sourceCompatibility</span> <span class="hljs-operator">=</span> <span class="hljs-number">1.8</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670400911.692')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -6021,7 +6021,7 @@ version = rootProject.<span class="hljs-type">version</span>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475106.051">ext.sharedManifest = manifest {
+<pre class="highlight"><code class="language-java" id="1755670400911.5251">ext.sharedManifest = manifest {
     attributes(
             <span class="hljs-string">&quot;Implementation-Title&quot;</span>: project.name,
             <span class="hljs-string">&quot;Implementation-Version&quot;</span>: version,
@@ -6060,7 +6060,7 @@ jar {
 
 artifacts {
     archives javadocJar, sourcesJar
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475106.051')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400911.5251')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -6068,10 +6068,10 @@ artifacts {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475106.8914">signing {
+<pre class="highlight"><code class="language-java" id="1755670400911.587">signing {
     required { gradle.taskGraph.hasTask(<span class="hljs-string">&quot;uploadArchives&quot;</span>) }
     sign configurations.archives
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475106.8914')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400911.587')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -6079,7 +6079,7 @@ artifacts {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475106.178">uploadArchives {
+<pre class="highlight"><code class="language-java" id="1755670400911.2017">uploadArchives {
     repositories {
         mavenDeployer {
             beforeDeployment { MavenDeployment deployment <span class="hljs-meta">@LAMBDA</span> signing.signPom(deployment) }
@@ -6121,7 +6121,7 @@ artifacts {
             }
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475106.178')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400911.2017')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -6134,7 +6134,7 @@ artifacts {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475106.9106"><span class="hljs-meta">@dollar</span>@ gpg2 --key-gen</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475106.9106')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670400911.836"><span class="hljs-meta">@dollar</span>@ gpg2 --key-gen</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400911.836')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -6145,7 +6145,7 @@ artifacts {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475106.4663"><span class="hljs-meta">@dollar</span>@ gpg2 --version</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475106.4663')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670400911.6118"><span class="hljs-meta">@dollar</span>@ gpg2 --version</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400911.6118')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -6153,14 +6153,14 @@ artifacts {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475107.2336"><span class="hljs-meta">@dollar</span>@ gpg2 --list-secret-keys
+<pre class="highlight"><code class="language-java" id="1755670400912.0608"><span class="hljs-meta">@dollar</span>@ gpg2 --list-secret-keys
 
 /home/devmind/.gnupg/pubring.kbx
 ------------------------------
 pub   rsa2048 <span class="hljs-number">2018</span>-<span class="hljs-number">01</span>-<span class="hljs-number">13</span> [SC]
       6933FACC1931DD8A89CED163582D3134
 uid         [ultimate] Guillaume EHRET <span class="hljs-meta">@LTguillaume</span><span class="hljs-meta">@dev</span>-mind.fr<span class="hljs-meta">@GT</span>
-sub   rsa2048 <span class="hljs-number">2018</span>-<span class="hljs-number">01</span>-<span class="hljs-number">13</span> [E]</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475107.2336')">Copy</button></pre>
+sub   rsa2048 <span class="hljs-number">2018</span>-<span class="hljs-number">01</span>-<span class="hljs-number">13</span> [E]</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400912.0608')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -6168,13 +6168,13 @@ sub   rsa2048 <span class="hljs-number">2018</span>-<span class="hljs-number">01
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475107.8813"><span class="hljs-meta">@dollar</span>@ gpg2 --list-secret-keys --keyid-format <span class="hljs-type">short</span>
+<pre class="highlight"><code class="language-java" id="1755670400912.6128"><span class="hljs-meta">@dollar</span>@ gpg2 --list-secret-keys --keyid-format <span class="hljs-type">short</span>
 
 /home/devmind/.gnupg/pubring.kbx
 --------------------------------
 pub   rsa2048/C6EED57A <span class="hljs-number">2018</span>-<span class="hljs-number">01</span>-<span class="hljs-number">13</span> [SC]
 uid         [ultimate] Guillaume EHRET <span class="hljs-meta">@LTguillaume</span><span class="hljs-meta">@dev</span>-mind.fr<span class="hljs-meta">@GT</span>
-sub   rsa2048/7DY5B54F <span class="hljs-number">2018</span>-<span class="hljs-number">01</span>-<span class="hljs-number">13</span> [E]</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475107.8813')">Copy</button></pre>
+sub   rsa2048/7DY5B54F <span class="hljs-number">2018</span>-<span class="hljs-number">01</span>-<span class="hljs-number">13</span> [E]</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400912.6128')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -6182,7 +6182,7 @@ sub   rsa2048/7DY5B54F <span class="hljs-number">2018</span>-<span class="hljs-n
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475107.2942"><span class="hljs-meta">@dollar</span>@ gpg2 --keyserver hkp:<span class="hljs-comment">//pool.sks-keyservers.net --send-keys C6EED57A</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669475107.2942')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670400912.2224"><span class="hljs-meta">@dollar</span>@ gpg2 --keyserver hkp:<span class="hljs-comment">//pool.sks-keyservers.net --send-keys C6EED57A</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670400912.2224')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -6190,12 +6190,12 @@ sub   rsa2048/7DY5B54F <span class="hljs-number">2018</span>-<span class="hljs-n
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475107.5325">signing.keyId=C6EED57A
+<pre class="highlight"><code class="language-java" id="1755670400912.2527">signing.keyId=C6EED57A
 signing.password=CeciEstMonpassword
 signing.secretKeyRingFile=/home/devmind/.gnupg/secring.gpg
 
 ossrhUsername=devmind
-ossrhPassword=CeciEstMonpassword</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475107.5325')">Copy</button></pre>
+ossrhPassword=CeciEstMonpassword</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400912.2527')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -6203,9 +6203,9 @@ ossrhPassword=CeciEstMonpassword</code><button class="btn-copy-code" onclick="co
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475107.4045">* What went wrong:
+<pre class="highlight"><code class="language-java" id="1755670400912.0674">* What went wrong:
 Execution failed <span class="hljs-keyword">for</span> task <span class="hljs-string">&#x27;:signArchives&#x27;</span>.
-<span class="hljs-meta">@GT</span> Unable to read secret key from file: /home/devmind/.gnupg/secring.gpg (it may not be a PGP secret key ring)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475107.4045')">Copy</button></pre>
+<span class="hljs-meta">@GT</span> Unable to read secret key from file: /home/devmind/.gnupg/secring.gpg (it may not be a PGP secret key ring)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400912.0674')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -6213,7 +6213,7 @@ Execution failed <span class="hljs-keyword">for</span> task <span class="hljs-st
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475107.015"><span class="hljs-meta">@dollar</span>@ gpg2 --export-secret-keys <span class="hljs-meta">@GT</span> ~/.gnupg/secring.gpg</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475107.015')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670400912.1567"><span class="hljs-meta">@dollar</span>@ gpg2 --export-secret-keys <span class="hljs-meta">@GT</span> ~/.gnupg/secring.gpg</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400912.1567')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -6229,11 +6229,11 @@ Execution failed <span class="hljs-keyword">for</span> task <span class="hljs-st
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475107.5205">signing {
+<pre class="highlight"><code class="language-java" id="1755670400912.1824">signing {
     required { gradle.taskGraph.hasTask(<span class="hljs-string">&quot;uploadArchives&quot;</span>) }
     useGpgCmd()
     sign configurations.archives
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475107.5205')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400912.1824')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -6324,7 +6324,7 @@ ossrhPassword=CeciEstMonpassword</pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475079.6428"><span class="hljs-meta">@Component</span>
+<pre class="highlight"><code class="language-java" id="1755670400882.5276"><span class="hljs-meta">@Component</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ElasticMailSender</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">EmailSender</span> {
 
     <span class="hljs-keyword">private</span> WebClient webClient;
@@ -6359,7 +6359,7 @@ ossrhPassword=CeciEstMonpassword</pre>
             <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">RuntimeException</span>(response.getError());
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475079.6428')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400882.5276')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -6370,7 +6370,7 @@ ossrhPassword=CeciEstMonpassword</pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475079.0308">testCompile(<span class="hljs-string">&quot;com.squareup.okhttp3:mockwebserver:3.9.1&quot;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475079.0308')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670400882.1807">testCompile(<span class="hljs-string">&quot;com.squareup.okhttp3:mockwebserver:3.9.1&quot;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400882.1807')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -6378,7 +6378,7 @@ ossrhPassword=CeciEstMonpassword</pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475079.6763"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ElasticMailSenderTest</span> {
+<pre class="highlight"><code class="language-java" id="1755670400883.713"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ElasticMailSenderTest</span> {
     <span class="hljs-meta">@Rule</span>
     <span class="hljs-keyword">public</span> <span class="hljs-type">MockWebServer</span> <span class="hljs-variable">server</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">MockWebServer</span>();
     <span class="hljs-keyword">private</span> WebClient webClient;
@@ -6424,7 +6424,7 @@ ossrhPassword=CeciEstMonpassword</pre>
         consumer.accept(response);
         <span class="hljs-built_in">this</span>.server.enqueue(response);
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475079.6763')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400883.713')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -6432,7 +6432,7 @@ ossrhPassword=CeciEstMonpassword</pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475079.84">WebClient.create(<span class="hljs-built_in">this</span>.server.url(<span class="hljs-string">&quot;/&quot;</span>).toString())</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475079.84')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670400883.455">WebClient.create(<span class="hljs-built_in">this</span>.server.url(<span class="hljs-string">&quot;/&quot;</span>).toString())</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400883.455')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -6451,13 +6451,13 @@ ossrhPassword=CeciEstMonpassword</pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475079.6472">configurations {
+<pre class="highlight"><code class="language-java" id="1755670400883.1138">configurations {
 	all {
 		exclude <span class="hljs-keyword">module</span>: <span class="hljs-string">&quot;junit&quot;</span>
 	}
 }
 testCompile(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-api&quot;</span>)
-testRuntime(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engine&quot;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475079.6472')">Copy</button></pre>
+testRuntime(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engine&quot;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400883.1138')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -6471,7 +6471,7 @@ testRuntime(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engi
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475079.7815">testCompile(<span class="hljs-string">&quot;com.devmind:mockwebserver:0.1.0&quot;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475079.7815')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670400883.2495">testCompile(<span class="hljs-string">&quot;com.devmind:mockwebserver:0.1.0&quot;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400883.2495')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -6479,7 +6479,7 @@ testRuntime(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engi
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475080.9177"><span class="hljs-meta">@ExtendWith(MockWebServerExtension.class)</span>
+<pre class="highlight"><code class="language-java" id="1755670400883.613"><span class="hljs-meta">@ExtendWith(MockWebServerExtension.class)</span>
 <span class="hljs-keyword">class</span> <span class="hljs-title class_">MySpringWebfluxServiceTest</span> {
 
     <span class="hljs-keyword">private</span> MockWebServer server;
@@ -6518,7 +6518,7 @@ testRuntime(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engi
         <span class="hljs-built_in">this</span>.server.enqueue(response);
     }
 
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475080.9177')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400883.613')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -6526,7 +6526,7 @@ testRuntime(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engi
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475080.396"><span class="hljs-meta">@ExtendWith(MockSimpleWebServerExtension.class)</span>
+<pre class="highlight"><code class="language-java" id="1755670400884.1377"><span class="hljs-meta">@ExtendWith(MockSimpleWebServerExtension.class)</span>
 <span class="hljs-meta">@TestInstance(TestInstance.Lifecycle.PER_CLASS)</span>
 <span class="hljs-keyword">class</span> <span class="hljs-title class_">MySpringWebfluxServiceTest</span> {
 
@@ -6575,7 +6575,7 @@ testRuntime(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engi
         consumer.accept(response);
         <span class="hljs-built_in">this</span>.server.enqueue(response);
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475080.396')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400884.1377')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -6621,14 +6621,14 @@ testRuntime(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engi
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475072.9363"><span class="hljs-meta">@ConfigurationProperties(&quot;devmind&quot;)</span>
+<pre class="highlight"><code class="language-java" id="1755670400874.6987"><span class="hljs-meta">@ConfigurationProperties(&quot;devmind&quot;)</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Junit5ApplicationProperties</span> {
     <span class="hljs-keyword">private</span> String name;
 
     <span class="hljs-keyword">public</span> String <span class="hljs-title function_">getName</span><span class="hljs-params">()</span> { <span class="hljs-keyword">return</span> name; }
 
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">setName</span><span class="hljs-params">(String name)</span> { <span class="hljs-built_in">this</span>.name = name; }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475072.9363')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400874.6987')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -6636,13 +6636,13 @@ testRuntime(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engi
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475072.8777"><span class="hljs-meta">@SpringBootApplication</span>
+<pre class="highlight"><code class="language-java" id="1755670400874.2988"><span class="hljs-meta">@SpringBootApplication</span>
 <span class="hljs-meta">@EnableConfigurationProperties(Junit5ApplicationProperties.class)</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Junit5Application</span> {
 	<span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> {
 		SpringApplication.run(Junit5Application.class, args);
 	}
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475072.8777')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400874.2988')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -6650,7 +6650,7 @@ testRuntime(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engi
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475072.5837"><span class="hljs-keyword">import</span> org.assertj.core.api.Assertions;
+<pre class="highlight"><code class="language-java" id="1755670400875.3452"><span class="hljs-keyword">import</span> org.assertj.core.api.Assertions;
 <span class="hljs-keyword">import</span> org.junit.Test;
 <span class="hljs-keyword">import</span> org.junit.runner.RunWith;
 <span class="hljs-keyword">import</span> org.springframework.beans.factory.annotation.Autowired;
@@ -6669,7 +6669,7 @@ testRuntime(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engi
 		Assertions.assertThat(properties.getName()).isEqualTo(<span class="hljs-string">&quot;Dev-Mind&quot;</span>);
 	}
 
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475072.5837')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400875.3452')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -6685,7 +6685,7 @@ testRuntime(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engi
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-groovy" id="1755669475072.856">buildscript {
+<pre class="highlight"><code class="language-groovy" id="1755670400875.6616">buildscript {
 	ext {
 		springBootVersion = <span class="hljs-string">&#x27;2.0.0.M7&#x27;</span>
 	}
@@ -6715,7 +6715,7 @@ repositories {
 dependencies {
 	compile(<span class="hljs-string">&#x27;org.springframework.boot:spring-boot-starter&#x27;</span>)
 	testCompile(<span class="hljs-string">&#x27;org.springframework.boot:spring-boot-starter-test&#x27;</span>)
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475072.856')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400875.6616')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -6723,8 +6723,8 @@ dependencies {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-groovy" id="1755669475072.223">classpath(<span class="hljs-string">&quot;org.junit.platform:junit-platform-gradle-plugin:@dollar@{junitPlatformVersion}&quot;</span>)
-apply <span class="hljs-attr">plugin:</span> <span class="hljs-string">&quot;org.junit.platform.gradle.plugin&quot;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669475072.223')">Copy</button></pre>
+<pre class="highlight"><code class="language-groovy" id="1755670400875.1729">classpath(<span class="hljs-string">&quot;org.junit.platform:junit-platform-gradle-plugin:@dollar@{junitPlatformVersion}&quot;</span>)
+apply <span class="hljs-attr">plugin:</span> <span class="hljs-string">&quot;org.junit.platform.gradle.plugin&quot;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670400875.1729')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -6732,9 +6732,9 @@ apply <span class="hljs-attr">plugin:</span> <span class="hljs-string">&quot;org
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-groovy" id="1755669475072.9773">testCompile(<span class="hljs-string">&quot;org.springframework.boot:spring-boot-starter-test&quot;</span>) {
+<pre class="highlight"><code class="language-groovy" id="1755670400875.563">testCompile(<span class="hljs-string">&quot;org.springframework.boot:spring-boot-starter-test&quot;</span>) {
 	exclude <span class="hljs-attr">module:</span> <span class="hljs-string">&quot;junit&quot;</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475072.9773')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400875.563')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -6742,11 +6742,11 @@ apply <span class="hljs-attr">plugin:</span> <span class="hljs-string">&quot;org
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-groovy" id="1755669475072.6694">configurations {
+<pre class="highlight"><code class="language-groovy" id="1755670400875.7234">configurations {
 	all {
 		exclude <span class="hljs-attr">module:</span> <span class="hljs-string">&quot;junit&quot;</span>
 	}
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475072.6694')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400875.7234')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -6754,8 +6754,8 @@ apply <span class="hljs-attr">plugin:</span> <span class="hljs-string">&quot;org
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-groovy" id="1755669475073.1091">testCompile(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-api&quot;</span>)
-testRuntime(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engine&quot;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475073.1091')">Copy</button></pre>
+<pre class="highlight"><code class="language-groovy" id="1755670400875.2026">testCompile(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-api&quot;</span>)
+testRuntime(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engine&quot;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400875.2026')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -6766,7 +6766,7 @@ testRuntime(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engi
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-groovy" id="1755669475073.5918">testRuntime(<span class="hljs-string">&quot;org.junit.vintage:junit-vintage-engine:4.12.2&quot;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475073.5918')">Copy</button></pre>
+<pre class="highlight"><code class="language-groovy" id="1755670400875.538">testRuntime(<span class="hljs-string">&quot;org.junit.vintage:junit-vintage-engine:4.12.2&quot;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400875.538')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -6815,8 +6815,8 @@ testRuntime(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engi
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475073.7798"><span class="hljs-meta">@ExtendWith(MockitoExtension.class)</span>
-<span class="hljs-meta">@ExtendWith(SpringExtension.class)</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669475073.7798')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670400875.9048"><span class="hljs-meta">@ExtendWith(MockitoExtension.class)</span>
+<span class="hljs-meta">@ExtendWith(SpringExtension.class)</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670400875.9048')">Copy</button></pre>
 </div>
 </div>
 <div class="sidebarblock">
@@ -6837,7 +6837,7 @@ testRuntime(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engi
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475073.814"><span class="hljs-keyword">import</span> org.assertj.core.api.Assertions;
+<pre class="highlight"><code class="language-java" id="1755670400875.23"><span class="hljs-keyword">import</span> org.assertj.core.api.Assertions;
 <span class="hljs-keyword">import</span> org.junit.jupiter.api.Test;
 <span class="hljs-keyword">import</span> org.junit.jupiter.api.extension.ExtendWith;
 <span class="hljs-keyword">import</span> org.springframework.beans.factory.annotation.Autowired;
@@ -6856,7 +6856,7 @@ testRuntime(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engi
 		Assertions.assertThat(properties.getName()).isEqualTo(<span class="hljs-string">&quot;Dev-Mind&quot;</span>);
 	}
 
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475073.814')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400875.23')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -6867,7 +6867,7 @@ testRuntime(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engi
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475073.6035"><span class="hljs-meta">@ExtendWith(SpringExtension.class)</span>
+<pre class="highlight"><code class="language-java" id="1755670400875.4775"><span class="hljs-meta">@ExtendWith(SpringExtension.class)</span>
 <span class="hljs-meta">@ContextConfiguration({&quot;/app-config.xml&quot;, &quot;/test-data-access-config.xml&quot;})</span>
 <span class="hljs-meta">@ActiveProfiles(&quot;dev&quot;)</span>
 <span class="hljs-meta">@Transactional</span>
@@ -6877,7 +6877,7 @@ testRuntime(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engi
 <span class="hljs-meta">@ContextConfiguration({&quot;/app-config.xml&quot;, &quot;/test-data-access-config.xml&quot;})</span>
 <span class="hljs-meta">@ActiveProfiles(&quot;dev&quot;)</span>
 <span class="hljs-meta">@Transactional</span>
-<span class="hljs-keyword">class</span> <span class="hljs-title class_">UserRepositoryTests</span> { }</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475073.6035')">Copy</button></pre>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">UserRepositoryTests</span> { }</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400875.4775')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -6885,13 +6885,13 @@ testRuntime(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engi
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475073.3677"><span class="hljs-meta">@Target(ElementType.TYPE)</span>
+<pre class="highlight"><code class="language-java" id="1755670400875.5764"><span class="hljs-meta">@Target(ElementType.TYPE)</span>
 <span class="hljs-meta">@Retention(RetentionPolicy.RUNTIME)</span>
 <span class="hljs-meta">@ExtendWith(SpringExtension.class)</span>
 <span class="hljs-meta">@ContextConfiguration({&quot;/app-config.xml&quot;, &quot;/test-data-access-config.xml&quot;})</span>
 <span class="hljs-meta">@ActiveProfiles(&quot;dev&quot;)</span>
 <span class="hljs-meta">@Transactional</span>
-<span class="hljs-keyword">public</span> <span class="hljs-meta">@interface</span> TransactionalDevTestConfig { }</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475073.3677')">Copy</button></pre>
+<span class="hljs-keyword">public</span> <span class="hljs-meta">@interface</span> TransactionalDevTestConfig { }</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400875.5764')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -6899,11 +6899,11 @@ testRuntime(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engi
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475073.8777"><span class="hljs-meta">@TransactionalDevTestConfig</span>
+<pre class="highlight"><code class="language-java" id="1755670400876.3525"><span class="hljs-meta">@TransactionalDevTestConfig</span>
 <span class="hljs-keyword">class</span> <span class="hljs-title class_">OrderRepositoryTests</span> { }
 
 <span class="hljs-meta">@TransactionalDevTestConfig</span>
-<span class="hljs-keyword">class</span> <span class="hljs-title class_">UserRepositoryTests</span> { }</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475073.8777')">Copy</button></pre>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">UserRepositoryTests</span> { }</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400876.3525')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -6923,11 +6923,11 @@ testRuntime(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engi
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475073.5027"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">CallForPaperService</span> {
+<pre class="highlight"><code class="language-java" id="1755670400876.282"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">CallForPaperService</span> {
     <span class="hljs-keyword">void</span> <span class="hljs-title function_">submit</span><span class="hljs-params">(Proposal proposal)</span>;
     <span class="hljs-keyword">void</span> <span class="hljs-title function_">accept</span><span class="hljs-params">(Proposal proposal)</span>;
     <span class="hljs-keyword">void</span> <span class="hljs-title function_">refuse</span><span class="hljs-params">(Proposal proposal)</span>;
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475073.5027')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400876.282')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -6935,7 +6935,7 @@ testRuntime(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engi
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475073.1"><span class="hljs-keyword">class</span> <span class="hljs-title class_">CallForPaperServiceTests</span> {
+<pre class="highlight"><code class="language-java" id="1755670400876.3674"><span class="hljs-keyword">class</span> <span class="hljs-title class_">CallForPaperServiceTests</span> {
 
     <span class="hljs-meta">@Test</span>
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">submitShouldFailWhenRequiredDataAreAbsent</span><span class="hljs-params">()</span>{  }
@@ -6953,7 +6953,7 @@ testRuntime(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engi
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">acceptShouldFailWhenSpeakerEmailCantBeSend</span><span class="hljs-params">()</span>{  }
 
     <span class="hljs-comment">// ... on peut imaginer des dizaines de tests suppl\xE9mentaires avec des noms beaucoup plus long</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475073.1')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400876.3674')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -6969,7 +6969,7 @@ testRuntime(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engi
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669475074.4307"><span class="hljs-title function_">it</span>(<span class="hljs-string">&#x27;submit should fail when required data are absent&#x27;</span>, <span class="hljs-function">() =&gt;</span> { });</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475074.4307')">Copy</button></pre>
+<pre class="highlight"><code class="language-javascript" id="1755670400876.1475"><span class="hljs-title function_">it</span>(<span class="hljs-string">&#x27;submit should fail when required data are absent&#x27;</span>, <span class="hljs-function">() =&gt;</span> { });</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400876.1475')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -6977,8 +6977,8 @@ testRuntime(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engi
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475074.751"><span class="hljs-meta">@Test</span>
-fun <span class="hljs-meta">@backtick</span><span class="hljs-meta">@submit</span> should fail when required data are absent<span class="hljs-meta">@backtick</span>@() {  }</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475074.751')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670400876.781"><span class="hljs-meta">@Test</span>
+fun <span class="hljs-meta">@backtick</span><span class="hljs-meta">@submit</span> should fail when required data are absent<span class="hljs-meta">@backtick</span>@() {  }</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400876.781')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -6986,7 +6986,7 @@ fun <span class="hljs-meta">@backtick</span><span class="hljs-meta">@submit</spa
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475074.809"><span class="hljs-meta">@DisplayName(&quot;Test service CallForPaperService&quot;)</span>
+<pre class="highlight"><code class="language-java" id="1755670400876.4954"><span class="hljs-meta">@DisplayName(&quot;Test service CallForPaperService&quot;)</span>
 <span class="hljs-keyword">class</span> <span class="hljs-title class_">CallForPaperServiceTests</span> {
 
     <span class="hljs-meta">@Test</span>
@@ -7008,7 +7008,7 @@ fun <span class="hljs-meta">@backtick</span><span class="hljs-meta">@submit</spa
     <span class="hljs-meta">@Test</span>
     <span class="hljs-meta">@DisplayName(&quot;accept should fail when speaker email can&#x27;t be send&quot;)</span>
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">acceptFailOnEmailError</span><span class="hljs-params">()</span>{ }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475074.809')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400876.4954')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -7024,7 +7024,7 @@ fun <span class="hljs-meta">@backtick</span><span class="hljs-meta">@submit</spa
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475074.577"><span class="hljs-meta">@DisplayName(&quot;Test service CallForPaperService&quot;)</span>
+<pre class="highlight"><code class="language-java" id="1755670400877.0757"><span class="hljs-meta">@DisplayName(&quot;Test service CallForPaperService&quot;)</span>
 <span class="hljs-keyword">class</span> <span class="hljs-title class_">CallForPaperServiceTests</span> {
 
     <span class="hljs-meta">@Nested</span>
@@ -7055,7 +7055,7 @@ fun <span class="hljs-meta">@backtick</span><span class="hljs-meta">@submit</spa
         <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">acceptFailOnEmailError</span><span class="hljs-params">()</span>{  }
     }
 
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475074.577')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400877.0757')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -7080,12 +7080,12 @@ fun <span class="hljs-meta">@backtick</span><span class="hljs-meta">@submit</spa
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475074.8699"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-java" id="1755670400877.6667"><span class="hljs-meta">@Test</span>
 <span class="hljs-meta">@DisplayName(&quot;should send email to session speakers&quot;)</span>
 <span class="hljs-meta">@RepeatedTest(10)</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">acceptSendEmailToSessionSpeakers</span><span class="hljs-params">()</span>{
     assertThat(<span class="hljs-literal">true</span>).isTrue();
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475074.8699')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400877.6667')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -7104,7 +7104,7 @@ fun <span class="hljs-meta">@backtick</span><span class="hljs-meta">@submit</spa
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475074.3123"><span class="hljs-meta">@Category({IntegrationTest.class, Exernal.class})</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669475074.3123')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670400877.8909"><span class="hljs-meta">@Category({IntegrationTest.class, Exernal.class})</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670400877.8909')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -7112,8 +7112,8 @@ fun <span class="hljs-meta">@backtick</span><span class="hljs-meta">@submit</spa
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475075.869"><span class="hljs-meta">@Tag(&quot;integration&quot;)</span>
-<span class="hljs-meta">@Tag(&quot;exernal&quot;)</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669475075.869')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670400877.509"><span class="hljs-meta">@Tag(&quot;integration&quot;)</span>
+<span class="hljs-meta">@Tag(&quot;exernal&quot;)</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670400877.509')">Copy</button></pre>
 </div>
 </div>
 <div class="sidebarblock">
@@ -7131,7 +7131,7 @@ fun <span class="hljs-meta">@backtick</span><span class="hljs-meta">@submit</spa
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475075.668">junitPlatform {
+<pre class="highlight"><code class="language-java" id="1755670400877.9639">junitPlatform {
     filters {
         tags {
             include <span class="hljs-string">&#x27;fast&#x27;</span>, <span class="hljs-string">&#x27;smoke&#x27;</span>
@@ -7143,7 +7143,7 @@ fun <span class="hljs-meta">@backtick</span><span class="hljs-meta">@submit</spa
         includeClassNamePattern <span class="hljs-string">&#x27;.*Spec&#x27;</span>
         includeClassNamePatterns <span class="hljs-string">&#x27;.*Test&#x27;</span>, <span class="hljs-string">&#x27;.*Tests&#x27;</span>
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475075.668')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400877.9639')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -7166,9 +7166,9 @@ fun <span class="hljs-meta">@backtick</span><span class="hljs-meta">@submit</spa
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475127.2903"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">EmailSender</span> {
+<pre class="highlight"><code class="language-java" id="1755670400933.581"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">EmailSender</span> {
     <span class="hljs-keyword">void</span> <span class="hljs-title function_">send</span><span class="hljs-params">(EmailMessage email)</span>;
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475127.2903')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400933.581')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -7192,7 +7192,7 @@ fun <span class="hljs-meta">@backtick</span><span class="hljs-meta">@submit</spa
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475127.593">  compile(<span class="hljs-string">&#x27;org.springframework.boot:spring-boot-starter-mail&#x27;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475127.593')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670400933.9094">  compile(<span class="hljs-string">&#x27;org.springframework.boot:spring-boot-starter-mail&#x27;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400933.9094')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -7200,7 +7200,7 @@ fun <span class="hljs-meta">@backtick</span><span class="hljs-meta">@submit</spa
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475127.7478">spring:
+<pre class="highlight"><code class="language-java" id="1755670400933.1846">spring:
   mail:
     protocol: smtp
     host: smtp.gmail.com
@@ -7212,7 +7212,7 @@ fun <span class="hljs-meta">@backtick</span><span class="hljs-meta">@submit</spa
         smtp:
           auth: <span class="hljs-literal">true</span>
           starttls:
-            enable: <span class="hljs-literal">true</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669475127.7478')">Copy</button></pre>
+            enable: <span class="hljs-literal">true</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670400933.1846')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -7220,7 +7220,7 @@ fun <span class="hljs-meta">@backtick</span><span class="hljs-meta">@submit</spa
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475127.5183"><span class="hljs-meta">@Component</span>
+<pre class="highlight"><code class="language-java" id="1755670400933.741"><span class="hljs-meta">@Component</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">GmailSender</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">EmailSender</span> {
 
     <span class="hljs-keyword">private</span> JavaMailSender javaMailSender;
@@ -7244,7 +7244,7 @@ fun <span class="hljs-meta">@backtick</span><span class="hljs-meta">@submit</spa
             <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">RuntimeException</span>(e);
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475127.5183')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400933.741')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -7274,7 +7274,7 @@ fun <span class="hljs-meta">@backtick</span><span class="hljs-meta">@submit</spa
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475127.9758">  compile(<span class="hljs-string">&#x27;com.sendgrid:sendgrid-java:4.1.2&#x27;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475127.9758')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670400933.6165">  compile(<span class="hljs-string">&#x27;com.sendgrid:sendgrid-java:4.1.2&#x27;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400933.6165')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -7282,9 +7282,9 @@ fun <span class="hljs-meta">@backtick</span><span class="hljs-meta">@submit</spa
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475128.0125">spring:
+<pre class="highlight"><code class="language-java" id="1755670400933.888">spring:
   sendgrid:
-      api-key: <span class="hljs-meta">@dollar</span>@{SENDGRID_APIKEY:Bar12345Bar12345}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475128.0125')">Copy</button></pre>
+      api-key: <span class="hljs-meta">@dollar</span>@{SENDGRID_APIKEY:Bar12345Bar12345}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400933.888')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -7292,7 +7292,7 @@ fun <span class="hljs-meta">@backtick</span><span class="hljs-meta">@submit</spa
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475128.609"><span class="hljs-meta">@Component</span>
+<pre class="highlight"><code class="language-java" id="1755670400933.6067"><span class="hljs-meta">@Component</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SendgridSender</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">EmailSender</span> {
 
     <span class="hljs-keyword">private</span> SendGrid sendGrid;
@@ -7320,7 +7320,7 @@ fun <span class="hljs-meta">@backtick</span><span class="hljs-meta">@submit</spa
             <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">RuntimeException</span>(ex);
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475128.609')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400933.6067')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -7342,8 +7342,8 @@ fun <span class="hljs-meta">@backtick</span><span class="hljs-meta">@submit</spa
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475128.573">compile(<span class="hljs-string">&quot;org.springframework.boot:spring-boot-starter-webflux&quot;</span>)
-testCompile(<span class="hljs-string">&quot;com.squareup.okhttp3:mockwebserver:3.9.1&quot;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475128.573')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670400933.698">compile(<span class="hljs-string">&quot;org.springframework.boot:spring-boot-starter-webflux&quot;</span>)
+testCompile(<span class="hljs-string">&quot;com.squareup.okhttp3:mockwebserver:3.9.1&quot;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400933.698')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -7354,11 +7354,11 @@ testCompile(<span class="hljs-string">&quot;com.squareup.okhttp3:mockwebserver:3
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475128.194">devmind:
+<pre class="highlight"><code class="language-java" id="1755670400933.4612">devmind:
   elasticmail:
     apikey: <span class="hljs-meta">@dollar</span>@{ELASTICMAIL_APIKEY:Bar12345Bar12345}
     host: <span class="hljs-meta">@dollar</span>@{ELASTICMAIL_HOST:https:<span class="hljs-comment">//api.elasticemail.com}</span>
-    version: <span class="hljs-meta">@dollar</span>@{ELASTICMAIL_VERSION:v2}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475128.194')">Copy</button></pre>
+    version: <span class="hljs-meta">@dollar</span>@{ELASTICMAIL_VERSION:v2}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400933.4612')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -7366,7 +7366,7 @@ testCompile(<span class="hljs-string">&quot;com.squareup.okhttp3:mockwebserver:3
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475128.8376"><span class="hljs-meta">@Component</span>
+<pre class="highlight"><code class="language-java" id="1755670400934.8665"><span class="hljs-meta">@Component</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ElasticMailSender</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">EmailSender</span> {
 
     <span class="hljs-meta">@Autowired</span>
@@ -7404,7 +7404,7 @@ testCompile(<span class="hljs-string">&quot;com.squareup.okhttp3:mockwebserver:3
             <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">RuntimeException</span>(response.getError());
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475128.8376')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400934.8665')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -7412,7 +7412,7 @@ testCompile(<span class="hljs-string">&quot;com.squareup.okhttp3:mockwebserver:3
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669475129.4614"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ElasticMailSenderTest</span> {
+<pre class="highlight"><code class="language-java" id="1755670400934.9758"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ElasticMailSenderTest</span> {
 
     <span class="hljs-meta">@Rule</span>
     <span class="hljs-keyword">public</span> <span class="hljs-type">MockitoRule</span> <span class="hljs-variable">rule</span> <span class="hljs-operator">=</span> MockitoJUnit.rule();
@@ -7469,7 +7469,7 @@ testCompile(<span class="hljs-string">&quot;com.squareup.okhttp3:mockwebserver:3
         consumer.accept(response);
         <span class="hljs-built_in">this</span>.server.enqueue(response);
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475129.4614')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400934.9758')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -7546,7 +7546,7 @@ testCompile(<span class="hljs-string">&quot;com.squareup.okhttp3:mockwebserver:3
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669475058.9688">gulp.<span class="hljs-title function_">task</span>(<span class="hljs-string">&#x27;images-min&#x27;</span>, <span class="hljs-function">() =&gt;</span>
+<pre class="highlight"><code class="language-javascript" id="1755670400861.8032">gulp.<span class="hljs-title function_">task</span>(<span class="hljs-string">&#x27;images-min&#x27;</span>, <span class="hljs-function">() =&gt;</span>
   gulp.<span class="hljs-title function_">src</span>(<span class="hljs-string">&#x27;src/images/**/*.{svg,png,jpg}&#x27;</span>)
     .<span class="hljs-title function_">pipe</span>(<span class="hljs-title function_">imagemin</span>([imagemin.<span class="hljs-title function_">gifsicle</span>(), <span class="hljs-title function_">imageminMozjpeg</span>(), imagemin.<span class="hljs-title function_">optipng</span>(), imagemin.<span class="hljs-title function_">svgo</span>()], {
       <span class="hljs-attr">progressive</span>: <span class="hljs-literal">true</span>,
@@ -7557,7 +7557,7 @@ testCompile(<span class="hljs-string">&quot;com.squareup.okhttp3:mockwebserver:3
     .<span class="hljs-title function_">pipe</span>(@dollar@.<span class="hljs-title function_">if</span>(<span class="hljs-string">&#x27;**/*.{jpg,png}&#x27;</span>, @dollar@.<span class="hljs-title function_">webp</span>()))
     .<span class="hljs-title function_">pipe</span>(@dollar@.<span class="hljs-title function_">size</span>({<span class="hljs-attr">title</span>: <span class="hljs-string">&#x27;images&#x27;</span>, <span class="hljs-attr">showFiles</span>: <span class="hljs-literal">false</span>}))
     .<span class="hljs-title function_">pipe</span>(gulp.<span class="hljs-title function_">dest</span>(<span class="hljs-string">&#x27;build/.tmp/img&#x27;</span>))
-);</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475058.9688')">Copy</button></pre>
+);</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400861.8032')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -7568,7 +7568,7 @@ testCompile(<span class="hljs-string">&quot;com.squareup.okhttp3:mockwebserver:3
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669475058.0544"><span class="hljs-keyword">const</span> map = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;map-stream&#x27;</span>);
+<pre class="highlight"><code class="language-javascript" id="1755670400861.6536"><span class="hljs-keyword">const</span> map = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;map-stream&#x27;</span>);
 
 <span class="hljs-variable language_">module</span>.<span class="hljs-property">exports</span> = <span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) {
   <span class="hljs-keyword">return</span> <span class="hljs-title function_">map</span>(<span class="hljs-function">(<span class="hljs-params">file, next</span>) =&gt;</span> {
@@ -7578,7 +7578,7 @@ testCompile(<span class="hljs-string">&quot;com.squareup.okhttp3:mockwebserver:3
     file.<span class="hljs-property">path</span> = file.<span class="hljs-property">path</span>.<span class="hljs-title function_">replace</span>(<span class="hljs-string">&#x27;.adoc&#x27;</span>, <span class="hljs-string">&#x27;.html&#x27;</span>);
     <span class="hljs-title function_">next</span>(<span class="hljs-literal">null</span>, file);
   });
-};</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475058.0544')">Copy</button></pre>
+};</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400861.6536')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -7586,7 +7586,7 @@ testCompile(<span class="hljs-string">&quot;com.squareup.okhttp3:mockwebserver:3
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669475059.2173">gulp.<span class="hljs-title function_">task</span>(<span class="hljs-string">&#x27;blog-indexing&#x27;</span>, <span class="hljs-function">(<span class="hljs-params">cb</span>) =&gt;</span> {
+<pre class="highlight"><code class="language-javascript" id="1755670400862.5706">gulp.<span class="hljs-title function_">task</span>(<span class="hljs-string">&#x27;blog-indexing&#x27;</span>, <span class="hljs-function">(<span class="hljs-params">cb</span>) =&gt;</span> {
   gulp.<span class="hljs-title function_">src</span>(<span class="hljs-string">&#x27;src/blog/**/*.adoc&#x27;</span>)
     .<span class="hljs-title function_">pipe</span>(<span class="hljs-title function_">readAsciidoc</span>(modeDev))
     .<span class="hljs-title function_">pipe</span>(<span class="hljs-title function_">convertToHtml</span>())
@@ -7594,7 +7594,7 @@ testCompile(<span class="hljs-string">&quot;com.squareup.okhttp3:mockwebserver:3
     .<span class="hljs-title function_">pipe</span>(<span class="hljs-title function_">convertToJson</span>(<span class="hljs-string">&#x27;blogindex.json&#x27;</span>))
     .<span class="hljs-title function_">pipe</span>(gulp.<span class="hljs-title function_">dest</span>(<span class="hljs-string">&#x27;build/.tmp&#x27;</span>))
     .<span class="hljs-title function_">on</span>(<span class="hljs-string">&#x27;end&#x27;</span>, <span class="hljs-function">() =&gt;</span> <span class="hljs-title function_">cb</span>())
-});</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475059.2173')">Copy</button></pre>
+});</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400862.5706')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -7703,14 +7703,14 @@ testCompile(<span class="hljs-string">&quot;com.squareup.okhttp3:mockwebserver:3
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669475059.7368"><span class="hljs-variable language_">module</span>.<span class="hljs-property">exports</span> = {
+<pre class="highlight"><code class="language-javascript" id="1755670400862.2817"><span class="hljs-variable language_">module</span>.<span class="hljs-property">exports</span> = {
   <span class="hljs-string">&quot;apiKey&quot;</span>: process.<span class="hljs-property">env</span>.<span class="hljs-property">DEVMIND_API_KEY</span>,
   <span class="hljs-string">&quot;authDomain&quot;</span>: process.<span class="hljs-property">env</span>.<span class="hljs-property">DEVMIND_AUTH_DOMAIN</span>,
   <span class="hljs-string">&quot;databaseURL&quot;</span>: process.<span class="hljs-property">env</span>.<span class="hljs-property">DEVMIND_DATABASE_URL</span>,
   <span class="hljs-string">&quot;storageBucket&quot;</span>: process.<span class="hljs-property">env</span>.<span class="hljs-property">DEVMIND_STORAGE_BUCKET</span>,
   <span class="hljs-string">&quot;user&quot;</span>: process.<span class="hljs-property">env</span>.<span class="hljs-property">DEVMIND_USER_MAIL</span>,
   <span class="hljs-string">&quot;password&quot;</span>: process.<span class="hljs-property">env</span>.<span class="hljs-property">DEVMIND_PASSWORD</span>
-};</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475059.7368')">Copy</button></pre>
+};</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400862.2817')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -7718,14 +7718,14 @@ testCompile(<span class="hljs-string">&quot;com.squareup.okhttp3:mockwebserver:3
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669475059.4624">{
+<pre class="highlight"><code class="language-javascript" id="1755670400862.535">{
   <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;dev-mind.com&quot;</span>,
   <span class="hljs-string">&quot;repository&quot;</span>: <span class="hljs-string">&quot;https://github.com/Dev-Mind/dev-mind.com.git&quot;</span>,
   <span class="hljs-string">&quot;scripts&quot;</span>: {
     <span class="hljs-string">&quot;install&quot;</span>: <span class="hljs-string">&quot;gulp&quot;</span>,
     <span class="hljs-string">&quot;dev&quot;</span>: <span class="hljs-string">&quot;gulp serve&quot;</span>
   }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475059.4624')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400862.535')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -7736,11 +7736,11 @@ testCompile(<span class="hljs-string">&quot;com.squareup.okhttp3:mockwebserver:3
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669475060.8276">{
+<pre class="highlight"><code class="language-javascript" id="1755670400862.3633">{
   <span class="hljs-string">&quot;deploy&quot;</span>: {
     <span class="hljs-string">&quot;webroot&quot;</span>: <span class="hljs-string">&quot;/build/dist&quot;</span>
   }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669475060.8276')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400862.3633')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -7920,14 +7920,14 @@ testCompile(<span class="hljs-string">&quot;com.squareup.okhttp3:mockwebserver:3
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-html" id="1755669474837.928"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;grid&quot;</span>&gt;</span>
+<pre class="highlight"><code class="language-html" id="1755670400725.3843"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;grid&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;one&quot;</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;two&quot;</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;three&quot;</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;four&quot;</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;five&quot;</span>&gt;</span>5<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;six&quot;</span>&gt;</span>6<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474837.928')">Copy</button></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670400725.3843')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -7937,7 +7937,7 @@ testCompile(<span class="hljs-string">&quot;com.squareup.okhttp3:mockwebserver:3
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-css" id="1755669474843.191"><span class="hljs-selector-class">.grid</span>{
+<pre class="highlight"><code class="language-css" id="1755670400731.1287"><span class="hljs-selector-class">.grid</span>{
 		<span class="hljs-attribute">display</span>: grid;
     <span class="hljs-attribute">grid-template-columns</span>: <span class="hljs-built_in">repeat</span>(<span class="hljs-number">3</span>, <span class="hljs-number">1</span>fr);
     <span class="hljs-attribute">grid-gap</span>: <span class="hljs-number">1em</span>;
@@ -7973,7 +7973,7 @@ testCompile(<span class="hljs-string">&quot;com.squareup.okhttp3:mockwebserver:3
   <span class="hljs-selector-class">.six</span> {
     <span class="hljs-attribute">grid-column</span>: <span class="hljs-number">3</span>;
     <span class="hljs-attribute">grid-row</span>: <span class="hljs-number">4</span>;
-  }</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474843.191')">Copy</button></pre>
+  }</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400731.1287')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -7993,14 +7993,14 @@ testCompile(<span class="hljs-string">&quot;com.squareup.okhttp3:mockwebserver:3
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669474843.9512"><span class="hljs-keyword">if</span>(!<span class="hljs-string">&#x27;grid&#x27;</span> <span class="hljs-keyword">in</span> <span class="hljs-variable language_">document</span>.<span class="hljs-property">body</span>.<span class="hljs-property">style</span>){
+<pre class="highlight"><code class="language-javascript" id="1755670400732.8123"><span class="hljs-keyword">if</span>(!<span class="hljs-string">&#x27;grid&#x27;</span> <span class="hljs-keyword">in</span> <span class="hljs-variable language_">document</span>.<span class="hljs-property">body</span>.<span class="hljs-property">style</span>){
   <span class="hljs-keyword">var</span> head  = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementsByTagName</span>(<span class="hljs-string">&#x27;head&#x27;</span>)[<span class="hljs-number">0</span>];
   <span class="hljs-keyword">var</span> link  = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">&#x27;link&#x27;</span>);
   link.<span class="hljs-property">rel</span>  = <span class="hljs-string">&#x27;stylesheet&#x27;</span>;
   link.<span class="hljs-property">type</span> = <span class="hljs-string">&#x27;text/css&#x27;</span>;
   link.<span class="hljs-property">href</span> = <span class="hljs-string">&#x27;styles/fallbax.css&#x27;</span>;
   head.<span class="hljs-title function_">appendChild</span>(link);
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474843.9512')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400732.8123')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -8041,7 +8041,7 @@ testCompile(<span class="hljs-string">&quot;com.squareup.okhttp3:mockwebserver:3
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669474844.3984">.<span class="hljs-property">at</span>[<span class="hljs-title class_">Breakpoint</span>]_[property]--[variant]</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474844.3984')">Copy</button></pre>
+<pre class="highlight"><code class="language-javascript" id="1755670400732.2336">.<span class="hljs-property">at</span>[<span class="hljs-title class_">Breakpoint</span>]_[property]--[variant]</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400732.2336')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -8087,8 +8087,8 @@ testCompile(<span class="hljs-string">&quot;com.squareup.okhttp3:mockwebserver:3
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-css" id="1755669474844.3972"><span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">20em</span>) <span class="hljs-keyword">and</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">40em</span>){
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474844.3972')">Copy</button></pre>
+<pre class="highlight"><code class="language-css" id="1755670400732.4155"><span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">20em</span>) <span class="hljs-keyword">and</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">40em</span>){
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400732.4155')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -8096,7 +8096,7 @@ testCompile(<span class="hljs-string">&quot;com.squareup.okhttp3:mockwebserver:3
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-css" id="1755669474844.9294"><span class="hljs-keyword">@media</span> (<span class="hljs-number">20em</span> &lt;= <span class="hljs-attribute">width</span> &lt;=<span class="hljs-string">&quot;40em){&quot;</span> }&lt; code&gt;&lt;/=&gt;</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474844.9294')">Copy</button></pre>
+<pre class="highlight"><code class="language-css" id="1755670400732.7483"><span class="hljs-keyword">@media</span> (<span class="hljs-number">20em</span> &lt;= <span class="hljs-attribute">width</span> &lt;=<span class="hljs-string">&quot;40em){&quot;</span> }&lt; code&gt;&lt;/=&gt;</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400732.7483')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -8104,10 +8104,10 @@ testCompile(<span class="hljs-string">&quot;com.squareup.okhttp3:mockwebserver:3
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-css" id="1755669474844.6106"><span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">20em</span>), <span class="hljs-keyword">not</span> all <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-height</span>: <span class="hljs-number">40em</span>){
+<pre class="highlight"><code class="language-css" id="1755670400732.6406"><span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">20em</span>), <span class="hljs-keyword">not</span> all <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-height</span>: <span class="hljs-number">40em</span>){
    <span class="hljs-keyword">@media</span> <span class="hljs-keyword">not</span> all <span class="hljs-keyword">and</span> (<span class="hljs-attribute">pointer</span>:none){
    }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474844.6106')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400732.6406')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -8115,8 +8115,8 @@ testCompile(<span class="hljs-string">&quot;com.squareup.okhttp3:mockwebserver:3
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-css" id="1755669474844.6152"><span class="hljs-keyword">@media</span> ((<span class="hljs-attribute">width</span> &gt;= <span class="hljs-number">20em</span>) <span class="hljs-keyword">or</span> (<span class="hljs-attribute">height</span> &lt; <span class="hljs-number">40em</span>)) <span class="hljs-keyword">and</span> (<span class="hljs-keyword">not</span> (<span class="hljs-attribute">pointer</span>:none)){
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474844.6152')">Copy</button></pre>
+<pre class="highlight"><code class="language-css" id="1755670400733.3762"><span class="hljs-keyword">@media</span> ((<span class="hljs-attribute">width</span> &gt;= <span class="hljs-number">20em</span>) <span class="hljs-keyword">or</span> (<span class="hljs-attribute">height</span> &lt; <span class="hljs-number">40em</span>)) <span class="hljs-keyword">and</span> (<span class="hljs-keyword">not</span> (<span class="hljs-attribute">pointer</span>:none)){
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400733.3762')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -8144,7 +8144,7 @@ testCompile(<span class="hljs-string">&quot;com.squareup.okhttp3:mockwebserver:3
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-css" id="1755669474844.3928">&lt;link href=&quot;https://fonts.googleapis.com/css?family=Lato<span class="hljs-string">&quot; rel=&quot;</span>stylesheet<span class="hljs-string">&quot;&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474844.3928')">Copy</button></pre>
+<pre class="highlight"><code class="language-css" id="1755670400733.8782">&lt;link href=&quot;https://fonts.googleapis.com/css?family=Lato<span class="hljs-string">&quot; rel=&quot;</span>stylesheet<span class="hljs-string">&quot;&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670400733.8782')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -8267,7 +8267,7 @@ HTTP 2 n\u2019impose pas de s\xE9curiser les \xE9changes en cryptant les informa
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474859.4631">telnet www.google.fr <span class="hljs-number">80</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474859.4631')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670400750.9377">telnet www.google.fr <span class="hljs-number">80</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670400750.9377')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -8282,9 +8282,9 @@ HTTP 2 n\u2019impose pas de s\xE9curiser les \xE9changes en cryptant les informa
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474859.3594">GET / HTTP/<span class="hljs-number">1.1</span>
+<pre class="highlight"><code class="language-java" id="1755670400750.6711">GET / HTTP/<span class="hljs-number">1.1</span>
 Host: www.google.fr
-Accept-Language: fr</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474859.3594')">Copy</button></pre>
+Accept-Language: fr</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400750.6711')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -8292,7 +8292,7 @@ Accept-Language: fr</code><button class="btn-copy-code" onclick="copyToClipboard
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474859.577">HTTP/<span class="hljs-number">1.1</span> <span class="hljs-number">200</span> OK
+<pre class="highlight"><code class="language-java" id="1755670400751.9617">HTTP/<span class="hljs-number">1.1</span> <span class="hljs-number">200</span> OK
 Date: Tue, <span class="hljs-number">12</span> Jul <span class="hljs-number">2016</span> <span class="hljs-number">07</span>:<span class="hljs-number">10</span>:<span class="hljs-number">23</span> GMT
 Expires: -<span class="hljs-number">1</span>
 Cache-Control: <span class="hljs-keyword">private</span>, max-age=<span class="hljs-number">0</span>
@@ -8308,7 +8308,7 @@ Transfer-Encoding: chunked
 
 <span class="hljs-meta">@LT</span>!doctype html<span class="hljs-meta">@GT</span><span class="hljs-meta">@LThtml</span> itemscope=<span class="hljs-string">&quot;&quot;</span> itemtype=<span class="hljs-string">&quot;http://schema.org/WebPage&quot;</span> lang=<span class="hljs-string">&quot;fr&quot;</span><span class="hljs-meta">@GT</span><span class="hljs-meta">@LThead</span><span class="hljs-meta">@GT</span><span class="hljs-meta">@LTmeta</span> content=<span class="hljs-string">&quot;text/html; charset=UTF-8&quot;</span> http-equiv=<span class="hljs-string">&quot;Content-Type&quot;</span><span class="hljs-meta">@GT</span><span class="hljs-meta">@LTmeta</span> content=<span class="hljs-string">&quot;/images/branding/googleg/1x/googleg_standard_color_128dp.png&quot;</span> itemprop=<span class="hljs-string">&quot;image&quot;</span><span class="hljs-meta">@GT</span>
 <span class="hljs-comment">//\u2026\u2026\u2026..</span>
-<span class="hljs-meta">@LT</span>/html<span class="hljs-meta">@GT</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474859.577')">Copy</button></pre>
+<span class="hljs-meta">@LT</span>/html<span class="hljs-meta">@GT</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670400751.9617')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -8679,7 +8679,7 @@ Transfer-Encoding: chunked
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474888.7622">protocol::<span class="hljs-comment">//user:password@server:port/path/resource?param1=value1&amp;amp;param2=value2</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474888.7622')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670400783.3413">protocol::<span class="hljs-comment">//user:password@server:port/path/resource?param1=value1&amp;amp;param2=value2</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670400783.3413')">Copy</button></pre>
 </div>
 </div>
 <div class="sect3">
@@ -8698,7 +8698,7 @@ Transfer-Encoding: chunked
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474888.7622">protocol::<span class="hljs-comment">//server/path/resource?param1=value1&amp;amp;param2=value2</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474888.7622')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670400783.058">protocol::<span class="hljs-comment">//server/path/resource?param1=value1&amp;amp;param2=value2</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670400783.058')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -8762,7 +8762,7 @@ Transfer-Encoding: chunked
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474888.112">https:<span class="hljs-comment">//www.dev-mind.fr/api/conference?name=Mix-IT</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474888.112')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670400783.1543">https:<span class="hljs-comment">//www.dev-mind.fr/api/conference?name=Mix-IT</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670400783.1543')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -8780,11 +8780,11 @@ Transfer-Encoding: chunked
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-html" id="1755669474888.8696"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;\u201Dpart1\u201D&quot;</span>&gt;</span>
+<pre class="highlight"><code class="language-html" id="1755670400785.6294"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;\u201Dpart1\u201D&quot;</span>&gt;</span>
   <span class="hljs-comment">&lt;!-- code --&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
   <span class="hljs-comment">&lt;!-- code --&gt;</span>
-</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474888.8696')">Copy</button></pre>
+</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400785.6294')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -9333,7 +9333,7 @@ Une RFC peut avoir plusieurs status : Proposed Standard, Draft Standard et Inter
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669474897.6843">gulp.<span class="hljs-title function_">task</span>(<span class="hljs-string">&#x27;bundle-sw&#x27;</span>, <span class="hljs-function">() =&gt;</span> {
+<pre class="highlight"><code class="language-javascript" id="1755670400794.1184">gulp.<span class="hljs-title function_">task</span>(<span class="hljs-string">&#x27;bundle-sw&#x27;</span>, <span class="hljs-function">() =&gt;</span> {
 
   <span class="hljs-keyword">return</span> wbBuild.<span class="hljs-title function_">generateSW</span>({
     <span class="hljs-attr">cacheId</span>: <span class="hljs-string">&#x27;dev-mind&#x27;</span>,
@@ -9348,7 +9348,7 @@ Une RFC peut avoir plusieurs status : Proposed Standard, Draft Standard et Inter
     .<span class="hljs-title function_">catch</span>(<span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
       <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;[ERROR] This happened: &#x27;</span> + err);
     });
-});</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474897.6843')">Copy</button></pre>
+});</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400794.1184')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -9356,7 +9356,7 @@ Une RFC peut avoir plusieurs status : Proposed Standard, Draft Standard et Inter
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669474897.525">importScripts(<span class="hljs-string">&#x27;workbox-sw.prod.v1.0.1.js&#x27;</span>);
+<pre class="highlight"><code class="language-javascript" id="1755670400795.0544">importScripts(<span class="hljs-string">&#x27;workbox-sw.prod.v1.0.1.js&#x27;</span>);
 
 <span class="hljs-keyword">const</span> fileManifest = [
   {
@@ -9370,7 +9370,7 @@ Une RFC peut avoir plusieurs status : Proposed Standard, Draft Standard et Inter
   <span class="hljs-string">&quot;cacheId&quot;</span>: <span class="hljs-string">&quot;dev-mind&quot;</span>,
   <span class="hljs-string">&quot;clientsClaim&quot;</span>: <span class="hljs-literal">true</span>
 });
-workboxSW.<span class="hljs-title function_">precache</span>(fileManifest);</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474897.525')">Copy</button></pre>
+workboxSW.<span class="hljs-title function_">precache</span>(fileManifest);</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400795.0544')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -9430,7 +9430,7 @@ workboxSW.<span class="hljs-title function_">precache</span>(fileManifest);</cod
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669474899.0388"> <span class="hljs-keyword">const</span> assetRoute = <span class="hljs-keyword">new</span> <span class="hljs-title class_">RegExpRoute</span>({
+<pre class="highlight"><code class="language-javascript" id="1755670400796.6697"> <span class="hljs-keyword">const</span> assetRoute = <span class="hljs-keyword">new</span> <span class="hljs-title class_">RegExpRoute</span>({
    <span class="hljs-attr">regExp</span>: <span class="hljs-regexp">/assets/</span>,
    <span class="hljs-attr">handler</span>: <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">runtimeCaching</span>.<span class="hljs-title class_">StaleWhileRevalidate</span>(),
  });
@@ -9446,7 +9446,7 @@ workboxSW.<span class="hljs-title function_">precache</span>(fileManifest);</cod
  router.<span class="hljs-title function_">registerRoutes</span>({<span class="hljs-attr">routes</span>: [assetRoute, imageRoute, expressRoute]});
  router.<span class="hljs-title function_">setDefaultHandler</span>({
    <span class="hljs-attr">handler</span>: <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">runtimeCaching</span>.<span class="hljs-title class_">NetworkFirst</span>(),
- });</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474899.0388')">Copy</button></pre>
+ });</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400796.6697')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -9501,7 +9501,7 @@ workboxSW.<span class="hljs-title function_">precache</span>(fileManifest);</cod
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669474900.818"><span class="hljs-keyword">const</span> requestWrapper = <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">runtimeCaching</span>.<span class="hljs-title class_">RequestWrapper</span>({
+<pre class="highlight"><code class="language-javascript" id="1755670400797.2964"><span class="hljs-keyword">const</span> requestWrapper = <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">runtimeCaching</span>.<span class="hljs-title class_">RequestWrapper</span>({
   <span class="hljs-attr">cacheName</span>: <span class="hljs-string">&#x27;runtime-cache&#x27;</span>,
   <span class="hljs-attr">plugins</span>: [
     <span class="hljs-comment">// The cache size will be capped at 10 entries.</span>
@@ -9513,7 +9513,7 @@ workboxSW.<span class="hljs-title function_">precache</span>(fileManifest);</cod
 <span class="hljs-keyword">const</span> route = <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">routing</span>.<span class="hljs-title class_">RegExpRoute</span>({
   <span class="hljs-attr">match</span>: <span class="hljs-function">(<span class="hljs-params">{url}</span>) =&gt;</span> url.<span class="hljs-property">domain</span> === <span class="hljs-string">&#x27;dev-mind.fr&#x27;</span>,
   <span class="hljs-attr">handler</span>: <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">runtimeCaching</span>.<span class="hljs-title class_">StaleWhileRevalidate</span>({requestWrapper})
-});</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474900.818')">Copy</button></pre>
+});</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400797.2964')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -9533,7 +9533,7 @@ workboxSW.<span class="hljs-title function_">precache</span>(fileManifest);</cod
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669474901.2932"><span class="hljs-keyword">let</span> bgQueue = <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">backgroundSync</span>.<span class="hljs-title class_">QueuePlugin</span>({
+<pre class="highlight"><code class="language-javascript" id="1755670400798.2297"><span class="hljs-keyword">let</span> bgQueue = <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">backgroundSync</span>.<span class="hljs-title class_">QueuePlugin</span>({
   <span class="hljs-attr">callbacks</span>: {
     <span class="hljs-attr">onResponse</span>: <span class="hljs-title function_">async</span>(hash, res) =&gt; {
       <span class="hljs-comment">// une notification sera affich\xE9e quand tout est OK</span>
@@ -9556,7 +9556,7 @@ workboxSW.<span class="hljs-title function_">precache</span>(fileManifest);</cod
 });
 
 <span class="hljs-keyword">const</span> router = <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">routing</span>.<span class="hljs-title class_">Router</span>();
-router.<span class="hljs-title function_">registerRoute</span>({route});</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474901.2932')">Copy</button></pre>
+router.<span class="hljs-title function_">registerRoute</span>({route});</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400798.2297')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -9570,7 +9570,7 @@ router.<span class="hljs-title function_">registerRoute</span>({route});</code><
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669474901.5247"><span class="hljs-keyword">const</span> cacheablePlugin = <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">cacheableResponse</span>.<span class="hljs-title class_">Plugin</span>({
+<pre class="highlight"><code class="language-javascript" id="1755670400799.1406"><span class="hljs-keyword">const</span> cacheablePlugin = <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">cacheableResponse</span>.<span class="hljs-title class_">Plugin</span>({
   <span class="hljs-attr">statuses</span>: [<span class="hljs-number">0</span>, <span class="hljs-number">200</span>]
 });
 
@@ -9584,7 +9584,7 @@ router.<span class="hljs-title function_">registerRoute</span>({route});</code><
 <span class="hljs-keyword">const</span> route = <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">routing</span>.<span class="hljs-title class_">RegExpRoute</span>({
   <span class="hljs-attr">match</span>: <span class="hljs-function">(<span class="hljs-params">{url}</span>) =&gt;</span> url.<span class="hljs-property">domain</span> === <span class="hljs-string">&#x27;example.com&#x27;</span>,
   <span class="hljs-attr">handler</span>: <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">runtimeCaching</span>.<span class="hljs-title class_">StaleWhileRevalidate</span>({requestWrapper})
-});</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474901.5247')">Copy</button></pre>
+});</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400799.1406')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -9595,7 +9595,7 @@ router.<span class="hljs-title function_">registerRoute</span>({route});</code><
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669474902.9497"><span class="hljs-keyword">const</span> requestWrapper = <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">runtimeCaching</span>.<span class="hljs-title class_">RequestWrapper</span>({
+<pre class="highlight"><code class="language-javascript" id="1755670400800.811"><span class="hljs-keyword">const</span> requestWrapper = <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">runtimeCaching</span>.<span class="hljs-title class_">RequestWrapper</span>({
   <span class="hljs-attr">cacheName</span>: <span class="hljs-string">&#x27;text-files&#x27;</span>,
   <span class="hljs-attr">plugins</span>: [
     <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">broadcastCacheUpdate</span>.<span class="hljs-title class_">BroadcastCacheUpdatePlugin</span>(
@@ -9609,7 +9609,7 @@ router.<span class="hljs-title function_">registerRoute</span>({route});</code><
 });
 
 <span class="hljs-keyword">const</span> router = <span class="hljs-keyword">new</span> workbox.<span class="hljs-property">routing</span>.<span class="hljs-title class_">Router</span>();
-router.<span class="hljs-title function_">registerRoute</span>({route});</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474902.9497')">Copy</button></pre>
+router.<span class="hljs-title function_">registerRoute</span>({route});</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400800.811')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -9617,10 +9617,10 @@ router.<span class="hljs-title function_">registerRoute</span>({route});</code><
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669474902.6333"><span class="hljs-keyword">const</span> updateChannel = <span class="hljs-keyword">new</span> <span class="hljs-title class_">BroadcastChannel</span>(<span class="hljs-string">&#x27;cache-updates&#x27;</span>);
+<pre class="highlight"><code class="language-javascript" id="1755670400800.5981"><span class="hljs-keyword">const</span> updateChannel = <span class="hljs-keyword">new</span> <span class="hljs-title class_">BroadcastChannel</span>(<span class="hljs-string">&#x27;cache-updates&#x27;</span>);
 updateChannel.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;message&#x27;</span>, <span class="hljs-function"><span class="hljs-params">event</span> =&gt;</span> {
   <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;Cache updated: @dollar@{event.data.payload.updatedUrl}&#x27;</span>);
-});</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474902.6333')">Copy</button></pre>
+});</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400800.5981')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -9771,7 +9771,7 @@ updateChannel.<span class="hljs-title function_">addEventListener</span>(<span c
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669474827.3142"><span class="hljs-keyword">if</span> (<span class="hljs-string">&#x27;serviceWorker&#x27;</span> <span class="hljs-keyword">in</span> navigator) {
+<pre class="highlight"><code class="language-javascript" id="1755670400712.733"><span class="hljs-keyword">if</span> (<span class="hljs-string">&#x27;serviceWorker&#x27;</span> <span class="hljs-keyword">in</span> navigator) {
   navigator.<span class="hljs-property">serviceWorker</span>.<span class="hljs-title function_">register</span>(<span class="hljs-string">&#x27;sw.js&#x27;</span>, <span class="hljs-attr">scope</span>: <span class="hljs-string">&#x27;/subcontent&#x27;</span>)
     .<span class="hljs-title function_">then</span>(<span class="hljs-keyword">function</span>(<span class="hljs-params">registration</span>) {
       <span class="hljs-comment">// registration worked</span>
@@ -9780,7 +9780,7 @@ updateChannel.<span class="hljs-title function_">addEventListener</span>(<span c
     .<span class="hljs-title function_">catch</span>(<span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) {
       <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">&#x27;Error during service worker registration:&#x27;</span>, e);
     });
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474827.3142')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400712.733')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -9830,7 +9830,7 @@ updateChannel.<span class="hljs-title function_">addEventListener</span>(<span c
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669474828.3257">gulp.<span class="hljs-title function_">task</span>(<span class="hljs-string">&#x27;generate-service-worker&#x27;</span>, <span class="hljs-function">(<span class="hljs-params">cb</span>) =&gt;</span> {
+<pre class="highlight"><code class="language-javascript" id="1755670400713.3613">gulp.<span class="hljs-title function_">task</span>(<span class="hljs-string">&#x27;generate-service-worker&#x27;</span>, <span class="hljs-function">(<span class="hljs-params">cb</span>) =&gt;</span> {
   <span class="hljs-keyword">let</span> config = {
     <span class="hljs-attr">cacheId</span>: <span class="hljs-string">&#x27;dev-mind&#x27;</span>,
     <span class="hljs-attr">runtimeCaching</span>: [{
@@ -9847,7 +9847,7 @@ updateChannel.<span class="hljs-title function_">addEventListener</span>(<span c
   };
 
   swPrecache.<span class="hljs-title function_">write</span>(<span class="hljs-string">&#x27;build/dist/service-worker.js&#x27;</span>, config, cb);
-});</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474828.3257')">Copy</button></pre>
+});</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400713.3613')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -9937,7 +9937,7 @@ Le <em>Cache busting</em> consiste \xE0 utiliser un nom unique pour vos ressourc
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669474875.721"><span class="hljs-comment">// Cr\xE9ation du worker</span>
+<pre class="highlight"><code class="language-javascript" id="1755670400768.9329"><span class="hljs-comment">// Cr\xE9ation du worker</span>
 <span class="hljs-keyword">var</span> worker = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Worker</span>(<span class="hljs-string">&#x27;doWork.js&#x27;</span>);
 
 <span class="hljs-comment">// On cr\xE9e un event listener pour intercepter les messages envoy\xE9s par le worker</span>
@@ -9946,7 +9946,7 @@ worker.<span class="hljs-title function_">addEventListener</span>(<span class="h
 }, <span class="hljs-literal">false</span>);
 
 <span class="hljs-comment">// Vous pouvez \xE0 tout moment envoy\xE9 un message au worker</span>
-worker.<span class="hljs-title function_">postMessage</span>(<span class="hljs-string">&#x27;Hello World&#x27;</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474875.721')">Copy</button></pre>
+worker.<span class="hljs-title function_">postMessage</span>(<span class="hljs-string">&#x27;Hello World&#x27;</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400768.9329')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -9954,11 +9954,11 @@ worker.<span class="hljs-title function_">postMessage</span>(<span class="hljs-s
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669474875.401"><span class="hljs-comment">// On cr\xE9e un listener pour recevoir les messages du thread principal</span>
+<pre class="highlight"><code class="language-javascript" id="1755670400768.345"><span class="hljs-comment">// On cr\xE9e un listener pour recevoir les messages du thread principal</span>
 self.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;message&#x27;</span>,<span class="hljs-function">(<span class="hljs-params">e</span>) =&gt;</span> {
    <span class="hljs-comment">// la m\xE9thode postMessage permet de renvoyer un message</span>
    self.<span class="hljs-title function_">postMessage</span>(e.<span class="hljs-property">data</span>);
-}, <span class="hljs-literal">false</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474875.401')">Copy</button></pre>
+}, <span class="hljs-literal">false</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400768.345')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -9998,9 +9998,9 @@ self.<span class="hljs-title function_">addEventListener</span>(<span class="hlj
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669474875.7397"><span class="hljs-keyword">if</span> (<span class="hljs-string">&#x27;serviceWorker&#x27;</span> <span class="hljs-keyword">in</span> navigator){
+<pre class="highlight"><code class="language-javascript" id="1755670400769.8584"><span class="hljs-keyword">if</span> (<span class="hljs-string">&#x27;serviceWorker&#x27;</span> <span class="hljs-keyword">in</span> navigator){
     <span class="hljs-comment">// ..</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474875.7397')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400769.8584')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -10049,7 +10049,7 @@ self.<span class="hljs-title function_">addEventListener</span>(<span class="hlj
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669474852.092">{
+<pre class="highlight"><code class="language-javascript" id="1755670400743.2676">{
    <span class="hljs-attr">source</span>: <span class="hljs-string">&quot;Captor 1&quot;</span>,
    <span class="hljs-attr">measures</span>: [
      {
@@ -10061,7 +10061,7 @@ self.<span class="hljs-title function_">addEventListener</span>(<span class="hlj
         <span class="hljs-attr">value</span>: -<span class="hljs-number">5670</span>
      },
      <span class="hljs-comment">//...</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474852.092')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400743.2676')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -10069,7 +10069,7 @@ self.<span class="hljs-title function_">addEventListener</span>(<span class="hlj
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669474853.9165">  <span class="hljs-keyword">function</span> <span class="hljs-title function_">_createSeries</span>(<span class="hljs-params"></span>) {
+<pre class="highlight"><code class="language-javascript" id="1755670400744.926">  <span class="hljs-keyword">function</span> <span class="hljs-title function_">_createSeries</span>(<span class="hljs-params"></span>) {
     <span class="hljs-keyword">return</span> <span class="hljs-variable constant_">MEASURES</span>.<span class="hljs-title function_">map</span>(<span class="hljs-function">(<span class="hljs-params">serie</span>) =&gt;</span> {
       <span class="hljs-keyword">return</span> {
         <span class="hljs-attr">type</span>: <span class="hljs-string">&#x27;area&#x27;</span>,
@@ -10093,7 +10093,7 @@ self.<span class="hljs-title function_">addEventListener</span>(<span class="hlj
     }
   });
 
-  <span class="hljs-keyword">new</span> <span class="hljs-title class_">Highcharts</span>.<span class="hljs-title class_">Chart</span>({<span class="hljs-attr">chart</span>: {<span class="hljs-attr">renderTo</span>: <span class="hljs-string">&#x27;myChart&#x27;</span>}, <span class="hljs-attr">series</span>: <span class="hljs-title function_">_createSeries</span>()})</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474853.9165')">Copy</button></pre>
+  <span class="hljs-keyword">new</span> <span class="hljs-title class_">Highcharts</span>.<span class="hljs-title class_">Chart</span>({<span class="hljs-attr">chart</span>: {<span class="hljs-attr">renderTo</span>: <span class="hljs-string">&#x27;myChart&#x27;</span>}, <span class="hljs-attr">series</span>: <span class="hljs-title function_">_createSeries</span>()})</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400744.926')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -10124,7 +10124,7 @@ self.<span class="hljs-title function_">addEventListener</span>(<span class="hlj
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669474854.109">  <span class="hljs-keyword">function</span> <span class="hljs-title function_">evaluator</span>(<span class="hljs-params">measure</span>) {
+<pre class="highlight"><code class="language-javascript" id="1755670400745.859">  <span class="hljs-keyword">function</span> <span class="hljs-title function_">evaluator</span>(<span class="hljs-params">measure</span>) {
     <span class="hljs-keyword">if</span> (measure.<span class="hljs-property">value</span> &gt; <span class="hljs-number">0</span>) {
       <span class="hljs-keyword">return</span> positive ? measure.<span class="hljs-property">value</span> : <span class="hljs-number">0</span>;
     }
@@ -10149,7 +10149,7 @@ self.<span class="hljs-title function_">addEventListener</span>(<span class="hlj
         <span class="hljs-keyword">return</span> {<span class="hljs-attr">x</span>: measure.<span class="hljs-property">instant</span>, <span class="hljs-attr">y</span>: positive !== <span class="hljs-literal">null</span> ? evaluator(measure) : measure.<span class="hljs-property">value</span>}
       })
     }
-  }</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474854.109')">Copy</button></pre>
+  }</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400745.859')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -10331,13 +10331,13 @@ self.<span class="hljs-title function_">addEventListener</span>(<span class="hlj
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-adoc" id="1755669474871.572">----_
+<pre class="highlight"><code class="language-adoc" id="1755670400764.369">----_
 <span class="hljs-meta">:doctitle:</span> Cr\xE9er son blog via Asciidoctor
 <span class="hljs-meta">:description:</span> Migrer son blog de blogger vers un blog g\xE9n\xE9r\xE9 via Asciidoctor
 <span class="hljs-meta">:keywords:</span> Web, Blog, Asciidoctor, CMS
 <span class="hljs-meta">:revdate:</span> 2017-05-09
 <span class="hljs-meta">:teaser:</span> Pourquoi et comment j<span class="hljs-emphasis">&#x27;ai choisi de changer ma mani\xE8re de publier mes articles en passant de Blogger \xE0 un blog g\xE9n\xE9r\xE9 via Asciidoctor.
-:imgteaser: ../../img/blog/unknown.png</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474871.572')">Copy</button></pre>
+:imgteaser: ../../img/blog/unknown.png</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670400764.369')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -10390,7 +10390,7 @@ self.<span class="hljs-title function_">addEventListener</span>(<span class="hlj
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669474872.098">gulp.<span class="hljs-title function_">task</span>(<span class="hljs-string">&#x27;blog-indexing&#x27;</span>, <span class="hljs-function">() =&gt;</span>
+<pre class="highlight"><code class="language-javascript" id="1755670400765.3872">gulp.<span class="hljs-title function_">task</span>(<span class="hljs-string">&#x27;blog-indexing&#x27;</span>, <span class="hljs-function">() =&gt;</span>
   gulp.<span class="hljs-title function_">src</span>(<span class="hljs-string">&#x27;src/blog/**/*.adoc&#x27;</span>)
     .<span class="hljs-title function_">pipe</span>(<span class="hljs-title function_">asciidoctorRead</span>())
     .<span class="hljs-title function_">pipe</span>(<span class="hljs-title function_">asciidoctorConvert</span>())
@@ -10407,7 +10407,7 @@ gulp.<span class="hljs-title function_">task</span>(<span class="hljs-string">&#
     .<span class="hljs-title function_">pipe</span>(gulp.<span class="hljs-title function_">dest</span>(<span class="hljs-string">&#x27;build/.tmp/blog&#x27;</span>))
     .<span class="hljs-title function_">pipe</span>(@dollar@.<span class="hljs-title function_">htmlmin</span>(<span class="hljs-variable constant_">HTMLMIN_OPTIONS</span>))
     .<span class="hljs-title function_">pipe</span>(gulp.<span class="hljs-title function_">dest</span>(<span class="hljs-string">&#x27;build/dist/blog&#x27;</span>))
-);</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474872.098')">Copy</button></pre>
+);</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400765.3872')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -10505,7 +10505,7 @@ gulp.<span class="hljs-title function_">task</span>(<span class="hljs-string">&#
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474881.5706"><span class="hljs-meta">@RestController</span>
+<pre class="highlight"><code class="language-java" id="1755670400775.1157"><span class="hljs-meta">@RestController</span>
 <span class="hljs-meta">@RequestMapping(&quot;/api/session&quot;)</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SessionController</span> {
 
@@ -10532,7 +10532,7 @@ gulp.<span class="hljs-title function_">task</span>(<span class="hljs-string">&#
         <span class="hljs-keyword">public</span> ResponseEntity<span class="hljs-meta">@LTSession</span><span class="hljs-meta">@GT</span> save(<span class="hljs-meta">@Valid</span> <span class="hljs-meta">@RequestBody</span> Session session) {
         <span class="hljs-keyword">return</span> ok(sessionService.save(session));
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474881.5706')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400775.1157')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -10548,8 +10548,8 @@ gulp.<span class="hljs-title function_">task</span>(<span class="hljs-string">&#
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474881.4614">compile <span class="hljs-string">&quot;javax.validation:validation-api:1.1.0.Final&quot;</span>
-compile <span class="hljs-string">&quot;org.hibernate:hibernate-validator:1.1.0.Final&quot;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474881.4614')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670400775.597">compile <span class="hljs-string">&quot;javax.validation:validation-api:1.1.0.Final&quot;</span>
+compile <span class="hljs-string">&quot;org.hibernate:hibernate-validator:1.1.0.Final&quot;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670400775.597')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -10557,7 +10557,7 @@ compile <span class="hljs-string">&quot;org.hibernate:hibernate-validator:1.1.0.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474881.435"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Session</span> {
+<pre class="highlight"><code class="language-java" id="1755670400775.725"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Session</span> {
     <span class="hljs-keyword">private</span> String id;
     <span class="hljs-meta">@NotEmpty</span>
     <span class="hljs-keyword">private</span> String title;
@@ -10566,7 +10566,7 @@ compile <span class="hljs-string">&quot;org.hibernate:hibernate-validator:1.1.0.
     <span class="hljs-meta">@Max(500)</span>
     <span class="hljs-keyword">private</span> Integer maxAttendees;
     <span class="hljs-comment">// ...</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474881.435')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400775.725')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -10579,7 +10579,7 @@ compile <span class="hljs-string">&quot;org.hibernate:hibernate-validator:1.1.0.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474881.354"><span class="hljs-meta">@RunWith(SpringRunner.class)</span>
+<pre class="highlight"><code class="language-java" id="1755670400775.8577"><span class="hljs-meta">@RunWith(SpringRunner.class)</span>
 <span class="hljs-meta">@WebMvcTest(SessionController.class)</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SessionControllerTest</span> {
     <span class="hljs-meta">@Autowired</span>
@@ -10590,7 +10590,7 @@ compile <span class="hljs-string">&quot;org.hibernate:hibernate-validator:1.1.0.
 
     <span class="hljs-keyword">private</span> <span class="hljs-type">ObjectMapper</span> <span class="hljs-variable">mapper</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">ObjectMapper</span>();
 
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474881.354')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400775.8577')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -10609,7 +10609,7 @@ compile <span class="hljs-string">&quot;org.hibernate:hibernate-validator:1.1.0.
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474882.2993"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-java" id="1755670400775.6753"><span class="hljs-meta">@Test</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">shouldFindAllSessions</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception {
 
     given(<span class="hljs-built_in">this</span>.sessionService.findAll())
@@ -10621,7 +10621,7 @@ compile <span class="hljs-string">&quot;org.hibernate:hibernate-validator:1.1.0.
             .andExpect(status().isOk())
             .andExpect(jsonPath(<span class="hljs-string">&quot;@dollar@.length()&quot;</span>, is(<span class="hljs-number">2</span>)))
             .andExpect(jsonPath(<span class="hljs-string">&quot;@dollar@.[0].title&quot;</span>, is(<span class="hljs-string">&quot;title1&quot;</span>)));
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474882.2993')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400775.6753')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -10638,10 +10638,10 @@ compile <span class="hljs-string">&quot;org.hibernate:hibernate-validator:1.1.0.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474882.4329"><span class="hljs-built_in">this</span>.mvc.perform(get(<span class="hljs-string">&quot;/api/session&quot;</span>).with(httpBasic(<span class="hljs-string">&quot;admin&quot;</span>, <span class="hljs-string">&quot;password&quot;</span>)))
+<pre class="highlight"><code class="language-java" id="1755670400775.4739"><span class="hljs-built_in">this</span>.mvc.perform(get(<span class="hljs-string">&quot;/api/session&quot;</span>).with(httpBasic(<span class="hljs-string">&quot;admin&quot;</span>, <span class="hljs-string">&quot;password&quot;</span>)))
             .andExpect(status().isOk())
             .andExpect(jsonPath(<span class="hljs-string">&quot;@dollar@.length()&quot;</span>, is(<span class="hljs-number">2</span>)))
-            .andExpect(jsonPath(<span class="hljs-string">&quot;@dollar@.[0].title&quot;</span>, is(<span class="hljs-string">&quot;title1&quot;</span>)));</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474882.4329')">Copy</button></pre>
+            .andExpect(jsonPath(<span class="hljs-string">&quot;@dollar@.[0].title&quot;</span>, is(<span class="hljs-string">&quot;title1&quot;</span>)));</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400775.4739')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -10649,7 +10649,7 @@ compile <span class="hljs-string">&quot;org.hibernate:hibernate-validator:1.1.0.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474882.1138"><span class="hljs-meta">@WebMvcTest(value = SessionController.class, secure = false)</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474882.1138')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670400776.0571"><span class="hljs-meta">@WebMvcTest(value = SessionController.class, secure = false)</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670400776.0571')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -10662,7 +10662,7 @@ compile <span class="hljs-string">&quot;org.hibernate:hibernate-validator:1.1.0.
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474882.2788"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-java" id="1755670400776.5405"><span class="hljs-meta">@Test</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">shouldCreateSession</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception {
 
     <span class="hljs-type">Session</span> <span class="hljs-variable">session</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Session</span>().withTitle(<span class="hljs-string">&quot;My Spring session&quot;</span>).withMaxAttendees(<span class="hljs-number">10</span>);
@@ -10678,7 +10678,7 @@ compile <span class="hljs-string">&quot;org.hibernate:hibernate-validator:1.1.0.
             .andExpect(status().isOk())
             .andExpect(jsonPath(<span class="hljs-string">&quot;@dollar@.id&quot;</span>, is(<span class="hljs-string">&quot;id&quot;</span>)))
             .andExpect(jsonPath(<span class="hljs-string">&quot;@dollar@.title&quot;</span>, is(<span class="hljs-string">&quot;My Spring session&quot;</span>)));
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474882.2788')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400776.5405')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -10694,7 +10694,7 @@ compile <span class="hljs-string">&quot;org.hibernate:hibernate-validator:1.1.0.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474882.541"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-java" id="1755670400776.5405"><span class="hljs-meta">@Test</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">shouldNotCreateSessionWhenBeanInvalid</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception {
 
     <span class="hljs-type">Session</span> <span class="hljs-variable">session</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Session</span>();
@@ -10706,7 +10706,7 @@ compile <span class="hljs-string">&quot;org.hibernate:hibernate-validator:1.1.0.
                     .with(httpBasic(<span class="hljs-string">&quot;admin&quot;</span>, <span class="hljs-string">&quot;password&quot;</span>))
     )
             .andExpect(status().isBadRequest());
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474882.541')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400776.5405')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -10764,7 +10764,7 @@ compile <span class="hljs-string">&quot;org.hibernate:hibernate-validator:1.1.0.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474848.042">buildscript {
+<pre class="highlight"><code class="language-kotlin" id="1755670400738.6477">buildscript {
     ext {
         nodePluginVersion = <span class="hljs-string">&#x27;1.0.1&#x27;</span>
     }
@@ -10778,7 +10778,7 @@ compile <span class="hljs-string">&quot;org.hibernate:hibernate-validator:1.1.0.
     dependencies {
         classpath <span class="hljs-string">&quot;com.moowork.gradle:gradle-node-plugin:@dollar@{nodePluginVersion}&quot;</span>
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474848.042')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400738.6477')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -10786,7 +10786,7 @@ compile <span class="hljs-string">&quot;org.hibernate:hibernate-validator:1.1.0.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-groovy" id="1755669474849.6802">buildscript {
+<pre class="highlight"><code class="language-groovy" id="1755670400739.5195">buildscript {
     ext {
         nodePluginVersion = <span class="hljs-string">&#x27;1.0.1&#x27;</span>
     }
@@ -10800,7 +10800,7 @@ compile <span class="hljs-string">&quot;org.hibernate:hibernate-validator:1.1.0.
     dependencies {
         classpath <span class="hljs-string">&quot;com.moowork.gradle:gradle-node-plugin:@dollar@{nodePluginVersion}&quot;</span>
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474849.6802')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400739.5195')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -10811,9 +10811,9 @@ compile <span class="hljs-string">&quot;org.hibernate:hibernate-validator:1.1.0.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-groovy" id="1755669474849.3455">apply <span class="hljs-attr">plugin:</span> <span class="hljs-string">&#x27;idea&#x27;</span>
+<pre class="highlight"><code class="language-groovy" id="1755670400739.8828">apply <span class="hljs-attr">plugin:</span> <span class="hljs-string">&#x27;idea&#x27;</span>
 apply <span class="hljs-attr">plugin:</span> <span class="hljs-string">&#x27;com.moowork.node&#x27;</span>
-apply <span class="hljs-attr">plugin:</span> <span class="hljs-string">&#x27;com.moowork.gulp&#x27;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474849.3455')">Copy</button></pre>
+apply <span class="hljs-attr">plugin:</span> <span class="hljs-string">&#x27;com.moowork.gulp&#x27;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670400739.8828')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -10821,13 +10821,13 @@ apply <span class="hljs-attr">plugin:</span> <span class="hljs-string">&#x27;com
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474849.0261">apply {
+<pre class="highlight"><code class="language-kotlin" id="1755670400739.5469">apply {
     plugin(<span class="hljs-string">&quot;idea&quot;</span>)
     plugin(<span class="hljs-string">&quot;kotlin&quot;</span>)
     plugin(<span class="hljs-string">&quot;kotlin-noarg&quot;</span>)
     plugin(<span class="hljs-string">&quot;com.moowork.node&quot;</span>)
     plugin(<span class="hljs-string">&quot;com.moowork.gulp&quot;</span>)
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474849.0261')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400739.5469')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -10843,10 +10843,10 @@ apply <span class="hljs-attr">plugin:</span> <span class="hljs-string">&#x27;com
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-groovy" id="1755669474849.3">node {
+<pre class="highlight"><code class="language-groovy" id="1755670400739.7144">node {
     version = <span class="hljs-string">&#x27;6.9.2&#x27;</span>
     download = <span class="hljs-literal">true</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474849.3')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400739.7144')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -10854,12 +10854,12 @@ apply <span class="hljs-attr">plugin:</span> <span class="hljs-string">&#x27;com
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474849.561"><span class="hljs-keyword">import</span> com.moowork.gradle.node.NodeExtension
+<pre class="highlight"><code class="language-kotlin" id="1755670400739.6895"><span class="hljs-keyword">import</span> com.moowork.gradle.node.NodeExtension
 
 <span class="hljs-symbol">configure@</span><span class="hljs-symbol">LTNodeExtension@</span>GT {
     version = <span class="hljs-string">&quot;6.9.2&quot;</span>
     download = <span class="hljs-literal">true</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474849.561')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400739.6895')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -10875,14 +10875,14 @@ apply <span class="hljs-attr">plugin:</span> <span class="hljs-string">&#x27;com
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-groovy" id="1755669474849.487">task gulpBuild(<span class="hljs-attr">type:</span> GulpTask, <span class="hljs-attr">dependsOn:</span> yarnInstall) {
+<pre class="highlight"><code class="language-groovy" id="1755670400739.7002">task gulpBuild(<span class="hljs-attr">type:</span> GulpTask, <span class="hljs-attr">dependsOn:</span> yarnInstall) {
   inputs.dir <span class="hljs-string">&#x27;src/main/sass&#x27;</span>  inputs.files(npmInstall.outputs)
   outputs.dir <span class="hljs-string">&quot;src/main/static/css&quot;</span>  args = [<span class="hljs-string">&quot;default&quot;</span>]
 }
 
 processResources {
   dependsOn gulpBuild
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474849.487')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400739.7002')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -10890,7 +10890,7 @@ processResources {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474849.3093"><span class="hljs-keyword">import</span> com.moowork.gradle.gulp.GulpTask
+<pre class="highlight"><code class="language-kotlin" id="1755670400739.1333"><span class="hljs-keyword">import</span> com.moowork.gradle.gulp.GulpTask
 <span class="hljs-keyword">import</span> com.moowork.gradle.node.yarn.YarnInstallTask
 
 <span class="hljs-symbol">task@</span><span class="hljs-symbol">LTGulpTask@</span>GT(<span class="hljs-string">&quot;gulpBuild&quot;</span>) {
@@ -10901,7 +10901,7 @@ processResources {
   args = listOf(<span class="hljs-string">&quot;default&quot;</span>)
 }
 
-tasks.getByName(<span class="hljs-string">&quot;processResources&quot;</span>).dependsOn(<span class="hljs-string">&quot;gulpBuild&quot;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474849.3093')">Copy</button></pre>
+tasks.getByName(<span class="hljs-string">&quot;processResources&quot;</span>).dependsOn(<span class="hljs-string">&quot;gulpBuild&quot;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400739.1333')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -10937,7 +10937,7 @@ tasks.getByName(<span class="hljs-string">&quot;processResources&quot;</span>).d
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669474918.5654"><span class="hljs-title function_">it</span>(<span class="hljs-string">&#x27;displays user details on click&#x27;</span>, <span class="hljs-title function_">async</span>(<span class="hljs-function">() =&gt;</span> {
+<pre class="highlight"><code class="language-javascript" id="1755670400814.737"><span class="hljs-title function_">it</span>(<span class="hljs-string">&#x27;displays user details on click&#x27;</span>, <span class="hljs-title function_">async</span>(<span class="hljs-function">() =&gt;</span> {
   ...
   <span class="hljs-comment">// Locate the fetch button.  let debugFetchButton = fixture.debugElement.query(By.css(&#x27;button&#x27;));</span>
   <span class="hljs-title function_">expect</span>(debugFetchButton).<span class="hljs-property">not</span>.<span class="hljs-title function_">toBe</span>(<span class="hljs-literal">null</span>);
@@ -10952,7 +10952,7 @@ tasks.getByName(<span class="hljs-string">&quot;processResources&quot;</span>).d
 
     <span class="hljs-comment">// Check that the user list is displayed.    ...</span>
   });
-}));</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474918.5654')">Copy</button></pre>
+}));</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400814.737')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -11016,7 +11016,7 @@ A chaque fois vous \xEAtes d\xE9pendants de une ou plusieurs solutions technique
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669474922.378">  ng <span class="hljs-keyword">new</span> <span class="hljs-variable constant_">PROJECT_NAME</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474922.378')">Copy</button></pre>
+<pre class="highlight"><code class="language-javascript" id="1755670400817.1062">  ng <span class="hljs-keyword">new</span> <span class="hljs-variable constant_">PROJECT_NAME</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670400817.1062')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -11024,7 +11024,7 @@ A chaque fois vous \xEAtes d\xE9pendants de une ou plusieurs solutions technique
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669474922.3262">  ng serve</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474922.3262')">Copy</button></pre>
+<pre class="highlight"><code class="language-javascript" id="1755670400817.8198">  ng serve</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400817.8198')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -11032,7 +11032,7 @@ A chaque fois vous \xEAtes d\xE9pendants de une ou plusieurs solutions technique
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669474922.3223">  ng test</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474922.3223')">Copy</button></pre>
+<pre class="highlight"><code class="language-javascript" id="1755670400817.152">  ng test</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400817.152')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -11040,7 +11040,7 @@ A chaque fois vous \xEAtes d\xE9pendants de une ou plusieurs solutions technique
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669474922.3354">  ng e2e</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474922.3354')">Copy</button></pre>
+<pre class="highlight"><code class="language-javascript" id="1755670400817.8618">  ng e2e</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400817.8618')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -11048,7 +11048,7 @@ A chaque fois vous \xEAtes d\xE9pendants de une ou plusieurs solutions technique
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669474922.7856">  ng build --target=production --environment=prod (distinction des environnements dev et prod)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474922.7856')">Copy</button></pre>
+<pre class="highlight"><code class="language-javascript" id="1755670400817.7778">  ng build --target=production --environment=prod (distinction des environnements dev et prod)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400817.7778')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -11056,7 +11056,7 @@ A chaque fois vous \xEAtes d\xE9pendants de une ou plusieurs solutions technique
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669474922.0042">  ng g component my-<span class="hljs-keyword">new</span>-component</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474922.0042')">Copy</button></pre>
+<pre class="highlight"><code class="language-javascript" id="1755670400817.4456">  ng g component my-<span class="hljs-keyword">new</span>-component</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400817.4456')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -11067,7 +11067,7 @@ A chaque fois vous \xEAtes d\xE9pendants de une ou plusieurs solutions technique
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669474922.2727">ng build --prod --aot</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474922.2727')">Copy</button></pre>
+<pre class="highlight"><code class="language-javascript" id="1755670400818.8696">ng build --prod --aot</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400818.8696')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -11278,11 +11278,11 @@ A chaque fois vous \xEAtes d\xE9pendants de une ou plusieurs solutions technique
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669474931.0698"><span class="hljs-keyword">var</span> worker = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Worker</span>(<span class="hljs-string">&#x27;doWork.js&#x27;</span>);
+<pre class="highlight"><code class="language-javascript" id="1755670400825.6821"><span class="hljs-keyword">var</span> worker = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Worker</span>(<span class="hljs-string">&#x27;doWork.js&#x27;</span>);
 worker.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;message&#x27;</span>, <span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) {
   <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;Worker said: &#x27;</span>, e.<span class="hljs-property">data</span>);
 }, <span class="hljs-literal">false</span>);
-worker.<span class="hljs-title function_">postMessage</span>(<span class="hljs-string">&#x27;Hello World&#x27;</span>); <span class="hljs-comment">// Send data to our worker.</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474931.0698')">Copy</button></pre>
+worker.<span class="hljs-title function_">postMessage</span>(<span class="hljs-string">&#x27;Hello World&#x27;</span>); <span class="hljs-comment">// Send data to our worker.</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670400825.6821')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -11290,9 +11290,9 @@ worker.<span class="hljs-title function_">postMessage</span>(<span class="hljs-s
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669474931.9812">self.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;message&#x27;</span>, <span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) {
+<pre class="highlight"><code class="language-javascript" id="1755670400825.4824">self.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;message&#x27;</span>, <span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) {
   self.<span class="hljs-title function_">postMessage</span>(e.<span class="hljs-property">data</span>);
-}, <span class="hljs-literal">false</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474931.9812')">Copy</button></pre>
+}, <span class="hljs-literal">false</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400825.4824')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -11387,7 +11387,7 @@ worker.<span class="hljs-title function_">postMessage</span>(<span class="hljs-s
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669474935.008"><span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">AppComponent</span> {
+<pre class="highlight"><code class="language-javascript" id="1755670400829.9177"><span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">AppComponent</span> {
   myControl = <span class="hljs-keyword">new</span> <span class="hljs-title class_">FormControl</span>();
   <span class="hljs-title function_">constructor</span>(<span class="hljs-params">http:Http</span>){
     <span class="hljs-variable language_">this</span>.<span class="hljs-property">myControl</span>.<span class="hljs-property">valueChanges</span>
@@ -11395,7 +11395,7 @@ worker.<span class="hljs-title function_">postMessage</span>(<span class="hljs-s
       .<span class="hljs-title function_">flatMap</span>(<span class="hljs-function"><span class="hljs-params">url</span> =&gt;</span> http.<span class="hljs-title function_">get</span>(url), <span class="hljs-function">(<span class="hljs-params">req, res</span>) =&gt;</span> res.<span class="hljs-title function_">json</span>())
       .<span class="hljs-title function_">subscribe</span>(<span class="hljs-function"><span class="hljs-params">results</span> =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(results));
   }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474935.008')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400829.9177')">Copy</button></pre>
 </div>
 </div>
 <div class="videoblock">
@@ -11426,7 +11426,7 @@ worker.<span class="hljs-title function_">postMessage</span>(<span class="hljs-s
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669474935.5903">[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>].<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">elt</span> =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(elt));</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474935.5903')">Copy</button></pre>
+<pre class="highlight"><code class="language-javascript" id="1755670400829.5051">[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>].<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">elt</span> =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(elt));</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400829.5051')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -11434,10 +11434,10 @@ worker.<span class="hljs-title function_">postMessage</span>(<span class="hljs-s
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669474936.2588"><span class="hljs-title function_">fetch</span>(<span class="hljs-string">&#x27;api/sponsors&#x27;</span>).<span class="hljs-title function_">then</span>(
+<pre class="highlight"><code class="language-javascript" id="1755670400829.528"><span class="hljs-title function_">fetch</span>(<span class="hljs-string">&#x27;api/sponsors&#x27;</span>).<span class="hljs-title function_">then</span>(
   <span class="hljs-function"><span class="hljs-params">response</span> =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(response.<span class="hljs-title function_">json</span>()),
   <span class="hljs-function"><span class="hljs-params">error</span> =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(error)
-);</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474936.2588')">Copy</button></pre>
+);</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400829.528')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -11467,7 +11467,7 @@ worker.<span class="hljs-title function_">postMessage</span>(<span class="hljs-s
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669474936.2668">myEventStream = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Observable</span>(<span class="hljs-function"><span class="hljs-params">observer</span> =&gt;</span> {
+<pre class="highlight"><code class="language-javascript" id="1755670400829.9014">myEventStream = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Observable</span>(<span class="hljs-function"><span class="hljs-params">observer</span> =&gt;</span> {
   <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =&gt;</span> {
     observer.<span class="hljs-title function_">next</span>(<span class="hljs-number">42</span>);
   }, <span class="hljs-number">1000</span>);
@@ -11479,7 +11479,7 @@ worker.<span class="hljs-title function_">postMessage</span>(<span class="hljs-s
   <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =&gt;</span> {
     observer.<span class="hljs-title function_">complete</span>();
   }, <span class="hljs-number">3000</span>);
-});</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474936.2668')">Copy</button></pre>
+});</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400829.9014')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -11487,12 +11487,12 @@ worker.<span class="hljs-title function_">postMessage</span>(<span class="hljs-s
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669474936.5747"><span class="hljs-keyword">let</span> values = [];
+<pre class="highlight"><code class="language-javascript" id="1755670400830.5886"><span class="hljs-keyword">let</span> values = [];
 <span class="hljs-keyword">let</span> subscription = myEventStream.<span class="hljs-title function_">subscribe</span>(
   <span class="hljs-function"><span class="hljs-params">val</span> =&gt;</span> values.<span class="hljs-title function_">push</span>(val),
   <span class="hljs-function"><span class="hljs-params">error</span> =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(error),
   <span class="hljs-function">() =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;done&#x27;</span>)
-);</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474936.5747')">Copy</button></pre>
+);</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400830.5886')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -11670,11 +11670,11 @@ worker.<span class="hljs-title function_">postMessage</span>(<span class="hljs-s
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474962.5054"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Company</span>(
+<pre class="highlight"><code class="language-java" id="1755670400852.3967"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Company</span>(
         <span class="hljs-keyword">var</span> name: String,
         <span class="hljs-keyword">var</span> id: Int? = <span class="hljs-literal">null</span>,
         <span class="hljs-keyword">var</span> workers : MutableList<span class="hljs-meta">@LTWorker</span><span class="hljs-meta">@GT</span> = mutableListOf()
-)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474962.5054')">Copy</button></pre>
+)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400852.3967')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -11685,11 +11685,11 @@ worker.<span class="hljs-title function_">postMessage</span>(<span class="hljs-s
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474962.0444">data <span class="hljs-keyword">class</span> <span class="hljs-title class_">Worker</span>(
+<pre class="highlight"><code class="language-java" id="1755670400853.6853">data <span class="hljs-keyword">class</span> <span class="hljs-title class_">Worker</span>(
         <span class="hljs-keyword">var</span> firstname: String,
         <span class="hljs-keyword">var</span> lastname: String,
         <span class="hljs-keyword">var</span> company: Company,
-        <span class="hljs-keyword">var</span> id: Int? = <span class="hljs-literal">null</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474962.0444')">Copy</button></pre>
+        <span class="hljs-keyword">var</span> id: Int? = <span class="hljs-literal">null</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400853.6853')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -11697,8 +11697,8 @@ worker.<span class="hljs-title function_">postMessage</span>(<span class="hljs-s
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474962.7363"><span class="hljs-type">val</span> <span class="hljs-variable">guillaume</span> <span class="hljs-operator">=</span> Worker(<span class="hljs-string">&quot;Guillaume&quot;</span>, <span class="hljs-string">&quot;EHRET&quot;</span>)
-<span class="hljs-type">val</span> <span class="hljs-variable">guillaume</span> <span class="hljs-operator">=</span> Worker(<span class="hljs-string">&quot;Guillaume&quot;</span>, <span class="hljs-string">&quot;EHRET&quot;</span>, Company(<span class="hljs-string">&quot;Dev-Mind&quot;</span>))</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474962.7363')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670400853.1577"><span class="hljs-type">val</span> <span class="hljs-variable">guillaume</span> <span class="hljs-operator">=</span> Worker(<span class="hljs-string">&quot;Guillaume&quot;</span>, <span class="hljs-string">&quot;EHRET&quot;</span>)
+<span class="hljs-type">val</span> <span class="hljs-variable">guillaume</span> <span class="hljs-operator">=</span> Worker(<span class="hljs-string">&quot;Guillaume&quot;</span>, <span class="hljs-string">&quot;EHRET&quot;</span>, Company(<span class="hljs-string">&quot;Dev-Mind&quot;</span>))</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400853.1577')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -11717,7 +11717,7 @@ worker.<span class="hljs-title function_">postMessage</span>(<span class="hljs-s
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474963.4805"><span class="hljs-meta">@SpringBootApplication</span><span class="hljs-meta">@EnableTransactionManagement</span>
+<pre class="highlight"><code class="language-java" id="1755670400853.668"><span class="hljs-meta">@SpringBootApplication</span><span class="hljs-meta">@EnableTransactionManagement</span>
 open <span class="hljs-keyword">class</span> <span class="hljs-title class_">DevmindKotlinApplication</span>{
     <span class="hljs-meta">@Bean</span>
     open fun <span class="hljs-title function_">transactionManager</span><span class="hljs-params">(dataSource: DataSource)</span> = SpringTransactionManager(dataSource)
@@ -11725,7 +11725,7 @@ open <span class="hljs-keyword">class</span> <span class="hljs-title class_">Dev
 
 fun <span class="hljs-title function_">main</span><span class="hljs-params">(args: Array<span class="hljs-meta">@LTString</span><span class="hljs-meta">@GT</span>)</span> {
     SpringApplication.run(DevmindKotlinApplication::class.java, *args)
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474963.4805')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400853.668')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -11733,7 +11733,7 @@ fun <span class="hljs-title function_">main</span><span class="hljs-params">(arg
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474963.7234"><span class="hljs-meta">@RestController</span><span class="hljs-meta">@RequestMapping(&quot;/companies&quot;)</span>
+<pre class="highlight"><code class="language-java" id="1755670400853.7424"><span class="hljs-meta">@RestController</span><span class="hljs-meta">@RequestMapping(&quot;/companies&quot;)</span>
 <span class="hljs-keyword">class</span> <span class="hljs-title class_">CompanyController</span>(val companyRepository: CompanyRepository){
 
     <span class="hljs-meta">@GetMapping</span>    fun <span class="hljs-title function_">list</span><span class="hljs-params">()</span> = companyRepository.findAll();
@@ -11745,7 +11745,7 @@ fun <span class="hljs-title function_">main</span><span class="hljs-params">(arg
 
     <span class="hljs-meta">@PutMapping(&quot;/{id}&quot;)</span>
     fun <span class="hljs-title function_">update</span><span class="hljs-params">(<span class="hljs-meta">@PathVariable</span> id: Int, <span class="hljs-meta">@RequestBody</span> company: Company)</span> = companyRepository.update(id, company);
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474963.7234')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400853.7424')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -11767,7 +11767,7 @@ fun <span class="hljs-title function_">main</span><span class="hljs-params">(arg
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474963.1155"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">formatDate</span><span class="hljs-params">(string: <span class="hljs-type">Date</span>, format: <span class="hljs-type">String</span> = <span class="hljs-string">&quot;yyyy-MM-dd&quot;</span>, addDay: <span class="hljs-type">Int</span> =<span class="hljs-number">0</span>)</span></span> : String</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474963.1155')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1755670400854.2837"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">formatDate</span><span class="hljs-params">(string: <span class="hljs-type">Date</span>, format: <span class="hljs-type">String</span> = <span class="hljs-string">&quot;yyyy-MM-dd&quot;</span>, addDay: <span class="hljs-type">Int</span> =<span class="hljs-number">0</span>)</span></span> : String</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400854.2837')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -11775,9 +11775,9 @@ fun <span class="hljs-title function_">main</span><span class="hljs-params">(arg
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474963.826">formatDate(Date())
+<pre class="highlight"><code class="language-kotlin" id="1755670400854.6667">formatDate(Date())
 formatDate(Date(), <span class="hljs-string">&quot;yyyy&quot;</span>)
-formatDate(Date(), addDay = <span class="hljs-number">2</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474963.826')">Copy</button></pre>
+formatDate(Date(), addDay = <span class="hljs-number">2</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400854.6667')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -11799,7 +11799,7 @@ formatDate(Date(), addDay = <span class="hljs-number">2</span>)</code><button cl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474964.123"><span class="hljs-keyword">object</span> Companies : Table() {
+<pre class="highlight"><code class="language-kotlin" id="1755670400854.8518"><span class="hljs-keyword">object</span> Companies : Table() {
     <span class="hljs-keyword">val</span> id = integer(<span class="hljs-string">&quot;id&quot;</span>).autoIncrement().primaryKey()
     <span class="hljs-keyword">val</span> name = varchar(<span class="hljs-string">&quot;name&quot;</span>, <span class="hljs-number">50</span>)
 }
@@ -11807,7 +11807,7 @@ formatDate(Date(), addDay = <span class="hljs-number">2</span>)</code><button cl
     <span class="hljs-keyword">val</span> id = integer(<span class="hljs-string">&quot;id&quot;</span>).autoIncrement().primaryKey()
     <span class="hljs-keyword">val</span> firstname = varchar(<span class="hljs-string">&quot;firstname&quot;</span>, length = <span class="hljs-number">150</span>)
     <span class="hljs-keyword">val</span> lastname = varchar(<span class="hljs-string">&quot;lastname&quot;</span>, length = <span class="hljs-number">150</span>)
-    <span class="hljs-keyword">val</span> companyId = integer(<span class="hljs-string">&quot;company_id&quot;</span>) references Companies.id}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474964.123')">Copy</button></pre>
+    <span class="hljs-keyword">val</span> companyId = integer(<span class="hljs-string">&quot;company_id&quot;</span>) references Companies.id}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400854.8518')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -11815,11 +11815,11 @@ formatDate(Date(), addDay = <span class="hljs-number">2</span>)</code><button cl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474964.2705"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">CrudRepository</span><span class="hljs-meta">@LTT</span>, <span class="hljs-type">K@GT</span> {
+<pre class="highlight"><code class="language-kotlin" id="1755670400854.5984"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">CrudRepository</span><span class="hljs-meta">@LTT</span>, <span class="hljs-type">K@GT</span> {
     <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">createTable</span><span class="hljs-params">()</span></span>
     <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">create</span><span class="hljs-params">(m: <span class="hljs-type">T</span>)</span></span>: T    <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">update</span><span class="hljs-params">(id: <span class="hljs-type">K</span>, m: <span class="hljs-type">T</span>)</span></span>: K    <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">findById</span><span class="hljs-params">(id: <span class="hljs-type">K</span>)</span></span>: T    <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">findAll</span><span class="hljs-params">()</span></span>: <span class="hljs-symbol">Iterable@</span><span class="hljs-symbol">LTT@</span>GT
     <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">deleteAll</span><span class="hljs-params">()</span></span>: <span class="hljs-built_in">Int</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474964.2705')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400854.5984')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -11827,7 +11827,7 @@ formatDate(Date(), addDay = <span class="hljs-number">2</span>)</code><button cl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474964.6125"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">CompanyRepository</span> : <span class="hljs-type">CrudRepository@LTCompany</span>, <span class="hljs-type">Int@GT</span>
+<pre class="highlight"><code class="language-kotlin" id="1755670400855.731"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">CompanyRepository</span> : <span class="hljs-type">CrudRepository@LTCompany</span>, <span class="hljs-type">Int@GT</span>
 
 <span class="hljs-meta">@Repository</span><span class="hljs-meta">@Transactionalclass</span> DefaultCompanyRepository : CompanyRepository {
 
@@ -11849,7 +11849,7 @@ formatDate(Date(), addDay = <span class="hljs-number">2</span>)</code><button cl
             Company(result[Companies.name],
                     result[Companies.id])
 
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474964.6125')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400855.731')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -11937,10 +11937,10 @@ formatDate(Date(), addDay = <span class="hljs-number">2</span>)</code><button cl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474957.295">compile(<span class="hljs-string">&quot;org.springframework.boot:spring-boot-starter-web&quot;</span>) {
+<pre class="highlight"><code class="language-java" id="1755670400847.5544">compile(<span class="hljs-string">&quot;org.springframework.boot:spring-boot-starter-web&quot;</span>) {
     exclude <span class="hljs-keyword">module</span>: <span class="hljs-string">&quot;spring-boot-starter-tomcat&quot;</span>
 }
-compile <span class="hljs-string">&quot;org.springframework.boot:spring-boot-starter-undertow&quot;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474957.295')">Copy</button></pre>
+compile <span class="hljs-string">&quot;org.springframework.boot:spring-boot-starter-undertow&quot;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670400847.5544')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -11953,12 +11953,12 @@ compile <span class="hljs-string">&quot;org.springframework.boot:spring-boot-sta
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669474957.6013"><span class="hljs-attr">server</span>:
+<pre class="highlight"><code class="language-javascript" id="1755670400847.8167"><span class="hljs-attr">server</span>:
   <span class="hljs-attr">ssl</span>:
     key-<span class="hljs-attr">store</span>: <span class="hljs-attr">classpath</span>:perf.<span class="hljs-property">jks</span>
     key-store-<span class="hljs-attr">password</span>: <span class="hljs-title class_">DevMind</span>
     key-<span class="hljs-attr">password</span>: <span class="hljs-title class_">DevMind</span>
-    <span class="hljs-attr">protocol</span>: <span class="hljs-title class_">TLSv1</span><span class="hljs-number">.2</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474957.6013')">Copy</button></pre>
+    <span class="hljs-attr">protocol</span>: <span class="hljs-title class_">TLSv1</span><span class="hljs-number">.2</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670400847.8167')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -12033,7 +12033,7 @@ compile <span class="hljs-string">&quot;org.springframework.boot:spring-boot-sta
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474952.1858">compile <span class="hljs-string">&quot;org.springframework.boot:spring-boot-devtools&quot;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474952.1858')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670400843.7153">compile <span class="hljs-string">&quot;org.springframework.boot:spring-boot-devtools&quot;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670400843.7153')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -12055,7 +12055,7 @@ compile <span class="hljs-string">&quot;org.springframework.boot:spring-boot-sta
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474952.7114">./gradlew bootRun</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474952.7114')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670400843.091">./gradlew bootRun</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400843.091')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -12096,7 +12096,7 @@ compile <span class="hljs-string">&quot;org.springframework.boot:spring-boot-sta
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669474953.487"><span class="hljs-attr">spring</span>:
+<pre class="highlight"><code class="language-javascript" id="1755670400844.8472"><span class="hljs-attr">spring</span>:
   <span class="hljs-attr">profiles</span>: dev
   <span class="hljs-attr">resources</span>:
     <span class="hljs-keyword">static</span>-<span class="hljs-attr">locations</span>:
@@ -12107,7 +12107,7 @@ compile <span class="hljs-string">&quot;org.springframework.boot:spring-boot-sta
       additional-<span class="hljs-attr">paths</span>:
         - ../dm-client/app/
         - ../dm-client/build/.<span class="hljs-property">tmp</span>/
-      additional-<span class="hljs-attr">exclude</span>: <span class="hljs-string">&quot;**/*.js, **/*.css, **/*.html&quot;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474953.487')">Copy</button></pre>
+      additional-<span class="hljs-attr">exclude</span>: <span class="hljs-string">&quot;**/*.js, **/*.css, **/*.html&quot;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670400844.8472')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -12152,7 +12152,7 @@ compile <span class="hljs-string">&quot;org.springframework.boot:spring-boot-sta
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669474953.5864">gulp watch</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474953.5864')">Copy</button></pre>
+<pre class="highlight"><code class="language-javascript" id="1755670400844.893">gulp watch</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400844.893')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -12160,12 +12160,12 @@ compile <span class="hljs-string">&quot;org.springframework.boot:spring-boot-sta
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669474954.7874">gulp.<span class="hljs-title function_">task</span>(<span class="hljs-string">&#x27;watch&#x27;</span>, [<span class="hljs-string">&#x27;scripts&#x27;</span>, <span class="hljs-string">&#x27;styles&#x27;</span>, <span class="hljs-string">&#x27;html-template&#x27;</span>], <span class="hljs-function">() =&gt;</span> {
+<pre class="highlight"><code class="language-javascript" id="1755670400844.644">gulp.<span class="hljs-title function_">task</span>(<span class="hljs-string">&#x27;watch&#x27;</span>, [<span class="hljs-string">&#x27;scripts&#x27;</span>, <span class="hljs-string">&#x27;styles&#x27;</span>, <span class="hljs-string">&#x27;html-template&#x27;</span>], <span class="hljs-function">() =&gt;</span> {
   gulp.<span class="hljs-title function_">watch</span>([<span class="hljs-string">&#x27;app/**/*.html&#x27;</span>], [<span class="hljs-string">&#x27;html-template&#x27;</span>, reload]);
   gulp.<span class="hljs-title function_">watch</span>([<span class="hljs-string">&#x27;app/src/**/*.{scss,css}&#x27;</span>], [<span class="hljs-string">&#x27;styles&#x27;</span>, reload]);
   gulp.<span class="hljs-title function_">watch</span>([<span class="hljs-string">&#x27;app/**/*.js&#x27;</span>], [<span class="hljs-string">&#x27;lint&#x27;</span>, <span class="hljs-string">&#x27;scripts&#x27;</span>]);
   gulp.<span class="hljs-title function_">watch</span>([<span class="hljs-string">&#x27;app/images/**/*&#x27;</span>], reload);
-});</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474954.7874')">Copy</button></pre>
+});</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400844.644')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -12261,7 +12261,7 @@ compile <span class="hljs-string">&quot;org.springframework.boot:spring-boot-sta
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474915.3137">yum install -y Xvfb libXfont Xorg firefox</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474915.3137')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670400812.522">yum install -y Xvfb libXfont Xorg firefox</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400812.522')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -12269,7 +12269,7 @@ compile <span class="hljs-string">&quot;org.springframework.boot:spring-boot-sta
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474915.6567">Error: no display specified</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474915.6567')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670400812.607">Error: no display specified</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400812.607')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -12277,7 +12277,7 @@ compile <span class="hljs-string">&quot;org.springframework.boot:spring-boot-sta
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474915.1282">xvfb-run -a firefox</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474915.1282')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670400812.548">xvfb-run -a firefox</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400812.548')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -12285,11 +12285,11 @@ compile <span class="hljs-string">&quot;org.springframework.boot:spring-boot-sta
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474915.7852">gulp unit
+<pre class="highlight"><code class="language-java" id="1755670400812.8855">gulp unit
 \u21D2 error
 
 xvfb-run -a gulp unit
-\u21D2 OK</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474915.7852')">Copy</button></pre>
+\u21D2 OK</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400812.8855')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -12297,11 +12297,11 @@ xvfb-run -a gulp unit
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474915.735">gulp e2e
+<pre class="highlight"><code class="language-java" id="1755670400812.8486">gulp e2e
 \u21D2 error
 
 xvfb-run -a gulp e2e
-\u21D2 OK</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474915.735')">Copy</button></pre>
+\u21D2 OK</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400812.8486')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -12328,7 +12328,7 @@ xvfb-run -a gulp e2e
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474915.0732">Xvfb :<span class="hljs-number">1</span> -screen <span class="hljs-number">0</span> 1600x1200x32</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474915.0732')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670400812.7327">Xvfb :<span class="hljs-number">1</span> -screen <span class="hljs-number">0</span> 1600x1200x32</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400812.7327')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -12336,7 +12336,7 @@ xvfb-run -a gulp e2e
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474916.0435">Xvfb :<span class="hljs-number">45</span> -screen <span class="hljs-number">1</span> 1600x1200x16</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474916.0435')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670400812.1465">Xvfb :<span class="hljs-number">45</span> -screen <span class="hljs-number">1</span> 1600x1200x16</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400812.1465')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -12347,7 +12347,7 @@ xvfb-run -a gulp e2e
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474916.9214">xvfb-run -a --server-args=<span class="hljs-string">&quot;-screen 0 1024x768x24&quot;</span> gulp e2e</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474916.9214')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670400812.6316">xvfb-run -a --server-args=<span class="hljs-string">&quot;-screen 0 1024x768x24&quot;</span> gulp e2e</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400812.6316')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -12455,7 +12455,7 @@ xvfb-run -a gulp e2e
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-html" id="1755669474911.0642"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<pre class="highlight"><code class="language-html" id="1755670400807.636"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1&quot;</span>&gt;</span>
@@ -12485,7 +12485,7 @@ xvfb-run -a gulp e2e
         All right reserved - @2016 Guillaume EHRET
     <span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474911.0642')">Copy</button></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670400807.636')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -12509,11 +12509,11 @@ xvfb-run -a gulp e2e
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-css" id="1755669474911.8086"><span class="hljs-selector-tag">html</span>, <span class="hljs-selector-tag">body</span> {
+<pre class="highlight"><code class="language-css" id="1755670400807.123"><span class="hljs-selector-tag">html</span>, <span class="hljs-selector-tag">body</span> {
     <span class="hljs-attribute">min-height</span>: <span class="hljs-number">100vh</span>;
     <span class="hljs-attribute">max-height</span>: <span class="hljs-number">100vh</span>;
     <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474911.8086')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400807.123')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -12521,8 +12521,8 @@ xvfb-run -a gulp e2e
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-css" id="1755669474911.1516"><span class="hljs-attribute">display</span>: flex;
-<span class="hljs-attribute">flex-direction</span>: column;</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474911.1516')">Copy</button></pre>
+<pre class="highlight"><code class="language-css" id="1755670400807.014"><span class="hljs-attribute">display</span>: flex;
+<span class="hljs-attribute">flex-direction</span>: column;</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400807.014')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -12549,11 +12549,11 @@ xvfb-run -a gulp e2e
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-html" id="1755669474911.9355">header {
+<pre class="highlight"><code class="language-html" id="1755670400807.6006">header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474911.9355')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400807.6006')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -12580,7 +12580,7 @@ xvfb-run -a gulp e2e
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-html" id="1755669474911.6655">header {
+<pre class="highlight"><code class="language-html" id="1755670400807.536">header {
     flex: 0 0 64px;
 }
 main {
@@ -12588,7 +12588,7 @@ main {
 }
 footer {
     flex: 0 1;
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474911.6655')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400807.536')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -12601,7 +12601,7 @@ footer {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-html" id="1755669474911.0645">grid {
+<pre class="highlight"><code class="language-html" id="1755670400807.3523">grid {
     display: flex;
 }
 
@@ -12610,7 +12610,7 @@ grid &gt; div {
     margin: 10px;
     padding: 1em;
     text-align: center;
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474911.0645')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400807.3523')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -12975,12 +12975,12 @@ grid &gt; div {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669474941.0413">payload={
+<pre class="highlight"><code class="language-javascript" id="1755670400833.93">payload={
     <span class="hljs-string">&quot;channel&quot;</span>: <span class="hljs-string">&quot;#general&quot;</span>,
     <span class="hljs-string">&quot;username&quot;</span>: <span class="hljs-string">&quot;Dev-Mind&quot;</span>, <span class="hljs-string">&quot;text&quot;</span>:
     <span class="hljs-string">&quot;This is my post to #general.&quot;</span>,
     <span class="hljs-string">&quot;icon_emoji&quot;</span>: <span class="hljs-string">&quot;:ghost:&quot;</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474941.0413')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400833.93')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -12988,7 +12988,7 @@ grid &gt; div {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474941.783">curl -X POST --data-urlencode &#x27;payload={&quot;channel&quot;: &quot;#general&quot;, &quot;username&quot;: &quot;webhookbot&quot;, &quot;text&quot;: &quot;This is posted to #general and comes from a bot named webhookbot.&quot;, &quot;icon_emoji&quot;: &quot;:ghost:&quot;}&#x27; https://hooks.slack.com/services/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</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474941.783')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670400833.1492">curl -X POST --data-urlencode &#x27;payload={&quot;channel&quot;: &quot;#general&quot;, &quot;username&quot;: &quot;webhookbot&quot;, &quot;text&quot;: &quot;This is posted to #general and comes from a bot named webhookbot.&quot;, &quot;icon_emoji&quot;: &quot;:ghost:&quot;}&#x27; https://hooks.slack.com/services/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</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400833.1492')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -13005,7 +13005,7 @@ grid &gt; div {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474942.7422"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SlackMessage</span> {
+<pre class="highlight"><code class="language-java" id="1755670400834.547"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SlackMessage</span> {
 
     <span class="hljs-keyword">private</span> String channel;
     <span class="hljs-keyword">private</span> String text;
@@ -13057,7 +13057,7 @@ grid &gt; div {
         <span class="hljs-built_in">this</span>.icon_url = icon_url;
         <span class="hljs-keyword">return</span> <span class="hljs-built_in">this</span>;
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474942.7422')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400834.547')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -13068,7 +13068,7 @@ grid &gt; div {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474943.2603"><span class="hljs-meta">@RestController</span>
+<pre class="highlight"><code class="language-java" id="1755670400834.6829"><span class="hljs-meta">@RestController</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SlackMessageSender</span> {
 
     <span class="hljs-meta">@Value(&quot;@dollar@{slack.services.incoming}&quot;)</span>
@@ -13101,7 +13101,7 @@ grid &gt; div {
         }
         <span class="hljs-keyword">return</span> ResponseEntity.ok().body(<span class="hljs-string">&quot;Message sent&quot;</span>);
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474943.2603')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400834.6829')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -13467,10 +13467,10 @@ grid &gt; div {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474819.5496"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Person</span> {
+<pre class="highlight"><code class="language-java" id="1755670400693.8257"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Person</span> {
     <span class="hljs-keyword">public</span> <span class="hljs-type">int</span> age;
     <span class="hljs-keyword">public</span> String name;
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474819.5496')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400693.8257')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -13478,7 +13478,7 @@ grid &gt; div {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474819.3354"><span class="hljs-type">int</span> <span class="hljs-variable">sum</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>;
+<pre class="highlight"><code class="language-java" id="1755670400694.3533"><span class="hljs-type">int</span> <span class="hljs-variable">sum</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>;
 <span class="hljs-type">int</span> <span class="hljs-variable">average</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>;
 <span class="hljs-type">int</span> <span class="hljs-variable">nb</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>;
 <span class="hljs-keyword">for</span> (Person p : persons) {
@@ -13489,7 +13489,7 @@ grid &gt; div {
 }
 <span class="hljs-keyword">if</span> (!persons.isEmpty()) {
     average = sum / nb;
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474819.3354')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400694.3533')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -13513,7 +13513,7 @@ grid &gt; div {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474819.64"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">Mapper</span><span class="hljs-meta">@LTO</span>, P<span class="hljs-meta">@GT</span> {
+<pre class="highlight"><code class="language-java" id="1755670400695.4854"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">Mapper</span><span class="hljs-meta">@LTO</span>, P<span class="hljs-meta">@GT</span> {
     P <span class="hljs-title function_">map</span><span class="hljs-params">(O o)</span>;
 }
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">Predicate</span><span class="hljs-meta">@LTO</span><span class="hljs-meta">@GT</span> {
@@ -13521,7 +13521,7 @@ grid &gt; div {
 }
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">Reducer</span><span class="hljs-meta">@LTR</span><span class="hljs-meta">@GT</span> {
     R <span class="hljs-title function_">reduce</span><span class="hljs-params">(R r1, R r2)</span>;
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474819.64')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400695.4854')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -13529,7 +13529,7 @@ grid &gt; div {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474820.8281">Mapper<span class="hljs-meta">@LTPerson</span>, Integer<span class="hljs-meta">@GT</span> mapper = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Mapper</span><span class="hljs-meta">@LTPerson</span>, Integer<span class="hljs-meta">@GT()</span> {
+<pre class="highlight"><code class="language-java" id="1755670400696.6677">Mapper<span class="hljs-meta">@LTPerson</span>, Integer<span class="hljs-meta">@GT</span> mapper = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Mapper</span><span class="hljs-meta">@LTPerson</span>, Integer<span class="hljs-meta">@GT()</span> {
     <span class="hljs-meta">@Override</span>
     <span class="hljs-keyword">public</span> Integer <span class="hljs-title function_">map</span><span class="hljs-params">(Person o)</span> {
         <span class="hljs-keyword">return</span> o.getAge();
@@ -13546,7 +13546,7 @@ Reducer<span class="hljs-meta">@LTInteger</span><span class="hljs-meta">@GT</spa
     <span class="hljs-keyword">public</span> Integer <span class="hljs-title function_">reduce</span><span class="hljs-params">(Integer r1, Integer r2)</span> {
         <span class="hljs-keyword">return</span> r1+r2;
     }
-};</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474820.8281')">Copy</button></pre>
+};</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400696.6677')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -13554,7 +13554,7 @@ Reducer<span class="hljs-meta">@LTInteger</span><span class="hljs-meta">@GT</spa
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474820.2417">List<span class="hljs-meta">@LTInteger</span><span class="hljs-meta">@GT</span> agesPersons = FluentIterable
+<pre class="highlight"><code class="language-java" id="1755670400696.672">List<span class="hljs-meta">@LTInteger</span><span class="hljs-meta">@GT</span> agesPersons = FluentIterable
         .from(persons)
         .filter(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Predicate</span><span class="hljs-meta">@LTPerson</span><span class="hljs-meta">@GT()</span> {
             <span class="hljs-meta">@Override</span>
@@ -13576,7 +13576,7 @@ Reducer<span class="hljs-meta">@LTInteger</span><span class="hljs-meta">@GT</spa
     }
     <span class="hljs-type">double</span> <span class="hljs-variable">moyenne</span> <span class="hljs-operator">=</span> sum / agesPersons.size();
     System.out.println(moyenne);
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474820.2417')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400696.672')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -13584,13 +13584,13 @@ Reducer<span class="hljs-meta">@LTInteger</span><span class="hljs-meta">@GT</spa
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474820.2036">Mapper<span class="hljs-meta">@LTPerson</span>, Integer<span class="hljs-meta">@GT</span> mapper = (Person person) <span class="hljs-meta">@LAMBDA</span> person.getAge();
+<pre class="highlight"><code class="language-java" id="1755670400697.713">Mapper<span class="hljs-meta">@LTPerson</span>, Integer<span class="hljs-meta">@GT</span> mapper = (Person person) <span class="hljs-meta">@LAMBDA</span> person.getAge();
 <span class="hljs-comment">//ou</span>
 mapper = Person::getAge;
 
 Predicate<span class="hljs-meta">@LTInteger</span><span class="hljs-meta">@GT</span> filter = i <span class="hljs-meta">@LAMBDA</span> i<span class="hljs-meta">@GT</span>=<span class="hljs-number">20</span>;
 
-Reducer<span class="hljs-meta">@LTInteger</span><span class="hljs-meta">@GT</span> reducer = (r1, r2) <span class="hljs-meta">@LAMBDA</span> r1+r2;</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474820.2036')">Copy</button></pre>
+Reducer<span class="hljs-meta">@LTInteger</span><span class="hljs-meta">@GT</span> reducer = (r1, r2) <span class="hljs-meta">@LAMBDA</span> r1+r2;</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400697.713')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -13659,9 +13659,9 @@ Reducer<span class="hljs-meta">@LTInteger</span><span class="hljs-meta">@GT</spa
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474820.4038">List<span class="hljs-meta">@LTInteger</span><span class="hljs-meta">@GT</span> ages = Lists.map(persons, person <span class="hljs-meta">@LAMBDA</span> person.getAge());
+<pre class="highlight"><code class="language-java" id="1755670400697.1611">List<span class="hljs-meta">@LTInteger</span><span class="hljs-meta">@GT</span> ages = Lists.map(persons, person <span class="hljs-meta">@LAMBDA</span> person.getAge());
 List<span class="hljs-meta">@LTInteger</span><span class="hljs-meta">@GT</span> ages20 = Lists.filter(ages, age <span class="hljs-meta">@LAMBDA</span> age<span class="hljs-meta">@GT</span>=<span class="hljs-number">20</span>);
-<span class="hljs-type">int</span> <span class="hljs-variable">sum</span> <span class="hljs-operator">=</span> Lists.reduce(ages20, (r1, r2) <span class="hljs-meta">@LAMBDA</span> r1+r2);</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474820.4038')">Copy</button></pre>
+<span class="hljs-type">int</span> <span class="hljs-variable">sum</span> <span class="hljs-operator">=</span> Lists.reduce(ages20, (r1, r2) <span class="hljs-meta">@LAMBDA</span> r1+r2);</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400697.1611')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -13697,11 +13697,11 @@ List<span class="hljs-meta">@LTInteger</span><span class="hljs-meta">@GT</span> 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474820.2239"><span class="hljs-type">double</span> <span class="hljs-variable">moyenne</span> <span class="hljs-operator">=</span> persons.stream()
+<pre class="highlight"><code class="language-java" id="1755670400697.6953"><span class="hljs-type">double</span> <span class="hljs-variable">moyenne</span> <span class="hljs-operator">=</span> persons.stream()
                         .filter(person <span class="hljs-meta">@LAMBDA</span> person.getAge() <span class="hljs-meta">@GT</span>= <span class="hljs-number">20</span>)
                         .mapToInt(person <span class="hljs-meta">@LAMBDA</span> person.getAge())
                         .average()
-                        .getAsDouble();</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474820.2239')">Copy</button></pre>
+                        .getAsDouble();</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400697.6953')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -13735,9 +13735,9 @@ List<span class="hljs-meta">@LTInteger</span><span class="hljs-meta">@GT</span> 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474821.7441"><span class="hljs-keyword">default</span> Stream<span class="hljs-meta">@LTE</span><span class="hljs-meta">@GT</span> stream() {
+<pre class="highlight"><code class="language-java" id="1755670400697.6218"><span class="hljs-keyword">default</span> Stream<span class="hljs-meta">@LTE</span><span class="hljs-meta">@GT</span> stream() {
     <span class="hljs-keyword">return</span> StreamSupport.stream(spliterator(), <span class="hljs-literal">false</span>);
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474821.7441')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400697.6218')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -13745,7 +13745,7 @@ List<span class="hljs-meta">@LTInteger</span><span class="hljs-meta">@GT</span> 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474821.1904"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">A</span> {
+<pre class="highlight"><code class="language-java" id="1755670400698.98"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">A</span> {
     <span class="hljs-keyword">public</span> String <span class="hljs-title function_">a</span><span class="hljs-params">()</span>;
 }
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">A</span> {
@@ -13756,7 +13756,7 @@ List<span class="hljs-meta">@LTInteger</span><span class="hljs-meta">@GT</span> 
     <span class="hljs-keyword">public</span> String <span class="hljs-title function_">a</span><span class="hljs-params">()</span> {
         <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474821.1904')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400698.98')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -13764,7 +13764,7 @@ List<span class="hljs-meta">@LTInteger</span><span class="hljs-meta">@GT</span> 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474821.7222"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">A</span> {
+<pre class="highlight"><code class="language-java" id="1755670400698.3013"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">A</span> {
     <span class="hljs-keyword">default</span> <span class="hljs-keyword">public</span> String <span class="hljs-title function_">a</span><span class="hljs-params">()</span> { <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;a&quot;</span>;}
 }
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">B</span> {
@@ -13773,7 +13773,7 @@ List<span class="hljs-meta">@LTInteger</span><span class="hljs-meta">@GT</span> 
 
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">C</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">A</span>,B {
 
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474821.7222')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400698.3013')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -13790,12 +13790,12 @@ List<span class="hljs-meta">@LTInteger</span><span class="hljs-meta">@GT</span> 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474821.2883"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span><span class="hljs-meta">@LTT</span><span class="hljs-meta">@GT</span> Stream<span class="hljs-meta">@LTT</span><span class="hljs-meta">@GT</span> empty() {
+<pre class="highlight"><code class="language-java" id="1755670400698.5771"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span><span class="hljs-meta">@LTT</span><span class="hljs-meta">@GT</span> Stream<span class="hljs-meta">@LTT</span><span class="hljs-meta">@GT</span> empty() {
     <span class="hljs-keyword">return</span> StreamSupport.stream(Spliterators.<span class="hljs-meta">@LTT</span><span class="hljs-meta">@GTemptySpliterator()</span>, <span class="hljs-literal">false</span>);
 }
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span><span class="hljs-meta">@LTT</span><span class="hljs-meta">@GT</span> Stream<span class="hljs-meta">@LTT</span><span class="hljs-meta">@GT</span> of(T t) {
     <span class="hljs-keyword">return</span> StreamSupport.stream(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Streams</span>.StreamBuilderImpl<span class="hljs-meta">@LT</span><span class="hljs-meta">@GT(t)</span>, <span class="hljs-literal">false</span>);
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474821.2883')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400698.5771')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -13811,10 +13811,10 @@ List<span class="hljs-meta">@LTInteger</span><span class="hljs-meta">@GT</span> 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474821.5322">Optional<span class="hljs-meta">@LTInteger</span><span class="hljs-meta">@GT</span> sum =  persons.stream()
+<pre class="highlight"><code class="language-java" id="1755670400699.3489">Optional<span class="hljs-meta">@LTInteger</span><span class="hljs-meta">@GT</span> sum =  persons.stream()
                                 .map(person <span class="hljs-meta">@LAMBDA</span> person.getAge())
                                 .filter(age <span class="hljs-meta">@LAMBDA</span> age<span class="hljs-meta">@GT</span>=<span class="hljs-number">20</span>)
-                                .reduce((age1, age2) <span class="hljs-meta">@LAMBDA</span> age1+age2);</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474821.5322')">Copy</button></pre>
+                                .reduce((age1, age2) <span class="hljs-meta">@LAMBDA</span> age1+age2);</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400699.3489')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -13835,10 +13835,10 @@ List<span class="hljs-meta">@LTInteger</span><span class="hljs-meta">@GT</span> 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474821.9688"><span class="hljs-comment">//Age moyen des personnes de plus de 20 ans</span>
+<pre class="highlight"><code class="language-java" id="1755670400699.7715"><span class="hljs-comment">//Age moyen des personnes de plus de 20 ans</span>
 <span class="hljs-type">double</span> <span class="hljs-variable">moyenne</span> <span class="hljs-operator">=</span> persons.stream()
         .filter(person <span class="hljs-meta">@LAMBDA</span> person.getAge() <span class="hljs-meta">@GT</span>= <span class="hljs-number">20</span>)
-        .collect(Collectors.averagingInt(Person::getAge));</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474821.9688')">Copy</button></pre>
+        .collect(Collectors.averagingInt(Person::getAge));</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400699.7715')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -13846,10 +13846,10 @@ List<span class="hljs-meta">@LTInteger</span><span class="hljs-meta">@GT</span> 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474822.6597"><span class="hljs-comment">//map repartissant les personnes par age</span>
+<pre class="highlight"><code class="language-java" id="1755670400699.8994"><span class="hljs-comment">//map repartissant les personnes par age</span>
 Map<span class="hljs-meta">@LTInteger</span>, List<span class="hljs-meta">@LTPerson</span><span class="hljs-meta">@GT</span><span class="hljs-meta">@GT</span> repartition =  persons.stream()
         .filter(person <span class="hljs-meta">@LAMBDA</span> person.getAge() <span class="hljs-meta">@GT</span>= <span class="hljs-number">20</span>)
-        .collect(Collectors.groupingBy(Person::getAge));</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474822.6597')">Copy</button></pre>
+        .collect(Collectors.groupingBy(Person::getAge));</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400699.8994')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -13857,12 +13857,12 @@ Map<span class="hljs-meta">@LTInteger</span>, List<span class="hljs-meta">@LTPer
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474822.2212"><span class="hljs-comment">//map repartissant les personnes par age selon leur nom</span>
+<pre class="highlight"><code class="language-java" id="1755670400699.4016"><span class="hljs-comment">//map repartissant les personnes par age selon leur nom</span>
         Map<span class="hljs-meta">@LTInteger</span>, List<span class="hljs-meta">@LTString</span><span class="hljs-meta">@GT</span><span class="hljs-meta">@GT</span> repartition2 =  persons.stream()
                 .filter(person <span class="hljs-meta">@LAMBDA</span> person.getAge() <span class="hljs-meta">@GT</span>= <span class="hljs-number">20</span>)
                 .collect(Collectors.groupingBy(Person::getAge,
                     Collectors.mapping(
-                       person<span class="hljs-meta">@LAMBDAperson</span>.getName(), Collectors.toList())));</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474822.2212')">Copy</button></pre>
+                       person<span class="hljs-meta">@LAMBDAperson</span>.getName(), Collectors.toList())));</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400699.4016')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -14218,8 +14218,8 @@ Par d\xE9faut le nom de la partie est le nom du jeu s\xE9lectionn\xE9, mais vous
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474806.304">~@dollar@ curl -s &quot;https://get.sdkman.io&quot; | bash
-~@dollar@ source &quot;@dollar@HOME/.sdkman/bin/sdkman-init.sh&quot;</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474806.304')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670401161.7754">~@dollar@ curl -s &quot;https://get.sdkman.io&quot; | bash
+~@dollar@ source &quot;@dollar@HOME/.sdkman/bin/sdkman-init.sh&quot;</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401161.7754')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -14227,11 +14227,11 @@ Par d\xE9faut le nom de la partie est le nom du jeu s\xE9lectionn\xE9, mais vous
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474806.069">~@dollar@ sdk version
+<pre class="highlight"><code class="language-shell" id="1755670401161.7456">~@dollar@ sdk version
 
 SDKMAN!
 script: 5.18.2
-native: 0.4.2</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474806.069')">Copy</button></pre>
+native: 0.4.2</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401161.7456')">Copy</button></pre>
 </div>
 </div>
 <div class="quoteblock">
@@ -14265,7 +14265,7 @@ native: 0.4.2</code><button class="btn-copy-code" onclick="copyToClipboard('1755
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474806.4192">~@dollar@ sdk list java</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474806.4192')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670401161.0068">~@dollar@ sdk list java</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401161.0068')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -14273,7 +14273,7 @@ native: 0.4.2</code><button class="btn-copy-code" onclick="copyToClipboard('1755
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474806.1914">~@dollar@ sdk install java 21.0.4-oracle</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474806.1914')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670401161.9585">~@dollar@ sdk install java 21.0.4-oracle</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401161.9585')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -14281,7 +14281,7 @@ native: 0.4.2</code><button class="btn-copy-code" onclick="copyToClipboard('1755
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474806.4004">~@dollar@ sdk default java 21.0.4-oracle</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474806.4004')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670401161.2563">~@dollar@ sdk default java 21.0.4-oracle</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401161.2563')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -14292,10 +14292,10 @@ native: 0.4.2</code><button class="btn-copy-code" onclick="copyToClipboard('1755
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474806.7014">~@dollar@  java -version
+<pre class="highlight"><code class="language-shell" id="1755670401161.8606">~@dollar@  java -version
 java version &quot;21.0.4&quot; 2024-07-16 LTS
 Java(TM) SE Runtime Environment (build 21.0.4+8-LTS-274)
-Java HotSpot(TM) 64-Bit Server VM (build 21.0.4+8-LTS-274, mixed mode, sharing)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474806.7014')">Copy</button></pre>
+Java HotSpot(TM) 64-Bit Server VM (build 21.0.4+8-LTS-274, mixed mode, sharing)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401161.8606')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -14357,8 +14357,8 @@ You can also try to obtain a free licence on this <a href="https://jetbrains.com
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474806.2954">cd ~/appli/android-studio/bin
-sh ./studio.sh</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474806.2954')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670401161.4414">cd ~/appli/android-studio/bin
+sh ./studio.sh</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401161.4414')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -14587,7 +14587,7 @@ The sources are stored both on the computer of each contributor of the project, 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474800.207">sudo yum install git</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474800.207')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670401156.946">sudo yum install git</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401156.946')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -14595,7 +14595,7 @@ The sources are stored both on the computer of each contributor of the project, 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474800.7097">sudo apt-get install git</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474800.7097')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670401156.4216">sudo apt-get install git</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401156.4216')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -14603,9 +14603,9 @@ The sources are stored both on the computer of each contributor of the project, 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474800.8198">~@dollar@ git --version
+<pre class="highlight"><code class="language-shell" id="1755670401156.822">~@dollar@ git --version
 
-git version 2.34.1</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474800.8198')">Copy</button></pre>
+git version 2.34.1</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401156.822')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -14620,8 +14620,8 @@ git version 2.34.1</code><button class="btn-copy-code" onclick="copyToClipboard(
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474800.9973">~@dollar@ git config --global user.name &quot;Guillaume EHRET Dev-Mind&quot;
-~@dollar@ git config --global user.email &quot;guillaume@dev-mind.fr&quot;</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474800.9973')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670401156.027">~@dollar@ git config --global user.name &quot;Guillaume EHRET Dev-Mind&quot;
+~@dollar@ git config --global user.email &quot;guillaume@dev-mind.fr&quot;</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401156.027')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -14629,7 +14629,7 @@ git version 2.34.1</code><button class="btn-copy-code" onclick="copyToClipboard(
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474800.904">~@dollar@  git config --global init.defaultBranch main</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474800.904')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670401156.6062">~@dollar@  git config --global init.defaultBranch main</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401156.6062')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -14640,7 +14640,7 @@ git version 2.34.1</code><button class="btn-copy-code" onclick="copyToClipboard(
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474800.2615">~@dollar@ git clone https://github.com/Dev-Mind/git-demo.git</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474800.2615')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670401156.5933">~@dollar@ git clone https://github.com/Dev-Mind/git-demo.git</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401156.5933')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -14651,8 +14651,8 @@ git version 2.34.1</code><button class="btn-copy-code" onclick="copyToClipboard(
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474800.25">~@dollar@ cd git-demo
-~@dollar@ git log</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474800.25')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670401156.9294">~@dollar@ cd git-demo
+~@dollar@ git log</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401156.9294')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -14663,10 +14663,10 @@ git version 2.34.1</code><button class="btn-copy-code" onclick="copyToClipboard(
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474800.516">~@dollar@ cd ..
+<pre class="highlight"><code class="language-shell" id="1755670401156.1895">~@dollar@ cd ..
 ~@dollar@ rm -rf git-demo
 ~@dollar@ mkdir git-demo
-~@dollar@ cd git-demo</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474800.516')">Copy</button></pre>
+~@dollar@ cd git-demo</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401156.1895')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -14674,9 +14674,9 @@ git version 2.34.1</code><button class="btn-copy-code" onclick="copyToClipboard(
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474800.6538">~@dollar@ git init
+<pre class="highlight"><code class="language-shell" id="1755670401156.6187">~@dollar@ git init
 
-Initialized empty Git repository in /home/devmind/Workspace/java/git-demo/.git/</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474800.6538')">Copy</button></pre>
+Initialized empty Git repository in /home/devmind/Workspace/java/git-demo/.git/</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401156.6187')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -14684,13 +14684,13 @@ Initialized empty Git repository in /home/devmind/Workspace/java/git-demo/.git/<
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474800.5312">---
+<pre class="highlight"><code class="language-shell" id="1755670401156.6301">---
 ~@dollar@ ls -la
 total 28
 drwxr-xr-x  3 devmind devmind  4096 sept. 26 22:46 .
 drwxr-xr-x 10 devmind devmind  4096 sept. 26 22:46 ..
 drwxr-xr-x  8 devmind devmind  4096 sept. 26 22:46 .git
-----</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474800.5312')">Copy</button></pre>
+----</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401156.6301')">Copy</button></pre>
 </div>
 </div>
 <div class="admonitionblock note">
@@ -14713,11 +14713,11 @@ Git will display a warning if you name the default branch master (default config
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474800.2825">~@dollar@ echo &quot;Hello world&quot; @GT hello.txt
+<pre class="highlight"><code class="language-shell" id="1755670401156.3376">~@dollar@ echo &quot;Hello world&quot; @GT hello.txt
 ~@dollar@ echo &quot;@LThtml@GT@LTbody@GT@LTh1@GTHello World@LT/h1@GT@LT/body@GT@LT/html@GT&quot; @GT hello.html
 ~@dollar@ echo &quot;Hello world&quot; @GT hello.md
 ~@dollar@ ls
-hello.html  hello.txt  hello.md</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474800.2825')">Copy</button></pre>
+hello.html  hello.txt  hello.md</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401156.3376')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -14725,7 +14725,7 @@ hello.html  hello.txt  hello.md</code><button class="btn-copy-code" onclick="cop
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474800.135">~@dollar@ git status
+<pre class="highlight"><code class="language-shell" id="1755670401156.1345">~@dollar@ git status
 
 On branch main
 
@@ -14737,7 +14737,7 @@ Untracked files:
 	hello.md
 	hello.txt
 
-nothing added to commit but untracked files present (use &quot;git add&quot; to track)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474800.135')">Copy</button></pre>
+nothing added to commit but untracked files present (use &quot;git add&quot; to track)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401156.1345')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -14745,8 +14745,8 @@ nothing added to commit but untracked files present (use &quot;git add&quot; to 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474800.307">~@dollar@ git add hello.txt
-~@dollar@ git add .</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474800.307')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670401156.5696">~@dollar@ git add hello.txt
+~@dollar@ git add .</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401156.5696')">Copy</button></pre>
 </div>
 </div>
 <div class="olist arabic">
@@ -14764,7 +14764,7 @@ nothing added to commit but untracked files present (use &quot;git add&quot; to 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474800.4158">~@dollar@ git status
+<pre class="highlight"><code class="language-shell" id="1755670401156.811">~@dollar@ git status
 
 On branch main
 
@@ -14774,7 +14774,7 @@ Changes to be committed:
   (use &quot;git rm --cached @LTfile@GT...&quot; to unstage)
 	new file:   hello.html
 	new file:   hello.md
-	new file:   hello.txt</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474800.4158')">Copy</button></pre>
+	new file:   hello.txt</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401156.811')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -14785,13 +14785,13 @@ Changes to be committed:
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474800.845">~@dollar@ git commit -m &quot;First commit&quot;
+<pre class="highlight"><code class="language-shell" id="1755670401156.867">~@dollar@ git commit -m &quot;First commit&quot;
 
 [main a7d5b84] First commit
  3 files changed, 3 insertions(+)
  create mode 100644 hello.html
  create mode 100644 hello.md
- create mode 100644 hello.txt</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474800.845')">Copy</button></pre>
+ create mode 100644 hello.txt</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401156.867')">Copy</button></pre>
 </div>
 </div>
 <div class="olist arabic">
@@ -14828,9 +14828,9 @@ For example</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474801.5266">~@dollar@ rm hello.md
+<pre class="highlight"><code class="language-shell" id="1755670401156.7815">~@dollar@ rm hello.md
 ~@dollar@ echo &quot;My first Git example&quot; &gt; hello.md
-~@dollar@ echo &quot;Hello World&quot; &gt; hello.adoc</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474801.5266')">Copy</button></pre>
+~@dollar@ echo &quot;Hello World&quot; &gt; hello.adoc</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401156.7815')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -14838,7 +14838,7 @@ For example</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474801.9507">~@dollar@ git status</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474801.9507')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670401156.2615">~@dollar@ git status</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401156.2615')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -14846,21 +14846,21 @@ For example</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474801.5813">~@dollar@ git add .
+<pre class="highlight"><code class="language-shell" id="1755670401156.0298">~@dollar@ git add .
 ~@dollar@ git commit -m &quot;Second commit&quot;
 
 [main 7b7d8e6] Second commit
  3 files changed, 2 insertions(+), 2 deletions(-)
  create mode 100644 hello.adoc
- delete mode 100644 hello.txt</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474801.5813')">Copy</button></pre>
+ delete mode 100644 hello.txt</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401156.0298')">Copy</button></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474801.6113">~@dollar@ git status
+<pre class="highlight"><code class="language-shell" id="1755670401156.6492">~@dollar@ git status
 
 On branch main
-nothing to commit, working tree clean</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474801.6113')">Copy</button></pre>
+nothing to commit, working tree clean</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401156.6492')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -14874,7 +14874,7 @@ nothing to commit, working tree clean</code><button class="btn-copy-code" onclic
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474801.6323">~@dollar@ git log
+<pre class="highlight"><code class="language-shell" id="1755670401156.018">~@dollar@ git log
 
 commit 7b7d8e69a06af284c9da7aa4a8c28835d23318fe (HEAD @LAMBDA main)
 Author: Guillaume EHRET Dev-Mind @LTguillaume@dev-mind.fr@GT
@@ -14886,7 +14886,7 @@ commit a7d5b843ebc65ac6e94c37872d6a936e1c03a6b5
 Author: Guillaume EHRET Dev-Mind @LTguillaume@dev-mind.fr@GT
 Date:   Wed Sep 26 23:08:00 2018 +0200
 
-    First commit</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474801.6323')">Copy</button></pre>
+    First commit</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401156.018')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -14900,8 +14900,8 @@ Date:   Wed Sep 26 23:08:00 2018 +0200
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474801.8376">~@dollar@ echo &quot;Fichier Asciidoc&quot; @GT hello.adoc
-~@dollar@ git diff</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474801.8376')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670401156.5715">~@dollar@ echo &quot;Fichier Asciidoc&quot; @GT hello.adoc
+~@dollar@ git diff</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401156.5715')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -14926,7 +14926,7 @@ Date:   Wed Sep 26 23:08:00 2018 +0200
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474801.1453">~@dollar@ echo &quot;Hello World&quot; @GT hello.adoc
+<pre class="highlight"><code class="language-shell" id="1755670401156.3467">~@dollar@ echo &quot;Hello World&quot; @GT hello.adoc
 ~@dollar@ git status
 On branch main
 Changes not staged for commit:
@@ -14939,7 +14939,7 @@ no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&q
 ~@dollar@ git reset --hard
 ~@dollar@ git status
 On branch main
-nothing to commit, working tree clean</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474801.1453')">Copy</button></pre>
+nothing to commit, working tree clean</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401156.3467')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -14967,9 +14967,9 @@ nothing to commit, working tree clean</code><button class="btn-copy-code" onclic
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474801.9863">~@dollar@ git branch
+<pre class="highlight"><code class="language-shell" id="1755670401156.1072">~@dollar@ git branch
 feat/hairs
-* main</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474801.9863')">Copy</button></pre>
+* main</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401156.1072')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -14983,10 +14983,10 @@ feat/hairs
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474801.0725">~@dollar@ git branch test
+<pre class="highlight"><code class="language-shell" id="1755670401156.7625">~@dollar@ git branch test
 ~@dollar@ git branch
 * main
-test</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474801.0725')">Copy</button></pre>
+test</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401156.7625')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -15013,11 +15013,11 @@ test</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474801
 <h3 id="_change_the_current_branch">Change the current branch</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474801.8608">~@dollar@ git checkout test
+<pre class="highlight"><code class="language-shell" id="1755670401156.3013">~@dollar@ git checkout test
 ~@dollar@ git branch
 main
 main
-* test</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474801.8608')">Copy</button></pre>
+* test</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401156.3013')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -15028,9 +15028,9 @@ main
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474801.607">~@dollar@ echo &quot;Fichier Asciidoc updated&quot; @GT hello.adoc
+<pre class="highlight"><code class="language-shell" id="1755670401156.3662">~@dollar@ echo &quot;Fichier Asciidoc updated&quot; @GT hello.adoc
 ~@dollar@ git add .
-~@dollar@ git commit -m &quot;Third commit&quot;</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474801.607')">Copy</button></pre>
+~@dollar@ git commit -m &quot;Third commit&quot;</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401156.3662')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -15038,9 +15038,9 @@ main
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474801.1226">~@dollar@ git log
+<pre class="highlight"><code class="language-shell" id="1755670401156.038">~@dollar@ git log
 ~@dollar@ git checkout main
-~@dollar@ git log</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474801.1226')">Copy</button></pre>
+~@dollar@ git log</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401156.038')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -15054,7 +15054,7 @@ main
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474801.4553">~@dollar@ git diff test...main</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474801.4553')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670401156.6194">~@dollar@ git diff test...main</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401156.6194')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -15062,7 +15062,7 @@ main
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474801.494">~@dollar@ git diff main...test</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474801.494')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670401156.0159">~@dollar@ git diff main...test</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401156.0159')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -15070,7 +15070,7 @@ main
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474801.646">~@dollar@ git log
+<pre class="highlight"><code class="language-shell" id="1755670401156.8953">~@dollar@ git log
 
 commit 4529128a723e0a16cf405b218f37f2da58c5a9fd (HEAD @LAMBDA test)  (1)
 Author: Guillaume EHRET Dev-Mind @LTguillaume@dev-mind.fr@GT
@@ -15083,7 +15083,7 @@ Author: Guillaume EHRET Dev-Mind @LTguillaume@dev-mind.fr@GT
 Date:   Wed Sep 26 23:51:10 2018 +0200
 
     Second  commit
-...</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474801.646')">Copy</button></pre>
+...</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401156.8953')">Copy</button></pre>
 </div>
 </div>
 <div class="olist arabic">
@@ -15101,12 +15101,12 @@ Date:   Wed Sep 26 23:51:10 2018 +0200
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474801.134">~@dollar@ git checkout main
+<pre class="highlight"><code class="language-shell" id="1755670401156.12">~@dollar@ git checkout main
 ~@dollar@ git branch test2
 ~@dollar@ git checkout test2
 ~@dollar@ echo &quot;Fichier toto&quot; &gt; toto.adoc
 ~@dollar@ git add .
-~@dollar@ git commit -m &quot;Fourth commit&quot;</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474801.134')">Copy</button></pre>
+~@dollar@ git commit -m &quot;Fourth commit&quot;</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401156.12')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -15117,8 +15117,8 @@ Date:   Wed Sep 26 23:51:10 2018 +0200
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474801.5198">~@dollar@ git checkout main
-~@dollar@ git merge test</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474801.5198')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670401156.03">~@dollar@ git checkout main
+~@dollar@ git merge test</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401156.03')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -15129,13 +15129,13 @@ Date:   Wed Sep 26 23:51:10 2018 +0200
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474801.2783">~@dollar@ git checkout test
+<pre class="highlight"><code class="language-shell" id="1755670401156.039">~@dollar@ git checkout test
 ~@dollar@ git branch -d test
 error: Cannot delete branch &#x27;test&#x27; checked out at &#x27;/home/devmind/Workspace/java/git-demo&#x27;
 
 ~@dollar@ git checkout main
 ~@dollar@ git branch -d test
-Deleted branch test (was 9fd87d1).</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474801.2783')">Copy</button></pre>
+Deleted branch test (was 9fd87d1).</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401156.039')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -15179,9 +15179,9 @@ Deleted branch test (was 9fd87d1).</code><button class="btn-copy-code" onclick="
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474801.7773">~@dollar@ git checkout main
+<pre class="highlight"><code class="language-shell" id="1755670401156.6826">~@dollar@ git checkout main
 ~@dollar@ git remote add origin https://github.com/Dev-Mind/git-demo.git  (1)
-~@dollar@ git push -u origin main                                       (2)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474801.7773')">Copy</button></pre>
+~@dollar@ git push -u origin main                                       (2)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401156.6826')">Copy</button></pre>
 </div>
 </div>
 <div class="olist arabic">
@@ -15208,8 +15208,8 @@ You can push any branch.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474801.8445">~@dollar@ git checkout feat/new_hair
-~@dollar@ git push -u origin feat/new_hair</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474801.8445')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670401156.3372">~@dollar@ git checkout feat/new_hair
+~@dollar@ git push -u origin feat/new_hair</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401156.3372')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -15230,7 +15230,7 @@ You can push any branch.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474801.9736">~@dollar@ git pull</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474801.9736')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670401156.4485">~@dollar@ git pull</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401156.4485')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -15459,7 +15459,7 @@ Major IDEs allow you to import Gradle builds</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474537.8958">sdk install gradle 8.2.1</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474537.8958')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670401125.0444">sdk install gradle 8.2.1</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401125.0444')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -15470,11 +15470,11 @@ Major IDEs allow you to import Gradle builds</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474537.062">@dollar@ java -version
+<pre class="highlight"><code class="language-shell" id="1755670401125.3179">@dollar@ java -version
 
 java version &quot;17.0.7&quot; 2023-04-18 LTS
 Java(TM) SE Runtime Environment Oracle GraalVM 17.0.7+8.1 (build 17.0.7+8-LTS-jvmci-23.0-b12)
-Java HotSpot(TM) 64-Bit Server VM Oracle GraalVM 17.0.7+8.1 (build 17.0.7+8-LTS-jvmci-23.0-b12, mixed mode, sharing)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474537.062')">Copy</button></pre>
+Java HotSpot(TM) 64-Bit Server VM Oracle GraalVM 17.0.7+8.1 (build 17.0.7+8-LTS-jvmci-23.0-b12, mixed mode, sharing)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401125.3179')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -15483,9 +15483,9 @@ You will create a directory and link it to Gradle</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474537.1184">mkdir gradle-demo
+<pre class="highlight"><code class="language-shell" id="1755670401125.3948">mkdir gradle-demo
 cd gradle-demo
-gradle init</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474537.1184')">Copy</button></pre>
+gradle init</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401125.3948')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -15493,7 +15493,7 @@ gradle init</code><button class="btn-copy-code" onclick="copyToClipboard('175566
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474537.7915">Select type of project to generate:
+<pre class="highlight"><code class="language-shell" id="1755670401125.484">Select type of project to generate:
   1: basic
   2: application
   3: library
@@ -15522,7 +15522,7 @@ Select test framework:
   4: JUnit Jupiter
 Enter selection (default: JUnit Jupiter) [1..4] 4
 
-Generate build using new APIs and behavior (some features may change in the next minor release)? (default: no) [yes, no] no</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474537.7915')">Copy</button></pre>
+Generate build using new APIs and behavior (some features may change in the next minor release)? (default: no) [yes, no] no</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401125.484')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -15530,11 +15530,11 @@ Generate build using new APIs and behavior (some features may change in the next
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474538.5332">@GT Task :init
+<pre class="highlight"><code class="language-shell" id="1755670401125.5503">@GT Task :init
 Get more help with your project: Learn more about Gradle by exploring our samples at https://docs.gradle.org/7.5/samples
 
 BUILD SUCCESSFUL in 56s
-2 actionable tasks: 2 executed</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474538.5332')">Copy</button></pre>
+2 actionable tasks: 2 executed</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401125.5503')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -15542,7 +15542,7 @@ BUILD SUCCESSFUL in 56s
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474538.8362">|-- app
+<pre class="highlight"><code class="language-shell" id="1755670401125.098">|-- app
 |   | src
 |   | -- build.gradle.kts  (1)
 |-- .gitattributes (2)
@@ -15553,7 +15553,7 @@ BUILD SUCCESSFUL in 56s
 |       | -- gradle-wrapper.properties  (4)
 |-- gradlew  (5)
 |-- gradlew.bat (5)
-|-- settings.gradle.kts (6)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474538.8362')">Copy</button></pre>
+|-- settings.gradle.kts (6)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401125.098')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -15588,7 +15588,7 @@ BUILD SUCCESSFUL in 56s
 </div>
 <div class="listingblock code-height">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474538.4368">@dollar@ ./gradlew -v
+<pre class="highlight"><code class="language-shell" id="1755670401125.1426">@dollar@ ./gradlew -v
 Downloading https://services.gradle.org/distributions/gradle-8.2.1-bin.zip
 ..........10%...........20%...........30%...........40%...........50%...........60%...........70%...........80%...........90%...........100%
 
@@ -15603,7 +15603,7 @@ Kotlin:       1.8.20
 Groovy:       3.0.17
 Ant:          Apache Ant(TM) version 1.10.13 compiled on January 4 2023
 JVM:          17.0.7 (Oracle Corporation 17.0.7+8-LTS-jvmci-23.0-b12)
-OS:           Linux 5.19.0-50-generic amd64</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474538.4368')">Copy</button></pre>
+OS:           Linux 5.19.0-50-generic amd64</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401125.1426')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -15635,7 +15635,7 @@ OS:           Linux 5.19.0-50-generic amd64</code><button class="btn-copy-code" 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474538.3792">|-- app
+<pre class="highlight"><code class="language-shell" id="1755670401125.0999">|-- app
 |   | -- src
 |      | -- main
 |          | -- java
@@ -15653,7 +15653,7 @@ OS:           Linux 5.19.0-50-generic amd64</code><button class="btn-copy-code" 
 |-- gradle.properties
 |-- gradlew
 |-- gradlew.bat
-|-- settings.gradle.kts</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474538.3792')">Copy</button></pre>
+|-- settings.gradle.kts</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401125.0999')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -15662,7 +15662,7 @@ This is a Java project. So we use the plugin provided by Gradle to manage an app
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-groovy" id="1755669474541.406">plugins {
+<pre class="highlight"><code class="language-groovy" id="1755670401125.4114">plugins {
     <span class="hljs-comment">// Apply the application plugin to add support for building a CLI application in Java.</span>
     application
 }
@@ -15690,7 +15690,7 @@ java {
 application {
     <span class="hljs-comment">// Define the main class for the application.</span>
     mainClass.set(<span class="hljs-string">&quot;com.devmind.gradle.MyApplication&quot;</span>)
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474541.406')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401125.4114')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -15698,10 +15698,10 @@ application {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474541.969">@dollar@ ./gradlew build
+<pre class="highlight"><code class="language-shell" id="1755670401125.3228">@dollar@ ./gradlew build
 
 BUILD SUCCESSFUL in 7s
-8 actionable tasks: 8 executed</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474541.969')">Copy</button></pre>
+8 actionable tasks: 8 executed</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401125.3228')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -15712,9 +15712,9 @@ BUILD SUCCESSFUL in 7s
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474541.2712">@dollar@ ./gradlew build
+<pre class="highlight"><code class="language-shell" id="1755670401125.7932">@dollar@ ./gradlew build
 BUILD SUCCESSFUL in 517ms
-8 actionable tasks: 8 up-to-date</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474541.2712')">Copy</button></pre>
+8 actionable tasks: 8 up-to-date</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401125.7932')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -15725,12 +15725,12 @@ BUILD SUCCESSFUL in 517ms
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474541.1514">@dollar@ ./gradlew :app:run
+<pre class="highlight"><code class="language-shell" id="1755670401125.2178">@dollar@ ./gradlew :app:run
 @GT Task :app:run
 I want to learn Gradle
 
 BUILD SUCCESSFUL in 503ms
-3 actionable tasks: 1 executed, 2 up-to-date</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474541.1514')">Copy</button></pre>
+3 actionable tasks: 1 executed, 2 up-to-date</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401125.2178')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -15746,7 +15746,7 @@ BUILD SUCCESSFUL in 503ms
 </div>
 <div class="listingblock code-height">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474541.3875">@dollar@ ./gradlew tasks
+<pre class="highlight"><code class="language-shell" id="1755670401125.2927">@dollar@ ./gradlew tasks
 
 @GT Task :tasks
 
@@ -15809,7 +15809,7 @@ To see all tasks and more detail, run gradlew tasks --all
 To see more detail about a task, run gradlew help --task @LTtask@GT
 
 BUILD SUCCESSFUL in 1s
-1 actionable task: 1 executed</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474541.3875')">Copy</button></pre>
+1 actionable task: 1 executed</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401125.2927')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -15914,7 +15914,7 @@ BUILD SUCCESSFUL in 1s
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474541.6584">tasks.create(&quot;hello&quot;) {
+<pre class="highlight"><code class="language-shell" id="1755670401125.56">tasks.create(&quot;hello&quot;) {
     doLast {
         println(&quot;Hello&quot;)
     }
@@ -15924,7 +15924,7 @@ tasks.create(&quot;world&quot;) {
     doLast {
         println(&quot;World&quot;)
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474541.6584')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401125.56')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -15932,8 +15932,8 @@ tasks.create(&quot;world&quot;) {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474541.885">@dollar@ ./gradlew hello
-@dollar@ ./gradlew world</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474541.885')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670401125.9287">@dollar@ ./gradlew hello
+@dollar@ ./gradlew world</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401125.9287')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -15970,9 +15970,9 @@ Gradle executes one or several tasks (arguments added to <code>./gradlew</code>)
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474543.4072">plugins {
+<pre class="highlight"><code class="language-kotlin" id="1755670401125.2112">plugins {
     java
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474543.4072')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401125.2112')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -15988,7 +15988,7 @@ Gradle executes one or several tasks (arguments added to <code>./gradlew</code>)
 </div>
 <div class="listingblock code-height">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474543.7585">buildscript {
+<pre class="highlight"><code class="language-shell" id="1755670401125.8716">buildscript {
     plugins {  (1)
       java
       id(&quot;org.springframework.boot&quot;) version &quot;3.1.2&quot;
@@ -16015,7 +16015,7 @@ Gradle executes one or several tasks (arguments added to <code>./gradlew</code>)
     tasks.withType@LTTest@GT {
       useJUnitPlatform()
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474543.7585')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401125.8716')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -16037,7 +16037,7 @@ Gradle executes one or several tasks (arguments added to <code>./gradlew</code>)
 </div>
 <div class="listingblock code-height">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474543.0984">println(&quot;This is executed during the configuration phase.&quot;)
+<pre class="highlight"><code class="language-shell" id="1755670401125.8467">println(&quot;This is executed during the configuration phase.&quot;)
 
 tasks.create(&quot;configured&quot;) {
     description = &quot;My own configured task&quot;
@@ -16060,7 +16060,7 @@ tasks.create(&quot;testWriteBoth&quot;) {
         println(&quot;This (testWriteBoth) is executed last during the execution phase.&quot;)
     }
     println(&quot;This (testWriteBoth) is executed during the configuration phase as well.&quot;)
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474543.0984')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401125.8467')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -16068,7 +16068,7 @@ tasks.create(&quot;testWriteBoth&quot;) {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474543.0928">@dollar@ ./gradlew tasks --all</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474543.0928')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670401125.5476">@dollar@ ./gradlew tasks --all</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401125.5476')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -16076,7 +16076,7 @@ tasks.create(&quot;testWriteBoth&quot;) {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474543.7295">@dollar@ ./gradlew testWrite</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474543.7295')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670401125.2122">@dollar@ ./gradlew testWrite</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401125.2122')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -16084,7 +16084,7 @@ tasks.create(&quot;testWriteBoth&quot;) {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474543.3406">@dollar@ ./gradlew testWriteBoth</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474543.3406')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670401125.2908">@dollar@ ./gradlew testWriteBoth</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401125.2908')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -16092,14 +16092,14 @@ tasks.create(&quot;testWriteBoth&quot;) {
 </div>
 <div class="listingblock code-height">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474543.683">@dollar@ ./gradlew testWrite
+<pre class="highlight"><code class="language-shell" id="1755670401125.7021">@dollar@ ./gradlew testWrite
 
 @GT Configure project :
 This is executed during the configuration phase.
 This (configured) is also executed during the configuration phase.
 This (testWriteBoth) is executed during the configuration phase as well.
 
-...</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474543.683')">Copy</button></pre>
+...</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401125.7021')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -16134,14 +16134,14 @@ This (testWriteBoth) is executed during the configuration phase as well.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474543.2341">dependencies {
+<pre class="highlight"><code class="language-kotlin" id="1755670401125.237">dependencies {
     <span class="hljs-comment">// Use JUnit Jupiter for testing.</span>
     testImplementation(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter:5.10.0&quot;</span>)
     testRuntimeOnly(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engine:5.10.0&quot;</span>)
 
     <span class="hljs-comment">// This dependency is used by the application.</span>
     implementation(<span class="hljs-string">&quot;org.springframework:spring-context:6.0.11&quot;</span>)
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474543.2341')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401125.237')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -16168,10 +16168,10 @@ This (testWriteBoth) is executed during the configuration phase as well.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474543.6523">dependencies {
+<pre class="highlight"><code class="language-kotlin" id="1755670401126.3137">dependencies {
     implementation(group = <span class="hljs-string">&quot;org.springframework&quot;</span>, name = <span class="hljs-string">&quot;spring-core&quot;</span>, version = <span class="hljs-string">&quot;2.5&quot;</span>)
     implementation(<span class="hljs-string">&quot;org.hibernate:hibernate:3.0.5&quot;</span>)
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474543.6523')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401126.3137')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -16179,9 +16179,9 @@ This (testWriteBoth) is executed during the configuration phase as well.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474543.3518">dependencies {
+<pre class="highlight"><code class="language-kotlin" id="1755670401126.1096">dependencies {
     implementation(project(<span class="hljs-string">&quot;:shared&quot;</span>))
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474543.3518')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401126.1096')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -16192,7 +16192,7 @@ This (testWriteBoth) is executed during the configuration phase as well.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474544.0168">dependencies {
+<pre class="highlight"><code class="language-kotlin" id="1755670401126.6665">dependencies {
     implementation(<span class="hljs-string">&quot;org.hibernate:hibernate:3.1&quot;</span>) {
         exclude(module = <span class="hljs-string">&quot;cglib&quot;</span>) <span class="hljs-comment">//by artifact name</span>
         exclude(group = <span class="hljs-string">&quot;org.jmock&quot;</span>) <span class="hljs-comment">//by group</span>
@@ -16200,7 +16200,7 @@ This (testWriteBoth) is executed during the configuration phase as well.
         <span class="hljs-comment">//disabling all transitive dependencies of this dependency</span>
         isTransitive = <span class="hljs-literal">false</span>
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474544.0168')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401126.6665')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -16413,12 +16413,12 @@ This (testWriteBoth) is executed during the configuration phase as well.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474784.2683"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">FriendService</span> {
+<pre class="highlight"><code class="language-java" id="1755670401263.8958"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">FriendService</span> {
    <span class="hljs-comment">/**
     * Compute friend age from his birth year
     */</span>
    <span class="hljs-type">int</span> <span class="hljs-title function_">computeFriendAge</span><span class="hljs-params">(Friend friend)</span>;
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474784.2683')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401263.8958')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -16426,7 +16426,7 @@ This (testWriteBoth) is executed during the configuration phase as well.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474784.8257"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">FriendServiceImpl</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">FriendService</span> {
+<pre class="highlight"><code class="language-java" id="1755670401263.7"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">FriendServiceImpl</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">FriendService</span> {
     <span class="hljs-meta">@Override</span>
     <span class="hljs-keyword">public</span> <span class="hljs-type">int</span> <span class="hljs-title function_">computeFriendAge</span><span class="hljs-params">(Friend friend)</span> {
         <span class="hljs-keyword">if</span>(friend == <span class="hljs-literal">null</span>) {
@@ -16434,7 +16434,7 @@ This (testWriteBoth) is executed during the configuration phase as well.
         }
         <span class="hljs-keyword">return</span> LocalDate.now().getYear() - friend.getBirthYear();
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474784.8257')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401263.7')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -16461,7 +16461,7 @@ This (testWriteBoth) is executed during the configuration phase as well.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474784.562"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">FriendServiceImpl</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">FriendService</span> {
+<pre class="highlight"><code class="language-java" id="1755670401263.0828"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">FriendServiceImpl</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">FriendService</span> {
 
     <span class="hljs-keyword">private</span> FriendRepository friendRepository;
     <span class="hljs-keyword">private</span> IntegerComputer integerComputer;
@@ -16474,7 +16474,7 @@ This (testWriteBoth) is executed during the configuration phase as well.
 
 
     <span class="hljs-comment">// ...</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474784.562')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401263.0828')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -16589,7 +16589,7 @@ This (testWriteBoth) is executed during the configuration phase as well.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474785.4233"><span class="hljs-keyword">package</span> com.devmind.unitests.friend;
+<pre class="highlight"><code class="language-java" id="1755670401264.4836"><span class="hljs-keyword">package</span> com.devmind.unitests.friend;
 
 <span class="hljs-keyword">import</span> org.junit.jupiter.api.Assertions;
 <span class="hljs-keyword">import</span> org.junit.jupiter.api.BeforeEach;
@@ -16623,7 +16623,7 @@ This (testWriteBoth) is executed during the configuration phase as well.
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">computeFriendAgeWithNullFriendShouldFail</span><span class="hljs-params">()</span> { <span class="hljs-comment">// 4.</span>
         Assertions.assertThrows(IllegalArgumentException.class, () <span class="hljs-meta">@LAMBDA</span> friendService.computeFriendAge(<span class="hljs-literal">null</span>));
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474785.4233')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401264.4836')">Copy</button></pre>
 </div>
 </div>
 <div class="olist arabic">
@@ -16655,8 +16655,8 @@ This (testWriteBoth) is executed during the configuration phase as well.
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474785.7295">Assertions.assertThat(age).isEqualTo(<span class="hljs-number">45</span>);
-Assertions.assertThat(name).isEqualTo(<span class="hljs-string">&quot;Bellamy&quot;</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474785.7295')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670401264.4714">Assertions.assertThat(age).isEqualTo(<span class="hljs-number">45</span>);
+Assertions.assertThat(name).isEqualTo(<span class="hljs-string">&quot;Bellamy&quot;</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401264.4714')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -16664,9 +16664,9 @@ Assertions.assertThat(name).isEqualTo(<span class="hljs-string">&quot;Bellamy&qu
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474785.2935">Assertions.assertThatThrownBy(() <span class="hljs-meta">@LAMBDA</span> friendService.computeFriendAge(<span class="hljs-literal">null</span>))
+<pre class="highlight"><code class="language-java" id="1755670401264.3667">Assertions.assertThatThrownBy(() <span class="hljs-meta">@LAMBDA</span> friendService.computeFriendAge(<span class="hljs-literal">null</span>))
                 .isExactlyInstanceOf(IllegalArgumentException.class)
-                .hasMessage(<span class="hljs-string">&quot;Friend is required&quot;</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474785.2935')">Copy</button></pre>
+                .hasMessage(<span class="hljs-string">&quot;Friend is required&quot;</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401264.3667')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -16674,9 +16674,9 @@ Assertions.assertThat(name).isEqualTo(<span class="hljs-string">&quot;Bellamy&qu
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474785.0044">List<span class="hljs-meta">@LTFriend</span><span class="hljs-meta">@GT</span> myFriends = Arrays.asList(
+<pre class="highlight"><code class="language-java" id="1755670401264.0195">List<span class="hljs-meta">@LTFriend</span><span class="hljs-meta">@GT</span> myFriends = Arrays.asList(
                 <span class="hljs-keyword">new</span> <span class="hljs-title class_">Friend</span>(<span class="hljs-string">&quot;Elodie&quot;</span>, <span class="hljs-number">1999</span>),
-                <span class="hljs-keyword">new</span> <span class="hljs-title class_">Friend</span>(<span class="hljs-string">&quot;Charles&quot;</span>, <span class="hljs-number">2001</span>));</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474785.0044')">Copy</button></pre>
+                <span class="hljs-keyword">new</span> <span class="hljs-title class_">Friend</span>(<span class="hljs-string">&quot;Charles&quot;</span>, <span class="hljs-number">2001</span>));</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401264.0195')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -16684,7 +16684,7 @@ Assertions.assertThat(name).isEqualTo(<span class="hljs-string">&quot;Bellamy&qu
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474785.6853">Assertions.assertThat(myFriends)
+<pre class="highlight"><code class="language-java" id="1755670401264.1643">Assertions.assertThat(myFriends)
                   .hasSize(<span class="hljs-number">2</span>)
                   .extracting(Friend::getName)
                   .containsExactlyInAnyOrder(<span class="hljs-string">&quot;Elodie&quot;</span>, <span class="hljs-string">&quot;Charles&quot;</span>);
@@ -16694,7 +16694,7 @@ Assertions.assertThat(myFriends)
           .extracting(Friend::getName, Friend::getBirthYear)
           .containsExactlyInAnyOrder(
                   Tuple.tuple(<span class="hljs-string">&quot;Elodie&quot;</span>, <span class="hljs-number">1999</span>),
-                  Tuple.tuple(<span class="hljs-string">&quot;Charles&quot;</span>, <span class="hljs-number">2001</span>));</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474785.6853')">Copy</button></pre>
+                  Tuple.tuple(<span class="hljs-string">&quot;Charles&quot;</span>, <span class="hljs-number">2001</span>));</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401264.1643')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -16727,7 +16727,7 @@ Assertions.assertThat(myFriends)
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474785.5232"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">FriendServiceImpl</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">FriendService</span> {
+<pre class="highlight"><code class="language-java" id="1755670401264.9084"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">FriendServiceImpl</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">FriendService</span> {
 
     <span class="hljs-keyword">private</span> FriendRepository friendRepository; <span class="hljs-comment">// 1.</span>
 
@@ -16742,7 +16742,7 @@ Assertions.assertThat(myFriends)
     }
 
     <span class="hljs-comment">// ...</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474785.5232')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401264.9084')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -16754,7 +16754,7 @@ Assertions.assertThat(myFriends)
 <div style="page-break-after: always;"></div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474786.2793"><span class="hljs-meta">@ExtendWith(MockitoExtension.class)</span> <span class="hljs-comment">// 1.</span>
+<pre class="highlight"><code class="language-java" id="1755670401265.0356"><span class="hljs-meta">@ExtendWith(MockitoExtension.class)</span> <span class="hljs-comment">// 1.</span>
 <span class="hljs-keyword">class</span> <span class="hljs-title class_">FriendServiceTest</span> {
 
     <span class="hljs-meta">@Mock</span> <span class="hljs-comment">// 2.</span>
@@ -16781,7 +16781,7 @@ Assertions.assertThat(myFriends)
         <span class="hljs-comment">// Assert</span>
         Assertions.assertThat(average).isEqualTo(<span class="hljs-number">22.0</span>);
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474786.2793')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401265.0356')">Copy</button></pre>
 </div>
 </div>
 <div style="page-break-after: always;"></div>
@@ -16828,7 +16828,7 @@ Assertions.assertThat(myFriends)
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474786.2454">Mockito.when(friendRepository.findAll()).thenThrow(<span class="hljs-keyword">new</span> <span class="hljs-title class_">IllegalArgumentException</span>(<span class="hljs-string">&quot;Error&quot;</span>));</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474786.2454')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670401265.727">Mockito.when(friendRepository.findAll()).thenThrow(<span class="hljs-keyword">new</span> <span class="hljs-title class_">IllegalArgumentException</span>(<span class="hljs-string">&quot;Error&quot;</span>));</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401265.727')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -16857,7 +16857,7 @@ Assertions.assertThat(myFriends)
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474786.8115">git clone https://github.com/Dev-Mind/unitTestInAction.git</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474786.8115')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670401265.3079">git clone https://github.com/Dev-Mind/unitTestInAction.git</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401265.3079')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -16865,7 +16865,7 @@ Assertions.assertThat(myFriends)
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474786.652">git clone git@github.com:Dev-Mind/unitTestInAction.git</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474786.652')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670401265.9258">git clone git@github.com:Dev-Mind/unitTestInAction.git</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401265.9258')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -16885,13 +16885,13 @@ Assertions.assertThat(myFriends)
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474786.164">dependencies {
+<pre class="highlight"><code class="language-kotlin" id="1755670401265.4248">dependencies {
     implementation(<span class="hljs-string">&quot;org.springframework:spring-context-support:6.0.11&quot;</span>)
     testImplementation(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-api:5.10.0&quot;</span>)
     testRuntimeOnly(<span class="hljs-string">&quot;org.junit.jupiter:junit-jupiter-engine:5.10.0&quot;</span>)
     testImplementation(<span class="hljs-string">&quot;org.mockito:mockito-junit-jupiter:5.4.0&quot;</span>)
     testImplementation(<span class="hljs-string">&quot;org.assertj:assertj-core:3.24.2&quot;</span>)
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474786.164')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401265.4248')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -17269,7 +17269,7 @@ A framework comes with rules to organize developments</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474727.2766">rootProject.name = <span class="hljs-string">&quot;automacorp&quot;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474727.2766')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1755670401209.5007">rootProject.name = <span class="hljs-string">&quot;automacorp&quot;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401209.5007')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -17277,7 +17277,7 @@ A framework comes with rules to organize developments</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474727.2622">plugins {
+<pre class="highlight"><code class="language-kotlin" id="1755670401209.735">plugins {
 	java <span class="hljs-comment">// (1)</span>
 	id(<span class="hljs-string">&quot;org.springframework.boot&quot;</span>) version <span class="hljs-string">&quot;3.3.2&quot;</span> <span class="hljs-comment">// (2)</span>
 	id(<span class="hljs-string">&quot;io.spring.dependency-management&quot;</span>) version <span class="hljs-string">&quot;1.1.6&quot;</span> <span class="hljs-comment">// (3)</span>
@@ -17305,7 +17305,7 @@ dependencies { <span class="hljs-comment">// (7)</span>
 
 tasks.<span class="hljs-symbol">withType@</span><span class="hljs-symbol">LTTest@</span>GT { <span class="hljs-comment">// (11)</span>
 	useJUnitPlatform()
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474727.2622')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401209.735')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -17356,7 +17356,7 @@ tasks.<span class="hljs-symbol">withType@</span><span class="hljs-symbol">LTTest
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474727.4038"><span class="hljs-keyword">package</span> com.emse.spring.automacorp;
+<pre class="highlight"><code class="language-java" id="1755670401210.7551"><span class="hljs-keyword">package</span> com.emse.spring.automacorp;
 
 <span class="hljs-keyword">import</span> org.springframework.boot.SpringApplication;
 <span class="hljs-keyword">import</span> org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -17366,7 +17366,7 @@ tasks.<span class="hljs-symbol">withType@</span><span class="hljs-symbol">LTTest
 	<span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> {
 		SpringApplication.run(AutomacorpApplication.class, args);
 	}
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474727.4038')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401210.7551')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -17383,12 +17383,12 @@ tasks.<span class="hljs-symbol">withType@</span><span class="hljs-symbol">LTTest
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474727.0718"><span class="hljs-meta">@SpringBootTest</span> <span class="hljs-comment">// (2)</span>
+<pre class="highlight"><code class="language-java" id="1755670401210.1428"><span class="hljs-meta">@SpringBootTest</span> <span class="hljs-comment">// (2)</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">AutomacorpApplicationTests</span> {
     <span class="hljs-meta">@Test</span>
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">contextLoads</span><span class="hljs-params">()</span> { <span class="hljs-comment">// (3)</span>
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474727.0718')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401210.1428')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -17442,7 +17442,7 @@ tasks.<span class="hljs-symbol">withType@</span><span class="hljs-symbol">LTTest
 <h3 id="_with_gradle">With Gradle</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474728.0767">./gradlew --continuous bootRun // (1)
+<pre class="highlight"><code class="language-shell" id="1755670401210.4106">./gradlew --continuous bootRun // (1)
 
 [...]
 2023-08-22T17:15:59.685+02:00  INFO 124158 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path &#x27;&#x27;
@@ -17451,7 +17451,7 @@ tasks.<span class="hljs-symbol">withType@</span><span class="hljs-symbol">LTTest
 2023-08-22T17:16:04.332+02:00  INFO 124158 --- [nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet &#x27;dispatcherServlet&#x27;
 2023-08-22T17:16:04.334+02:00  INFO 124158 --- [nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
 &lt;==========---&gt; 80% EXECUTING
-<span class="hljs-meta prompt_">&gt; </span><span class="language-bash">:bootRun  // (2)&lt;/==========---&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474728.0767')">Copy</button></pre>
+<span class="hljs-meta prompt_">&gt; </span><span class="language-bash">:bootRun  // (2)&lt;/==========---&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401210.4106')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -17477,7 +17477,7 @@ tasks.<span class="hljs-symbol">withType@</span><span class="hljs-symbol">LTTest
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474728.8792">***************************
+<pre class="highlight"><code class="language-shell" id="1755670401210.6257">***************************
 APPLICATION FAILED TO START
 ***************************
 
@@ -17487,7 +17487,7 @@ Web server failed to start. Port 8080 was already in use.
 
 Action:
 
-Identify and stop the process that&#x27;s listening on port 8080 or configure this application to listen on another port.</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474728.8792')">Copy</button></pre>
+Identify and stop the process that&#x27;s listening on port 8080 or configure this application to listen on another port.</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401210.6257')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -17495,7 +17495,7 @@ Identify and stop the process that&#x27;s listening on port 8080 or configure th
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-properties" id="1755669474728.1223"><span class="hljs-attr">server.port</span>=<span class="hljs-string">8085</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474728.1223')">Copy</button></pre>
+<pre class="highlight"><code class="language-properties" id="1755670401210.109"><span class="hljs-attr">server.port</span>=<span class="hljs-string">8085</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401210.109')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -17509,7 +17509,7 @@ Identify and stop the process that&#x27;s listening on port 8080 or configure th
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474728.5396">./gradlew assemble</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474728.5396')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670401210.7893">./gradlew assemble</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401210.7893')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -17527,7 +17527,7 @@ Identify and stop the process that&#x27;s listening on port 8080 or configure th
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474728.0322">java -jar build/libs/automacorp-0.0.1-SNAPSHOT.jar</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474728.0322')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670401210.9558">java -jar build/libs/automacorp-0.0.1-SNAPSHOT.jar</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401210.9558')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -17541,7 +17541,7 @@ Identify and stop the process that&#x27;s listening on port 8080 or configure th
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474728.887"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> { }</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474728.887')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670401210.2744"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> { }</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401210.2744')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -17579,14 +17579,14 @@ Identify and stop the process that&#x27;s listening on port 8080 or configure th
 <p>In this file copy the following code</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-html" id="1755669474728.8145"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<pre class="highlight"><code class="language-html" id="1755670401210.9932"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span> Spring in practice<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
         Hello world
     <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474728.8145')">Copy</button></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401210.9932')">Copy</button></pre>
 </div>
 </div>
 </li>
@@ -17606,7 +17606,7 @@ Identify and stop the process that&#x27;s listening on port 8080 or configure th
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-html" id="1755669474728.4824"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">integrity</span>=<span class="hljs-string">&quot;sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH&quot;</span> <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">&quot;anonymous&quot;</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474728.4824')">Copy</button></pre>
+<pre class="highlight"><code class="language-html" id="1755670401210.5664"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">integrity</span>=<span class="hljs-string">&quot;sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH&quot;</span> <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">&quot;anonymous&quot;</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401210.5664')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -17614,14 +17614,14 @@ Identify and stop the process that&#x27;s listening on port 8080 or configure th
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-html" id="1755669474729.2878"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+<pre class="highlight"><code class="language-html" id="1755670401210.3918"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Automacorp<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;lead&quot;</span>&gt;</span>
             Welcome on the Automacorp App used to learn Spring.
         <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474729.2878')">Copy</button></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401210.3918')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -17671,10 +17671,10 @@ When we use the Spring support of Hibernate/JPA, we would need to configure a da
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474729.0576">dependencies {
+<pre class="highlight"><code class="language-kotlin" id="1755670401210.3196">dependencies {
  implementation(<span class="hljs-string">&#x27;org.springframework.boot:spring-boot-starter-web&#x27;</span>)
  testImplementation(<span class="hljs-string">&#x27;org.springframework.boot:spring-boot-starter-test&#x27;</span>)
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474729.0576')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401210.3196')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -17777,12 +17777,12 @@ When we use the Spring support of Hibernate/JPA, we would need to configure a da
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474740.5793"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">NameService</span> {
+<pre class="highlight"><code class="language-java" id="1755670401221.5688"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">NameService</span> {
 
     <span class="hljs-keyword">public</span> String <span class="hljs-title function_">getName</span><span class="hljs-params">()</span> {
         <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;Guillaume&quot;</span>;
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474740.5793')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401221.5688')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -17790,13 +17790,13 @@ When we use the Spring support of Hibernate/JPA, we would need to configure a da
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474740.5461"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">WelcomeService</span> {
+<pre class="highlight"><code class="language-java" id="1755670401221.9688"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">WelcomeService</span> {
 
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">sayHello</span><span class="hljs-params">()</span> {
         <span class="hljs-type">NameService</span> <span class="hljs-variable">nameService</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">NameService</span>();
         System.out.println(<span class="hljs-string">&quot;Hello &quot;</span> + nameService.getName());
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474740.5461')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401221.9688')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -17808,7 +17808,7 @@ If we want to change <strong>NameService</strong> we have a good chance of havin
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474740.8413"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">NameService</span> {
+<pre class="highlight"><code class="language-java" id="1755670401221.5183"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">NameService</span> {
 
     <span class="hljs-keyword">private</span> UserService userService;
 
@@ -17821,7 +17821,7 @@ If we want to change <strong>NameService</strong> we have a good chance of havin
     }
 
     <span class="hljs-comment">// ...</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474740.8413')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401221.5183')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -17829,14 +17829,14 @@ If we want to change <strong>NameService</strong> we have a good chance of havin
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474740.674"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">WelcomeService</span> {
+<pre class="highlight"><code class="language-java" id="1755670401222.3083"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">WelcomeService</span> {
 
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">sayHello</span><span class="hljs-params">()</span> {
         <span class="hljs-type">UserService</span> <span class="hljs-variable">userService</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">UserService</span>();
         <span class="hljs-type">NameService</span> <span class="hljs-variable">nameService</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">NameService</span>(userService);
         System.out.println(<span class="hljs-string">&quot;Hello &quot;</span> + nameService.getName());
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474740.674')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401222.3083')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -17855,7 +17855,7 @@ If we want to change <strong>NameService</strong> we have a good chance of havin
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474740.8425"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">B</span> {
+<pre class="highlight"><code class="language-java" id="1755670401222.5"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">B</span> {
     <span class="hljs-keyword">public</span> String <span class="hljs-title function_">name</span><span class="hljs-params">()</span> {
         <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;Guillaume&quot;</span>;
     }
@@ -17866,7 +17866,7 @@ If we want to change <strong>NameService</strong> we have a good chance of havin
         <span class="hljs-type">B</span> <span class="hljs-variable">b</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">B</span>();
         System.out.println(<span class="hljs-string">&quot;Hello &quot;</span> + b.name());
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474740.8425')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401222.5')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -17954,7 +17954,7 @@ Spring provides <a href="https://docs.spring.io/spring-framework/docs/current/re
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474740.1555"><span class="hljs-meta">@Service</span>
+<pre class="highlight"><code class="language-java" id="1755670401222.1506"><span class="hljs-meta">@Service</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">MyGreetingService</span> {
    <span class="hljs-comment">// Code ...</span>
 }
@@ -17962,7 +17962,7 @@ Spring provides <a href="https://docs.spring.io/spring-framework/docs/current/re
 <span class="hljs-meta">@Controller</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">MyGreetingController</span> {
    <span class="hljs-comment">// Code ...</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474740.1555')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401222.1506')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -17986,12 +17986,12 @@ This annotation indicates that the class can be used by the Spring IoC container
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474740.858"><span class="hljs-meta">@Configuration</span>
+<pre class="highlight"><code class="language-java" id="1755670401222.29"><span class="hljs-meta">@Configuration</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">MyAppConfiguration</span> {
 
     <span class="hljs-comment">// ...</span>
 
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474740.858')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401222.29')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -18005,7 +18005,7 @@ This annotation indicates that the class can be used by the Spring IoC container
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474740.7578"><span class="hljs-meta">@Configuration</span>
+<pre class="highlight"><code class="language-java" id="1755670401222.9397"><span class="hljs-meta">@Configuration</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">MyAppConfiguration</span> {
 
   <span class="hljs-meta">@Bean</span>
@@ -18013,7 +18013,7 @@ This annotation indicates that the class can be used by the Spring IoC container
     <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">UserStore</span>(connectionPool.fetchConnection());
   }
 
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474740.7578')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401222.9397')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -18031,7 +18031,7 @@ This annotation indicates that the class can be used by the Spring IoC container
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474740.0364"><span class="hljs-meta">@Component</span>
+<pre class="highlight"><code class="language-java" id="1755670401222.2327"><span class="hljs-meta">@Component</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">AImpl</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">A</span> {
 
     <span class="hljs-meta">@Autowired</span>
@@ -18044,7 +18044,7 @@ This annotation indicates that the class can be used by the Spring IoC container
     <span class="hljs-keyword">public</span> B <span class="hljs-title function_">getB</span><span class="hljs-params">()</span> {
         <span class="hljs-keyword">return</span> b;
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474740.0364')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401222.2327')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -18052,7 +18052,7 @@ This annotation indicates that the class can be used by the Spring IoC container
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474741.071"><span class="hljs-meta">@Component</span>
+<pre class="highlight"><code class="language-java" id="1755670401222.3372"><span class="hljs-meta">@Component</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">AImpl</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">A</span> {
 
     <span class="hljs-keyword">private</span> B b;
@@ -18065,7 +18065,7 @@ This annotation indicates that the class can be used by the Spring IoC container
     <span class="hljs-keyword">public</span> B <span class="hljs-title function_">getB</span><span class="hljs-params">()</span> {
         <span class="hljs-keyword">return</span> b;
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474741.071')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401222.3372')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -18083,7 +18083,7 @@ This annotation indicates that the class can be used by the Spring IoC container
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474741.956"><span class="hljs-meta">@Service</span>
+<pre class="highlight"><code class="language-java" id="1755670401222.316"><span class="hljs-meta">@Service</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">AuthenticationService</span> {
 
   <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> UserStore userStore;
@@ -18097,7 +18097,7 @@ This annotation indicates that the class can be used by the Spring IoC container
   <span class="hljs-keyword">public</span> AcccountStatus <span class="hljs-title function_">getAccountStatus</span><span class="hljs-params">(UserAccount account)</span> {
     <span class="hljs-comment">// here we can use the UserStore with this.userStore</span>
   }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474741.956')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401222.316')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -18151,12 +18151,12 @@ This annotation indicates that the class can be used by the Spring IoC container
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474741.2498"><span class="hljs-keyword">package</span> com.emse.spring.automacorp.hello;
+<pre class="highlight"><code class="language-java" id="1755670401223.7844"><span class="hljs-keyword">package</span> com.emse.spring.automacorp.hello;
 
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">GreetingService</span> {
 
   <span class="hljs-keyword">void</span> <span class="hljs-title function_">greet</span><span class="hljs-params">(String name)</span>;
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474741.2498')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401223.7844')">Copy</button></pre>
 </div>
 </div>
 <div class="quoteblock">
@@ -18190,7 +18190,7 @@ This annotation indicates that the class can be used by the Spring IoC container
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474741.6213"><span class="hljs-keyword">package</span> com.emse.spring.automacorp.hello;
+<pre class="highlight"><code class="language-java" id="1755670401223.87"><span class="hljs-keyword">package</span> com.emse.spring.automacorp.hello;
 
 <span class="hljs-keyword">import</span> org.assertj.core.api.Assertions;
 <span class="hljs-keyword">import</span> org.junit.jupiter.api.Test;
@@ -18207,7 +18207,7 @@ This annotation indicates that the class can be used by the Spring IoC container
         greetingService.greet(<span class="hljs-string">&quot;Spring&quot;</span>);
         Assertions.assertThat(output.getAll()).contains(<span class="hljs-string">&quot;Hello, Spring!&quot;</span>);
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474741.6213')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401223.87')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -18239,13 +18239,13 @@ This annotation indicates that the class can be used by the Spring IoC container
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474741.7004"><span class="hljs-keyword">package</span> com.emse.spring.automacorp.hello;
+<pre class="highlight"><code class="language-java" id="1755670401223.3916"><span class="hljs-keyword">package</span> com.emse.spring.automacorp.hello;
 
 <span class="hljs-keyword">import</span> java.util.List;
 
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">UserService</span> {
     <span class="hljs-keyword">void</span> <span class="hljs-title function_">greetAll</span><span class="hljs-params">(List<span class="hljs-meta">@LTString</span><span class="hljs-meta">@GT</span> name)</span>;
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474741.7004')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401223.3916')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -18272,7 +18272,7 @@ This annotation indicates that the class can be used by the Spring IoC container
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474741.8638"><span class="hljs-keyword">package</span> com.emse.spring.automacorp.hello;
+<pre class="highlight"><code class="language-java" id="1755670401223.8323"><span class="hljs-keyword">package</span> com.emse.spring.automacorp.hello;
 
 <span class="hljs-keyword">import</span> org.assertj.core.api.Assertions;
 <span class="hljs-keyword">import</span> org.junit.jupiter.api.Test;
@@ -18300,7 +18300,7 @@ This annotation indicates that the class can be used by the Spring IoC container
         dummyUserService.greetAll(List.of(<span class="hljs-string">&quot;Elodie&quot;</span>, <span class="hljs-string">&quot;Charles&quot;</span>));
         Assertions.assertThat(output).contains(<span class="hljs-string">&quot;Hello, Elodie!&quot;</span>, <span class="hljs-string">&quot;Hello, Charles!&quot;</span>);
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474741.8638')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401223.8323')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -18330,7 +18330,7 @@ This annotation indicates that the class can be used by the Spring IoC container
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474742.2632"><span class="hljs-comment">// (1)</span>
+<pre class="highlight"><code class="language-java" id="1755670401223.2737"><span class="hljs-comment">// (1)</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">AutomacorpApplicationConfig</span> {
 
   <span class="hljs-comment">// (2)</span>
@@ -18339,7 +18339,7 @@ This annotation indicates that the class can be used by the Spring IoC container
       <span class="hljs-comment">// (4)</span>
     };
   }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474742.2632')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401223.2737')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -18363,10 +18363,10 @@ This annotation indicates that the class can be used by the Spring IoC container
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474742.5986">2023-08-23T19:59:02.183+02:00  INFO 152677 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+<pre class="highlight"><code class="language-shell" id="1755670401223.4932">2023-08-23T19:59:02.183+02:00  INFO 152677 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
 2023-08-23T19:59:02.210+02:00  INFO 152677 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path &#x27;&#x27;
 2023-08-23T19:59:02.219+02:00  INFO 152677 --- [  restartedMain] c.e.spring.automacorp.AutomacorpApplication  : Started AutomacorpApplication in 1.825 seconds (process running for 2.506)
-Hello, Spring!</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474742.5986')">Copy</button></pre>
+Hello, Spring!</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401223.4932')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -18393,7 +18393,7 @@ Hello, Spring!</code><button class="btn-copy-code" onclick="copyToClipboard('175
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474742.2693"><span class="hljs-meta">@Service</span>
+<pre class="highlight"><code class="language-java" id="1755670401223.7441"><span class="hljs-meta">@Service</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ConsoleGreetingService</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">GreetingService</span> {
 
   <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> CycleService cycleService;
@@ -18407,12 +18407,12 @@ Hello, Spring!</code><button class="btn-copy-code" onclick="copyToClipboard('175
   <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">greet</span><span class="hljs-params">(String name)</span> {
     System.out.println(<span class="hljs-string">&quot;Hello, &quot;</span> + name + <span class="hljs-string">&quot;!&quot;</span>);
   }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474742.2693')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401223.7441')">Copy</button></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474742.5762"><span class="hljs-meta">@Service</span>
+<pre class="highlight"><code class="language-java" id="1755670401224.2476"><span class="hljs-meta">@Service</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">CycleService</span> {
 
   <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> ConsoleGreetingService consoleGreetingService;
@@ -18421,7 +18421,7 @@ Hello, Spring!</code><button class="btn-copy-code" onclick="copyToClipboard('175
   <span class="hljs-keyword">public</span> <span class="hljs-title function_">CycleService</span><span class="hljs-params">(ConsoleGreetingService consoleGreetingService)</span> {
     <span class="hljs-built_in">this</span>.consoleGreetingService = consoleGreetingService;
   }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474742.5762')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401224.2476')">Copy</button></pre>
 </div>
 </div>
 <div class="quoteblock">
@@ -18597,8 +18597,8 @@ Hello, Spring!</code><button class="btn-copy-code" onclick="copyToClipboard('175
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-groovy" id="1755669474700.138">implementation(<span class="hljs-string">&quot;org.springframework.boot:spring-boot-starter-data-jpa&quot;</span>) <span class="hljs-comment">// libs to use JPA in your project</span>
-implementation(<span class="hljs-string">&quot;com.h2database:h2&quot;</span>) <span class="hljs-comment">// libs to use a H2 database</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474700.138')">Copy</button></pre>
+<pre class="highlight"><code class="language-groovy" id="1755670401188.1611">implementation(<span class="hljs-string">&quot;org.springframework.boot:spring-boot-starter-data-jpa&quot;</span>) <span class="hljs-comment">// libs to use JPA in your project</span>
+implementation(<span class="hljs-string">&quot;com.h2database:h2&quot;</span>) <span class="hljs-comment">// libs to use a H2 database</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401188.1611')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -18617,7 +18617,7 @@ implementation(<span class="hljs-string">&quot;com.h2database:h2&quot;</span>) <
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-properties" id="1755669474700.554"><span class="hljs-comment"># Spring boot : configure H2 datasource</span>
+<pre class="highlight"><code class="language-properties" id="1755670401188.1719"><span class="hljs-comment"># Spring boot : configure H2 datasource</span>
 <span class="hljs-attr">spring.datasource.url</span>=<span class="hljs-string">jdbc:h2:mem:automacorp;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE</span>
 <span class="hljs-attr">spring.datasource.username</span>=<span class="hljs-string">sa</span>
 <span class="hljs-attr">spring.datasource.password</span>=<span class="hljs-string"></span>
@@ -18625,7 +18625,7 @@ implementation(<span class="hljs-string">&quot;com.h2database:h2&quot;</span>) <
 <span class="hljs-comment">
 # Spring boot : activate H2 console</span>
 <span class="hljs-attr">spring.h2.console.enabled</span>=<span class="hljs-string">true</span>
-<span class="hljs-attr">spring.h2.console.path</span>=<span class="hljs-string">/console</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474700.554')">Copy</button></pre>
+<span class="hljs-attr">spring.h2.console.path</span>=<span class="hljs-string">/console</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401188.1719')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -18656,7 +18656,7 @@ implementation(<span class="hljs-string">&quot;com.h2database:h2&quot;</span>) <
 <p>SQL order to create a table. Each table must have a primary key. In this example it will be the column id. We use  <code>auto_increment</code> option to let the database increment the id when a new line is inserted</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-sql" id="1755669474702.0107"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> ROOM(ID <span class="hljs-type">BIGINT</span> auto_increment <span class="hljs-keyword">PRIMARY</span> KEY, NAME <span class="hljs-type">VARCHAR</span>(<span class="hljs-number">255</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-keyword">NULL</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474702.0107')">Copy</button></pre>
+<pre class="highlight"><code class="language-sql" id="1755670401190.1577"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> ROOM(ID <span class="hljs-type">BIGINT</span> auto_increment <span class="hljs-keyword">PRIMARY</span> KEY, NAME <span class="hljs-type">VARCHAR</span>(<span class="hljs-number">255</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-keyword">NULL</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401190.1577')">Copy</button></pre>
 </div>
 </div>
 </li>
@@ -18664,10 +18664,10 @@ implementation(<span class="hljs-string">&quot;com.h2database:h2&quot;</span>) <
 <p>SQL order to insert data in this table</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-sql" id="1755669474702.2551"><span class="hljs-comment">-- Let the database generate an id (a positive value)</span>
+<pre class="highlight"><code class="language-sql" id="1755670401190.323"><span class="hljs-comment">-- Let the database generate an id (a positive value)</span>
 <span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> ROOM(NAME) <span class="hljs-keyword">VALUES</span>(<span class="hljs-string">&#x27;Room1&#x27;</span>);
 <span class="hljs-comment">-- You can force an id (we use here a negative value to be sure to not have a conflict with a generated value)</span>
-<span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> ROOM(ID, NAME) <span class="hljs-keyword">VALUES</span>(<span class="hljs-number">-10</span>, <span class="hljs-string">&#x27;Room2&#x27;</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474702.2551')">Copy</button></pre>
+<span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> ROOM(ID, NAME) <span class="hljs-keyword">VALUES</span>(<span class="hljs-number">-10</span>, <span class="hljs-string">&#x27;Room2&#x27;</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401190.323')">Copy</button></pre>
 </div>
 </div>
 </li>
@@ -18675,7 +18675,7 @@ implementation(<span class="hljs-string">&quot;com.h2database:h2&quot;</span>) <
 <p>SQL order to select these data</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-sql" id="1755669474702.1072"><span class="hljs-keyword">SELECT</span> <span class="hljs-operator">*</span> <span class="hljs-keyword">FROM</span> ROOM;</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474702.1072')">Copy</button></pre>
+<pre class="highlight"><code class="language-sql" id="1755670401190.2676"><span class="hljs-keyword">SELECT</span> <span class="hljs-operator">*</span> <span class="hljs-keyword">FROM</span> ROOM;</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401190.2676')">Copy</button></pre>
 </div>
 </div>
 </li>
@@ -18967,7 +18967,7 @@ implementation(<span class="hljs-string">&quot;com.h2database:h2&quot;</span>) <
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474710.8264"><span class="hljs-keyword">import</span> jakarta.persistence.*;
+<pre class="highlight"><code class="language-java" id="1755670401194.9148"><span class="hljs-keyword">import</span> jakarta.persistence.*;
 
 <span class="hljs-meta">@Entity</span> <span class="hljs-comment">// (1).</span>
 <span class="hljs-meta">@Table(name = &quot;SP_SENSOR&quot;)</span> <span class="hljs-comment">// (2).</span>
@@ -19036,7 +19036,7 @@ implementation(<span class="hljs-string">&quot;com.h2database:h2&quot;</span>) <
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">setNotImportant</span><span class="hljs-params">(Integer notImportant)</span> {
         <span class="hljs-built_in">this</span>.notImportant = notImportant;
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474710.8264')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401194.9148')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -19142,7 +19142,7 @@ implementation(<span class="hljs-string">&quot;com.h2database:h2&quot;</span>) <
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474710.0981"><span class="hljs-meta">@Service</span>
+<pre class="highlight"><code class="language-java" id="1755670401194.8086"><span class="hljs-meta">@Service</span>
 <span class="hljs-meta">@Transactional</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SiteServiceImpl</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">SiteService</span> {
 
@@ -19154,7 +19154,7 @@ implementation(<span class="hljs-string">&quot;com.h2database:h2&quot;</span>) <
         siteDao.save(site);
         <span class="hljs-keyword">return</span> site;
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474710.0981')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401194.8086')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -19200,11 +19200,11 @@ implementation(<span class="hljs-string">&quot;com.h2database:h2&quot;</span>) <
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474710.953"># Spring boot : JPA
+<pre class="highlight"><code class="language-java" id="1755670401194.5513"># Spring boot : JPA
 spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
 spring.jpa.generate-ddl=<span class="hljs-literal">true</span>
 spring.jpa.show_sql=<span class="hljs-literal">true</span>
-spring.jpa.defer-datasource-initialization=<span class="hljs-literal">true</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474710.953')">Copy</button></pre>
+spring.jpa.defer-datasource-initialization=<span class="hljs-literal">true</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401194.5513')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -19257,7 +19257,7 @@ In this second case, one of the two entities must be the parent (the main entity
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474710.8572"><span class="hljs-meta">@Entity</span>
+<pre class="highlight"><code class="language-java" id="1755670401194.2449"><span class="hljs-meta">@Entity</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Mayor</span> {
     <span class="hljs-meta">@Id</span>
     <span class="hljs-keyword">private</span> Long id;
@@ -19276,7 +19276,7 @@ In this second case, one of the two entities must be the parent (the main entity
      <span class="hljs-keyword">private</span> Mayor mayor;
 
      <span class="hljs-comment">// ...</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474710.8572')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401194.2449')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -19298,7 +19298,7 @@ In this second case, one of the two entities must be the parent (the main entity
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474710.6763"><span class="hljs-meta">@Entity</span>
+<pre class="highlight"><code class="language-java" id="1755670401194.1143"><span class="hljs-meta">@Entity</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">City</span> {
     <span class="hljs-meta">@Id</span>
     <span class="hljs-keyword">private</span> Long id;
@@ -19320,7 +19320,7 @@ In this second case, one of the two entities must be the parent (the main entity
     <span class="hljs-keyword">private</span> City city;
 
     <span class="hljs-comment">//...</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474710.6763')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401194.1143')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -19353,7 +19353,7 @@ In this case, you will not be able to delete a row because you will always have 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474710.5618"><span class="hljs-meta">@Entity</span>
+<pre class="highlight"><code class="language-java" id="1755670401195.3213"><span class="hljs-meta">@Entity</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Sensor</span> {
     <span class="hljs-meta">@Id</span>
     <span class="hljs-keyword">private</span> Long id;
@@ -19372,7 +19372,7 @@ In this case, you will not be able to delete a row because you will always have 
     <span class="hljs-keyword">private</span> Set<span class="hljs-meta">@LTSensor</span><span class="hljs-meta">@GT</span> sensors = Set.of();
 
     <span class="hljs-comment">// ...</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474710.5618')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401195.3213')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -19391,7 +19391,7 @@ In this case, you will not be able to delete a row because you will always have 
 </div>
 <div class="listingblock langage-small">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474711.5002"><span class="hljs-meta">@Entity</span>
+<pre class="highlight"><code class="language-java" id="1755670401195.1074"><span class="hljs-meta">@Entity</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Sensor</span> {
     <span class="hljs-meta">@Id</span>
     <span class="hljs-keyword">private</span> Long id;
@@ -19410,7 +19410,7 @@ In this case, you will not be able to delete a row because you will always have 
     <span class="hljs-keyword">private</span> Sensor sensor;
 
     <span class="hljs-comment">// ...</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474711.5002')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401195.1074')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -19430,7 +19430,7 @@ So you can&#8217;t make a mistake, add this <code>mappedBy</code> property on @O
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474711.158"><span class="hljs-meta">@Entity</span>
+<pre class="highlight"><code class="language-java" id="1755670401195.375"><span class="hljs-meta">@Entity</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Measure</span> {
     <span class="hljs-meta">@Id</span>
     <span class="hljs-keyword">private</span> Long id;
@@ -19448,7 +19448,7 @@ So you can&#8217;t make a mistake, add this <code>mappedBy</code> property on @O
 
     <span class="hljs-meta">@OneToMany(mappedBy = &quot;sensor&quot;)</span>
     <span class="hljs-keyword">private</span> Set<span class="hljs-meta">@LTMeasure</span><span class="hljs-meta">@GT</span> measures = Set.of();
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474711.158')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401195.375')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -19470,7 +19470,7 @@ So you can&#8217;t make a mistake, add this <code>mappedBy</code> property on @O
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474711.2974"><span class="hljs-meta">@Entity</span>
+<pre class="highlight"><code class="language-java" id="1755670401195.1118"><span class="hljs-meta">@Entity</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Instrument</span> {
     <span class="hljs-meta">@Id</span>
     <span class="hljs-keyword">private</span> Long id;
@@ -19489,7 +19489,7 @@ So you can&#8217;t make a mistake, add this <code>mappedBy</code> property on @O
     <span class="hljs-keyword">private</span> Set<span class="hljs-meta">@LTInstrument</span><span class="hljs-meta">@GT</span> instruments;
 
     <span class="hljs-comment">// ...</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474711.2974')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401195.1118')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -19505,7 +19505,7 @@ So you can&#8217;t make a mistake, add this <code>mappedBy</code> property on @O
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474711.4807"><span class="hljs-comment">// Child</span>
+<pre class="highlight"><code class="language-java" id="1755670401195.439"><span class="hljs-comment">// Child</span>
 <span class="hljs-meta">@Entity</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Instrument</span> {
     <span class="hljs-meta">@Id</span>
@@ -19528,7 +19528,7 @@ So you can&#8217;t make a mistake, add this <code>mappedBy</code> property on @O
     <span class="hljs-keyword">private</span> Set<span class="hljs-meta">@LTInstrument</span><span class="hljs-meta">@GT</span> instruments;
 
     <span class="hljs-comment">// ...</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474711.4807')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401195.439')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -19588,11 +19588,11 @@ private <span class="hljs-title class_">Set</span>@<span class="hljs-title class
 </div>
 <div class="listingblock langage-small">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474712.379"><span class="hljs-comment">// Selection sensors</span>
+<pre class="highlight"><code class="language-java" id="1755670401196.8257"><span class="hljs-comment">// Selection sensors</span>
 select c from SensorEntity c
 
 <span class="hljs-comment">// Selection sites linked to a sensor</span>
-select c.site from SensorEntity c</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474712.379')">Copy</button></pre>
+select c.site from SensorEntity c</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401196.8257')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -19600,7 +19600,7 @@ select c.site from SensorEntity c</code><button class="btn-copy-code" onclick="c
 </div>
 <div class="listingblock langage-small">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474712.8674">select c from SensorEntity c where c.site.id = :siteId</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474712.8674')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670401196.2688">select c from SensorEntity c where c.site.id = :siteId</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401196.2688')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -19608,8 +19608,8 @@ select c.site from SensorEntity c</code><button class="btn-copy-code" onclick="c
 </div>
 <div class="listingblock langage-small">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474712.3271">select c from SensorEntity c join c.site s where s.id = :siteId
-select c from SensorEntity c left join c.site s where s.id = :siteId</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474712.3271')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670401196.096">select c from SensorEntity c join c.site s where s.id = :siteId
+select c from SensorEntity c left join c.site s where s.id = :siteId</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401196.096')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -19628,10 +19628,10 @@ select c from SensorEntity c left join c.site s where s.id = :siteId</code><butt
 </div>
 <div class="listingblock langage-small">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474712.5244"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">SensorDao</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">JpaRepository</span><span class="hljs-meta">@LTSensorEntity</span>, Long<span class="hljs-meta">@GT</span> {
+<pre class="highlight"><code class="language-java" id="1755670401196.8716"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">SensorDao</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">JpaRepository</span><span class="hljs-meta">@LTSensorEntity</span>, Long<span class="hljs-meta">@GT</span> {
     <span class="hljs-meta">@Query(&quot;select c from SensorEntity c where c.name=:name&quot;)</span>
     SensorEntity <span class="hljs-title function_">findByName</span><span class="hljs-params">(<span class="hljs-meta">@Param(&quot;name&quot;)</span> String name)</span>;
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474712.5244')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401196.8716')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -19647,7 +19647,7 @@ select c from SensorEntity c left join c.site s where s.id = :siteId</code><butt
 </div>
 <div class="listingblock langage-small">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474712.6213"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">SensorDao</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">JpaRepository</span><span class="hljs-meta">@LTSensorEntity</span>, Long<span class="hljs-meta">@GT</span> {
+<pre class="highlight"><code class="language-java" id="1755670401196.415"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">SensorDao</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">JpaRepository</span><span class="hljs-meta">@LTSensorEntity</span>, Long<span class="hljs-meta">@GT</span> {
 
     List<span class="hljs-meta">@LTSensorEntity</span><span class="hljs-meta">@GT</span> findBySiteId(Long siteId); <span class="hljs-comment">// (1).</span>
 
@@ -19657,7 +19657,7 @@ select c from SensorEntity c left join c.site s where s.id = :siteId</code><butt
     <span class="hljs-meta">@Modifying</span> <span class="hljs-comment">// (3)</span>
     <span class="hljs-meta">@Query(&quot;delete from SensorEntity c where c.name = ?1&quot;)</span>
     <span class="hljs-keyword">void</span> <span class="hljs-title function_">deleteByName</span><span class="hljs-params">(String name)</span>;
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474712.6213')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401196.415')">Copy</button></pre>
 </div>
 </div>
 <div class="olist arabic">
@@ -19682,7 +19682,7 @@ select c from SensorEntity c left join c.site s where s.id = :siteId</code><butt
 <p>You can after add a property</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474712.1045">List<span class="hljs-meta">@LTSensorEntity</span><span class="hljs-meta">@GT</span> findByName(String name);</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474712.1045')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670401196.025">List<span class="hljs-meta">@LTSensorEntity</span><span class="hljs-meta">@GT</span> findByName(String name);</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401196.025')">Copy</button></pre>
 </div>
 </div>
 </li>
@@ -19690,7 +19690,7 @@ select c from SensorEntity c left join c.site s where s.id = :siteId</code><butt
 <p>You can add a property of a property</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474712.923">List<span class="hljs-meta">@LTSensorEntity</span><span class="hljs-meta">@GT</span> findBySiteId(String siteId);</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474712.923')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670401196.3215">List<span class="hljs-meta">@LTSensorEntity</span><span class="hljs-meta">@GT</span> findBySiteId(String siteId);</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401196.3215')">Copy</button></pre>
 </div>
 </div>
 </li>
@@ -19698,8 +19698,8 @@ select c from SensorEntity c left join c.site s where s.id = :siteId</code><butt
 <p>You can cumulate criteria</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474712.1072">List<span class="hljs-meta">@LTSensorEntity</span><span class="hljs-meta">@GT</span> findByNameAndSiteId(String name, String siteId);
-List<span class="hljs-meta">@LTSensorEntity</span><span class="hljs-meta">@GT</span> findByNameOrSiteId(String name, String siteId);</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474712.1072')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670401196.479">List<span class="hljs-meta">@LTSensorEntity</span><span class="hljs-meta">@GT</span> findByNameAndSiteId(String name, String siteId);
+List<span class="hljs-meta">@LTSensorEntity</span><span class="hljs-meta">@GT</span> findByNameOrSiteId(String name, String siteId);</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401196.479')">Copy</button></pre>
 </div>
 </div>
 </li>
@@ -19707,8 +19707,8 @@ List<span class="hljs-meta">@LTSensorEntity</span><span class="hljs-meta">@GT</s
 <p>You can ignore upper or lower case</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474712.2136">List<span class="hljs-meta">@LTSensorEntity</span><span class="hljs-meta">@GT</span> findByNameIgnoreCase(String name);
-List<span class="hljs-meta">@LTSensorEntity</span><span class="hljs-meta">@GT</span> findByNameAndSiteIdAllIgnoreCase(String name, String siteId);</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474712.2136')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670401196.663">List<span class="hljs-meta">@LTSensorEntity</span><span class="hljs-meta">@GT</span> findByNameIgnoreCase(String name);
+List<span class="hljs-meta">@LTSensorEntity</span><span class="hljs-meta">@GT</span> findByNameAndSiteIdAllIgnoreCase(String name, String siteId);</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401196.663')">Copy</button></pre>
 </div>
 </div>
 </li>
@@ -19716,8 +19716,8 @@ List<span class="hljs-meta">@LTSensorEntity</span><span class="hljs-meta">@GT</s
 <p>You can sort data</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474712.4927">List<span class="hljs-meta">@LTSensorEntity</span><span class="hljs-meta">@GT</span> findByNameOrderByNameAsc(String name);
-List<span class="hljs-meta">@LTSensorEntity</span><span class="hljs-meta">@GT</span> findByNameOrderByNameDesc(String name);</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474712.4927')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670401196.1147">List<span class="hljs-meta">@LTSensorEntity</span><span class="hljs-meta">@GT</span> findByNameOrderByNameAsc(String name);
+List<span class="hljs-meta">@LTSensorEntity</span><span class="hljs-meta">@GT</span> findByNameOrderByNameDesc(String name);</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401196.1147')">Copy</button></pre>
 </div>
 </div>
 </li>
@@ -19725,7 +19725,7 @@ List<span class="hljs-meta">@LTSensorEntity</span><span class="hljs-meta">@GT</s
 <p>You can select only one element (if you have for example an unicity constraint). But in this case if several elements are found an exception is thrown</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474713.594">SensorEntity <span class="hljs-title function_">findByName</span><span class="hljs-params">(String name)</span>;</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474713.594')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670401196.5864">SensorEntity <span class="hljs-title function_">findByName</span><span class="hljs-params">(String name)</span>;</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401196.5864')">Copy</button></pre>
 </div>
 </div>
 </li>
@@ -19742,9 +19742,9 @@ List<span class="hljs-meta">@LTSensorEntity</span><span class="hljs-meta">@GT</s
 </div>
 <div class="listingblock langage-verysmall">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474713.6987"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">SensorCustomDao</span> {
+<pre class="highlight"><code class="language-java" id="1755670401196.8547"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">SensorCustomDao</span> {
     List<span class="hljs-meta">@LTSensorEntity</span><span class="hljs-meta">@GT</span> findBySiteText(String searchText);
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474713.6987')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401196.8547')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -19752,8 +19752,8 @@ List<span class="hljs-meta">@LTSensorEntity</span><span class="hljs-meta">@GT</s
 </div>
 <div class="listingblock langage-verysmall">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474713.6143"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">SensorDao</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">JpaRepository</span><span class="hljs-meta">@LTSensorEntity</span>, String<span class="hljs-meta">@GT</span>, SensorCustomDao {
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474713.6143')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670401196.1633"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">SensorDao</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">JpaRepository</span><span class="hljs-meta">@LTSensorEntity</span>, String<span class="hljs-meta">@GT</span>, SensorCustomDao {
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401196.1633')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -19761,7 +19761,7 @@ List<span class="hljs-meta">@LTSensorEntity</span><span class="hljs-meta">@GT</s
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474713.7773"><span class="hljs-meta">@Repository</span>
+<pre class="highlight"><code class="language-java" id="1755670401197.3894"><span class="hljs-meta">@Repository</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SensorCustomDaoImpl</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">SensorCustomDao</span> {
 
     <span class="hljs-meta">@PersistenceContext</span>
@@ -19774,7 +19774,7 @@ List<span class="hljs-meta">@LTSensorEntity</span><span class="hljs-meta">@GT</s
                  .setParameter(<span class="hljs-string">&quot;searchText&quot;</span>, <span class="hljs-string">&quot;%&quot;</span> + searchText.toLowerCase() + <span class="hljs-string">&quot;%&quot;</span>)
                  .getResultList();
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474713.7773')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401197.3894')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -19820,7 +19820,7 @@ List<span class="hljs-meta">@LTSensorEntity</span><span class="hljs-meta">@GT</s
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474713.3408"><span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> <span class="hljs-title class_">SensorType</span> { TEMPERATURE, POWER, STATUS }</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474713.3408')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670401197.4065"><span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> <span class="hljs-title class_">SensorType</span> { TEMPERATURE, POWER, STATUS }</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401197.4065')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -19834,7 +19834,7 @@ List<span class="hljs-meta">@LTSensorEntity</span><span class="hljs-meta">@GT</s
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474713.5205"><span class="hljs-comment">// (1)</span>
+<pre class="highlight"><code class="language-java" id="1755670401197.629"><span class="hljs-comment">// (1)</span>
 <span class="hljs-comment">// (2)</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">WindowEntity</span> {
     <span class="hljs-comment">// (3)</span>
@@ -19877,7 +19877,7 @@ List<span class="hljs-meta">@LTSensorEntity</span><span class="hljs-meta">@GT</s
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">setWindowStatus</span><span class="hljs-params">(Sensor windowStatus)</span> {
         <span class="hljs-built_in">this</span>.windowStatus = windowStatus;
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474713.5205')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401197.629')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -20019,7 +20019,7 @@ Hibernate: alter table if exists sp_window add constraint FKqdj6jbtn59whbpgt93n9
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-sql" id="1755669474714.0898"><span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> SP_SENSOR(id, name, sensor_value, sensor_type) <span class="hljs-keyword">VALUES</span>(<span class="hljs-number">-10</span>, <span class="hljs-string">&#x27;Temperature room 2&#x27;</span>, <span class="hljs-number">21.3</span>, <span class="hljs-string">&#x27;TEMPERATURE&#x27;</span>);
+<pre class="highlight"><code class="language-sql" id="1755670401197.384"><span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> SP_SENSOR(id, name, sensor_value, sensor_type) <span class="hljs-keyword">VALUES</span>(<span class="hljs-number">-10</span>, <span class="hljs-string">&#x27;Temperature room 2&#x27;</span>, <span class="hljs-number">21.3</span>, <span class="hljs-string">&#x27;TEMPERATURE&#x27;</span>);
 <span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> SP_SENSOR(id, name, sensor_value, sensor_type) <span class="hljs-keyword">VALUES</span>(<span class="hljs-number">-9</span>, <span class="hljs-string">&#x27;Window 1 status room 1&#x27;</span>, <span class="hljs-number">1.0</span>, <span class="hljs-string">&#x27;STATUS&#x27;</span>);
 <span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> SP_SENSOR(id, name, sensor_value, sensor_type) <span class="hljs-keyword">VALUES</span>(<span class="hljs-number">-8</span>, <span class="hljs-string">&#x27;Window 2 status room 1&#x27;</span>, <span class="hljs-number">0.0</span>, <span class="hljs-string">&#x27;STATUS&#x27;</span>);
 <span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> SP_SENSOR(id, name, sensor_value, sensor_type) <span class="hljs-keyword">VALUES</span>(<span class="hljs-number">-7</span>, <span class="hljs-string">&#x27;Window 1 status room 2&#x27;</span>, <span class="hljs-number">0.0</span>, <span class="hljs-string">&#x27;STATUS&#x27;</span>);
@@ -20031,7 +20031,7 @@ Hibernate: alter table if exists sp_window add constraint FKqdj6jbtn59whbpgt93n9
 <span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> SP_WINDOW(id, window_status_id, name, room_id) <span class="hljs-keyword">VALUES</span>(<span class="hljs-number">-10</span>, <span class="hljs-number">-9</span>, <span class="hljs-string">&#x27;Window 1&#x27;</span>, <span class="hljs-number">-10</span>);
 <span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> SP_WINDOW(id, window_status_id, name, room_id) <span class="hljs-keyword">VALUES</span>(<span class="hljs-number">-9</span>, <span class="hljs-number">-8</span>, <span class="hljs-string">&#x27;Window 2&#x27;</span>, <span class="hljs-number">-10</span>);
 <span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> SP_WINDOW(id, window_status_id, name, room_id) <span class="hljs-keyword">VALUES</span>(<span class="hljs-number">-8</span>, <span class="hljs-number">-7</span>, <span class="hljs-string">&#x27;Window 1&#x27;</span>, <span class="hljs-number">-9</span>);
-<span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> SP_WINDOW(id, window_status_id, name, room_id) <span class="hljs-keyword">VALUES</span>(<span class="hljs-number">-7</span>, <span class="hljs-number">-6</span>, <span class="hljs-string">&#x27;Window 2&#x27;</span>, <span class="hljs-number">-9</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474714.0898')">Copy</button></pre>
+<span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> SP_WINDOW(id, window_status_id, name, room_id) <span class="hljs-keyword">VALUES</span>(<span class="hljs-number">-7</span>, <span class="hljs-number">-6</span>, <span class="hljs-string">&#x27;Window 2&#x27;</span>, <span class="hljs-number">-9</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401197.384')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -20050,7 +20050,7 @@ Hibernate: alter table if exists sp_window add constraint FKqdj6jbtn59whbpgt93n9
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474714.1438"><span class="hljs-keyword">import</span> com.emse.spring.automacorp.model.Window;
+<pre class="highlight"><code class="language-java" id="1755670401198.2551"><span class="hljs-keyword">import</span> com.emse.spring.automacorp.model.Window;
 <span class="hljs-keyword">import</span> com.emse.spring.automacorp.model.WindowStatus;
 <span class="hljs-keyword">import</span> org.assertj.core.api.Assertions;
 <span class="hljs-keyword">import</span> org.junit.jupiter.api.Test;
@@ -20070,7 +20070,7 @@ Hibernate: alter table if exists sp_window add constraint FKqdj6jbtn59whbpgt93n9
         Assertions.assertThat(window.getName()).isEqualTo(<span class="hljs-string">&quot;Window 1&quot;</span>);
         Assertions.assertThat(window.getWindowStatus().getValue()).isEqualTo(<span class="hljs-number">1.0</span>);
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474714.1438')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401198.2551')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -20105,9 +20105,9 @@ Hibernate: alter table if exists sp_window add constraint FKqdj6jbtn59whbpgt93n9
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474714.9275"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">WindowDaoCustom</span> {
+<pre class="highlight"><code class="language-java" id="1755670401198.3787"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">WindowDaoCustom</span> {
     List<span class="hljs-meta">@LTWindowEntity</span><span class="hljs-meta">@GT</span> findRoomsWithOpenWindows(Long id);
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474714.9275')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401198.3787')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -20118,7 +20118,7 @@ Hibernate: alter table if exists sp_window add constraint FKqdj6jbtn59whbpgt93n9
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474714.5403"><span class="hljs-keyword">import</span> com.emse.spring.automacorp.model.Window;
+<pre class="highlight"><code class="language-java" id="1755670401198.4253"><span class="hljs-keyword">import</span> com.emse.spring.automacorp.model.Window;
 <span class="hljs-keyword">import</span> jakarta.persistence.EntityManager;
 <span class="hljs-keyword">import</span> jakarta.persistence.PersistenceContext;
 
@@ -20136,7 +20136,7 @@ Hibernate: alter table if exists sp_window add constraint FKqdj6jbtn59whbpgt93n9
                 .setParameter(<span class="hljs-string">&quot;id&quot;</span>, id)
                 .getResultList();
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474714.5403')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401198.4253')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -20144,7 +20144,7 @@ Hibernate: alter table if exists sp_window add constraint FKqdj6jbtn59whbpgt93n9
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474715.2432"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-java" id="1755670401198.016"><span class="hljs-meta">@Test</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">shouldFindRoomsWithOpenWindows</span><span class="hljs-params">()</span> {
     List<span class="hljs-meta">@LTWindowEntity</span><span class="hljs-meta">@GT</span> result = windowDao.findRoomsWithOpenWindows(-<span class="hljs-number">10L</span>);
     Assertions.assertThat(result)
@@ -20157,7 +20157,7 @@ Hibernate: alter table if exists sp_window add constraint FKqdj6jbtn59whbpgt93n9
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">shouldNotFindRoomsWithOpenWindows</span><span class="hljs-params">()</span> {
     List<span class="hljs-meta">@LTWindowEntity</span><span class="hljs-meta">@GT</span> result = windowDao.findRoomsWithOpenWindows(-<span class="hljs-number">9L</span>);
     Assertions.assertThat(result).isEmpty();
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474715.2432')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401198.016')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -20184,7 +20184,7 @@ Hibernate: alter table if exists sp_window add constraint FKqdj6jbtn59whbpgt93n9
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474715.5132"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-java" id="1755670401198.9727"><span class="hljs-meta">@Test</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">shouldDeleteWindowsRoom</span><span class="hljs-params">()</span> {
     <span class="hljs-type">RoomEntity</span> <span class="hljs-variable">room</span> <span class="hljs-operator">=</span> roomDao.getById(-<span class="hljs-number">10L</span>);
     List<span class="hljs-meta">@LTLong</span><span class="hljs-meta">@GT</span> roomIds = room.getWindows().stream().map(Window::getId).collect(Collectors.toList());
@@ -20194,7 +20194,7 @@ Hibernate: alter table if exists sp_window add constraint FKqdj6jbtn59whbpgt93n9
     List<span class="hljs-meta">@LTWindowEntity</span><span class="hljs-meta">@GT</span> result = windowDao.findAllById(roomIds);
     Assertions.assertThat(result).isEmpty();
 
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474715.5132')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401198.9727')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -20313,8 +20313,8 @@ Hibernate: alter table if exists sp_window add constraint FKqdj6jbtn59whbpgt93n9
 </div>
 <div class="listingblock small">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474767.231"><span class="hljs-keyword">public</span> <span class="hljs-keyword">record</span> <span class="hljs-title class_">Sensor</span><span class="hljs-params">(Long id, String name, Double value, SensorType sensorType)</span> {
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474767.231')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670401247.5137"><span class="hljs-keyword">public</span> <span class="hljs-keyword">record</span> <span class="hljs-title class_">Sensor</span><span class="hljs-params">(Long id, String name, Double value, SensorType sensorType)</span> {
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401247.5137')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -20328,7 +20328,7 @@ Hibernate: alter table if exists sp_window add constraint FKqdj6jbtn59whbpgt93n9
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474767.2383"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SensorMapper</span> {
+<pre class="highlight"><code class="language-java" id="1755670401247.6877"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SensorMapper</span> {
   <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> Sensor <span class="hljs-title function_">of</span><span class="hljs-params">(SensorEntity sensor)</span> {
     <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Sensor</span>(
         sensor.getId(),
@@ -20337,7 +20337,7 @@ Hibernate: alter table if exists sp_window add constraint FKqdj6jbtn59whbpgt93n9
         sensor.getSensorType()
     );
   }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474767.2383')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401247.6877')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -20351,8 +20351,8 @@ Hibernate: alter table if exists sp_window add constraint FKqdj6jbtn59whbpgt93n9
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474767.9045"><span class="hljs-keyword">public</span> <span class="hljs-keyword">record</span> <span class="hljs-title class_">Window</span><span class="hljs-params">(Long id, String name, Sensor windowStatus, Long roomId)</span> {
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474767.9045')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670401247.7378"><span class="hljs-keyword">public</span> <span class="hljs-keyword">record</span> <span class="hljs-title class_">Window</span><span class="hljs-params">(Long id, String name, Sensor windowStatus, Long roomId)</span> {
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401247.7378')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -20366,7 +20366,7 @@ Hibernate: alter table if exists sp_window add constraint FKqdj6jbtn59whbpgt93n9
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474768.0393"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">FakeEntityBuilder</span> {
+<pre class="highlight"><code class="language-java" id="1755670401248.6382"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">FakeEntityBuilder</span> {
 
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> RoomEntity <span class="hljs-title function_">createRoomEntity</span><span class="hljs-params">(Long id, String name, BuildingEntity building)</span> {
         <span class="hljs-comment">// Sensor is recreated before each test</span>
@@ -20418,7 +20418,7 @@ Hibernate: alter table if exists sp_window add constraint FKqdj6jbtn59whbpgt93n9
         sensorEntity.setValue(value);
         <span class="hljs-keyword">return</span> sensorEntity;
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474768.0393')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401248.6382')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -20426,7 +20426,7 @@ Hibernate: alter table if exists sp_window add constraint FKqdj6jbtn59whbpgt93n9
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474768.8936"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomMapperTest</span> {
+<pre class="highlight"><code class="language-java" id="1755670401248.0115"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomMapperTest</span> {
 
     <span class="hljs-meta">@Test</span>
     <span class="hljs-keyword">void</span> <span class="hljs-title function_">shouldMapRoom</span><span class="hljs-params">()</span> {
@@ -20478,7 +20478,7 @@ Hibernate: alter table if exists sp_window add constraint FKqdj6jbtn59whbpgt93n9
         );
         Assertions.assertThat(room).usingRecursiveAssertion().isEqualTo(expectedRoom);
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474768.8936')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401248.0115')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -20589,7 +20589,7 @@ Node Express server listening on <a href="http://localhost:4000" class="bare">ht
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474769.1873"><span class="hljs-meta">@CrossOrigin</span>
+<pre class="highlight"><code class="language-java" id="1755670401249.5671"><span class="hljs-meta">@CrossOrigin</span>
 <span class="hljs-meta">@RestController</span> <span class="hljs-comment">// (1)</span>
 <span class="hljs-meta">@RequestMapping(&quot;/api/sensors&quot;)</span> <span class="hljs-comment">// (2)</span>
 <span class="hljs-meta">@Transactional</span> <span class="hljs-comment">// (3)</span>
@@ -20639,7 +20639,7 @@ Node Express server listening on <a href="http://localhost:4000" class="bare">ht
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">delete</span><span class="hljs-params">(<span class="hljs-meta">@PathVariable</span> Long id)</span> {
         sensorDao.deleteById(id);
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474769.1873')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401249.5671')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -20681,8 +20681,8 @@ Node Express server listening on <a href="http://localhost:4000" class="bare">ht
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474769.119"><span class="hljs-keyword">public</span> <span class="hljs-keyword">record</span> <span class="hljs-title class_">SensorCommand</span><span class="hljs-params">(String name, Double value, SensorType sensorType)</span> {
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474769.119')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670401249.8416"><span class="hljs-keyword">public</span> <span class="hljs-keyword">record</span> <span class="hljs-title class_">SensorCommand</span><span class="hljs-params">(String name, Double value, SensorType sensorType)</span> {
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401249.8416')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -20709,13 +20709,13 @@ Node Express server listening on <a href="http://localhost:4000" class="bare">ht
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474769.4287"><span class="hljs-comment">// static import of MockMvcRequestBuilders.*</span>
+<pre class="highlight"><code class="language-java" id="1755670401249.0107"><span class="hljs-comment">// static import of MockMvcRequestBuilders.*</span>
 
 <span class="hljs-comment">// a post example</span>
 mockMvc.perform(post(<span class="hljs-string">&quot;/hotels/{id}&quot;</span>, <span class="hljs-number">42</span>).accept(MediaType.APPLICATION_JSON));
 
 <span class="hljs-comment">// you can specify query parameters in URI template style</span>
-mockMvc.perform(get(<span class="hljs-string">&quot;/hotels&quot;</span>).param(<span class="hljs-string">&quot;thing&quot;</span>, <span class="hljs-string">&quot;somewhere&quot;</span>));</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474769.4287')">Copy</button></pre>
+mockMvc.perform(get(<span class="hljs-string">&quot;/hotels&quot;</span>).param(<span class="hljs-string">&quot;thing&quot;</span>, <span class="hljs-string">&quot;somewhere&quot;</span>));</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401249.0107')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -20723,9 +20723,9 @@ mockMvc.perform(get(<span class="hljs-string">&quot;/hotels&quot;</span>).param(
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474769.9941"><span class="hljs-comment">// static import of MockMvcRequestBuilders.* and MockMvcResultMatchers.*</span>
+<pre class="highlight"><code class="language-java" id="1755670401249.7427"><span class="hljs-comment">// static import of MockMvcRequestBuilders.* and MockMvcResultMatchers.*</span>
 
-mockMvc.perform(get(<span class="hljs-string">&quot;/accounts/1&quot;</span>)).andExpect(status().isOk());</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474769.9941')">Copy</button></pre>
+mockMvc.perform(get(<span class="hljs-string">&quot;/accounts/1&quot;</span>)).andExpect(status().isOk());</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401249.7427')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -20736,7 +20736,7 @@ mockMvc.perform(get(<span class="hljs-string">&quot;/accounts/1&quot;</span>)).a
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474770.2039"><span class="hljs-keyword">package</span> com.emse.spring.automacorp.web;
+<pre class="highlight"><code class="language-java" id="1755670401250.6108"><span class="hljs-keyword">package</span> com.emse.spring.automacorp.web;
 
 <span class="hljs-keyword">import</span> com.emse.spring.automacorp.dao.SensorDao;
 <span class="hljs-keyword">import</span> com.emse.spring.automacorp.model.SensorEntity;
@@ -20879,7 +20879,7 @@ mockMvc.perform(get(<span class="hljs-string">&quot;/accounts/1&quot;</span>)).a
                 .andExpect(MockMvcResultMatchers.status().isOk());
     }
 
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474770.2039')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401250.6108')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -20898,7 +20898,7 @@ mockMvc.perform(get(<span class="hljs-string">&quot;/accounts/1&quot;</span>)).a
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474771.0024"><span class="hljs-meta">@RestController</span>
+<pre class="highlight"><code class="language-java" id="1755670401251.8972"><span class="hljs-meta">@RestController</span>
 <span class="hljs-meta">@RequestMapping(&quot;/api/hello&quot;)</span>
 <span class="hljs-meta">@Transactional</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">HelloController</span> {
@@ -20909,7 +20909,7 @@ mockMvc.perform(get(<span class="hljs-string">&quot;/accounts/1&quot;</span>)).a
 
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">record</span> <span class="hljs-title class_">Message</span><span class="hljs-params">(String message)</span> {
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474771.0024')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401251.8972')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -20926,7 +20926,7 @@ mockMvc.perform(get(<span class="hljs-string">&quot;/accounts/1&quot;</span>)).a
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669474771.787">{<span class="hljs-string">&quot;message&quot;</span>:<span class="hljs-string">&quot;Hello Guillaume}</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474771.787')">Copy</button></pre>
+<pre class="highlight"><code class="language-javascript" id="1755670401251.7056">{<span class="hljs-string">&quot;message&quot;</span>:<span class="hljs-string">&quot;Hello Guillaume}</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401251.7056')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -20940,7 +20940,7 @@ mockMvc.perform(get(<span class="hljs-string">&quot;/accounts/1&quot;</span>)).a
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474771.9692">implementation(<span class="hljs-string">&quot;org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0&quot;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474771.9692')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1755670401251.6138">implementation(<span class="hljs-string">&quot;org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0&quot;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401251.6138')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -21030,21 +21030,21 @@ mockMvc.perform(get(<span class="hljs-string">&quot;/accounts/1&quot;</span>)).a
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474771.9275">/api/windows (GET) send windows list
+<pre class="highlight"><code class="language-shell" id="1755670401251.0613">/api/windows (GET) send windows list
 /api/windows (POST) add a window
 /api/windows/{id} (PUT) update a window
 /api/windows/{id} (GET) read a window
-/api/windows/{id} (DELETE) delete a window</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474771.9275')">Copy</button></pre>
+/api/windows/{id} (DELETE) delete a window</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401251.0613')">Copy</button></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474771.4314">/api/rooms (GET) send room list
+<pre class="highlight"><code class="language-shell" id="1755670401251.7375">/api/rooms (GET) send room list
 /api/rooms (POST) add or update a room
 /api/rooms/{room_id} (GET) read a room
 /api/rooms/{room_id} (DELETE) delete a room and all its windows and its heaters
 /api/rooms/{room_id}/openWindows switch the room windows to OPEN (status != 0)
-/api/rooms/{room_id}/closeWindows switch the room windows to CLOSED (status = 0)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474771.4314')">Copy</button></pre>
+/api/rooms/{room_id}/closeWindows switch the room windows to CLOSED (status = 0)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401251.7375')">Copy</button></pre>
 </div>
 </div>
 <div style="page-break-after: always;"></div>
@@ -21104,11 +21104,11 @@ mockMvc.perform(get(<span class="hljs-string">&quot;/accounts/1&quot;</span>)).a
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474771.767"> <span class="hljs-type">String</span> <span class="hljs-variable">result</span> <span class="hljs-operator">=</span> restTemplate.getForObject(
+<pre class="highlight"><code class="language-java" id="1755670401251.7112"> <span class="hljs-type">String</span> <span class="hljs-variable">result</span> <span class="hljs-operator">=</span> restTemplate.getForObject(
          <span class="hljs-string">&quot;http://example.com/hotels/{hotel}/bookings/{booking}&quot;</span>,
          String.class,
          <span class="hljs-string">&quot;42&quot;</span>,
-         <span class="hljs-string">&quot;21&quot;</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474771.767')">Copy</button></pre>
+         <span class="hljs-string">&quot;21&quot;</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401251.7112')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -21119,12 +21119,12 @@ mockMvc.perform(get(<span class="hljs-string">&quot;/accounts/1&quot;</span>)).a
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474771.397"> Map<span class="hljs-meta">@LTString</span>, String<span class="hljs-meta">@GT</span> vars = Collections.singletonMap(<span class="hljs-string">&quot;hotel&quot;</span>, <span class="hljs-string">&quot;42&quot;</span>);
+<pre class="highlight"><code class="language-java" id="1755670401251.7817"> Map<span class="hljs-meta">@LTString</span>, String<span class="hljs-meta">@GT</span> vars = Collections.singletonMap(<span class="hljs-string">&quot;hotel&quot;</span>, <span class="hljs-string">&quot;42&quot;</span>);
  <span class="hljs-type">String</span> <span class="hljs-variable">result</span> <span class="hljs-operator">=</span> restTemplate.getForObject(
          <span class="hljs-string">&quot;http://example.com/hotels/{hotel}/rooms/{hotel}&quot;</span>,
          String.class,
          vars
-);</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474771.397')">Copy</button></pre>
+);</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401251.7817')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -21135,7 +21135,7 @@ mockMvc.perform(get(<span class="hljs-string">&quot;/accounts/1&quot;</span>)).a
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474771.9053"><span class="hljs-meta">@Service</span>
+<pre class="highlight"><code class="language-java" id="1755670401251.0647"><span class="hljs-meta">@Service</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SearchService</span> {
 
     <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> RestTemplate restTemplate;
@@ -21151,7 +21151,7 @@ mockMvc.perform(get(<span class="hljs-string">&quot;/accounts/1&quot;</span>)).a
                                          .toUriString();
         <span class="hljs-keyword">return</span> restTemplate.getForObject(uri, ResponseDto.class);
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474771.9053')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401251.0647')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -21233,27 +21233,27 @@ mockMvc.perform(get(<span class="hljs-string">&quot;/accounts/1&quot;</span>)).a
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474771.813"><span class="hljs-keyword">public</span> <span class="hljs-keyword">record</span> <span class="hljs-title class_">ApiGouvResponse</span><span class="hljs-params">(
+<pre class="highlight"><code class="language-java" id="1755670401251.321"><span class="hljs-keyword">public</span> <span class="hljs-keyword">record</span> <span class="hljs-title class_">ApiGouvResponse</span><span class="hljs-params">(
     String version,
     String query,
     Integer limit,
     List@LTApiGouvFeature@GT features
 )</span> {
 
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474771.813')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401251.321')">Copy</button></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474771.1704"><span class="hljs-keyword">public</span> <span class="hljs-keyword">record</span> <span class="hljs-title class_">ApiGouvFeature</span><span class="hljs-params">(
+<pre class="highlight"><code class="language-java" id="1755670401251.1157"><span class="hljs-keyword">public</span> <span class="hljs-keyword">record</span> <span class="hljs-title class_">ApiGouvFeature</span><span class="hljs-params">(
     String type,
     ApiGouvAdress properties
-)</span> {</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474771.1704')">Copy</button></pre>
+)</span> {</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401251.1157')">Copy</button></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474771.8892"><span class="hljs-keyword">public</span> <span class="hljs-keyword">record</span> <span class="hljs-title class_">ApiGouvAdress</span><span class="hljs-params">(
+<pre class="highlight"><code class="language-java" id="1755670401251.3442"><span class="hljs-keyword">public</span> <span class="hljs-keyword">record</span> <span class="hljs-title class_">ApiGouvAdress</span><span class="hljs-params">(
     String id,
     String label,
     String housenumber,
@@ -21267,7 +21267,7 @@ mockMvc.perform(get(<span class="hljs-string">&quot;/accounts/1&quot;</span>)).a
     Double y
 )</span> {
 
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474771.8892')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401251.3442')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -21297,8 +21297,8 @@ mockMvc.perform(get(<span class="hljs-string">&quot;/accounts/1&quot;</span>)).a
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474771.592"><span class="hljs-type">String</span> <span class="hljs-variable">params</span> <span class="hljs-operator">=</span> String.join(<span class="hljs-string">&quot;+&quot;</span>, keys);
-UriComponentsBuilder.fromUriString(<span class="hljs-string">&quot;/search&quot;</span>).queryParam(<span class="hljs-string">&quot;q&quot;</span>, params).queryParam(<span class="hljs-string">&quot;limit&quot;</span>, <span class="hljs-number">15</span>).build().toUriString()<span class="hljs-meta">@backtick</span>@</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474771.592')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670401251.155"><span class="hljs-type">String</span> <span class="hljs-variable">params</span> <span class="hljs-operator">=</span> String.join(<span class="hljs-string">&quot;+&quot;</span>, keys);
+UriComponentsBuilder.fromUriString(<span class="hljs-string">&quot;/search&quot;</span>).queryParam(<span class="hljs-string">&quot;q&quot;</span>, params).queryParam(<span class="hljs-string">&quot;limit&quot;</span>, <span class="hljs-number">15</span>).build().toUriString()<span class="hljs-meta">@backtick</span>@</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401251.155')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -21323,7 +21323,7 @@ UriComponentsBuilder.fromUriString(<span class="hljs-string">&quot;/search&quot;
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474772.655"><span class="hljs-keyword">package</span> com.emse.spring.automacorp.adress;
+<pre class="highlight"><code class="language-java" id="1755670401252.0571"><span class="hljs-keyword">package</span> com.emse.spring.automacorp.adress;
 
 <span class="hljs-keyword">import</span> com.fasterxml.jackson.core.JsonProcessingException;
 <span class="hljs-keyword">import</span> com.fasterxml.jackson.databind.ObjectMapper;
@@ -21400,7 +21400,7 @@ UriComponentsBuilder.fromUriString(<span class="hljs-string">&quot;/search&quot;
         <span class="hljs-type">ApiGouvFeature</span> <span class="hljs-variable">feature</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">ApiGouvFeature</span>(<span class="hljs-string">&quot;type&quot;</span>, adress);
         <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">ApiGouvResponse</span>(<span class="hljs-string">&quot;v1&quot;</span>, <span class="hljs-string">&quot;cours+fauriel&quot;</span>, <span class="hljs-number">15</span>, List.of(feature));
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474772.655')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401252.0571')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -21477,7 +21477,7 @@ your needs, set the request<span class="hljs-string">&#x27;s mode to &#x27;</spa
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474751.3564"><span class="hljs-meta">@CrossOrigin</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474751.3564')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670401231.6455"><span class="hljs-meta">@CrossOrigin</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401231.6455')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -21485,7 +21485,7 @@ your needs, set the request<span class="hljs-string">&#x27;s mode to &#x27;</spa
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474752.928"><span class="hljs-meta">@CrossOrigin(origins = { &quot;http://localhost:3010&quot; }, maxAge = 3600)</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474752.928')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670401231.286"><span class="hljs-meta">@CrossOrigin(origins = { &quot;http://localhost:3010&quot; }, maxAge = 3600)</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401231.286')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -21533,8 +21533,8 @@ your needs, set the request<span class="hljs-string">&#x27;s mode to &#x27;</spa
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474752.3792">implementation(<span class="hljs-string">&quot;org.springframework.boot:spring-boot-starter-security&quot;</span>)
-testImplementation(<span class="hljs-string">&quot;org.springframework.security:spring-security-test&quot;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474752.3792')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670401231.3606">implementation(<span class="hljs-string">&quot;org.springframework.boot:spring-boot-starter-security&quot;</span>)
+testImplementation(<span class="hljs-string">&quot;org.springframework.security:spring-security-test&quot;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401231.3606')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -21593,14 +21593,14 @@ spring.security.user.password=password</pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474752.1343"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">doFilter</span><span class="hljs-params">(
+<pre class="highlight"><code class="language-java" id="1755670401231.637"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">doFilter</span><span class="hljs-params">(
         ServletRequest request,
         ServletResponse response,
         FilterChain chain)</span> {
 	  <span class="hljs-comment">// do something before the rest of the application</span>
     chain.doFilter(request, response); <span class="hljs-comment">// invoke the rest of the application</span>
     <span class="hljs-comment">// do something after the rest of the application</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474752.1343')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401231.637')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -21671,7 +21671,7 @@ spring.security.user.password=password</pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474752.2766"><span class="hljs-meta">@Configuration</span>
+<pre class="highlight"><code class="language-java" id="1755670401232.6082"><span class="hljs-meta">@Configuration</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SpringSecurityConfig</span> {
 
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-type">String</span> <span class="hljs-variable">ROLE_USER</span> <span class="hljs-operator">=</span> <span class="hljs-string">&quot;USER&quot;</span>;
@@ -21686,7 +21686,7 @@ spring.security.user.password=password</pre>
         );
         <span class="hljs-keyword">return</span> manager;
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474752.2766')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401232.6082')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -21694,14 +21694,14 @@ spring.security.user.password=password</pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474752.9727"><span class="hljs-meta">@Bean</span>
+<pre class="highlight"><code class="language-java" id="1755670401232.703"><span class="hljs-meta">@Bean</span>
 <span class="hljs-meta">@Order(SecurityProperties.BASIC_AUTH_ORDER)</span>
 SecurityFilterChain <span class="hljs-title function_">defaultSecurityFilterChain</span><span class="hljs-params">(HttpSecurity http)</span> <span class="hljs-keyword">throws</span> Exception {
 			http.authorizeHttpRequests((requests) <span class="hljs-meta">@LAMBDA</span> requests.anyRequest().authenticated());
 			http.formLogin(withDefaults());
 			http.httpBasic(withDefaults());
 			<span class="hljs-keyword">return</span> http.build();
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474752.9727')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401232.703')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -21723,7 +21723,7 @@ SecurityFilterChain <span class="hljs-title function_">defaultSecurityFilterChai
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474752.4412"><span class="hljs-meta">@Bean</span>
+<pre class="highlight"><code class="language-java" id="1755670401232.4038"><span class="hljs-meta">@Bean</span>
 <span class="hljs-meta">@Order(1)</span>
 <span class="hljs-keyword">public</span> SecurityFilterChain <span class="hljs-title function_">filterChain</span><span class="hljs-params">(HttpSecurity http)</span> <span class="hljs-keyword">throws</span> Exception {
     <span class="hljs-keyword">return</span> http
@@ -21734,7 +21734,7 @@ SecurityFilterChain <span class="hljs-title function_">defaultSecurityFilterChai
             .formLogin(withDefaults())
             .httpBasic(withDefaults())
             .build();
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474752.4412')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401232.4038')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -21761,8 +21761,8 @@ SecurityFilterChain <span class="hljs-title function_">defaultSecurityFilterChai
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474752.9504"><span class="hljs-type">Authentication</span> <span class="hljs-variable">authentication</span> <span class="hljs-operator">=</span> SecurityContextHolder.getContext().getAuthentication();
-<span class="hljs-type">String</span> <span class="hljs-variable">currentPrincipalName</span> <span class="hljs-operator">=</span> authentication.getName();</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474752.9504')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670401232.9434"><span class="hljs-type">Authentication</span> <span class="hljs-variable">authentication</span> <span class="hljs-operator">=</span> SecurityContextHolder.getContext().getAuthentication();
+<span class="hljs-type">String</span> <span class="hljs-variable">currentPrincipalName</span> <span class="hljs-operator">=</span> authentication.getName();</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401232.9434')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -21770,7 +21770,7 @@ SecurityFilterChain <span class="hljs-title function_">defaultSecurityFilterChai
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474752.132"><span class="hljs-meta">@CrossOrigin</span>
+<pre class="highlight"><code class="language-java" id="1755670401232.141"><span class="hljs-meta">@CrossOrigin</span>
 <span class="hljs-meta">@RestController</span>
 <span class="hljs-meta">@RequestMapping(&quot;/api/admin/users&quot;)</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SecurityController</span> {
@@ -21781,7 +21781,7 @@ SecurityFilterChain <span class="hljs-title function_">defaultSecurityFilterChai
     <span class="hljs-keyword">public</span> User <span class="hljs-title function_">findUserName</span><span class="hljs-params">(<span class="hljs-meta">@AuthenticationPrincipal</span> UserDetails userDetails)</span> {
         <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">User</span>(userDetails.getUsername());
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474752.132')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401232.141')">Copy</button></pre>
 </div>
 </div>
 <div style="page-break-after: always;"></div>
@@ -21795,11 +21795,11 @@ SecurityFilterChain <span class="hljs-title function_">defaultSecurityFilterChai
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474753.2112"><span class="hljs-meta">@PreAuthorize(&quot;hasRole(&#x27;ADMIN&#x27;)&quot;)</span> <span class="hljs-comment">// 1</span>
+<pre class="highlight"><code class="language-java" id="1755670401232.689"><span class="hljs-meta">@PreAuthorize(&quot;hasRole(&#x27;ADMIN&#x27;)&quot;)</span> <span class="hljs-comment">// 1</span>
 <span class="hljs-meta">@GetMapping(path = &quot;/me&quot;)</span>
 <span class="hljs-keyword">public</span> User <span class="hljs-title function_">findUserName</span><span class="hljs-params">(<span class="hljs-meta">@AuthenticationPrincipal</span> UserDetails userDetails)</span> {
     <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">User</span>(userDetails.getUsername());
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474753.2112')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401232.689')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -21849,7 +21849,7 @@ SecurityFilterChain <span class="hljs-title function_">defaultSecurityFilterChai
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474753.5288"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-java" id="1755670401233.332"><span class="hljs-meta">@Test</span>
 <span class="hljs-meta">@WithMockUser(username = &quot;admin&quot;, roles = &quot;ADMIN&quot;)</span>
 <span class="hljs-keyword">void</span> <span class="hljs-title function_">shouldLoadAWindowAndReturnNullIfNotFound</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception {
     given(windowDao.findById(<span class="hljs-number">999L</span>)).willReturn(Optional.empty());
@@ -21858,7 +21858,7 @@ SecurityFilterChain <span class="hljs-title function_">defaultSecurityFilterChai
                 .andExpect(status().isOk())
                 <span class="hljs-comment">// the content can be tested with Json path</span>
                 .andExpect(content().string(<span class="hljs-string">&quot;&quot;</span>));
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474753.5288')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401233.332')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -21875,9 +21875,9 @@ SecurityFilterChain <span class="hljs-title function_">defaultSecurityFilterChai
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755669474753.416"><span class="hljs-keyword">const</span> headers = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Headers</span>();
+<pre class="highlight"><code class="language-javascript" id="1755670401233.168"><span class="hljs-keyword">const</span> headers = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Headers</span>();
 headers.<span class="hljs-title function_">set</span>(<span class="hljs-string">&#x27;Authorization&#x27;</span>, <span class="hljs-string">&#x27;Basic &#x27;</span> + <span class="hljs-title function_">btoa</span>(username + <span class="hljs-string">&quot;:&quot;</span> + password));
-<span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(<span class="hljs-string">&#x27;myurl&#x27;</span>, {headers});</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474753.416')">Copy</button></pre>
+<span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(<span class="hljs-string">&#x27;myurl&#x27;</span>, {headers});</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401233.168')">Copy</button></pre>
 </div>
 </div>
 <div class="sect3">
@@ -21887,7 +21887,7 @@ headers.<span class="hljs-title function_">set</span>(<span class="hljs-string">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474753.21"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-java" id="1755670401233.636"><span class="hljs-meta">@Test</span>
 <span class="hljs-meta">@WithMockUser(username = &quot;admin&quot;, roles = &quot;ADMIN&quot;)</span>
 <span class="hljs-keyword">void</span> <span class="hljs-title function_">shouldSwitchWindow</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception {
     <span class="hljs-type">Window</span> <span class="hljs-variable">expectedWindow</span> <span class="hljs-operator">=</span> createWindow(<span class="hljs-string">&quot;window 1&quot;</span>);
@@ -21900,7 +21900,7 @@ headers.<span class="hljs-title function_">set</span>(<span class="hljs-string">
             .andExpect(status().isOk())
             .andExpect(jsonPath(<span class="hljs-string">&quot;@dollar@.name&quot;</span>).value(<span class="hljs-string">&quot;window 1&quot;</span>))
             .andExpect(jsonPath(<span class="hljs-string">&quot;@dollar@.windowStatus&quot;</span>).value(<span class="hljs-string">&quot;CLOSED&quot;</span>));
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474753.21')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401233.636')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -22013,12 +22013,12 @@ headers.<span class="hljs-title function_">set</span>(<span class="hljs-string">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474560.959"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">HelloWorldApplication</span> {
+<pre class="highlight"><code class="language-java" id="1755670401139.3523"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">HelloWorldApplication</span> {
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> {
         <span class="hljs-type">String</span> <span class="hljs-variable">name</span> <span class="hljs-operator">=</span> <span class="hljs-string">&quot;Guillaume&quot;</span>;
         System.out.println(<span class="hljs-string">&quot;Hello EMSE I am &quot;</span> + name);
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474560.959')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401139.3523')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -22034,10 +22034,10 @@ headers.<span class="hljs-title function_">set</span>(<span class="hljs-string">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474560.3455"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">main</span><span class="hljs-params">(args: <span class="hljs-type">Array</span>@<span class="hljs-type">LTString</span>@<span class="hljs-type">GT</span>)</span></span> {
+<pre class="highlight"><code class="language-kotlin" id="1755670401139.612"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">main</span><span class="hljs-params">(args: <span class="hljs-type">Array</span>@<span class="hljs-type">LTString</span>@<span class="hljs-type">GT</span>)</span></span> {
     <span class="hljs-keyword">val</span> name = <span class="hljs-string">&quot;Guillaume&quot;</span>
     println(<span class="hljs-string">&quot;Hello EMSE I am @dollar@name&quot;</span>)
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474560.3455')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401139.612')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -22105,7 +22105,7 @@ headers.<span class="hljs-title function_">set</span>(<span class="hljs-string">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474560.7222"><span class="hljs-keyword">val</span> name = <span class="hljs-string">&quot;Guillaume&quot;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474560.7222')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1755670401139.335"><span class="hljs-keyword">val</span> name = <span class="hljs-string">&quot;Guillaume&quot;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401139.335')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -22113,7 +22113,7 @@ headers.<span class="hljs-title function_">set</span>(<span class="hljs-string">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474560.3901">name = <span class="hljs-string">&quot;Someone else&quot;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474560.3901')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1755670401139.9165">name = <span class="hljs-string">&quot;Someone else&quot;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401139.9165')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -22121,8 +22121,8 @@ headers.<span class="hljs-title function_">set</span>(<span class="hljs-string">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474560.6313"><span class="hljs-keyword">var</span> name = <span class="hljs-string">&quot;Guillaume&quot;</span>
-name = <span class="hljs-string">&quot;Someone else&quot;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474560.6313')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1755670401139.1802"><span class="hljs-keyword">var</span> name = <span class="hljs-string">&quot;Guillaume&quot;</span>
+name = <span class="hljs-string">&quot;Someone else&quot;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401139.1802')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -22130,8 +22130,8 @@ name = <span class="hljs-string">&quot;Someone else&quot;</span></code><button c
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474560.5876"><span class="hljs-keyword">val</span> rooms: <span class="hljs-symbol">List@</span><span class="hljs-symbol">LTRoom@</span>GT = listOf()
-rooms.add(Room(<span class="hljs-number">1</span>, <span class="hljs-string">&quot;Room1&quot;</span>))</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474560.5876')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1755670401139.308"><span class="hljs-keyword">val</span> rooms: <span class="hljs-symbol">List@</span><span class="hljs-symbol">LTRoom@</span>GT = listOf()
+rooms.add(Room(<span class="hljs-number">1</span>, <span class="hljs-string">&quot;Room1&quot;</span>))</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401139.308')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -22139,8 +22139,8 @@ rooms.add(Room(<span class="hljs-number">1</span>, <span class="hljs-string">&qu
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474560.8125"><span class="hljs-keyword">val</span> rooms: <span class="hljs-symbol">MutableList@</span><span class="hljs-symbol">LTRoom@</span>GT = mutableListOf()
-rooms.add(Room(<span class="hljs-number">1</span>, <span class="hljs-string">&quot;Room1&quot;</span>))</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474560.8125')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1755670401140.8328"><span class="hljs-keyword">val</span> rooms: <span class="hljs-symbol">MutableList@</span><span class="hljs-symbol">LTRoom@</span>GT = mutableListOf()
+rooms.add(Room(<span class="hljs-number">1</span>, <span class="hljs-string">&quot;Room1&quot;</span>))</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401140.8328')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -22153,8 +22153,8 @@ rooms.add(Room(<span class="hljs-number">1</span>, <span class="hljs-string">&qu
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474561.755"><span class="hljs-keyword">var</span> a: String = <span class="hljs-string">&quot;abc&quot;</span> <span class="hljs-comment">// Regular initialization means non-null by default</span>
-a = <span class="hljs-literal">null</span> <span class="hljs-comment">// compilation error</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474561.755')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1755670401140.9834"><span class="hljs-keyword">var</span> a: String = <span class="hljs-string">&quot;abc&quot;</span> <span class="hljs-comment">// Regular initialization means non-null by default</span>
+a = <span class="hljs-literal">null</span> <span class="hljs-comment">// compilation error</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401140.9834')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -22162,8 +22162,8 @@ a = <span class="hljs-literal">null</span> <span class="hljs-comment">// compila
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474561.9756"><span class="hljs-keyword">var</span> b: String? = <span class="hljs-string">&quot;abc&quot;</span> <span class="hljs-comment">// can be set null</span>
-b = <span class="hljs-literal">null</span> <span class="hljs-comment">// ok</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474561.9756')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1755670401140.7458"><span class="hljs-keyword">var</span> b: String? = <span class="hljs-string">&quot;abc&quot;</span> <span class="hljs-comment">// can be set null</span>
+b = <span class="hljs-literal">null</span> <span class="hljs-comment">// ok</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401140.7458')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -22184,9 +22184,9 @@ b = <span class="hljs-literal">null</span> <span class="hljs-comment">// ok</spa
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474561.6597"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">double</span><span class="hljs-params">(x: <span class="hljs-type">Int</span>)</span></span>: <span class="hljs-built_in">Int</span> {
+<pre class="highlight"><code class="language-kotlin" id="1755670401140.6687"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">double</span><span class="hljs-params">(x: <span class="hljs-type">Int</span>)</span></span>: <span class="hljs-built_in">Int</span> {
     <span class="hljs-keyword">return</span> <span class="hljs-number">2</span> * x
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474561.6597')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401140.6687')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -22194,7 +22194,7 @@ b = <span class="hljs-literal">null</span> <span class="hljs-comment">// ok</spa
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474561.282"><span class="hljs-keyword">val</span> result = double(<span class="hljs-number">2</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474561.282')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1755670401140.116"><span class="hljs-keyword">val</span> result = double(<span class="hljs-number">2</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401140.116')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -22205,12 +22205,12 @@ b = <span class="hljs-literal">null</span> <span class="hljs-comment">// ok</spa
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474561.3174"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">double</span><span class="hljs-params">(x: <span class="hljs-type">Int</span> = <span class="hljs-number">4</span>)</span></span>: <span class="hljs-built_in">Int</span> {
+<pre class="highlight"><code class="language-kotlin" id="1755670401140.1978"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">double</span><span class="hljs-params">(x: <span class="hljs-type">Int</span> = <span class="hljs-number">4</span>)</span></span>: <span class="hljs-built_in">Int</span> {
     <span class="hljs-keyword">return</span> <span class="hljs-number">2</span> * x
 }
 
 double(<span class="hljs-number">2</span>) <span class="hljs-comment">// returns 4</span>
-double() <span class="hljs-comment">// returns 8 (the default value is applied)</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474561.3174')">Copy</button></pre>
+double() <span class="hljs-comment">// returns 8 (the default value is applied)</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401140.1978')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -22221,8 +22221,8 @@ double() <span class="hljs-comment">// returns 8 (the default value is applied)<
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474561.6143"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">foo</span><span class="hljs-params">(bar: <span class="hljs-type">Int</span> = <span class="hljs-number">0</span>, baz: <span class="hljs-type">Int</span>)</span></span> : <span class="hljs-built_in">Int</span> { <span class="hljs-comment">/*...*/</span> }
-<span class="hljs-keyword">val</span> result = foo(baz = <span class="hljs-number">4</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474561.6143')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1755670401140.482"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">foo</span><span class="hljs-params">(bar: <span class="hljs-type">Int</span> = <span class="hljs-number">0</span>, baz: <span class="hljs-type">Int</span>)</span></span> : <span class="hljs-built_in">Int</span> { <span class="hljs-comment">/*...*/</span> }
+<span class="hljs-keyword">val</span> result = foo(baz = <span class="hljs-number">4</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401140.482')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -22238,7 +22238,7 @@ double() <span class="hljs-comment">// returns 8 (the default value is applied)<
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474561.7256"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Person</span> <span class="hljs-keyword">constructor</span>(firstName: String) { <span class="hljs-comment">/*...*/</span> }</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474561.7256')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1755670401140.379"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Person</span> <span class="hljs-keyword">constructor</span>(firstName: String) { <span class="hljs-comment">/*...*/</span> }</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401140.379')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -22246,7 +22246,7 @@ double() <span class="hljs-comment">// returns 8 (the default value is applied)<
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474562.9045"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Person</span>(firstName: String) { <span class="hljs-comment">/*...*/</span> }</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474562.9045')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1755670401140.9045"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Person</span>(firstName: String) { <span class="hljs-comment">/*...*/</span> }</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401140.9045')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -22257,8 +22257,8 @@ double() <span class="hljs-comment">// returns 8 (the default value is applied)<
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474562.2993"><span class="hljs-keyword">open</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Base</span>(p: <span class="hljs-built_in">Int</span>)
-<span class="hljs-keyword">class</span> <span class="hljs-title class_">Derived</span>(p: <span class="hljs-built_in">Int</span>) : Base(p)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474562.2993')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1755670401140.623"><span class="hljs-keyword">open</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Base</span>(p: <span class="hljs-built_in">Int</span>)
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Derived</span>(p: <span class="hljs-built_in">Int</span>) : Base(p)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401140.623')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -22275,7 +22275,7 @@ double() <span class="hljs-comment">// returns 8 (the default value is applied)<
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474562.4458"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">WindowDto</span> {
+<pre class="highlight"><code class="language-java" id="1755670401141.5105"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">WindowDto</span> {
 <span class="hljs-keyword">private</span> Long id;
 <span class="hljs-keyword">private</span> String name;
 <span class="hljs-keyword">private</span> WindowStatus windowStatus;
@@ -22335,7 +22335,7 @@ double() <span class="hljs-comment">// returns 8 (the default value is applied)<
     <span class="hljs-keyword">public</span> <span class="hljs-type">int</span> <span class="hljs-title function_">hashCode</span><span class="hljs-params">()</span> {
         <span class="hljs-keyword">return</span> Objects.hash(id, name, windowStatus, roomName, roomId);
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474562.4458')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401141.5105')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -22343,13 +22343,13 @@ double() <span class="hljs-comment">// returns 8 (the default value is applied)<
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474563.1968"><span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">WindowDto</span>(
+<pre class="highlight"><code class="language-kotlin" id="1755670401141.4905"><span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">WindowDto</span>(
     <span class="hljs-keyword">val</span> id: <span class="hljs-built_in">Long</span>,
     <span class="hljs-keyword">val</span> name: String,
     <span class="hljs-keyword">val</span> windowStatus: WindowStatus,
     <span class="hljs-keyword">val</span> roomName: String,
     <span class="hljs-keyword">val</span> roomId: <span class="hljs-built_in">Long</span>
-)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474563.1968')">Copy</button></pre>
+)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401141.4905')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -22376,9 +22376,9 @@ double() <span class="hljs-comment">// returns 8 (the default value is applied)<
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474563.6155"><span class="hljs-keyword">enum</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Direction</span> {
+<pre class="highlight"><code class="language-kotlin" id="1755670401141.9106"><span class="hljs-keyword">enum</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Direction</span> {
     NORTH, SOUTH, WEST, EAST
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474563.6155')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401141.9106')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -22392,12 +22392,12 @@ double() <span class="hljs-comment">// returns 8 (the default value is applied)<
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474563.3032"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">MyInterface</span> {
+<pre class="highlight"><code class="language-kotlin" id="1755670401141.3855"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">MyInterface</span> {
     <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">bar</span><span class="hljs-params">()</span></span>
     <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">foo</span><span class="hljs-params">()</span></span> {
         <span class="hljs-comment">// optional body</span>
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474563.3032')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401141.3855')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -22405,11 +22405,11 @@ double() <span class="hljs-comment">// returns 8 (the default value is applied)<
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474563.2163"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Child</span> : <span class="hljs-type">MyInterface</span> {
+<pre class="highlight"><code class="language-kotlin" id="1755670401141.422"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Child</span> : <span class="hljs-type">MyInterface</span> {
     <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">bar</span><span class="hljs-params">()</span></span> {
         <span class="hljs-comment">// body</span>
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474563.2163')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401141.422')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -22420,7 +22420,7 @@ double() <span class="hljs-comment">// returns 8 (the default value is applied)<
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474563.537"><span class="hljs-keyword">class</span> <span class="hljs-title class_">HelloWorld</span> {
+<pre class="highlight"><code class="language-kotlin" id="1755670401141.135"><span class="hljs-keyword">class</span> <span class="hljs-title class_">HelloWorld</span> {
 
     <span class="hljs-keyword">public</span> String name(){
         <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;Dev-Mind&quot;</span>;
@@ -22431,7 +22431,7 @@ double() <span class="hljs-comment">// returns 8 (the default value is applied)<
             System.<span class="hljs-keyword">out</span>.println(<span class="hljs-string">&quot;Hello world&quot;</span> + name()); <span class="hljs-comment">// Compilation error @ARROW method name() is not visible</span>
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474563.537')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401141.135')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -22445,7 +22445,7 @@ double() <span class="hljs-comment">// returns 8 (the default value is applied)<
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474563.8623"><span class="hljs-keyword">class</span> <span class="hljs-title class_">HelloWorld</span> {
+<pre class="highlight"><code class="language-kotlin" id="1755670401141.9885"><span class="hljs-keyword">class</span> <span class="hljs-title class_">HelloWorld</span> {
 
     <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">name</span><span class="hljs-params">()</span></span> = <span class="hljs-string">&quot;Dev-Mind&quot;</span>
 
@@ -22454,7 +22454,7 @@ double() <span class="hljs-comment">// returns 8 (the default value is applied)<
             println(<span class="hljs-string">&quot;Hello world&quot;</span> + name())
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474563.8623')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401141.9885')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -22494,12 +22494,12 @@ double() <span class="hljs-comment">// returns 8 (the default value is applied)<
 <p>Create an immutable List in your main function with several rooms. If your class is correct the following code will compile</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474563.936"><span class="hljs-keyword">val</span> rooms = listOf(
+<pre class="highlight"><code class="language-kotlin" id="1755670401141.5503"><span class="hljs-keyword">val</span> rooms = listOf(
     RoomDto(<span class="hljs-number">1</span>, <span class="hljs-string">&quot;Room1&quot;</span>),
     RoomDto(<span class="hljs-number">2</span>, <span class="hljs-string">&quot;Room2&quot;</span>, <span class="hljs-number">20.3</span>),
     RoomDto(id = <span class="hljs-number">3</span>, name = <span class="hljs-string">&quot;Room3&quot;</span>, currentTemperature = <span class="hljs-number">20.3</span>),
     RoomDto(<span class="hljs-number">4</span>, <span class="hljs-string">&quot;Room4&quot;</span>, currentTemperature = <span class="hljs-number">19.3</span>),
-)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474563.936')">Copy</button></pre>
+)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401141.5503')">Copy</button></pre>
 </div>
 </div>
 </li>
@@ -22540,10 +22540,10 @@ double() <span class="hljs-comment">// returns 8 (the default value is applied)<
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474563.0276"><span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Citizen</span>(<span class="hljs-keyword">val</span> firstname: String,
+<pre class="highlight"><code class="language-kotlin" id="1755670401141.408"><span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Citizen</span>(<span class="hljs-keyword">val</span> firstname: String,
                    <span class="hljs-keyword">val</span> lastname: String,
                    <span class="hljs-keyword">val</span> sexe: Sexe,
-                   <span class="hljs-keyword">val</span> birthdate: LocalDate)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474563.0276')">Copy</button></pre>
+                   <span class="hljs-keyword">val</span> birthdate: LocalDate)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401141.408')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -22551,10 +22551,10 @@ double() <span class="hljs-comment">// returns 8 (the default value is applied)<
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474563.8442"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">getAge</span><span class="hljs-params">(date: <span class="hljs-type">LocalDate</span>)</span></span> = LocalDate.now().year - date.year
+<pre class="highlight"><code class="language-kotlin" id="1755670401141.3872"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">getAge</span><span class="hljs-params">(date: <span class="hljs-type">LocalDate</span>)</span></span> = LocalDate.now().year - date.year
 
 <span class="hljs-keyword">val</span> barackObama = Citizen(<span class="hljs-string">&quot;Barack&quot;</span>, <span class="hljs-string">&quot;Obama&quot;</span>, Sexe.MALE, LocalDate.parse(<span class="hljs-string">&quot;1961-08-04&quot;</span>))
-<span class="hljs-keyword">val</span> barackAge = getAge(barackObama.birthdate)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474563.8442')">Copy</button></pre>
+<span class="hljs-keyword">val</span> barackAge = getAge(barackObama.birthdate)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401141.3872')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -22562,10 +22562,10 @@ double() <span class="hljs-comment">// returns 8 (the default value is applied)<
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474564.8247"><span class="hljs-function"><span class="hljs-keyword">fun</span> LocalDate.<span class="hljs-title">getAge</span><span class="hljs-params">()</span></span> = LocalDate.now().year - <span class="hljs-keyword">this</span>.year
+<pre class="highlight"><code class="language-kotlin" id="1755670401141.2097"><span class="hljs-function"><span class="hljs-keyword">fun</span> LocalDate.<span class="hljs-title">getAge</span><span class="hljs-params">()</span></span> = LocalDate.now().year - <span class="hljs-keyword">this</span>.year
 
 <span class="hljs-comment">// With this function extension you can write</span>
-<span class="hljs-keyword">val</span> barackAge = barackObama.birthdate.getAge()</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474564.8247')">Copy</button></pre>
+<span class="hljs-keyword">val</span> barackAge = barackObama.birthdate.getAge()</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401141.2097')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -22573,10 +22573,10 @@ double() <span class="hljs-comment">// returns 8 (the default value is applied)<
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474564.1465"><span class="hljs-keyword">val</span> LocalDate.age
+<pre class="highlight"><code class="language-kotlin" id="1755670401142.7368"><span class="hljs-keyword">val</span> LocalDate.age
     <span class="hljs-keyword">get</span>() = LocalDate.now().year - <span class="hljs-keyword">this</span>.year
 
-<span class="hljs-keyword">val</span> barackAge = barackObama.birthdate.age</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474564.1465')">Copy</button></pre>
+<span class="hljs-keyword">val</span> barackAge = barackObama.birthdate.age</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401142.7368')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -22598,9 +22598,9 @@ double() <span class="hljs-comment">// returns 8 (the default value is applied)<
 <div class="listingblock">
 <div class="title">kotlin.collections code</div>
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474564.033"><span class="hljs-keyword">public</span> <span class="hljs-keyword">inline</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> @LTT@GT Iterable@LTT@GT.<span class="hljs-title">find</span><span class="hljs-params">(predicate: (<span class="hljs-type">T</span>) @<span class="hljs-type">LAMBDA</span> <span class="hljs-type">Boolean</span>)</span></span>: T? {
+<pre class="highlight"><code class="language-kotlin" id="1755670401142.1262"><span class="hljs-keyword">public</span> <span class="hljs-keyword">inline</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> @LTT@GT Iterable@LTT@GT.<span class="hljs-title">find</span><span class="hljs-params">(predicate: (<span class="hljs-type">T</span>) @<span class="hljs-type">LAMBDA</span> <span class="hljs-type">Boolean</span>)</span></span>: T? {
     <span class="hljs-keyword">return</span> firstOrNull(predicate)
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474564.033')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401142.1262')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -22608,14 +22608,14 @@ double() <span class="hljs-comment">// returns 8 (the default value is applied)<
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474564.6465"><span class="hljs-keyword">val</span> guillaume = speakers.firstOrNull {
+<pre class="highlight"><code class="language-kotlin" id="1755670401142.4873"><span class="hljs-keyword">val</span> guillaume = speakers.firstOrNull {
     it.firstname == <span class="hljs-string">&quot;Guillaume&quot;</span>  <span class="hljs-comment">// it is the current item in the collection</span>
 }
 
 <span class="hljs-comment">//  You can also write</span>
 <span class="hljs-keyword">val</span> guillaume = speakers.firstOrNull { speaker <span class="hljs-meta">@LAMBDA</span>
     speaker.firstname == <span class="hljs-string">&quot;Guillaume&quot;</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474564.6465')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401142.4873')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -22623,10 +22623,10 @@ double() <span class="hljs-comment">// returns 8 (the default value is applied)<
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474564.6519"><span class="hljs-type">Speaker</span> <span class="hljs-variable">speaker</span> <span class="hljs-operator">=</span> speakers.stream()
+<pre class="highlight"><code class="language-java" id="1755670401142.4756"><span class="hljs-type">Speaker</span> <span class="hljs-variable">speaker</span> <span class="hljs-operator">=</span> speakers.stream()
                           .filter(s <span class="hljs-meta">@LAMBDA</span> s.getName().equals(<span class="hljs-string">&quot;Guillaume&quot;</span>))
                           .findFirst()
-                          .orElse(<span class="hljs-literal">null</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474564.6519')">Copy</button></pre>
+                          .orElse(<span class="hljs-literal">null</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401142.4756')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -22643,7 +22643,7 @@ double() <span class="hljs-comment">// returns 8 (the default value is applied)<
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474564.0344"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Cell</span>(<span class="hljs-keyword">val</span> content: String)
+<pre class="highlight"><code class="language-kotlin" id="1755670401142.442"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Cell</span>(<span class="hljs-keyword">val</span> content: String)
 
 <span class="hljs-keyword">class</span> <span class="hljs-title class_">Row</span>(<span class="hljs-keyword">val</span> cells: <span class="hljs-symbol">MutableList@</span><span class="hljs-symbol">LTCell@</span>GT = mutableListOf()) {
     <span class="hljs-comment">// Define an Higher-Order Function</span>
@@ -22659,7 +22659,7 @@ double() <span class="hljs-comment">// returns 8 (the default value is applied)<
         rows.add(adder())
         <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474564.0344')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401142.442')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -22667,9 +22667,9 @@ double() <span class="hljs-comment">// returns 8 (the default value is applied)<
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474564.6338"><span class="hljs-keyword">val</span> table = Table()
+<pre class="highlight"><code class="language-kotlin" id="1755670401142.8342"><span class="hljs-keyword">val</span> table = Table()
     .row { Row().cell { Cell(<span class="hljs-string">&quot;Test&quot;</span>) }}
-    .row { Row().cell { Cell(<span class="hljs-string">&quot;Test2&quot;</span>) }}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474564.6338')">Copy</button></pre>
+    .row { Row().cell { Cell(<span class="hljs-string">&quot;Test2&quot;</span>) }}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401142.8342')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -22699,7 +22699,7 @@ double() <span class="hljs-comment">// returns 8 (the default value is applied)<
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474564.3716"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> {
+<pre class="highlight"><code class="language-kotlin" id="1755670401142.553"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> {
     <span class="hljs-keyword">val</span> morningNotification = <span class="hljs-number">51</span>
     <span class="hljs-keyword">val</span> eveningNotification = <span class="hljs-number">135</span>
 
@@ -22710,7 +22710,7 @@ double() <span class="hljs-comment">// returns 8 (the default value is applied)<
 
 <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">printNotificationSummary</span><span class="hljs-params">(numberOfMessages: <span class="hljs-type">Int</span>)</span></span> {
     <span class="hljs-comment">// Write the code here.</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474564.3716')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401142.553')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -22749,7 +22749,7 @@ You received 99+ notifications</pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474565.795"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> {
+<pre class="highlight"><code class="language-kotlin" id="1755670401142.6213"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> {
     <span class="hljs-keyword">val</span> child = <span class="hljs-number">5</span>
     <span class="hljs-keyword">val</span> adult = <span class="hljs-number">28</span>
     <span class="hljs-keyword">val</span> senior = <span class="hljs-number">87</span>
@@ -22763,7 +22763,7 @@ You received 99+ notifications</pre>
 
 <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">ticketPrice</span><span class="hljs-params">(age: <span class="hljs-type">Int</span>)</span></span>: <span class="hljs-built_in">Int</span>? {
     <span class="hljs-comment">// Write the code here.</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474565.795')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401142.6213')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -22801,7 +22801,7 @@ The movie ticket price for a person aged oops is null.</pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474565.0205"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> {
+<pre class="highlight"><code class="language-kotlin" id="1755670401143.661"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> {
     <span class="hljs-comment">// Write the code here.</span>
 }
 
@@ -22814,7 +22814,7 @@ The movie ticket price for a person aged oops is null.</pre>
 )</span></span> {
     <span class="hljs-keyword">val</span> convertedAmount = String.format(<span class="hljs-string">&quot;%.2f&quot;</span>, conversionFormula(amount)) <span class="hljs-comment">// round the result to 2 decimal places</span>
     println(<span class="hljs-string">&quot;@dollar@amount @dollar@initialCurrency can be changed in @dollar@convertedAmount @dollar@targetCurrency.&quot;</span>)
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474565.0205')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401143.661')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -22850,7 +22850,7 @@ The movie ticket price for a person aged oops is null.</pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474565.2795"><span class="hljs-comment">// Create a data class to represent the user profile here.</span>
+<pre class="highlight"><code class="language-kotlin" id="1755670401143.2878"><span class="hljs-comment">// Create a data class to represent the user profile here.</span>
 <span class="hljs-comment">// Write the code here.</span>
 
 <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> {
@@ -22861,7 +22861,7 @@ The movie ticket price for a person aged oops is null.</pre>
         println(<span class="hljs-string">&quot;Name : @dollar@{it.username}&quot;</span>)
         <span class="hljs-comment">// Write the code here.</span>
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474565.2795')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401143.2878')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -22972,7 +22972,7 @@ Hobby : like Tennis  with Elodie</pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474514.239">{
+<pre class="highlight"><code class="language-java" id="1755670401113.1975">{
   <span class="hljs-string">&quot;build&quot;</span>: {
     <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;gradle&quot;</span>,
     <span class="hljs-string">&quot;goal&quot;</span>: <span class="hljs-string">&quot;assemble&quot;</span>
@@ -22980,7 +22980,7 @@ Hobby : like Tennis  with Elodie</pre>
   <span class="hljs-string">&quot;deploy&quot;</span>: {
     <span class="hljs-string">&quot;jarName&quot;</span>: <span class="hljs-string">&quot;./build/libs/automacorp-0.0.1-SNAPSHOT.jar&quot;</span>
   }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474514.239')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401113.1975')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -23623,8 +23623,8 @@ You need to install it on your computer (installation requires 900MB) on <a href
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" id="1755669474642.6582">cd ~/appli/android-studio/bin
-sh ./studio.sh</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474642.6582')">Copy</button></pre>
+<pre class="highlight"><code class="language-shell" id="1755670401090.5776">cd ~/appli/android-studio/bin
+sh ./studio.sh</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401090.5776')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -23847,7 +23847,7 @@ This Android view let see you the main files of your Android project</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" id="1755669474645.519"><span class="hljs-meta">&lt;?xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;utf-8&quot;</span>?&gt;</span>
+<pre class="highlight"><code class="language-xml" id="1755670401090.9336"><span class="hljs-meta">&lt;?xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;utf-8&quot;</span>?&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">manifest</span> <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">&quot;http://schemas.android.com/apk/res/android&quot;</span> <span class="hljs-attr">xmlns:tools</span>=<span class="hljs-string">&quot;http://schemas.android.com/tools&quot;</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">application</span> <span class="hljs-attr">android:allowbackup</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">android:dataextractionrules</span>=<span class="hljs-string">&quot;@xml/data_extraction_rules&quot;</span> <span class="hljs-attr">android:fullbackupcontent</span>=<span class="hljs-string">&quot;@xml/backup_rules&quot;</span> <span class="hljs-attr">android:icon</span>=<span class="hljs-string">&quot;@mipmap/ic_launcher&quot;</span> <span class="hljs-attr">android:label</span>=<span class="hljs-string">&quot;@string/app_name&quot;</span> <span class="hljs-attr">android:roundicon</span>=<span class="hljs-string">&quot;@mipmap/ic_launcher_round&quot;</span> <span class="hljs-attr">android:supportsrtl</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">android:theme</span>=<span class="hljs-string">&quot;@style/Theme.Automacorp&quot;</span> <span class="hljs-attr">tools:targetapi</span>=<span class="hljs-string">&quot;31&quot;</span>&gt;</span>
@@ -23860,7 +23860,7 @@ This Android view let see you the main files of your Android project</p>
         <span class="hljs-tag">&lt;/<span class="hljs-name">activity</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">application</span>&gt;</span>
 
-<span class="hljs-tag">&lt;/<span class="hljs-name">manifest</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474645.519')">Copy</button></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">manifest</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401090.9336')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -23915,7 +23915,7 @@ This Android view let see you the main files of your Android project</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474646.1665"><span class="hljs-keyword">class</span> <span class="hljs-title class_">MainActivity</span> : <span class="hljs-type">ComponentActivity</span>() {
+<pre class="highlight"><code class="language-kotlin" id="1755670401091.5625"><span class="hljs-keyword">class</span> <span class="hljs-title class_">MainActivity</span> : <span class="hljs-type">ComponentActivity</span>() {
     <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(savedInstanceState: <span class="hljs-type">Bundle</span>?)</span></span> {
         <span class="hljs-keyword">super</span>.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -23930,7 +23930,7 @@ This Android view let see you the main files of your Android project</p>
             }
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474646.1665')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401091.5625')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -23941,10 +23941,10 @@ This Android view let see you the main files of your Android project</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474646.024"><span class="hljs-meta">@Composable</span>
+<pre class="highlight"><code class="language-kotlin" id="1755670401091.9592"><span class="hljs-meta">@Composable</span>
 <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">Greeting</span><span class="hljs-params">(name: <span class="hljs-type">String</span>, modifier: <span class="hljs-type">Modifier</span> = Modifier)</span></span> {
     Text(text = <span class="hljs-string">&quot;Hello @dollar@name!&quot;</span>, modifier = modifier)
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474646.024')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401091.9592')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -23980,13 +23980,13 @@ This Android view let see you the main files of your Android project</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474646.1267"><span class="hljs-meta">@Preview(showBackground = true)</span>
+<pre class="highlight"><code class="language-kotlin" id="1755670401091.425"><span class="hljs-meta">@Preview(showBackground = true)</span>
 <span class="hljs-meta">@Composable</span>
 <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">GreetingPreview</span><span class="hljs-params">()</span></span> {
     AutomacorpTheme {
         Greeting(<span class="hljs-string">&quot;Android&quot;</span>)
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474646.1267')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401091.425')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -24066,7 +24066,7 @@ This Android view let see you the main files of your Android project</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474646.6497">android {
+<pre class="highlight"><code class="language-kotlin" id="1755670401091.1887">android {
     namespace = <span class="hljs-string">&quot;com.automacorp&quot;</span>
     compileSdk = <span class="hljs-number">34</span>
 
@@ -24110,7 +24110,7 @@ This Android view let see you the main files of your Android project</p>
             excludes += <span class="hljs-string">&quot;/META-INF/{AL2.0,LGPL2.1}&quot;</span>
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474646.6497')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401091.1887')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -24376,12 +24376,12 @@ The Select Hardware page appears.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" id="1755669474581.495">@LTstring name=&quot;act_room_name&quot;@GTRoom name@LT/string@GT</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474581.495')">Copy</button></pre>
+<pre class="highlight"><code class="language-xml" id="1755670401035.2637">@LTstring name=&quot;act_room_name&quot;@GTRoom name@LT/string@GT</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401035.2637')">Copy</button></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474581.9202"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomActivity</span> : <span class="hljs-type">ComponentActivity</span>() {
+<pre class="highlight"><code class="language-kotlin" id="1755670401035.042"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomActivity</span> : <span class="hljs-type">ComponentActivity</span>() {
     <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(savedInstanceState: <span class="hljs-type">Bundle</span>?)</span></span> {
         <span class="hljs-keyword">super</span>.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -24422,7 +24422,7 @@ The Select Hardware page appears.</p>
     AutomacorpTheme {
         RoomDetail(<span class="hljs-string">&quot;Android&quot;</span>)
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474581.9202')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401035.042')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -24479,13 +24479,13 @@ The Select Hardware page appears.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474581.136"><span class="hljs-keyword">class</span> <span class="hljs-title class_">MainActivity</span> : <span class="hljs-type">ComponentActivity</span>() {
+<pre class="highlight"><code class="language-kotlin" id="1755670401035.0464"><span class="hljs-keyword">class</span> <span class="hljs-title class_">MainActivity</span> : <span class="hljs-type">ComponentActivity</span>() {
 
     <span class="hljs-keyword">companion</span> <span class="hljs-keyword">object</span> {
         <span class="hljs-keyword">const</span> <span class="hljs-keyword">val</span> ROOM_PARAM = <span class="hljs-string">&quot;com.automacorp.room.attribute&quot;</span>
     }
 
-    <span class="hljs-comment">// ...</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474581.136')">Copy</button></pre>
+    <span class="hljs-comment">// ...</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401035.0464')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -24496,12 +24496,12 @@ The Select Hardware page appears.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474581.9133"><span class="hljs-keyword">val</span> onSayHelloButtonClick: (name: String) <span class="hljs-meta">@LAMBDA</span> <span class="hljs-built_in">Unit</span> = { name <span class="hljs-meta">@LAMBDA</span>
+<pre class="highlight"><code class="language-kotlin" id="1755670401035.0664"><span class="hljs-keyword">val</span> onSayHelloButtonClick: (name: String) <span class="hljs-meta">@LAMBDA</span> <span class="hljs-built_in">Unit</span> = { name <span class="hljs-meta">@LAMBDA</span>
   <span class="hljs-keyword">val</span> intent = Intent(<span class="hljs-keyword">this</span>, RoomActivity::<span class="hljs-keyword">class</span>.java).apply {
     putExtra(ROOM_PARAM, name)
   }
   startActivity(intent)
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474581.9133')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401035.0664')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -24509,7 +24509,7 @@ The Select Hardware page appears.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474582.773"><span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(savedInstanceState: <span class="hljs-type">Bundle</span>?)</span></span> {
+<pre class="highlight"><code class="language-kotlin" id="1755670401035.5151"><span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(savedInstanceState: <span class="hljs-type">Bundle</span>?)</span></span> {
         <span class="hljs-keyword">super</span>.onCreate(savedInstanceState)
         <span class="hljs-keyword">val</span> param = intent.getStringExtra(MainActivity.ROOM_PARAM)
         enableEdgeToEdge()
@@ -24523,7 +24523,7 @@ The Select Hardware page appears.</p>
                 }
             }
         }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474582.773')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401035.5151')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -24590,13 +24590,13 @@ The Select Hardware page appears.</p>
 <p>Fill a name. For example <strong>RoomDto</strong> (dto = data transfer object) and create window properties. You can copy this code</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474582.6497"><span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomDto</span>(
+<pre class="highlight"><code class="language-kotlin" id="1755670401035.5999"><span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomDto</span>(
     <span class="hljs-keyword">val</span> id: <span class="hljs-built_in">Long</span>,
     <span class="hljs-keyword">val</span> name: String,
     <span class="hljs-keyword">val</span> currentTemperature: <span class="hljs-built_in">Double</span>?,
     <span class="hljs-keyword">val</span> targetTemperature: <span class="hljs-built_in">Double</span>?,
     <span class="hljs-keyword">val</span> windows: <span class="hljs-symbol">List@</span><span class="hljs-symbol">LTWindowDto@</span>GT,
-)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474582.6497')">Copy</button></pre>
+)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401035.5999')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -24607,7 +24607,7 @@ The Select Hardware page appears.</p>
 <p>Redo same steps to create <strong>WindowDto</strong></p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474582.0732"><span class="hljs-keyword">enum</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">WindowStatus</span> { OPENED, CLOSED}
+<pre class="highlight"><code class="language-kotlin" id="1755670401035.9126"><span class="hljs-keyword">enum</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">WindowStatus</span> { OPENED, CLOSED}
 
 <span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">WindowDto</span>(
     <span class="hljs-keyword">val</span> id: <span class="hljs-built_in">Long</span>,
@@ -24615,7 +24615,7 @@ The Select Hardware page appears.</p>
     <span class="hljs-keyword">val</span> roomName: String,
     <span class="hljs-keyword">val</span> roomId: <span class="hljs-built_in">Long</span>,
     <span class="hljs-keyword">val</span> windowStatus: WindowStatus
-)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474582.0732')">Copy</button></pre>
+)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401035.9126')">Copy</button></pre>
 </div>
 </div>
 </li>
@@ -24623,7 +24623,7 @@ The Select Hardware page appears.</p>
 <p>We will now create a service class to manage these windows. We will write 2 methods : one to find all building windows and a second to load only one window by its id. For the moment we will use fake data. In a next lesson we will learn how call a remote service to load real data. This class can be created in the package <code>com.automacorp.service</code></p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474582.6604"><span class="hljs-keyword">object</span> RoomService {
+<pre class="highlight"><code class="language-kotlin" id="1755670401036.8508"><span class="hljs-keyword">object</span> RoomService {
     <span class="hljs-keyword">val</span> ROOM_KIND: <span class="hljs-symbol">List@</span><span class="hljs-symbol">LTString@</span>GT = listOf(<span class="hljs-string">&quot;Room&quot;</span>, <span class="hljs-string">&quot;Meeting&quot;</span>, <span class="hljs-string">&quot;Laboratory&quot;</span>, <span class="hljs-string">&quot;Office&quot;</span>, <span class="hljs-string">&quot;Boardroom&quot;</span>)
     <span class="hljs-keyword">val</span> ROOM_NUMBER: <span class="hljs-symbol">List@</span><span class="hljs-symbol">LTChar@</span>GT = (<span class="hljs-string">&#x27;A&#x27;</span>..<span class="hljs-string">&#x27;Z&#x27;</span>).toList()
     <span class="hljs-keyword">val</span> WINDOW_KIND: <span class="hljs-symbol">List@</span><span class="hljs-symbol">LTString@</span>GT = listOf(<span class="hljs-string">&quot;Sliding&quot;</span>, <span class="hljs-string">&quot;Bay&quot;</span>, <span class="hljs-string">&quot;Casement&quot;</span>, <span class="hljs-string">&quot;Hung&quot;</span>, <span class="hljs-string">&quot;Fixed&quot;</span>)
@@ -24679,7 +24679,7 @@ The Select Hardware page appears.</p>
         }
         <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474582.6604')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401036.8508')">Copy</button></pre>
 </div>
 </div>
 </li>
@@ -24690,7 +24690,7 @@ The Select Hardware page appears.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474583.7507"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">updateRoom</span><span class="hljs-params">(id: <span class="hljs-type">Long</span>, room: <span class="hljs-type">RoomDto</span>)</span></span>: RoomDto? {
+<pre class="highlight"><code class="language-kotlin" id="1755670401036.4111"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">updateRoom</span><span class="hljs-params">(id: <span class="hljs-type">Long</span>, room: <span class="hljs-type">RoomDto</span>)</span></span>: RoomDto? {
     <span class="hljs-keyword">val</span> index = ROOMS.indexOfFirst { it.id == id }
     <span class="hljs-keyword">val</span> updatedRoom = findById(id)?.copy(
         name = room.name,
@@ -24698,7 +24698,7 @@ The Select Hardware page appears.</p>
         currentTemperature = room.currentTemperature
     ) ?: <span class="hljs-keyword">throw</span> IllegalArgumentException()
     <span class="hljs-keyword">return</span> ROOMS.<span class="hljs-keyword">set</span>(index, updatedRoom)
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474583.7507')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401036.4111')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -24714,10 +24714,10 @@ The Select Hardware page appears.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" id="1755669474583.9675">    @LTstring name=&quot;act_room_name&quot;@GTRoom name@LT/string@GT
+<pre class="highlight"><code class="language-xml" id="1755670401036.8262">    @LTstring name=&quot;act_room_name&quot;@GTRoom name@LT/string@GT
     @LTstring name=&quot;act_room_none&quot;@GTNo round found for this id or name@LT/string@GT
     @LTstring name=&quot;act_room_current_temperature&quot;@GTCurrent temperature@LT/string@GT
-    @LTstring name=&quot;act_room_target_temperature&quot;@GTTarget temperature@LT/string@GT</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474583.9675')">Copy</button></pre>
+    @LTstring name=&quot;act_room_target_temperature&quot;@GTTarget temperature@LT/string@GT</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401036.8262')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -24725,7 +24725,7 @@ The Select Hardware page appears.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474583.8672"><span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(savedInstanceState: <span class="hljs-type">Bundle</span>?)</span></span> {
+<pre class="highlight"><code class="language-kotlin" id="1755670401036.3542"><span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(savedInstanceState: <span class="hljs-type">Bundle</span>?)</span></span> {
     <span class="hljs-keyword">super</span>.onCreate(savedInstanceState)
     enableEdgeToEdge()
     <span class="hljs-keyword">val</span> param = intent.getStringExtra(MainActivity.ROOM_PARAM)
@@ -24743,7 +24743,7 @@ The Select Hardware page appears.</p>
             }
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474583.8672')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401036.3542')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -24754,7 +24754,7 @@ The Select Hardware page appears.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474584.7861">    <span class="hljs-keyword">var</span> room <span class="hljs-keyword">by</span> remember { mutableStateOf(roomDto) }
+<pre class="highlight"><code class="language-kotlin" id="1755670401036.1638">    <span class="hljs-keyword">var</span> room <span class="hljs-keyword">by</span> remember { mutableStateOf(roomDto) }
     Column(modifier = modifier.padding(<span class="hljs-number">16.</span>dp)) {
         <span class="hljs-comment">// ...</span>
         OutlinedTextField(
@@ -24764,7 +24764,7 @@ The Select Hardware page appears.</p>
             placeholder = { Text(stringResource(R.string.act_room_name)) },
         )
         <span class="hljs-comment">// ...</span>
-    }</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474584.7861')">Copy</button></pre>
+    }</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401036.1638')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -24775,7 +24775,7 @@ The Select Hardware page appears.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474584.9841">    Slider(
+<pre class="highlight"><code class="language-kotlin" id="1755670401036.3828">    Slider(
         value = room.targetTemperature?.toFloat() ?: <span class="hljs-number">18.0f</span>,
         onValueChange = { room = room.copy(targetTemperature = it.toDouble()) },
         colors = SliderDefaults.colors(
@@ -24786,7 +24786,7 @@ The Select Hardware page appears.</p>
         steps = <span class="hljs-number">0</span>,
         valueRange = <span class="hljs-number">10f</span>.<span class="hljs-number">.28f</span>
     )
-    Text(text = (round((room.targetTemperature ?: <span class="hljs-number">18.0</span>) * <span class="hljs-number">10</span>) / <span class="hljs-number">10</span>).toString())</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474584.9841')">Copy</button></pre>
+    Text(text = (round((room.targetTemperature ?: <span class="hljs-number">18.0</span>) * <span class="hljs-number">10</span>) / <span class="hljs-number">10</span>).toString())</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401036.3828')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -24862,13 +24862,13 @@ The Select Hardware page appears.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474660.5505"><span class="hljs-meta">@Composable</span>
+<pre class="highlight"><code class="language-kotlin" id="1755670401106.395"><span class="hljs-meta">@Composable</span>
 <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">Greeting</span><span class="hljs-params">(name: <span class="hljs-type">String</span>, modifier: <span class="hljs-type">Modifier</span> = Modifier)</span></span> {
   Text(
     text = <span class="hljs-string">&quot;Hello @dollar@name!&quot;</span>,
     modifier = modifier
   )
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474660.5505')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401106.395')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -24876,7 +24876,7 @@ The Select Hardware page appears.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474661.0894"><span class="hljs-meta">@Composable</span>
+<pre class="highlight"><code class="language-kotlin" id="1755670401106.897"><span class="hljs-meta">@Composable</span>
 <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">Greeting</span><span class="hljs-params">(name: <span class="hljs-type">String</span>, modifier: <span class="hljs-type">Modifier</span> = Modifier)</span></span> {
     Text(
         text = <span class="hljs-string">&quot;Hello @dollar@name!&quot;</span>,
@@ -24886,7 +24886,7 @@ The Select Hardware page appears.</p>
         text = <span class="hljs-string">&quot;I learn to create a new app&quot;</span>,
         modifier = modifier
     )
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474661.0894')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401106.897')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -24957,7 +24957,7 @@ The Select Hardware page appears.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474661.269"><span class="hljs-meta">@Composable</span>
+<pre class="highlight"><code class="language-kotlin" id="1755670401107.8284"><span class="hljs-meta">@Composable</span>
 <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">Greeting</span><span class="hljs-params">(name: <span class="hljs-type">String</span>, modifier: <span class="hljs-type">Modifier</span> = Modifier)</span></span> {
     Column {
         Text(
@@ -24971,7 +24971,7 @@ The Select Hardware page appears.</p>
             )
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474661.269')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401107.8284')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -24979,7 +24979,7 @@ The Select Hardware page appears.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474661.8333"><span class="hljs-meta">@Composable</span>
+<pre class="highlight"><code class="language-kotlin" id="1755670401107.508"><span class="hljs-meta">@Composable</span>
 <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">Greeting</span><span class="hljs-params">(name: <span class="hljs-type">String</span>, onClick: () -&gt; <span class="hljs-type">Unit</span>,  modifier: <span class="hljs-type">Modifier</span> = Modifier)</span></span> {
     Column {
         Text(
@@ -24992,7 +24992,7 @@ The Select Hardware page appears.</p>
             )
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474661.8333')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401107.508')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -25000,7 +25000,7 @@ The Select Hardware page appears.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474661.8667"><span class="hljs-keyword">class</span> <span class="hljs-title class_">MainActivity</span> : <span class="hljs-type">ComponentActivity</span>() {
+<pre class="highlight"><code class="language-kotlin" id="1755670401107.3657"><span class="hljs-keyword">class</span> <span class="hljs-title class_">MainActivity</span> : <span class="hljs-type">ComponentActivity</span>() {
     <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(savedInstanceState: <span class="hljs-type">Bundle</span>?)</span></span> {
         <span class="hljs-keyword">super</span>.onCreate(savedInstanceState)
 
@@ -25021,7 +25021,7 @@ The Select Hardware page appears.</p>
             }
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474661.8667')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401107.3657')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -25101,7 +25101,7 @@ This is a string resources file, where you can specify all of your UI strings. I
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" id="1755669474661.4744"><span class="hljs-tag">&lt;<span class="hljs-name">resources</span>&gt;</span>
+<pre class="highlight"><code class="language-xml" id="1755670401107.5967"><span class="hljs-tag">&lt;<span class="hljs-name">resources</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">string</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;app_name&quot;</span>&gt;</span>automacorp<span class="hljs-tag">&lt;/<span class="hljs-name">string</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">string</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;app_logo_description&quot;</span>&gt;</span>automacorp logo<span class="hljs-tag">&lt;/<span class="hljs-name">string</span>&gt;</span>
@@ -25109,7 +25109,7 @@ This is a string resources file, where you can specify all of your UI strings. I
  the app to manage building windows<span class="hljs-tag">&lt;/<span class="hljs-name">string</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">string</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;act_main_open&quot;</span>&gt;</span>Open<span class="hljs-tag">&lt;/<span class="hljs-name">string</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">string</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;act_main_fill_name&quot;</span>&gt;</span>Fill a name<span class="hljs-tag">&lt;/<span class="hljs-name">string</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">resources</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474661.4744')">Copy</button></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">resources</span>&gt;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401107.5967')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -25117,10 +25117,10 @@ This is a string resources file, where you can specify all of your UI strings. I
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474661.0916"> Text(
+<pre class="highlight"><code class="language-kotlin" id="1755670401107.863"> Text(
     stringResource(R.string.act_main_welcome),
     textAlign = TextAlign.Center
-)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474661.0916')">Copy</button></pre>
+)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401107.863')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -25134,14 +25134,14 @@ This is a string resources file, where you can specify all of your UI strings. I
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474661.5886"><span class="hljs-meta">@Composable</span>
+<pre class="highlight"><code class="language-kotlin" id="1755670401107.6177"><span class="hljs-meta">@Composable</span>
 <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">AppLogo</span><span class="hljs-params">(modifier: <span class="hljs-type">Modifier</span>)</span></span> {
     Image(
         painter = painterResource(R.drawable.ic_logo),
         contentDescription = stringResource(R.string.app_logo_description),
         modifier = modifier.paddingFromBaseline(top = <span class="hljs-number">100.</span>dp).height(<span class="hljs-number">80.</span>dp),
     )
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474661.5886')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401107.6177')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -25152,7 +25152,7 @@ This is a string resources file, where you can specify all of your UI strings. I
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474662.4595"><span class="hljs-meta">@Composable</span>
+<pre class="highlight"><code class="language-kotlin" id="1755670401107.387"><span class="hljs-meta">@Composable</span>
 <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">Greeting</span><span class="hljs-params">(onClick: (<span class="hljs-type">name</span>: <span class="hljs-type">String</span>) -&gt; <span class="hljs-type">Unit</span>,  modifier: <span class="hljs-type">Modifier</span> = Modifier)</span></span> {
     Column {
         AppLogo(Modifier.padding(top = <span class="hljs-number">32.</span>dp).fillMaxWidth())
@@ -25165,7 +25165,7 @@ This is a string resources file, where you can specify all of your UI strings. I
             textAlign = TextAlign.Center
         )
    }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474662.4595')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401107.387')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -25179,11 +25179,11 @@ This is a string resources file, where you can specify all of your UI strings. I
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474662.1553">OutlinedTextField(
+<pre class="highlight"><code class="language-kotlin" id="1755670401107.4502">OutlinedTextField(
     <span class="hljs-string">&quot;&quot;</span>,
     onValueChange = { println(<span class="hljs-string">&quot;value of the field : @dollar@it&quot;</span>) },
     modifier = Modifier.padding(<span class="hljs-number">24.</span>dp).fillMaxWidth()
-)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474662.1553')">Copy</button></pre>
+)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401107.4502')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -25197,13 +25197,13 @@ This is a string resources file, where you can specify all of your UI strings. I
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474662.323"><span class="hljs-keyword">var</span> name <span class="hljs-keyword">by</span> remember { mutableStateOf(<span class="hljs-string">&quot;&quot;</span>) }
+<pre class="highlight"><code class="language-kotlin" id="1755670401107.2722"><span class="hljs-keyword">var</span> name <span class="hljs-keyword">by</span> remember { mutableStateOf(<span class="hljs-string">&quot;&quot;</span>) }
 
 OutlinedTextField(
     name,
     onValueChange = { name = it },
     modifier = Modifier.padding(<span class="hljs-number">24.</span>dp).fillMaxWidth()
-)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474662.323')">Copy</button></pre>
+)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401107.2722')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -25211,7 +25211,7 @@ OutlinedTextField(
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474662.3525">OutlinedTextField(
+<pre class="highlight"><code class="language-kotlin" id="1755670401107.9363">OutlinedTextField(
     name,
     onValueChange = { name = it },
     modifier = Modifier.padding(<span class="hljs-number">24.</span>dp).fillMaxWidth(),
@@ -25224,7 +25224,7 @@ OutlinedTextField(
             )
             Text(stringResource(R.string.act_main_fill_name))
         }
-    })</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474662.3525')">Copy</button></pre>
+    })</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401107.9363')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -25244,7 +25244,7 @@ OutlinedTextField(
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474662.8394"><span class="hljs-meta">@Composable</span>
+<pre class="highlight"><code class="language-kotlin" id="1755670401108.7075"><span class="hljs-meta">@Composable</span>
 <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">Greeting</span><span class="hljs-params">(onClick: (<span class="hljs-type">name</span>: <span class="hljs-type">String</span>) -&gt; <span class="hljs-type">Unit</span>, modifier: <span class="hljs-type">Modifier</span> = Modifier)</span></span> {
     Column {
         <span class="hljs-comment">// ...</span>
@@ -25264,7 +25264,7 @@ OutlinedTextField(
             Text(stringResource(R.string.act_main_open))
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474662.8394')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401108.7075')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -25272,7 +25272,7 @@ OutlinedTextField(
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474662.6858"><span class="hljs-keyword">class</span> <span class="hljs-title class_">MainActivity</span> : <span class="hljs-type">ComponentActivity</span>() {
+<pre class="highlight"><code class="language-kotlin" id="1755670401108.475"><span class="hljs-keyword">class</span> <span class="hljs-title class_">MainActivity</span> : <span class="hljs-type">ComponentActivity</span>() {
     <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(savedInstanceState: <span class="hljs-type">Bundle</span>?)</span></span> {
         <span class="hljs-keyword">super</span>.onCreate(savedInstanceState)
 
@@ -25292,7 +25292,7 @@ OutlinedTextField(
             }
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474662.6858')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401108.475')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -25413,7 +25413,7 @@ OutlinedTextField(
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474596.3884"><span class="hljs-meta">@Composable</span>
+<pre class="highlight"><code class="language-kotlin" id="1755670401047.0044"><span class="hljs-meta">@Composable</span>
 <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">RoomUpdateButton</span><span class="hljs-params">(onClick: () @<span class="hljs-type">LAMBDA</span> <span class="hljs-type">Unit</span>)</span></span> {
     ExtendedFloatingActionButton(
         onClick = { onClick() },
@@ -25425,7 +25425,7 @@ OutlinedTextField(
         },
         text = { Text(text = stringResource(R.string.act_room_save)) }
     )
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474596.3884')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401047.0044')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -25433,7 +25433,7 @@ OutlinedTextField(
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474596.0288"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomActivity</span> : <span class="hljs-type">ComponentActivity</span>() {
+<pre class="highlight"><code class="language-kotlin" id="1755670401047.1863"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomActivity</span> : <span class="hljs-type">ComponentActivity</span>() {
     <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(savedInstanceState: <span class="hljs-type">Bundle</span>?)</span></span> {
         <span class="hljs-keyword">super</span>.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -25460,7 +25460,7 @@ OutlinedTextField(
             }
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474596.0288')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401047.1863')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -25511,9 +25511,9 @@ OutlinedTextField(
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474596.4473"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomViewModel</span>: <span class="hljs-type">ViewModel</span>() {
+<pre class="highlight"><code class="language-kotlin" id="1755670401047.7944"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomViewModel</span>: <span class="hljs-type">ViewModel</span>() {
     <span class="hljs-keyword">var</span> room <span class="hljs-keyword">by</span> mutableStateOf <span class="hljs-meta">@LTRoomDto</span>?<span class="hljs-meta">@GT(null)</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474596.4473')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401047.7944')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -25521,9 +25521,9 @@ OutlinedTextField(
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474596.8833"><span class="hljs-keyword">val</span> param = intent.getStringExtra(MainActivity.ROOM_PARAM)
+<pre class="highlight"><code class="language-kotlin" id="1755670401047.1804"><span class="hljs-keyword">val</span> param = intent.getStringExtra(MainActivity.ROOM_PARAM)
         <span class="hljs-keyword">val</span> viewModel: RoomViewModel <span class="hljs-keyword">by</span> viewModels()
-        viewModel.room = RoomService.findByNameOrId(param)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474596.8833')">Copy</button></pre>
+        viewModel.room = RoomService.findByNameOrId(param)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401047.1804')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -25537,7 +25537,7 @@ OutlinedTextField(
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474596.767"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">RoomDetail</span><span class="hljs-params">(model: <span class="hljs-type">RoomViewModel</span>, modifier: <span class="hljs-type">Modifier</span> = Modifier)</span></span> {
+<pre class="highlight"><code class="language-kotlin" id="1755670401047.5378"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">RoomDetail</span><span class="hljs-params">(model: <span class="hljs-type">RoomViewModel</span>, modifier: <span class="hljs-type">Modifier</span> = Modifier)</span></span> {
     Column(modifier = modifier.padding(<span class="hljs-number">16.</span>dp)) {
         Text(
             text = stringResource(R.string.act_room_name),
@@ -25552,7 +25552,7 @@ OutlinedTextField(
         )
         <span class="hljs-comment">// ...</span>
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474596.767')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401047.5378')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -25560,14 +25560,14 @@ OutlinedTextField(
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474596.4316"><span class="hljs-keyword">val</span> onRoomSave: () <span class="hljs-meta">@LAMBDA</span> <span class="hljs-built_in">Unit</span> = {
+<pre class="highlight"><code class="language-kotlin" id="1755670401047.3765"><span class="hljs-keyword">val</span> onRoomSave: () <span class="hljs-meta">@LAMBDA</span> <span class="hljs-built_in">Unit</span> = {
     <span class="hljs-keyword">if</span>(viewModel.room != <span class="hljs-literal">null</span>) {
         <span class="hljs-keyword">val</span> roomDto: RoomDto = viewModel.room <span class="hljs-keyword">as</span> RoomDto
         RoomService.updateRoom(roomDto.id, roomDto)
         Toast.makeText(baseContext, <span class="hljs-string">&quot;Room @dollar@{roomDto.name} was updated&quot;</span>, Toast.LENGTH_LONG).show()
         startActivity(Intent(baseContext, MainActivity::<span class="hljs-keyword">class</span>.java))
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474596.4316')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401047.3765')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -25714,10 +25714,10 @@ OutlinedTextField(
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" id="1755669474596.7842">    @LTstring name=&quot;app_go_back_description&quot;@GTGo back@LT/string@GT
+<pre class="highlight"><code class="language-xml" id="1755670401047.961">    @LTstring name=&quot;app_go_back_description&quot;@GTGo back@LT/string@GT
     @LTstring name=&quot;app_go_room_description&quot;@GTRooms@LT/string@GT
     @LTstring name=&quot;app_go_github_description&quot;@GTGithub@LT/string@GT
-    @LTstring name=&quot;app_go_mail_description&quot;@GTSend email@LT/string@GT</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474596.7842')">Copy</button></pre>
+    @LTstring name=&quot;app_go_mail_description&quot;@GTSend email@LT/string@GT</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401047.961')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -25728,7 +25728,7 @@ OutlinedTextField(
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474597.1084"><span class="hljs-meta">@Composable</span>
+<pre class="highlight"><code class="language-kotlin" id="1755670401048.361"><span class="hljs-meta">@Composable</span>
 <span class="hljs-meta">@OptIn(ExperimentalMaterial3Api::class)</span>
 <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">AutomacorpTopAppBar</span><span class="hljs-params">(title: <span class="hljs-type">String</span>? = <span class="hljs-literal">null</span>, returnAction: () @<span class="hljs-type">LAMBDA</span> <span class="hljs-type">Unit</span> = {})</span></span> {
     <span class="hljs-keyword">val</span> colors = TopAppBarDefaults.topAppBarColors(
@@ -25796,7 +25796,7 @@ OutlinedTextField(
     AutomacorpTheme {
         AutomacorpTopAppBar(<span class="hljs-string">&quot;A page&quot;</span>)
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474597.1084')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401048.361')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -25818,7 +25818,7 @@ OutlinedTextField(
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474597.0393">setContent {
+<pre class="highlight"><code class="language-kotlin" id="1755670401048.9749">setContent {
   AutomacorpTheme {
       Scaffold(
           topBar = { AutomacorpTopAppBar(<span class="hljs-string">&quot;Room&quot;</span>, navigateBack) },
@@ -25827,7 +25827,7 @@ OutlinedTextField(
       ) {
         <span class="hljs-comment">// ...</span>
       }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474597.0393')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401048.9749')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -25835,9 +25835,9 @@ OutlinedTextField(
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474597.592"><span class="hljs-keyword">val</span> navigateBack: () <span class="hljs-meta">@LAMBDA</span> <span class="hljs-built_in">Unit</span> = {
+<pre class="highlight"><code class="language-kotlin" id="1755670401048.0957"><span class="hljs-keyword">val</span> navigateBack: () <span class="hljs-meta">@LAMBDA</span> <span class="hljs-built_in">Unit</span> = {
     startActivity(Intent(baseContext, MainActivity::<span class="hljs-keyword">class</span>.java))
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474597.592')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401048.0957')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -25880,8 +25880,8 @@ The second one is the data to operate on, such an URL, an email, expressed as a 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474597.7097"><span class="hljs-keyword">val</span> intent = Intent(Intent.ACTION_VIEW, Uri.parse(<span class="hljs-string">&quot;https://dev-mind.fr&quot;</span>))
-startActivity(intent)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474597.7097')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1755670401048.7188"><span class="hljs-keyword">val</span> intent = Intent(Intent.ACTION_VIEW, Uri.parse(<span class="hljs-string">&quot;https://dev-mind.fr&quot;</span>))
+startActivity(intent)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401048.7188')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -25889,8 +25889,8 @@ startActivity(intent)</code><button class="btn-copy-code" onclick="copyToClipboa
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474597.868"><span class="hljs-keyword">val</span> intent = Intent(Intent.ACTION_SENDTO, Uri.parse(<span class="hljs-string">&quot;mailto://guillaume@dev-mind.fr&quot;</span>))
-startActivity(intent)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474597.868')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1755670401048.645"><span class="hljs-keyword">val</span> intent = Intent(Intent.ACTION_SENDTO, Uri.parse(<span class="hljs-string">&quot;mailto://guillaume@dev-mind.fr&quot;</span>))
+startActivity(intent)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401048.645')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -25953,14 +25953,14 @@ startActivity(intent)</code><button class="btn-copy-code" onclick="copyToClipboa
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474570.5076">LazyColumn {
+<pre class="highlight"><code class="language-kotlin" id="1755670401027.9316">LazyColumn {
     item {
         Header()
     }
     items(<span class="hljs-keyword">data</span>) { item <span class="hljs-meta">@LAMBDA</span>
         PhotoItem(item)
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474570.5076')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401027.9316')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -26005,7 +26005,7 @@ startActivity(intent)</code><button class="btn-copy-code" onclick="copyToClipboa
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474570.566"><span class="hljs-meta">@Composable</span>
+<pre class="highlight"><code class="language-kotlin" id="1755670401027.6846"><span class="hljs-meta">@Composable</span>
 <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">RoomItem</span><span class="hljs-params">(room: <span class="hljs-type">RoomDto</span>, modifier: <span class="hljs-type">Modifier</span> = Modifier)</span></span> {
     Card(colors = CardDefaults.cardColors(containerColor = Color.Transparent),
         border = BorderStroke(<span class="hljs-number">1.</span>dp, PurpleGrey80)
@@ -26033,7 +26033,7 @@ startActivity(intent)</code><button class="btn-copy-code" onclick="copyToClipboa
             )
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474570.566')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401027.6846')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -26044,13 +26044,13 @@ startActivity(intent)</code><button class="btn-copy-code" onclick="copyToClipboa
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474570.1028"><span class="hljs-meta">@Preview(showBackground = true)</span>
+<pre class="highlight"><code class="language-kotlin" id="1755670401028.5017"><span class="hljs-meta">@Preview(showBackground = true)</span>
 <span class="hljs-meta">@Composable</span>
 <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">RoomItemPreview</span><span class="hljs-params">()</span></span> {
     AutomacorpTheme {
         RoomItem(RoomService.ROOMS[<span class="hljs-number">0</span>])
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474570.1028')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401028.5017')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -26061,7 +26061,7 @@ startActivity(intent)</code><button class="btn-copy-code" onclick="copyToClipboa
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474570.8247"> LazyColumn(
+<pre class="highlight"><code class="language-kotlin" id="1755670401028.6138"> LazyColumn(
     contentPadding = PaddingValues(<span class="hljs-number">4.</span>dp),
     verticalArrangement = Arrangement.spacedBy(<span class="hljs-number">8.</span>dp),
     modifier = Modifier.padding(innerPadding),
@@ -26073,7 +26073,7 @@ startActivity(intent)</code><button class="btn-copy-code" onclick="copyToClipboa
             modifier = Modifier
         )
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474570.8247')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401028.6138')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -26092,12 +26092,12 @@ startActivity(intent)</code><button class="btn-copy-code" onclick="copyToClipboa
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474571.0881">items(rooms, key = { it.id }) {
+<pre class="highlight"><code class="language-kotlin" id="1755670401028.4316">items(rooms, key = { it.id }) {
     RoomItem(
         room = it,
         modifier = Modifier.clickable { openRoom(it.id) },
     )
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474571.0881')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401028.4316')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -26187,7 +26187,7 @@ startActivity(intent)</code><button class="btn-copy-code" onclick="copyToClipboa
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474610.3792"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">RoomsApiService</span> {
+<pre class="highlight"><code class="language-kotlin" id="1755670401060.9363"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">RoomsApiService</span> {
     <span class="hljs-meta">@GET(<span class="hljs-string">&quot;rooms&quot;</span>)</span>
     <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">findAll</span><span class="hljs-params">()</span></span>: <span class="hljs-symbol">Call@</span><span class="hljs-symbol">LTList@</span><span class="hljs-symbol">LTRoomDto@</span><span class="hljs-symbol">GT@</span>GT
 
@@ -26198,7 +26198,7 @@ startActivity(intent)</code><button class="btn-copy-code" onclick="copyToClipboa
     <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">updateRoom</span><span class="hljs-params">(<span class="hljs-meta">@Path(<span class="hljs-string">&quot;id&quot;</span>)</span> id: <span class="hljs-type">Long</span>, <span class="hljs-meta">@Body</span> room: <span class="hljs-type">RoomCommandDto</span>)</span></span>: <span class="hljs-symbol">Call@</span><span class="hljs-symbol">LTRoomDto@</span>GT
 
     <span class="hljs-comment">//...</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474610.3792')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401060.9363')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -26212,8 +26212,8 @@ startActivity(intent)</code><button class="btn-copy-code" onclick="copyToClipboa
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474610.5862"><span class="hljs-meta">@GET(<span class="hljs-string">&quot;rooms/{id}&quot;</span>)</span>
-<span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">findById</span><span class="hljs-params">(<span class="hljs-meta">@Path(<span class="hljs-string">&quot;id&quot;</span>)</span> id: <span class="hljs-type">Long</span>)</span></span>: <span class="hljs-symbol">Call@</span><span class="hljs-symbol">LTRoomDto@</span>GT</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474610.5862')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1755670401060.0232"><span class="hljs-meta">@GET(<span class="hljs-string">&quot;rooms/{id}&quot;</span>)</span>
+<span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">findById</span><span class="hljs-params">(<span class="hljs-meta">@Path(<span class="hljs-string">&quot;id&quot;</span>)</span> id: <span class="hljs-type">Long</span>)</span></span>: <span class="hljs-symbol">Call@</span><span class="hljs-symbol">LTRoomDto@</span>GT</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401060.0232')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -26221,8 +26221,8 @@ startActivity(intent)</code><button class="btn-copy-code" onclick="copyToClipboa
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474610.5261"><span class="hljs-meta">@GET(<span class="hljs-string">&quot;rooms&quot;</span>)</span>
-<span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">findAll</span><span class="hljs-params">(<span class="hljs-meta">@Query(<span class="hljs-string">&quot;sort&quot;</span>)</span> sort: <span class="hljs-type">String</span>)</span></span>: <span class="hljs-symbol">Call@</span><span class="hljs-symbol">LTList@</span><span class="hljs-symbol">LTRoomDto@</span><span class="hljs-symbol">GT@</span>GT</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474610.5261')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1755670401060.6477"><span class="hljs-meta">@GET(<span class="hljs-string">&quot;rooms&quot;</span>)</span>
+<span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">findAll</span><span class="hljs-params">(<span class="hljs-meta">@Query(<span class="hljs-string">&quot;sort&quot;</span>)</span> sort: <span class="hljs-type">String</span>)</span></span>: <span class="hljs-symbol">Call@</span><span class="hljs-symbol">LTList@</span><span class="hljs-symbol">LTRoomDto@</span><span class="hljs-symbol">GT@</span>GT</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401060.6477')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -26230,8 +26230,8 @@ startActivity(intent)</code><button class="btn-copy-code" onclick="copyToClipboa
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474610.5369"><span class="hljs-meta">@PUT(<span class="hljs-string">&quot;rooms/{id}&quot;</span>)</span>
-<span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">updateRoom</span><span class="hljs-params">(<span class="hljs-meta">@Path(<span class="hljs-string">&quot;id&quot;</span>)</span> id: <span class="hljs-type">Long</span>, <span class="hljs-meta">@Body</span> room: <span class="hljs-type">RoomCommandDto</span>)</span></span>: <span class="hljs-symbol">Call@</span><span class="hljs-symbol">LTRoomDto@</span>GT</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474610.5369')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1755670401060.0054"><span class="hljs-meta">@PUT(<span class="hljs-string">&quot;rooms/{id}&quot;</span>)</span>
+<span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">updateRoom</span><span class="hljs-params">(<span class="hljs-meta">@Path(<span class="hljs-string">&quot;id&quot;</span>)</span> id: <span class="hljs-type">Long</span>, <span class="hljs-meta">@Body</span> room: <span class="hljs-type">RoomCommandDto</span>)</span></span>: <span class="hljs-symbol">Call@</span><span class="hljs-symbol">LTRoomDto@</span>GT</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401060.0054')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -26239,7 +26239,7 @@ startActivity(intent)</code><button class="btn-copy-code" onclick="copyToClipboa
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474610.6196"><span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomDto</span>(
+<pre class="highlight"><code class="language-kotlin" id="1755670401060.778"><span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomDto</span>(
     <span class="hljs-keyword">val</span> id: <span class="hljs-built_in">Long</span>,
     <span class="hljs-keyword">val</span> name: String,
     <span class="hljs-keyword">val</span> currentTemperature: <span class="hljs-built_in">Double</span>?,
@@ -26254,7 +26254,7 @@ startActivity(intent)</code><button class="btn-copy-code" onclick="copyToClipboa
     <span class="hljs-keyword">val</span> floor: <span class="hljs-built_in">Int</span> = <span class="hljs-number">1</span>,
     <span class="hljs-comment">// Set to the default building ID (useful when you have not created screens to manage buildings)</span>
     <span class="hljs-keyword">val</span> buildingId: <span class="hljs-built_in">Long</span> = -<span class="hljs-number">10</span>
-)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474610.6196')">Copy</button></pre>
+)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401060.778')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -26283,7 +26283,7 @@ You will find more information on <a href="https://square.github.io/retrofit/">R
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-toml" id="1755669474611.968"><span class="hljs-attr">retrofit</span> = <span class="hljs-string">&quot;2.9.0&quot;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474611.968')">Copy</button></pre>
+<pre class="highlight"><code class="language-toml" id="1755670401061.867"><span class="hljs-attr">retrofit</span> = <span class="hljs-string">&quot;2.9.0&quot;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401061.867')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -26291,8 +26291,8 @@ You will find more information on <a href="https://square.github.io/retrofit/">R
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-toml" id="1755669474611.0378"><span class="hljs-attr">retrofit</span> = { module = <span class="hljs-string">&quot;com.squareup.retrofit2:retrofit&quot;</span>, version.ref = <span class="hljs-string">&quot;retrofit&quot;</span> }
-<span class="hljs-attr">retrofit-moshi</span> = { module = <span class="hljs-string">&quot;com.squareup.retrofit2:converter-moshi&quot;</span>, version.ref = <span class="hljs-string">&quot;retrofit&quot;</span> }</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474611.0378')">Copy</button></pre>
+<pre class="highlight"><code class="language-toml" id="1755670401061.0571"><span class="hljs-attr">retrofit</span> = { module = <span class="hljs-string">&quot;com.squareup.retrofit2:retrofit&quot;</span>, version.ref = <span class="hljs-string">&quot;retrofit&quot;</span> }
+<span class="hljs-attr">retrofit-moshi</span> = { module = <span class="hljs-string">&quot;com.squareup.retrofit2:converter-moshi&quot;</span>, version.ref = <span class="hljs-string">&quot;retrofit&quot;</span> }</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401061.0571')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -26300,8 +26300,8 @@ You will find more information on <a href="https://square.github.io/retrofit/">R
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-groovy" id="1755669474611.9216">implementation (libs.retrofit)
-implementation (libs.converter.moshi)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474611.9216')">Copy</button></pre>
+<pre class="highlight"><code class="language-groovy" id="1755670401061.6326">implementation (libs.retrofit)
+implementation (libs.converter.moshi)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401061.6326')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -26344,7 +26344,7 @@ implementation (libs.converter.moshi)</code><button class="btn-copy-code" onclic
 <p>We need to create an implementation of this interface. This implementation will be created by the Retrofit Builder. In package <code>com.automacorp.service</code> create a new class called <strong>ApiServices</strong>. This class will use a Retrofit builder to return an instance of interface <code>RoomsApiService</code></p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474611.6135"><span class="hljs-keyword">object</span> ApiServices {
+<pre class="highlight"><code class="language-kotlin" id="1755670401061.3987"><span class="hljs-keyword">object</span> ApiServices {
     <span class="hljs-keyword">val</span> roomsApiService : RoomsApiService <span class="hljs-keyword">by</span> lazy {
         Retrofit.Builder()
                 .addConverterFactory(MoshiConverterFactory.create()) <span class="hljs-comment">// (1)</span>
@@ -26352,7 +26352,7 @@ implementation (libs.converter.moshi)</code><button class="btn-copy-code" onclic
                 .build()
                 .create(RoomsApiService::<span class="hljs-keyword">class</span>.java)
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474611.6135')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401061.3987')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -26369,8 +26369,8 @@ implementation (libs.converter.moshi)</code><button class="btn-copy-code" onclic
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474611.3347"><span class="hljs-keyword">const</span> <span class="hljs-keyword">val</span> API_USERNAME = <span class="hljs-string">&quot;user&quot;</span>
-<span class="hljs-keyword">const</span> <span class="hljs-keyword">val</span> API_PASSWORD = <span class="hljs-string">&quot;password&quot;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474611.3347')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1755670401061.9"><span class="hljs-keyword">const</span> <span class="hljs-keyword">val</span> API_USERNAME = <span class="hljs-string">&quot;user&quot;</span>
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">val</span> API_PASSWORD = <span class="hljs-string">&quot;password&quot;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401061.9')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -26378,7 +26378,7 @@ implementation (libs.converter.moshi)</code><button class="btn-copy-code" onclic
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474611.3635"><span class="hljs-keyword">class</span> <span class="hljs-title class_">BasicAuthInterceptor</span>(<span class="hljs-keyword">val</span> username: String, <span class="hljs-keyword">val</span> password: String): Interceptor {
+<pre class="highlight"><code class="language-kotlin" id="1755670401062.234"><span class="hljs-keyword">class</span> <span class="hljs-title class_">BasicAuthInterceptor</span>(<span class="hljs-keyword">val</span> username: String, <span class="hljs-keyword">val</span> password: String): Interceptor {
     <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">intercept</span><span class="hljs-params">(chain: <span class="hljs-type">Interceptor</span>.<span class="hljs-type">Chain</span>)</span></span>: Response {
         <span class="hljs-keyword">val</span> request = chain
             .request()
@@ -26387,7 +26387,7 @@ implementation (libs.converter.moshi)</code><button class="btn-copy-code" onclic
             .build()
         <span class="hljs-keyword">return</span> chain.proceed(request)
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474611.3635')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401062.234')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -26395,7 +26395,7 @@ implementation (libs.converter.moshi)</code><button class="btn-copy-code" onclic
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474612.5823"><span class="hljs-keyword">val</span> roomsApiService : RoomsApiService <span class="hljs-keyword">by</span> lazy {
+<pre class="highlight"><code class="language-kotlin" id="1755670401062.0461"><span class="hljs-keyword">val</span> roomsApiService : RoomsApiService <span class="hljs-keyword">by</span> lazy {
     <span class="hljs-keyword">val</span> client = OkHttpClient.Builder()
             .addInterceptor(BasicAuthInterceptor(API_USERNAME, API_PASSWORD))
             .build()
@@ -26406,7 +26406,7 @@ implementation (libs.converter.moshi)</code><button class="btn-copy-code" onclic
         .baseUrl(<span class="hljs-string">&quot;https://automacorp.devmind.cleverapps.io/api/&quot;</span>)
         .build()
         .create(RoomsApiService::<span class="hljs-keyword">class</span>.java)
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474612.5823')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401062.0461')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -26414,7 +26414,7 @@ implementation (libs.converter.moshi)</code><button class="btn-copy-code" onclic
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474612.137"><span class="hljs-keyword">val</span> roomsApiService : RoomsApiService <span class="hljs-keyword">by</span> lazy {
+<pre class="highlight"><code class="language-kotlin" id="1755670401062.6099"><span class="hljs-keyword">val</span> roomsApiService : RoomsApiService <span class="hljs-keyword">by</span> lazy {
     <span class="hljs-keyword">val</span> client = getUnsafeOkHttpClient()
             .addInterceptor(BasicAuthInterceptor(API_USERNAME, API_PASSWORD))
             .build()
@@ -26443,7 +26443,7 @@ implementation (libs.converter.moshi)</code><button class="btn-copy-code" onclic
       sslSocketFactory(sslContext.socketFactory, trustManager)
       hostnameVerifier { hostname, _ <span class="hljs-meta">@LAMBDA</span> hostname.contains(<span class="hljs-string">&quot;cleverapps.io&quot;</span>) }
       addInterceptor(BasicAuthInterceptor(API_USERNAME, API_PASSWORD))
-  }</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474612.137')">Copy</button></pre>
+  }</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401062.6099')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -26456,7 +26456,7 @@ implementation (libs.converter.moshi)</code><button class="btn-copy-code" onclic
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474612.4216"><span class="hljs-meta">@Composable</span>
+<pre class="highlight"><code class="language-kotlin" id="1755670401062.0679"><span class="hljs-meta">@Composable</span>
 <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">RoomList</span><span class="hljs-params">(
     rooms: <span class="hljs-type">List</span>@<span class="hljs-type">LTRoomDto</span>@<span class="hljs-type">GT</span>,
     navigateBack: () @<span class="hljs-type">LAMBDA</span> <span class="hljs-type">Unit</span>,
@@ -26487,7 +26487,7 @@ implementation (libs.converter.moshi)</code><button class="btn-copy-code" onclic
             }
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474612.4216')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401062.0679')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -26495,7 +26495,7 @@ implementation (libs.converter.moshi)</code><button class="btn-copy-code" onclic
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474612.8083"><span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(savedInstanceState: <span class="hljs-type">Bundle</span>?)</span></span> {
+<pre class="highlight"><code class="language-kotlin" id="1755670401062.9287"><span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(savedInstanceState: <span class="hljs-type">Bundle</span>?)</span></span> {
   <span class="hljs-comment">// ... existing code</span>
 
   runCatching { <span class="hljs-comment">// (1)</span>
@@ -26516,7 +26516,7 @@ implementation (libs.converter.moshi)</code><button class="btn-copy-code" onclic
                 Toast.makeText(<span class="hljs-keyword">this</span>, <span class="hljs-string">&quot;Error on rooms loading @dollar@it&quot;</span>, Toast.LENGTH_LONG).show() <span class="hljs-comment">// (5)</span>
             }
   <span class="hljs-comment">// ...</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474612.8083')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401062.9287')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -26618,7 +26618,7 @@ implementation (libs.converter.moshi)</code><button class="btn-copy-code" onclic
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474612.0923">implementation(libs.androidx.lifecycle.runtime.ktx)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474612.0923')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1755670401062.416">implementation(libs.androidx.lifecycle.runtime.ktx)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401062.416')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -26641,7 +26641,7 @@ implementation (libs.converter.moshi)</code><button class="btn-copy-code" onclic
 <p>Update code to call roomsApiService as follows</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474612.9197">lifecycleScope.launch(context = Dispatchers.IO) { <span class="hljs-comment">// (1)</span>
+<pre class="highlight"><code class="language-kotlin" id="1755670401062.6462">lifecycleScope.launch(context = Dispatchers.IO) { <span class="hljs-comment">// (1)</span>
     runCatching { ApiServices.roomsApiService.findAll().execute() }
         .onSuccess {
             <span class="hljs-keyword">val</span> rooms = it.body() ?: emptyList()
@@ -26653,7 +26653,7 @@ implementation (libs.converter.moshi)</code><button class="btn-copy-code" onclic
                 <span class="hljs-comment">// setContent .... and display error</span>
             }
         }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474612.9197')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401062.6462')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -26699,7 +26699,7 @@ implementation (libs.converter.moshi)</code><button class="btn-copy-code" onclic
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" id="1755669474612.0068">@LTmanifest xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+<pre class="highlight"><code class="language-xml" id="1755670401062.2566">@LTmanifest xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
 package=&quot;com.example.snazzyapp&quot;@GT
 
     @LTuses-permission android:name=&quot;android.permission.INTERNET&quot; /@GT
@@ -26707,7 +26707,7 @@ package=&quot;com.example.snazzyapp&quot;@GT
          android:usesCleartextTraffic=&quot;true&quot;@GT
         ...
     @LT/application@GT
-@LT/manifest@GT</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474612.0068')">Copy</button></pre>
+@LT/manifest@GT</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401062.2566')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -26734,10 +26734,10 @@ package=&quot;com.example.snazzyapp&quot;@GT
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474613.9111"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomList</span>(
+<pre class="highlight"><code class="language-kotlin" id="1755670401062.3943"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomList</span>(
     <span class="hljs-keyword">val</span> rooms: <span class="hljs-symbol">List@</span><span class="hljs-symbol">LTRoomDto@</span>GT = emptyList(),
     <span class="hljs-keyword">val</span> error: String? = <span class="hljs-literal">null</span>
-)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474613.9111')">Copy</button></pre>
+)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401062.3943')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -26745,11 +26745,11 @@ package=&quot;com.example.snazzyapp&quot;@GT
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474613.748"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomViewModel</span> : <span class="hljs-type">ViewModel</span>() {
+<pre class="highlight"><code class="language-kotlin" id="1755670401063.172"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomViewModel</span> : <span class="hljs-type">ViewModel</span>() {
     <span class="hljs-comment">// existing code</span>
 
     <span class="hljs-keyword">val</span> roomsState = MutableStateFlow(RoomList())
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474613.748')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401063.172')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -26757,7 +26757,7 @@ package=&quot;com.example.snazzyapp&quot;@GT
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474613.7776"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomViewModel</span> : <span class="hljs-type">ViewModel</span>() {
+<pre class="highlight"><code class="language-kotlin" id="1755670401063.9355"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomViewModel</span> : <span class="hljs-type">ViewModel</span>() {
     <span class="hljs-comment">// existing code</span>
     <span class="hljs-comment">//...</span>
 
@@ -26774,7 +26774,7 @@ package=&quot;com.example.snazzyapp&quot;@GT
                 }
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474613.7776')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401063.9355')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -26795,7 +26795,7 @@ package=&quot;com.example.snazzyapp&quot;@GT
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474613.25"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomListActivity</span> : <span class="hljs-type">ComponentActivity</span>() {
+<pre class="highlight"><code class="language-kotlin" id="1755670401063.0234"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomListActivity</span> : <span class="hljs-type">ComponentActivity</span>() {
     <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(savedInstanceState: <span class="hljs-type">Bundle</span>?)</span></span> {
         <span class="hljs-keyword">super</span>.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -26822,7 +26822,7 @@ package=&quot;com.example.snazzyapp&quot;@GT
             }
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474613.25')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401063.0234')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -26857,7 +26857,7 @@ package=&quot;com.example.snazzyapp&quot;@GT
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474613.6523"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">findRoom</span><span class="hljs-params">(id: <span class="hljs-type">Long</span>)</span></span> {
+<pre class="highlight"><code class="language-kotlin" id="1755670401063.0615"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">findRoom</span><span class="hljs-params">(id: <span class="hljs-type">Long</span>)</span></span> {
     viewModelScope.launch(context = Dispatchers.IO) {
         runCatching { ApiServices.roomsApiService.findById(id).execute() }
             .onSuccess {
@@ -26868,7 +26868,7 @@ package=&quot;com.example.snazzyapp&quot;@GT
                 room = <span class="hljs-literal">null</span>
             }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474613.6523')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401063.0615')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -26876,7 +26876,7 @@ package=&quot;com.example.snazzyapp&quot;@GT
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474613.0151"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">updateRoom</span><span class="hljs-params">(id: <span class="hljs-type">Long</span>, roomDto: <span class="hljs-type">RoomDto</span>)</span></span> {
+<pre class="highlight"><code class="language-kotlin" id="1755670401063.1184"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">updateRoom</span><span class="hljs-params">(id: <span class="hljs-type">Long</span>, roomDto: <span class="hljs-type">RoomDto</span>)</span></span> {
       <span class="hljs-keyword">val</span> command = RoomCommandDto(
           name = roomDto.name,
           targetTemperature = roomDto.targetTemperature ?.let { Math.round(it * <span class="hljs-number">10</span>) /<span class="hljs-number">10.0</span> },
@@ -26892,7 +26892,7 @@ package=&quot;com.example.snazzyapp&quot;@GT
                   room = <span class="hljs-literal">null</span>
               }
       }
-  }</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474613.0151')">Copy</button></pre>
+  }</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401063.1184')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -27018,7 +27018,7 @@ Room library is an ORM (Object Relational Mapping) library (like Hibernate for t
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474624.9175"><span class="hljs-meta">@Entity(tableName = <span class="hljs-string">&quot;window&quot;</span>)</span>
+<pre class="highlight"><code class="language-kotlin" id="1755670401073.159"><span class="hljs-meta">@Entity(tableName = <span class="hljs-string">&quot;window&quot;</span>)</span>
 <span class="hljs-keyword">class</span> <span class="hljs-title class_">WindowEntity</span> {
     <span class="hljs-meta">@PrimaryKey(autoGenerate = true)</span>
     <span class="hljs-keyword">var</span> id: <span class="hljs-built_in">Long</span> = <span class="hljs-number">0</span>
@@ -27037,7 +27037,7 @@ Room library is an ORM (Object Relational Mapping) library (like Hibernate for t
 
     <span class="hljs-meta">@Ignore</span>
     <span class="hljs-keyword">var</span> notImportant: String? = <span class="hljs-literal">null</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474624.9175')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401073.159')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -27045,7 +27045,7 @@ Room library is an ORM (Object Relational Mapping) library (like Hibernate for t
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474624.9668"><span class="hljs-keyword">class</span> <span class="hljs-title class_">EnumConverters</span> {
+<pre class="highlight"><code class="language-kotlin" id="1755670401074.5928"><span class="hljs-keyword">class</span> <span class="hljs-title class_">EnumConverters</span> {
 
     <span class="hljs-comment">// A first method to convert enum in string when the data will be stored in the database</span>
     <span class="hljs-meta">@TypeConverter</span>
@@ -27059,7 +27059,7 @@ Room library is an ORM (Object Relational Mapping) library (like Hibernate for t
         <span class="hljs-keyword">return</span> value?.let { WindowStatus.valueOf(it) }
     }
 
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474624.9668')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401074.5928')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -27083,9 +27083,9 @@ Each function call will perform a SQL command on the database.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474624.8948"><span class="hljs-meta">@Dao</span>
+<pre class="highlight"><code class="language-kotlin" id="1755670401074.8594"><span class="hljs-meta">@Dao</span>
 <span class="hljs-keyword">interface</span> <span class="hljs-title class_">RoomDao</span> {
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474624.8948')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401074.8594')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -27099,7 +27099,7 @@ Each function call will perform a SQL command on the database.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474625.6858"><span class="hljs-meta">@Dao</span>
+<pre class="highlight"><code class="language-kotlin" id="1755670401074.5872"><span class="hljs-meta">@Dao</span>
 <span class="hljs-keyword">interface</span> <span class="hljs-title class_">RoomDao</span> {
     <span class="hljs-meta">@Query(<span class="hljs-string">&quot;select * from room order by name&quot;</span>)</span>
     <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">findAll</span><span class="hljs-params">()</span></span>: <span class="hljs-symbol">List@</span><span class="hljs-symbol">LTRoomEntity@</span>GT
@@ -27118,7 +27118,7 @@ Each function call will perform a SQL command on the database.</p>
 
     <span class="hljs-meta">@Query(<span class="hljs-string">&quot;delete from room&quot;</span>)</span>
     <span class="hljs-keyword">suspend</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">clearAll</span><span class="hljs-params">()</span></span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474625.6858')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401074.5872')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -27145,11 +27145,11 @@ Each function call will perform a SQL command on the database.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474625.5127"><span class="hljs-meta">@Database(entities = [RoomEntity::class], version = 1)</span>
+<pre class="highlight"><code class="language-kotlin" id="1755670401074.9773"><span class="hljs-meta">@Database(entities = [RoomEntity::class], version = 1)</span>
 <span class="hljs-meta">@TypeConverters(EnumConverters::class)</span>
 <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">AutomacorpDatabase</span> : <span class="hljs-type">RoomDatabase</span>() {
     <span class="hljs-keyword">abstract</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">roomDao</span><span class="hljs-params">()</span></span>: RoomDao
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474625.5127')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401074.9773')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -27175,7 +27175,7 @@ Each function call will perform a SQL command on the database.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474625.0767"><span class="hljs-keyword">class</span> <span class="hljs-title class_">AutomacorpApplication</span> : <span class="hljs-type">Application</span>() {}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474625.0767')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1755670401074.7666"><span class="hljs-keyword">class</span> <span class="hljs-title class_">AutomacorpApplication</span> : <span class="hljs-type">Application</span>() {}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401074.7666')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -27183,11 +27183,11 @@ Each function call will perform a SQL command on the database.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" id="1755669474625.682">@LTmanifest xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+<pre class="highlight"><code class="language-xml" id="1755670401074.097">@LTmanifest xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
 xmlns:tools=&quot;http://schemas.android.com/tools&quot;@GT
     @LTapplication
         android:name=&quot;.AutomacorpApplication&quot;
-     ...</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474625.682')">Copy</button></pre>
+     ...</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401074.097')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -27195,7 +27195,7 @@ xmlns:tools=&quot;http://schemas.android.com/tools&quot;@GT
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474625.284"><span class="hljs-keyword">class</span> <span class="hljs-title class_">AutomacorpApplication</span> : <span class="hljs-type">Application</span>() {
+<pre class="highlight"><code class="language-kotlin" id="1755670401074.9182"><span class="hljs-keyword">class</span> <span class="hljs-title class_">AutomacorpApplication</span> : <span class="hljs-type">Application</span>() {
 
     <span class="hljs-keyword">val</span> database: AutomacorpDatabase <span class="hljs-keyword">by</span> lazy {
         Room.databaseBuilder(<span class="hljs-keyword">this</span>, AutomacorpDatabase::<span class="hljs-keyword">class</span>.java, <span class="hljs-string">&quot;automacorpdb&quot;</span>)
@@ -27203,7 +27203,7 @@ xmlns:tools=&quot;http://schemas.android.com/tools&quot;@GT
     }
 
 
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474625.284')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401074.9182')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -27211,7 +27211,7 @@ xmlns:tools=&quot;http://schemas.android.com/tools&quot;@GT
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474625.0837"><span class="hljs-keyword">val</span> roomDao = AutomacorpApplication.database.roomDao()</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474625.0837')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1755670401074.8777"><span class="hljs-keyword">val</span> roomDao = AutomacorpApplication.database.roomDao()</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401074.8777')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -27253,7 +27253,7 @@ xmlns:tools=&quot;http://schemas.android.com/tools&quot;@GT
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474625.2043"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomViewModel</span>(<span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> roomDao: RoomDao) : ViewModel() {
+<pre class="highlight"><code class="language-kotlin" id="1755670401074.5188"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomViewModel</span>(<span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> roomDao: RoomDao) : ViewModel() {
 
     <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">findByIdInDb</span><span class="hljs-params">(windowId: <span class="hljs-type">Long</span>)</span></span>: <span class="hljs-symbol">LiveData@</span><span class="hljs-symbol">LTRoomDto@</span>GT = <span class="hljs-comment">// (2)</span>
         liveData (Dispatchers.IO) { <span class="hljs-comment">// (3)</span>
@@ -27275,7 +27275,7 @@ xmlns:tools=&quot;http://schemas.android.com/tools&quot;@GT
             }
             emit(room.toDto()) <span class="hljs-comment">// (4)</span>
         }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474625.2043')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401074.5188')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -27299,7 +27299,7 @@ xmlns:tools=&quot;http://schemas.android.com/tools&quot;@GT
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474625.1086"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomViewModel</span>(<span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> windowDao: WindowDao) : ViewModel() {
+<pre class="highlight"><code class="language-kotlin" id="1755670401075.3496"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomViewModel</span>(<span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> windowDao: WindowDao) : ViewModel() {
 
     <span class="hljs-keyword">companion</span> <span class="hljs-keyword">object</span> {
         <span class="hljs-keyword">val</span> factory: ViewModelProvider.Factory =
@@ -27319,7 +27319,7 @@ xmlns:tools=&quot;http://schemas.android.com/tools&quot;@GT
     }
 
     <span class="hljs-comment">// ...</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474625.1086')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401075.3496')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -27333,9 +27333,9 @@ xmlns:tools=&quot;http://schemas.android.com/tools&quot;@GT
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474625.5867"><span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> viewModel: RoomViewModel <span class="hljs-keyword">by</span> viewModels {
+<pre class="highlight"><code class="language-kotlin" id="1755670401075.6152"><span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> viewModel: RoomViewModel <span class="hljs-keyword">by</span> viewModels {
     RoomViewModel.factory
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474625.5867')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401075.6152')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -27343,9 +27343,9 @@ xmlns:tools=&quot;http://schemas.android.com/tools&quot;@GT
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474625.3313">viewModel.findAll().observe(<span class="hljs-keyword">this</span>) { rooms <span class="hljs-meta">@LAMBDA</span>
+<pre class="highlight"><code class="language-kotlin" id="1755670401075.5325">viewModel.findAll().observe(<span class="hljs-keyword">this</span>) { rooms <span class="hljs-meta">@LAMBDA</span>
     adapter.update(rooms)
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474625.3313')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401075.5325')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -27367,7 +27367,7 @@ xmlns:tools=&quot;http://schemas.android.com/tools&quot;@GT
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-toml" id="1755669474626.1223"><span class="hljs-section">[versions]</span>
+<pre class="highlight"><code class="language-toml" id="1755670401075.2039"><span class="hljs-section">[versions]</span>
 <span class="hljs-comment"># ... other versions</span>
 <span class="hljs-attr">room</span> = <span class="hljs-string">&quot;2.6.1&quot;</span>
 <span class="hljs-attr">ksp</span> = <span class="hljs-string">&quot;2.0.21-1.0.27&quot;</span>
@@ -27378,7 +27378,7 @@ xmlns:tools=&quot;http://schemas.android.com/tools&quot;@GT
 <span class="hljs-attr">androidx-room-compiler</span> = { module = <span class="hljs-string">&quot;androidx.room:room-compiler&quot;</span>, version.ref = <span class="hljs-string">&quot;room&quot;</span> }
 <span class="hljs-attr">androidx-room-ktx</span> = { module = <span class="hljs-string">&quot;androidx.room:room-ktx&quot;</span>, version.ref = <span class="hljs-string">&quot;room&quot;</span> }
 <span class="hljs-attr">androidx-lifecycle-viewmodel-ktx</span> = { group = <span class="hljs-string">&quot;androidx.lifecycle&quot;</span>, name = <span class="hljs-string">&quot;lifecycle-viewmodel-ktx&quot;</span>, version.ref = <span class="hljs-string">&quot;lifecycleRuntimeKtx&quot;</span> }
-<span class="hljs-attr">androidx-lifecycle-livedata-ktx</span> = { group = <span class="hljs-string">&quot;androidx.lifecycle&quot;</span>, name = <span class="hljs-string">&quot;lifecycle-livedata-ktx&quot;</span>, version.ref = <span class="hljs-string">&quot;lifecycleRuntimeKtx&quot;</span> }</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474626.1223')">Copy</button></pre>
+<span class="hljs-attr">androidx-lifecycle-livedata-ktx</span> = { group = <span class="hljs-string">&quot;androidx.lifecycle&quot;</span>, name = <span class="hljs-string">&quot;lifecycle-livedata-ktx&quot;</span>, version.ref = <span class="hljs-string">&quot;lifecycleRuntimeKtx&quot;</span> }</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401075.2039')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -27392,10 +27392,10 @@ xmlns:tools=&quot;http://schemas.android.com/tools&quot;@GT
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474626.3416">plugins {
+<pre class="highlight"><code class="language-kotlin" id="1755670401075.336">plugins {
     <span class="hljs-comment">// ... other plugins</span>
     id(<span class="hljs-string">&quot;com.google.devtools.ksp&quot;</span>) version libs.versions.ksp apply <span class="hljs-literal">false</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474626.3416')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401075.336')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -27403,10 +27403,10 @@ xmlns:tools=&quot;http://schemas.android.com/tools&quot;@GT
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474626.3003">plugins {
+<pre class="highlight"><code class="language-kotlin" id="1755670401075.2913">plugins {
     <span class="hljs-comment">// ... other plugins</span>
     id(<span class="hljs-string">&quot;com.google.devtools.ksp&quot;</span>)
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474626.3003')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401075.2913')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -27417,11 +27417,11 @@ xmlns:tools=&quot;http://schemas.android.com/tools&quot;@GT
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-groovy" id="1755669474626.415">implementation(libs.androidx.room.ktx)
+<pre class="highlight"><code class="language-groovy" id="1755670401075.964">implementation(libs.androidx.room.ktx)
 implementation(libs.androidx.room.runtime)
 ksp(libs.androidx.room.compiler)
 implementation(libs.androidx.lifecycle.viewmodel.ktx)
-implementation(libs.androidx.lifecycle.livedata.ktx)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474626.415')">Copy</button></pre>
+implementation(libs.androidx.lifecycle.livedata.ktx)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401075.964')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -27464,9 +27464,9 @@ implementation(libs.androidx.lifecycle.livedata.ktx)</code><button class="btn-co
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474626.4304"><span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> viewModel: RoomViewModel <span class="hljs-keyword">by</span> viewModels {
+<pre class="highlight"><code class="language-kotlin" id="1755670401075.29"><span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> viewModel: RoomViewModel <span class="hljs-keyword">by</span> viewModels {
     RoomViewModel.factory
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474626.4304')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401075.29')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -27502,7 +27502,7 @@ implementation(libs.androidx.lifecycle.livedata.ktx)</code><button class="btn-co
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474626.8875"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">findAll</span><span class="hljs-params">()</span></span> {
+<pre class="highlight"><code class="language-kotlin" id="1755670401075.95"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">findAll</span><span class="hljs-params">()</span></span> {
       viewModelScope.launch(context = Dispatchers.IO) {
           runCatching { ApiServices.roomsApiService.findAll().execute() }
               .onSuccess {
@@ -27550,7 +27550,7 @@ implementation(libs.androidx.lifecycle.livedata.ktx)</code><button class="btn-co
                   roomsState.value = RoomList(rooms, it.message)
               }
       }
-  }</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474626.8875')">Copy</button></pre>
+  }</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401075.95')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -27562,7 +27562,7 @@ implementation(libs.androidx.lifecycle.livedata.ktx)</code><button class="btn-co
 <p>Create a new enum called <code>NetworkState</code></p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474626.683"><span class="hljs-keyword">enum</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">NetworkState</span> { ONLINE, OFFLINE }</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474626.683')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1755670401076.8403"><span class="hljs-keyword">enum</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">NetworkState</span> { ONLINE, OFFLINE }</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401076.8403')">Copy</button></pre>
 </div>
 </div>
 </li>
@@ -27570,7 +27570,7 @@ implementation(libs.androidx.lifecycle.livedata.ktx)</code><button class="btn-co
 <p>Create a property in <code>RoomViewModel</code> to expose this state. By default the state is ONLINE</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474626.5598"><span class="hljs-keyword">var</span> networkState <span class="hljs-keyword">by</span> <span class="hljs-symbol">mutableStateOf@</span><span class="hljs-symbol">LTNetworkState@</span>GT(NetworkState.ONLINE)</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474626.5598')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1755670401076.162"><span class="hljs-keyword">var</span> networkState <span class="hljs-keyword">by</span> <span class="hljs-symbol">mutableStateOf@</span><span class="hljs-symbol">LTNetworkState@</span>GT(NetworkState.ONLINE)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401076.162')">Copy</button></pre>
 </div>
 </div>
 </li>
@@ -27578,7 +27578,7 @@ implementation(libs.androidx.lifecycle.livedata.ktx)</code><button class="btn-co
 <p>You can add a new Observable in your activity <code>RoomListActivity</code> and <code>RoomActivity</code> to display a message when the data will be loaded from the local database</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474626.1384"> <span class="hljs-keyword">val</span> state = viewModel.networkState
+<pre class="highlight"><code class="language-kotlin" id="1755670401076.6187"> <span class="hljs-keyword">val</span> state = viewModel.networkState
 
 <span class="hljs-keyword">if</span> (state == NetworkState.OFFLINE) {
     Toast.makeText(
@@ -27587,7 +27587,7 @@ implementation(libs.androidx.lifecycle.livedata.ktx)</code><button class="btn-co
         Toast.LENGTH_LONG
     )
         .show()
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474626.1384')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401076.6187')">Copy</button></pre>
 </div>
 </div>
 </li>
@@ -27595,7 +27595,7 @@ implementation(libs.androidx.lifecycle.livedata.ktx)</code><button class="btn-co
 <p>Update the state in the methods <code>findAll</code>, <code>findById</code>, 'save@backtick@ in <code>RoomViewModel</code> when you use the API or the database. Be careful you need to do this update on the main thread and you have to use this coroutine scope (<code>Dispatcher.Main</code>).</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755669474627.7004"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">findById</span><span class="hljs-params">(roomId: <span class="hljs-type">Long</span>)</span></span>: <span class="hljs-symbol">LiveData@</span><span class="hljs-symbol">LTRoomDto@</span>GT =
+<pre class="highlight"><code class="language-kotlin" id="1755670401076.403"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">findById</span><span class="hljs-params">(roomId: <span class="hljs-type">Long</span>)</span></span>: <span class="hljs-symbol">LiveData@</span><span class="hljs-symbol">LTRoomDto@</span>GT =
     liveData(Dispatchers.IO) { <span class="hljs-comment">// (2)</span>
         runCatching {
             <span class="hljs-comment">// We call the remote API</span>
@@ -27610,7 +27610,7 @@ implementation(libs.androidx.lifecycle.livedata.ktx)</code><button class="btn-co
             }.toDto()
             emit(room)
         }
-    }</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474627.7004')">Copy</button></pre>
+    }</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401076.403')">Copy</button></pre>
 </div>
 </div>
 </li>
@@ -27693,7 +27693,7 @@ HTTP 2 n\u2019impose pas de s\xE9curiser les \xE9changes en cryptant les informa
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474671.8745">telnet www.google.fr <span class="hljs-number">80</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474671.8745')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755670401269.835">telnet www.google.fr <span class="hljs-number">80</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401269.835')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -27708,9 +27708,9 @@ HTTP 2 n\u2019impose pas de s\xE9curiser les \xE9changes en cryptant les informa
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474671.7058">GET / HTTP/<span class="hljs-number">1.1</span>
+<pre class="highlight"><code class="language-java" id="1755670401269.3262">GET / HTTP/<span class="hljs-number">1.1</span>
 Host: www.google.fr
-Accept-Language: fr</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474671.7058')">Copy</button></pre>
+Accept-Language: fr</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401269.3262')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -27718,7 +27718,7 @@ Accept-Language: fr</code><button class="btn-copy-code" onclick="copyToClipboard
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755669474671.306">HTTP/<span class="hljs-number">1.1</span> <span class="hljs-number">200</span> OK
+<pre class="highlight"><code class="language-java" id="1755670401270.4285">HTTP/<span class="hljs-number">1.1</span> <span class="hljs-number">200</span> OK
 Date: Tue, <span class="hljs-number">12</span> Jul <span class="hljs-number">2016</span> <span class="hljs-number">07</span>:<span class="hljs-number">10</span>:<span class="hljs-number">23</span> GMT
 Expires: -<span class="hljs-number">1</span>
 Cache-Control: <span class="hljs-keyword">private</span>, max-age=<span class="hljs-number">0</span>
@@ -27734,7 +27734,7 @@ Transfer-Encoding: chunked
 
 <span class="hljs-meta">@LT</span>!doctype html<span class="hljs-meta">@GT</span><span class="hljs-meta">@LThtml</span> itemscope=<span class="hljs-string">&quot;&quot;</span> itemtype=<span class="hljs-string">&quot;http://schema.org/WebPage&quot;</span> lang=<span class="hljs-string">&quot;fr&quot;</span><span class="hljs-meta">@GT</span><span class="hljs-meta">@LThead</span><span class="hljs-meta">@GT</span><span class="hljs-meta">@LTmeta</span> content=<span class="hljs-string">&quot;text/html; charset=UTF-8&quot;</span> http-equiv=<span class="hljs-string">&quot;Content-Type&quot;</span><span class="hljs-meta">@GT</span><span class="hljs-meta">@LTmeta</span> content=<span class="hljs-string">&quot;/images/branding/googleg/1x/googleg_standard_color_128dp.png&quot;</span> itemprop=<span class="hljs-string">&quot;image&quot;</span><span class="hljs-meta">@GT</span>
 <span class="hljs-comment">//\u2026\u2026\u2026..</span>
-<span class="hljs-meta">@LT</span>/html<span class="hljs-meta">@GT</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474671.306')">Copy</button></pre>
+<span class="hljs-meta">@LT</span>/html<span class="hljs-meta">@GT</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401270.4285')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -28227,5 +28227,5 @@ Une RFC peut avoir plusieurs status : Proposed Standard, Draft Standard et Inter
 </div>
 </div>
 </div>
-</div>`;var u=new Map;u.set("gameboard_score_multiplaform",le);u.set("score_jeu_soci_te_multiplaform",oe);u.set("install_development_environment",re);u.set("git",pe);u.set("gradle",ce);u.set("unit_test_in_java",de);u.set("spring_intro",ue);u.set("spring_ioc",he);u.set("spring_data",me);u.set("spring_web",ve);u.set("spring_security",ge);u.set("kotlin_for_java_developer",be);u.set("deploy_webapp_on_clever_cloud",fe);u.set("android_introduction",ye);u.set("android_first_app",je);u.set("android_add_activity",we);u.set("android_update_ui",ke);u.set("android_add_menu",_e);u.set("android_add_activity_list",qe);u.set("android_call_remote_api",xe);u.set("android_database_room_viewmodel",Se);u.set("http",Te);u.set("internet",Ce);function Je(t,f){if(t&1&&(a(0,"div",6),s(1),e()),t&2){let n=f.$implicit;p(),b(n)}}var i=(()=>{class t{constructor(n){this.domSanitizer=n,this.title="",this.author="devmind",this.publicationDate="",this.category="",this.keywords=[],this.description="",this.filename="",this.folder="",this.image="",this.type="blog",this.content=null}ngOnInit(){let l=(o.get(this.filename)||u.get(this.filename)||"").replaceAll("&amp;quot;","&quot;").replaceAll("&amp;apos;","&apos;").replaceAll("@link@",this.filename+".html").replaceAll("@dollar@","$").replaceAll("@GT","&gt;").replaceAll("@LT","&lt;").replaceAll(/@<span class="([\w\s-_]*)">LT/gi,"<span>&lt;").replaceAll(/@<span class="([\w\s-_]*)">GT/gi,"<span>&gt;").replaceAll("@LAMBDA","->").replaceAll("@ARROW","=>").replaceAll(/@<span class="([\w\s-_]*)">LAMBDA/gi,'<span class="hljs-title class_">->').replaceAll(/@<span class="([\w\s-_]*)">ARROW/gi,'<span class="hljs-title class_">=>').replaceAll("@backtick@","`").replaceAll("&amp;#xEA;","&ecirc;").replaceAll('<span class="icon">[flask&#93;</span>','<img src="/img/ic_flask.svg" style="width: 1em"/>').replaceAll('<span class="hljs-meta">@backtick</span>@',"`").replaceAll('<span class="hljs-meta">@backtick</span><span class="hljs-meta">@',"`").replaceAll('<span class="hljs-meta">@dollar</span>@',"$").replaceAll('<span class="hljs-symbol">&amp;lt;</span>',"&lt;").replaceAll('<span class="hljs-symbol">&amp;gt;</span>',"&gt;").replaceAll('@</span><span class="hljs-symbol">LT',"&lt;").replaceAll('@</span><span class="hljs-symbol">GT',"&gt;").replaceAll("@</span>GT","&gt;");this.content=this.domSanitizer.bypassSecurityTrustHtml(l)}routerlinkClicked(n){let A=n.target.attributes.getNamedItem("fragment")?.value;A&&(console.log("Go on",A),document.querySelector(A)?.scrollIntoView({block:"center"}))}static{this.\u0275fac=function(l){return new(l||t)(E($))}}static{this.\u0275cmp=h({type:t,selectors:[["app-asciidoc-viewer"]],inputs:{title:"title",author:"author",publicationDate:"publicationDate",category:"category",keywords:"keywords",description:"description",filename:"filename",folder:"folder",image:"image",type:"type"},standalone:!0,features:[m],decls:10,vars:4,consts:[[1,"dm-block--blog"],[1,"devmind-section"],[1,"blog-keywords"],[1,"dm-blog--info-date"],["class","dm-blog--keyword-detail",4,"ngFor","ngForOf"],[1,"preview",3,"click","innerHTML"],[1,"dm-blog--keyword-detail"]],template:function(l,c){l&1&&(a(0,"div",0)(1,"div",1)(2,"h1"),s(3),e(),a(4,"div",2)(5,"div",3),s(6),e(),j(7,Je,2,1,"div",4),s(8,"\xA0 "),e(),a(9,"div",5),L("click",function(ze){return c.routerlinkClicked(ze)}),e()()()),l&2&&(p(3),b(c.title),p(3),b(c.publicationDate),p(),d("ngForOf",c.keywords),p(2),d("innerHTML",c.content,W))},dependencies:[_],styles:[`h1{margin-top:.5em}.dm-blog--info-date{font-size:smaller;color:#424242;border:1px solid #aaa;border-radius:24px;padding:.5em 1em;margin-right:.5em;display:inline}.blog-keywords{display:flex;margin-bottom:1em}.blog-keywords .dm-blog--keyword-detail{background-color:#ccc;color:#424242;padding:.5em 1em;margin-right:.5em;border-radius:24px;font-size:smaller}.toc{background-color:#ccc;margin-top:1em;border:1px solid #ccc;padding:1em;border-radius:8px}.toc #toctitle{font-weight:700;margin-bottom:.5em}img{max-width:100%;height:auto}.imageblock>.content{display:flex;justify-content:center;align-items:center}.highlight{display:block;overflow-x:auto;background:#f3f3f3;color:#444;padding:1.5em;box-shadow:0 8px 16px #00000026;border-radius:8px}code.hljs{padding:3px 5px}.hljs-comment{color:#697070}.hljs-punctuation,.hljs-tag{color:#444a}.hljs-tag .hljs-attr,.hljs-tag .hljs-name{color:#444}.hljs-attribute,.hljs-doctag,.hljs-keyword,.hljs-meta .hljs-keyword,.hljs-name,.hljs-selector-tag{font-weight:700}.hljs-deletion,.hljs-number,.hljs-quote,.hljs-selector-class,.hljs-selector-id,.hljs-string,.hljs-template-tag,.hljs-type{color:#800}.hljs-section,.hljs-title{color:#800;font-weight:700}.hljs-link,.hljs-operator,.hljs-regexp,.hljs-selector-attr,.hljs-selector-pseudo,.hljs-symbol,.hljs-template-variable,.hljs-variable{color:#ab5656}.hljs-literal{color:#695}.hljs-addition,.hljs-built_in,.hljs-bullet,.hljs-code{color:#397300}.hljs-meta{color:#1f7199}.hljs-meta .hljs-string{color:#38a}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}.language-kotlin:before{display:block;float:right;content:"kotlin";font-weight:700;text-transform:uppercase}.language-typescript:before{display:block;float:right;content:"typescript";font-weight:700;text-transform:uppercase}.language-java:before{display:block;float:right;content:"java";font-weight:700;text-transform:uppercase}.language-javascript:before{display:block;float:right;content:"javascript";font-weight:700;text-transform:uppercase}.language-shell:before{display:block;float:right;content:"shell";font-weight:700;text-transform:uppercase}.language-yaml:before{display:block;float:right;content:"yaml";font-weight:700;text-transform:uppercase}.language-json:before{display:block;float:right;content:"json";font-weight:700;text-transform:uppercase}.language-xml:before{display:block;float:right;content:"xml";font-weight:700;text-transform:uppercase}.language-html:before{display:block;float:right;content:"html";font-weight:700;text-transform:uppercase}.language-css:before{display:block;float:right;content:"css";font-weight:700;text-transform:uppercase}.language-scss:before{display:block;float:right;content:"scss";font-weight:700;text-transform:uppercase}
-`],encapsulation:2})}}return t})();var T=[{path:"blog/2024/server_side_rendering.html",component:i,data:{title:"Server Side Rendering",author:"Guillaume EHRET - Dev-Mind",publicationDate:"31/05/2024",category:"Web",description:"Qu'est ce que le Server Side Rendering (SSR) et comment l'utiliser dans une application Angular",keywords:["Angular"],priority:"0.6",filename:"server_side_rendering",folder:"blog/2024",image:":../../img/blog/2024/ssr_intro.png"}},{path:"blog/2022/spring_boot_starter_database_schema_initialization.html",component:i,data:{title:"Comprendre l'auto-configuration Spring Boot",author:"Guillaume EHRET - Dev-Mind",publicationDate:"13/10/2022",category:"Spring",description:"Comment initialiser le schema et user d'un microservice via un starter Spring juste avant l'initialisation de la datasource g\xE9r\xE9e par Spring, Liquibase ou Flyway. Pour cel\xE0 il faut comprendre l'auto-configuration Spring Boot",keywords:["Kotlin","Spring","Liquibase","Flyway"],priority:"0.6",filename:"spring_boot_starter_database_schema_initialization",folder:"blog/2022",image:":../../img/blog/2022/sb_starter.png"}},{path:"blog/2021/assertj_extracting_koltin.html",component:i,data:{title:"Comment utiliser la m\xE9thode extracting AssertJ en Kotlin",publicationDate:"17/09/2021",category:"Kotlin",description:"La m\xE9thode extracting de AssertJ permet de tester les propri\xE9t\xE9s d'un objet ou d'une liste d'\xE9l\xE9ments rapidement. Mais comment l'utiliser en Kotlin ?",keywords:[],priority:"0.6",filename:"assertj_extracting_koltin",folder:"blog/2021",image:":../../img/blog/2021/assertj_koltin.png"}},{path:"blog/2021/java_memoire.html",component:i,data:{title:"La m\xE9moire en Java",author:"Guillaume EHRET - Dev-Mind",publicationDate:"20/02/2021",category:"Java",description:"Comprendre comment la m\xE9moire Java est g\xE9r\xE9e pour identifier des probl\xE8mes (Serial, Paralell, G1, ZGC, Epsilon, Shenandoah)",keywords:["Java","m\xE9moire"],priority:"0.6",filename:"java_memoire",folder:"blog/2021",image:":../../img/blog/2021/jvm_memory.png"}},{path:"blog/2019/application_web_typescript.html",component:i,data:{title:"Cr\xE9er une application web en TypeScript",author:"Guillaume EHRET - Dev-Mind",publicationDate:"08/10/2019",category:"Web",description:"Cr\xE9er une application web en TypeScript",keywords:["Web","Typescript"],priority:"0.6",filename:"application_web_typescript",folder:"blog/2019",image:":../../img/blog/2019/web_typescript0.png"}},{path:"blog/2019/start_typescript_project_and_test_with_jest.html",component:i,data:{title:"D\xE9marrez un projet Typescript et testez le avec Jest",author:"Guillaume EHRET - Dev-Mind",publicationDate:"19/08/2019",category:"Web",description:"Tout savoir sur comment D\xE9marrer un projet Typescript et le tester avec Jest",keywords:["Web","Typescript","Jest"],priority:"0.6",filename:"start_typescript_project_and_test_with_jest",folder:"blog/2019",image:":../../img/blog/2019/laissez_tomber_javascript1.png"}},{path:"blog/2019/comprendre_programation_android.html",component:i,data:{title:"Comprendre la programmation Android",author:"Guillaume EHRET - Dev-Mind",publicationDate:"12/06/2019",category:"Android",description:"Eco-syst\xE8me Android",keywords:["Android"],priority:"0.6",filename:"comprendre_programation_android",folder:"blog/2019",image:":../../img/blog/2019/android_pf_00.png"}},{path:"blog/2019/kotlin_et_android.html",component:i,data:{title:"Kotlin langage de r\xE9f\xE9rence Android",author:"Guillaume EHRET - Dev-Mind",publicationDate:"07/06/2019",category:"Android",description:"Pourquoi utiliser Kotlin quand on d\xE9veloppe en Android",keywords:["Android"],priority:"0.6",filename:"kotlin_et_android",folder:"blog/2019",image:":../../img/blog/2019/kotlin_et_android.png"}},{path:"blog/2019/application_android_score.html",component:i,data:{title:"Application pour saisir les scores",author:"Guillaume EHRET - Dev-Mind",publicationDate:"01/01/2019",category:"Android",description:"Score jeu de soci\xE9t\xE9 permet de saisir les scores quand vous jouez entre amis \xE0 un jeu de soci\xE9t\xE9",keywords:["Android"],priority:"0.6",filename:"application_android_score",folder:"blog/2019",image:":../../img/blog/2019/score_00.png"}},{path:"blog/2018/objectif_clever_cloud_js.html",component:i,data:{title:"Objectif web server JS sur Clever Cloud",author:"Guillaume EHRET - Dev-Mind",publicationDate:"02/11/2018",category:"Web",description:"Comment installer un serveur web en JS sur Clever Cloud et le s\xE9curiser pour la production",keywords:["Web","Clever","Cloud"],priority:"0.6",filename:"objectif_clever_cloud_js",folder:"blog/2018",image:"../../img/blog/2018/objectif_clever_cloud_00.png"}},{path:"blog/2018/installer_xps_ubuntu.html",component:i,data:{title:"Installer Ubuntu en dual boot sur XPS 15",author:"Guillaume EHRET - Dev-Mind",publicationDate:"16/09/2018",category:"Ubuntu",description:"Comment installer Ubuntu sur XPS 15 \xE0 c\xF4t\xE9 de Windows",keywords:["Syst\xE8me","Ubuntu"],priority:"0.6",filename:"installer_xps_ubuntu",folder:"blog/2018",image:"../../img/blog/2018/ubuntun00.png"}},{path:"blog/2018/slide_avec_revealjs_asciidoctor.html",component:i,data:{title:"G\xE9n\xE9rer vos slides avec Reveal.js et Asciidoctor",author:"Guillaume EHRET - Dev-Mind",publicationDate:"17/06/2018",category:"Conference",description:"G\xE9n\xE9rer vos slides avec Reveal.js et Asciidoctor",keywords:["Web","Conference","Slide","Asciidoctor"],priority:"0.6",filename:"slide_avec_revealjs_asciidoctor",folder:"blog/2018",image:"../../img/blog/2018/reveal_00.png"}},{path:"blog/2018/premiere_conference_au_togo.html",component:i,data:{title:"Premi\xE8re \xE9dition de ITogo.conf \xE0 Lom\xE9 au Togo",author:"Guillaume EHRET - Dev-Mind",publicationDate:"11/06/2018",category:"Conference",description:"Premi\xE8re \xE9dition de ITogo.conf \xE0 Lom\xE9 au Togo les 7 et 9 juin 2018",keywords:["Web","Conference","Android"],priority:"0.6",filename:"premiere_conference_au_togo",folder:"blog/2018",image:"../../img/blog/2018/itogo_00.png"}},{path:"blog/2018/secret_de_la_motivation.html",component:i,data:{title:"La motivation en entreprise",author:"Guillaume EHRET - Dev-Mind",publicationDate:"05/04/2018",category:"Agilit\xE9",description:"Quelles sont les secrets pour avoir des \xE9quipes motiv\xE9es",keywords:["Agilit\xE9","Motivation"],priority:"0.6",filename:"secret_de_la_motivation",folder:"blog/2018",image:"../../img/blog/2018/motivation_00.png"}},{path:"blog/2018/mongo_full_text_index.html",component:i,data:{title:"Recherche Fulltext dans une application SpringBoot via MongoDB",author:"Guillaume EHRET - Dev-Mind",publicationDate:"23/02/2018",category:"Java",description:"Les diff\xE9rentes \xE9tapes pour ajouter une recherche full text dans une application SpringBoot \xE9crite en Kotlyn",keywords:["Spring","MongoDb","Kotlyn"],priority:"0.6",filename:"mongo_full_text_index",folder:"blog/2018",image:"../../img/blog/2018/mongo_full_text_index_00.png"}},{path:"blog/2018/publish_maven_central.html",component:i,data:{title:"Publier une librairie open source sur Maven Central",author:"Guillaume EHRET - Dev-Mind",publicationDate:"22/01/2018",category:"Java",description:"les astuces pour pouvoir publier une librairie open source sur Maven Central",keywords:["Java","Gradle","OSS"],priority:"0.6",filename:"publish_maven_central",folder:"blog/2018",image:"../../img/blog/2018/mavencentral_00.png"}},{path:"blog/2018/mockserver.html",component:i,data:{title:"Tester Spring WebFlux WebClient en Junit 4 ou 5 avec MockWebServer",author:"Guillaume EHRET - Dev-Mind",publicationDate:"15/01/2018",category:"Java",description:"comment utiliser mockwebserver pour tester vos services Spring utilisant WebClient",keywords:["Java","Junit","Spring","Boot","WebClient"],priority:"0.6",filename:"mockserver",folder:"blog/2018",image:"../../img/blog/2018/mockwebserver_00.png"}},{path:"blog/2018/junit5_and_springboot.html",component:i,data:{title:"Utiliser Junit 5 dans une application Spring Boot",author:"Guillaume EHRET - Dev-Mind",publicationDate:"08/01/2018",category:"Java",description:"Tout ce qu'il fut savoir pour utiliser la derni\xE8re version de Junit 5 dans un projet Java et plus particuli\xE8rement dans un projet Spring Boot",keywords:["Java","Junit","Spring","Boot"],priority:"0.6",filename:"junit5_and_springboot",folder:"blog/2018",image:"../../img/blog/2018/junit5_00.png"}},{path:"blog/2018/utiliser_api_envoi_email.html",component:i,data:{title:"Utiliser une API d'envoi de mail en Java",author:"Guillaume EHRET - Dev-Mind",publicationDate:"04/01/2018",category:"Java",description:"Utiliser une API d'envoi de mail en Java dans une application Spring Boot",keywords:["Java","API","Email"],priority:"0.6",filename:"utiliser_api_envoi_email",folder:"blog/2018",image:"../../img/blog/2018/email_00.png"}},{path:"blog/2018/do_your_blog_yourself.html",component:i,data:{title:"Do your Blog yourself",author:"Guillaume EHRET - Dev-Mind",publicationDate:"02/01/2018",category:"Web",description:"Comment construire le blog parfait",keywords:["Web","Blog","Asciidoc","Asciidoctor","CMS","Clever","Cloud"],priority:"0.6",filename:"do_your_blog_yourself",folder:"blog/2018",image:"../../img/blog/2018/siteweb_00.jpg"}},{path:"blog/2017/dotcss.html",component:i,data:{title:"DotCSS 2017",author:"Guillaume EHRET - Dev-Mind",publicationDate:"01/12/2017",category:"Web",description:"Retour sur l'\xE9dtion 2017 de dotCSS",keywords:["Internet","Web","CSS","MediaQueries","Font"],priority:"0.6",filename:"dotcss",folder:"blog/2017",image:"../../img/blog/2017/dotcss_00.jpg"}},{path:"blog/2017/http.html",component:i,data:{title:"Le protocole HTTP",author:"Guillaume EHRET - Dev-Mind",publicationDate:"27/11/2017",category:"Web",description:"Le protocole HTTP",keywords:["Internet","Web"],priority:"0.6",filename:"http",folder:"blog/2017",image:"../../img/blog/2017/web_00.png"}},{path:"blog/2017/web.html",component:i,data:{title:"Le World Wide Web",author:"Guillaume EHRET - Dev-Mind",publicationDate:"25/11/2017",category:"Web",description:"Retour sur la cr\xE9ation du world wide web",keywords:["Internet","Web"],priority:"0.6",filename:"web",folder:"blog/2017",image:"../../img/blog/2017/web_00.png"}},{path:"blog/2017/internet.html",component:i,data:{title:"Retour sur la cr\xE9ation d'Internet",author:"Guillaume EHRET - Dev-Mind",publicationDate:"20/11/2017",category:"Web",description:"Retour sur la cr\xE9ation d'Internet",keywords:["Internet"],priority:"0.6",filename:"internet",folder:"blog/2017",image:"../../img/blog/2017/internet_00.png"}},{path:"blog/2017/site_wassadou.html",component:i,data:{title:"Solidarit\xE9 Wassadou Pont-Trambouze",author:"Guillaume EHRET - Dev-Mind",publicationDate:"05/08/2017",category:"Web",description:"Retour sur la cr\xE9ation du site Solidarit\xE9 Wassadou Pont-Trambouze",keywords:["Web","Firebase","Serverless"],priority:"0.6",filename:"site_wassadou",folder:"blog/2017",image:"../../img/blog/2017/wassadou_00.png"}},{path:"blog/2017/workboxjs.html",component:i,data:{title:"Workbox la toolbox pour les progressive webapps",author:"Guillaume EHRET - Dev-Mind",publicationDate:"02/07/2017",category:"Web",description:"Comment utiliser Workbox la nouvelle toolbox de Google faite pour faciiter la cr\xE9ation de vos progressive webapps",keywords:["Web","PWA","ServiceWorker","Workbox"],priority:"0.6",filename:"workboxjs",folder:"blog/2017",image:"../../img/blog/2017/workbox_00.png"}},{path:"blog/2017/creer_service_worker.html",component:i,data:{title:"Cr\xE9er un Service Worker",author:"Guillaume EHRET - Dev-Mind",publicationDate:"28/06/2017",category:"Web",description:"Zoom sur sw-precache et sw-toolbox permettant de mettre en place des services workers",keywords:["Web","PWA","ServiceWorker"],priority:"0.6",filename:"creer_service_worker",folder:"blog/2017",image:"../../img/blog/2017/creer_service_worker_00.png"}},{path:"blog/2017/service_worker.html",component:i,data:{title:"Les services workers",author:"Guillaume EHRET - Dev-Mind",publicationDate:"20/06/2017",category:"Web",description:"Comment marche les progressive webapps et focus sur les services workers",keywords:["Web","PWA","ServiceWorker"],priority:"0.6",filename:"service_worker",folder:"blog/2017",image:"../../img/blog/2017/service_worker_00.png"}},{path:"blog/2017/highcharts_stackedarea.html",component:i,data:{title:"Highcharts et staked area avec des valeurs n\xE9gatives et positives",author:"Guillaume EHRET - Dev-Mind",publicationDate:"29/05/2017",category:"JavaScript Web",description:"Comment afficher des graphiques de type staked area (zone empil\xE9e) avec Highcharts quand le jeu de donn\xE9es contient \xE0 la fois des valeurs n\xE9gatives et des valeurs positives",keywords:["JavaScripy","Graph","Highcharts"],priority:"0.6",filename:"highcharts_stackedarea",folder:"blog/2017",image:"../../img/blog/2017/highcharts_stackedarea_00.png"}},{path:"blog/2017/nouveau_site_asciidoctor.html",component:i,data:{title:"Cr\xE9er son blog en Asciidoc via Asciidoctor",author:"Guillaume EHRET - Dev-Mind",publicationDate:"09/05/2017",category:"Web",description:"Migrer son blog de blogger vers un blog g\xE9n\xE9r\xE9 en Asciidoc via Asciidoctor",keywords:["Web","Blog","Asciidoc","Asciidoctor","CMS"],priority:"0.6",filename:"nouveau_site_asciidoctor",folder:"blog/2017",image:"../../img/blog/2017/nouveau_site_asciidoctor_00.png"}},{path:"blog/2017/test_services_rest_springboot.html",component:i,data:{title:"Des tests simples de vos services REST avec SpringBoot",author:"Guillaume EHRET - Dev-Mind",publicationDate:"15/03/2017",category:"Java",description:"SpringBoot pour \xE9crire des tests simples, lisibles et rapides de vos services REST",keywords:["Java","Spring","SpringBoot"],priority:"0.6",filename:"test_services_rest_springboot",folder:"blog/2017",image:"../../img/blog/2017/test_services-rest-springboot_00.png"}},{path:"blog/2017/ecrire_ses_scripts_gradle_en_kotlin.html",component:i,data:{title:"Scripts Gradle : Kotlin vs Groovy",author:"Guillaume EHRET - Dev-Mind",publicationDate:"12/01/2017",category:"Gradle Kotlin",description:"Diff\xE9rences entre un script Groovy et Kotlin en essayant de param\xE9trer le plugin gradle-node-plugin",keywords:["Java","Gradle","Kotlin"],priority:"0.6",filename:"ecrire_ses_scripts_gradle_en_kotlin",folder:"blog/2017",image:"../../img/blog/2017/ecrire_ses_scripts_gradle_en_kotlin_00.png"}},{path:"blog/2016/ngeurope_angular2_unittest.html",component:i,data:{title:"Tester une application Angular 2",author:"Guillaume EHRET - Dev-Mind",publicationDate:"24/10/2016",category:"Web",description:"Ng-europe Paris du 24 au 26 octobre 2016 Tester une application Angular 2",keywords:["Angular","Angular2","ng-europe","Test"],priority:"0.6",filename:"ngeurope_angular2_unittest",folder:"blog/2016",image:"../../img/blog/2016/ngeurope/ngeurope-angulartest00.jpg"}},{path:"blog/2016/ngeurope_angular_cli.html",component:i,data:{title:"Cycle de vie d\u2019une application Angular 2 via Angular CLI",author:"Guillaume EHRET - Dev-Mind",publicationDate:"24/10/2016",category:"Web",description:"Ng-europe Paris du 24 au 26 octobre 2016 Retour sur le talk de Hans Larsen Angular CLI &amp; You",keywords:["Angular","Angular2","ng-europe","Web"],priority:"0.6",filename:"ngeurope_angular_cli",folder:"blog/2016",image:"../../img/blog/2016/ngeurope/ngeurope-angularcli00.jpg"}},{path:"blog/2016/ngeurope_keynote_misko_hevery.html",component:i,data:{title:"Keynote de Mi\u0161ko Hevery \xE0 ng-europe 2016",author:"Guillaume EHRET - Dev-Mind",publicationDate:"24/10/2016",category:"Web",description:"Ng-europe Paris du 24 au 26 octobre 2016 retour sur la keynote de Mi\u0161ko Hevery \xE0 ng-europe 2016",keywords:["Angular","Angular2","ng-europe","Web"],priority:"0.6",filename:"ngeurope_keynote_misko_hevery",folder:"blog/2016",image:"../../img/blog/2016/ngeurope/ngeurope-keynote-misko-hevery00.jpg"}},{path:"blog/2016/ngeurope_mobile_first_is_not_mobile_only.html",component:i,data:{title:"Mobile first is not mobile only (ng-europe 2016)",author:"Guillaume EHRET - Dev-Mind",publicationDate:"24/10/2016",category:"Web",description:"Retour sur les conf\xE9rences de Willem Veelentur et de Christian Weyer &amp; Thorsten Hans sur les rendus sur mobile Angular 2 \xE0 ng-europe 2016",keywords:["Angular","Angular2","ng-europe","TypeScript"],priority:"0.6",filename:"ngeurope_mobile_first_is_not_mobile_only",folder:"blog/2016",image:"../../img/blog/2016/ngeurope/ngeurope-mobile00.jpg"}},{path:"blog/2016/ngeurope_rendering_et_angular.html",component:i,data:{title:"Angular 2 et Rendering : Universal, React Native, NativeScript",author:"Guillaume EHRET - Dev-Mind",publicationDate:"24/10/2016",category:"Web",description:"Ng-europe Paris du 24 au 26 octobre 2016 Angular 2 et Rendering : Universal, React Native, NativeScript",keywords:["Angular","Angular2","ng-europe","Universal"],priority:"0.6",filename:"ngeurope_rendering_et_angular",folder:"blog/2016",image:"../../img/blog/2016/ngeurope/ngeurope-rendering00.jpg"}},{path:"blog/2016/ngeurope_rxjs_angular2.html",component:i,data:{title:"Angular 2 et RxJS \xE0 ng-europe 2016",author:"Guillaume EHRET - Dev-Mind",publicationDate:"24/10/2016",category:"Java",description:"Ng-europe Paris du 24 au 26 octobre 2016 retour sur les talks sur RxJS",keywords:["Web","Angular","RxJs"],priority:"0.6",filename:"ngeurope_rxjs_angular2",folder:"blog/2016",image:"../../img/blog/2016/ngeurope_rxjs_angular2_00.jpg"}},{path:"blog/2016/ngeurope_typescript_et_angular.html",component:i,data:{title:"Ecrire en TypeScript une application Angular",author:"Guillaume EHRET - Dev-Mind",publicationDate:"24/10/2016",category:"Web",description:"Ng-europe Paris du 24 au 26 octobre 2016 retour comment \xE9crire en TypeScript une application Angular 2",keywords:["Angular","Angular2","ng-europe","TypeScript"],priority:"0.6",filename:"ngeurope_typescript_et_angular",folder:"blog/2016",image:"../../img/blog/2016/ngeurope/ngeurope-typescript00.jpg"}},{path:"blog/2016/springboot_kotlin.html",component:i,data:{title:"Kotlin dans le monde Spring",author:"Guillaume EHRET - Dev-Mind",publicationDate:"23/09/2016",category:"Java",description:"Kotlin dans le monde Spring",keywords:["Java","SpringBoot","Kotlin"],priority:"0.6",filename:"springboot_kotlin",folder:"blog/2016",image:"../../img/blog/2016/springkotlin_00.png"}},{path:"blog/2016/springboot_http2.html",component:i,data:{title:"HTTP 2 comment l'utiliser dans une webapp Spring Boot",author:"Guillaume EHRET - Dev-Mind",publicationDate:"10/07/2016",category:"Java",description:"HTTP 2 comment l'utiliser dans une webapp Spring Boot",keywords:["Java","SpringBoot","HTTP/2"],priority:"0.6",filename:"springboot_http2",folder:"blog/2016",image:"../../img/blog/2016/springhttp2_00.png"}},{path:"blog/2016/springboot_devtools.html",component:i,data:{title:"Optimiser son quotidien de d\xE9veloppeur avec Spring DevTools",author:"Guillaume EHRET - Dev-Mind",publicationDate:"29/06/2016",category:"Java",description:"Optimiser son quotidien de d\xE9veloppeur avec Spring DevTools",keywords:["Java","SpringBoot"],priority:"0.6",filename:"springboot_devtools",folder:"blog/2016",image:"../../img/blog/2016/springdevtools_00.png"}},{path:"blog/2016/headlesss_testing.html",component:i,data:{title:"Installer un serveur X virtuel pour ex\xE9cuter ses tests headless",author:"Guillaume EHRET - Dev-Mind",publicationDate:"03/06/2016",category:"Java",description:"Headless testing : comment installer un serveur X virtuel pour ex\xE9cuter vos tests unitaires ou end-to-end",keywords:["Java","SpringBoot","Kotlin"],priority:"0.6",filename:"headlesss_testing",folder:"blog/2016",image:"../../img/blog/2016/testheadless_00.png"}},{path:"blog/2016/flexbox_layouts_faciles.html",component:i,data:{title:"Flexbox et la simplification des layouts",author:"Guillaume EHRET - Dev-Mind",publicationDate:"18/05/2016",category:"Web",description:"Utiliser les flexbox pour disposer les \xE9l\xE9ments dans votre page",keywords:["Web","CSS","Flexbox"],priority:"0.6",filename:"flexbox_layouts_faciles",folder:"blog/2016",image:"../../img/blog/2016/flexbox_layouts_faciles_00.png"}},{path:"blog/2016/communication_et_neuroscience.html",component:i,data:{title:"Communication : le cerveau \xE0 la recherche de la r\xE9alit\xE9",author:"Guillaume EHRET - Dev-Mind",publicationDate:"04/03/2016",category:"Agilit\xE9",description:"Agile Lyon sur la communication : le cerveau \xE0 la recherche de la r\xE9alit\xE9 retour sur intervention de Yves Rosseti",keywords:["Agilit\xE9","Communication"],priority:"0.6",filename:"communication_et_neuroscience",folder:"blog/2016",image:"../../img/blog/2016/communication_et_neuroscience_00.png"}},{path:"blog/2016/sorganiser_pour_la_complexite.html",component:i,data:{title:"S'organiser pour la complexit\xE9",author:"Guillaume EHRET - Dev-Mind",publicationDate:"22/02/2016",category:"Agile method",description:"S'organiser pour la complexit\xE9",keywords:["Agile","method","Complexity"],priority:"0.6",filename:"sorganiser_pour_la_complexite",folder:"blog/2016",image:"../../img/blog/2016/complexity_00.jpg"}},{path:"blog/2016/pousser_message_slack_en_java.html",component:i,data:{title:"Pousser un message Slack en Java",author:"Guillaume EHRET - Dev-Mind",publicationDate:"29/01/2016",category:"Java",description:"Pousser un message Slack en Java",keywords:["Java"],priority:"0.6",filename:"pousser_message_slack_en_java",folder:"blog/2016",image:"../../img/blog/2016/slack_00.png"}},{path:"blog/2015/12_patterns_transition_agile.html",component:i,data:{title:"12 patterns pour une transition agile",author:"Guillaume EHRET - Dev-Mind",publicationDate:"03/11/2015",category:"Agilit\xE9",description:"12 patterns pour la transition agile par Christophe Addinquy",keywords:["Agilit\xE9","Leadership","Management"],priority:"0.6",filename:"12_patterns_transition_agile",folder:"blog/2015",image:"../../img/blog/2015/transition_00.png"}},{path:"blog/2015/formes_leadership.html",component:i,data:{title:"Les diff\xE9rentes formes de leadership",author:"Guillaume EHRET - Dev-Mind",publicationDate:"15/09/2015",category:"Agilit\xE9",description:"Les diff\xE9rentes formes de leadership dans un village gaulois.... Parall\xE8le avec la c\xE9l\xE8bre BD Ast\xE9rix et Ob\xE9lix",keywords:["Agilit\xE9","Leadership","Management"],priority:"0.6",filename:"formes_leadership",folder:"blog/2015",image:"../../img/blog/2015/formes_leadership_00.jpg"}},{path:"blog/2015/java8_et_les_lambda_stream.html",component:i,data:{title:"Java 8 et les Lambda, Stream et Collectors",author:"Guillaume EHRET - Dev-Mind",publicationDate:"02/01/2015",category:"Java",description:"Tout comprendre sur les lmabda introduits dans Java 8. Manipuler les collections avec la nouvelle API Stream",keywords:["Java","Java","8","Stream","Lambda"],priority:"0.6",filename:"java8_et_les_lambda_stream",folder:"blog/2015",image:"../../img/blog/2015/java8_00.jpg"}}];function We(t,f){t&1&&(a(0,"h1"),s(1,"Le blog"),e())}function Be(t,f){t&1&&(a(0,"h1"),s(1,"Les archives du blog"),e())}function Fe(t,f){t&1&&(a(0,"p",11),s(1,"Retrouvez les derniers articles de blog de Dev-Mind."),e())}function Ne(t,f){if(t&1&&(a(0,"article",12)(1,"div",13)(2,"div",14),r(3,"img",15),e(),a(4,"h3")(5,"a",16),s(6),e()(),a(7,"p",17),s(8),e()()()),t&2){let n=f.$implicit,l=q();d("routerLink",l.postPath(n)),p(3),d("ngSrc",n.image)("alt",n.description),p(2),d("routerLink",l.postPath(n))("title",n.title),p(),b(n.title),p(2),b(n.description)}}function Ue(t,f){if(t&1){let n=B();a(0,"button",18),L("click",function(){O(n);let c=q();return J(c.displayedArticles=c.displayedArticles+4)}),s(1,"Plus d'articles... "),e()}}function He(t,f){t&1&&(a(0,"a",19),s(1,"Voir tous les articles"),e())}var P=(()=>{class t{constructor(){this.archive=!1,this.blogEntries=T.map(n=>n.data),this.displayedArticles=4}ngOnInit(){this.displayedArticles=this.archive?4e3:4}postPath(n){return["/",...n.folder.split("/"),n.filename+".html"]}static{this.\u0275fac=function(l){return new(l||t)}}static{this.\u0275cmp=h({type:t,selectors:[["app-blog"]],inputs:{archive:"archive"},standalone:!0,features:[m],decls:15,vars:10,consts:[[1,"dm-block--blog"],[1,"devmind-section"],[4,"ngIf"],["class","dm_lead",4,"ngIf"],[1,"dm-blog--container-article"],[3,"routerLink",4,"ngFor","ngForOf"],[1,"btn-group",2,"padding","1em"],[1,"btn-group--element"],["class","btn-inverse",3,"click",4,"ngIf"],["href","blog_archive.html","class","btn-inverse",4,"ngIf"],["href","/rss/blog.xml",1,"btn-inverse"],[1,"dm_lead"],[3,"routerLink"],[1,"dm-blog--article"],[1,"dm-blog--imgteaser"],["width","1500","height","764","sizes","(max-width: 100%)",3,"ngSrc","alt"],[3,"routerLink","title"],[1,"dm-blog--teaser"],[1,"btn-inverse",3,"click"],["href","blog_archive.html",1,"btn-inverse"]],template:function(l,c){l&1&&(a(0,"main")(1,"div",0)(2,"div",1),j(3,We,2,0,"h1",2)(4,Be,2,0,"h1",2)(5,Fe,2,0,"p",3),a(6,"div",4),j(7,Ne,9,7,"article",5),U(8,"slice"),e(),a(9,"div",6)(10,"div",7),j(11,Ue,2,0,"button",8)(12,He,2,0,"a",9),a(13,"a",10),s(14,"Flux RSS"),e()()()()()()),l&2&&(p(3),d("ngIf",!c.archive),p(),d("ngIf",c.archive),p(),d("ngIf",!c.archive),p(2),d("ngForOf",H(8,6,c.blogEntries,0,c.displayedArticles)),p(4),d("ngIf",!c.archive),p(),d("ngIf",!c.archive))},dependencies:[_,S,k,x,Y,K],styles:[".btn-inverse[_ngcontent-%COMP%]{margin-right:1em}"]})}}return t})();function Ve(t,f){if(t&1&&(a(0,"article",21)(1,"div",22)(2,"div",23),r(3,"img",24),e(),a(4,"h3")(5,"a",25),s(6),e()(),a(7,"p",26),s(8),e()()()),t&2){let n=f.$implicit,l=q();d("routerLink",l.postPath(n)),p(3),d("ngSrc",n.image)("alt",n.description),p(2),d("routerLink",l.postPath(n))("title",n.title),p(),b(n.title),p(2),b(n.description)}}var Ee=(()=>{class t{constructor(){this.blogEntries=T.map(n=>n.data).slice(0,2)}postPath(n){return["/",...n.folder.split("/"),n.filename+".html"]}static{this.\u0275fac=function(l){return new(l||t)}}static{this.\u0275cmp=h({type:t,selectors:[["app-home"]],standalone:!0,features:[m],decls:69,vars:1,consts:[[1,"dm-block--intro"],[1,"devmind-section"],[1,"dm_lead"],["href","https://bsky.app/profile/dev-mind.fr","rel","noopener","target","_blank"],["href","https://bsky.app/profile/dev-mind.fr","target","_blank","rel","noopener"],["src","img/contact/bsky.svg","alt","BlueSky",1,"dm-social"],["href","https://github.com/javamind","target","_blank","rel","noopener"],["src","img/contact/github.svg","alt","Github",1,"dm-social"],["href","https://www.linkedin.com/pub/guillaume-ehret/7/668/999","target","_blank","rel","noopener"],["src","img/contact/linkedin.svg","alt","Linkedin",1,"dm-social"],[1,"center","btn-group"],["href","formations.html","alt","Formations","onclick","app.changeMenu('#formation')",1,"btn"],[1,"dm-block--blog"],[1,"dm-blog--container-article"],[3,"routerLink",4,"ngFor","ngForOf"],["href","blog.html","alt","Blog","onclick","app.changeMenu('#blog')",1,"btn","btn-inverse"],[1,"dm-block--news"],["href","experience.html","alt","Experience","onclick","app.changeMenu('#experience')"],["href","https://mixitconf.org/","rel","noopener"],["href","https://github.com/javamind","rel","noopener"],["href","https://speakerdeck.com/javamind","rel","noopener"],[3,"routerLink"],[1,"dm-blog--article"],[1,"dm-blog--imgteaser"],["width","1500","height","764","sizes","(max-width: 100%)",3,"ngSrc","alt"],[3,"routerLink","title"],[1,"dm-blog--teaser"]],template:function(l,c){l&1&&(a(0,"div",0)(1,"div",1)(2,"h1"),s(3,"D\xE9veloppement & Formation"),e(),a(4,"p",2),s(5," Je me nomme "),a(6,"a",3),s(7,"Guillaume EHRET"),e(),s(8," et je propose mes services pour aider les entreprises qui souhaitent cr\xE9er de nouveaux logiciels ou s'organiser pour r\xE9ussir leurs d\xE9fis. Je peux intervenir en tant que d\xE9veloppeur exp\xE9riment\xE9 pour du conseil, de la programmation et de la formation. "),e(),a(9,"p")(10,"a",4),r(11,"img",5),e(),a(12,"a",6),r(13,"img",7),e(),a(14,"a",8),r(15,"img",9),e()(),a(16,"p",10)(17,"a",11),s(18," Voir les formations"),e()()()(),a(19,"div",12)(20,"div",1)(21,"h2"),s(22,"Derniers articles de blog"),e(),a(23,"div",13),j(24,Ve,9,7,"article",14),e(),a(25,"p",10)(26,"a",15),s(27," Voir le blog"),e()()()(),a(28,"div",16)(29,"div",1)(30,"h2"),s(31,"Actualit\xE9s"),e(),a(32,"p",2),s(33,"Vous pouvez visualiser ma page "),a(34,"a",17),s(35,"exp\xE9riences"),e(),s(36," pour voir mes clients ou employeurs depuis 20 ans. J'interviens en tant que speaker dans des conf\xE9rences et je fais aussi partie de l'\xE9quipe des organisateurs de la conf\xE9rence "),a(37,"a",18),s(38,"MiXiT"),e(),s(39," qui a lieu tous les ans \xE0 Lyon qui regroupe 1000 personnes pendant 2 jours autour de conf\xE9rences, d'ateliers avec des speakers venant du monde entier."),e(),a(40,"p",2),s(41,"Je participe \xE9galement \xE0 des projets Open Source. Vous pouvez consulter mon "),a(42,"a",19),s(43,"Github"),e(),s(44," pour plus d'informations. J'interviens \xE9galement r\xE9guli\xE8rement dans des conf\xE9rences et voici mon "),a(45,"a",20),s(46,"Speaker Deck"),e()()()(),a(47,"div",12)(48,"div",1)(49,"h2"),s(50,"Contact"),e(),a(51,"p",2),s(52," N'h\xE9sitez pas \xE0 me contacter si vous souhaitez plus d'informations"),r(53,"br"),e(),a(54,"p",2)(55,"b"),s(56,"Guillaume EHRET"),e(),r(57,"br"),a(58,"a"),s(59,"guillaume (@) dev-mind.fr"),e()(),a(60,"address",2)(61,"b"),s(62,"Dev-Mind"),e(),r(63,"br"),s(64," 14 rue des roches"),r(65,"br"),s(66," 42290 Sorbiers"),r(67,"br"),s(68," France "),e()()()),l&2&&(p(24),d("ngForOf",c.blogEntries))},dependencies:[_,x,S,k],styles:[".dm-social[_ngcontent-%COMP%]{min-width:2em;max-width:2em;width:2em;height:2em;margin-right:.5em}.dm-social[_ngcontent-%COMP%]:hover{opacity:.8}"]})}}return t})();var Le=(()=>{class t{static{this.\u0275fac=function(l){return new(l||t)}}static{this.\u0275cmp=h({type:t,selectors:[["app-experience"]],standalone:!0,features:[m],decls:741,vars:0,consts:[[1,"dm-block--intro"],[1,"devmind-section"],[1,"dm_lead"],[1,"is-large-screen"],[1,"dm-experience--graph"],[1,"dm-experience--before"],[1,"dm-experience--date"],[1,"dm-experience--step"],[1,"dm-experience--solutec"],["href","experience.html#solutec"],[1,"dm-experience--casino"],["href","experience.html#casino"],[1,"dm-experience--iorga"],["href","experience.html#iorga"],[1,"dm-experience--boiron"],["href","experience.html#boiron"],[1,"dm-experience--devmind"],["href","experience.html#experience"],[1,"dm-experience--after"],[1,"is-small-screen"],[1,"dm-block--blog"],["id","experience",1,"dm-experience--container"],["href","https://www.hopwork.com/profile/541be334e4b01245a80d52ab?q=ehret","rel","noopener"],["href","https://github.com/javamind","rel","noopener"],["href","https://speakerdeck.com/javamind","rel","noopener"],["data-value","Spring;Kotlin;Web;Android","id","fairphone",1,"dm-experience--section"],[1,"dm-experience--label-box"],[1,"dm-experience--label"],["data-value","Spring;Java;Web;Angular","id","epool",1,"dm-experience--section"],["data-value","Spring;Java;Web;Angular","id","esme",1,"dm-experience--section"],["data-value","Spring;Java;Web;Angular","id","bonita",1,"dm-experience--section"],["data-value","Spring","id","poleemploi",1,"dm-experience--section"],["data-value","Spring","id","esmeform",1,"dm-experience--section"],[1,"dm-block--news"],["id","conferences"],["href","mixitconf.org"],["data-value","Conf\xE9rence",1,"dm-experience--section"],["href","https://cfp.devoxx.fr/2019/talk/AIY-5287/Developper_une_application_Android_en_Kotlin.html"],["href","https://speakerdeck.com/javamind/developper-une-application-en-kotlin"],["href","https://cfp2018.devoxx.ma/2018/speaker/guillaume_ehret"],["href","https://speakerdeck.com/javamind/2h-pour-creer-une-application-android-en-kotlin"],["href","https://itogo.cleverapps.io/"],["href","https://speakerdeck.com/javamind/mettre-en-place-une-application-android-en-50-minutes"],["href","https://speakerdeck.com/javamind/itogo-conf-optimiser-les-performances-d-une-webapp"],["href","https://speakerdeck.com/javamind/optimiser-les-performances-dune-webapp-1"],["href","https://www.youtube.com/watch?v=1uh7IFs7_BA"],["href","https://cfp.devoxx.fr/2017/speaker/guillaume_ehret"],["href","https://speakerdeck.com/javamind/optimiser-les-performances-dune-webapp"],["href","https://www.youtube.com/watch?v=9PRPPJFaF_o"],["href","http://www.soft-shake.ch"],["href","https://speakerdeck.com/javamind/optimisez-votre-webapp"],["href","http://www.lyonjug.org/evenements/testing-1"],["href","https://speakerdeck.com/javamind/ecrire-des-tests-en-javascript"],["href","https://www.youtube.com/watch?v=E5HB62QrVbU"],["href","https://snowcamp2016.sched.com/"],["href","https://speakerdeck.com/javamind/les-tests-en-javascript-2"],["href","https://speakerdeck.com/javamind/les-tests-en-javascript-1"],["href","http://www.jugsummercamp.org/edition/6"],["href","https://speakerdeck.com/javamind/15-minutes-pour-tester-son-application-js"],["href","https://www.youtube.com/watch?v=CBskWMtTq80"],["href","http://2015.breizhcamp.org/"],["href","https://speakerdeck.com/javamind/les-tests-en-javascript"],["href","https://www.youtube.com/watch?v=qifqH8lKWXk&list=PLHWl6dPnEb4kHfPp5D8CiGNfA64HQs_Hb&index=50"],["href","https://speakerdeck.com/javamind/le-bon-testeur-il-teste-le-mauvais-testeur-il-teste-dot-dot-dot"],["href","http://www.lavajug.org/2014/09/11/le-bon-testeur.html"],["href","https://speakerdeck.com/javamind/lavajug2014-le-bon-testeur-il-teste-le-mauvais-testeur-il-teste"],["href","https://speakerdeck.com/javamind/devoxxfr2014-le-bon-testeur-il-teste-le-mauvais-testeur-il-teste"],["href","https://www.youtube.com/watch?v=jCk2H0X82qM"],["id","boiron",1,"dm-block--blog"],[1,"dm-experience--container-past"],["data-value","Architecture;JMS;Java;Webservices","id","boiron-archi",1,"dm-experience--section"],["data-value","Java;Webservices;Web","id","boiron-rm",1,"dm-experience--section"],["data-value","Java;Agilit\xE9;Web;Devops","id","iorga",1,"dm-experience--section"],["data-value","Architecture;Spring;Java","id","iorga-scc",1,"dm-experience--section"],["data-value","Architecture;Spring;Java","id","iorga-onf",1,"dm-experience--section"],["data-value","Architecture;Spring;Java","id","iorga-cete",1,"dm-experience--section"],["data-value","Architecture;Spring;Java","id","casino",1,"dm-experience--section"],["data-value","Architecture;D\xE9cisionnel;Java","id","casino-archi",1,"dm-experience--section"],["data-value","Agilit\xE9;Tests;Int\xE9gration continue","id","casino-cp",1,"dm-experience--section"],["data-value","D\xE9veloppement;Web;Java;Swing","id","casino-dev",1,"dm-experience--section"],["id","solutec",1,"dm-experience--container-past"],["data-value","Cobol;Web;Java;HTML;CSS;Javascript","id","solutec-cafet",1,"dm-experience--section"],["data-value","D\xE9veloppement;Web;Java;Swing","id","solutec-grpcasino",1,"dm-experience--section"],["data-value","D\xE9veloppement;Web;Java;Swing","id","solutec-tessi",1,"dm-experience--section"]],template:function(l,c){l&1&&(a(0,"div",0)(1,"div",1)(2,"p",2),s(3," J'ai eu la chance de travailler pour diff\xE9rentes entreprises, dans des secteurs diff\xE9rents, \xE0 des postes multiples fonctionnels ou techniques et sur des projets de diff\xE9rentes envergures (quelques centaines \xE0 des milliers de jour). Depuis 2015, j'ai choisi de fonder Dev-Mind et de devenir ind\xE9pendant pour me concentrer sur le d\xE9veloppement, le conseil et la formation. "),e(),a(4,"p"),s(5,"\xA0"),e(),a(6,"div",3)(7,"div",4)(8,"div",5)(9,"div",6)(10,"small"),s(11,"\xA0"),e()(),a(12,"div",7),s(13,"..."),e()(),a(14,"div",8)(15,"div",6)(16,"small"),s(17,"2001"),e()(),a(18,"div",7)(19,"a",9),s(20,"SOLUTEC"),e()()(),a(21,"div",10)(22,"div",6)(23,"small"),s(24,"2003"),e()(),a(25,"div",7)(26,"a",11),s(27,"CASINO"),e()()(),a(28,"div",12)(29,"div",6)(30,"small"),s(31,"2009"),e()(),a(32,"div",7)(33,"a",13),s(34,"IORGA"),e()()(),a(35,"div",14)(36,"div",6)(37,"small"),s(38,"2010"),e()(),a(39,"div",7)(40,"a",15),s(41,"BOIRON"),e()()(),a(42,"div",16)(43,"div",6)(44,"small"),s(45,"2015"),e()(),a(46,"div",7)(47,"a",17),s(48,"DEV-MIND"),e()()(),a(49,"div",18)(50,"div",6)(51,"small"),s(52,"\xA0"),e()(),a(53,"div",7),s(54,"..."),e()()()(),a(55,"div",19)(56,"div",4)(57,"div",5)(58,"div",6)(59,"small"),s(60,"\xA0"),e()(),a(61,"div",7),s(62,"..."),e()(),a(63,"div",8)(64,"div",6)(65,"small"),s(66,"2001"),e()(),a(67,"div",7)(68,"a",9),s(69,"SOLUTEC"),e()()(),a(70,"div",10)(71,"div",6)(72,"small"),s(73,"2003"),e()(),a(74,"div",7)(75,"a",11),s(76,"CASINO"),e()()(),a(77,"div",12)(78,"div",6)(79,"small"),s(80,"2009"),e()(),a(81,"div",7)(82,"a",13),s(83,"IORGA"),e()()(),a(84,"div",18)(85,"div",6)(86,"small"),s(87,"2010"),e()(),a(88,"div",7),s(89,"\xA0"),e()()(),r(90,"br"),a(91,"div",4)(92,"div",14)(93,"div",6)(94,"small"),s(95,"\xA0"),e()(),a(96,"div",7)(97,"a",15),s(98,"BOIRON"),e()()(),a(99,"div",16)(100,"div",6)(101,"small"),s(102,"2015"),e()(),a(103,"div",7)(104,"a",17),s(105,"DEV-MIND"),e()()(),a(106,"div",18)(107,"div",6)(108,"small"),s(109,"\xA0"),e()(),a(110,"div",7),s(111,"..."),e()()()(),a(112,"p"),s(113,"\xA0"),e(),a(114,"p"),s(115,"Ce parcours o\xF9 j'ai pu multipli\xE9 les casquettes (d\xE9veloppeur, chef de projet, coach, consultant, formateur,...) m'a permis de voir toutes les facettes permettant de r\xE9aliser un projet de d\xE9veloppement. Je me d\xE9finis aujourd'hui comme un artisan de la programmation."),e()()(),a(116,"div",20)(117,"div",1)(118,"div",21)(119,"h1"),s(120,"Dev-Mind"),e(),a(121,"p",2),r(122,"br"),s(123," Vous pouvez voir certaines "),a(124,"a",22),s(125,"recommandations"),e(),s(126," faites par mes anciens clients sur mon profil "),a(127,"a",22),s(128,"Hopwork"),e(),s(129,". Je participe \xE9galement \xE0 des projets Open Source. Vous pouvez consulter mon "),a(130,"a",23),s(131,"Github"),e(),s(132," pour plus d'informations. J'interviens \xE9galement r\xE9guli\xE8rement dans des conf\xE9rences et voici mon "),a(133,"a",24),s(134,"Speaker Deck"),e()(),a(135,"p"),s(136,"Depuis "),a(137,"b"),s(138,"2015"),e(),s(139,", je suis d\xE9veloppeur ind\xE9pendant (soci\xE9t\xE9 DevMind) et j\u2019interviens pour aider les entreprises \xE0 d\xE9velopper ou mettre en place leurs propres logiciels dans leur SI. "),e(),a(140,"h2"),s(141,"G\xE9rant, d\xE9veloppeur Java/Web"),e(),a(142,"section",25)(143,"h3"),s(144,"Fairphone (Netherlands) - missions ponctuelles depuis 2021"),e(),a(145,"p"),s(146," D\xE9veloppement Android Kotlin ou backend en Spring Kotlin "),e(),a(147,"div",26)(148,"span",27),s(149,"Android"),e(),a(150,"span",27),s(151,"Kotlin"),e()()(),a(152,"section",28)(153,"h3"),s(154,"Energy Pool (Lyon) - depuis 2015"),e(),a(155,"p"),s(156," Conception et d\xE9veloppement de l\u2019application au coeur de l\u2019activit\xE9 de la startup Energy Pool agissant dans le domaine de la flexibilit\xE9 \xE9lectrique et leader de l\u2019effacement \xE9lectrique en France. "),e(),a(157,"div",26)(158,"span",27),s(159,"Angular"),e(),a(160,"span",27),s(161,"Typescript"),e(),a(162,"span",27),s(163,"Kotlin"),e(),a(164,"span",27),s(165,"Java"),e(),a(166,"span",27),s(167,"Web"),e(),a(168,"span",27),s(169,"SpringBoot"),e(),a(170,"span",27),s(171,"git"),e()()(),a(172,"section",29)(173,"h3"),s(174,"Ecole des mines (Saint Etienne) - 2016 "),e(),a(175,"p"),s(176," D\xE9veloppement de l\u2019application utilis\xE9e pour le bicentenaire de l\u2019\xE9cole des Mines par les \xE9l\xE8ves pour laisser une trace de cet \xE9v\xE9nement sous forme de texte sous un mur num\xE9rique https://ewall.mines-stetienne.fr/home "),e(),a(177,"div",26)(178,"span",27),s(179,"Angular"),e(),a(180,"span",27),s(181,"Java"),e(),a(182,"span",27),s(183,"Web"),e(),a(184,"span",27),s(185,"SpringBoot"),e()()(),a(186,"section",30)(187,"h3"),s(188,"BonitaSoft (Grenoble) - 2015 "),e(),a(189,"p"),s(190," D\xE9veloppement d\u2019un designer de page web pour aider les utilisateurs de la plateforme de BPM Bonitasoft \xE0 mod\xE9liser leurs pages pour interagir avec un processus. "),e(),a(191,"div",26)(192,"span",27),s(193,"Angular"),e(),a(194,"span",27),s(195,"Java"),e(),a(196,"span",27),s(197,"Web"),e(),a(198,"span",27),s(199,"Spring"),e(),a(200,"span",27),s(201,"git"),e()()(),a(202,"h2"),s(203,"Formateur"),e(),a(204,"section",31)(205,"h3"),s(206,"P\xF4le emploi via Diginamic (Lyon) - 2018, 2019"),e(),a(207,"p"),s(208," Formation Spring dans le cadre de reconvertion professionnelle soutenue par P\xF4le emploi "),e(),a(209,"div",26)(210,"span",27),s(211,"Spring Framework"),e(),a(212,"span",27),s(213,"Spring AOP"),e(),a(214,"span",27),s(215,"Spring MVC"),e(),a(216,"span",27),s(217,"Spring Data"),e(),a(218,"span",27),s(219,"Spring Security"),e(),a(220,"span",27),s(221,"Spring Boot"),e()()(),a(222,"section",32)(223,"h3"),s(224,"Ecole des mines (Saint Etienne) - depuis 2018 "),e(),a(225,"p"),s(226," Formation des \xE9tudiants 2\xE8me ann\xE9e \xE0 Spring et Android "),e(),a(227,"div",26)(228,"span",27),s(229,"Spring Framework"),e(),a(230,"span",27),s(231,"Spring Data"),e(),a(232,"span",27),s(233,"Spring Boot"),e(),a(234,"span",27),s(235,"Kotlin"),e(),a(236,"span",27),s(237,"Android"),e()()()()()(),a(238,"div",33)(239,"div",1)(240,"div",34)(241,"h2"),s(242,"Conf\xE9rences"),e(),a(243,"p"),s(244," Je fais partie de l'organisation de la conf\xE9rence "),a(245,"a",35),s(246,"MiXiT"),e(),s(247," qui a lieu \xE0 Lyon chaque ann\xE9\xE9 au printemps autour du d\xE9veloppement sur des sujets techniques ou non. Cette conf\xE9rence accueille 800 participants sur deux jours. Il peuvent assister \xE0 des sessions ou des ateliers anim\xE9s par des speakers fran\xE7ais et internationaux. J'interviens aussi en tant que speaker dans d'autres conf\xE9rences "),e(),a(248,"section",36)(249,"h3"),s(250,"2h pour mettre en place une application Android"),e(),a(251,"p"),s(252," Dans cette session de 2 ou 4 heures je reviens sur les bases de la cr\xE9ation d'une application Android. En live coding nous verrons les concepts de la programmation Android et nous d\xE9velopperons en Kotlin une r\xE9elle application. "),e(),a(253,"ul")(254,"li")(255,"a",37),s(256,"Devoxx France 2019"),e(),s(257," : "),a(258,"a",38),s(259,"slides"),e()(),a(260,"li")(261,"a",39),s(262,"Devoxx Maroc 2018"),e(),s(263," : "),a(264,"a",40),s(265,"slides"),e()(),a(266,"li")(267,"a",41),s(268,"ITogo.conf 2018"),e(),s(269," : "),a(270,"a",42),s(271,"slides"),e()()(),a(272,"div",26)(273,"span",27),s(274,"Performance"),e(),a(275,"span",27),s(276,"Web"),e()()(),a(277,"section",36)(278,"h3"),s(279,"Optimiser les performances d\u2019une application Web"),e(),a(280,"p"),s(281," Diff\xE9rentes astuces pour optimiser les performances d\u2019une application web en production. Comment optimiser les temps de chargement, de raffraichissement, le mode offline... "),e(),a(282,"ul")(283,"li")(284,"a",41),s(285,"ITogo.conf 2018"),e(),s(286," : "),a(287,"a",43),s(288,"slides"),e()(),a(289,"li")(290,"a",44),s(291,"Jug Lausanne 2017"),e(),s(292," : "),a(293,"a",44),s(294,"slides"),e(),s(295,"\xA0/\xA0 "),a(296,"a",45),s(297,"videos"),e()(),a(298,"li")(299,"a",46),s(300,"Devoxx 2017"),e(),s(301," : "),a(302,"a",47),s(303,"slides"),e(),s(304,"\xA0/\xA0 "),a(305,"a",48),s(306,"videos"),e()(),a(307,"li")(308,"a",49),s(309,"Softshake 2016"),e(),s(310," : "),a(311,"a",50),s(312,"slides"),e()()(),a(313,"div",26)(314,"span",27),s(315,"Performance"),e(),a(316,"span",27),s(317,"Web"),e()()(),a(318,"section",36)(319,"h3"),s(320,"Tester une application Javascript"),e(),a(321,"p"),s(322," Pourquoi et comment faire des tests unitaires et d'int\xE9gration dans une application Javascript. Pr\xE9sentation faite en livecoding sur une application JS ou Angular JS en utilisant Jasmine, Karma, Protractor "),e(),a(323,"ul")(324,"li")(325,"a",51),s(326,"Jug Lyon 2017"),e(),s(327," : "),a(328,"a",52),s(329,"slides"),e(),s(330,"\xA0/\xA0 "),a(331,"a",53),s(332,"vid\xE9o"),e()(),a(333,"li")(334,"a",54),s(335,"Snowcamp 2016"),e(),s(336," : "),a(337,"a",55),s(338,"slides"),e()(),a(339,"li")(340,"a",49),s(341,"Soft Shake 2015"),e(),s(342," : "),a(343,"a",56),s(344,"slides"),e()(),a(345,"li")(346,"a",57),s(347,"JugSummer Camp 2015"),e(),s(348," : "),a(349,"a",58),s(350,"slides"),e(),s(351,"\xA0/\xA0 "),a(352,"a",59),s(353,"vid\xE9o"),e()(),a(354,"li")(355,"a",60),s(356,"Breizhcamp 2015"),e(),s(357," : "),a(358,"a",61),s(359,"slides"),e(),s(360,"\xA0/\xA0 "),a(361,"a",62),s(362,"vid\xE9o"),e()()(),a(363,"div",26)(364,"span",27),s(365,"Angular"),e(),a(366,"span",27),s(367,"JavaScript"),e(),a(368,"span",27),s(369,"Karma"),e(),a(370,"span",27),s(371,"Jasmine"),e(),a(372,"span",27),s(373,"Protractor"),e()()(),a(374,"section",36)(375,"h3"),s(376,"Le bon testeur il teste, le mauvais testeur il teste"),e(),a(377,"p"),s(378," Rappel sur les diff\xE9rents principes pour \xE9crire des tests unitaires de qualit\xE9, rapide et maintenable dans le temps. Pr\xE9sentation faite en livecoding avec plusieurs cas pratiques utilisant des outils et librairies comme FestAssert, AssertJ, InfiniTest, DBSetup "),e(),a(379,"ul")(380,"li")(381,"a",49),s(382,"Softshake 2014"),e(),s(383," : "),a(384,"a",63),s(385,"slides"),e()(),a(386,"li")(387,"a",64),s(388,"Lava Jug 2014"),e(),s(389," : "),a(390,"a",65),s(391,"slides"),e()(),a(392,"li")(393,"a",49),s(394,"Devoxx 2014"),e(),s(395," : "),a(396,"a",66),s(397,"slides"),e(),s(398," / "),a(399,"a",67),s(400,"video"),e()()(),a(401,"div",26)(402,"span",27),s(403,"Test"),e(),a(404,"span",27),s(405,"Java"),e()()(),a(406,"section",36)(407,"h3"),s(408,"Interventions sur l\u2019agilit\xE9"),e(),a(409,"p"),s(410," Diff\xE9rentes interventions pour pr\xE9senter les concepts de l\u2019agilit\xE9 ou comment mettre en place Scrum ou Kanban dans une organisation, am\xE9liorer la lisibilit\xE9 de ses tests "),e(),a(411,"div",26)(412,"span",27),s(413,"Scrum"),e(),a(414,"span",27),s(415,"Kanban"),e()()()()()(),a(416,"div",68)(417,"div",1)(418,"div",69)(419,"h1"),s(420,"Boiron"),e(),a(421,"p"),s(422,"De "),a(423,"b"),s(424,"2010 \xE0 2014"),e(),s(425,", j\u2019ai fait partie des laboratoires BOIRON (leader mondial de l\u2019hom\xE9opathie) "),e(),a(426,"h2"),s(427,"Architecte applicatif"),e(),a(428,"section",70)(429,"h3"),s(430,"Architecture du syt\xE8me d\u2019information"),e(),a(431,"ul")(432,"li"),s(433,"Participation \xE0 la mise en place de l\u2019architecture applicative en service (SOA)"),e(),a(434,"li"),s(435,"R\xE9f\xE9rentiel de donn\xE9es d\u2019entreprise (MDM)"),e(),a(436,"li"),s(437,"Conception et mise en place des m\xE9canismes de synchronisation entre les diff\xE9rentes briques du syst\xE8me (brique de synchronisation permettant de recevoir des donn\xE9es ou de les publier au format XML) "),e(),a(438,"li"),s(439,"Mise en place de la supervision des diff\xE9rentes applications"),e()(),a(440,"div",26)(441,"span",27),s(442,"Architecture"),e(),a(443,"span",27),s(444,"Webservices"),e(),a(445,"span",27),s(446,"Java"),e(),a(447,"span",27),s(448,"Web"),e(),a(449,"span",27),s(450,"SOA"),e(),a(451,"span",27),s(452,"MDM"),e(),a(453,"span",27),s(454,"AngularJS"),e()()(),a(455,"section",71)(456,"h3"),s(457,"Gestion des remises"),e(),a(458,"ul")(459,"li"),s(460,"Conception technique de l\u2019application pour qu\u2019elle soit capable d\u2019appliquer les remises sur les 60.000 commandes quotidiennes au fil de l\u2019eau. "),e(),a(461,"li"),s(462,"Interconnexion de l\u2019application avec le syst\xE8me d\u2019information"),e(),a(463,"li"),s(464,"Mise en place de m\xE9canisme de rejeu pour faciliter l\u2019exploitation de l\u2019application"),e()(),a(465,"span",27),s(466,"Webservices"),e(),a(467,"span",27),s(468,"Java"),e(),a(469,"span",27),s(470,"Web"),e()(),a(471,"section",72)(472,"h3"),s(473,"Leader technique et m\xE9thodologique"),e(),a(474,"ul")(475,"li"),s(476,"Evolution de l\u2019architecture sur les derni\xE8res versions des briques logicielles"),e(),a(477,"li"),s(478,"Mise en place architecture web \xE0 base d\u2019AngularJS"),e(),a(479,"li"),s(480,"Formation des \xE9quipes de d\xE9veloppement \xE0 l\u2019architecture en Service, Java, Spring, Angular JS, Yeoman, Maven\u2026 "),e(),a(481,"li"),s(482,"Sensibilisation et formation des chefs de projets \xE0 l\u2019agilit\xE9 : UP, Scrum, Kanban, Devops "),e(),a(483,"li"),s(484,"Mise en place de la plateforme d\u2019int\xE9gration continue"),e(),a(485,"li"),s(486,"Mise au point de la livraison continue pour uniformiser les installations du d\xE9veloppement \xE0 la production "),e()(),a(487,"div",26)(488,"span",27),s(489,"Web"),e(),a(490,"span",27),s(491,"Java"),e(),a(492,"span",27),s(493,"Javascript"),e(),a(494,"span",27),s(495,"NodeJS"),e(),a(496,"span",27),s(497,"Kanban"),e(),a(498,"span",27),s(499,"Scrum"),e(),a(500,"span",27),s(501,"Devops"),e()()()(),a(502,"div",69)(503,"h1"),s(504,"iORGA"),e(),a(505,"p"),s(506,"De "),a(507,"b"),s(508,"2009 \xE0 2010"),e(),s(509,", j\u2019ai fait partie de iORGA (agence de Lyon de cette SSII)"),e(),a(510,"h2"),s(511,"Consultant Java"),e(),a(512,"section",73)(513,"h3"),s(514,"Soci\xE9t\xE9 Centrale Canine (Paris)"),e(),a(515,"ul")(516,"li"),s(517,"R\xE9daction des guides d\u2019installation et d\u2019exploitation des applications"),e(),a(518,"li"),s(519,"Mise en place d\u2019un serveur SVN pour la gestion des codes sources des applications de la SCC "),e(),a(520,"li"),s(521,"Correction des probl\xE8mes techniques et d\u2019architecture sur les applications existantes (mise aux normes J2EE, mise en place de Maven,...) "),e(),a(522,"li"),s(523,"Cr\xE9ation d'un socle pour les nouvelles applications de la SCC respectant les standards J2EE (mise en place d\u2019un moteur MVC et de web services) "),e()(),a(524,"div",26)(525,"span",27),s(526,"Architecture"),e(),a(527,"span",27),s(528,"Spring"),e(),a(529,"span",27),s(530,"Java"),e()()(),a(531,"section",74)(532,"h3"),s(533,"Office National des For\xEAts (Paris)"),e(),a(534,"ul")(535,"li"),s(536,"Dans le cadre de la refonte du syst\xE8me d\u2019information li\xE9 aux ressources humaines, l\u2019ONF souhaitait concevoir un r\xE9f\xE9rentiel unique des salari\xE9s permettant de suivre la vie professionnelle des employ\xE9s. "),e(),a(537,"li"),s(538,"Conception technique de l\u2019application en enrichissant le socle technique interne (mise en place des tests unitaires , isolation d\u2019une couche m\xE9tier). "),e(),a(539,"li"),s(540,"Suivi technique et fonctionnel"),e()(),a(541,"div",26)(542,"span",27),s(543,"SWT"),e(),a(544,"span",27),s(545,"Hibernate"),e(),a(546,"span",27),s(547,"Java"),e()()(),a(548,"section",75)(549,"h3"),s(550,"CETE minist\xE8re de l\u2019\xE9quipement (Lyon)"),e(),a(551,"ul")(552,"li"),s(553,"Intervention technique sur la TMA de l\u2019application DAPCETE g\xE9rant les budgets attribu\xE9s par l\u2019\xE9tat. Les budgets sont dot\xE9s \xE0 des services g\xE9n\xE9raux qui vont \xE0 leur tour d\xE9l\xE9guer des montants \xE0 des services inf\xE9rieurs qui les affecteront aux CETE. "),e(),a(554,"li"),s(555,"Mise en place des tests d'int\xE9gration et des tests d'int\xE9gration au d\xE9marrage du forfait de d\xE9veloppement de l'application CITES (Convention sur le commerce international des esp\xE8ces de faune et de flore sauvages menac\xE9es d'extinction). Sensibilisation de l\u2019\xE9quipe en forfait sur la d\xE9marche Scrum "),e()(),a(556,"div",26)(557,"span",27),s(558,"Scrum"),e(),a(559,"span",27),s(560,"Hibernate"),e(),a(561,"span",27),s(562,"Java"),e()()(),a(563,"section",76)(564,"h3"),s(565,"CFDP conseil Juridique (Lyon)"),e(),a(566,"ul")(567,"li"),s(568,"Audit de l'architecture"),e(),a(569,"li"),s(570,"Conception du nouveau syst\xE8me"),e()(),a(571,"span",27),s(572,"HTML"),e(),a(573,"span",27),s(574,"Javascript"),e(),a(575,"span",27),s(576,"Java"),e()()(),a(577,"div",69)(578,"h1"),s(579,"Groupe Casino"),e(),a(580,"p"),s(581,"De "),a(582,"b"),s(583,"2003 \xE0 2008"),e(),s(584,", j\u2019ai fait partie du groupe Casino (grande distribution avec plus de 80.000 salari\xE9s en France) et plus particuli\xE8rement de la filiale Casino Restauration"),e(),a(585,"h2"),s(586,"Chef de projet technique"),e(),a(587,"section",77)(588,"h3"),s(589,"Architecture applicative"),e(),a(590,"ul")(591,"li"),s(592,"Refonte du syst\xE8me d\u2019information et \xE9laboration de l\u2019architecture logicielle permettant aux applications situ\xE9es en \xE9tablissement (250 \xE0 travers la France) de travailler en mode d\xE9connect\xE9 et de se synchroniser avec les applications si\xE8ges "),e(),a(593,"li"),s(594,"Mise en place socle technique"),e(),a(595,"li"),s(596,"Supervision des d\xE9veloppements JEE et formations"),e()(),a(597,"div",26)(598,"span",27),s(599,"Architecture"),e(),a(600,"span",27),s(601,"D\xE9cisionnel"),e(),a(602,"span",27),s(603,"Java"),e(),a(604,"span",27),s(605,"Spring"),e()()(),a(606,"section",78)(607,"h3"),s(608,"Gestion de projet agile"),e(),a(609,"ul")(610,"li"),s(611,"R\xE9organisation des d\xE9veloppements et de la prise des besoins des utilisateurs en appliquant des pratiques agiles (XP, Scrum, UP) "),e(),a(612,"li"),s(613,"Sensibilisation des \xE9quipes \xE0 l\u2019agilit\xE9"),e(),a(614,"li"),s(615,"Animation ateliers pour la d\xE9finition du contenu fonctionnel des applications"),e(),a(616,"li"),s(617,"Mise en place d\u2019une plateforme d\u2019int\xE9gration continue (archivage des sources, ex\xE9cution des tests en automatique, d\xE9ploiement automatique des applications) "),e(),a(618,"li"),s(619,"Mise en place d'un wiki afin de centraliser toutes les documentations du service des \xE9tudes. "),e()(),a(620,"div",26)(621,"span",27),s(622,"Agilit\xE9"),e(),a(623,"span",27),s(624,"Tests"),e(),a(625,"span",27),s(626,"Int\xE9gration continue"),e()()(),a(627,"section",79)(628,"h3"),s(629,"D\xE9veloppement"),e(),a(630,"ul")(631,"li"),s(632," D\xE9veloppements JEE de plusieurs applications dans diff\xE9rents domaines "),a(633,"ul")(634,"li"),s(635,"Cha\xEEne produit (gestion des commandes, des articles, des fiches recettes\u2026)"),e(),a(636,"li"),s(637,"Ressources humaines (planning encadrement, pointage des salari\xE9s, \xE9dition des contrats) "),e(),a(638,"li"),s(639,"Marketing (remarques clients)"),e()()(),a(640,"li"),s(641," D\xE9veloppement Web "),a(642,"ul")(643,"li"),s(644,"Responsable de l'Intranet"),e(),a(645,"li"),s(646,"Supervision de la mise en \u0153uvre d'un portail d'entreprise dynamique sous Plumtree "),e(),a(647,"li"),s(648,"Cr\xE9ation de la charte graphique"),e(),a(649,"li"),s(650,"Cr\xE9ation de connecteur Java pour faire le pont entre les Portlets Plumtree et le syst\xE8me d\u2019information "),e()()(),a(651,"li"),s(652," D\xE9veloppement D\xE9cisionnel "),a(653,"ul")(654,"li"),s(655,"Mod\xE9lisation d'un datawarehouse contenant l'ensemble des ventes de l\u2019entreprise (remont\xE9es encaissement). "),e(),a(656,"li"),s(657,"Mise en place des outils BI de Cognos."),e(),a(658,"li"),s(659,"Optimisation de la base de donn\xE9es et mise en place d\u2019un mod\xE8le en \xE9toiles"),e(),a(660,"li"),s(661,"Rapport et cubes OLAP"),e(),a(662,"li"),s(663,"Cr\xE9ation de connecteur Java pour relier le d\xE9cisionnel au reste du SI"),e()()()(),a(664,"div",26)(665,"span",27),s(666,"D\xE9veloppement"),e(),a(667,"span",27),s(668,"D\xE9cisionnel"),e(),a(669,"span",27),s(670,"Java"),e(),a(671,"span",27),s(672,"JavaScript"),e(),a(673,"span",27),s(674,"HTML"),e()()()(),a(675,"div",80)(676,"h1"),s(677,"Solutec"),e(),a(678,"p"),s(679,"De "),a(680,"b"),s(681,"2001 \xE0 2003"),e(),s(682,", J\u2019ai fait partie de Solutec (SSII lyonnaise qui comprenait \xE0 l\u2019\xE9poque 120 salari\xE9s) "),e(),a(683,"h2"),s(684,"Ing\xE9nieur d\u2019\xE9tudes"),e(),a(685,"section",81)(686,"h3"),s(687,"Casino Restauration (Saint Etienne) - 2003"),e(),a(688,"ul")(689,"li"),s(690,"Applications J2EE de gestion des remarques clients et planning encadrement"),e(),a(691,"li"),s(692,"D\xE9veloppement de la partie Java et des services m\xE9tier COBOL permettant de s\u2019interfacer au syst\xE8me d\u2019information legacy du groupe Casino Conception technique "),e(),a(693,"li"),s(694,"Mise en place d\u2019un r\xE9f\xE9rentiel commun"),e(),a(695,"li"),s(696,"Formation Java"),e()(),a(697,"div",26)(698,"span",27),s(699,"D\xE9veloppement"),e(),a(700,"span",27),s(701,"HTML"),e(),a(702,"span",27),s(703,"Javascript"),e(),a(704,"span",27),s(705,"CSS"),e(),a(706,"span",27),s(707,"Java"),e()()(),a(708,"section",82)(709,"h3"),s(710,"Groupe Casino (Saint Etienne) - 2002"),e(),a(711,"ul")(712,"li"),s(713,"Applications J2EE d\xE9velopp\xE9es en forfait (Application de gestion des op\xE9rations promotionnelles du groupe Casino et application de prise de commandes des magasins de proximit\xE9 par t\xE9l\xE9vente) "),e(),a(714,"li"),s(715,"Conception technique"),e(),a(716,"li"),s(717,"Formation des nouveaux collaborateurs arrivant sur le projet"),e()(),a(718,"div",26)(719,"span",27),s(720,"HTML"),e(),a(721,"span",27),s(722,"Javascript"),e(),a(723,"span",27),s(724,"CSS"),e(),a(725,"span",27),s(726,"Java"),e()()(),a(727,"section",83)(728,"h3"),s(729,"TESSI Informatique (Saint Etienne) - 2001"),e(),a(730,"p"),s(731," Etudes et d\xE9veloppements sur une plate-forme EDI bancaire \xE9quipant la majorit\xE9 des caisses r\xE9gionales du Cr\xE9dit Agricole et permettant diff\xE9rents transferts entre la banque et leurs clients par l'interm\xE9diaire de plusieurs protocoles : ETEBAC 1 \xE0 5, PeSIT, Fax, Mail (SMTP), Internet (TCP/IP). "),e(),a(732,"div",26)(733,"span",27),s(734,"HTML"),e(),a(735,"span",27),s(736,"Javascript"),e(),a(737,"span",27),s(738,"CSS"),e(),a(739,"span",27),s(740,"C"),e()()()()()())},styles:[".dm-experience--container[_ngcontent-%COMP%]{margin:1em 0;padding:1em;border-radius:4px}.dm-experience--container-past[_ngcontent-%COMP%]{background-color:#cfd8dc;margin:1em 0;padding:1em;border-radius:4px}.dm-experience--label-box[_ngcontent-%COMP%]{display:flex;flex-wrap:wrap}.dm-experience--label[_ngcontent-%COMP%]{border-radius:24px;border:1px solid #c9c9c9;background-color:#fff;padding:.5em 1em;margin:.1em;opacity:.7;color:#5f5346}.dm-experience--section[_ngcontent-%COMP%]{padding-bottom:1em}.dm-experience--graph[_ngcontent-%COMP%]{margin-top:1em;display:flex;flex-wrap:nowrap}.dm-experience--step[_ngcontent-%COMP%]{text-align:center}.dm-experience--date[_ngcontent-%COMP%]{position:relative;top:-1.2em;left:-2em}.dm-experience--before[_ngcontent-%COMP%]{border:2px solid white;padding:0 1em 1em;color:#fff;font-weight:700;border-left:none;flex:1}.dm-experience--before[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{text-decoration:none}.dm-experience--after[_ngcontent-%COMP%]{border:2px solid white;padding:0 1em 1em;color:#fff;font-weight:700;border-left:none;border-right:none;flex:1}.dm-experience--after[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{text-decoration:none}.dm-experience--solutec[_ngcontent-%COMP%]{border:2px solid white;border-left:none;padding:0 1em 1em;color:#fff;font-weight:700;flex:4}.dm-experience--solutec[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{text-decoration:none}.dm-experience--casino[_ngcontent-%COMP%]{border:2px solid white;border-left:none;padding:0 1em 1em;color:#fff;font-weight:700;flex:12}.dm-experience--casino[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{text-decoration:none}.dm-experience--iorga[_ngcontent-%COMP%]{border:2px solid white;border-left:none;padding:0 1em 1em;color:#fff;font-weight:700;flex:2}.dm-experience--iorga[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{text-decoration:none}.dm-experience--boiron[_ngcontent-%COMP%]{border:2px solid white;border-left:none;padding:0 1em 1em;color:#fff;font-weight:700;flex:8}.dm-experience--boiron[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{text-decoration:none}.dm-experience--devmind[_ngcontent-%COMP%]{border:2px solid white;border-left:none;padding:0 1em 1em;color:#fff;font-weight:700;border-right:none;flex:20}.dm-experience--devmind[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{text-decoration:none}"]})}}return t})();var Ke=()=>["/","training","trainings.html"],Ie=(()=>{class t{static{this.\u0275fac=function(l){return new(l||t)}}static{this.\u0275cmp=h({type:t,selectors:[["app-training"]],standalone:!0,features:[m],decls:160,vars:2,consts:[[1,"dm-block--intro"],[1,"devmind-section"],[1,"dm-grid--flexible",2,"align-items","center"],[1,"dm-grid--element"],[1,"center"],["alt","Espace \xE9tudiant"],["srcset","../img/experience/formation_600.webp","type","image/webp"],["srcset","../img/experience/formation_600.png"],["src","../img/experience/formation_600.png","alt","Training"],[1,"dm-grid--element",2,"flex","3 0 0"],[1,"dm_lead"],["href","formation_spring.html"],["href","https://twitter.com/guillaumeehret","target","_blank","rel","noopener"],["src","../img/contact/twitter.svg","alt","Twitter",1,"dm-social"],["href","https://github.com/Dev-Mind","target","_blank","rel","noopener"],["src","../img/contact/github.svg","alt","Github",1,"dm-social"],[1,"dm-block--blog"],["href","https://spring.io/"],["href","https://www.clever-cloud.com/"],[1,"fa","fa-flask"],[1,"dm-grid--flexible"],["src","../img/training/environnement.png"],["routerLink","/training/outil/install_development_environment.html"],["routerLink","/training/outil/git.html"],["routerLink","/training/gradle/gradle.html"],["routerLink","/training/unit-test/unit_test_in_java.html"],["src","../img/training/spring-intro.png"],["routerLink","/training/spring/spring_intro.html"],["routerLink","/training/spring/spring_ioc.html"],["routerLink","/training/spring/spring_data.html"],["routerLink","/training/spring/spring_web.html"],["routerLink","/training/spring/spring_security.html"],["src","../img/training/clever-cloud.png"],["routerLink","/training/cloud/deploy_webapp_on_clever_cloud.html"],["src","../img/training/learn-kotlin.png"],["routerLink","/training/kotlin/kotlin_for_java_developer.html"],["src","../img/training/android/android-course1.png"],[1,"dm_lead",2,"padding-top","0","margin-top","0"],["routerLink","/training/android/android_introduction.html"],["routerLink","/training/android/android_first_app.html"],["routerLink","/training/android/android_update_ui.html"],["routerLink","/training/android/android_add_activity.html"],["routerLink","/training/android/android_add_menu.html"],["routerLink","/training/android/android_add_activity_list.html"],["routerLink","/training/android/android_call_remote_api.html"],["routerLink","/training/android/android_database_room_viewmodel.html"],[1,"btn-group"],[1,"btn-inverse",3,"routerLink"]],template:function(l,c){l&1&&(a(0,"div",0)(1,"div",1)(2,"h1"),s(3,"Training"),e(),a(4,"div",2)(5,"div",3)(6,"div",4)(7,"picture",5),r(8,"source",6)(9,"source",7)(10,"img",8),e()()(),a(11,"div",9)(12,"p",10),s(13," Dev-Mind est enregistr\xE9 sous le num\xE9ro 84 42 02955 42 en tant que prestataire de formation conform\xE9ment aux dispositions de l'article R. 6351-6 du code du travail. Cet enregistrement ne vaut pas agr\xE9ment de l'\xE9tat. "),e(),a(14,"p",10),s(15," Dev-Mind donne principalement des formations pour apprendre \xE0 utiliser le "),a(16,"a",11),s(17,"Framework Spring"),e(),s(18," en Java ou en Kotlin. "),e(),a(19,"p"),s(20," You can also find freely accessible trainings about Git, Gradle, Spring, Android on this website. All lesson supports and labs remain the intellectual property of Dev-Mind. If you are missing anything, please tell me "),e(),a(21,"p")(22,"a",12),r(23,"img",13),e(),a(24,"a",14),r(25,"img",15),e()()()()()(),a(26,"div",16)(27,"div",1)(28,"div")(29,"p"),s(30,' The following lessons are given at the "Ecole des mines de Saint Etienne" to engineering students or students in computer science master. These lessons are free and you can follow them to learn how develop an Android app in Kotlin which call REST services exposed by a '),a(31,"a",17),s(32,"Spring"),e(),s(33," application developped in Java and deployed on "),a(34,"a",18),s(35,"Clever Cloud"),e(),s(36,". "),e(),a(37,"p"),s(38,"In each lesson, I first present the theory to you, but you have many exercises to implement and understand these different concepts through practice. Each exercise is identifiable by the "),r(39,"i",19),s(40," logo used in the title."),e(),a(41,"div",20)(42,"div",3),r(43,"img",21),e(),a(44,"div",9)(45,"p",10)(46,"b"),s(47,"Tools"),e()(),a(48,"ul")(49,"li")(50,"a",22),s(51,"Install development environment"),e(),s(52," : install Java Developer Kit and an IDE to develop "),e(),a(53,"li")(54,"a",23),s(55,"Managing your sources with Git"),e(),s(56," : introduction to Git and Github "),e(),a(57,"li")(58,"a",24),s(59,"Gradle in practice"),e(),s(60," : how Gradle works and how use it in our projects "),e(),a(61,"li")(62,"a",25),s(63," Write unit tests in Java"),e(),s(64," : understand tests, simulate collaborator behaviors and check results "),e()()()(),a(65,"div",20)(66,"div",3),r(67,"img",26),e(),a(68,"div",9)(69,"p",10)(70,"b"),s(71,"Spring framework"),e()(),a(72,"ul")(73,"li")(74,"a",27),s(75,"Spring introduction"),e(),s(76," : learn what is Spring and create a first app "),e(),a(77,"li")(78,"a",28),s(79,"Spring and dependency injection"),e(),s(80," : in this lesson you will learn one of the main principle of software design, the dependency injection "),e(),a(81,"li")(82,"a",29),s(83,"Spring database & JPA"),e(),s(84," : how use a database in your Spring project with Spring Data JPA and a H2 Database "),e(),a(85,"li")(86,"a",30),s(87,"Spring rest services"),e(),s(88," : use Spring MVC to expose services to receive or update data "),e(),a(89,"li")(90,"a",31),s(91,"Spring security"),e(),s(92," : Spring Security helps you to secure your app "),e()()()(),a(93,"div",20)(94,"div",3),r(95,"img",32),e(),a(96,"div",9)(97,"p",10)(98,"b"),s(99,"Cloud"),e()(),a(100,"ul")(101,"li")(102,"a",33),s(103,"Clever cloud"),e(),s(104," : learn how deploy a webapp on clever cloud "),e()()()(),a(105,"div",20)(106,"div",3),r(107,"img",34),e(),a(108,"div",9)(109,"p",10)(110,"b"),s(111,"Kotlin"),e()(),a(112,"ul")(113,"li")(114,"a",35),s(115,"Learn Kotlin"),e(),s(116," : introduction for Java developer "),e()()()()(),a(117,"div",20)(118,"div",3),r(119,"img",36),e(),a(120,"div",9)(121,"p",37)(122,"b"),s(123,"Android"),e()(),a(124,"ul")(125,"li")(126,"a",38),s(127,"Android platform"),e(),s(128," : introduction "),e(),a(129,"li")(130,"a",39),s(131,"My first Android App"),e(),s(132," : how develop an Hello World app "),e(),a(133,"li")(134,"a",40),s(135,"Update Android UI app"),e(),s(136," use Android Studio tools to update the main layout "),e(),a(137,"li")(138,"a",41),s(139,"Add a new activity"),e(),s(140," : a new screen in your app "),e(),a(141,"li")(142,"a",42),s(143,"Page structuration"),e(),s(144," : How use a menu and launch intents to open internal or external activities "),e(),a(145,"li")(146,"a",43),s(147,"An activity to list elements"),e(),s(148," : learn how write an adapter to diplay a list of data "),e(),a(149,"li")(150,"a",44),s(151,"Call remote API"),e(),s(152," : use retrofit to call a remote REST API "),e(),a(153,"li")(154,"a",45),s(155,"Use the phone SQLite database"),e(),s(156," : use Room to store your data and the viewmodel object to decouplate the view from the model "),e()()()(),a(157,"p",46)(158,"a",47),s(159,"Free trainings"),e()()()()),l&2&&(p(158),d("routerLink",N(1,Ke)))},dependencies:[k],encapsulation:2})}}return t})();var I=[{path:"training/score/gameboard_score_multiplaform.html",component:i,data:{title:"Score board game (2025)",author:"Guillaume EHRET - Dev-Mind",publicationDate:"20/08/2025",category:"Game",description:"I created this app to keep score when I play board games with family or friends.",keywords:["Multiplatform"],priority:"0.6",filename:"gameboard_score_multiplaform",folder:"training/score",image:":../../img/blog/2019/score_00.png"}},{path:"training/score/score_jeu_soci_te_multiplaform.html",component:i,data:{title:"Score jeu de soci\xE9t\xE9 (2025)",author:"Guillaume EHRET - Dev-Mind",publicationDate:"20/08/2025",category:"Game",description:"J'ai cr\xE9\xE9 cette application pour tenir les scores quand je joue \xE0 des jeux de soci\xE9t\xE9 en famille ou entre ami\xB7e\xB7s.",keywords:["Multiplatform"],priority:"0.6",filename:"score_jeu_soci_te_multiplaform",folder:"training/score",image:":../../img/blog/2019/score_00.png"}},{path:"training/outil/install_development_environment.html",component:i,data:{title:"Prepare your working environment (EN)",author:"Guillaume EHRET - Dev-Mind",publicationDate:"10/09/2024",category:"Java, IntelliJ",description:"Quels sont les outils \xE0 installer pour \xEAtre un d\xE9veloppeur full stack, Java Android et Web",keywords:["D\xE9veloppement","Installation"],priority:"0.6",filename:"install_development_environment",folder:"training/outil",image:"../../img/training/environnement.png"}},{path:"training/outil/git.html",component:i,data:{title:"Managing your code sources with Git",author:"Guillaume EHRET - Dev-Mind",publicationDate:"09/09/2024",category:"Git",description:"Quels sont les outils \xE0 installer pour \xEAtre un d\xE9veloppeur full stack, Java Android et Web",keywords:["Developement","Source","management"],priority:"0.6",filename:"git",folder:"training/outil",image:"../../img/training/git.png"}},{path:"training/gradle/gradle.html",component:i,data:{title:"Gradle in practice",author:"Guillaume EHRET - Dev-Mind",publicationDate:"08/09/2024",category:"Web",description:"Comment construire une application Java interfac\xE9e \xE0 une base de donn\xE9es et exposant des services REST",keywords:["Gradle"],priority:"0.6",filename:"gradle",folder:"training/gradle",image:"../../img/training/gradle.png"}},{path:"training/unit-test/unit_test_in_java.html",component:i,data:{title:"Write unit tests in Java (EN)",author:"Guillaume EHRET - Dev-Mind",publicationDate:"05/09/2024",category:"Java",description:"Write unit tests in Java",keywords:["Java","Unit","Test","AssertJ","Mockito","Junit"],priority:"0.6",filename:"unit_test_in_java",folder:"training/unit-test",image:"../../img/training/unit-tests.png"}},{path:"training/spring/spring_intro.html",component:i,data:{title:"Spring in practice : introduction",author:"Guillaume EHRET - Dev-Mind",publicationDate:"31/08/2024",category:"Java",description:"Pr\xE9sentation de l'\xE9cosyst\xE8me de Spring",keywords:["Java","Spring"],priority:"0.6",filename:"spring_intro",folder:"training/spring",image:"../../img/training/spring-intro.png"}},{path:"training/spring/spring_ioc.html",component:i,data:{title:"Spring in practice : dependency injection",author:"Guillaume EHRET - Dev-Mind",publicationDate:"30/08/2024",category:"Java",description:"Pr\xE9sentation de l'\xE9cosyst\xE8me de Spring",keywords:["Java","Spring"],priority:"0.6",filename:"spring_ioc",folder:"training/spring",image:"../../img/training/spring-core.png"}},{path:"training/spring/spring_data.html",component:i,data:{title:"Spring in practice : database and JPA",author:"Guillaume EHRET - Dev-Mind",publicationDate:"29/08/2024",category:"Java",description:"How use a database in your Spring project with Spring Data JPA and a H2 Database",keywords:["Java","Spring"],priority:"0.6",filename:"spring_data",folder:"training/spring",image:"../../img/training/spring-data.png"}},{path:"training/spring/spring_web.html",component:i,data:{title:"Spring in practice : REST service",author:"Guillaume EHRET - Dev-Mind",publicationDate:"28/08/2024",category:"Java",description:"How write REST services in Spring Web and expose resource to your apps",keywords:["Java","Spring"],priority:"0.6",filename:"spring_web",folder:"training/spring",image:"../../img/training/spring-boot.png"}},{path:"training/spring/spring_security.html",component:i,data:{title:"Spring in practice : Security",author:"Guillaume EHRET - Dev-Mind",publicationDate:"27/08/2024",category:"Java",description:"Each app must be secured and Spring is still here to simplify the work",keywords:["Java","Spring"],priority:"0.6",filename:"spring_security",folder:"training/spring",image:"../../img/training/spring-security.png"}},{path:"training/kotlin/kotlin_for_java_developer.html",component:i,data:{title:"Kotlin for a Java developer",author:"Guillaume EHRET - Dev-Mind",publicationDate:"25/08/2024",category:"Kotlin",description:"How to start in Kotlin when you know only Java language",keywords:["Kotlin"],priority:"0.6",filename:"kotlin_for_java_developer",folder:"training/kotlin",image:"../../img/training/learn-kotlin.png"}},{path:"training/cloud/deploy_webapp_on_clever_cloud.html",component:i,data:{title:"Deploy your webapp on Clever Cloud (EN)",author:"Guillaume EHRET - Dev-Mind",publicationDate:"24/08/2024",category:"JAva",description:"Deploy your webapp on Clever Cloud (EN)",keywords:["Gradle","Spring"],priority:"0.6",filename:"deploy_webapp_on_clever_cloud",folder:"training/cloud",image:"../../img/training/clever-cloud.png"}},{path:"training/android/android_introduction.html",component:i,data:{title:"Android platform",author:"Guillaume EHRET - Dev-Mind",publicationDate:"20/08/2024",category:"Android",description:"A tutorial to start Android development. In this example we develop an Hello World app",keywords:["Android"],priority:"0.6",filename:"android_introduction",folder:"training/android",image:"../../img/blog/2019/android_pf_00.png"}},{path:"training/android/android_first_app.html",component:i,data:{title:"A first application in Android",author:"Guillaume EHRET - Dev-Mind",publicationDate:"19/08/2024",category:"Android",description:"A tutorial to start Android development. In this example we develop an Hello World app",keywords:["Android"],priority:"0.6",filename:"android_first_app",folder:"training/android",image:"../../img/training/android/android-course1.png"}},{path:"training/android/android_add_activity.html",component:i,data:{title:"Add an activity",author:"Guillaume EHRET - Dev-Mind",publicationDate:"18/08/2024",category:"Android",description:"In this lesson you will learn how add a new activity in your project and call it",keywords:["Android"],priority:"0.6",filename:"android_add_activity",folder:"training/android",image:"../../img/training/android/android-add-activity.png"}},{path:"training/android/android_update_ui.html",component:i,data:{title:"Update UI and refactor welcome layout",author:"Guillaume EHRET - Dev-Mind",publicationDate:"18/08/2024",category:"Android",description:"In this lesson we will update the main layout to create a welcome screen",keywords:["Android"],priority:"0.6",filename:"android_update_ui",folder:"training/android",image:"../../img/training/android/android-course2.png"}},{path:"training/android/android_add_menu.html",component:i,data:{title:"Page structuration",author:"Guillaume EHRET - Dev-Mind",publicationDate:"17/08/2024",category:"Android",description:"In this lesson you will learn how add a menu and launch intent to open internal or external activities",keywords:["Android"],priority:"0.6",filename:"android_add_menu",folder:"training/android",image:"../../img/training/android/android-add-menu.png"}},{path:"training/android/android_add_activity_list.html",component:i,data:{title:"Add a list activity in your app",author:"Guillaume EHRET - Dev-Mind",publicationDate:"16/08/2024",category:"Android",description:"In this lesson you will learn how add an activity to list elements",keywords:["Android"],priority:"0.6",filename:"android_add_activity_list",folder:"training/android",image:"../../img/training/android/android-activity-list.png"}},{path:"training/android/android_call_remote_api.html",component:i,data:{title:"Call a remote API in Android",author:"Guillaume EHRET - Dev-Mind",publicationDate:"15/08/2024",category:"Android",description:"In this lesson, you will learn how to call a remote API to synchronously read data.",keywords:["Android"],priority:"0.6",filename:"android_call_remote_api",folder:"training/android",image:"../../img/training/android/android-call-remote.png"}},{path:"training/android/android_database_room_viewmodel.html",component:i,data:{title:"Interact with a database in your project",author:"Guillaume EHRET - Dev-Mind",publicationDate:"14/08/2024",category:"Android, Kotlin",description:"You'll learn about the fundamentals of using Room, including the database class, the DAO, entities, and view models.",keywords:["Android","database","room"],priority:"0.6",filename:"android_database_room_viewmodel",folder:"training/android",image:"../../img/training/android/database/database.png"}},{path:"training/web/http.html",component:i,data:{title:"Le protocole HTTP",author:"Guillaume EHRET - Dev-Mind",publicationDate:"27/11/2017",category:"Web",description:"Le protocole HTTP",keywords:["Internet","Web"],priority:"0.6",filename:"http",folder:"training/web",image:"../../img/blog/2017/web_00.png"}},{path:"training/web/internet.html",component:i,data:{title:"Retour sur la cr\xE9ation d'Internet",author:"Guillaume EHRET - Dev-Mind",publicationDate:"20/11/2017",category:"Web",description:"Retour sur la cr\xE9ation d'Internet",keywords:["Internet"],priority:"0.6",filename:"internet",folder:"training/web",image:"../../img/blog/2017/internet_00.png"}}];function Ye(t,f){if(t&1&&(a(0,"article",18)(1,"div",19)(2,"div",20),r(3,"img",21),e(),a(4,"h3")(5,"a",22),s(6),e()(),a(7,"p",23),s(8),e()()()),t&2){let n=f.$implicit,l=q();d("routerLink",l.postPath(n)),p(3),d("ngSrc",n.image)("alt",n.description),p(2),d("routerLink",l.postPath(n))("title",n.title),p(),b(n.title),p(2),b(n.description)}}var Me=(()=>{class t{constructor(){this.blogEntries=I.map(n=>n.data)}postPath(n){return["/",...n.folder.split("/"),n.filename+".html"]}static{this.\u0275fac=function(l){return new(l||t)}}static{this.\u0275cmp=h({type:t,selectors:[["app-all-training"]],standalone:!0,features:[m],decls:25,vars:1,consts:[[1,"dm-block--intro"],[1,"devmind-section"],[1,"dm-grid--flexible",2,"align-items","center"],[1,"dm-grid--element"],[1,"center"],["alt","Espace \xE9tudiant"],["srcset","../img/experience/formation_600.webp","type","image/webp"],["srcset","../img/experience/formation_600.png"],["src","../img/experience/formation_600.png","alt","Espace \xE9tudiant"],[1,"dm-grid--element",2,"flex","3 0 0"],[1,"dm_lead"],["href","https://twitter.com/guillaumeehret","target","_blank","rel","noopener"],["src","../img/contact/twitter.svg","alt","Twitter",1,"dm-social"],["href","https://github.com/Dev-Mind","target","_blank","rel","noopener"],["src","../img/contact/github.svg","alt","Github",1,"dm-social"],[1,"dm-block--news"],[1,"dm-blog--container-article"],[3,"routerLink",4,"ngFor","ngForOf"],[3,"routerLink"],[1,"dm-blog--article"],[1,"dm-blog--imgteaser"],["width","1500","height","764","sizes","(max-width: 100%)",3,"ngSrc","alt"],[3,"routerLink","title"],[1,"dm-blog--teaser"]],template:function(l,c){l&1&&(a(0,"div",0)(1,"div",1)(2,"h1"),s(3,"Student space"),e(),a(4,"div",2)(5,"div",3)(6,"div",4)(7,"picture",5),r(8,"source",6)(9,"source",7)(10,"img",8),e()()(),a(11,"div",9)(12,"p",10),s(13," All lesson supports and labs remain the intellectual property of Dev-Mind but they are freely accessible. "),e(),a(14,"p"),s(15,"You will find here all the supports shown during the lessons. If you are missing anything, please tell me"),e(),a(16,"p")(17,"a",11),r(18,"img",12),e(),a(19,"a",13),r(20,"img",14),e()()()()()(),a(21,"div",15)(22,"div",1)(23,"div",16),j(24,Ye,9,7,"article",17),e()()()),l&2&&(p(24),d("ngForOf",c.blogEntries))},dependencies:[_,x,S,k],encapsulation:2})}}return t})();var De=(()=>{class t{static{this.\u0275fac=function(l){return new(l||t)}}static{this.\u0275cmp=h({type:t,selectors:[["app-spring"]],standalone:!0,features:[m],decls:114,vars:0,consts:[[1,"dm-block--intro"],[1,"devmind-section"],[1,"dm-grid--flexible"],[1,"dm-grid--element"],[1,"center"],["src","img/formation/spring.svg","alt","Spring"],[1,"dm-grid--element",2,"flex","3 0 0"],[1,"dm_lead"],[1,"dm-block--news"],[1,"dm-grid--element","center"],["src","img/formation/spring-fwk.svg","alt","Spring Framework",1,"dm--picture--inverse",2,"width","75%"],[1,"dm-formation--detail"],["src","img/formation/spring-boot.svg","alt","Spring Boot",1,"dm--picture--inverse",2,"width","90%"],["src","img/formation/spring-data.svg","alt","Spring Data",1,"dm--picture--inverse",2,"width","90%"],["src","img/formation/spring-security.svg","alt","Spring Security",1,"dm--picture--inverse",2,"width","85%"],[1,"dm-block--blog"],["alt","Ecran principal"],["srcset","img/formation/spring-ex1.webp","type","image/webp"],["srcset","img/formation/spring-ex1.png"],["src","img/formation/spring-ex1.png","alt","Ecran principal"],["alt","Liste des sites"],["srcset","img/formation/spring-ex2.webp","type","image/webp"],["srcset","img/formation/spring-ex2.png"],["src","img/formation/spring-ex2.png","alt","Liste des sites"],["alt","Mesures temps r\xE9el"],["srcset","img/formation/spring-ex4.webp","type","image/webp"],["srcset","img/formation/spring-ex4.png"],["src","img/formation/spring-ex4.png","alt","Mesures temps r\xE9el"]],template:function(l,c){l&1&&(a(0,"div",0)(1,"div",1)(2,"h1"),s(3,"Formation Spring"),e(),a(4,"div",2)(5,"div",3)(6,"div",4),r(7,"img",5),e()(),a(8,"div",6)(9,"p",7),s(10," Spring est le framework Java le plus utilis\xE9 et il est Open Source. Connaissez vous toute la magie de Spring, comment il fonctionne, comment l'utiliser tout en respectant les bonnes pratiques de d\xE9veloppement ? "),e(),a(11,"p")(12,"i"),s(13,"J'utilise Spring depuis 15 ans et la version 1. Nous verrons ensemble comment le framework a \xE9volu\xE9, quels sont les probl\xE9matiques qui ont \xE9t\xE9 r\xE9solues. Ensemble nous pouvons construire une formation \xE0 la carte"),e()()()()()(),a(14,"div",8)(15,"div",1)(16,"p",7),s(17,"Je vous propose diff\xE9rents modules en fonction des diff\xE9rents projets et sous projets de Spring."),e(),a(18,"div",2)(19,"div",9),r(20,"img",10),a(21,"h2"),s(22,"CORE"),e(),a(23,"div",7)(24,"ul",11)(25,"li"),s(26,"Injection"),e(),a(27,"li"),s(28,"AOP"),e(),a(29,"li"),s(30,"Web MVC"),e(),a(31,"li"),s(32,"Web Rest"),e()(),a(33,"i"),s(34,"Temps id\xE9al : 3 jours"),e()()(),a(35,"div",9),r(36,"img",12),a(37,"h2"),s(38,"BOOT"),e(),a(39,"div",7)(40,"ul",11)(41,"li"),s(42,"Starter"),e(),a(43,"li"),s(44,"Auto config"),e(),a(45,"li"),s(46,"Logs"),e(),a(47,"li"),s(48,"M\xE9triques"),e()()(),a(49,"i"),s(50,"Temps id\xE9al : 1 jour"),e()(),a(51,"div",9),r(52,"img",13),a(53,"h2"),s(54,"DATA"),e(),a(55,"div",7)(56,"ul",11)(57,"li"),s(58,"JDBC"),e(),a(59,"li"),s(60,"JPA (Hibernate)"),e(),a(61,"li"),s(62,"Transaction"),e(),a(63,"li"),s(64,"Validation"),e()(),a(65,"i"),s(66,"Temps id\xE9al : 2 jours"),e()()(),a(67,"div",9),r(68,"img",14),a(69,"h2"),s(70,"SECURITY"),e(),a(71,"div",7)(72,"ul",11)(73,"li"),s(74,"Authorisation"),e(),a(75,"li"),s(76,"Authentification"),e(),a(77,"li"),s(78,"Cors"),e(),a(79,"li"),s(80,"CSRF"),e()(),a(81,"i"),s(82,"Temps id\xE9al : 1 jour"),e()()()(),a(83,"h2"),s(84,"Tarification"),e(),a(85,"p",7),s(86," Il existe deux modes de tarification en fonction du mode choisi "),e(),a(87,"ul",7)(88,"li"),s(89,"mode INTRA : la formation vous est r\xE9serv\xE9e et vous pouvez proposer jusqu'\xE0 6 stagiaires"),e(),a(90,"li"),s(91,"mode INTER : formation d'un seul stagiaire"),e()(),a(92,"p"),s(93,"Contactez moi sur guillaume (@) dev-mind.fr pour plus d'informations "),e()()(),a(94,"div",15)(95,"div",1)(96,"p",7),s(97," La formation est principalement ax\xE9e sur de la pratique. Si vous faites tous les modules vous construisez de A \xE0 Z une application qui permet de lire des donn\xE9es en temps r\xE9el et de les afficher sous forme de graphique "),e(),a(98,"div",2)(99,"div",9)(100,"picture",16),r(101,"source",17)(102,"source",18)(103,"img",19),e()(),a(104,"div",9)(105,"picture",20),r(106,"source",21)(107,"source",22)(108,"img",23),e()(),a(109,"div",9)(110,"picture",24),r(111,"source",25)(112,"source",26)(113,"img",27),e()()()()())},encapsulation:2})}}return t})();var R=(()=>{class t{static{this.\u0275fac=function(l){return new(l||t)}}static{this.\u0275cmp=h({type:t,selectors:[["app-not-found"]],standalone:!0,features:[m],decls:14,vars:0,consts:[[1,"dm-block--intro"],[1,"devmind-section"],[1,"dm_lead"],[1,"btn-group"],["href","/",1,"btn"]],template:function(l,c){l&1&&(a(0,"div",0)(1,"div",1)(2,"h1"),s(3,"Are you lost in the clouds ?? "),a(4,"span"),s(5,":("),e()(),a(6,"p",2),s(7,"Sorry, but the page you were trying to view does not exist."),e(),a(8,"div",3)(9,"a",4),s(10," Go to home "),e()()()(),a(11,"div")(12,"div",1),s(13," \xA0 "),e()())},encapsulation:2})}}return t})();var Pe=[{path:"home.html",component:Ee,resolve:{current:()=>v(g).navigateTo("home"),title:()=>v(w).setTitle("DevMind")}},{path:"experience.html",component:Le,resolve:{current:()=>v(g).navigateTo("experience"),title:()=>v(w).setTitle("Experience")}},{path:"formations.html",component:Ie,resolve:{current:()=>v(g).navigateTo("training"),title:()=>v(w).setTitle("Formation")}},{path:"formation_spring.html",component:De,resolve:{current:()=>v(g).navigateTo("training"),title:()=>v(w).setTitle("Formation")}},{path:"training/trainings.html",component:Me,resolve:{current:()=>v(g).navigateTo("training"),title:()=>v(w).setTitle("Formation")}},{path:"blog.html",component:P,resolve:{current:()=>v(g).navigateTo("blog"),title:()=>v(w).setTitle("Blog")}},{path:"blog_archive.html",component:P,data:{archive:!0},resolve:{current:()=>v(g).navigateTo("blog"),title:()=>v(w).setTitle("Blog")}},...T.map(t=>(t.data=D(M({},t.data),{type:"blog"}),t.resolve={current:()=>v(g).navigateTo("blog"),title:()=>v(w).setTitle("Blog")},t)),...I.map(t=>(t.data=D(M({},t.data),{type:"training"}),t.resolve={current:()=>v(g).navigateTo("training"),title:()=>v(w).setTitle("Training")},t)),{path:"404.html",component:R,resolve:{current:()=>v(g).navigateTo("home")}},{path:"",redirectTo:"/home.html",pathMatch:"full"},{path:"**",component:R,resolve:{current:()=>v(g).navigateTo("home")}}];var Re={providers:[ts(Pe,ns(),is({scrollPositionRestoration:"top",anchorScrolling:"enabled"})),Q(),ss()]};var Xe={providers:[es()]},Ge=V(Re,Xe);var Qe=()=>Z(ps,Ge),Xn=Qe;export{Xn as a};
+</div>`;var u=new Map;u.set("gameboard_score_multiplaform",le);u.set("score_jeu_societe_multiplaform",oe);u.set("install_development_environment",re);u.set("git",pe);u.set("gradle",ce);u.set("unit_test_in_java",de);u.set("spring_intro",ue);u.set("spring_ioc",he);u.set("spring_data",me);u.set("spring_web",ve);u.set("spring_security",ge);u.set("kotlin_for_java_developer",be);u.set("deploy_webapp_on_clever_cloud",fe);u.set("android_introduction",ye);u.set("android_first_app",je);u.set("android_add_activity",we);u.set("android_update_ui",ke);u.set("android_add_menu",_e);u.set("android_add_activity_list",qe);u.set("android_call_remote_api",xe);u.set("android_database_room_viewmodel",Se);u.set("http",Te);u.set("internet",Ce);function Je(t,f){if(t&1&&(a(0,"div",6),s(1),e()),t&2){let n=f.$implicit;p(),b(n)}}var i=(()=>{class t{constructor(n){this.domSanitizer=n,this.title="",this.author="devmind",this.publicationDate="",this.category="",this.keywords=[],this.description="",this.filename="",this.folder="",this.image="",this.type="blog",this.content=null}ngOnInit(){let l=(o.get(this.filename)||u.get(this.filename)||"").replaceAll("&amp;quot;","&quot;").replaceAll("&amp;apos;","&apos;").replaceAll("@link@",this.filename+".html").replaceAll("@dollar@","$").replaceAll("@GT","&gt;").replaceAll("@LT","&lt;").replaceAll(/@<span class="([\w\s-_]*)">LT/gi,"<span>&lt;").replaceAll(/@<span class="([\w\s-_]*)">GT/gi,"<span>&gt;").replaceAll("@LAMBDA","->").replaceAll("@ARROW","=>").replaceAll(/@<span class="([\w\s-_]*)">LAMBDA/gi,'<span class="hljs-title class_">->').replaceAll(/@<span class="([\w\s-_]*)">ARROW/gi,'<span class="hljs-title class_">=>').replaceAll("@backtick@","`").replaceAll("&amp;#xEA;","&ecirc;").replaceAll('<span class="icon">[flask&#93;</span>','<img src="/img/ic_flask.svg" style="width: 1em"/>').replaceAll('<span class="hljs-meta">@backtick</span>@',"`").replaceAll('<span class="hljs-meta">@backtick</span><span class="hljs-meta">@',"`").replaceAll('<span class="hljs-meta">@dollar</span>@',"$").replaceAll('<span class="hljs-symbol">&amp;lt;</span>',"&lt;").replaceAll('<span class="hljs-symbol">&amp;gt;</span>',"&gt;").replaceAll('@</span><span class="hljs-symbol">LT',"&lt;").replaceAll('@</span><span class="hljs-symbol">GT',"&gt;").replaceAll("@</span>GT","&gt;");this.content=this.domSanitizer.bypassSecurityTrustHtml(l)}routerlinkClicked(n){let A=n.target.attributes.getNamedItem("fragment")?.value;A&&(console.log("Go on",A),document.querySelector(A)?.scrollIntoView({block:"center"}))}static{this.\u0275fac=function(l){return new(l||t)(E($))}}static{this.\u0275cmp=h({type:t,selectors:[["app-asciidoc-viewer"]],inputs:{title:"title",author:"author",publicationDate:"publicationDate",category:"category",keywords:"keywords",description:"description",filename:"filename",folder:"folder",image:"image",type:"type"},standalone:!0,features:[m],decls:10,vars:4,consts:[[1,"dm-block--blog"],[1,"devmind-section"],[1,"blog-keywords"],[1,"dm-blog--info-date"],["class","dm-blog--keyword-detail",4,"ngFor","ngForOf"],[1,"preview",3,"click","innerHTML"],[1,"dm-blog--keyword-detail"]],template:function(l,c){l&1&&(a(0,"div",0)(1,"div",1)(2,"h1"),s(3),e(),a(4,"div",2)(5,"div",3),s(6),e(),j(7,Je,2,1,"div",4),s(8,"\xA0 "),e(),a(9,"div",5),L("click",function(ze){return c.routerlinkClicked(ze)}),e()()()),l&2&&(p(3),b(c.title),p(3),b(c.publicationDate),p(),d("ngForOf",c.keywords),p(2),d("innerHTML",c.content,W))},dependencies:[_],styles:[`h1{margin-top:.5em}.dm-blog--info-date{font-size:smaller;color:#424242;border:1px solid #aaa;border-radius:24px;padding:.5em 1em;margin-right:.5em;display:inline}.blog-keywords{display:flex;margin-bottom:1em}.blog-keywords .dm-blog--keyword-detail{background-color:#ccc;color:#424242;padding:.5em 1em;margin-right:.5em;border-radius:24px;font-size:smaller}.toc{background-color:#ccc;margin-top:1em;border:1px solid #ccc;padding:1em;border-radius:8px}.toc #toctitle{font-weight:700;margin-bottom:.5em}img{max-width:100%;height:auto}.imageblock>.content{display:flex;justify-content:center;align-items:center}.highlight{display:block;overflow-x:auto;background:#f3f3f3;color:#444;padding:1.5em;box-shadow:0 8px 16px #00000026;border-radius:8px}code.hljs{padding:3px 5px}.hljs-comment{color:#697070}.hljs-punctuation,.hljs-tag{color:#444a}.hljs-tag .hljs-attr,.hljs-tag .hljs-name{color:#444}.hljs-attribute,.hljs-doctag,.hljs-keyword,.hljs-meta .hljs-keyword,.hljs-name,.hljs-selector-tag{font-weight:700}.hljs-deletion,.hljs-number,.hljs-quote,.hljs-selector-class,.hljs-selector-id,.hljs-string,.hljs-template-tag,.hljs-type{color:#800}.hljs-section,.hljs-title{color:#800;font-weight:700}.hljs-link,.hljs-operator,.hljs-regexp,.hljs-selector-attr,.hljs-selector-pseudo,.hljs-symbol,.hljs-template-variable,.hljs-variable{color:#ab5656}.hljs-literal{color:#695}.hljs-addition,.hljs-built_in,.hljs-bullet,.hljs-code{color:#397300}.hljs-meta{color:#1f7199}.hljs-meta .hljs-string{color:#38a}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}.language-kotlin:before{display:block;float:right;content:"kotlin";font-weight:700;text-transform:uppercase}.language-typescript:before{display:block;float:right;content:"typescript";font-weight:700;text-transform:uppercase}.language-java:before{display:block;float:right;content:"java";font-weight:700;text-transform:uppercase}.language-javascript:before{display:block;float:right;content:"javascript";font-weight:700;text-transform:uppercase}.language-shell:before{display:block;float:right;content:"shell";font-weight:700;text-transform:uppercase}.language-yaml:before{display:block;float:right;content:"yaml";font-weight:700;text-transform:uppercase}.language-json:before{display:block;float:right;content:"json";font-weight:700;text-transform:uppercase}.language-xml:before{display:block;float:right;content:"xml";font-weight:700;text-transform:uppercase}.language-html:before{display:block;float:right;content:"html";font-weight:700;text-transform:uppercase}.language-css:before{display:block;float:right;content:"css";font-weight:700;text-transform:uppercase}.language-scss:before{display:block;float:right;content:"scss";font-weight:700;text-transform:uppercase}
+`],encapsulation:2})}}return t})();var T=[{path:"blog/2024/server_side_rendering.html",component:i,data:{title:"Server Side Rendering",author:"Guillaume EHRET - Dev-Mind",publicationDate:"31/05/2024",category:"Web",description:"Qu'est ce que le Server Side Rendering (SSR) et comment l'utiliser dans une application Angular",keywords:["Angular"],priority:"0.6",filename:"server_side_rendering",folder:"blog/2024",image:":../../img/blog/2024/ssr_intro.png"}},{path:"blog/2022/spring_boot_starter_database_schema_initialization.html",component:i,data:{title:"Comprendre l'auto-configuration Spring Boot",author:"Guillaume EHRET - Dev-Mind",publicationDate:"13/10/2022",category:"Spring",description:"Comment initialiser le schema et user d'un microservice via un starter Spring juste avant l'initialisation de la datasource g\xE9r\xE9e par Spring, Liquibase ou Flyway. Pour cel\xE0 il faut comprendre l'auto-configuration Spring Boot",keywords:["Kotlin","Spring","Liquibase","Flyway"],priority:"0.6",filename:"spring_boot_starter_database_schema_initialization",folder:"blog/2022",image:":../../img/blog/2022/sb_starter.png"}},{path:"blog/2021/assertj_extracting_koltin.html",component:i,data:{title:"Comment utiliser la m\xE9thode extracting AssertJ en Kotlin",publicationDate:"17/09/2021",category:"Kotlin",description:"La m\xE9thode extracting de AssertJ permet de tester les propri\xE9t\xE9s d'un objet ou d'une liste d'\xE9l\xE9ments rapidement. Mais comment l'utiliser en Kotlin ?",keywords:[],priority:"0.6",filename:"assertj_extracting_koltin",folder:"blog/2021",image:":../../img/blog/2021/assertj_koltin.png"}},{path:"blog/2021/java_memoire.html",component:i,data:{title:"La m\xE9moire en Java",author:"Guillaume EHRET - Dev-Mind",publicationDate:"20/02/2021",category:"Java",description:"Comprendre comment la m\xE9moire Java est g\xE9r\xE9e pour identifier des probl\xE8mes (Serial, Paralell, G1, ZGC, Epsilon, Shenandoah)",keywords:["Java","m\xE9moire"],priority:"0.6",filename:"java_memoire",folder:"blog/2021",image:":../../img/blog/2021/jvm_memory.png"}},{path:"blog/2019/application_web_typescript.html",component:i,data:{title:"Cr\xE9er une application web en TypeScript",author:"Guillaume EHRET - Dev-Mind",publicationDate:"08/10/2019",category:"Web",description:"Cr\xE9er une application web en TypeScript",keywords:["Web","Typescript"],priority:"0.6",filename:"application_web_typescript",folder:"blog/2019",image:":../../img/blog/2019/web_typescript0.png"}},{path:"blog/2019/start_typescript_project_and_test_with_jest.html",component:i,data:{title:"D\xE9marrez un projet Typescript et testez le avec Jest",author:"Guillaume EHRET - Dev-Mind",publicationDate:"19/08/2019",category:"Web",description:"Tout savoir sur comment D\xE9marrer un projet Typescript et le tester avec Jest",keywords:["Web","Typescript","Jest"],priority:"0.6",filename:"start_typescript_project_and_test_with_jest",folder:"blog/2019",image:":../../img/blog/2019/laissez_tomber_javascript1.png"}},{path:"blog/2019/comprendre_programation_android.html",component:i,data:{title:"Comprendre la programmation Android",author:"Guillaume EHRET - Dev-Mind",publicationDate:"12/06/2019",category:"Android",description:"Eco-syst\xE8me Android",keywords:["Android"],priority:"0.6",filename:"comprendre_programation_android",folder:"blog/2019",image:":../../img/blog/2019/android_pf_00.png"}},{path:"blog/2019/kotlin_et_android.html",component:i,data:{title:"Kotlin langage de r\xE9f\xE9rence Android",author:"Guillaume EHRET - Dev-Mind",publicationDate:"07/06/2019",category:"Android",description:"Pourquoi utiliser Kotlin quand on d\xE9veloppe en Android",keywords:["Android"],priority:"0.6",filename:"kotlin_et_android",folder:"blog/2019",image:":../../img/blog/2019/kotlin_et_android.png"}},{path:"blog/2019/application_android_score.html",component:i,data:{title:"Application pour saisir les scores",author:"Guillaume EHRET - Dev-Mind",publicationDate:"01/01/2019",category:"Android",description:"Score jeu de soci\xE9t\xE9 permet de saisir les scores quand vous jouez entre amis \xE0 un jeu de soci\xE9t\xE9",keywords:["Android"],priority:"0.6",filename:"application_android_score",folder:"blog/2019",image:":../../img/blog/2019/score_00.png"}},{path:"blog/2018/objectif_clever_cloud_js.html",component:i,data:{title:"Objectif web server JS sur Clever Cloud",author:"Guillaume EHRET - Dev-Mind",publicationDate:"02/11/2018",category:"Web",description:"Comment installer un serveur web en JS sur Clever Cloud et le s\xE9curiser pour la production",keywords:["Web","Clever","Cloud"],priority:"0.6",filename:"objectif_clever_cloud_js",folder:"blog/2018",image:"../../img/blog/2018/objectif_clever_cloud_00.png"}},{path:"blog/2018/installer_xps_ubuntu.html",component:i,data:{title:"Installer Ubuntu en dual boot sur XPS 15",author:"Guillaume EHRET - Dev-Mind",publicationDate:"16/09/2018",category:"Ubuntu",description:"Comment installer Ubuntu sur XPS 15 \xE0 c\xF4t\xE9 de Windows",keywords:["Syst\xE8me","Ubuntu"],priority:"0.6",filename:"installer_xps_ubuntu",folder:"blog/2018",image:"../../img/blog/2018/ubuntun00.png"}},{path:"blog/2018/slide_avec_revealjs_asciidoctor.html",component:i,data:{title:"G\xE9n\xE9rer vos slides avec Reveal.js et Asciidoctor",author:"Guillaume EHRET - Dev-Mind",publicationDate:"17/06/2018",category:"Conference",description:"G\xE9n\xE9rer vos slides avec Reveal.js et Asciidoctor",keywords:["Web","Conference","Slide","Asciidoctor"],priority:"0.6",filename:"slide_avec_revealjs_asciidoctor",folder:"blog/2018",image:"../../img/blog/2018/reveal_00.png"}},{path:"blog/2018/premiere_conference_au_togo.html",component:i,data:{title:"Premi\xE8re \xE9dition de ITogo.conf \xE0 Lom\xE9 au Togo",author:"Guillaume EHRET - Dev-Mind",publicationDate:"11/06/2018",category:"Conference",description:"Premi\xE8re \xE9dition de ITogo.conf \xE0 Lom\xE9 au Togo les 7 et 9 juin 2018",keywords:["Web","Conference","Android"],priority:"0.6",filename:"premiere_conference_au_togo",folder:"blog/2018",image:"../../img/blog/2018/itogo_00.png"}},{path:"blog/2018/secret_de_la_motivation.html",component:i,data:{title:"La motivation en entreprise",author:"Guillaume EHRET - Dev-Mind",publicationDate:"05/04/2018",category:"Agilit\xE9",description:"Quelles sont les secrets pour avoir des \xE9quipes motiv\xE9es",keywords:["Agilit\xE9","Motivation"],priority:"0.6",filename:"secret_de_la_motivation",folder:"blog/2018",image:"../../img/blog/2018/motivation_00.png"}},{path:"blog/2018/mongo_full_text_index.html",component:i,data:{title:"Recherche Fulltext dans une application SpringBoot via MongoDB",author:"Guillaume EHRET - Dev-Mind",publicationDate:"23/02/2018",category:"Java",description:"Les diff\xE9rentes \xE9tapes pour ajouter une recherche full text dans une application SpringBoot \xE9crite en Kotlyn",keywords:["Spring","MongoDb","Kotlyn"],priority:"0.6",filename:"mongo_full_text_index",folder:"blog/2018",image:"../../img/blog/2018/mongo_full_text_index_00.png"}},{path:"blog/2018/publish_maven_central.html",component:i,data:{title:"Publier une librairie open source sur Maven Central",author:"Guillaume EHRET - Dev-Mind",publicationDate:"22/01/2018",category:"Java",description:"les astuces pour pouvoir publier une librairie open source sur Maven Central",keywords:["Java","Gradle","OSS"],priority:"0.6",filename:"publish_maven_central",folder:"blog/2018",image:"../../img/blog/2018/mavencentral_00.png"}},{path:"blog/2018/mockserver.html",component:i,data:{title:"Tester Spring WebFlux WebClient en Junit 4 ou 5 avec MockWebServer",author:"Guillaume EHRET - Dev-Mind",publicationDate:"15/01/2018",category:"Java",description:"comment utiliser mockwebserver pour tester vos services Spring utilisant WebClient",keywords:["Java","Junit","Spring","Boot","WebClient"],priority:"0.6",filename:"mockserver",folder:"blog/2018",image:"../../img/blog/2018/mockwebserver_00.png"}},{path:"blog/2018/junit5_and_springboot.html",component:i,data:{title:"Utiliser Junit 5 dans une application Spring Boot",author:"Guillaume EHRET - Dev-Mind",publicationDate:"08/01/2018",category:"Java",description:"Tout ce qu'il fut savoir pour utiliser la derni\xE8re version de Junit 5 dans un projet Java et plus particuli\xE8rement dans un projet Spring Boot",keywords:["Java","Junit","Spring","Boot"],priority:"0.6",filename:"junit5_and_springboot",folder:"blog/2018",image:"../../img/blog/2018/junit5_00.png"}},{path:"blog/2018/utiliser_api_envoi_email.html",component:i,data:{title:"Utiliser une API d'envoi de mail en Java",author:"Guillaume EHRET - Dev-Mind",publicationDate:"04/01/2018",category:"Java",description:"Utiliser une API d'envoi de mail en Java dans une application Spring Boot",keywords:["Java","API","Email"],priority:"0.6",filename:"utiliser_api_envoi_email",folder:"blog/2018",image:"../../img/blog/2018/email_00.png"}},{path:"blog/2018/do_your_blog_yourself.html",component:i,data:{title:"Do your Blog yourself",author:"Guillaume EHRET - Dev-Mind",publicationDate:"02/01/2018",category:"Web",description:"Comment construire le blog parfait",keywords:["Web","Blog","Asciidoc","Asciidoctor","CMS","Clever","Cloud"],priority:"0.6",filename:"do_your_blog_yourself",folder:"blog/2018",image:"../../img/blog/2018/siteweb_00.jpg"}},{path:"blog/2017/dotcss.html",component:i,data:{title:"DotCSS 2017",author:"Guillaume EHRET - Dev-Mind",publicationDate:"01/12/2017",category:"Web",description:"Retour sur l'\xE9dtion 2017 de dotCSS",keywords:["Internet","Web","CSS","MediaQueries","Font"],priority:"0.6",filename:"dotcss",folder:"blog/2017",image:"../../img/blog/2017/dotcss_00.jpg"}},{path:"blog/2017/http.html",component:i,data:{title:"Le protocole HTTP",author:"Guillaume EHRET - Dev-Mind",publicationDate:"27/11/2017",category:"Web",description:"Le protocole HTTP",keywords:["Internet","Web"],priority:"0.6",filename:"http",folder:"blog/2017",image:"../../img/blog/2017/web_00.png"}},{path:"blog/2017/web.html",component:i,data:{title:"Le World Wide Web",author:"Guillaume EHRET - Dev-Mind",publicationDate:"25/11/2017",category:"Web",description:"Retour sur la cr\xE9ation du world wide web",keywords:["Internet","Web"],priority:"0.6",filename:"web",folder:"blog/2017",image:"../../img/blog/2017/web_00.png"}},{path:"blog/2017/internet.html",component:i,data:{title:"Retour sur la cr\xE9ation d'Internet",author:"Guillaume EHRET - Dev-Mind",publicationDate:"20/11/2017",category:"Web",description:"Retour sur la cr\xE9ation d'Internet",keywords:["Internet"],priority:"0.6",filename:"internet",folder:"blog/2017",image:"../../img/blog/2017/internet_00.png"}},{path:"blog/2017/site_wassadou.html",component:i,data:{title:"Solidarit\xE9 Wassadou Pont-Trambouze",author:"Guillaume EHRET - Dev-Mind",publicationDate:"05/08/2017",category:"Web",description:"Retour sur la cr\xE9ation du site Solidarit\xE9 Wassadou Pont-Trambouze",keywords:["Web","Firebase","Serverless"],priority:"0.6",filename:"site_wassadou",folder:"blog/2017",image:"../../img/blog/2017/wassadou_00.png"}},{path:"blog/2017/workboxjs.html",component:i,data:{title:"Workbox la toolbox pour les progressive webapps",author:"Guillaume EHRET - Dev-Mind",publicationDate:"02/07/2017",category:"Web",description:"Comment utiliser Workbox la nouvelle toolbox de Google faite pour faciiter la cr\xE9ation de vos progressive webapps",keywords:["Web","PWA","ServiceWorker","Workbox"],priority:"0.6",filename:"workboxjs",folder:"blog/2017",image:"../../img/blog/2017/workbox_00.png"}},{path:"blog/2017/creer_service_worker.html",component:i,data:{title:"Cr\xE9er un Service Worker",author:"Guillaume EHRET - Dev-Mind",publicationDate:"28/06/2017",category:"Web",description:"Zoom sur sw-precache et sw-toolbox permettant de mettre en place des services workers",keywords:["Web","PWA","ServiceWorker"],priority:"0.6",filename:"creer_service_worker",folder:"blog/2017",image:"../../img/blog/2017/creer_service_worker_00.png"}},{path:"blog/2017/service_worker.html",component:i,data:{title:"Les services workers",author:"Guillaume EHRET - Dev-Mind",publicationDate:"20/06/2017",category:"Web",description:"Comment marche les progressive webapps et focus sur les services workers",keywords:["Web","PWA","ServiceWorker"],priority:"0.6",filename:"service_worker",folder:"blog/2017",image:"../../img/blog/2017/service_worker_00.png"}},{path:"blog/2017/highcharts_stackedarea.html",component:i,data:{title:"Highcharts et staked area avec des valeurs n\xE9gatives et positives",author:"Guillaume EHRET - Dev-Mind",publicationDate:"29/05/2017",category:"JavaScript Web",description:"Comment afficher des graphiques de type staked area (zone empil\xE9e) avec Highcharts quand le jeu de donn\xE9es contient \xE0 la fois des valeurs n\xE9gatives et des valeurs positives",keywords:["JavaScripy","Graph","Highcharts"],priority:"0.6",filename:"highcharts_stackedarea",folder:"blog/2017",image:"../../img/blog/2017/highcharts_stackedarea_00.png"}},{path:"blog/2017/nouveau_site_asciidoctor.html",component:i,data:{title:"Cr\xE9er son blog en Asciidoc via Asciidoctor",author:"Guillaume EHRET - Dev-Mind",publicationDate:"09/05/2017",category:"Web",description:"Migrer son blog de blogger vers un blog g\xE9n\xE9r\xE9 en Asciidoc via Asciidoctor",keywords:["Web","Blog","Asciidoc","Asciidoctor","CMS"],priority:"0.6",filename:"nouveau_site_asciidoctor",folder:"blog/2017",image:"../../img/blog/2017/nouveau_site_asciidoctor_00.png"}},{path:"blog/2017/test_services_rest_springboot.html",component:i,data:{title:"Des tests simples de vos services REST avec SpringBoot",author:"Guillaume EHRET - Dev-Mind",publicationDate:"15/03/2017",category:"Java",description:"SpringBoot pour \xE9crire des tests simples, lisibles et rapides de vos services REST",keywords:["Java","Spring","SpringBoot"],priority:"0.6",filename:"test_services_rest_springboot",folder:"blog/2017",image:"../../img/blog/2017/test_services-rest-springboot_00.png"}},{path:"blog/2017/ecrire_ses_scripts_gradle_en_kotlin.html",component:i,data:{title:"Scripts Gradle : Kotlin vs Groovy",author:"Guillaume EHRET - Dev-Mind",publicationDate:"12/01/2017",category:"Gradle Kotlin",description:"Diff\xE9rences entre un script Groovy et Kotlin en essayant de param\xE9trer le plugin gradle-node-plugin",keywords:["Java","Gradle","Kotlin"],priority:"0.6",filename:"ecrire_ses_scripts_gradle_en_kotlin",folder:"blog/2017",image:"../../img/blog/2017/ecrire_ses_scripts_gradle_en_kotlin_00.png"}},{path:"blog/2016/ngeurope_angular2_unittest.html",component:i,data:{title:"Tester une application Angular 2",author:"Guillaume EHRET - Dev-Mind",publicationDate:"24/10/2016",category:"Web",description:"Ng-europe Paris du 24 au 26 octobre 2016 Tester une application Angular 2",keywords:["Angular","Angular2","ng-europe","Test"],priority:"0.6",filename:"ngeurope_angular2_unittest",folder:"blog/2016",image:"../../img/blog/2016/ngeurope/ngeurope-angulartest00.jpg"}},{path:"blog/2016/ngeurope_angular_cli.html",component:i,data:{title:"Cycle de vie d\u2019une application Angular 2 via Angular CLI",author:"Guillaume EHRET - Dev-Mind",publicationDate:"24/10/2016",category:"Web",description:"Ng-europe Paris du 24 au 26 octobre 2016 Retour sur le talk de Hans Larsen Angular CLI &amp; You",keywords:["Angular","Angular2","ng-europe","Web"],priority:"0.6",filename:"ngeurope_angular_cli",folder:"blog/2016",image:"../../img/blog/2016/ngeurope/ngeurope-angularcli00.jpg"}},{path:"blog/2016/ngeurope_keynote_misko_hevery.html",component:i,data:{title:"Keynote de Mi\u0161ko Hevery \xE0 ng-europe 2016",author:"Guillaume EHRET - Dev-Mind",publicationDate:"24/10/2016",category:"Web",description:"Ng-europe Paris du 24 au 26 octobre 2016 retour sur la keynote de Mi\u0161ko Hevery \xE0 ng-europe 2016",keywords:["Angular","Angular2","ng-europe","Web"],priority:"0.6",filename:"ngeurope_keynote_misko_hevery",folder:"blog/2016",image:"../../img/blog/2016/ngeurope/ngeurope-keynote-misko-hevery00.jpg"}},{path:"blog/2016/ngeurope_mobile_first_is_not_mobile_only.html",component:i,data:{title:"Mobile first is not mobile only (ng-europe 2016)",author:"Guillaume EHRET - Dev-Mind",publicationDate:"24/10/2016",category:"Web",description:"Retour sur les conf\xE9rences de Willem Veelentur et de Christian Weyer &amp; Thorsten Hans sur les rendus sur mobile Angular 2 \xE0 ng-europe 2016",keywords:["Angular","Angular2","ng-europe","TypeScript"],priority:"0.6",filename:"ngeurope_mobile_first_is_not_mobile_only",folder:"blog/2016",image:"../../img/blog/2016/ngeurope/ngeurope-mobile00.jpg"}},{path:"blog/2016/ngeurope_rendering_et_angular.html",component:i,data:{title:"Angular 2 et Rendering : Universal, React Native, NativeScript",author:"Guillaume EHRET - Dev-Mind",publicationDate:"24/10/2016",category:"Web",description:"Ng-europe Paris du 24 au 26 octobre 2016 Angular 2 et Rendering : Universal, React Native, NativeScript",keywords:["Angular","Angular2","ng-europe","Universal"],priority:"0.6",filename:"ngeurope_rendering_et_angular",folder:"blog/2016",image:"../../img/blog/2016/ngeurope/ngeurope-rendering00.jpg"}},{path:"blog/2016/ngeurope_rxjs_angular2.html",component:i,data:{title:"Angular 2 et RxJS \xE0 ng-europe 2016",author:"Guillaume EHRET - Dev-Mind",publicationDate:"24/10/2016",category:"Java",description:"Ng-europe Paris du 24 au 26 octobre 2016 retour sur les talks sur RxJS",keywords:["Web","Angular","RxJs"],priority:"0.6",filename:"ngeurope_rxjs_angular2",folder:"blog/2016",image:"../../img/blog/2016/ngeurope_rxjs_angular2_00.jpg"}},{path:"blog/2016/ngeurope_typescript_et_angular.html",component:i,data:{title:"Ecrire en TypeScript une application Angular",author:"Guillaume EHRET - Dev-Mind",publicationDate:"24/10/2016",category:"Web",description:"Ng-europe Paris du 24 au 26 octobre 2016 retour comment \xE9crire en TypeScript une application Angular 2",keywords:["Angular","Angular2","ng-europe","TypeScript"],priority:"0.6",filename:"ngeurope_typescript_et_angular",folder:"blog/2016",image:"../../img/blog/2016/ngeurope/ngeurope-typescript00.jpg"}},{path:"blog/2016/springboot_kotlin.html",component:i,data:{title:"Kotlin dans le monde Spring",author:"Guillaume EHRET - Dev-Mind",publicationDate:"23/09/2016",category:"Java",description:"Kotlin dans le monde Spring",keywords:["Java","SpringBoot","Kotlin"],priority:"0.6",filename:"springboot_kotlin",folder:"blog/2016",image:"../../img/blog/2016/springkotlin_00.png"}},{path:"blog/2016/springboot_http2.html",component:i,data:{title:"HTTP 2 comment l'utiliser dans une webapp Spring Boot",author:"Guillaume EHRET - Dev-Mind",publicationDate:"10/07/2016",category:"Java",description:"HTTP 2 comment l'utiliser dans une webapp Spring Boot",keywords:["Java","SpringBoot","HTTP/2"],priority:"0.6",filename:"springboot_http2",folder:"blog/2016",image:"../../img/blog/2016/springhttp2_00.png"}},{path:"blog/2016/springboot_devtools.html",component:i,data:{title:"Optimiser son quotidien de d\xE9veloppeur avec Spring DevTools",author:"Guillaume EHRET - Dev-Mind",publicationDate:"29/06/2016",category:"Java",description:"Optimiser son quotidien de d\xE9veloppeur avec Spring DevTools",keywords:["Java","SpringBoot"],priority:"0.6",filename:"springboot_devtools",folder:"blog/2016",image:"../../img/blog/2016/springdevtools_00.png"}},{path:"blog/2016/headlesss_testing.html",component:i,data:{title:"Installer un serveur X virtuel pour ex\xE9cuter ses tests headless",author:"Guillaume EHRET - Dev-Mind",publicationDate:"03/06/2016",category:"Java",description:"Headless testing : comment installer un serveur X virtuel pour ex\xE9cuter vos tests unitaires ou end-to-end",keywords:["Java","SpringBoot","Kotlin"],priority:"0.6",filename:"headlesss_testing",folder:"blog/2016",image:"../../img/blog/2016/testheadless_00.png"}},{path:"blog/2016/flexbox_layouts_faciles.html",component:i,data:{title:"Flexbox et la simplification des layouts",author:"Guillaume EHRET - Dev-Mind",publicationDate:"18/05/2016",category:"Web",description:"Utiliser les flexbox pour disposer les \xE9l\xE9ments dans votre page",keywords:["Web","CSS","Flexbox"],priority:"0.6",filename:"flexbox_layouts_faciles",folder:"blog/2016",image:"../../img/blog/2016/flexbox_layouts_faciles_00.png"}},{path:"blog/2016/communication_et_neuroscience.html",component:i,data:{title:"Communication : le cerveau \xE0 la recherche de la r\xE9alit\xE9",author:"Guillaume EHRET - Dev-Mind",publicationDate:"04/03/2016",category:"Agilit\xE9",description:"Agile Lyon sur la communication : le cerveau \xE0 la recherche de la r\xE9alit\xE9 retour sur intervention de Yves Rosseti",keywords:["Agilit\xE9","Communication"],priority:"0.6",filename:"communication_et_neuroscience",folder:"blog/2016",image:"../../img/blog/2016/communication_et_neuroscience_00.png"}},{path:"blog/2016/sorganiser_pour_la_complexite.html",component:i,data:{title:"S'organiser pour la complexit\xE9",author:"Guillaume EHRET - Dev-Mind",publicationDate:"22/02/2016",category:"Agile method",description:"S'organiser pour la complexit\xE9",keywords:["Agile","method","Complexity"],priority:"0.6",filename:"sorganiser_pour_la_complexite",folder:"blog/2016",image:"../../img/blog/2016/complexity_00.jpg"}},{path:"blog/2016/pousser_message_slack_en_java.html",component:i,data:{title:"Pousser un message Slack en Java",author:"Guillaume EHRET - Dev-Mind",publicationDate:"29/01/2016",category:"Java",description:"Pousser un message Slack en Java",keywords:["Java"],priority:"0.6",filename:"pousser_message_slack_en_java",folder:"blog/2016",image:"../../img/blog/2016/slack_00.png"}},{path:"blog/2015/12_patterns_transition_agile.html",component:i,data:{title:"12 patterns pour une transition agile",author:"Guillaume EHRET - Dev-Mind",publicationDate:"03/11/2015",category:"Agilit\xE9",description:"12 patterns pour la transition agile par Christophe Addinquy",keywords:["Agilit\xE9","Leadership","Management"],priority:"0.6",filename:"12_patterns_transition_agile",folder:"blog/2015",image:"../../img/blog/2015/transition_00.png"}},{path:"blog/2015/formes_leadership.html",component:i,data:{title:"Les diff\xE9rentes formes de leadership",author:"Guillaume EHRET - Dev-Mind",publicationDate:"15/09/2015",category:"Agilit\xE9",description:"Les diff\xE9rentes formes de leadership dans un village gaulois.... Parall\xE8le avec la c\xE9l\xE8bre BD Ast\xE9rix et Ob\xE9lix",keywords:["Agilit\xE9","Leadership","Management"],priority:"0.6",filename:"formes_leadership",folder:"blog/2015",image:"../../img/blog/2015/formes_leadership_00.jpg"}},{path:"blog/2015/java8_et_les_lambda_stream.html",component:i,data:{title:"Java 8 et les Lambda, Stream et Collectors",author:"Guillaume EHRET - Dev-Mind",publicationDate:"02/01/2015",category:"Java",description:"Tout comprendre sur les lmabda introduits dans Java 8. Manipuler les collections avec la nouvelle API Stream",keywords:["Java","Java","8","Stream","Lambda"],priority:"0.6",filename:"java8_et_les_lambda_stream",folder:"blog/2015",image:"../../img/blog/2015/java8_00.jpg"}}];function We(t,f){t&1&&(a(0,"h1"),s(1,"Le blog"),e())}function Be(t,f){t&1&&(a(0,"h1"),s(1,"Les archives du blog"),e())}function Fe(t,f){t&1&&(a(0,"p",11),s(1,"Retrouvez les derniers articles de blog de Dev-Mind."),e())}function Ne(t,f){if(t&1&&(a(0,"article",12)(1,"div",13)(2,"div",14),r(3,"img",15),e(),a(4,"h3")(5,"a",16),s(6),e()(),a(7,"p",17),s(8),e()()()),t&2){let n=f.$implicit,l=q();d("routerLink",l.postPath(n)),p(3),d("ngSrc",n.image)("alt",n.description),p(2),d("routerLink",l.postPath(n))("title",n.title),p(),b(n.title),p(2),b(n.description)}}function Ue(t,f){if(t&1){let n=B();a(0,"button",18),L("click",function(){O(n);let c=q();return J(c.displayedArticles=c.displayedArticles+4)}),s(1,"Plus d'articles... "),e()}}function He(t,f){t&1&&(a(0,"a",19),s(1,"Voir tous les articles"),e())}var P=(()=>{class t{constructor(){this.archive=!1,this.blogEntries=T.map(n=>n.data),this.displayedArticles=4}ngOnInit(){this.displayedArticles=this.archive?4e3:4}postPath(n){return["/",...n.folder.split("/"),n.filename+".html"]}static{this.\u0275fac=function(l){return new(l||t)}}static{this.\u0275cmp=h({type:t,selectors:[["app-blog"]],inputs:{archive:"archive"},standalone:!0,features:[m],decls:15,vars:10,consts:[[1,"dm-block--blog"],[1,"devmind-section"],[4,"ngIf"],["class","dm_lead",4,"ngIf"],[1,"dm-blog--container-article"],[3,"routerLink",4,"ngFor","ngForOf"],[1,"btn-group",2,"padding","1em"],[1,"btn-group--element"],["class","btn-inverse",3,"click",4,"ngIf"],["href","blog_archive.html","class","btn-inverse",4,"ngIf"],["href","/rss/blog.xml",1,"btn-inverse"],[1,"dm_lead"],[3,"routerLink"],[1,"dm-blog--article"],[1,"dm-blog--imgteaser"],["width","1500","height","764","sizes","(max-width: 100%)",3,"ngSrc","alt"],[3,"routerLink","title"],[1,"dm-blog--teaser"],[1,"btn-inverse",3,"click"],["href","blog_archive.html",1,"btn-inverse"]],template:function(l,c){l&1&&(a(0,"main")(1,"div",0)(2,"div",1),j(3,We,2,0,"h1",2)(4,Be,2,0,"h1",2)(5,Fe,2,0,"p",3),a(6,"div",4),j(7,Ne,9,7,"article",5),U(8,"slice"),e(),a(9,"div",6)(10,"div",7),j(11,Ue,2,0,"button",8)(12,He,2,0,"a",9),a(13,"a",10),s(14,"Flux RSS"),e()()()()()()),l&2&&(p(3),d("ngIf",!c.archive),p(),d("ngIf",c.archive),p(),d("ngIf",!c.archive),p(2),d("ngForOf",H(8,6,c.blogEntries,0,c.displayedArticles)),p(4),d("ngIf",!c.archive),p(),d("ngIf",!c.archive))},dependencies:[_,S,k,x,Y,K],styles:[".btn-inverse[_ngcontent-%COMP%]{margin-right:1em}"]})}}return t})();function Ve(t,f){if(t&1&&(a(0,"article",21)(1,"div",22)(2,"div",23),r(3,"img",24),e(),a(4,"h3")(5,"a",25),s(6),e()(),a(7,"p",26),s(8),e()()()),t&2){let n=f.$implicit,l=q();d("routerLink",l.postPath(n)),p(3),d("ngSrc",n.image)("alt",n.description),p(2),d("routerLink",l.postPath(n))("title",n.title),p(),b(n.title),p(2),b(n.description)}}var Ee=(()=>{class t{constructor(){this.blogEntries=T.map(n=>n.data).slice(0,2)}postPath(n){return["/",...n.folder.split("/"),n.filename+".html"]}static{this.\u0275fac=function(l){return new(l||t)}}static{this.\u0275cmp=h({type:t,selectors:[["app-home"]],standalone:!0,features:[m],decls:69,vars:1,consts:[[1,"dm-block--intro"],[1,"devmind-section"],[1,"dm_lead"],["href","https://bsky.app/profile/dev-mind.fr","rel","noopener","target","_blank"],["href","https://bsky.app/profile/dev-mind.fr","target","_blank","rel","noopener"],["src","img/contact/bsky.svg","alt","BlueSky",1,"dm-social"],["href","https://github.com/javamind","target","_blank","rel","noopener"],["src","img/contact/github.svg","alt","Github",1,"dm-social"],["href","https://www.linkedin.com/pub/guillaume-ehret/7/668/999","target","_blank","rel","noopener"],["src","img/contact/linkedin.svg","alt","Linkedin",1,"dm-social"],[1,"center","btn-group"],["href","formations.html","alt","Formations","onclick","app.changeMenu('#formation')",1,"btn"],[1,"dm-block--blog"],[1,"dm-blog--container-article"],[3,"routerLink",4,"ngFor","ngForOf"],["href","blog.html","alt","Blog","onclick","app.changeMenu('#blog')",1,"btn","btn-inverse"],[1,"dm-block--news"],["href","experience.html","alt","Experience","onclick","app.changeMenu('#experience')"],["href","https://mixitconf.org/","rel","noopener"],["href","https://github.com/javamind","rel","noopener"],["href","https://speakerdeck.com/javamind","rel","noopener"],[3,"routerLink"],[1,"dm-blog--article"],[1,"dm-blog--imgteaser"],["width","1500","height","764","sizes","(max-width: 100%)",3,"ngSrc","alt"],[3,"routerLink","title"],[1,"dm-blog--teaser"]],template:function(l,c){l&1&&(a(0,"div",0)(1,"div",1)(2,"h1"),s(3,"D\xE9veloppement & Formation"),e(),a(4,"p",2),s(5," Je me nomme "),a(6,"a",3),s(7,"Guillaume EHRET"),e(),s(8," et je propose mes services pour aider les entreprises qui souhaitent cr\xE9er de nouveaux logiciels ou s'organiser pour r\xE9ussir leurs d\xE9fis. Je peux intervenir en tant que d\xE9veloppeur exp\xE9riment\xE9 pour du conseil, de la programmation et de la formation. "),e(),a(9,"p")(10,"a",4),r(11,"img",5),e(),a(12,"a",6),r(13,"img",7),e(),a(14,"a",8),r(15,"img",9),e()(),a(16,"p",10)(17,"a",11),s(18," Voir les formations"),e()()()(),a(19,"div",12)(20,"div",1)(21,"h2"),s(22,"Derniers articles de blog"),e(),a(23,"div",13),j(24,Ve,9,7,"article",14),e(),a(25,"p",10)(26,"a",15),s(27," Voir le blog"),e()()()(),a(28,"div",16)(29,"div",1)(30,"h2"),s(31,"Actualit\xE9s"),e(),a(32,"p",2),s(33,"Vous pouvez visualiser ma page "),a(34,"a",17),s(35,"exp\xE9riences"),e(),s(36," pour voir mes clients ou employeurs depuis 20 ans. J'interviens en tant que speaker dans des conf\xE9rences et je fais aussi partie de l'\xE9quipe des organisateurs de la conf\xE9rence "),a(37,"a",18),s(38,"MiXiT"),e(),s(39," qui a lieu tous les ans \xE0 Lyon qui regroupe 1000 personnes pendant 2 jours autour de conf\xE9rences, d'ateliers avec des speakers venant du monde entier."),e(),a(40,"p",2),s(41,"Je participe \xE9galement \xE0 des projets Open Source. Vous pouvez consulter mon "),a(42,"a",19),s(43,"Github"),e(),s(44," pour plus d'informations. J'interviens \xE9galement r\xE9guli\xE8rement dans des conf\xE9rences et voici mon "),a(45,"a",20),s(46,"Speaker Deck"),e()()()(),a(47,"div",12)(48,"div",1)(49,"h2"),s(50,"Contact"),e(),a(51,"p",2),s(52," N'h\xE9sitez pas \xE0 me contacter si vous souhaitez plus d'informations"),r(53,"br"),e(),a(54,"p",2)(55,"b"),s(56,"Guillaume EHRET"),e(),r(57,"br"),a(58,"a"),s(59,"guillaume (@) dev-mind.fr"),e()(),a(60,"address",2)(61,"b"),s(62,"Dev-Mind"),e(),r(63,"br"),s(64," 14 rue des roches"),r(65,"br"),s(66," 42290 Sorbiers"),r(67,"br"),s(68," France "),e()()()),l&2&&(p(24),d("ngForOf",c.blogEntries))},dependencies:[_,x,S,k],styles:[".dm-social[_ngcontent-%COMP%]{min-width:2em;max-width:2em;width:2em;height:2em;margin-right:.5em}.dm-social[_ngcontent-%COMP%]:hover{opacity:.8}"]})}}return t})();var Le=(()=>{class t{static{this.\u0275fac=function(l){return new(l||t)}}static{this.\u0275cmp=h({type:t,selectors:[["app-experience"]],standalone:!0,features:[m],decls:741,vars:0,consts:[[1,"dm-block--intro"],[1,"devmind-section"],[1,"dm_lead"],[1,"is-large-screen"],[1,"dm-experience--graph"],[1,"dm-experience--before"],[1,"dm-experience--date"],[1,"dm-experience--step"],[1,"dm-experience--solutec"],["href","experience.html#solutec"],[1,"dm-experience--casino"],["href","experience.html#casino"],[1,"dm-experience--iorga"],["href","experience.html#iorga"],[1,"dm-experience--boiron"],["href","experience.html#boiron"],[1,"dm-experience--devmind"],["href","experience.html#experience"],[1,"dm-experience--after"],[1,"is-small-screen"],[1,"dm-block--blog"],["id","experience",1,"dm-experience--container"],["href","https://www.hopwork.com/profile/541be334e4b01245a80d52ab?q=ehret","rel","noopener"],["href","https://github.com/javamind","rel","noopener"],["href","https://speakerdeck.com/javamind","rel","noopener"],["data-value","Spring;Kotlin;Web;Android","id","fairphone",1,"dm-experience--section"],[1,"dm-experience--label-box"],[1,"dm-experience--label"],["data-value","Spring;Java;Web;Angular","id","epool",1,"dm-experience--section"],["data-value","Spring;Java;Web;Angular","id","esme",1,"dm-experience--section"],["data-value","Spring;Java;Web;Angular","id","bonita",1,"dm-experience--section"],["data-value","Spring","id","poleemploi",1,"dm-experience--section"],["data-value","Spring","id","esmeform",1,"dm-experience--section"],[1,"dm-block--news"],["id","conferences"],["href","mixitconf.org"],["data-value","Conf\xE9rence",1,"dm-experience--section"],["href","https://cfp.devoxx.fr/2019/talk/AIY-5287/Developper_une_application_Android_en_Kotlin.html"],["href","https://speakerdeck.com/javamind/developper-une-application-en-kotlin"],["href","https://cfp2018.devoxx.ma/2018/speaker/guillaume_ehret"],["href","https://speakerdeck.com/javamind/2h-pour-creer-une-application-android-en-kotlin"],["href","https://itogo.cleverapps.io/"],["href","https://speakerdeck.com/javamind/mettre-en-place-une-application-android-en-50-minutes"],["href","https://speakerdeck.com/javamind/itogo-conf-optimiser-les-performances-d-une-webapp"],["href","https://speakerdeck.com/javamind/optimiser-les-performances-dune-webapp-1"],["href","https://www.youtube.com/watch?v=1uh7IFs7_BA"],["href","https://cfp.devoxx.fr/2017/speaker/guillaume_ehret"],["href","https://speakerdeck.com/javamind/optimiser-les-performances-dune-webapp"],["href","https://www.youtube.com/watch?v=9PRPPJFaF_o"],["href","http://www.soft-shake.ch"],["href","https://speakerdeck.com/javamind/optimisez-votre-webapp"],["href","http://www.lyonjug.org/evenements/testing-1"],["href","https://speakerdeck.com/javamind/ecrire-des-tests-en-javascript"],["href","https://www.youtube.com/watch?v=E5HB62QrVbU"],["href","https://snowcamp2016.sched.com/"],["href","https://speakerdeck.com/javamind/les-tests-en-javascript-2"],["href","https://speakerdeck.com/javamind/les-tests-en-javascript-1"],["href","http://www.jugsummercamp.org/edition/6"],["href","https://speakerdeck.com/javamind/15-minutes-pour-tester-son-application-js"],["href","https://www.youtube.com/watch?v=CBskWMtTq80"],["href","http://2015.breizhcamp.org/"],["href","https://speakerdeck.com/javamind/les-tests-en-javascript"],["href","https://www.youtube.com/watch?v=qifqH8lKWXk&list=PLHWl6dPnEb4kHfPp5D8CiGNfA64HQs_Hb&index=50"],["href","https://speakerdeck.com/javamind/le-bon-testeur-il-teste-le-mauvais-testeur-il-teste-dot-dot-dot"],["href","http://www.lavajug.org/2014/09/11/le-bon-testeur.html"],["href","https://speakerdeck.com/javamind/lavajug2014-le-bon-testeur-il-teste-le-mauvais-testeur-il-teste"],["href","https://speakerdeck.com/javamind/devoxxfr2014-le-bon-testeur-il-teste-le-mauvais-testeur-il-teste"],["href","https://www.youtube.com/watch?v=jCk2H0X82qM"],["id","boiron",1,"dm-block--blog"],[1,"dm-experience--container-past"],["data-value","Architecture;JMS;Java;Webservices","id","boiron-archi",1,"dm-experience--section"],["data-value","Java;Webservices;Web","id","boiron-rm",1,"dm-experience--section"],["data-value","Java;Agilit\xE9;Web;Devops","id","iorga",1,"dm-experience--section"],["data-value","Architecture;Spring;Java","id","iorga-scc",1,"dm-experience--section"],["data-value","Architecture;Spring;Java","id","iorga-onf",1,"dm-experience--section"],["data-value","Architecture;Spring;Java","id","iorga-cete",1,"dm-experience--section"],["data-value","Architecture;Spring;Java","id","casino",1,"dm-experience--section"],["data-value","Architecture;D\xE9cisionnel;Java","id","casino-archi",1,"dm-experience--section"],["data-value","Agilit\xE9;Tests;Int\xE9gration continue","id","casino-cp",1,"dm-experience--section"],["data-value","D\xE9veloppement;Web;Java;Swing","id","casino-dev",1,"dm-experience--section"],["id","solutec",1,"dm-experience--container-past"],["data-value","Cobol;Web;Java;HTML;CSS;Javascript","id","solutec-cafet",1,"dm-experience--section"],["data-value","D\xE9veloppement;Web;Java;Swing","id","solutec-grpcasino",1,"dm-experience--section"],["data-value","D\xE9veloppement;Web;Java;Swing","id","solutec-tessi",1,"dm-experience--section"]],template:function(l,c){l&1&&(a(0,"div",0)(1,"div",1)(2,"p",2),s(3," J'ai eu la chance de travailler pour diff\xE9rentes entreprises, dans des secteurs diff\xE9rents, \xE0 des postes multiples fonctionnels ou techniques et sur des projets de diff\xE9rentes envergures (quelques centaines \xE0 des milliers de jour). Depuis 2015, j'ai choisi de fonder Dev-Mind et de devenir ind\xE9pendant pour me concentrer sur le d\xE9veloppement, le conseil et la formation. "),e(),a(4,"p"),s(5,"\xA0"),e(),a(6,"div",3)(7,"div",4)(8,"div",5)(9,"div",6)(10,"small"),s(11,"\xA0"),e()(),a(12,"div",7),s(13,"..."),e()(),a(14,"div",8)(15,"div",6)(16,"small"),s(17,"2001"),e()(),a(18,"div",7)(19,"a",9),s(20,"SOLUTEC"),e()()(),a(21,"div",10)(22,"div",6)(23,"small"),s(24,"2003"),e()(),a(25,"div",7)(26,"a",11),s(27,"CASINO"),e()()(),a(28,"div",12)(29,"div",6)(30,"small"),s(31,"2009"),e()(),a(32,"div",7)(33,"a",13),s(34,"IORGA"),e()()(),a(35,"div",14)(36,"div",6)(37,"small"),s(38,"2010"),e()(),a(39,"div",7)(40,"a",15),s(41,"BOIRON"),e()()(),a(42,"div",16)(43,"div",6)(44,"small"),s(45,"2015"),e()(),a(46,"div",7)(47,"a",17),s(48,"DEV-MIND"),e()()(),a(49,"div",18)(50,"div",6)(51,"small"),s(52,"\xA0"),e()(),a(53,"div",7),s(54,"..."),e()()()(),a(55,"div",19)(56,"div",4)(57,"div",5)(58,"div",6)(59,"small"),s(60,"\xA0"),e()(),a(61,"div",7),s(62,"..."),e()(),a(63,"div",8)(64,"div",6)(65,"small"),s(66,"2001"),e()(),a(67,"div",7)(68,"a",9),s(69,"SOLUTEC"),e()()(),a(70,"div",10)(71,"div",6)(72,"small"),s(73,"2003"),e()(),a(74,"div",7)(75,"a",11),s(76,"CASINO"),e()()(),a(77,"div",12)(78,"div",6)(79,"small"),s(80,"2009"),e()(),a(81,"div",7)(82,"a",13),s(83,"IORGA"),e()()(),a(84,"div",18)(85,"div",6)(86,"small"),s(87,"2010"),e()(),a(88,"div",7),s(89,"\xA0"),e()()(),r(90,"br"),a(91,"div",4)(92,"div",14)(93,"div",6)(94,"small"),s(95,"\xA0"),e()(),a(96,"div",7)(97,"a",15),s(98,"BOIRON"),e()()(),a(99,"div",16)(100,"div",6)(101,"small"),s(102,"2015"),e()(),a(103,"div",7)(104,"a",17),s(105,"DEV-MIND"),e()()(),a(106,"div",18)(107,"div",6)(108,"small"),s(109,"\xA0"),e()(),a(110,"div",7),s(111,"..."),e()()()(),a(112,"p"),s(113,"\xA0"),e(),a(114,"p"),s(115,"Ce parcours o\xF9 j'ai pu multipli\xE9 les casquettes (d\xE9veloppeur, chef de projet, coach, consultant, formateur,...) m'a permis de voir toutes les facettes permettant de r\xE9aliser un projet de d\xE9veloppement. Je me d\xE9finis aujourd'hui comme un artisan de la programmation."),e()()(),a(116,"div",20)(117,"div",1)(118,"div",21)(119,"h1"),s(120,"Dev-Mind"),e(),a(121,"p",2),r(122,"br"),s(123," Vous pouvez voir certaines "),a(124,"a",22),s(125,"recommandations"),e(),s(126," faites par mes anciens clients sur mon profil "),a(127,"a",22),s(128,"Hopwork"),e(),s(129,". Je participe \xE9galement \xE0 des projets Open Source. Vous pouvez consulter mon "),a(130,"a",23),s(131,"Github"),e(),s(132," pour plus d'informations. J'interviens \xE9galement r\xE9guli\xE8rement dans des conf\xE9rences et voici mon "),a(133,"a",24),s(134,"Speaker Deck"),e()(),a(135,"p"),s(136,"Depuis "),a(137,"b"),s(138,"2015"),e(),s(139,", je suis d\xE9veloppeur ind\xE9pendant (soci\xE9t\xE9 DevMind) et j\u2019interviens pour aider les entreprises \xE0 d\xE9velopper ou mettre en place leurs propres logiciels dans leur SI. "),e(),a(140,"h2"),s(141,"G\xE9rant, d\xE9veloppeur Java/Web"),e(),a(142,"section",25)(143,"h3"),s(144,"Fairphone (Netherlands) - missions ponctuelles depuis 2021"),e(),a(145,"p"),s(146," D\xE9veloppement Android Kotlin ou backend en Spring Kotlin "),e(),a(147,"div",26)(148,"span",27),s(149,"Android"),e(),a(150,"span",27),s(151,"Kotlin"),e()()(),a(152,"section",28)(153,"h3"),s(154,"Energy Pool (Lyon) - depuis 2015"),e(),a(155,"p"),s(156," Conception et d\xE9veloppement de l\u2019application au coeur de l\u2019activit\xE9 de la startup Energy Pool agissant dans le domaine de la flexibilit\xE9 \xE9lectrique et leader de l\u2019effacement \xE9lectrique en France. "),e(),a(157,"div",26)(158,"span",27),s(159,"Angular"),e(),a(160,"span",27),s(161,"Typescript"),e(),a(162,"span",27),s(163,"Kotlin"),e(),a(164,"span",27),s(165,"Java"),e(),a(166,"span",27),s(167,"Web"),e(),a(168,"span",27),s(169,"SpringBoot"),e(),a(170,"span",27),s(171,"git"),e()()(),a(172,"section",29)(173,"h3"),s(174,"Ecole des mines (Saint Etienne) - 2016 "),e(),a(175,"p"),s(176," D\xE9veloppement de l\u2019application utilis\xE9e pour le bicentenaire de l\u2019\xE9cole des Mines par les \xE9l\xE8ves pour laisser une trace de cet \xE9v\xE9nement sous forme de texte sous un mur num\xE9rique https://ewall.mines-stetienne.fr/home "),e(),a(177,"div",26)(178,"span",27),s(179,"Angular"),e(),a(180,"span",27),s(181,"Java"),e(),a(182,"span",27),s(183,"Web"),e(),a(184,"span",27),s(185,"SpringBoot"),e()()(),a(186,"section",30)(187,"h3"),s(188,"BonitaSoft (Grenoble) - 2015 "),e(),a(189,"p"),s(190," D\xE9veloppement d\u2019un designer de page web pour aider les utilisateurs de la plateforme de BPM Bonitasoft \xE0 mod\xE9liser leurs pages pour interagir avec un processus. "),e(),a(191,"div",26)(192,"span",27),s(193,"Angular"),e(),a(194,"span",27),s(195,"Java"),e(),a(196,"span",27),s(197,"Web"),e(),a(198,"span",27),s(199,"Spring"),e(),a(200,"span",27),s(201,"git"),e()()(),a(202,"h2"),s(203,"Formateur"),e(),a(204,"section",31)(205,"h3"),s(206,"P\xF4le emploi via Diginamic (Lyon) - 2018, 2019"),e(),a(207,"p"),s(208," Formation Spring dans le cadre de reconvertion professionnelle soutenue par P\xF4le emploi "),e(),a(209,"div",26)(210,"span",27),s(211,"Spring Framework"),e(),a(212,"span",27),s(213,"Spring AOP"),e(),a(214,"span",27),s(215,"Spring MVC"),e(),a(216,"span",27),s(217,"Spring Data"),e(),a(218,"span",27),s(219,"Spring Security"),e(),a(220,"span",27),s(221,"Spring Boot"),e()()(),a(222,"section",32)(223,"h3"),s(224,"Ecole des mines (Saint Etienne) - depuis 2018 "),e(),a(225,"p"),s(226," Formation des \xE9tudiants 2\xE8me ann\xE9e \xE0 Spring et Android "),e(),a(227,"div",26)(228,"span",27),s(229,"Spring Framework"),e(),a(230,"span",27),s(231,"Spring Data"),e(),a(232,"span",27),s(233,"Spring Boot"),e(),a(234,"span",27),s(235,"Kotlin"),e(),a(236,"span",27),s(237,"Android"),e()()()()()(),a(238,"div",33)(239,"div",1)(240,"div",34)(241,"h2"),s(242,"Conf\xE9rences"),e(),a(243,"p"),s(244," Je fais partie de l'organisation de la conf\xE9rence "),a(245,"a",35),s(246,"MiXiT"),e(),s(247," qui a lieu \xE0 Lyon chaque ann\xE9\xE9 au printemps autour du d\xE9veloppement sur des sujets techniques ou non. Cette conf\xE9rence accueille 800 participants sur deux jours. Il peuvent assister \xE0 des sessions ou des ateliers anim\xE9s par des speakers fran\xE7ais et internationaux. J'interviens aussi en tant que speaker dans d'autres conf\xE9rences "),e(),a(248,"section",36)(249,"h3"),s(250,"2h pour mettre en place une application Android"),e(),a(251,"p"),s(252," Dans cette session de 2 ou 4 heures je reviens sur les bases de la cr\xE9ation d'une application Android. En live coding nous verrons les concepts de la programmation Android et nous d\xE9velopperons en Kotlin une r\xE9elle application. "),e(),a(253,"ul")(254,"li")(255,"a",37),s(256,"Devoxx France 2019"),e(),s(257," : "),a(258,"a",38),s(259,"slides"),e()(),a(260,"li")(261,"a",39),s(262,"Devoxx Maroc 2018"),e(),s(263," : "),a(264,"a",40),s(265,"slides"),e()(),a(266,"li")(267,"a",41),s(268,"ITogo.conf 2018"),e(),s(269," : "),a(270,"a",42),s(271,"slides"),e()()(),a(272,"div",26)(273,"span",27),s(274,"Performance"),e(),a(275,"span",27),s(276,"Web"),e()()(),a(277,"section",36)(278,"h3"),s(279,"Optimiser les performances d\u2019une application Web"),e(),a(280,"p"),s(281," Diff\xE9rentes astuces pour optimiser les performances d\u2019une application web en production. Comment optimiser les temps de chargement, de raffraichissement, le mode offline... "),e(),a(282,"ul")(283,"li")(284,"a",41),s(285,"ITogo.conf 2018"),e(),s(286," : "),a(287,"a",43),s(288,"slides"),e()(),a(289,"li")(290,"a",44),s(291,"Jug Lausanne 2017"),e(),s(292," : "),a(293,"a",44),s(294,"slides"),e(),s(295,"\xA0/\xA0 "),a(296,"a",45),s(297,"videos"),e()(),a(298,"li")(299,"a",46),s(300,"Devoxx 2017"),e(),s(301," : "),a(302,"a",47),s(303,"slides"),e(),s(304,"\xA0/\xA0 "),a(305,"a",48),s(306,"videos"),e()(),a(307,"li")(308,"a",49),s(309,"Softshake 2016"),e(),s(310," : "),a(311,"a",50),s(312,"slides"),e()()(),a(313,"div",26)(314,"span",27),s(315,"Performance"),e(),a(316,"span",27),s(317,"Web"),e()()(),a(318,"section",36)(319,"h3"),s(320,"Tester une application Javascript"),e(),a(321,"p"),s(322," Pourquoi et comment faire des tests unitaires et d'int\xE9gration dans une application Javascript. Pr\xE9sentation faite en livecoding sur une application JS ou Angular JS en utilisant Jasmine, Karma, Protractor "),e(),a(323,"ul")(324,"li")(325,"a",51),s(326,"Jug Lyon 2017"),e(),s(327," : "),a(328,"a",52),s(329,"slides"),e(),s(330,"\xA0/\xA0 "),a(331,"a",53),s(332,"vid\xE9o"),e()(),a(333,"li")(334,"a",54),s(335,"Snowcamp 2016"),e(),s(336," : "),a(337,"a",55),s(338,"slides"),e()(),a(339,"li")(340,"a",49),s(341,"Soft Shake 2015"),e(),s(342," : "),a(343,"a",56),s(344,"slides"),e()(),a(345,"li")(346,"a",57),s(347,"JugSummer Camp 2015"),e(),s(348," : "),a(349,"a",58),s(350,"slides"),e(),s(351,"\xA0/\xA0 "),a(352,"a",59),s(353,"vid\xE9o"),e()(),a(354,"li")(355,"a",60),s(356,"Breizhcamp 2015"),e(),s(357," : "),a(358,"a",61),s(359,"slides"),e(),s(360,"\xA0/\xA0 "),a(361,"a",62),s(362,"vid\xE9o"),e()()(),a(363,"div",26)(364,"span",27),s(365,"Angular"),e(),a(366,"span",27),s(367,"JavaScript"),e(),a(368,"span",27),s(369,"Karma"),e(),a(370,"span",27),s(371,"Jasmine"),e(),a(372,"span",27),s(373,"Protractor"),e()()(),a(374,"section",36)(375,"h3"),s(376,"Le bon testeur il teste, le mauvais testeur il teste"),e(),a(377,"p"),s(378," Rappel sur les diff\xE9rents principes pour \xE9crire des tests unitaires de qualit\xE9, rapide et maintenable dans le temps. Pr\xE9sentation faite en livecoding avec plusieurs cas pratiques utilisant des outils et librairies comme FestAssert, AssertJ, InfiniTest, DBSetup "),e(),a(379,"ul")(380,"li")(381,"a",49),s(382,"Softshake 2014"),e(),s(383," : "),a(384,"a",63),s(385,"slides"),e()(),a(386,"li")(387,"a",64),s(388,"Lava Jug 2014"),e(),s(389," : "),a(390,"a",65),s(391,"slides"),e()(),a(392,"li")(393,"a",49),s(394,"Devoxx 2014"),e(),s(395," : "),a(396,"a",66),s(397,"slides"),e(),s(398," / "),a(399,"a",67),s(400,"video"),e()()(),a(401,"div",26)(402,"span",27),s(403,"Test"),e(),a(404,"span",27),s(405,"Java"),e()()(),a(406,"section",36)(407,"h3"),s(408,"Interventions sur l\u2019agilit\xE9"),e(),a(409,"p"),s(410," Diff\xE9rentes interventions pour pr\xE9senter les concepts de l\u2019agilit\xE9 ou comment mettre en place Scrum ou Kanban dans une organisation, am\xE9liorer la lisibilit\xE9 de ses tests "),e(),a(411,"div",26)(412,"span",27),s(413,"Scrum"),e(),a(414,"span",27),s(415,"Kanban"),e()()()()()(),a(416,"div",68)(417,"div",1)(418,"div",69)(419,"h1"),s(420,"Boiron"),e(),a(421,"p"),s(422,"De "),a(423,"b"),s(424,"2010 \xE0 2014"),e(),s(425,", j\u2019ai fait partie des laboratoires BOIRON (leader mondial de l\u2019hom\xE9opathie) "),e(),a(426,"h2"),s(427,"Architecte applicatif"),e(),a(428,"section",70)(429,"h3"),s(430,"Architecture du syt\xE8me d\u2019information"),e(),a(431,"ul")(432,"li"),s(433,"Participation \xE0 la mise en place de l\u2019architecture applicative en service (SOA)"),e(),a(434,"li"),s(435,"R\xE9f\xE9rentiel de donn\xE9es d\u2019entreprise (MDM)"),e(),a(436,"li"),s(437,"Conception et mise en place des m\xE9canismes de synchronisation entre les diff\xE9rentes briques du syst\xE8me (brique de synchronisation permettant de recevoir des donn\xE9es ou de les publier au format XML) "),e(),a(438,"li"),s(439,"Mise en place de la supervision des diff\xE9rentes applications"),e()(),a(440,"div",26)(441,"span",27),s(442,"Architecture"),e(),a(443,"span",27),s(444,"Webservices"),e(),a(445,"span",27),s(446,"Java"),e(),a(447,"span",27),s(448,"Web"),e(),a(449,"span",27),s(450,"SOA"),e(),a(451,"span",27),s(452,"MDM"),e(),a(453,"span",27),s(454,"AngularJS"),e()()(),a(455,"section",71)(456,"h3"),s(457,"Gestion des remises"),e(),a(458,"ul")(459,"li"),s(460,"Conception technique de l\u2019application pour qu\u2019elle soit capable d\u2019appliquer les remises sur les 60.000 commandes quotidiennes au fil de l\u2019eau. "),e(),a(461,"li"),s(462,"Interconnexion de l\u2019application avec le syst\xE8me d\u2019information"),e(),a(463,"li"),s(464,"Mise en place de m\xE9canisme de rejeu pour faciliter l\u2019exploitation de l\u2019application"),e()(),a(465,"span",27),s(466,"Webservices"),e(),a(467,"span",27),s(468,"Java"),e(),a(469,"span",27),s(470,"Web"),e()(),a(471,"section",72)(472,"h3"),s(473,"Leader technique et m\xE9thodologique"),e(),a(474,"ul")(475,"li"),s(476,"Evolution de l\u2019architecture sur les derni\xE8res versions des briques logicielles"),e(),a(477,"li"),s(478,"Mise en place architecture web \xE0 base d\u2019AngularJS"),e(),a(479,"li"),s(480,"Formation des \xE9quipes de d\xE9veloppement \xE0 l\u2019architecture en Service, Java, Spring, Angular JS, Yeoman, Maven\u2026 "),e(),a(481,"li"),s(482,"Sensibilisation et formation des chefs de projets \xE0 l\u2019agilit\xE9 : UP, Scrum, Kanban, Devops "),e(),a(483,"li"),s(484,"Mise en place de la plateforme d\u2019int\xE9gration continue"),e(),a(485,"li"),s(486,"Mise au point de la livraison continue pour uniformiser les installations du d\xE9veloppement \xE0 la production "),e()(),a(487,"div",26)(488,"span",27),s(489,"Web"),e(),a(490,"span",27),s(491,"Java"),e(),a(492,"span",27),s(493,"Javascript"),e(),a(494,"span",27),s(495,"NodeJS"),e(),a(496,"span",27),s(497,"Kanban"),e(),a(498,"span",27),s(499,"Scrum"),e(),a(500,"span",27),s(501,"Devops"),e()()()(),a(502,"div",69)(503,"h1"),s(504,"iORGA"),e(),a(505,"p"),s(506,"De "),a(507,"b"),s(508,"2009 \xE0 2010"),e(),s(509,", j\u2019ai fait partie de iORGA (agence de Lyon de cette SSII)"),e(),a(510,"h2"),s(511,"Consultant Java"),e(),a(512,"section",73)(513,"h3"),s(514,"Soci\xE9t\xE9 Centrale Canine (Paris)"),e(),a(515,"ul")(516,"li"),s(517,"R\xE9daction des guides d\u2019installation et d\u2019exploitation des applications"),e(),a(518,"li"),s(519,"Mise en place d\u2019un serveur SVN pour la gestion des codes sources des applications de la SCC "),e(),a(520,"li"),s(521,"Correction des probl\xE8mes techniques et d\u2019architecture sur les applications existantes (mise aux normes J2EE, mise en place de Maven,...) "),e(),a(522,"li"),s(523,"Cr\xE9ation d'un socle pour les nouvelles applications de la SCC respectant les standards J2EE (mise en place d\u2019un moteur MVC et de web services) "),e()(),a(524,"div",26)(525,"span",27),s(526,"Architecture"),e(),a(527,"span",27),s(528,"Spring"),e(),a(529,"span",27),s(530,"Java"),e()()(),a(531,"section",74)(532,"h3"),s(533,"Office National des For\xEAts (Paris)"),e(),a(534,"ul")(535,"li"),s(536,"Dans le cadre de la refonte du syst\xE8me d\u2019information li\xE9 aux ressources humaines, l\u2019ONF souhaitait concevoir un r\xE9f\xE9rentiel unique des salari\xE9s permettant de suivre la vie professionnelle des employ\xE9s. "),e(),a(537,"li"),s(538,"Conception technique de l\u2019application en enrichissant le socle technique interne (mise en place des tests unitaires , isolation d\u2019une couche m\xE9tier). "),e(),a(539,"li"),s(540,"Suivi technique et fonctionnel"),e()(),a(541,"div",26)(542,"span",27),s(543,"SWT"),e(),a(544,"span",27),s(545,"Hibernate"),e(),a(546,"span",27),s(547,"Java"),e()()(),a(548,"section",75)(549,"h3"),s(550,"CETE minist\xE8re de l\u2019\xE9quipement (Lyon)"),e(),a(551,"ul")(552,"li"),s(553,"Intervention technique sur la TMA de l\u2019application DAPCETE g\xE9rant les budgets attribu\xE9s par l\u2019\xE9tat. Les budgets sont dot\xE9s \xE0 des services g\xE9n\xE9raux qui vont \xE0 leur tour d\xE9l\xE9guer des montants \xE0 des services inf\xE9rieurs qui les affecteront aux CETE. "),e(),a(554,"li"),s(555,"Mise en place des tests d'int\xE9gration et des tests d'int\xE9gration au d\xE9marrage du forfait de d\xE9veloppement de l'application CITES (Convention sur le commerce international des esp\xE8ces de faune et de flore sauvages menac\xE9es d'extinction). Sensibilisation de l\u2019\xE9quipe en forfait sur la d\xE9marche Scrum "),e()(),a(556,"div",26)(557,"span",27),s(558,"Scrum"),e(),a(559,"span",27),s(560,"Hibernate"),e(),a(561,"span",27),s(562,"Java"),e()()(),a(563,"section",76)(564,"h3"),s(565,"CFDP conseil Juridique (Lyon)"),e(),a(566,"ul")(567,"li"),s(568,"Audit de l'architecture"),e(),a(569,"li"),s(570,"Conception du nouveau syst\xE8me"),e()(),a(571,"span",27),s(572,"HTML"),e(),a(573,"span",27),s(574,"Javascript"),e(),a(575,"span",27),s(576,"Java"),e()()(),a(577,"div",69)(578,"h1"),s(579,"Groupe Casino"),e(),a(580,"p"),s(581,"De "),a(582,"b"),s(583,"2003 \xE0 2008"),e(),s(584,", j\u2019ai fait partie du groupe Casino (grande distribution avec plus de 80.000 salari\xE9s en France) et plus particuli\xE8rement de la filiale Casino Restauration"),e(),a(585,"h2"),s(586,"Chef de projet technique"),e(),a(587,"section",77)(588,"h3"),s(589,"Architecture applicative"),e(),a(590,"ul")(591,"li"),s(592,"Refonte du syst\xE8me d\u2019information et \xE9laboration de l\u2019architecture logicielle permettant aux applications situ\xE9es en \xE9tablissement (250 \xE0 travers la France) de travailler en mode d\xE9connect\xE9 et de se synchroniser avec les applications si\xE8ges "),e(),a(593,"li"),s(594,"Mise en place socle technique"),e(),a(595,"li"),s(596,"Supervision des d\xE9veloppements JEE et formations"),e()(),a(597,"div",26)(598,"span",27),s(599,"Architecture"),e(),a(600,"span",27),s(601,"D\xE9cisionnel"),e(),a(602,"span",27),s(603,"Java"),e(),a(604,"span",27),s(605,"Spring"),e()()(),a(606,"section",78)(607,"h3"),s(608,"Gestion de projet agile"),e(),a(609,"ul")(610,"li"),s(611,"R\xE9organisation des d\xE9veloppements et de la prise des besoins des utilisateurs en appliquant des pratiques agiles (XP, Scrum, UP) "),e(),a(612,"li"),s(613,"Sensibilisation des \xE9quipes \xE0 l\u2019agilit\xE9"),e(),a(614,"li"),s(615,"Animation ateliers pour la d\xE9finition du contenu fonctionnel des applications"),e(),a(616,"li"),s(617,"Mise en place d\u2019une plateforme d\u2019int\xE9gration continue (archivage des sources, ex\xE9cution des tests en automatique, d\xE9ploiement automatique des applications) "),e(),a(618,"li"),s(619,"Mise en place d'un wiki afin de centraliser toutes les documentations du service des \xE9tudes. "),e()(),a(620,"div",26)(621,"span",27),s(622,"Agilit\xE9"),e(),a(623,"span",27),s(624,"Tests"),e(),a(625,"span",27),s(626,"Int\xE9gration continue"),e()()(),a(627,"section",79)(628,"h3"),s(629,"D\xE9veloppement"),e(),a(630,"ul")(631,"li"),s(632," D\xE9veloppements JEE de plusieurs applications dans diff\xE9rents domaines "),a(633,"ul")(634,"li"),s(635,"Cha\xEEne produit (gestion des commandes, des articles, des fiches recettes\u2026)"),e(),a(636,"li"),s(637,"Ressources humaines (planning encadrement, pointage des salari\xE9s, \xE9dition des contrats) "),e(),a(638,"li"),s(639,"Marketing (remarques clients)"),e()()(),a(640,"li"),s(641," D\xE9veloppement Web "),a(642,"ul")(643,"li"),s(644,"Responsable de l'Intranet"),e(),a(645,"li"),s(646,"Supervision de la mise en \u0153uvre d'un portail d'entreprise dynamique sous Plumtree "),e(),a(647,"li"),s(648,"Cr\xE9ation de la charte graphique"),e(),a(649,"li"),s(650,"Cr\xE9ation de connecteur Java pour faire le pont entre les Portlets Plumtree et le syst\xE8me d\u2019information "),e()()(),a(651,"li"),s(652," D\xE9veloppement D\xE9cisionnel "),a(653,"ul")(654,"li"),s(655,"Mod\xE9lisation d'un datawarehouse contenant l'ensemble des ventes de l\u2019entreprise (remont\xE9es encaissement). "),e(),a(656,"li"),s(657,"Mise en place des outils BI de Cognos."),e(),a(658,"li"),s(659,"Optimisation de la base de donn\xE9es et mise en place d\u2019un mod\xE8le en \xE9toiles"),e(),a(660,"li"),s(661,"Rapport et cubes OLAP"),e(),a(662,"li"),s(663,"Cr\xE9ation de connecteur Java pour relier le d\xE9cisionnel au reste du SI"),e()()()(),a(664,"div",26)(665,"span",27),s(666,"D\xE9veloppement"),e(),a(667,"span",27),s(668,"D\xE9cisionnel"),e(),a(669,"span",27),s(670,"Java"),e(),a(671,"span",27),s(672,"JavaScript"),e(),a(673,"span",27),s(674,"HTML"),e()()()(),a(675,"div",80)(676,"h1"),s(677,"Solutec"),e(),a(678,"p"),s(679,"De "),a(680,"b"),s(681,"2001 \xE0 2003"),e(),s(682,", J\u2019ai fait partie de Solutec (SSII lyonnaise qui comprenait \xE0 l\u2019\xE9poque 120 salari\xE9s) "),e(),a(683,"h2"),s(684,"Ing\xE9nieur d\u2019\xE9tudes"),e(),a(685,"section",81)(686,"h3"),s(687,"Casino Restauration (Saint Etienne) - 2003"),e(),a(688,"ul")(689,"li"),s(690,"Applications J2EE de gestion des remarques clients et planning encadrement"),e(),a(691,"li"),s(692,"D\xE9veloppement de la partie Java et des services m\xE9tier COBOL permettant de s\u2019interfacer au syst\xE8me d\u2019information legacy du groupe Casino Conception technique "),e(),a(693,"li"),s(694,"Mise en place d\u2019un r\xE9f\xE9rentiel commun"),e(),a(695,"li"),s(696,"Formation Java"),e()(),a(697,"div",26)(698,"span",27),s(699,"D\xE9veloppement"),e(),a(700,"span",27),s(701,"HTML"),e(),a(702,"span",27),s(703,"Javascript"),e(),a(704,"span",27),s(705,"CSS"),e(),a(706,"span",27),s(707,"Java"),e()()(),a(708,"section",82)(709,"h3"),s(710,"Groupe Casino (Saint Etienne) - 2002"),e(),a(711,"ul")(712,"li"),s(713,"Applications J2EE d\xE9velopp\xE9es en forfait (Application de gestion des op\xE9rations promotionnelles du groupe Casino et application de prise de commandes des magasins de proximit\xE9 par t\xE9l\xE9vente) "),e(),a(714,"li"),s(715,"Conception technique"),e(),a(716,"li"),s(717,"Formation des nouveaux collaborateurs arrivant sur le projet"),e()(),a(718,"div",26)(719,"span",27),s(720,"HTML"),e(),a(721,"span",27),s(722,"Javascript"),e(),a(723,"span",27),s(724,"CSS"),e(),a(725,"span",27),s(726,"Java"),e()()(),a(727,"section",83)(728,"h3"),s(729,"TESSI Informatique (Saint Etienne) - 2001"),e(),a(730,"p"),s(731," Etudes et d\xE9veloppements sur une plate-forme EDI bancaire \xE9quipant la majorit\xE9 des caisses r\xE9gionales du Cr\xE9dit Agricole et permettant diff\xE9rents transferts entre la banque et leurs clients par l'interm\xE9diaire de plusieurs protocoles : ETEBAC 1 \xE0 5, PeSIT, Fax, Mail (SMTP), Internet (TCP/IP). "),e(),a(732,"div",26)(733,"span",27),s(734,"HTML"),e(),a(735,"span",27),s(736,"Javascript"),e(),a(737,"span",27),s(738,"CSS"),e(),a(739,"span",27),s(740,"C"),e()()()()()())},styles:[".dm-experience--container[_ngcontent-%COMP%]{margin:1em 0;padding:1em;border-radius:4px}.dm-experience--container-past[_ngcontent-%COMP%]{background-color:#cfd8dc;margin:1em 0;padding:1em;border-radius:4px}.dm-experience--label-box[_ngcontent-%COMP%]{display:flex;flex-wrap:wrap}.dm-experience--label[_ngcontent-%COMP%]{border-radius:24px;border:1px solid #c9c9c9;background-color:#fff;padding:.5em 1em;margin:.1em;opacity:.7;color:#5f5346}.dm-experience--section[_ngcontent-%COMP%]{padding-bottom:1em}.dm-experience--graph[_ngcontent-%COMP%]{margin-top:1em;display:flex;flex-wrap:nowrap}.dm-experience--step[_ngcontent-%COMP%]{text-align:center}.dm-experience--date[_ngcontent-%COMP%]{position:relative;top:-1.2em;left:-2em}.dm-experience--before[_ngcontent-%COMP%]{border:2px solid white;padding:0 1em 1em;color:#fff;font-weight:700;border-left:none;flex:1}.dm-experience--before[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{text-decoration:none}.dm-experience--after[_ngcontent-%COMP%]{border:2px solid white;padding:0 1em 1em;color:#fff;font-weight:700;border-left:none;border-right:none;flex:1}.dm-experience--after[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{text-decoration:none}.dm-experience--solutec[_ngcontent-%COMP%]{border:2px solid white;border-left:none;padding:0 1em 1em;color:#fff;font-weight:700;flex:4}.dm-experience--solutec[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{text-decoration:none}.dm-experience--casino[_ngcontent-%COMP%]{border:2px solid white;border-left:none;padding:0 1em 1em;color:#fff;font-weight:700;flex:12}.dm-experience--casino[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{text-decoration:none}.dm-experience--iorga[_ngcontent-%COMP%]{border:2px solid white;border-left:none;padding:0 1em 1em;color:#fff;font-weight:700;flex:2}.dm-experience--iorga[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{text-decoration:none}.dm-experience--boiron[_ngcontent-%COMP%]{border:2px solid white;border-left:none;padding:0 1em 1em;color:#fff;font-weight:700;flex:8}.dm-experience--boiron[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{text-decoration:none}.dm-experience--devmind[_ngcontent-%COMP%]{border:2px solid white;border-left:none;padding:0 1em 1em;color:#fff;font-weight:700;border-right:none;flex:20}.dm-experience--devmind[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{text-decoration:none}"]})}}return t})();var Ke=()=>["/","training","trainings.html"],Ie=(()=>{class t{static{this.\u0275fac=function(l){return new(l||t)}}static{this.\u0275cmp=h({type:t,selectors:[["app-training"]],standalone:!0,features:[m],decls:160,vars:2,consts:[[1,"dm-block--intro"],[1,"devmind-section"],[1,"dm-grid--flexible",2,"align-items","center"],[1,"dm-grid--element"],[1,"center"],["alt","Espace \xE9tudiant"],["srcset","../img/experience/formation_600.webp","type","image/webp"],["srcset","../img/experience/formation_600.png"],["src","../img/experience/formation_600.png","alt","Training"],[1,"dm-grid--element",2,"flex","3 0 0"],[1,"dm_lead"],["href","formation_spring.html"],["href","https://twitter.com/guillaumeehret","target","_blank","rel","noopener"],["src","../img/contact/twitter.svg","alt","Twitter",1,"dm-social"],["href","https://github.com/Dev-Mind","target","_blank","rel","noopener"],["src","../img/contact/github.svg","alt","Github",1,"dm-social"],[1,"dm-block--blog"],["href","https://spring.io/"],["href","https://www.clever-cloud.com/"],[1,"fa","fa-flask"],[1,"dm-grid--flexible"],["src","../img/training/environnement.png"],["routerLink","/training/outil/install_development_environment.html"],["routerLink","/training/outil/git.html"],["routerLink","/training/gradle/gradle.html"],["routerLink","/training/unit-test/unit_test_in_java.html"],["src","../img/training/spring-intro.png"],["routerLink","/training/spring/spring_intro.html"],["routerLink","/training/spring/spring_ioc.html"],["routerLink","/training/spring/spring_data.html"],["routerLink","/training/spring/spring_web.html"],["routerLink","/training/spring/spring_security.html"],["src","../img/training/clever-cloud.png"],["routerLink","/training/cloud/deploy_webapp_on_clever_cloud.html"],["src","../img/training/learn-kotlin.png"],["routerLink","/training/kotlin/kotlin_for_java_developer.html"],["src","../img/training/android/android-course1.png"],[1,"dm_lead",2,"padding-top","0","margin-top","0"],["routerLink","/training/android/android_introduction.html"],["routerLink","/training/android/android_first_app.html"],["routerLink","/training/android/android_update_ui.html"],["routerLink","/training/android/android_add_activity.html"],["routerLink","/training/android/android_add_menu.html"],["routerLink","/training/android/android_add_activity_list.html"],["routerLink","/training/android/android_call_remote_api.html"],["routerLink","/training/android/android_database_room_viewmodel.html"],[1,"btn-group"],[1,"btn-inverse",3,"routerLink"]],template:function(l,c){l&1&&(a(0,"div",0)(1,"div",1)(2,"h1"),s(3,"Training"),e(),a(4,"div",2)(5,"div",3)(6,"div",4)(7,"picture",5),r(8,"source",6)(9,"source",7)(10,"img",8),e()()(),a(11,"div",9)(12,"p",10),s(13," Dev-Mind est enregistr\xE9 sous le num\xE9ro 84 42 02955 42 en tant que prestataire de formation conform\xE9ment aux dispositions de l'article R. 6351-6 du code du travail. Cet enregistrement ne vaut pas agr\xE9ment de l'\xE9tat. "),e(),a(14,"p",10),s(15," Dev-Mind donne principalement des formations pour apprendre \xE0 utiliser le "),a(16,"a",11),s(17,"Framework Spring"),e(),s(18," en Java ou en Kotlin. "),e(),a(19,"p"),s(20," You can also find freely accessible trainings about Git, Gradle, Spring, Android on this website. All lesson supports and labs remain the intellectual property of Dev-Mind. If you are missing anything, please tell me "),e(),a(21,"p")(22,"a",12),r(23,"img",13),e(),a(24,"a",14),r(25,"img",15),e()()()()()(),a(26,"div",16)(27,"div",1)(28,"div")(29,"p"),s(30,' The following lessons are given at the "Ecole des mines de Saint Etienne" to engineering students or students in computer science master. These lessons are free and you can follow them to learn how develop an Android app in Kotlin which call REST services exposed by a '),a(31,"a",17),s(32,"Spring"),e(),s(33," application developped in Java and deployed on "),a(34,"a",18),s(35,"Clever Cloud"),e(),s(36,". "),e(),a(37,"p"),s(38,"In each lesson, I first present the theory to you, but you have many exercises to implement and understand these different concepts through practice. Each exercise is identifiable by the "),r(39,"i",19),s(40," logo used in the title."),e(),a(41,"div",20)(42,"div",3),r(43,"img",21),e(),a(44,"div",9)(45,"p",10)(46,"b"),s(47,"Tools"),e()(),a(48,"ul")(49,"li")(50,"a",22),s(51,"Install development environment"),e(),s(52," : install Java Developer Kit and an IDE to develop "),e(),a(53,"li")(54,"a",23),s(55,"Managing your sources with Git"),e(),s(56," : introduction to Git and Github "),e(),a(57,"li")(58,"a",24),s(59,"Gradle in practice"),e(),s(60," : how Gradle works and how use it in our projects "),e(),a(61,"li")(62,"a",25),s(63," Write unit tests in Java"),e(),s(64," : understand tests, simulate collaborator behaviors and check results "),e()()()(),a(65,"div",20)(66,"div",3),r(67,"img",26),e(),a(68,"div",9)(69,"p",10)(70,"b"),s(71,"Spring framework"),e()(),a(72,"ul")(73,"li")(74,"a",27),s(75,"Spring introduction"),e(),s(76," : learn what is Spring and create a first app "),e(),a(77,"li")(78,"a",28),s(79,"Spring and dependency injection"),e(),s(80," : in this lesson you will learn one of the main principle of software design, the dependency injection "),e(),a(81,"li")(82,"a",29),s(83,"Spring database & JPA"),e(),s(84," : how use a database in your Spring project with Spring Data JPA and a H2 Database "),e(),a(85,"li")(86,"a",30),s(87,"Spring rest services"),e(),s(88," : use Spring MVC to expose services to receive or update data "),e(),a(89,"li")(90,"a",31),s(91,"Spring security"),e(),s(92," : Spring Security helps you to secure your app "),e()()()(),a(93,"div",20)(94,"div",3),r(95,"img",32),e(),a(96,"div",9)(97,"p",10)(98,"b"),s(99,"Cloud"),e()(),a(100,"ul")(101,"li")(102,"a",33),s(103,"Clever cloud"),e(),s(104," : learn how deploy a webapp on clever cloud "),e()()()(),a(105,"div",20)(106,"div",3),r(107,"img",34),e(),a(108,"div",9)(109,"p",10)(110,"b"),s(111,"Kotlin"),e()(),a(112,"ul")(113,"li")(114,"a",35),s(115,"Learn Kotlin"),e(),s(116," : introduction for Java developer "),e()()()()(),a(117,"div",20)(118,"div",3),r(119,"img",36),e(),a(120,"div",9)(121,"p",37)(122,"b"),s(123,"Android"),e()(),a(124,"ul")(125,"li")(126,"a",38),s(127,"Android platform"),e(),s(128," : introduction "),e(),a(129,"li")(130,"a",39),s(131,"My first Android App"),e(),s(132," : how develop an Hello World app "),e(),a(133,"li")(134,"a",40),s(135,"Update Android UI app"),e(),s(136," use Android Studio tools to update the main layout "),e(),a(137,"li")(138,"a",41),s(139,"Add a new activity"),e(),s(140," : a new screen in your app "),e(),a(141,"li")(142,"a",42),s(143,"Page structuration"),e(),s(144," : How use a menu and launch intents to open internal or external activities "),e(),a(145,"li")(146,"a",43),s(147,"An activity to list elements"),e(),s(148," : learn how write an adapter to diplay a list of data "),e(),a(149,"li")(150,"a",44),s(151,"Call remote API"),e(),s(152," : use retrofit to call a remote REST API "),e(),a(153,"li")(154,"a",45),s(155,"Use the phone SQLite database"),e(),s(156," : use Room to store your data and the viewmodel object to decouplate the view from the model "),e()()()(),a(157,"p",46)(158,"a",47),s(159,"Free trainings"),e()()()()),l&2&&(p(158),d("routerLink",N(1,Ke)))},dependencies:[k],encapsulation:2})}}return t})();var I=[{path:"training/score/gameboard_score_multiplaform.html",component:i,data:{title:"Score board game (2025)",author:"Guillaume EHRET - Dev-Mind",publicationDate:"20/08/2025",category:"Game",description:"I created this app to keep score when I play board games with family or friends.",keywords:["Multiplatform"],priority:"0.6",filename:"gameboard_score_multiplaform",folder:"training/score",image:":../../img/blog/2019/score_00.png"}},{path:"training/score/score_jeu_societe_multiplaform.html",component:i,data:{title:"Score jeu de soci\xE9t\xE9 (2025)",author:"Guillaume EHRET - Dev-Mind",publicationDate:"20/08/2025",category:"Game",description:"J'ai cr\xE9\xE9 cette application pour tenir les scores quand je joue \xE0 des jeux de soci\xE9t\xE9 en famille ou entre ami\xB7e\xB7s.",keywords:["Multiplatform"],priority:"0.6",filename:"score_jeu_societe_multiplaform",folder:"training/score",image:":../../img/blog/2019/score_00.png"}},{path:"training/outil/install_development_environment.html",component:i,data:{title:"Prepare your working environment (EN)",author:"Guillaume EHRET - Dev-Mind",publicationDate:"10/09/2024",category:"Java, IntelliJ",description:"Quels sont les outils \xE0 installer pour \xEAtre un d\xE9veloppeur full stack, Java Android et Web",keywords:["D\xE9veloppement","Installation"],priority:"0.6",filename:"install_development_environment",folder:"training/outil",image:"../../img/training/environnement.png"}},{path:"training/outil/git.html",component:i,data:{title:"Managing your code sources with Git",author:"Guillaume EHRET - Dev-Mind",publicationDate:"09/09/2024",category:"Git",description:"Quels sont les outils \xE0 installer pour \xEAtre un d\xE9veloppeur full stack, Java Android et Web",keywords:["Developement","Source","management"],priority:"0.6",filename:"git",folder:"training/outil",image:"../../img/training/git.png"}},{path:"training/gradle/gradle.html",component:i,data:{title:"Gradle in practice",author:"Guillaume EHRET - Dev-Mind",publicationDate:"08/09/2024",category:"Web",description:"Comment construire une application Java interfac\xE9e \xE0 une base de donn\xE9es et exposant des services REST",keywords:["Gradle"],priority:"0.6",filename:"gradle",folder:"training/gradle",image:"../../img/training/gradle.png"}},{path:"training/unit-test/unit_test_in_java.html",component:i,data:{title:"Write unit tests in Java (EN)",author:"Guillaume EHRET - Dev-Mind",publicationDate:"05/09/2024",category:"Java",description:"Write unit tests in Java",keywords:["Java","Unit","Test","AssertJ","Mockito","Junit"],priority:"0.6",filename:"unit_test_in_java",folder:"training/unit-test",image:"../../img/training/unit-tests.png"}},{path:"training/spring/spring_intro.html",component:i,data:{title:"Spring in practice : introduction",author:"Guillaume EHRET - Dev-Mind",publicationDate:"31/08/2024",category:"Java",description:"Pr\xE9sentation de l'\xE9cosyst\xE8me de Spring",keywords:["Java","Spring"],priority:"0.6",filename:"spring_intro",folder:"training/spring",image:"../../img/training/spring-intro.png"}},{path:"training/spring/spring_ioc.html",component:i,data:{title:"Spring in practice : dependency injection",author:"Guillaume EHRET - Dev-Mind",publicationDate:"30/08/2024",category:"Java",description:"Pr\xE9sentation de l'\xE9cosyst\xE8me de Spring",keywords:["Java","Spring"],priority:"0.6",filename:"spring_ioc",folder:"training/spring",image:"../../img/training/spring-core.png"}},{path:"training/spring/spring_data.html",component:i,data:{title:"Spring in practice : database and JPA",author:"Guillaume EHRET - Dev-Mind",publicationDate:"29/08/2024",category:"Java",description:"How use a database in your Spring project with Spring Data JPA and a H2 Database",keywords:["Java","Spring"],priority:"0.6",filename:"spring_data",folder:"training/spring",image:"../../img/training/spring-data.png"}},{path:"training/spring/spring_web.html",component:i,data:{title:"Spring in practice : REST service",author:"Guillaume EHRET - Dev-Mind",publicationDate:"28/08/2024",category:"Java",description:"How write REST services in Spring Web and expose resource to your apps",keywords:["Java","Spring"],priority:"0.6",filename:"spring_web",folder:"training/spring",image:"../../img/training/spring-boot.png"}},{path:"training/spring/spring_security.html",component:i,data:{title:"Spring in practice : Security",author:"Guillaume EHRET - Dev-Mind",publicationDate:"27/08/2024",category:"Java",description:"Each app must be secured and Spring is still here to simplify the work",keywords:["Java","Spring"],priority:"0.6",filename:"spring_security",folder:"training/spring",image:"../../img/training/spring-security.png"}},{path:"training/kotlin/kotlin_for_java_developer.html",component:i,data:{title:"Kotlin for a Java developer",author:"Guillaume EHRET - Dev-Mind",publicationDate:"25/08/2024",category:"Kotlin",description:"How to start in Kotlin when you know only Java language",keywords:["Kotlin"],priority:"0.6",filename:"kotlin_for_java_developer",folder:"training/kotlin",image:"../../img/training/learn-kotlin.png"}},{path:"training/cloud/deploy_webapp_on_clever_cloud.html",component:i,data:{title:"Deploy your webapp on Clever Cloud (EN)",author:"Guillaume EHRET - Dev-Mind",publicationDate:"24/08/2024",category:"JAva",description:"Deploy your webapp on Clever Cloud (EN)",keywords:["Gradle","Spring"],priority:"0.6",filename:"deploy_webapp_on_clever_cloud",folder:"training/cloud",image:"../../img/training/clever-cloud.png"}},{path:"training/android/android_introduction.html",component:i,data:{title:"Android platform",author:"Guillaume EHRET - Dev-Mind",publicationDate:"20/08/2024",category:"Android",description:"A tutorial to start Android development. In this example we develop an Hello World app",keywords:["Android"],priority:"0.6",filename:"android_introduction",folder:"training/android",image:"../../img/blog/2019/android_pf_00.png"}},{path:"training/android/android_first_app.html",component:i,data:{title:"A first application in Android",author:"Guillaume EHRET - Dev-Mind",publicationDate:"19/08/2024",category:"Android",description:"A tutorial to start Android development. In this example we develop an Hello World app",keywords:["Android"],priority:"0.6",filename:"android_first_app",folder:"training/android",image:"../../img/training/android/android-course1.png"}},{path:"training/android/android_add_activity.html",component:i,data:{title:"Add an activity",author:"Guillaume EHRET - Dev-Mind",publicationDate:"18/08/2024",category:"Android",description:"In this lesson you will learn how add a new activity in your project and call it",keywords:["Android"],priority:"0.6",filename:"android_add_activity",folder:"training/android",image:"../../img/training/android/android-add-activity.png"}},{path:"training/android/android_update_ui.html",component:i,data:{title:"Update UI and refactor welcome layout",author:"Guillaume EHRET - Dev-Mind",publicationDate:"18/08/2024",category:"Android",description:"In this lesson we will update the main layout to create a welcome screen",keywords:["Android"],priority:"0.6",filename:"android_update_ui",folder:"training/android",image:"../../img/training/android/android-course2.png"}},{path:"training/android/android_add_menu.html",component:i,data:{title:"Page structuration",author:"Guillaume EHRET - Dev-Mind",publicationDate:"17/08/2024",category:"Android",description:"In this lesson you will learn how add a menu and launch intent to open internal or external activities",keywords:["Android"],priority:"0.6",filename:"android_add_menu",folder:"training/android",image:"../../img/training/android/android-add-menu.png"}},{path:"training/android/android_add_activity_list.html",component:i,data:{title:"Add a list activity in your app",author:"Guillaume EHRET - Dev-Mind",publicationDate:"16/08/2024",category:"Android",description:"In this lesson you will learn how add an activity to list elements",keywords:["Android"],priority:"0.6",filename:"android_add_activity_list",folder:"training/android",image:"../../img/training/android/android-activity-list.png"}},{path:"training/android/android_call_remote_api.html",component:i,data:{title:"Call a remote API in Android",author:"Guillaume EHRET - Dev-Mind",publicationDate:"15/08/2024",category:"Android",description:"In this lesson, you will learn how to call a remote API to synchronously read data.",keywords:["Android"],priority:"0.6",filename:"android_call_remote_api",folder:"training/android",image:"../../img/training/android/android-call-remote.png"}},{path:"training/android/android_database_room_viewmodel.html",component:i,data:{title:"Interact with a database in your project",author:"Guillaume EHRET - Dev-Mind",publicationDate:"14/08/2024",category:"Android, Kotlin",description:"You'll learn about the fundamentals of using Room, including the database class, the DAO, entities, and view models.",keywords:["Android","database","room"],priority:"0.6",filename:"android_database_room_viewmodel",folder:"training/android",image:"../../img/training/android/database/database.png"}},{path:"training/web/http.html",component:i,data:{title:"Le protocole HTTP",author:"Guillaume EHRET - Dev-Mind",publicationDate:"27/11/2017",category:"Web",description:"Le protocole HTTP",keywords:["Internet","Web"],priority:"0.6",filename:"http",folder:"training/web",image:"../../img/blog/2017/web_00.png"}},{path:"training/web/internet.html",component:i,data:{title:"Retour sur la cr\xE9ation d'Internet",author:"Guillaume EHRET - Dev-Mind",publicationDate:"20/11/2017",category:"Web",description:"Retour sur la cr\xE9ation d'Internet",keywords:["Internet"],priority:"0.6",filename:"internet",folder:"training/web",image:"../../img/blog/2017/internet_00.png"}}];function Ye(t,f){if(t&1&&(a(0,"article",18)(1,"div",19)(2,"div",20),r(3,"img",21),e(),a(4,"h3")(5,"a",22),s(6),e()(),a(7,"p",23),s(8),e()()()),t&2){let n=f.$implicit,l=q();d("routerLink",l.postPath(n)),p(3),d("ngSrc",n.image)("alt",n.description),p(2),d("routerLink",l.postPath(n))("title",n.title),p(),b(n.title),p(2),b(n.description)}}var Me=(()=>{class t{constructor(){this.blogEntries=I.map(n=>n.data)}postPath(n){return["/",...n.folder.split("/"),n.filename+".html"]}static{this.\u0275fac=function(l){return new(l||t)}}static{this.\u0275cmp=h({type:t,selectors:[["app-all-training"]],standalone:!0,features:[m],decls:25,vars:1,consts:[[1,"dm-block--intro"],[1,"devmind-section"],[1,"dm-grid--flexible",2,"align-items","center"],[1,"dm-grid--element"],[1,"center"],["alt","Espace \xE9tudiant"],["srcset","../img/experience/formation_600.webp","type","image/webp"],["srcset","../img/experience/formation_600.png"],["src","../img/experience/formation_600.png","alt","Espace \xE9tudiant"],[1,"dm-grid--element",2,"flex","3 0 0"],[1,"dm_lead"],["href","https://twitter.com/guillaumeehret","target","_blank","rel","noopener"],["src","../img/contact/twitter.svg","alt","Twitter",1,"dm-social"],["href","https://github.com/Dev-Mind","target","_blank","rel","noopener"],["src","../img/contact/github.svg","alt","Github",1,"dm-social"],[1,"dm-block--news"],[1,"dm-blog--container-article"],[3,"routerLink",4,"ngFor","ngForOf"],[3,"routerLink"],[1,"dm-blog--article"],[1,"dm-blog--imgteaser"],["width","1500","height","764","sizes","(max-width: 100%)",3,"ngSrc","alt"],[3,"routerLink","title"],[1,"dm-blog--teaser"]],template:function(l,c){l&1&&(a(0,"div",0)(1,"div",1)(2,"h1"),s(3,"Student space"),e(),a(4,"div",2)(5,"div",3)(6,"div",4)(7,"picture",5),r(8,"source",6)(9,"source",7)(10,"img",8),e()()(),a(11,"div",9)(12,"p",10),s(13," All lesson supports and labs remain the intellectual property of Dev-Mind but they are freely accessible. "),e(),a(14,"p"),s(15,"You will find here all the supports shown during the lessons. If you are missing anything, please tell me"),e(),a(16,"p")(17,"a",11),r(18,"img",12),e(),a(19,"a",13),r(20,"img",14),e()()()()()(),a(21,"div",15)(22,"div",1)(23,"div",16),j(24,Ye,9,7,"article",17),e()()()),l&2&&(p(24),d("ngForOf",c.blogEntries))},dependencies:[_,x,S,k],encapsulation:2})}}return t})();var De=(()=>{class t{static{this.\u0275fac=function(l){return new(l||t)}}static{this.\u0275cmp=h({type:t,selectors:[["app-spring"]],standalone:!0,features:[m],decls:114,vars:0,consts:[[1,"dm-block--intro"],[1,"devmind-section"],[1,"dm-grid--flexible"],[1,"dm-grid--element"],[1,"center"],["src","img/formation/spring.svg","alt","Spring"],[1,"dm-grid--element",2,"flex","3 0 0"],[1,"dm_lead"],[1,"dm-block--news"],[1,"dm-grid--element","center"],["src","img/formation/spring-fwk.svg","alt","Spring Framework",1,"dm--picture--inverse",2,"width","75%"],[1,"dm-formation--detail"],["src","img/formation/spring-boot.svg","alt","Spring Boot",1,"dm--picture--inverse",2,"width","90%"],["src","img/formation/spring-data.svg","alt","Spring Data",1,"dm--picture--inverse",2,"width","90%"],["src","img/formation/spring-security.svg","alt","Spring Security",1,"dm--picture--inverse",2,"width","85%"],[1,"dm-block--blog"],["alt","Ecran principal"],["srcset","img/formation/spring-ex1.webp","type","image/webp"],["srcset","img/formation/spring-ex1.png"],["src","img/formation/spring-ex1.png","alt","Ecran principal"],["alt","Liste des sites"],["srcset","img/formation/spring-ex2.webp","type","image/webp"],["srcset","img/formation/spring-ex2.png"],["src","img/formation/spring-ex2.png","alt","Liste des sites"],["alt","Mesures temps r\xE9el"],["srcset","img/formation/spring-ex4.webp","type","image/webp"],["srcset","img/formation/spring-ex4.png"],["src","img/formation/spring-ex4.png","alt","Mesures temps r\xE9el"]],template:function(l,c){l&1&&(a(0,"div",0)(1,"div",1)(2,"h1"),s(3,"Formation Spring"),e(),a(4,"div",2)(5,"div",3)(6,"div",4),r(7,"img",5),e()(),a(8,"div",6)(9,"p",7),s(10," Spring est le framework Java le plus utilis\xE9 et il est Open Source. Connaissez vous toute la magie de Spring, comment il fonctionne, comment l'utiliser tout en respectant les bonnes pratiques de d\xE9veloppement ? "),e(),a(11,"p")(12,"i"),s(13,"J'utilise Spring depuis 15 ans et la version 1. Nous verrons ensemble comment le framework a \xE9volu\xE9, quels sont les probl\xE9matiques qui ont \xE9t\xE9 r\xE9solues. Ensemble nous pouvons construire une formation \xE0 la carte"),e()()()()()(),a(14,"div",8)(15,"div",1)(16,"p",7),s(17,"Je vous propose diff\xE9rents modules en fonction des diff\xE9rents projets et sous projets de Spring."),e(),a(18,"div",2)(19,"div",9),r(20,"img",10),a(21,"h2"),s(22,"CORE"),e(),a(23,"div",7)(24,"ul",11)(25,"li"),s(26,"Injection"),e(),a(27,"li"),s(28,"AOP"),e(),a(29,"li"),s(30,"Web MVC"),e(),a(31,"li"),s(32,"Web Rest"),e()(),a(33,"i"),s(34,"Temps id\xE9al : 3 jours"),e()()(),a(35,"div",9),r(36,"img",12),a(37,"h2"),s(38,"BOOT"),e(),a(39,"div",7)(40,"ul",11)(41,"li"),s(42,"Starter"),e(),a(43,"li"),s(44,"Auto config"),e(),a(45,"li"),s(46,"Logs"),e(),a(47,"li"),s(48,"M\xE9triques"),e()()(),a(49,"i"),s(50,"Temps id\xE9al : 1 jour"),e()(),a(51,"div",9),r(52,"img",13),a(53,"h2"),s(54,"DATA"),e(),a(55,"div",7)(56,"ul",11)(57,"li"),s(58,"JDBC"),e(),a(59,"li"),s(60,"JPA (Hibernate)"),e(),a(61,"li"),s(62,"Transaction"),e(),a(63,"li"),s(64,"Validation"),e()(),a(65,"i"),s(66,"Temps id\xE9al : 2 jours"),e()()(),a(67,"div",9),r(68,"img",14),a(69,"h2"),s(70,"SECURITY"),e(),a(71,"div",7)(72,"ul",11)(73,"li"),s(74,"Authorisation"),e(),a(75,"li"),s(76,"Authentification"),e(),a(77,"li"),s(78,"Cors"),e(),a(79,"li"),s(80,"CSRF"),e()(),a(81,"i"),s(82,"Temps id\xE9al : 1 jour"),e()()()(),a(83,"h2"),s(84,"Tarification"),e(),a(85,"p",7),s(86," Il existe deux modes de tarification en fonction du mode choisi "),e(),a(87,"ul",7)(88,"li"),s(89,"mode INTRA : la formation vous est r\xE9serv\xE9e et vous pouvez proposer jusqu'\xE0 6 stagiaires"),e(),a(90,"li"),s(91,"mode INTER : formation d'un seul stagiaire"),e()(),a(92,"p"),s(93,"Contactez moi sur guillaume (@) dev-mind.fr pour plus d'informations "),e()()(),a(94,"div",15)(95,"div",1)(96,"p",7),s(97," La formation est principalement ax\xE9e sur de la pratique. Si vous faites tous les modules vous construisez de A \xE0 Z une application qui permet de lire des donn\xE9es en temps r\xE9el et de les afficher sous forme de graphique "),e(),a(98,"div",2)(99,"div",9)(100,"picture",16),r(101,"source",17)(102,"source",18)(103,"img",19),e()(),a(104,"div",9)(105,"picture",20),r(106,"source",21)(107,"source",22)(108,"img",23),e()(),a(109,"div",9)(110,"picture",24),r(111,"source",25)(112,"source",26)(113,"img",27),e()()()()())},encapsulation:2})}}return t})();var R=(()=>{class t{static{this.\u0275fac=function(l){return new(l||t)}}static{this.\u0275cmp=h({type:t,selectors:[["app-not-found"]],standalone:!0,features:[m],decls:14,vars:0,consts:[[1,"dm-block--intro"],[1,"devmind-section"],[1,"dm_lead"],[1,"btn-group"],["href","/",1,"btn"]],template:function(l,c){l&1&&(a(0,"div",0)(1,"div",1)(2,"h1"),s(3,"Are you lost in the clouds ?? "),a(4,"span"),s(5,":("),e()(),a(6,"p",2),s(7,"Sorry, but the page you were trying to view does not exist."),e(),a(8,"div",3)(9,"a",4),s(10," Go to home "),e()()()(),a(11,"div")(12,"div",1),s(13," \xA0 "),e()())},encapsulation:2})}}return t})();var Pe=[{path:"home.html",component:Ee,resolve:{current:()=>v(g).navigateTo("home"),title:()=>v(w).setTitle("DevMind")}},{path:"experience.html",component:Le,resolve:{current:()=>v(g).navigateTo("experience"),title:()=>v(w).setTitle("Experience")}},{path:"formations.html",component:Ie,resolve:{current:()=>v(g).navigateTo("training"),title:()=>v(w).setTitle("Formation")}},{path:"formation_spring.html",component:De,resolve:{current:()=>v(g).navigateTo("training"),title:()=>v(w).setTitle("Formation")}},{path:"training/trainings.html",component:Me,resolve:{current:()=>v(g).navigateTo("training"),title:()=>v(w).setTitle("Formation")}},{path:"blog.html",component:P,resolve:{current:()=>v(g).navigateTo("blog"),title:()=>v(w).setTitle("Blog")}},{path:"blog_archive.html",component:P,data:{archive:!0},resolve:{current:()=>v(g).navigateTo("blog"),title:()=>v(w).setTitle("Blog")}},...T.map(t=>(t.data=D(M({},t.data),{type:"blog"}),t.resolve={current:()=>v(g).navigateTo("blog"),title:()=>v(w).setTitle("Blog")},t)),...I.map(t=>(t.data=D(M({},t.data),{type:"training"}),t.resolve={current:()=>v(g).navigateTo("training"),title:()=>v(w).setTitle("Training")},t)),{path:"404.html",component:R,resolve:{current:()=>v(g).navigateTo("home")}},{path:"",redirectTo:"/home.html",pathMatch:"full"},{path:"**",component:R,resolve:{current:()=>v(g).navigateTo("home")}}];var Re={providers:[ts(Pe,ns(),is({scrollPositionRestoration:"top",anchorScrolling:"enabled"})),Q(),ss()]};var Xe={providers:[es()]},Ge=V(Re,Xe);var Qe=()=>Z(ps,Ge),Xn=Qe;export{Xn as a};
