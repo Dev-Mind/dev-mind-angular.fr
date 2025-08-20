@@ -100,7 +100,7 @@ export const _android_add_menu:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670401047.0044"><span class="hljs-meta">@Composable</span>
+<pre class="highlight"><code class="language-kotlin" id="1755673435793.2896"><span class="hljs-meta">@Composable</span>
 <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">RoomUpdateButton</span><span class="hljs-params">(onClick: () @<span class="hljs-type">LAMBDA</span> <span class="hljs-type">Unit</span>)</span></span> {
     ExtendedFloatingActionButton(
         onClick = { onClick() },
@@ -112,7 +112,7 @@ export const _android_add_menu:string = `<div id="toc" class="toc">
         },
         text = { Text(text = stringResource(R.string.act_room_save)) }
     )
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401047.0044')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673435793.2896')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -120,7 +120,7 @@ export const _android_add_menu:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670401047.1863"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomActivity</span> : <span class="hljs-type">ComponentActivity</span>() {
+<pre class="highlight"><code class="language-kotlin" id="1755673435793.8596"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomActivity</span> : <span class="hljs-type">ComponentActivity</span>() {
     <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(savedInstanceState: <span class="hljs-type">Bundle</span>?)</span></span> {
         <span class="hljs-keyword">super</span>.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -147,7 +147,7 @@ export const _android_add_menu:string = `<div id="toc" class="toc">
             }
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401047.1863')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673435793.8596')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -198,9 +198,9 @@ export const _android_add_menu:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670401047.7944"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomViewModel</span>: <span class="hljs-type">ViewModel</span>() {
+<pre class="highlight"><code class="language-kotlin" id="1755673435794.4954"><span class="hljs-keyword">class</span> <span class="hljs-title class_">RoomViewModel</span>: <span class="hljs-type">ViewModel</span>() {
     <span class="hljs-keyword">var</span> room <span class="hljs-keyword">by</span> mutableStateOf <span class="hljs-meta">@LTRoomDto</span>?<span class="hljs-meta">@GT(null)</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401047.7944')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673435794.4954')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -208,9 +208,9 @@ export const _android_add_menu:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670401047.1804"><span class="hljs-keyword">val</span> param = intent.getStringExtra(MainActivity.ROOM_PARAM)
+<pre class="highlight"><code class="language-kotlin" id="1755673435794.3772"><span class="hljs-keyword">val</span> param = intent.getStringExtra(MainActivity.ROOM_PARAM)
         <span class="hljs-keyword">val</span> viewModel: RoomViewModel <span class="hljs-keyword">by</span> viewModels()
-        viewModel.room = RoomService.findByNameOrId(param)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401047.1804')">Copy</button></pre>
+        viewModel.room = RoomService.findByNameOrId(param)</code><button class="btn-copy-code" onclick="copyToClipboard('1755673435794.3772')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -224,7 +224,7 @@ export const _android_add_menu:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670401047.5378"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">RoomDetail</span><span class="hljs-params">(model: <span class="hljs-type">RoomViewModel</span>, modifier: <span class="hljs-type">Modifier</span> = Modifier)</span></span> {
+<pre class="highlight"><code class="language-kotlin" id="1755673435794.8167"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">RoomDetail</span><span class="hljs-params">(model: <span class="hljs-type">RoomViewModel</span>, modifier: <span class="hljs-type">Modifier</span> = Modifier)</span></span> {
     Column(modifier = modifier.padding(<span class="hljs-number">16.</span>dp)) {
         Text(
             text = stringResource(R.string.act_room_name),
@@ -239,7 +239,7 @@ export const _android_add_menu:string = `<div id="toc" class="toc">
         )
         <span class="hljs-comment">// ...</span>
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401047.5378')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673435794.8167')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -247,14 +247,14 @@ export const _android_add_menu:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670401047.3765"><span class="hljs-keyword">val</span> onRoomSave: () <span class="hljs-meta">@LAMBDA</span> <span class="hljs-built_in">Unit</span> = {
+<pre class="highlight"><code class="language-kotlin" id="1755673435794.979"><span class="hljs-keyword">val</span> onRoomSave: () <span class="hljs-meta">@LAMBDA</span> <span class="hljs-built_in">Unit</span> = {
     <span class="hljs-keyword">if</span>(viewModel.room != <span class="hljs-literal">null</span>) {
         <span class="hljs-keyword">val</span> roomDto: RoomDto = viewModel.room <span class="hljs-keyword">as</span> RoomDto
         RoomService.updateRoom(roomDto.id, roomDto)
         Toast.makeText(baseContext, <span class="hljs-string">&quot;Room @dollar@{roomDto.name} was updated&quot;</span>, Toast.LENGTH_LONG).show()
         startActivity(Intent(baseContext, MainActivity::<span class="hljs-keyword">class</span>.java))
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401047.3765')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673435794.979')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -401,10 +401,10 @@ export const _android_add_menu:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-xml" id="1755670401047.961">    @LTstring name=&quot;app_go_back_description&quot;@GTGo back@LT/string@GT
+<pre class="highlight"><code class="language-xml" id="1755673435794.2712">    @LTstring name=&quot;app_go_back_description&quot;@GTGo back@LT/string@GT
     @LTstring name=&quot;app_go_room_description&quot;@GTRooms@LT/string@GT
     @LTstring name=&quot;app_go_github_description&quot;@GTGithub@LT/string@GT
-    @LTstring name=&quot;app_go_mail_description&quot;@GTSend email@LT/string@GT</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401047.961')">Copy</button></pre>
+    @LTstring name=&quot;app_go_mail_description&quot;@GTSend email@LT/string@GT</code><button class="btn-copy-code" onclick="copyToClipboard('1755673435794.2712')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -415,7 +415,7 @@ export const _android_add_menu:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670401048.361"><span class="hljs-meta">@Composable</span>
+<pre class="highlight"><code class="language-kotlin" id="1755673435794.5505"><span class="hljs-meta">@Composable</span>
 <span class="hljs-meta">@OptIn(ExperimentalMaterial3Api::class)</span>
 <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">AutomacorpTopAppBar</span><span class="hljs-params">(title: <span class="hljs-type">String</span>? = <span class="hljs-literal">null</span>, returnAction: () @<span class="hljs-type">LAMBDA</span> <span class="hljs-type">Unit</span> = {})</span></span> {
     <span class="hljs-keyword">val</span> colors = TopAppBarDefaults.topAppBarColors(
@@ -483,7 +483,7 @@ export const _android_add_menu:string = `<div id="toc" class="toc">
     AutomacorpTheme {
         AutomacorpTopAppBar(<span class="hljs-string">&quot;A page&quot;</span>)
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401048.361')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673435794.5505')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -505,7 +505,7 @@ export const _android_add_menu:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670401048.9749">setContent {
+<pre class="highlight"><code class="language-kotlin" id="1755673435794.457">setContent {
   AutomacorpTheme {
       Scaffold(
           topBar = { AutomacorpTopAppBar(<span class="hljs-string">&quot;Room&quot;</span>, navigateBack) },
@@ -514,7 +514,7 @@ export const _android_add_menu:string = `<div id="toc" class="toc">
       ) {
         <span class="hljs-comment">// ...</span>
       }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401048.9749')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673435794.457')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -522,9 +522,9 @@ export const _android_add_menu:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670401048.0957"><span class="hljs-keyword">val</span> navigateBack: () <span class="hljs-meta">@LAMBDA</span> <span class="hljs-built_in">Unit</span> = {
+<pre class="highlight"><code class="language-kotlin" id="1755673435794.4783"><span class="hljs-keyword">val</span> navigateBack: () <span class="hljs-meta">@LAMBDA</span> <span class="hljs-built_in">Unit</span> = {
     startActivity(Intent(baseContext, MainActivity::<span class="hljs-keyword">class</span>.java))
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401048.0957')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673435794.4783')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -567,8 +567,8 @@ The second one is the data to operate on, such an URL, an email, expressed as a 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670401048.7188"><span class="hljs-keyword">val</span> intent = Intent(Intent.ACTION_VIEW, Uri.parse(<span class="hljs-string">&quot;https://dev-mind.fr&quot;</span>))
-startActivity(intent)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401048.7188')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1755673435794.0872"><span class="hljs-keyword">val</span> intent = Intent(Intent.ACTION_VIEW, Uri.parse(<span class="hljs-string">&quot;https://dev-mind.fr&quot;</span>))
+startActivity(intent)</code><button class="btn-copy-code" onclick="copyToClipboard('1755673435794.0872')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -576,8 +576,8 @@ startActivity(intent)</code><button class="btn-copy-code" onclick="copyToClipboa
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670401048.645"><span class="hljs-keyword">val</span> intent = Intent(Intent.ACTION_SENDTO, Uri.parse(<span class="hljs-string">&quot;mailto://guillaume@dev-mind.fr&quot;</span>))
-startActivity(intent)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401048.645')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1755673435794.9607"><span class="hljs-keyword">val</span> intent = Intent(Intent.ACTION_SENDTO, Uri.parse(<span class="hljs-string">&quot;mailto://guillaume@dev-mind.fr&quot;</span>))
+startActivity(intent)</code><button class="btn-copy-code" onclick="copyToClipboard('1755673435794.9607')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">

@@ -77,9 +77,9 @@ export const _publish_maven_central:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755670400911.3918">apply plugin: <span class="hljs-string">&#x27;java&#x27;</span>
+<pre class="highlight"><code class="language-java" id="1755673436142.3533">apply plugin: <span class="hljs-string">&#x27;java&#x27;</span>
 apply plugin: <span class="hljs-string">&#x27;signing&#x27;</span>
-apply plugin: <span class="hljs-string">&#x27;maven&#x27;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670400911.3918')">Copy</button></pre>
+apply plugin: <span class="hljs-string">&#x27;maven&#x27;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755673436142.3533')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -93,10 +93,10 @@ apply plugin: <span class="hljs-string">&#x27;maven&#x27;</span></code><button c
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755670400911.692">group = <span class="hljs-string">&#x27;fr.dev-mind&#x27;</span>
+<pre class="highlight"><code class="language-java" id="1755673436142.45">group = <span class="hljs-string">&#x27;fr.dev-mind&#x27;</span>
 archivesBaseName = <span class="hljs-string">&quot;mockwebserver&quot;</span>
 version = rootProject.<span class="hljs-type">version</span>
-<span class="hljs-variable">sourceCompatibility</span> <span class="hljs-operator">=</span> <span class="hljs-number">1.8</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670400911.692')">Copy</button></pre>
+<span class="hljs-variable">sourceCompatibility</span> <span class="hljs-operator">=</span> <span class="hljs-number">1.8</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755673436142.45')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -104,7 +104,7 @@ version = rootProject.<span class="hljs-type">version</span>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755670400911.5251">ext.sharedManifest = manifest {
+<pre class="highlight"><code class="language-java" id="1755673436142.7454">ext.sharedManifest = manifest {
     attributes(
             <span class="hljs-string">&quot;Implementation-Title&quot;</span>: project.name,
             <span class="hljs-string">&quot;Implementation-Version&quot;</span>: version,
@@ -143,7 +143,7 @@ jar {
 
 artifacts {
     archives javadocJar, sourcesJar
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400911.5251')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436142.7454')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -151,10 +151,10 @@ artifacts {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755670400911.587">signing {
+<pre class="highlight"><code class="language-java" id="1755673436142.787">signing {
     required { gradle.taskGraph.hasTask(<span class="hljs-string">&quot;uploadArchives&quot;</span>) }
     sign configurations.archives
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400911.587')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436142.787')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -162,7 +162,7 @@ artifacts {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755670400911.2017">uploadArchives {
+<pre class="highlight"><code class="language-java" id="1755673436142.156">uploadArchives {
     repositories {
         mavenDeployer {
             beforeDeployment { MavenDeployment deployment <span class="hljs-meta">@LAMBDA</span> signing.signPom(deployment) }
@@ -204,7 +204,7 @@ artifacts {
             }
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400911.2017')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436142.156')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -217,7 +217,7 @@ artifacts {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755670400911.836"><span class="hljs-meta">@dollar</span>@ gpg2 --key-gen</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400911.836')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755673436142.6748"><span class="hljs-meta">@dollar</span>@ gpg2 --key-gen</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436142.6748')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -228,7 +228,7 @@ artifacts {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755670400911.6118"><span class="hljs-meta">@dollar</span>@ gpg2 --version</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400911.6118')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755673436142.3347"><span class="hljs-meta">@dollar</span>@ gpg2 --version</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436142.3347')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -236,14 +236,14 @@ artifacts {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755670400912.0608"><span class="hljs-meta">@dollar</span>@ gpg2 --list-secret-keys
+<pre class="highlight"><code class="language-java" id="1755673436143.965"><span class="hljs-meta">@dollar</span>@ gpg2 --list-secret-keys
 
 /home/devmind/.gnupg/pubring.kbx
 ------------------------------
 pub   rsa2048 <span class="hljs-number">2018</span>-<span class="hljs-number">01</span>-<span class="hljs-number">13</span> [SC]
       6933FACC1931DD8A89CED163582D3134
 uid         [ultimate] Guillaume EHRET <span class="hljs-meta">@LTguillaume</span><span class="hljs-meta">@dev</span>-mind.fr<span class="hljs-meta">@GT</span>
-sub   rsa2048 <span class="hljs-number">2018</span>-<span class="hljs-number">01</span>-<span class="hljs-number">13</span> [E]</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400912.0608')">Copy</button></pre>
+sub   rsa2048 <span class="hljs-number">2018</span>-<span class="hljs-number">01</span>-<span class="hljs-number">13</span> [E]</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436143.965')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -251,13 +251,13 @@ sub   rsa2048 <span class="hljs-number">2018</span>-<span class="hljs-number">01
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755670400912.6128"><span class="hljs-meta">@dollar</span>@ gpg2 --list-secret-keys --keyid-format <span class="hljs-type">short</span>
+<pre class="highlight"><code class="language-java" id="1755673436143.2605"><span class="hljs-meta">@dollar</span>@ gpg2 --list-secret-keys --keyid-format <span class="hljs-type">short</span>
 
 /home/devmind/.gnupg/pubring.kbx
 --------------------------------
 pub   rsa2048/C6EED57A <span class="hljs-number">2018</span>-<span class="hljs-number">01</span>-<span class="hljs-number">13</span> [SC]
 uid         [ultimate] Guillaume EHRET <span class="hljs-meta">@LTguillaume</span><span class="hljs-meta">@dev</span>-mind.fr<span class="hljs-meta">@GT</span>
-sub   rsa2048/7DY5B54F <span class="hljs-number">2018</span>-<span class="hljs-number">01</span>-<span class="hljs-number">13</span> [E]</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400912.6128')">Copy</button></pre>
+sub   rsa2048/7DY5B54F <span class="hljs-number">2018</span>-<span class="hljs-number">01</span>-<span class="hljs-number">13</span> [E]</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436143.2605')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -265,7 +265,7 @@ sub   rsa2048/7DY5B54F <span class="hljs-number">2018</span>-<span class="hljs-n
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755670400912.2224"><span class="hljs-meta">@dollar</span>@ gpg2 --keyserver hkp:<span class="hljs-comment">//pool.sks-keyservers.net --send-keys C6EED57A</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670400912.2224')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755673436143.8967"><span class="hljs-meta">@dollar</span>@ gpg2 --keyserver hkp:<span class="hljs-comment">//pool.sks-keyservers.net --send-keys C6EED57A</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755673436143.8967')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -273,12 +273,12 @@ sub   rsa2048/7DY5B54F <span class="hljs-number">2018</span>-<span class="hljs-n
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755670400912.2527">signing.keyId=C6EED57A
+<pre class="highlight"><code class="language-java" id="1755673436143.6074">signing.keyId=C6EED57A
 signing.password=CeciEstMonpassword
 signing.secretKeyRingFile=/home/devmind/.gnupg/secring.gpg
 
 ossrhUsername=devmind
-ossrhPassword=CeciEstMonpassword</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400912.2527')">Copy</button></pre>
+ossrhPassword=CeciEstMonpassword</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436143.6074')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -286,9 +286,9 @@ ossrhPassword=CeciEstMonpassword</code><button class="btn-copy-code" onclick="co
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755670400912.0674">* What went wrong:
+<pre class="highlight"><code class="language-java" id="1755673436143.7434">* What went wrong:
 Execution failed <span class="hljs-keyword">for</span> task <span class="hljs-string">&#x27;:signArchives&#x27;</span>.
-<span class="hljs-meta">@GT</span> Unable to read secret key from file: /home/devmind/.gnupg/secring.gpg (it may not be a PGP secret key ring)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400912.0674')">Copy</button></pre>
+<span class="hljs-meta">@GT</span> Unable to read secret key from file: /home/devmind/.gnupg/secring.gpg (it may not be a PGP secret key ring)</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436143.7434')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -296,7 +296,7 @@ Execution failed <span class="hljs-keyword">for</span> task <span class="hljs-st
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755670400912.1567"><span class="hljs-meta">@dollar</span>@ gpg2 --export-secret-keys <span class="hljs-meta">@GT</span> ~/.gnupg/secring.gpg</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400912.1567')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755673436143.2258"><span class="hljs-meta">@dollar</span>@ gpg2 --export-secret-keys <span class="hljs-meta">@GT</span> ~/.gnupg/secring.gpg</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436143.2258')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -312,11 +312,11 @@ Execution failed <span class="hljs-keyword">for</span> task <span class="hljs-st
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755670400912.1824">signing {
+<pre class="highlight"><code class="language-java" id="1755673436143.0725">signing {
     required { gradle.taskGraph.hasTask(<span class="hljs-string">&quot;uploadArchives&quot;</span>) }
     useGpgCmd()
     sign configurations.archives
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400912.1824')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436143.0725')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">

@@ -72,12 +72,12 @@ export const _kotlin_et_android:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755670401008.7915"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">HelloWorld</span> {
+<pre class="highlight"><code class="language-java" id="1755673436046.0227"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">HelloWorld</span> {
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> {
         <span class="hljs-type">String</span> <span class="hljs-variable">name</span> <span class="hljs-operator">=</span> <span class="hljs-string">&quot;Dev-Mind&quot;</span>;
         System.out.println(<span class="hljs-string">&quot;Hello world &quot;</span> + name);
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401008.7915')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436046.0227')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -85,10 +85,10 @@ export const _kotlin_et_android:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670401008.8672"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>{
+<pre class="highlight"><code class="language-kotlin" id="1755673436046.6506"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>{
     <span class="hljs-keyword">val</span> name = <span class="hljs-string">&quot;Dev-Mind&quot;</span>
     println(<span class="hljs-string">&quot;Hello world @dollar@name&quot;</span>)
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401008.8672')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436046.6506')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -126,10 +126,10 @@ export const _kotlin_et_android:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670401008.3594"><span class="hljs-keyword">var</span> name:String         <span class="hljs-comment">// Erreur de compilation</span>
+<pre class="highlight"><code class="language-kotlin" id="1755673436046.8623"><span class="hljs-keyword">var</span> name:String         <span class="hljs-comment">// Erreur de compilation</span>
 <span class="hljs-keyword">var</span> name:String = <span class="hljs-literal">null</span>  <span class="hljs-comment">// Erreur de compilation</span>
 <span class="hljs-keyword">var</span> name = <span class="hljs-string">&quot;Dev-Mind&quot;</span>   <span class="hljs-comment">// Valide et pas besoin de définir un type car le compilateur peut le deviner</span>
-<span class="hljs-keyword">var</span> name:String? = <span class="hljs-literal">null</span> <span class="hljs-comment">// Valide car on utilise le type String? qui veut dire String nullable</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401008.3594')">Copy</button></pre>
+<span class="hljs-keyword">var</span> name:String? = <span class="hljs-literal">null</span> <span class="hljs-comment">// Valide car on utilise le type String? qui veut dire String nullable</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755673436046.8623')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -145,11 +145,11 @@ export const _kotlin_et_android:string = `<div id="toc" class="toc">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670401008.1555"><span class="hljs-keyword">val</span> name = <span class="hljs-string">&quot;Dev-Mind&quot;</span>
+<pre class="highlight"><code class="language-kotlin" id="1755673436046.13"><span class="hljs-keyword">val</span> name = <span class="hljs-string">&quot;Dev-Mind&quot;</span>
 name = <span class="hljs-string">&quot;Guillaume&quot;</span>      <span class="hljs-comment">// Erreur de compilation car immutable</span>
 
 <span class="hljs-keyword">var</span> name2 = <span class="hljs-string">&quot;Dev-Mind&quot;</span>
-name2 = <span class="hljs-string">&quot;Guillaume&quot;</span>     <span class="hljs-comment">// OK car mutable</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401008.1555')">Copy</button></pre>
+name2 = <span class="hljs-string">&quot;Guillaume&quot;</span>     <span class="hljs-comment">// OK car mutable</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755673436046.13')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -157,12 +157,12 @@ name2 = <span class="hljs-string">&quot;Guillaume&quot;</span>     <span class="
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670401008.1604"><span class="hljs-keyword">val</span> names = listOf(<span class="hljs-string">&quot;Dev-Mind&quot;</span>, <span class="hljs-string">&quot;Guillaume&quot;</span>)
+<pre class="highlight"><code class="language-kotlin" id="1755673436047.135"><span class="hljs-keyword">val</span> names = listOf(<span class="hljs-string">&quot;Dev-Mind&quot;</span>, <span class="hljs-string">&quot;Guillaume&quot;</span>)
 names.add(<span class="hljs-string">&quot;NewName&quot;</span>)    <span class="hljs-comment">// Erreur de compilation car add n&#x27;existe pas sur une liste immutable</span>
 
 
 <span class="hljs-keyword">val</span> names = mutableListOf(<span class="hljs-string">&quot;Dev-Mind&quot;</span>, <span class="hljs-string">&quot;Guillaume&quot;</span>)
-names.add(<span class="hljs-string">&quot;NewName&quot;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401008.1604')">Copy</button></pre>
+names.add(<span class="hljs-string">&quot;NewName&quot;</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436047.135')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -184,7 +184,7 @@ names.add(<span class="hljs-string">&quot;NewName&quot;</span>)</code><button cl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670401008.6497"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">formatDate</span><span class="hljs-params">(string: <span class="hljs-type">Date</span>, format: <span class="hljs-type">String</span> = <span class="hljs-string">&quot;yyyy-MM-dd&quot;</span>, addDay: <span class="hljs-type">Int</span> =<span class="hljs-number">0</span>)</span></span> : String</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401008.6497')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1755673436047.2256"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">formatDate</span><span class="hljs-params">(string: <span class="hljs-type">Date</span>, format: <span class="hljs-type">String</span> = <span class="hljs-string">&quot;yyyy-MM-dd&quot;</span>, addDay: <span class="hljs-type">Int</span> =<span class="hljs-number">0</span>)</span></span> : String</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436047.2256')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -192,9 +192,9 @@ names.add(<span class="hljs-string">&quot;NewName&quot;</span>)</code><button cl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670401008.5083">formatDate(Date())              <span class="hljs-comment">// On ne précise pas les valeurs si celles par défaut sont suffisantes</span>
+<pre class="highlight"><code class="language-kotlin" id="1755673436047.3762">formatDate(Date())              <span class="hljs-comment">// On ne précise pas les valeurs si celles par défaut sont suffisantes</span>
 formatDate(Date(), <span class="hljs-string">&quot;yyyy&quot;</span>)      <span class="hljs-comment">// Dans mon cas je ne change que la deuxième valeur</span>
-formatDate(Date(), addDay = <span class="hljs-number">2</span>)  <span class="hljs-comment">// Si je veux préciser une valeur particulière je peux u tiliser les paramètres nommés</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401008.5083')">Copy</button></pre>
+formatDate(Date(), addDay = <span class="hljs-number">2</span>)  <span class="hljs-comment">// Si je veux préciser une valeur particulière je peux u tiliser les paramètres nommés</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755673436047.3762')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -202,7 +202,7 @@ formatDate(Date(), addDay = <span class="hljs-number">2</span>)  <span class="hl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670401008.819"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">findSpeaker</span><span class="hljs-params">(firstname: <span class="hljs-type">String</span>, lastname: <span class="hljs-type">String</span>)</span></span>: Speaker</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401008.819')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1755673436048.0132"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">findSpeaker</span><span class="hljs-params">(firstname: <span class="hljs-type">String</span>, lastname: <span class="hljs-type">String</span>)</span></span>: Speaker</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436048.0132')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -210,8 +210,8 @@ formatDate(Date(), addDay = <span class="hljs-number">2</span>)  <span class="hl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670401009.4429"><span class="hljs-keyword">val</span> speaker1 = findSpeaker(<span class="hljs-string">&quot;Chet&quot;</span>, <span class="hljs-string">&quot;Haase&quot;</span>)
-<span class="hljs-keyword">val</span> speaker1 = findSpeaker(firstname = <span class="hljs-string">&quot;Chet&quot;</span>, lastname = <span class="hljs-string">&quot;Haase&quot;</span>)  <span class="hljs-comment">// les paramètres nommés amènent plus de lisibilité</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401009.4429')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1755673436048.452"><span class="hljs-keyword">val</span> speaker1 = findSpeaker(<span class="hljs-string">&quot;Chet&quot;</span>, <span class="hljs-string">&quot;Haase&quot;</span>)
+<span class="hljs-keyword">val</span> speaker1 = findSpeaker(firstname = <span class="hljs-string">&quot;Chet&quot;</span>, lastname = <span class="hljs-string">&quot;Haase&quot;</span>)  <span class="hljs-comment">// les paramètres nommés amènent plus de lisibilité</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755673436048.452')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -224,12 +224,12 @@ formatDate(Date(), addDay = <span class="hljs-number">2</span>)  <span class="hl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755670401009.5696"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Parent</span>{ }</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401009.5696')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755673436048.8362"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Parent</span>{ }</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436048.8362')">Copy</button></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755670401009.5618"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Child</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">Parent</span>{}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401009.5618')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755673436048.7793"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Child</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">Parent</span>{}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436048.7793')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -237,9 +237,9 @@ formatDate(Date(), addDay = <span class="hljs-number">2</span>)  <span class="hl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670401009.4604"><span class="hljs-keyword">open</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Parent</span>
+<pre class="highlight"><code class="language-kotlin" id="1755673436048.6526"><span class="hljs-keyword">open</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Parent</span>
 
-<span class="hljs-keyword">class</span> <span class="hljs-title class_">Child</span> : <span class="hljs-type">Parent</span>()</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401009.4604')">Copy</button></pre>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Child</span> : <span class="hljs-type">Parent</span>()</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436048.6526')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -277,10 +277,10 @@ formatDate(Date(), addDay = <span class="hljs-number">2</span>)  <span class="hl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670401009.9866"><span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Speaker</span>(<span class="hljs-keyword">val</span> firstname: String,
+<pre class="highlight"><code class="language-kotlin" id="1755673436048.134"><span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Speaker</span>(<span class="hljs-keyword">val</span> firstname: String,
                    <span class="hljs-keyword">val</span> lastname: String,
                    <span class="hljs-keyword">val</span> age: <span class="hljs-built_in">Int</span>? = <span class="hljs-literal">null</span>,
-                   <span class="hljs-keyword">val</span> id: String = UUID.randomUUID().toString())</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401009.9866')">Copy</button></pre>
+                   <span class="hljs-keyword">val</span> id: String = UUID.randomUUID().toString())</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436048.134')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -291,12 +291,12 @@ formatDate(Date(), addDay = <span class="hljs-number">2</span>)  <span class="hl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670401009.6343"><span class="hljs-keyword">val</span> s1 = Speaker(<span class="hljs-string">&quot;Chet&quot;</span>, <span class="hljs-string">&quot;Haase&quot;</span>)
+<pre class="highlight"><code class="language-kotlin" id="1755673436048.5269"><span class="hljs-keyword">val</span> s1 = Speaker(<span class="hljs-string">&quot;Chet&quot;</span>, <span class="hljs-string">&quot;Haase&quot;</span>)
 <span class="hljs-keyword">val</span> s2 = Speaker(firstname = <span class="hljs-string">&quot;Chet&quot;</span>, lastname = <span class="hljs-string">&quot;Haase&quot;</span>)
 <span class="hljs-keyword">val</span> s3 = Speaker(firstname = <span class="hljs-string">&quot;Chet&quot;</span>, lastname = <span class="hljs-string">&quot;Haase&quot;</span>, id = <span class="hljs-string">&quot;123&quot;</span>)
 
 <span class="hljs-keyword">val</span> s4 = s1.copy(age = <span class="hljs-number">999</span>)
-<span class="hljs-keyword">val</span> s5 = s1.copy()</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401009.6343')">Copy</button></pre>
+<span class="hljs-keyword">val</span> s5 = s1.copy()</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436048.5269')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -304,8 +304,8 @@ formatDate(Date(), addDay = <span class="hljs-number">2</span>)  <span class="hl
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670401009.5396">s1 == s5   <span class="hljs-comment">// @ARROW renvoie true car Kotlin fait appel à la méthode equals</span>
-s1 === s5  <span class="hljs-comment">// @ARROW renverra faux car === permet de comparer des références</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401009.5396')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1755673436048.3208">s1 == s5   <span class="hljs-comment">// @ARROW renvoie true car Kotlin fait appel à la méthode equals</span>
+s1 === s5  <span class="hljs-comment">// @ARROW renverra faux car === permet de comparer des références</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755673436048.3208')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -316,7 +316,7 @@ s1 === s5  <span class="hljs-comment">// @ARROW renverra faux car === permet de 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670401009.9597"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">HelloWorld</span> {
+<pre class="highlight"><code class="language-kotlin" id="1755673436048.4373"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">HelloWorld</span> {
 
     <span class="hljs-keyword">public</span> String name(){
         <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;Dev-Mind&quot;</span>;
@@ -327,7 +327,7 @@ s1 === s5  <span class="hljs-comment">// @ARROW renverra faux car === permet de 
             System.<span class="hljs-keyword">out</span>.println(<span class="hljs-string">&quot;Hello world&quot;</span> + name()); <span class="hljs-comment">// NE COMPILE PAS car la méthode name() n&#x27;est pas visible</span>
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401009.9597')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436048.4373')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -341,7 +341,7 @@ s1 === s5  <span class="hljs-comment">// @ARROW renverra faux car === permet de 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670401009.7124"><span class="hljs-keyword">class</span> <span class="hljs-title class_">HelloWorld</span> {
+<pre class="highlight"><code class="language-kotlin" id="1755673436048.59"><span class="hljs-keyword">class</span> <span class="hljs-title class_">HelloWorld</span> {
 
     <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">name</span><span class="hljs-params">()</span></span> = <span class="hljs-string">&quot;Dev-Mind&quot;</span>
 
@@ -350,7 +350,7 @@ s1 === s5  <span class="hljs-comment">// @ARROW renverra faux car === permet de 
             println(<span class="hljs-string">&quot;Hello world&quot;</span> + name())
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401009.7124')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436048.59')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -364,9 +364,9 @@ s1 === s5  <span class="hljs-comment">// @ARROW renverra faux car === permet de 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670401009.125">button.setOnClickListener{
+<pre class="highlight"><code class="language-kotlin" id="1755673436048.9102">button.setOnClickListener{
       <span class="hljs-comment">// votre code</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401009.125')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436048.9102')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -374,10 +374,10 @@ s1 === s5  <span class="hljs-comment">// @ARROW renverra faux car === permet de 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670401009.371"><span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onStop</span><span class="hljs-params">()</span></span> {
+<pre class="highlight"><code class="language-kotlin" id="1755673436048.328"><span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">onStop</span><span class="hljs-params">()</span></span> {
     <span class="hljs-keyword">super</span>.onStop()
     button.setOnClickListener(<span class="hljs-literal">null</span>)
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401009.371')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436048.328')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -394,11 +394,11 @@ s1 === s5  <span class="hljs-comment">// @ARROW renverra faux car === permet de 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670401009.1938"><span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Citizen</span>(<span class="hljs-keyword">val</span> inseeNumber: String,
+<pre class="highlight"><code class="language-kotlin" id="1755673436048.195"><span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Citizen</span>(<span class="hljs-keyword">val</span> inseeNumber: String,
                    <span class="hljs-keyword">val</span> firstname: String,
                    <span class="hljs-keyword">val</span> lastname: String,
                    <span class="hljs-keyword">val</span> sexe: Sexe,
-                   <span class="hljs-keyword">val</span> birthdate: LocalDate)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401009.1938')">Copy</button></pre>
+                   <span class="hljs-keyword">val</span> birthdate: LocalDate)</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436048.195')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -406,7 +406,7 @@ s1 === s5  <span class="hljs-comment">// @ARROW renverra faux car === permet de 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670401009.7046"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">getAge</span><span class="hljs-params">(date: <span class="hljs-type">LocalDate</span>)</span></span> = LocalDate.now().year - date.year</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401009.7046')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1755673436048.2117"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">getAge</span><span class="hljs-params">(date: <span class="hljs-type">LocalDate</span>)</span></span> = LocalDate.now().year - date.year</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436048.2117')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -414,10 +414,10 @@ s1 === s5  <span class="hljs-comment">// @ARROW renverra faux car === permet de 
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670401009.135"><span class="hljs-function"><span class="hljs-keyword">fun</span> LocalDate.<span class="hljs-title">getAge</span><span class="hljs-params">()</span></span> = LocalDate.now().year - <span class="hljs-keyword">this</span>.year
+<pre class="highlight"><code class="language-kotlin" id="1755673436049.569"><span class="hljs-function"><span class="hljs-keyword">fun</span> LocalDate.<span class="hljs-title">getAge</span><span class="hljs-params">()</span></span> = LocalDate.now().year - <span class="hljs-keyword">this</span>.year
 
 <span class="hljs-comment">// Ce qui permet d&#x27;écrire</span>
-LocalDate.parse(<span class="hljs-string">&quot;1977-01-01&quot;</span>).getAge()</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401009.135')">Copy</button></pre>
+LocalDate.parse(<span class="hljs-string">&quot;1977-01-01&quot;</span>).getAge()</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436049.569')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -425,11 +425,11 @@ LocalDate.parse(<span class="hljs-string">&quot;1977-01-01&quot;</span>).getAge(
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670401010.221"><span class="hljs-keyword">val</span> LocalDate.age
+<pre class="highlight"><code class="language-kotlin" id="1755673436049.3513"><span class="hljs-keyword">val</span> LocalDate.age
     <span class="hljs-keyword">get</span>() = LocalDate.now().year - <span class="hljs-keyword">this</span>.year
 
 <span class="hljs-comment">// Ce qui permet d&#x27;écrire</span>
-LocalDate.parse(<span class="hljs-string">&quot;1977-01-01&quot;</span>).age</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401010.221')">Copy</button></pre>
+LocalDate.parse(<span class="hljs-string">&quot;1977-01-01&quot;</span>).age</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436049.3513')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -437,11 +437,11 @@ LocalDate.parse(<span class="hljs-string">&quot;1977-01-01&quot;</span>).age</co
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670401010.0654"><span class="hljs-keyword">class</span> <span class="hljs-title class_">DevMindApplication</span> : <span class="hljs-type">Application</span>() {
+<pre class="highlight"><code class="language-kotlin" id="1755673436049.2751"><span class="hljs-keyword">class</span> <span class="hljs-title class_">DevMindApplication</span> : <span class="hljs-type">Application</span>() {
    <span class="hljs-comment">// code...</span>
 }
 <span class="hljs-keyword">val</span> AppCompatActivity.devmindApp
-    <span class="hljs-keyword">get</span>() = <span class="hljs-keyword">this</span>.application <span class="hljs-keyword">as</span> DevMindApplication</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401010.0654')">Copy</button></pre>
+    <span class="hljs-keyword">get</span>() = <span class="hljs-keyword">this</span>.application <span class="hljs-keyword">as</span> DevMindApplication</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436049.2751')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -469,9 +469,9 @@ LocalDate.parse(<span class="hljs-string">&quot;1977-01-01&quot;</span>).age</co
 <div class="listingblock">
 <div class="title">Issu de kotlin.collections</div>
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670401010.851"><span class="hljs-keyword">public</span> <span class="hljs-keyword">inline</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> @LTT@GT Iterable@LTT@GT.<span class="hljs-title">find</span><span class="hljs-params">(predicate: (<span class="hljs-type">T</span>) @<span class="hljs-type">LAMBDA</span> <span class="hljs-type">Boolean</span>)</span></span>: T? {
+<pre class="highlight"><code class="language-kotlin" id="1755673436049.5083"><span class="hljs-keyword">public</span> <span class="hljs-keyword">inline</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> @LTT@GT Iterable@LTT@GT.<span class="hljs-title">find</span><span class="hljs-params">(predicate: (<span class="hljs-type">T</span>) @<span class="hljs-type">LAMBDA</span> <span class="hljs-type">Boolean</span>)</span></span>: T? {
     <span class="hljs-keyword">return</span> firstOrNull(predicate)
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401010.851')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436049.5083')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -479,7 +479,7 @@ LocalDate.parse(<span class="hljs-string">&quot;1977-01-01&quot;</span>).age</co
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670401010.1184"><span class="hljs-keyword">val</span> guillaume = speakers.firstOrNull {
+<pre class="highlight"><code class="language-kotlin" id="1755673436049.357"><span class="hljs-keyword">val</span> guillaume = speakers.firstOrNull {
     it.firstname == <span class="hljs-string">&quot;Guillaume&quot;</span>  <span class="hljs-comment">// it correpond à l&#x27;item en cours</span>
 }
 
@@ -489,7 +489,7 @@ LocalDate.parse(<span class="hljs-string">&quot;1977-01-01&quot;</span>).age</co
 }
 
 <span class="hljs-comment">// Ici la syntaxe Java (où vous passez une lambda provoque une erreur de compilation)</span>
-<span class="hljs-keyword">val</span> guillaume = speakers.firstOrNull(speaker <span class="hljs-meta">@LAMBDA</span> speaker.firstname == <span class="hljs-string">&quot;Guillaume&quot;</span>) <span class="hljs-comment">// ne compile pas</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401010.1184')">Copy</button></pre>
+<span class="hljs-keyword">val</span> guillaume = speakers.firstOrNull(speaker <span class="hljs-meta">@LAMBDA</span> speaker.firstname == <span class="hljs-string">&quot;Guillaume&quot;</span>) <span class="hljs-comment">// ne compile pas</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755673436049.357')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -497,10 +497,10 @@ LocalDate.parse(<span class="hljs-string">&quot;1977-01-01&quot;</span>).age</co
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670401010.9895"><span class="hljs-keyword">val</span> guillaumeSpeakers = speakers.stream()
+<pre class="highlight"><code class="language-kotlin" id="1755673436049.3599"><span class="hljs-keyword">val</span> guillaumeSpeakers = speakers.stream()
                                 .filter(s <span class="hljs-meta">@LAMBDA</span> s.getFirstname().equals(<span class="hljs-string">&quot;Guillaume&quot;</span>))
                                 .findFirst()
-                                .orElse(<span class="hljs-literal">null</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401010.9895')">Copy</button></pre>
+                                .orElse(<span class="hljs-literal">null</span>);</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436049.3599')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -517,7 +517,7 @@ LocalDate.parse(<span class="hljs-string">&quot;1977-01-01&quot;</span>).age</co
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670401010.8923"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Cell</span>(<span class="hljs-keyword">val</span> content: String)
+<pre class="highlight"><code class="language-kotlin" id="1755673436049.5347"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Cell</span>(<span class="hljs-keyword">val</span> content: String)
 
 <span class="hljs-keyword">class</span> <span class="hljs-title class_">Row</span>(<span class="hljs-keyword">val</span> cells: <span class="hljs-symbol">MutableList@</span><span class="hljs-symbol">LTCell@</span>GT = mutableListOf()) {
     <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">cell</span><span class="hljs-params">(adder: () @<span class="hljs-type">LAMBDA</span> <span class="hljs-type">Cell</span>)</span></span>: Row {
@@ -531,7 +531,7 @@ LocalDate.parse(<span class="hljs-string">&quot;1977-01-01&quot;</span>).age</co
         rows.add(adder())
         <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401010.8923')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436049.5347')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -539,9 +539,9 @@ LocalDate.parse(<span class="hljs-string">&quot;1977-01-01&quot;</span>).age</co
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670401010.561"><span class="hljs-keyword">val</span> table = Table()
+<pre class="highlight"><code class="language-kotlin" id="1755673436049.972"><span class="hljs-keyword">val</span> table = Table()
     .row { Row().cell { Cell(<span class="hljs-string">&quot;Test&quot;</span>) }}
-    .row { Row().cell { Cell(<span class="hljs-string">&quot;Test2&quot;</span>) }}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401010.561')">Copy</button></pre>
+    .row { Row().cell { Cell(<span class="hljs-string">&quot;Test2&quot;</span>) }}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436049.972')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -555,9 +555,9 @@ LocalDate.parse(<span class="hljs-string">&quot;1977-01-01&quot;</span>).age</co
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670401010.4824">itemView.setOnClickListener {
+<pre class="highlight"><code class="language-kotlin" id="1755673436049.8694">itemView.setOnClickListener {
      <span class="hljs-comment">// Code du listener directement</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401010.4824')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436049.8694')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -565,7 +565,7 @@ LocalDate.parse(<span class="hljs-string">&quot;1977-01-01&quot;</span>).age</co
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670401010.6196">holder.speakerName.text = user.fullname
+<pre class="highlight"><code class="language-kotlin" id="1755673436049.6707">holder.speakerName.text = user.fullname
 holder.speakerBio.text = user.descriptionFr
 holder.speakerBirthday.text = user.birthday
 
@@ -574,7 +574,7 @@ holder.apply {
     speakerName.text = user.fullname
     speakerBio.text = user.descriptionFr
     speakerBirthday.text = user.birthday
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401010.6196')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436049.6707')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -608,7 +608,7 @@ holder.apply {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670401010.0674"><span class="hljs-comment">// Votre activité implemente l&#x27;interface CoroutineScope</span>
+<pre class="highlight"><code class="language-kotlin" id="1755673436049.907"><span class="hljs-comment">// Votre activité implemente l&#x27;interface CoroutineScope</span>
 <span class="hljs-keyword">open</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">MyActivity</span> : <span class="hljs-type">AppCompatActivity</span>(), CoroutineScope {
 
    <span class="hljs-comment">// Si vous lancez votre coroutine vous devez indiquer dans quel thread elle sera lancé. Par défaut un nouveau</span>
@@ -636,7 +636,7 @@ holder.apply {
           }
  	   }
    }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401010.0674')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436049.907')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">

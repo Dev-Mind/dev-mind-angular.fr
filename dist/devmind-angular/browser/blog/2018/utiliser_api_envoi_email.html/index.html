@@ -181,9 +181,9 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755670400933.581"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">EmailSender</span> {
+<pre class="highlight"><code class="language-java" id="1755673436163.7227"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">EmailSender</span> {
     <span class="hljs-keyword">void</span> <span class="hljs-title function_">send</span><span class="hljs-params">(EmailMessage email)</span>;
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400933.581')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436163.7227')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -207,7 +207,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755670400933.9094">  compile(<span class="hljs-string">'org.springframework.boot:spring-boot-starter-mail'</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400933.9094')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755673436163.8748">  compile(<span class="hljs-string">'org.springframework.boot:spring-boot-starter-mail'</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436163.8748')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -215,7 +215,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755670400933.1846">spring:
+<pre class="highlight"><code class="language-java" id="1755673436163.4514">spring:
   mail:
     protocol: smtp
     host: smtp.gmail.com
@@ -227,7 +227,7 @@
         smtp:
           auth: <span class="hljs-literal">true</span>
           starttls:
-            enable: <span class="hljs-literal">true</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670400933.1846')">Copy</button></pre>
+            enable: <span class="hljs-literal">true</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755673436163.4514')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -235,7 +235,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755670400933.741"><span class="hljs-meta">@Component</span>
+<pre class="highlight"><code class="language-java" id="1755673436163.1636"><span class="hljs-meta">@Component</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">GmailSender</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">EmailSender</span> {
 
     <span class="hljs-keyword">private</span> JavaMailSender javaMailSender;
@@ -259,7 +259,7 @@
             <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">RuntimeException</span>(e);
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400933.741')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436163.1636')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -289,7 +289,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755670400933.6165">  compile(<span class="hljs-string">'com.sendgrid:sendgrid-java:4.1.2'</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400933.6165')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755673436163.3296">  compile(<span class="hljs-string">'com.sendgrid:sendgrid-java:4.1.2'</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436163.3296')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -297,9 +297,9 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755670400933.888">spring:
+<pre class="highlight"><code class="language-java" id="1755673436163.491">spring:
   sendgrid:
-      api-key: ${SENDGRID_APIKEY:Bar12345Bar12345}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400933.888')">Copy</button></pre>
+      api-key: ${SENDGRID_APIKEY:Bar12345Bar12345}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436163.491')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -307,7 +307,7 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755670400933.6067"><span class="hljs-meta">@Component</span>
+<pre class="highlight"><code class="language-java" id="1755673436164.304"><span class="hljs-meta">@Component</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SendgridSender</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">EmailSender</span> {
 
     <span class="hljs-keyword">private</span> SendGrid sendGrid;
@@ -335,7 +335,7 @@
             <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">RuntimeException</span>(ex);
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400933.6067')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436164.304')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -357,8 +357,8 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755670400933.698">compile(<span class="hljs-string">"org.springframework.boot:spring-boot-starter-webflux"</span>)
-testCompile(<span class="hljs-string">"com.squareup.okhttp3:mockwebserver:3.9.1"</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400933.698')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755673436164.0352">compile(<span class="hljs-string">"org.springframework.boot:spring-boot-starter-webflux"</span>)
+testCompile(<span class="hljs-string">"com.squareup.okhttp3:mockwebserver:3.9.1"</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436164.0352')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -369,11 +369,11 @@ testCompile(<span class="hljs-string">"com.squareup.okhttp3:mockwebserver:3.9.1"
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755670400933.4612">devmind:
+<pre class="highlight"><code class="language-java" id="1755673436164.5723">devmind:
   elasticmail:
     apikey: ${ELASTICMAIL_APIKEY:Bar12345Bar12345}
     host: ${ELASTICMAIL_HOST:https:<span class="hljs-comment">//api.elasticemail.com}</span>
-    version: ${ELASTICMAIL_VERSION:v2}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400933.4612')">Copy</button></pre>
+    version: ${ELASTICMAIL_VERSION:v2}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436164.5723')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -381,7 +381,7 @@ testCompile(<span class="hljs-string">"com.squareup.okhttp3:mockwebserver:3.9.1"
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755670400934.8665"><span class="hljs-meta">@Component</span>
+<pre class="highlight"><code class="language-java" id="1755673436164.491"><span class="hljs-meta">@Component</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ElasticMailSender</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">EmailSender</span> {
 
     <span class="hljs-meta">@Autowired</span>
@@ -419,7 +419,7 @@ testCompile(<span class="hljs-string">"com.squareup.okhttp3:mockwebserver:3.9.1"
             <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">RuntimeException</span>(response.getError());
         }
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400934.8665')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436164.491')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -427,7 +427,7 @@ testCompile(<span class="hljs-string">"com.squareup.okhttp3:mockwebserver:3.9.1"
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755670400934.9758"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ElasticMailSenderTest</span> {
+<pre class="highlight"><code class="language-java" id="1755673436165.8223"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ElasticMailSenderTest</span> {
 
     <span class="hljs-meta">@Rule</span>
     <span class="hljs-keyword">public</span> <span class="hljs-type">MockitoRule</span> <span class="hljs-variable">rule</span> <span class="hljs-operator">=</span> MockitoJUnit.rule();
@@ -484,7 +484,7 @@ testCompile(<span class="hljs-string">"com.squareup.okhttp3:mockwebserver:3.9.1"
         consumer.accept(response);
         <span class="hljs-built_in">this</span>.server.enqueue(response);
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400934.9758')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436165.8223')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -493,6 +493,6 @@ testCompile(<span class="hljs-string">"com.squareup.okhttp3:mockwebserver:3.9.1"
 </div>
 </div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 20/08/2025</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
 
-<script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-VONEI5UC.js" type="module"></script>
+<script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-Q4W654SJ.js" type="module"></script>
 
 <script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t6"},"c":{"7":[{"i":"t6","r":1,"x":3}]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>

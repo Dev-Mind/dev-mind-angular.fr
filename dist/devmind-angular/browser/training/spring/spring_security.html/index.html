@@ -242,7 +242,7 @@ your needs, set the request<span class="hljs-string">'s mode to '</span>no-cors<
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755670401231.6455"><span class="hljs-meta">@CrossOrigin</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401231.6455')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755673435703.7542"><span class="hljs-meta">@CrossOrigin</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755673435703.7542')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -250,7 +250,7 @@ your needs, set the request<span class="hljs-string">'s mode to '</span>no-cors<
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755670401231.286"><span class="hljs-meta">@CrossOrigin(origins = { "http://localhost:3010" }, maxAge = 3600)</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755670401231.286')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755673435703.4373"><span class="hljs-meta">@CrossOrigin(origins = { "http://localhost:3010" }, maxAge = 3600)</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755673435703.4373')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -298,8 +298,8 @@ your needs, set the request<span class="hljs-string">'s mode to '</span>no-cors<
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755670401231.3606">implementation(<span class="hljs-string">"org.springframework.boot:spring-boot-starter-security"</span>)
-testImplementation(<span class="hljs-string">"org.springframework.security:spring-security-test"</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401231.3606')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755673435703.99">implementation(<span class="hljs-string">"org.springframework.boot:spring-boot-starter-security"</span>)
+testImplementation(<span class="hljs-string">"org.springframework.security:spring-security-test"</span>)</code><button class="btn-copy-code" onclick="copyToClipboard('1755673435703.99')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -358,14 +358,14 @@ spring.security.user.password=password</pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755670401231.637"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">doFilter</span><span class="hljs-params">(
+<pre class="highlight"><code class="language-java" id="1755673435703.8547"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">doFilter</span><span class="hljs-params">(
         ServletRequest request,
         ServletResponse response,
         FilterChain chain)</span> {
 	  <span class="hljs-comment">// do something before the rest of the application</span>
     chain.doFilter(request, response); <span class="hljs-comment">// invoke the rest of the application</span>
     <span class="hljs-comment">// do something after the rest of the application</span>
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401231.637')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673435703.8547')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -436,7 +436,7 @@ spring.security.user.password=password</pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755670401232.6082"><span class="hljs-meta">@Configuration</span>
+<pre class="highlight"><code class="language-java" id="1755673435704.774"><span class="hljs-meta">@Configuration</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SpringSecurityConfig</span> {
 
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-type">String</span> <span class="hljs-variable">ROLE_USER</span> <span class="hljs-operator">=</span> <span class="hljs-string">"USER"</span>;
@@ -451,7 +451,7 @@ spring.security.user.password=password</pre>
         );
         <span class="hljs-keyword">return</span> manager;
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401232.6082')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673435704.774')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -459,14 +459,14 @@ spring.security.user.password=password</pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755670401232.703"><span class="hljs-meta">@Bean</span>
+<pre class="highlight"><code class="language-java" id="1755673435704.3972"><span class="hljs-meta">@Bean</span>
 <span class="hljs-meta">@Order(SecurityProperties.BASIC_AUTH_ORDER)</span>
 SecurityFilterChain <span class="hljs-title function_">defaultSecurityFilterChain</span><span class="hljs-params">(HttpSecurity http)</span> <span class="hljs-keyword">throws</span> Exception {
 			http.authorizeHttpRequests((requests) <span class="hljs-meta">-&gt;</span> requests.anyRequest().authenticated());
 			http.formLogin(withDefaults());
 			http.httpBasic(withDefaults());
 			<span class="hljs-keyword">return</span> http.build();
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401232.703')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673435704.3972')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -488,7 +488,7 @@ SecurityFilterChain <span class="hljs-title function_">defaultSecurityFilterChai
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755670401232.4038"><span class="hljs-meta">@Bean</span>
+<pre class="highlight"><code class="language-java" id="1755673435704.151"><span class="hljs-meta">@Bean</span>
 <span class="hljs-meta">@Order(1)</span>
 <span class="hljs-keyword">public</span> SecurityFilterChain <span class="hljs-title function_">filterChain</span><span class="hljs-params">(HttpSecurity http)</span> <span class="hljs-keyword">throws</span> Exception {
     <span class="hljs-keyword">return</span> http
@@ -499,7 +499,7 @@ SecurityFilterChain <span class="hljs-title function_">defaultSecurityFilterChai
             .formLogin(withDefaults())
             .httpBasic(withDefaults())
             .build();
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401232.4038')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673435704.151')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -526,8 +526,8 @@ SecurityFilterChain <span class="hljs-title function_">defaultSecurityFilterChai
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755670401232.9434"><span class="hljs-type">Authentication</span> <span class="hljs-variable">authentication</span> <span class="hljs-operator">=</span> SecurityContextHolder.getContext().getAuthentication();
-<span class="hljs-type">String</span> <span class="hljs-variable">currentPrincipalName</span> <span class="hljs-operator">=</span> authentication.getName();</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401232.9434')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755673435704.0515"><span class="hljs-type">Authentication</span> <span class="hljs-variable">authentication</span> <span class="hljs-operator">=</span> SecurityContextHolder.getContext().getAuthentication();
+<span class="hljs-type">String</span> <span class="hljs-variable">currentPrincipalName</span> <span class="hljs-operator">=</span> authentication.getName();</code><button class="btn-copy-code" onclick="copyToClipboard('1755673435704.0515')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -535,7 +535,7 @@ SecurityFilterChain <span class="hljs-title function_">defaultSecurityFilterChai
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755670401232.141"><span class="hljs-meta">@CrossOrigin</span>
+<pre class="highlight"><code class="language-java" id="1755673435704.939"><span class="hljs-meta">@CrossOrigin</span>
 <span class="hljs-meta">@RestController</span>
 <span class="hljs-meta">@RequestMapping("/api/admin/users")</span>
 <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">SecurityController</span> {
@@ -546,7 +546,7 @@ SecurityFilterChain <span class="hljs-title function_">defaultSecurityFilterChai
     <span class="hljs-keyword">public</span> User <span class="hljs-title function_">findUserName</span><span class="hljs-params">(<span class="hljs-meta">@AuthenticationPrincipal</span> UserDetails userDetails)</span> {
         <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">User</span>(userDetails.getUsername());
     }
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401232.141')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673435704.939')">Copy</button></pre>
 </div>
 </div>
 <div style="page-break-after: always;"></div>
@@ -560,11 +560,11 @@ SecurityFilterChain <span class="hljs-title function_">defaultSecurityFilterChai
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755670401232.689"><span class="hljs-meta">@PreAuthorize("hasRole('ADMIN')")</span> <span class="hljs-comment">// 1</span>
+<pre class="highlight"><code class="language-java" id="1755673435704.4136"><span class="hljs-meta">@PreAuthorize("hasRole('ADMIN')")</span> <span class="hljs-comment">// 1</span>
 <span class="hljs-meta">@GetMapping(path = "/me")</span>
 <span class="hljs-keyword">public</span> User <span class="hljs-title function_">findUserName</span><span class="hljs-params">(<span class="hljs-meta">@AuthenticationPrincipal</span> UserDetails userDetails)</span> {
     <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">User</span>(userDetails.getUsername());
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401232.689')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673435704.4136')">Copy</button></pre>
 </div>
 </div>
 <div class="ulist">
@@ -614,7 +614,7 @@ SecurityFilterChain <span class="hljs-title function_">defaultSecurityFilterChai
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755670401233.332"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-java" id="1755673435705.8003"><span class="hljs-meta">@Test</span>
 <span class="hljs-meta">@WithMockUser(username = "admin", roles = "ADMIN")</span>
 <span class="hljs-keyword">void</span> <span class="hljs-title function_">shouldLoadAWindowAndReturnNullIfNotFound</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception {
     given(windowDao.findById(<span class="hljs-number">999L</span>)).willReturn(Optional.empty());
@@ -623,7 +623,7 @@ SecurityFilterChain <span class="hljs-title function_">defaultSecurityFilterChai
                 .andExpect(status().isOk())
                 <span class="hljs-comment">// the content can be tested with Json path</span>
                 .andExpect(content().string(<span class="hljs-string">""</span>));
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401233.332')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673435705.8003')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -640,9 +640,9 @@ SecurityFilterChain <span class="hljs-title function_">defaultSecurityFilterChai
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1755670401233.168"><span class="hljs-keyword">const</span> headers = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Headers</span>();
+<pre class="highlight"><code class="language-javascript" id="1755673435705.348"><span class="hljs-keyword">const</span> headers = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Headers</span>();
 headers.<span class="hljs-title function_">set</span>(<span class="hljs-string">'Authorization'</span>, <span class="hljs-string">'Basic '</span> + <span class="hljs-title function_">btoa</span>(username + <span class="hljs-string">":"</span> + password));
-<span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(<span class="hljs-string">'myurl'</span>, {headers});</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401233.168')">Copy</button></pre>
+<span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(<span class="hljs-string">'myurl'</span>, {headers});</code><button class="btn-copy-code" onclick="copyToClipboard('1755673435705.348')">Copy</button></pre>
 </div>
 </div>
 <div class="sect3">
@@ -652,7 +652,7 @@ headers.<span class="hljs-title function_">set</span>(<span class="hljs-string">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1755670401233.636"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-java" id="1755673435705.8577"><span class="hljs-meta">@Test</span>
 <span class="hljs-meta">@WithMockUser(username = "admin", roles = "ADMIN")</span>
 <span class="hljs-keyword">void</span> <span class="hljs-title function_">shouldSwitchWindow</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception {
     <span class="hljs-type">Window</span> <span class="hljs-variable">expectedWindow</span> <span class="hljs-operator">=</span> createWindow(<span class="hljs-string">"window 1"</span>);
@@ -665,7 +665,7 @@ headers.<span class="hljs-title function_">set</span>(<span class="hljs-string">
             .andExpect(status().isOk())
             .andExpect(jsonPath(<span class="hljs-string">"$.name"</span>).value(<span class="hljs-string">"window 1"</span>))
             .andExpect(jsonPath(<span class="hljs-string">"$.windowStatus"</span>).value(<span class="hljs-string">"CLOSED"</span>));
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670401233.636')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673435705.8577')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -698,6 +698,6 @@ headers.<span class="hljs-title function_">set</span>(<span class="hljs-string">
 </div>
 </div></div></div></div></app-asciidoc-viewer><!----><app-footer _ngcontent-ng-c582792440 _nghost-ng-c2660501952 ngh="0"><footer _ngcontent-ng-c2660501952><div _ngcontent-ng-c2660501952 class="dm_footer"><div _ngcontent-ng-c2660501952 class="is-small-screen"><p _ngcontent-ng-c2660501952 id="footer-dm_society"> SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i><br _ngcontent-ng-c2660501952> SIREN : 808 720 759, au RCS de Saint-Etienne<br _ngcontent-ng-c2660501952> All right reserved - ©2024 Guillaume EHRET </p></div><div _ngcontent-ng-c2660501952 class="is-large-screen"><div _ngcontent-ng-c2660501952 class="dm_footer__middle"><div _ngcontent-ng-c2660501952 class="dm_society"> Dev-Mind </div><div _ngcontent-ng-c2660501952>SARL au capital de <i _ngcontent-ng-c2660501952>5000€</i></div><div _ngcontent-ng-c2660501952>SIREN : 808 720 759, au RCS de Saint-Etienne</div><div _ngcontent-ng-c2660501952><small _ngcontent-ng-c2660501952>Mise à jour le 20/08/2025</small></div></div><div _ngcontent-ng-c2660501952 class="dm_footer__right"> All right reserved - ©2024 Guillaume EHRET </div></div></div></footer></app-footer></app-root>
 
-<script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-VONEI5UC.js" type="module"></script>
+<script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-Q4W654SJ.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t6"},"c":{"7":[{"i":"t6","r":1,"x":2}]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"7":"t0"},"c":{"7":[{"i":"t0","r":1,"x":2}]}},{"c":{"1":[{"i":"c490234363","r":1}]}}]}</script></body></html>

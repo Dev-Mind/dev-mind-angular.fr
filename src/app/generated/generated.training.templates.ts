@@ -1,5 +1,7 @@
 
 import { _gameboard_score_multiplaform } from './training/score/_gameboard_score_multiplaform';
+import { _gameborad_score_confidentiality } from './training/score/_gameborad_score_confidentiality';
+import { _score_jeu_societe_confidentialite } from './training/score/_score_jeu_societe_confidentialite';
 import { _score_jeu_societe_multiplaform } from './training/score/_score_jeu_societe_multiplaform';
 import { _install_development_environment } from './training/outil/_install_development_environment';
 import { _git } from './training/outil/_git';
@@ -24,6 +26,8 @@ import { _http } from './training/web/_http';
 import { _internet } from './training/web/_internet';
 export const trainingGeneratedTemplates = new Map<string, string>();
 trainingGeneratedTemplates.set('gameboard_score_multiplaform', _gameboard_score_multiplaform);
+trainingGeneratedTemplates.set('gameborad_score_confidentiality', _gameborad_score_confidentiality);
+trainingGeneratedTemplates.set('score_jeu_societe_confidentialite', _score_jeu_societe_confidentialite);
 trainingGeneratedTemplates.set('score_jeu_societe_multiplaform', _score_jeu_societe_multiplaform);
 trainingGeneratedTemplates.set('install_development_environment', _install_development_environment);
 trainingGeneratedTemplates.set('git', _git);

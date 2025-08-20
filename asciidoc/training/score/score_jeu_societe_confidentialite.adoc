@@ -1,0 +1,40 @@
+:doctitle: Confidentialité Score jeu de société (2025)
+:description: Politique de Confidentialité
+:keywords: Multiplatform
+:author: Guillaume EHRET - Dev-Mind
+:revdate: 2025-08-20
+:category: Game
+:teaser: Politique de Confidentialité
+:imgteaser: :../../img/blog/2019/score_00.png
+:toc:
+
+== Politique de Confidentialité de Score jeu de société
+
+Bienvenue sur  Score jeu de société, votre compagnon de jeux de société !
+
+Nous nous engageons à protéger votre vie privée. Cette politique de confidentialité a pour but de vous informer sur les types de données que nous collectons, comment nous les utilisons et les partageons, et quels sont vos droits.
+
+En utilisant l'application  Score jeu de société, vous acceptez les termes de la présente politique de confidentialité.
+
+=== Données que nous collectons
+
+Nous ne collectons aucune donnée personnelle et elles restent sur votre appareil.
+
+Les seules données que nous pourrions collecter sont des données de debugage (rapport d'erreur) et de performance, qui sont utilisées pour améliorer l'application et qui sont directement gérés par les stores Google ou Apple.
+
+=== Comment nous utilisons vos données
+
+Nous utilisons vos données pour améliorer l'application : analyser les données d'utilisation pour identifier les fonctionnalités populaires, corriger les erreurs et optimiser les performances.
+
+
+=== Partage et divulgation des données
+
+Nous ne vendons ni ne louons vos données personnelles à des tiers.
+
+=== Sécurité des données
+
+Nous mettons en œuvre des mesures de sécurité pour protéger vos données contre les accès non autorisés, les altérations, les divulgations ou la destruction. Cependant, aucune transmission de données sur Internet n'est totalement sécurisée, et nous ne pouvons pas garantir une sécurité absolue.
+
+=== Modifications de la politique de confidentialité
+
+Nous pouvons mettre à jour cette politique de confidentialité de temps à autre. Nous vous informerons de toute modification significative en affichant la nouvelle politique sur cette page et, si possible, par une notification dans l'application.

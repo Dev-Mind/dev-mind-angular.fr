@@ -22,7 +22,7 @@ En Kotlin cet objet se définit de cette manière</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670400938.5115"><span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Talk</span>(<span class="hljs-keyword">val</span> id: <span class="hljs-built_in">Long</span>, <span class="hljs-keyword">val</span> name: String, <span class="hljs-keyword">val</span> speakerIds: <span class="hljs-symbol">List@</span><span class="hljs-symbol">LTLong@</span>GT)</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400938.5115')">Copy</button></pre>
+<pre class="highlight"><code class="language-kotlin" id="1755673436063.2646"><span class="hljs-keyword">data</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Talk</span>(<span class="hljs-keyword">val</span> id: <span class="hljs-built_in">Long</span>, <span class="hljs-keyword">val</span> name: String, <span class="hljs-keyword">val</span> speakerIds: <span class="hljs-symbol">List@</span><span class="hljs-symbol">LTLong@</span>GT)</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436063.2646')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -38,13 +38,13 @@ En Kotlin cet objet se définit de cette manière</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670400938.142"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-kotlin" id="1755673436063.4968"><span class="hljs-meta">@Test</span>
 void extractPropertyOnObject() {
     Talk talk = new Talk(<span class="hljs-number">1L</span>, <span class="hljs-string">&quot;Fabulous talk&quot;</span>, asList(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>));
     assertThat(talk)
         .extracting(Talk::getId, Talk::getName, Talk::getSpeakerIds)
         .containsExactly(<span class="hljs-number">1L</span>, <span class="hljs-string">&quot;Fabulous talk&quot;</span>, asList(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>));
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400938.142')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436063.4968')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -52,7 +52,7 @@ void extractPropertyOnObject() {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670400938.782"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-kotlin" id="1755673436063.3381"><span class="hljs-meta">@Test</span>
 void extractPropertyOnList() {
     <span class="hljs-symbol">List@</span><span class="hljs-symbol">LTTalk@</span>GT talks = asList(
         new Talk(<span class="hljs-number">1L</span>, <span class="hljs-string">&quot;Fabulous talk&quot;</span>, asList(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>)),
@@ -63,7 +63,7 @@ void extractPropertyOnList() {
             Tuple.tuple(<span class="hljs-number">1L</span>, <span class="hljs-string">&quot;Fabulous talk&quot;</span>, asList(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>)),
             Tuple.tuple(<span class="hljs-number">2L</span>, <span class="hljs-string">&quot;Other talk&quot;</span>, asList(<span class="hljs-number">14L</span>))
         );
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400938.782')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436063.3381')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -84,12 +84,12 @@ Mais cette solution n&#8217;est pas très viable car si une propriété change d
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670400938.7473"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-kotlin" id="1755673436064.825"><span class="hljs-meta">@Test</span>
     <span class="hljs-function"><span class="hljs-keyword">fun</span> @backtick@should extract property on <span class="hljs-keyword">object</span>@backtick@<span class="hljs-params">()</span></span> {
         <span class="hljs-keyword">val</span> talk = Talk(<span class="hljs-number">1L</span>, <span class="hljs-string">&quot;Fabulous talk&quot;</span>, listOf(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>))
         assertThat(talk).extracting(<span class="hljs-string">&quot;id&quot;</span>, <span class="hljs-string">&quot;name&quot;</span>, <span class="hljs-string">&quot;speakerIds&quot;</span>)
             .containsExactly(<span class="hljs-number">1L</span>, <span class="hljs-string">&quot;Fabulous talk&quot;</span>, listOf(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>))
-    }</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400938.7473')">Copy</button></pre>
+    }</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436064.825')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -97,7 +97,7 @@ Mais cette solution n&#8217;est pas très viable car si une propriété change d
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670400939.9224"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-kotlin" id="1755673436064.181"><span class="hljs-meta">@Test</span>
 <span class="hljs-function"><span class="hljs-keyword">fun</span> @backtick@should extract property on list@backtick@<span class="hljs-params">()</span></span> {
     <span class="hljs-keyword">val</span> talks = listOf(
         Talk(<span class="hljs-number">1L</span>, <span class="hljs-string">&quot;Fabulous talk&quot;</span>, listOf(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>)),
@@ -109,7 +109,7 @@ Mais cette solution n&#8217;est pas très viable car si une propriété change d
             tuple(<span class="hljs-number">1L</span>, <span class="hljs-string">&quot;Fabulous talk&quot;</span>, listOf(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>)),
             tuple(<span class="hljs-number">2L</span>, <span class="hljs-string">&quot;Other talk&quot;</span>, listOf(<span class="hljs-number">14L</span>))
         )
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400939.9224')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436064.181')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -121,13 +121,13 @@ Contrairement à ce qui avait été dit l&#8217;API a évolué à partir de la v
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670400939.9421"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-kotlin" id="1755673436064.5298"><span class="hljs-meta">@Test</span>
 <span class="hljs-function"><span class="hljs-keyword">fun</span> @backtick@should extract property on <span class="hljs-keyword">object</span>@backtick@<span class="hljs-params">()</span></span> {
     <span class="hljs-keyword">val</span> talk = Talk(<span class="hljs-number">1L</span>, <span class="hljs-string">&quot;Fabulous talk&quot;</span>, listOf(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>))
     assertThat(talk)
         .extracting(Talk::id, Talk::name, Talk::speakerIds)
         .containsExactly(<span class="hljs-number">1L</span>, <span class="hljs-string">&quot;Fabulous talk&quot;</span>, listOf(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>))
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400939.9421')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436064.5298')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -135,7 +135,7 @@ Contrairement à ce qui avait été dit l&#8217;API a évolué à partir de la v
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670400939.9546"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-kotlin" id="1755673436064.5295"><span class="hljs-meta">@Test</span>
 <span class="hljs-function"><span class="hljs-keyword">fun</span> @backtick@should extract property on list@backtick@<span class="hljs-params">()</span></span> {
     <span class="hljs-keyword">val</span> talks: <span class="hljs-symbol">List@</span><span class="hljs-symbol">LTTalk@</span>GT = listOf(
         Talk(<span class="hljs-number">1L</span>, <span class="hljs-string">&quot;Fabulous talk&quot;</span>, listOf(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>)),
@@ -146,7 +146,7 @@ Contrairement à ce qui avait été dit l&#8217;API a évolué à partir de la v
             Tuple.tuple(<span class="hljs-number">1L</span>, <span class="hljs-string">&quot;Fabulous talk&quot;</span>, listOf(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>)),
             Tuple.tuple(<span class="hljs-number">2L</span>, <span class="hljs-string">&quot;Other talk&quot;</span>, listOf(<span class="hljs-number">14L</span>))
         )
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400939.9546')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436064.5295')">Copy</button></pre>
 </div>
 </div>
 </div>
@@ -164,12 +164,12 @@ Au lieu d&#8217;utiliser la méthode <code>extracting</code>, vous pouvez par ex
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670400939.9429"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-kotlin" id="1755673436064.845"><span class="hljs-meta">@Test</span>
 <span class="hljs-function"><span class="hljs-keyword">fun</span> @backtick@should extract property on <span class="hljs-keyword">object</span>@backtick@<span class="hljs-params">()</span></span> {
     <span class="hljs-keyword">val</span> talk = Talk(<span class="hljs-number">1L</span>, <span class="hljs-string">&quot;Fabulous talk&quot;</span>, listOf(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>))
     assertThat(talk.let { tuple(it.id, it.name, it.speakerIds) })
         .isEqualTo(tuple(<span class="hljs-number">1L</span>, <span class="hljs-string">&quot;Fabulous talk&quot;</span>, listOf(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>)))
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400939.9429')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436064.845')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -177,7 +177,7 @@ Au lieu d&#8217;utiliser la méthode <code>extracting</code>, vous pouvez par ex
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-kotlin" id="1755670400939.808"><span class="hljs-meta">@Test</span>
+<pre class="highlight"><code class="language-kotlin" id="1755673436064.7266"><span class="hljs-meta">@Test</span>
 <span class="hljs-function"><span class="hljs-keyword">fun</span> @backtick@should extract property on list@backtick@<span class="hljs-params">()</span></span> {
     <span class="hljs-keyword">val</span> talks = listOf(
         Talk(<span class="hljs-number">1L</span>, <span class="hljs-string">&quot;Fabulous talk&quot;</span>, listOf(<span class="hljs-number">12L</span>, <span class="hljs-number">13L</span>)),
@@ -189,7 +189,7 @@ Au lieu d&#8217;utiliser la méthode <code>extracting</code>, vous pouvez par ex
             tuple(<span class="hljs-number">2L</span>, <span class="hljs-string">&quot;Other talk&quot;</span>, listOf(<span class="hljs-number">14L</span>))
 
         )
-}</code><button class="btn-copy-code" onclick="copyToClipboard('1755670400939.808')">Copy</button></pre>
+}</code><button class="btn-copy-code" onclick="copyToClipboard('1755673436064.7266')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
