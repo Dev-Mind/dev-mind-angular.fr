@@ -12,7 +12,7 @@
     "serve:ssr:devmind-angular": "node dist/devmind-angular/server/server.mjs"
   },
   "engines" : {
-    "node" : "^20"
+    "node" : "^22"
   },
   "private": true,
   "dependencies": {

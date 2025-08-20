@@ -1,0 +1,70 @@
+:doctitle: Score board game (2025)
+:description: I created this app to keep score when I play board games with family or friends.
+:keywords: Multiplatform
+:author: Guillaume EHRET - Dev-Mind
+:revdate: 2025-08-20
+:category: Game
+:teaser: I created this app to keep score when I play board games with family or friends.
+:imgteaser: :../../img/blog/2019/score_00.png
+:toc:
+
+I created this app to keep score when I play board games with family or friends. The app is available on Android and iOS (thanks to Kotlin). It's designed to be simple and quick to use, while offering advanced features for gaming enthusiasts without spamming you with ads or sharing your data.
+
+== Manage players
+
+The application allows you to manage the participants of your games quickly and easily.
+
+=== Add player
+
+You can add as many players as you like to a game. Each player is identified by a unique name or nickname.
+
+=== Uniqueness constraint
+
+It is impossible to have two players with the same name. This is to avoid confusion and ensure correct scores.
+
+=== Remove player
+
+If you delete a player, all their rounds are automatically removed from all games. If a game is left without any players after deletion, it will also be deleted.
+
+== Starting a Game: Pre-Recorded Games
+
+The app aims to save you time. By choosing a game from the list, you can start a game in seconds without having to configure numerous options.
+
+=== Available Games
+
+A variety of popular games are already included, such as Yams, Belote, Tarot, Uno, Seven Wonders, 6 qui prend, Skyjo, Mölkky and Barbu.
+
+=== What if my game is not in the list?
+
+You can use Custom Mode. This mode allows you to create a customized game, with several options adaptable to any board game.
+
+== Game Settings
+
+For pre-recorded games, the game settings are predefined. However, you can always change them if necessary in custom mode.
+
+=== Game name
+
+After choosing a game, you can give it a name. This makes it easy to identify in the list of current games.
+By default, the game name is the name of the selected game, but you can change it to your liking.
+
+=== Calculating the winner
+
+In Custom Mode, you have the option to choose how victory is determined.
+
+* The player with the most points wins: This is the default mode and is suitable for most games, such as Belote, Tarot, or 6 qui prend.
+* The player with the fewest points wins: This mode is ideal for games where the objective is to have the lowest possible score.
+
+=== Limit the score
+
+In Custom Mode, you can set a score limit for the game. This is one of the ways to stop the game.
+
+The game ends automatically as soon as a player reaches or exceeds the number of points you set. This is ideal for games like 6-a-side (66 points) or Skyjo (100 points), where a certain threshold ends the game.
+
+=== The number of rounds
+
+In Custom Mode, you can decide how many rounds to create at the start of the game. This allows you to have your score grid ready to use.
+
+=== Balance the points
+
+This option, particularly useful for games like Tarot, ensures that points are distributed correctly. In these games, points won by some players are lost by others. The application checks in real time that the sum of the points in the round is equal to zero.
+

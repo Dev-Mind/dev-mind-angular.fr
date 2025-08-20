@@ -73,7 +73,7 @@ HTTP 2 n’impose pas de sécuriser les échanges en cryptant les informations v
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1734011714665.0093">telnet www.google.fr <span class="hljs-number">80</span></code><button class="btn-copy-code" onclick="copyToClipboard('1734011714665.0093')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755669474671.8745">telnet www.google.fr <span class="hljs-number">80</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474671.8745')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -88,9 +88,9 @@ HTTP 2 n’impose pas de sécuriser les échanges en cryptant les informations v
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1734011714665.3523">GET / HTTP/<span class="hljs-number">1.1</span>
+<pre class="highlight"><code class="language-java" id="1755669474671.7058">GET / HTTP/<span class="hljs-number">1.1</span>
 Host: www.google.fr
-Accept-Language: fr</code><button class="btn-copy-code" onclick="copyToClipboard('1734011714665.3523')">Copy</button></pre>
+Accept-Language: fr</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474671.7058')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -98,7 +98,7 @@ Accept-Language: fr</code><button class="btn-copy-code" onclick="copyToClipboard
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1734011714666.273">HTTP/<span class="hljs-number">1.1</span> <span class="hljs-number">200</span> OK
+<pre class="highlight"><code class="language-java" id="1755669474671.306">HTTP/<span class="hljs-number">1.1</span> <span class="hljs-number">200</span> OK
 Date: Tue, <span class="hljs-number">12</span> Jul <span class="hljs-number">2016</span> <span class="hljs-number">07</span>:<span class="hljs-number">10</span>:<span class="hljs-number">23</span> GMT
 Expires: -<span class="hljs-number">1</span>
 Cache-Control: <span class="hljs-keyword">private</span>, max-age=<span class="hljs-number">0</span>
@@ -114,7 +114,7 @@ Transfer-Encoding: chunked
 
 <span class="hljs-meta">@LT</span>!doctype html<span class="hljs-meta">@GT</span><span class="hljs-meta">@LThtml</span> itemscope=<span class="hljs-string">&quot;&quot;</span> itemtype=<span class="hljs-string">&quot;http://schema.org/WebPage&quot;</span> lang=<span class="hljs-string">&quot;fr&quot;</span><span class="hljs-meta">@GT</span><span class="hljs-meta">@LThead</span><span class="hljs-meta">@GT</span><span class="hljs-meta">@LTmeta</span> content=<span class="hljs-string">&quot;text/html; charset=UTF-8&quot;</span> http-equiv=<span class="hljs-string">&quot;Content-Type&quot;</span><span class="hljs-meta">@GT</span><span class="hljs-meta">@LTmeta</span> content=<span class="hljs-string">&quot;/images/branding/googleg/1x/googleg_standard_color_128dp.png&quot;</span> itemprop=<span class="hljs-string">&quot;image&quot;</span><span class="hljs-meta">@GT</span>
 <span class="hljs-comment">//………..</span>
-<span class="hljs-meta">@LT</span>/html<span class="hljs-meta">@GT</span></code><button class="btn-copy-code" onclick="copyToClipboard('1734011714666.273')">Copy</button></pre>
+<span class="hljs-meta">@LT</span>/html<span class="hljs-meta">@GT</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474671.306')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">

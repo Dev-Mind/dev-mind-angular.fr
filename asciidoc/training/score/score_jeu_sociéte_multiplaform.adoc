@@ -1,0 +1,73 @@
+:doctitle: Score jeu de société (2025)
+:description: J'ai créé cette application pour tenir les scores quand je joue à des jeux de société en famille ou entre ami·e·s.
+:keywords: Multiplatform
+:author: Guillaume EHRET - Dev-Mind
+:revdate: 2025-08-20
+:category: Game
+:teaser: J'ai créé cette application pour tenir les scores quand je joue à des jeux de société en famille ou entre ami·e·s.
+:imgteaser: :../../img/blog/2019/score_00.png
+:toc:
+
+
+J'ai créé cette application pour tenir les scores quand je joue à des jeux de société en famille ou entre ami·e·s.  L'application est disponible sur Android et iOS (merci Kotlin). Elle est conçue pour être simple et rapide à utiliser, tout en offrant des fonctionnalités avancées pour les passionné·e·s de jeux sans vous polluer de pub ni échanger vos données.
+
+
+== Gérer les joueurs·euses
+
+L'application vous permet de gérer les participant·e·s de vos parties de manière simple et rapide.
+
+=== Ajout des joueurs·euses
+
+Vous pouvez ajouter autant de joueurs·euses que vous le souhaitez pour une partie. Chaque joueur·euse est identifié·e par un nom ou un surnom unique.
+
+=== Contrainte d'unicité
+
+Il est impossible d'avoir deux joueurs·euses avec le même nom. Cela permet d'éviter toute confusion et de garantir des scores corrects.
+
+=== Suppression des joueurs·euses
+
+Si vous supprimez un·e joueur·euse, toutes ses manches sont automatiquement supprimées de toutes les parties. Si une partie se retrouve sans aucun joueur·euse après une suppression, elle sera également effacée.
+
+== Commencer une partie : Les jeux pré-enregistrés
+
+L'application a pour but de vous faire gagner du temps. En choisissant un jeu dans la liste, vous pouvez lancer une partie en quelques secondes sans avoir à configurer de nombreuses options.
+
+=== Les jeux disponibles :
+
+Une variété de jeux populaires sont déjà inclus, comme le Yams, la Belote, le Tarot, le Uno, le Seven Wonders, le 6 qui prend, le Skyjo, le Mölkky et le Barbu.
+
+=== Et si mon jeu n'est pas dans la liste ?
+
+Vous pouvez utiliser le mode personnalisé. Ce mode vous permet de créer une partie sur mesure, avec plusieurs options adaptables à n'importe quel jeu de société.
+
+== Paramètres de la partie
+
+Pour les jeux préenregistrés , les paramètres de la partie sont prédéfinis. Cependant, vous pouvez toujours les modifier si nécessaire en mode personnalisé.
+
+=== Nom de la partie
+
+Après avoir choisi un jeu, vous pouvez donner un nom à votre partie. Cela permet de l'identifier facilement dans la liste des parties en cours.
+Par défaut le nom de la partie est le nom du jeu sélectionné, mais vous pouvez le modifier à votre convenance.
+
+=== Le calcul du ou de la vainqueur
+
+Dans le mode personnalisé, vous avez la possibilité de choisir comment la victoire est déterminée.
+
+* Le·a joueur·euse avec le plus de points gagne : C'est le mode par défaut et il est adapté à la plupart des jeux, comme la Belote, le Tarot ou le 6 qui prend.
+* Le·a joueur·euse avec le moins de points gagne : Ce mode est idéal pour les jeux où l'objectif est d'avoir le score le plus bas possible.
+
+=== Limiter le score
+
+Dans le mode personnalisé, vous pouvez définir une limite de score pour la partie. C'est l'un des moyens d'arrêter le jeu.
+
+Score maximum : La partie s'arrête automatiquement dès qu'un joueur atteint ou dépasse le nombre de points que vous avez défini. C'est idéal pour des jeux comme le 6 qui prends (66 points) ou le Skyjo (100 points), où un certain seuil met fin à la partie.
+
+=== Le nombre de manches
+
+Dans le mode personnalisé, vous pouvez décider du nombre de manches à créer dès le début de la partie. Cela vous permet d'avoir votre grille de score prête à l'emploi.
+
+=== Équilibrer les points
+
+Cette option, notamment utile pour des jeux comme le Tarot, permet de s'assurer que les points sont correctement répartis. Dans ces jeux, les points gagnés par certains joueurs sont perdus par d'autres. L'application vérifie en temps réel que la somme des points de la manche est égale à zéro.
+
+

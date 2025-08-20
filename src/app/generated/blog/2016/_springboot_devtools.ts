@@ -18,7 +18,7 @@ export const _springboot_devtools:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1734011714262.1914">compile <span class="hljs-string">&quot;org.springframework.boot:spring-boot-devtools&quot;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1734011714262.1914')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755669474952.1858">compile <span class="hljs-string">&quot;org.springframework.boot:spring-boot-devtools&quot;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474952.1858')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -40,7 +40,7 @@ export const _springboot_devtools:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" id="1734011714262.612">./gradlew bootRun</code><button class="btn-copy-code" onclick="copyToClipboard('1734011714262.612')">Copy</button></pre>
+<pre class="highlight"><code class="language-java" id="1755669474952.7114">./gradlew bootRun</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474952.7114')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -81,7 +81,7 @@ export const _springboot_devtools:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1734011714263.9285"><span class="hljs-attr">spring</span>:
+<pre class="highlight"><code class="language-javascript" id="1755669474953.487"><span class="hljs-attr">spring</span>:
   <span class="hljs-attr">profiles</span>: dev
   <span class="hljs-attr">resources</span>:
     <span class="hljs-keyword">static</span>-<span class="hljs-attr">locations</span>:
@@ -92,7 +92,7 @@ export const _springboot_devtools:string = `<div id="preamble">
       additional-<span class="hljs-attr">paths</span>:
         - ../dm-client/app/
         - ../dm-client/build/.<span class="hljs-property">tmp</span>/
-      additional-<span class="hljs-attr">exclude</span>: <span class="hljs-string">&quot;**/*.js, **/*.css, **/*.html&quot;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1734011714263.9285')">Copy</button></pre>
+      additional-<span class="hljs-attr">exclude</span>: <span class="hljs-string">&quot;**/*.js, **/*.css, **/*.html&quot;</span></code><button class="btn-copy-code" onclick="copyToClipboard('1755669474953.487')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -137,7 +137,7 @@ export const _springboot_devtools:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1734011714263.1106">gulp watch</code><button class="btn-copy-code" onclick="copyToClipboard('1734011714263.1106')">Copy</button></pre>
+<pre class="highlight"><code class="language-javascript" id="1755669474953.5864">gulp watch</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474953.5864')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -145,12 +145,12 @@ export const _springboot_devtools:string = `<div id="preamble">
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-javascript" id="1734011714264.7026">gulp.<span class="hljs-title function_">task</span>(<span class="hljs-string">&#x27;watch&#x27;</span>, [<span class="hljs-string">&#x27;scripts&#x27;</span>, <span class="hljs-string">&#x27;styles&#x27;</span>, <span class="hljs-string">&#x27;html-template&#x27;</span>], <span class="hljs-function">() =&gt;</span> {
+<pre class="highlight"><code class="language-javascript" id="1755669474954.7874">gulp.<span class="hljs-title function_">task</span>(<span class="hljs-string">&#x27;watch&#x27;</span>, [<span class="hljs-string">&#x27;scripts&#x27;</span>, <span class="hljs-string">&#x27;styles&#x27;</span>, <span class="hljs-string">&#x27;html-template&#x27;</span>], <span class="hljs-function">() =&gt;</span> {
   gulp.<span class="hljs-title function_">watch</span>([<span class="hljs-string">&#x27;app/**/*.html&#x27;</span>], [<span class="hljs-string">&#x27;html-template&#x27;</span>, reload]);
   gulp.<span class="hljs-title function_">watch</span>([<span class="hljs-string">&#x27;app/src/**/*.{scss,css}&#x27;</span>], [<span class="hljs-string">&#x27;styles&#x27;</span>, reload]);
   gulp.<span class="hljs-title function_">watch</span>([<span class="hljs-string">&#x27;app/**/*.js&#x27;</span>], [<span class="hljs-string">&#x27;lint&#x27;</span>, <span class="hljs-string">&#x27;scripts&#x27;</span>]);
   gulp.<span class="hljs-title function_">watch</span>([<span class="hljs-string">&#x27;app/images/**/*&#x27;</span>], reload);
-});</code><button class="btn-copy-code" onclick="copyToClipboard('1734011714264.7026')">Copy</button></pre>
+});</code><button class="btn-copy-code" onclick="copyToClipboard('1755669474954.7874')">Copy</button></pre>
 </div>
 </div>
 <div class="paragraph">

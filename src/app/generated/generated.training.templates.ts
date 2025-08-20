@@ -1,4 +1,6 @@
 
+import { _gameboard_score_multiplaform } from './training/score/_gameboard_score_multiplaform';
+import { _score_jeu_soci_te_multiplaform } from './training/score/_score_jeu_soci_te_multiplaform';
 import { _install_development_environment } from './training/outil/_install_development_environment';
 import { _git } from './training/outil/_git';
 import { _gradle } from './training/gradle/_gradle';
@@ -21,6 +23,8 @@ import { _android_database_room_viewmodel } from './training/android/_android_da
 import { _http } from './training/web/_http';
 import { _internet } from './training/web/_internet';
 export const trainingGeneratedTemplates = new Map<string, string>();
+trainingGeneratedTemplates.set('gameboard_score_multiplaform', _gameboard_score_multiplaform);
+trainingGeneratedTemplates.set('score_jeu_soci_te_multiplaform', _score_jeu_soci_te_multiplaform);
 trainingGeneratedTemplates.set('install_development_environment', _install_development_environment);
 trainingGeneratedTemplates.set('git', _git);
 trainingGeneratedTemplates.set('gradle', _gradle);
